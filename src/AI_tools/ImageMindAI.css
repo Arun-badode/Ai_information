@@ -1,0 +1,85 @@
+/* ImageMindAI.css */
+
+.custom-tabs .nav-link {
+  color: #aaa;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 12px 20px;
+  font-weight: 500;
+}
+
+.custom-tabs .nav-link.active {
+  color: #fff;
+  border-bottom: 2px solid;
+  background: none;
+}
+
+.custom-card {
+  background-color: #1f1f1f;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.custom-card:hover {
+  background-color: #2c2c2c;
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 32px;
+}
+
+/* FAQ Accordion Styling */
+.accordion {
+  margin-top: 20px;
+}
+
+.accordion-button {
+  background-color: #161b22;
+  color: black;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #238636;
+  color: black;
+}
+
+.accordion-button:hover {
+  background-color: #2ea043;
+  color: #fff;
+}
+
+.accordion-item {
+  border: none;
+  margin-bottom: 10px;
+}
+
+.accordion-body {
+  background-color: #0d1117;
+  color: black;
+  border: 1px solid #238636;
+  border-radius: 8px;
+  padding: 15px;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+}
+
+.accordion-body p {
+  margin: 0;
+}
+
+.accordion-header {
+  font-size: 1.1rem;
+}
+
+.accordion-item:last-child {
+  margin-bottom: 0;
+}
+.collapse {
+  visibility: visible;
+}

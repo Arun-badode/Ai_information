@@ -1,0 +1,839 @@
+import React, { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
+
+// review section data
+const reviews = [
+  {
+    name: "Alex Johnson",
+    date: "April 15, 2025",
+    review:
+      "This tool has completely transformed my workflow. The AI capabilities are far beyond what I expected and the interface is intuitive.",
+    rating: 5,
+  },
+  {
+    name: "Sarah Miller",
+    date: "April 10, 2025",
+    review:
+      "Very powerful tool with great features. The only reason I’m not giving 5 stars is because of the learning curve for some advanced features.",
+    rating: 4,
+  },
+  {
+    name: "David Chen",
+    date: "April 3, 2025",
+    review:
+      "Worth every penny! The customer support is exceptional and the tool itself has saved me countless hours of work.",
+    rating: 5,
+  },
+  {
+    name: "Emma Wilson",
+    date: "March 28, 2025",
+    review:
+      "Good tool overall, but I’ve experienced some performance issues with larger projects. Hope they improve this in future updates.",
+    rating: 3,
+  },
+];
+
+const ratingBreakdown = {
+  "5 stars": 70,
+  "4 stars": 20,
+  "3 stars": 7,
+  "2 stars": 2,
+  "1 star": 1,
+};
+
+// Technical details styles
+const styles = {
+  section: {
+    backgroundColor: "#0d1117",
+    color: "#c9d1d9",
+    minHeight: "100vh",
+    padding: "60px 0",
+  },
+  card: {
+    backgroundColor: "#161b22",
+    borderRadius: "16px",
+    boxShadow: "0 4px 8px rgba(0,0,0,0.3)",
+    padding: "30px",
+    height: "100%",
+  },
+  smallText: {
+    fontSize: "0.95rem",
+  },
+  button: {
+    backgroundColor: "#238636",
+    borderColor: "#238636",
+  },
+  buttonHover: {
+    backgroundColor: "#2ea043",
+    borderColor: "#2ea043",
+  },
+};
+const AdobeFireflyAI = () => {
+  const [activeTab, setActiveTab] = useState("features"); // Set the default active tab as 'features'
+  const [showAllFaqs, setShowAllFaqs] = useState(false);
+  const renderTabContent = () => {
+    switch (activeTab) {
+      case "features":
+        return (
+          <div className="row g-4">
+            <div className="text-center">
+              <p className="text-primary">
+                Create Personalized Videos in Minutes
+              </p>
+              <h3 className=""> AI-Powered Video Generation & Customization</h3>
+            </div>
+            {[
+              {
+                icon: "🎨",
+                title: "AI-Powered Creativity:",
+                desc: "Adobe Firefly leverages powerful AI technology to generate high-quality images, illustrations, and designs based on text prompts, empowering users to create stunning artwork with ease.",
+              },
+              {
+                icon: "🖌",
+                title: "Customizable Styles and Effects:",
+                desc: "With Adobe Firefly, users can adjust styles, colors, and effects to personalize their creations, enabling unique and tailor-made visual content for any project.",
+              },
+              {
+                icon: "🔄",
+                title: "Image Refinement and Editing:",
+                desc: "Adobe Firefly allows users to refine and enhance generated images by providing intuitive editing tools, perfect for fine-tuning artwork or altering specific details.",
+              },
+              {
+                icon: "🌍",
+                title: "Diverse Design Capabilities:",
+                desc: "Adobe Firefly supports the creation of images with a wide variety of design aesthetics and cultural contexts, making it a versatile tool for global creative projects.",
+              },
+              {
+                icon: "🚀",
+                title: "Fast Image Generation:",
+                desc: "Adobe Firefly can generate high-quality visual content in a fraction of the time, accelerating the creative process and enabling rapid iterations for design projects.",
+              },
+              {
+                icon: "🔌",
+                title: "Seamless Integration with Adobe Suite:",
+                desc: "Adobe Firefly integrates smoothly with Adobe Creative Cloud, allowing users to easily bring their AI-generated images into applications like Photoshop, Illustrator, and InDesign.",
+              },
+            ].map((feature, index) => (
+              <div className="col-md-4" key={index}>
+                <div
+                  className="custom-card text-light p-4 h-100"
+                  style={{ border: "1px solid #7B68EE" }}
+                >
+                  <div className="icon mb-3">{feature.icon}</div>
+                  <h5 className="fw-bold">{feature.title}</h5>
+                  <p>{feature.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        );
+      case "why-we-use":
+        return (
+          <div className="container">
+            <div className="row g-4">
+              <div className="col-12">
+                <div className="custom-card text-light p-5 text-center">
+                  <h3 className="fw-bold mb-4 text-start text-primary">
+                    Why Use Adobe Firefly?
+                  </h3>
+
+                  <ul
+                    className="text-start"
+                    style={{
+                      listStyleType: "disc",
+                      paddingLeft: "1.5rem",
+                      fontSize: "1rem",
+                      lineHeight: "1.5",
+                    }}
+                  >
+                    <ul>
+                      <li className="mb-3">
+                        Quick Content Creation: Generate images or designs in
+                        minutes rather than spending hours manually creating
+                        them.
+                      </li>
+                      <li className="mb-3">
+                        Customization: Fine-tune outputs based on specific
+                        prompts and styles.
+                      </li>
+                      <li className="mb-3">
+                        Creative Experimentation: Easily experiment with various
+                        artistic styles and concepts without needing advanced
+                        design skills.
+                      </li>
+                      <li className="mb-3">
+                        Seamless Integration: Since it integrates with Adobe's
+                        ecosystem, users can move seamlessly between Firefly and
+                        tools like Photoshop, Illustrator, and Lightroom.
+                      </li>
+                    </ul>
+                  </ul>
+
+                  <div className="text-center mt-4">
+                    <Button variant="primary" size="sm">
+                      Start Creating Now
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      case "FAQ":
+        return (
+          <div className="faq-section container py-5">
+            <h3 className="text-center text-white mb-5 text-primary">
+              Frequently Asked Questions
+            </h3>
+
+            <div className="accordion" id="faqAccordion">
+              {[
+                {
+                  q: "What is Adobe Firefly?",
+                  a: "Adobe Firefly is an AI-powered creative tool that generates images, illustrations, and graphic designs based on user input through text prompts. It integrates seamlessly into Adobe's Creative Cloud suite.",
+                },
+                {
+                  q: "How does Adobe Firefly work?",
+                  a: "Adobe Firefly uses advanced machine learning models trained on a vast dataset of creative content to generate images based on textual descriptions. It interprets the user's prompts and translates them into visual art.",
+                },
+                {
+                  q: "Is Adobe Firefly free?",
+                  a: "Adobe Firefly offers a limited free trial. However, full access requires a paid Adobe Creative Cloud subscription.",
+                },
+                {
+                  q: "How do I access Adobe Firefly?",
+                  a: "Adobe Firefly is available via Adobe's Creative Cloud. You need a subscription to access it through the web, desktop apps like Photoshop and Illustrator, or mobile versions.",
+                },
+                {
+                  q: "Can Adobe Firefly generate images from text?",
+                  a: "Yes, Adobe Firefly can generate images directly from text prompts. This feature allows you to describe what you want, and Firefly creates a corresponding image.",
+                },
+                {
+                  q: "What is the difference between Adobe Firefly and other AI tools like DALL-E?",
+                  a: "While both Adobe Firefly and DALL-E generate images from text prompts, Adobe Firefly is integrated with Adobe’s suite of tools, which makes it ideal for professionals who need to refine or edit images using industry-standard software.",
+                },
+                {
+                  q: "Is Adobe Firefly part of Adobe Creative Cloud?",
+                  a: "Yes, Adobe Firefly is included in Adobe Creative Cloud, making it available to all Creative Cloud subscribers.",
+                },
+                {
+                  q: "Can I use Adobe Firefly for commercial projects?",
+                  a: "Yes, Adobe Firefly allows users to create images for commercial purposes, subject to Adobe’s licensing and content usage policies.",
+                },
+                {
+                  q: "Does Adobe Firefly have a mobile app?",
+                  a: "Yes, Adobe Firefly is available on both desktop and mobile platforms as part of Adobe’s suite of creative tools.",
+                },
+                {
+                  q: "What are the main features of Adobe Firefly?",
+                  a: "Key features include: Text-to-image generation, Style transfer, Generative fill, Inpainting, Text effects, Customizable prompts.",
+                },
+                {
+                  q: "What kind of images can I create with Adobe Firefly?",
+                  a: "You can create photorealistic images, abstract art, cartoon-style illustrations, typography effects, fantasy art, and more using Adobe Firefly.",
+                },
+                {
+                  q: "Can Adobe Firefly generate text effects?",
+                  a: "Yes, Adobe Firefly can create unique text effects based on your prompts, including fonts, shapes, and styles.",
+                },
+                {
+                  q: "Can Adobe Firefly handle image editing tasks?",
+                  a: "Yes, it can perform image editing tasks such as background removal, inpainting (editing specific parts of an image), and applying style transfers.",
+                },
+                {
+                  q: "What are Adobe Firefly’s style transfer capabilities?",
+                  a: "Style transfer allows you to apply the style of one image to another, such as turning a photo into a painting or applying a particular artistic style to an image.",
+                },
+                {
+                  q: "How do I write effective prompts for Adobe Firefly?",
+                  a: "To write effective prompts, describe the image you want in detail, including aspects like mood, color palette, style, and specific elements (e.g., 'a futuristic city skyline at sunset').",
+                },
+                {
+                  q: "Does Adobe Firefly offer pre-built templates?",
+                  a: "Adobe Firefly is primarily focused on generating custom content from prompts rather than using pre-built templates, offering more flexibility and creativity.",
+                },
+                {
+                  q: "How long does it take for Adobe Firefly to generate an image?",
+                  a: "The time it takes varies depending on the complexity of the prompt and the quality settings. Typically, it takes a few seconds to a couple of minutes to generate an image.",
+                },
+                {
+                  q: "Is Adobe Firefly good for beginners?",
+                  a: "Yes, Adobe Firefly is user-friendly, and beginners can easily create impressive art using simple text prompts. Adobe also offers tutorials to help new users.",
+                },
+                {
+                  q: "Can I refine images generated by Adobe Firefly?",
+                  a: "Yes, once an image is generated, you can refine it further using Adobe’s powerful editing tools, such as Photoshop or Illustrator.",
+                },
+                {
+                  q: "Can Adobe Firefly generate vector art?",
+                  a: "Adobe Firefly can generate raster-based art, but it can be exported and refined into vector formats using Adobe Illustrator.",
+                },
+                {
+                  q: "Does Adobe Firefly support 3D art?",
+                  a: "Yes, Adobe Firefly can generate 3D renders and integrates with Adobe tools like Adobe Dimension for further 3D modeling and rendering.",
+                },
+                {
+                  q: "How do I get started with Adobe Firefly?",
+                  a: "To get started, sign up for an Adobe Creative Cloud subscription, download Adobe Firefly, and start experimenting with simple text prompts to generate images.",
+                },
+                {
+                  q: "Can I use Adobe Firefly offline?",
+                  a: "No, Adobe Firefly requires an internet connection to access the AI-powered features.",
+                },
+                {
+                  q: "Is Adobe Firefly integrated with Adobe Photoshop?",
+                  a: "Yes, Adobe Firefly is integrated with Adobe Photoshop, allowing users to generate images and then refine them directly within the Photoshop environment.",
+                },
+                {
+                  q: "Does Adobe Firefly support animation?",
+                  a: "Adobe Firefly can generate still images, and its integration with other Adobe tools like After Effects can help create animations based on generated content.",
+                },
+              ]
+
+                .map((item, i) => ({ ...item, id: `faq${i} ` }))
+                .filter((item, i, arr) => showAllFaqs || i < 4)
+                .map((item, i) => (
+                  <div className="accordion-item mb-3" key={item.id}>
+                    <h2 className="accordion-header" id={`heading${item.id}`}>
+                      <button
+                        className={`accordion-button ${
+                          i !== 0 ? "collapsed" : ""
+                        }`}
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target={`#collapse${item.id}`}
+                        aria-expanded={i === 0 ? "true" : "false"}
+                        aria-controls={`collapse${item.id}`}
+                        style={{
+                          backgroundColor: "#161b22",
+                          color: "#c9d1d9",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        {item.q}
+                      </button>
+                    </h2>
+                    <div
+                      id={`collapse${item.id}`}
+                      className={`accordion-collapse collapse ${
+                        i === 0 ? "show" : ""
+                      }`}
+                      aria-labelledby={`heading${item.id}`}
+                      data-bs-parent="#faqAccordion"
+                    >
+                      <div
+                        className="accordion-body"
+                        style={{
+                          backgroundColor: "#0d1117",
+                          color: "#c9d1d9",
+                          border: "1px solid #238636",
+                          borderRadius: "8px",
+                          padding: "15px",
+                        }}
+                      >
+                        {item.a}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+
+              {/* Read More / Show Less Button */}
+              <div className="text-center mt-4">
+                <button
+                  className="btn btn-outline-light"
+                  onClick={() => setShowAllFaqs(!showAllFaqs)}
+                >
+                  {showAllFaqs ? "Show Less" : "Read More"}
+                </button>
+              </div>
+            </div>
+          </div>
+        );
+
+      case "screenshots":
+        return (
+          <div className="row g-4">
+            <div className="col-md-6">
+              <img
+                src="https://www.gizmochina.com/wp-content/uploads/2023/06/Screenshot-2023-06-23-165608.png"
+                alt=""
+                className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
+              />
+            </div>
+            <div className="col-md-6">
+              <img
+                src={Rephrase}
+                className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
+              />
+            </div>
+          </div>
+        );
+
+      case "reviews":
+        return (
+          <Container style={{ backgroundColor: "black", padding: "20px" }}>
+            <Row style={{ justifyContent: "center" }}>
+              <Col md={12} lg={6} style={{ marginBottom: "20px" }}>
+                <div
+                  style={{
+                    backgroundColor: "#2f2f2f",
+                    padding: "20px",
+                    borderRadius: "5px",
+                  }}
+                >
+                  <h4
+                    style={{
+                      fontSize: "1.5rem",
+                      fontWeight: "bold",
+                      color: "white",
+                    }}
+                  >
+                    USER REVIEWS
+                  </h4>
+                  <div className="d-flex align-items-center mb-3">
+                    <p className="text-white">4.5 out of 5</p>
+                    <p style={{ color: "#6c757d" }}> ⭐⭐⭐⭐⭐</p>
+                  </div>
+                  <ProgressBar
+                    now={ratingBreakdown["5 stars"]}
+                    label="5 stars"
+                    variant="success"
+                    style={{ marginBottom: "20px", height: "30px" }}
+                  />
+                  <ProgressBar
+                    now={ratingBreakdown["4 stars"]}
+                    label="4 stars"
+                    variant="info"
+                    style={{ marginBottom: "20px", height: "30px" }}
+                  />
+                  <ProgressBar
+                    now={ratingBreakdown["3 stars"]}
+                    label="3 stars"
+                    variant="warning"
+                    style={{ marginBottom: "20px", height: "30px" }}
+                  />
+                  <ProgressBar
+                    now={ratingBreakdown["2 stars"]}
+                    label="2 stars"
+                    variant="danger"
+                    style={{ marginBottom: "20px", height: "30px" }}
+                  />
+                  <ProgressBar
+                    now={ratingBreakdown["1 star"]}
+                    label="1 star"
+                    variant="secondary"
+                    style={{ marginBottom: "20px", height: "30px" }}
+                  />
+                </div>
+              </Col>
+              <Col md={12} lg={6} style={{ marginBottom: "20px" }}>
+                <div style={{ padding: "20px", borderRadius: "5px" }}>
+                  <div className="d-flex justify-content-between align-items-center mb-3">
+                    <h4
+                      style={{
+                        fontSize: "1.5rem",
+                        fontWeight: "bold",
+                        color: "white",
+                      }}
+                    >
+                      RECENT REVIEWS
+                    </h4>
+                    <Button variant="primary" style={{ width: "30%" }}>
+                      Write Review
+                    </Button>
+                  </div>
+                  {reviews.map((review, index) => (
+                    <div
+                      key={index}
+                      style={{
+                        backgroundColor: "#2f2f2f",
+                        padding: "15px",
+                        marginBottom: "10px",
+                        borderRadius: "5px",
+                        color: "white",
+                      }}
+                    >
+                      <p>
+                        <strong>{review.name}</strong> (Verified User) -{" "}
+                        {review.date}
+                      </p>
+                      <p>{review.review}</p>
+                      <div style={{ color: "#ffcc00" }}>
+                        {"⭐".repeat(review.rating)}
+                      </div>
+                    </div>
+                  ))}
+                  <Button variant="primary" style={{ width: "30%" }}>
+                    Load More Reviews
+                  </Button>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        );
+
+      case "pros & cons":
+        return (
+          <div className="container my-5">
+            <h4 className="text-center text-light mb-4">Pros & Cons</h4>
+            <div className="row justify-content-center gap-2">
+              {/* Pros Column */}
+              <div
+                className="col-lg-5 col-md-6 col-sm-12"
+                style={{
+                  border: "1px solid #7B68EE",
+                  borderRadius: "12px",
+                  padding: "20px",
+                  backgroundColor: "#1e1e1e",
+                  minHeight: "100%",
+                }}
+              >
+                <h5 className="text-success text-start mb-4">✅ Pros</h5>
+                <ul className="ps-3" style={{ listStyleType: "disc" }}>
+                  <li className="mb-2">
+                    User-Friendly: Its intuitive interface makes it easy for
+                    both beginners and professionals to use.
+                  </li>
+                  <li className="mb-2">
+                    High-Quality Outputs: Adobe Firefly generates impressive and
+                    realistic images that can be used for professional purposes.
+                  </li>
+                  <li className="mb-2">
+                    Versatile: It supports various styles, from photorealistic
+                    to abstract art, and can be used across a range of creative
+                    industries.
+                  </li>
+                  <li className="mb-2">
+                    Seamless Integration: Integrates well with other Adobe
+                    tools, enhancing productivity for users within Adobe's
+                    ecosystem.
+                  </li>
+                  <li className="mb-2">
+                    Prompt-Based: Allows users to generate art simply by typing
+                    descriptive text, making it accessible to non-artists.
+                  </li>
+                </ul>
+              </div>
+
+              {/*  */}
+              {/* Cons Column */}
+              <div
+                className="col-lg-5 col-md-6 col-sm-12"
+                style={{
+                  border: "1px solid #7B68EE",
+                  borderRadius: "12px",
+                  padding: "20px",
+                  backgroundColor: "#1e1e1e",
+                  minHeight: "100%",
+                }}
+              >
+                <h5 className="text-warning text-start mb-4">⚠ Cons</h5>
+                <ul className="ps-3" style={{ listStyleType: "disc" }}>
+                  <li className="mb-2">
+                    Subscription-Based: Adobe Firefly requires a subscription to
+                    Adobe Creative Cloud, which might be expensive for some
+                    users.
+                  </li>
+                  <li className="mb-2">
+                    Limited Free Trial: While there may be free trials
+                    available, the tool’s full features require paid access.
+                  </li>
+                  <li className="mb-2">
+                    Learning Curve: While user-friendly, users may need some
+                    time to fully understand how to optimize prompts and refine
+                    generated images.
+                  </li>
+                  <li className="mb-2">
+                    Internet Access: Being an AI-powered tool, Adobe Firefly
+                    requires a stable internet connection to function.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        );
+      case "alternative":
+        return (
+          <div className="container my-5">
+            <h4 className="text-center text-light mb-4">Alternatives</h4>
+            <div className="row justify-content-center gap-2">
+              <div
+                className="col-lg-8 col-md-8 col-sm-12"
+                style={{
+                  border: "1px solid #7B68EE",
+                  borderRadius: "12px",
+                  padding: "20px",
+                  backgroundColor: "#1e1e1e",
+                  minHeight: "100%",
+                }}
+              >
+                <ul className="ps-3" style={{ listStyleType: "disc" }}>
+                  <ul className="ps-3" style={{ listStyleType: "disc" }}>
+                    <li className="mb-2">
+                      DALL-E (by OpenAI): A strong alternative to Firefly,
+                      especially for creative text-to-image generation, offering
+                      similar capabilities with unique features.
+                    </li>
+                    <li className="mb-2">
+                      MidJourney: Known for its artistic and surreal style,
+                      MidJourney offers a text-to-image generator that is
+                      favored by creative professionals.
+                    </li>
+                    <li className="mb-2">
+                      Stable Diffusion: An open-source alternative to Firefly
+                      that offers more flexibility for advanced users and
+                      developers who want to fine-tune AI models.
+                    </li>
+                    <li className="mb-2">
+                      Canva AI: While more simplified than Adobe Firefly,
+                      Canva's AI-powered tools offer easy-to-use features for
+                      non-designers.
+                    </li>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+          </div>
+        );
+
+      default:
+        return null;
+    }
+  };
+
+  return (
+    <>
+      <div className="bg-dark d-flex  justify-content-between align-items-center ">
+        <a
+          href="/Aitools"
+          className="d-inline-block text-white text-decoration-none ml-3 py-1"
+        >
+          <i className="bi bi-arrow-left me-2"></i>Back to Directory{" "}
+        </a>
+      </div>
+      <div className="bg-dark text-light min-vh-100 py-5">
+        <div className="container">
+          <div className=" row d-flex align-items-center justify-content-between mb-1">
+            {/* Left side (Text Section) */}
+            <div
+              style={{ flex: 1, paddingRight: "30px" }}
+              className="col-6 col-md-12 "
+            >
+              <p className="text-primary">Write better, faster</p>
+              <h1>Adobe Firefly: The Complete AI Art Guide for Creatives </h1>
+              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+              <p>
+                {" "}
+                Adobe Firefly is an AI-driven creative tool designed to enhance
+                and streamline design, content creation, and image generation
+                processes. Developed by Adobe, Firefly leverages advanced
+                machine learning to create artwork, graphics, and other digital
+                assets based on text prompts. It is a versatile tool for both
+                professionals and casual creators, enabling high-quality visual
+                outputs quickly and efficiently. Adobe Firefly integrates
+                seamlessly with Adobe’s suite of software like Photoshop and
+                Illustrator, making it a powerful addition to any designer's
+                workflow.
+              </p>
+
+              <div className="mb-3">
+                <span className="badge bg-primary me-2">Image Generation</span>
+                <span className="badge bg-success me-2">Creative</span>
+                <span className="badge bg-warning text-dark">Paid</span>
+              </div>
+            </div>
+
+            {/* Right side (Image Section) */}
+            <div
+              style={{
+                flex: 1,
+                textAlign: "center",
+                Width: "100%",
+                height: "250px",
+              }}
+              className="col-6 col-md-12 mb-5  "
+            >
+              <img
+                src="data:image/png;base64,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"
+                style={{ MaxWidth: "100%", height: "300px" }}
+              />
+            </div>
+          </div>
+          <section style={{ backgroundColor: "", padding: "3rem 0" }}>
+            <div className="container text-center">
+              <p className="text-primary">Explore in 3 Simple Steps</p>
+              <h2
+                style={{
+                  fontWeight: "semibold",
+                  color: "#fff",
+                  marginBottom: "1rem",
+                }}
+              >
+                How to Use Adobe Firefly
+              </h2>
+
+              <div className="row g-4">
+                {/* Step 1 */}
+                <div className="col-md-4">
+                  <div
+                    style={{
+                      position: "relative",
+                      backgroundColor: "#1034A6",
+                      borderRadius: "12px",
+                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+                      padding: "2rem",
+                      height: "100%",
+                    }}
+                  >
+                    <style>
+                      {`
+              .step1 {
+                position: absolute;
+                bottom: 10px;
+                right: 15px;
+                font-size: 4rem;
+                font-weight: bold;
+                color: #7b61ff;
+                opacity: 0.6;
+              }
+            `}
+                    </style>
+                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+                      Sign Up and Access
+                    </h5>
+                    <p style={{ color: "#fff", margin: 0 }}>
+                      Adobe Firefly is part of Adobe's Creative Cloud, so you
+                      need an active subscription to access it.
+                    </p>
+                    <div className="step1">1</div>
+                  </div>
+                </div>
+
+                {/* Step 2 */}
+                <div className="col-md-4">
+                  <div
+                    style={{
+                      position: "relative",
+                      backgroundColor: "#1034A6",
+                      borderRadius: "12px",
+                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+                      padding: "2rem",
+                      height: "100%",
+                    }}
+                  >
+                    <style>
+                      {`
+              .step2 {
+                position: absolute;
+                bottom: 10px;
+                right: 15px;
+                font-size: 4rem;
+                font-weight: bold;
+                color: #7b61ff;
+                opacity: 0.6;
+              }
+            `}
+                    </style>
+                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+                      Interface Overview:
+                    </h5>
+                    <p style={{ color: "#fff", margin: 0 }}>
+                      Firefly is available as both a standalone application and
+                      a plugin within Adobe software like Photoshop and
+                      Illustrator. The user-friendly interface allows you to
+                      input prompts, select styles, and fine-tune your results.
+                    </p>
+                    <div className="step2">2</div>
+                  </div>
+                </div>
+
+                {/* Step 3 */}
+                <div className="col-md-4">
+                  <div
+                    style={{
+                      position: "relative",
+                      backgroundColor: "#1034A6",
+                      borderRadius: "12px",
+                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+                      padding: "2rem",
+                      height: "100%",
+                    }}
+                  >
+                    <style>
+                      {`
+              .step3 {
+                position: absolute;
+                bottom: 10px;
+                right: 15px;
+                font-size: 4rem;
+                font-weight: bold;
+                color: #7b61ff;
+                opacity: 0.6;
+              }
+            `}
+                    </style>
+                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+                      Text-to-Image Generation:
+                    </h5>
+                    <p style={{ color: "#fff", margin: 0 }}>
+                      To generate an image, simply type a detailed prompt in the
+                      text box. For example, “a futuristic city skyline at
+                      sunset.” Adobe Firefly will interpret your prompt and
+                      generate an image based on your description.
+                    </p>
+                    <div className="step3">3</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Tab Navigation */}
+          <ul className="nav nav-tabs custom-tabs mb-4">
+            {[
+              "features",
+              "screenshots",
+              "reviews",
+              "FAQ",
+
+              "why-we-use",
+              "pros & cons",
+              "alternative",
+            ].map((tab) => (
+              <li className="nav-item mb-2" key={tab}>
+                <button
+                  className={`nav-link ${activeTab === tab ? "active" : ""}`}
+                  onClick={() => setActiveTab(tab)}
+                >
+                  {tab.charAt(0).toUpperCase() + tab.slice(1)}
+                </button>
+              </li>
+            ))}
+          </ul>
+
+          {/* Tab Content */}
+          <div className="tab-content-area">{renderTabContent()}</div>
+
+          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
+            <h4 className="mb-3">Ready to get started with AdobeFireflyAI?</h4>
+            <p className="mb-4">
+              Join thousands of professionals already boosting their
+              productivity!
+            </p>
+            <div>
+              <button className="btn btn-light me-3">Try Now for Free</button>
+              <button className="btn btn-outline-light">Schedule a Demo</button>
+            </div>
+            <small className="d-block mt-2">
+              No credit card required. 14-day free trial available.
+            </small>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default AdobeFireflyAI;

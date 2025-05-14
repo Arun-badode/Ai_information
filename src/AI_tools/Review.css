@@ -1,0 +1,78 @@
+.review-section {
+  background-color: #1a1a2e;
+  color: #ffffff;
+}
+
+.neon-glow {
+  text-shadow: 0 0 10px #e94560, 0 0 20px #0f3460;
+}
+
+.neon-tabs .nav-link {
+  background-color: transparent;
+  color: #e94560;
+  border: 1px solid #e94560;
+  margin: 0 0.5rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.neon-tabs .nav-link.active {
+  background-color: #e94560;
+  color: #1a1a2e;
+  font-weight: bold;
+  box-shadow: 0 0 10px #e94560;
+}
+
+.review-card {
+  background-color: #16213e;
+  border: 1px solid #0f3460;
+  box-shadow: 0 0 12px rgba(15, 52, 96, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 1rem;
+}
+
+.review-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(15, 52, 96, 0.6);
+}
+
+.glowing-button {
+  background-color: #e94560;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 0 12px #e94560;
+}
+
+.glowing-button:hover {
+  box-shadow: 0 0 24px #e94560;
+  background-color: #0f3460;
+  color: #ffffff;
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.slide-up {
+  animation: slideUp 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

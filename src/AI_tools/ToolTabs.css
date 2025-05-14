@@ -1,0 +1,96 @@
+.tool-tabs-container {
+  background-color: #1a202c; /* Darker shade to match previous design */
+  border-radius: 12px;
+  color: #ffffff;
+}
+
+.icon-tab-bar {
+  border-bottom: 1px solid #4a6a8b; /* Lighter border for contrast */
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.icon-tab-item {
+  flex: 1;
+  text-align: center;
+  padding: 12px 20px; /* Slightly larger padding for a more modern feel */
+  font-weight: 700;
+  color: #e1e7ed; /* Lighter shade of gray for the icons */
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s, transform 0.3s ease;
+}
+
+.icon-tab-item .icon {
+  font-size: 1.2rem; /* Slightly larger icons for more emphasis */
+}
+
+.icon-tab-item:hover {
+  color: #e3b74b; /* Soft yellow on hover */
+  transform: scale(1.05); /* Subtle scaling for interaction feedback */
+}
+
+.icon-tab-item.active {
+  color: #e3b74b; /* Highlight color */
+}
+
+.icon-tab-item.active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 20%;
+  width: 60%;
+  height: 2px;
+  background-color: #f5a623; /* Golden accent on active tab */
+  border-radius: 2px;
+}
+
+.tool-card {
+  width: 300px; /* Fixed width */
+  height: 400px; /* Fixed height */
+  background-color: #1a202c; /* Darker background for cards */
+  border: none;
+  border-radius: 16px;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for 3D effect */
+}
+
+.tool-card:hover {
+  transform: translateY(-5px) scale(1.03); /* Lift and scale the card for a 3D effect */
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4); /* More prominent shadow on hover */
+  background-color: #1f2d3d; /* Slight darken effect */
+}
+
+.tool-card1 {
+  background-color: #84bcf8; /* Keep the blue color for a variation */
+  border: none;
+  border-radius: 16px;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.badge-light-dark {
+  background-color: #3b4f67; /* Slightly darker background for badges */
+  color: #f5a623; /* Golden text for badges */
+  font-size: 0.75rem;
+  padding: 6px 12px;
+  border-radius: 10px;
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

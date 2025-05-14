@@ -1,0 +1,127 @@
+.breadcrumb-scroll-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  background: linear-gradient(
+    90deg,
+    #1a202c,
+    #2d3748
+  ); /* Dark gray gradient background */
+  padding: 10px 0;
+  position: sticky;
+  margin-top: 4rem;
+  width: 100%; /* Ensure it takes full width */
+}
+
+.breadcrumb-scroll {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scrollBreadcrumb 30s linear infinite;
+}
+
+.breadcrumb-scroll .breadcrumb-item {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.breadcrumb-scroll .breadcrumb-item a,
+.breadcrumb-scroll .breadcrumb-item {
+  color: #e2e8f0; /* Light gray text */
+  text-decoration: none;
+}
+
+.breadcrumb-scroll .breadcrumb-item a:hover {
+  color: #38bdf8; /* Light blue hover effect */
+}
+
+@keyframes scrollBreadcrumb {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.breadcrumb {
+  color: #e2e8f0; /* Light gray text */
+}
+
+.breadcrumb-item a {
+  color: #e2e8f0; /* Light gray text */
+}
+
+.breadcrumb-item a:hover {
+  color: #38bdf8; /* Light blue hover effect */
+}
+
+@media (max-width: 767px) {
+  .breadcrumb-scroll-wrapper {
+    padding: 8px 0; /* Reduce padding on mobile */
+    width: 100%; /* Ensure full width for mobile */
+  }
+
+  .breadcrumb-scroll {
+    font-size: 14px; /* Adjust font size for mobile */
+    white-space: nowrap; /* Keep items in a single line */
+    animation: scrollBreadcrumb 20s linear infinite; /* Adjust scroll speed for mobile */
+  }
+
+  .breadcrumb-item {
+    margin: 0 8px; /* Reduce margin for mobile */
+  }
+
+  .breadcrumb-scroll .breadcrumb-item a,
+  .breadcrumb-scroll .breadcrumb-item {
+    color: #e2e8f0; /* Light gray text */
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .breadcrumb-scroll .breadcrumb-item a:hover {
+    color: #38bdf8; /* Light blue hover effect */
+  }
+
+  /* Scroll behavior: Allow scrolling to fit on screen */
+  .breadcrumb-scroll {
+    animation: scrollBreadcrumb 20s linear infinite;
+  }
+}
+
+@media (max-width: 480px) {
+  .breadcrumb-scroll-wrapper {
+    padding: 5px 0; /* Further reduce padding for very small screens */
+  }
+
+  .breadcrumb-scroll {
+    font-size: 12px; /* Smaller font size for very small screens */
+  }
+
+  .breadcrumb-item {
+    margin: 0 5px; /* Reduce margin for very small screens */
+  }
+}
+
+.breadcrumb-scroll-wrapper {
+  overflow-x: auto; /* Enable horizontal scrolling */
+  -webkit-overflow-scrolling: touch; /* Smooth scroll on iOS */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+.breadcrumb-scroll-wrapper::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in WebKit */
+}
+
+.breadcrumb-scroll {
+  display: inline-flex;
+  min-width: max-content; /* Ensure children don't wrap */
+  animation: scrollBreadcrumb 30s linear infinite;
+  gap: 20px;
+}
+
+.breadcrumb-scroll .breadcrumb-item {
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Optional: Pause on hover for better UX */
+.breadcrumb-scroll:hover {
+  animation-play-state: paused;
+}

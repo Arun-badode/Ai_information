@@ -1,0 +1,115 @@
+/* AINewsPage.css */
+
+.ainp-back-link {
+    color: #0dcaf0;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .ainp-back-link:hover {
+    text-decoration: underline;
+  }
+  
+  .ainp-featured-card {
+    background: linear-gradient(to bottom right, #212529, #343a40);
+    border: none;
+    overflow: hidden;
+    border-radius: 16px;
+  }
+  
+  .ainp-featured-card img {
+    height: 400px;
+    object-fit: cover;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+  
+  .ainp-featured-card .card-body {
+    padding: 2rem;
+  }
+  
+  .ainp-featured-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+  
+  .ainp-featured-description {
+    font-size: 1.1rem;
+    color: #ccc;
+  }
+  
+  .ainp-featured-tags .badge {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .ainp-latest-news-card {
+    background-color: #1f1f1f;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .ainp-latest-news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.5);
+  }
+  
+  .ainp-latest-news-card img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .ainp-latest-news-card .card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
+  }
+  
+  .ainp-latest-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #fff;
+  }
+  
+  .ainp-latest-description {
+    font-size: 0.95rem;
+    color: #bbb;
+  }
+  
+  .ainp-trending-card {
+    background-color: #1c1c1c;
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
+  
+  .ainp-trending-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .ainp-trending-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 12px;
+  }
+  
+  .ainp-trending-item h6 {
+    margin: 0;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .text-muted small {
+    font-size: 0.85rem;
+  }
+  

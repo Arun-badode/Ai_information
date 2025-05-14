@@ -1,0 +1,836 @@
+import React, { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../../ImageMindAI.css"; // <-- custom CSS file import
+import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import Logo from "../../../Images/logo[2].png";
+import deatilimage from "../../../Images/DetailImage.png";
+import chatgpt from "../../../Images/ChatGptAI.png";
+
+// review section data
+const reviews = [
+  {
+    name: "Alex Johnson",
+    date: "April 15, 2025",
+    review:
+      "This tool has completely transformed my workflow. The AI capabilities are far beyond what I expected and the interface is intuitive.",
+    rating: 5,
+  },
+  {
+    name: "Sarah Miller",
+    date: "April 10, 2025",
+    review:
+      "Very powerful tool with great features. The only reason I’m not giving 5 stars is because of the learning curve for some advanced features.",
+    rating: 4,
+  },
+  {
+    name: "David Chen",
+    date: "April 3, 2025",
+    review:
+      "Worth every penny! The customer support is exceptional and the tool itself has saved me countless hours of work.",
+    rating: 5,
+  },
+  {
+    name: "Emma Wilson",
+    date: "March 28, 2025",
+    review:
+      "Good tool overall, but I’ve experienced some performance issues with larger projects. Hope they improve this in future updates.",
+    rating: 3,
+  },
+];
+
+const ratingBreakdown = {
+  "5 stars": 70,
+  "4 stars": 20,
+  "3 stars": 7,
+  "2 stars": 2,
+  "1 star": 1,
+};
+
+// Technical details styles
+const styles = {
+  section: {
+    backgroundColor: "#0d1117",
+    color: "#c9d1d9",
+    minHeight: "100vh",
+    padding: "60px 0",
+  },
+  card: {
+    backgroundColor: "#161b22",
+    borderRadius: "16px",
+    boxShadow: "0 4px 8px rgba(0,0,0,0.3)",
+    padding: "30px",
+    height: "100%",
+  },
+  smallText: {
+    fontSize: "0.95rem",
+  },
+  button: {
+    backgroundColor: "#238636",
+    borderColor: "#238636",
+  },
+  buttonHover: {
+    backgroundColor: "#2ea043",
+    borderColor: "#2ea043",
+  },
+};
+
+const Chatgpt = () => {
+  const [activeTab, setActiveTab] = useState("features"); // Set the default active tab as 'features'
+  const [showAllFaqs, setShowAllFaqs] = useState(false);
+  const [openIndex, setOpenIndex] = useState(null);
+  const renderTabContent = () => {
+    switch (activeTab) {
+      case "features":
+        return (
+          <div className="row g-4">
+            {[
+              {
+                title: "Conversational AI",
+                desc: "ChatGPT mimics human conversations by interpreting text input, processing it with advanced NLP, and generating context-aware responses for fluid and natural dialogue.",
+              },
+              {
+                title: "Text Generation AI",
+                desc: "Utilizing GPT-3 and GPT-4, ChatGPT creates coherent, relevant, and human-like text for various purposes such as FAQs, support chats, and creative writing.",
+              },
+              {
+                title: "AI Writing Assistant",
+                desc: "ChatGPT excels at writing blogs, articles, product descriptions, and social media content, helping users and businesses save time on content creation.",
+              },
+              {
+                title: "GPT-Based Chatbot",
+                desc: "At its core, ChatGPT is a GPT-powered chatbot capable of understanding complex inputs, maintaining context, and adapting conversations over time.",
+              },
+              {
+                title: "AI in Education",
+                desc: "Acts as a personal tutor by answering academic questions, explaining topics, solving problems, and assisting in homework across multiple subjects.",
+              },
+              {
+                title: "Multi-Use Virtual Assistant",
+                desc: "Beyond chat, ChatGPT assists in scheduling, reminders, business automation, product suggestions, and personalized learning.",
+              },
+            ].map((feature, index) => (
+              <div className="col-md-4" key={index}>
+                <div className="custom-card text-light p-4 h-100">
+                  <div className="icon mb-3">{feature.icon}</div>
+                  <h5 className="fw-bold">{feature.title}</h5>
+                  <p>{feature.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        );
+
+      case "screenshots":
+        return (
+          <div className="row g-4">
+            <div className="col-md-6">
+              <img
+                src={deatilimage}
+                alt="Screenshot 1"
+                className="img-fluid rounded-3"
+              />
+            </div>
+            <div className="col-md-6">
+              <img
+                src={deatilimage}
+                alt="Screenshot 2"
+                className="img-fluid rounded-3"
+              />
+            </div>
+          </div>
+        );
+      case "pros & Cons":
+        return (
+          <div className="container my-5">
+            <h4 className="text-center text-light mb-4">Pros & Cons</h4>
+            <div className="row justify-content-center gap-2">
+              {/* Pros Column */}
+              <div
+                className="col-lg-5 col-md-6 col-sm-12"
+                style={{
+                  border: "1px solid #7B68EE",
+                  borderRadius: "12px",
+                  padding: "20px",
+                  backgroundColor: "#1e1e1e",
+                  minHeight: "100%",
+                }}
+              >
+                <h5 className="text-success text-start mb-4">✅ Pros</h5>
+                <ul className="ps-3" style={{ listStyleType: "disc" }}>
+                  <li className="mb-2">
+                    Built on advanced GPT-4 architecture for human-like
+                    conversation.
+                  </li>
+                  <li className="mb-2">
+                    Excellent at creative writing, coding help, and
+                    problem-solving tasks.
+                  </li>
+                  <li className="mb-2">
+                    Offers API and plugin integration for developers and
+                    businesses.
+                  </li>
+                  <li className="mb-2">
+                    Available via web, mobile, and as part of Microsoft tools
+                    (like Word, Excel).
+                  </li>
+                  <li className="mb-2">
+                    Constantly updated with new features like memory and
+                    browsing.
+                  </li>
+                </ul>
+              </div>
+
+              {/* Cons Column */}
+              <div
+                className="col-lg-5 col-md-6 col-sm-12"
+                style={{
+                  border: "1px solid #7B68EE",
+                  borderRadius: "12px",
+                  padding: "20px",
+                  backgroundColor: "#1e1e1e",
+                  minHeight: "100%",
+                }}
+              >
+                <h5 className="text-warning text-start mb-4">⚠ Cons</h5>
+                <ul className="ps-3" style={{ listStyleType: "disc" }}>
+                  <li className="mb-2">
+                    Free version uses GPT-3.5, which is less powerful than
+                    GPT-4.
+                  </li>
+                  <li className="mb-2">
+                    Requires ChatGPT Plus subscription for full features like
+                    GPT-4, memory, and tools.
+                  </li>
+                  <li className="mb-2">
+                    Sometimes gives inaccurate or outdated responses if browsing
+                    is off.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        );
+
+      case "reviews":
+        return (
+          <Container style={{ backgroundColor: "black", padding: "20px" }}>
+            <Row style={{ justifyContent: "center" }}>
+              <Col md={12} lg={6} style={{ marginBottom: "20px" }}>
+                <div
+                  style={{
+                    backgroundColor: "#2f2f2f",
+                    padding: "20px",
+                    borderRadius: "5px",
+                  }}
+                >
+                  <h4
+                    style={{
+                      fontSize: "1.5rem",
+                      fontWeight: "bold",
+                      color: "white",
+                    }}
+                  >
+                    USER REVIEWS
+                  </h4>
+                  <div className="d-flex align-items-center mb-3">
+                    <p className="text-white">4.5 out of 5</p>
+                    <p style={{ color: "#6c757d" }}> ⭐⭐⭐⭐⭐</p>
+                  </div>
+                  <ProgressBar
+                    now={ratingBreakdown["5 stars"]}
+                    label="5 stars"
+                    variant="success"
+                    style={{ marginBottom: "20px", height: "30px" }}
+                  />
+                  <ProgressBar
+                    now={ratingBreakdown["4 stars"]}
+                    label="4 stars"
+                    variant="info"
+                    style={{ marginBottom: "20px", height: "30px" }}
+                  />
+                  <ProgressBar
+                    now={ratingBreakdown["3 stars"]}
+                    label="3 stars"
+                    variant="warning"
+                    style={{ marginBottom: "20px", height: "30px" }}
+                  />
+                  <ProgressBar
+                    now={ratingBreakdown["2 stars"]}
+                    label="2 stars"
+                    variant="danger"
+                    style={{ marginBottom: "20px", height: "30px" }}
+                  />
+                  <ProgressBar
+                    now={ratingBreakdown["1 star"]}
+                    label="1 star"
+                    variant="secondary"
+                    style={{ marginBottom: "20px", height: "30px" }}
+                  />
+                </div>
+              </Col>
+              <Col md={12} lg={6} style={{ marginBottom: "20px" }}>
+                <div style={{ padding: "20px", borderRadius: "5px" }}>
+                  <div className="d-flex justify-content-between align-items-center mb-3">
+                    <h4
+                      style={{
+                        fontSize: "1.5rem",
+                        fontWeight: "bold",
+                        color: "white",
+                      }}
+                    >
+                      RECENT REVIEWS
+                    </h4>
+                    <Button variant="primary" style={{ width: "30%" }}>
+                      Write Review
+                    </Button>
+                  </div>
+                  {reviews.map((review, index) => (
+                    <div
+                      key={index}
+                      style={{
+                        backgroundColor: "#2f2f2f",
+                        padding: "15px",
+                        marginBottom: "10px",
+                        borderRadius: "5px",
+                        color: "white",
+                      }}
+                    >
+                      <p>
+                        <strong>{review.name}</strong> (Verified User) -{" "}
+                        {review.date}
+                      </p>
+                      <p>{review.review}</p>
+                      <div style={{ color: "#ffcc00" }}>
+                        {"⭐".repeat(review.rating)}
+                      </div>
+                    </div>
+                  ))}
+                  <Button variant="primary" style={{ width: "30%" }}>
+                    Load More Reviews
+                  </Button>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        );
+
+      case "FAQs":
+        return (
+          <div className="faq-section container py-5">
+            <h3 className="text-center text-white mb-5 text-primary">
+              Frequently Asked Questions
+            </h3>
+
+            <div className="accordion" id="faqAccordion">
+              {[
+                {
+                  q: "What is Google Gemini?",
+                  a: "Google Gemini is an advanced AI chatbot developed by Google AI. It uses GPT-4 and NLP to generate human-like responses for applications like customer support, content generation, and automation.",
+                },
+                {
+                  q: "How does Google Gemini work?",
+                  a: "Google Gemini uses GPT-4 and machine learning to analyze user input, understand context, and generate accurate responses using natural language processing.",
+                },
+                {
+                  q: "Can Google Gemini be used for customer service?",
+                  a: "Yes, it can automate responses, handle inquiries, and provide 24/7 customer support.",
+                },
+                {
+                  q: "How do I integrate Google Gemini into my website?",
+                  a: "You can use the Google Gemini API to connect the chatbot to your website, CRM, or platform.",
+                },
+                {
+                  q: "What industries benefit from Google Gemini?",
+                  a: "Industries like e-commerce, education, healthcare, finance, and marketing benefit from AI-powered automation and support.",
+                },
+                {
+                  q: "Does Google Gemini support multiple languages?",
+                  a: "Yes, it supports multiple languages for global communication and multilingual support.",
+                },
+                {
+                  q: "Can Google Gemini be customized for different business needs?",
+                  a: "Yes, the API allows customization of tone, behavior, and functionality per business needs.",
+                },
+                {
+                  q: "What is the difference between Google Gemini and other AI chatbots?",
+                  a: "Gemini uses GPT-4 for smarter responses, while others may rely on simpler or older models.",
+                },
+                {
+                  q: "Can Google Gemini generate content?",
+                  a: "Yes, it can write blogs, product descriptions, marketing content, and more.",
+                },
+                {
+                  q: "Is Google Gemini suitable for e-commerce?",
+                  a: "Absolutely, it can support customers, suggest products, and improve shopping experiences.",
+                },
+                {
+                  q: "How accurate is Google Gemini?",
+                  a: "It’s highly accurate due to GPT-4 and continuous learning.",
+                },
+                {
+                  q: "Can Google Gemini handle complex queries?",
+                  a: "Yes, it understands complex queries and maintains context over conversations.",
+                },
+                {
+                  q: "How can Google Gemini assist with business automation?",
+                  a: "It automates tasks like lead generation, support, and workflows for better efficiency.",
+                },
+                {
+                  q: "Does Google Gemini work on mobile devices?",
+                  a: "Yes, it integrates with mobile apps for chat and content features.",
+                },
+                {
+                  q: "How does Google Gemini handle data privacy and security?",
+                  a: "It follows industry standards, but businesses must ensure GDPR and data compliance.",
+                },
+                {
+                  q: "Can Google Gemini integrate with CRM systems?",
+                  a: "Yes, it can track interactions and generate insights through CRM integration.",
+                },
+                {
+                  q: "What is the Google Gemini API?",
+                  a: "It’s an interface to embed Gemini into sites, apps, and systems for AI services.",
+                },
+                {
+                  q: "What are the benefits of using Google Gemini for customer engagement?",
+                  a: "It offers fast replies, personalization, and high scalability to boost engagement.",
+                },
+                {
+                  q: "Can Google Gemini replace human customer service agents?",
+                  a: "It complements humans by handling routine tasks but complex issues may need humans.",
+                },
+                {
+                  q: "How does Google Gemini compare with ChatGPT?",
+                  a: "Both use GPT models, but Gemini integrates more tightly with Google’s ecosystem.",
+                },
+                {
+                  q: "How secure is the data with Google Gemini?",
+                  a: "It follows Google security practices; businesses must also handle data securely.",
+                },
+                {
+                  q: "Can Google Gemini assist with SEO?",
+                  a: "Yes, it generates SEO-friendly content for improved visibility.",
+                },
+                {
+                  q: "How does Google Gemini improve sales automation?",
+                  a: "It qualifies leads, automates follow-ups, and boosts conversions.",
+                },
+                {
+                  q: "How can I train Google Gemini for specific tasks?",
+                  a: "Provide domain-specific data and fine-tune it for tailored results.",
+                },
+                {
+                  q: "How fast is Google Gemini in generating responses?",
+                  a: "It responds almost instantly, enabling real-time interaction.",
+                },
+                {
+                  q: "Does Google Gemini integrate with social media platforms?",
+                  a: "Yes, it automates posts, comments, and DMs on platforms like Facebook and Twitter.",
+                },
+                {
+                  q: "How does Google Gemini handle multiple users at once?",
+                  a: "It supports many users simultaneously with real-time response handling.",
+                },
+                {
+                  q: "What are the best practices for using Google Gemini in business?",
+                  a: "Customize it, monitor its performance, and keep it updated with relevant data.",
+                },
+                {
+                  q: "Can Google Gemini work with voice assistants?",
+                  a: "Yes, it supports voice-enabled platforms with text-to-speech capabilities.",
+                },
+                {
+                  q: "Can Google Gemini be used for lead generation?",
+                  a: "Yes, it captures leads and transfers them to sales teams automatically.",
+                },
+                {
+                  q: "How can Google Gemini assist with workflow automation?",
+                  a: "It can manage data entry, emails, and reporting tasks automatically.",
+                },
+                {
+                  q: "How is Google Gemini deployed?",
+                  a: "Via the Google Gemini API integrated into your systems.",
+                },
+                {
+                  q: "What is the cost of using Google Gemini?",
+                  a: "Pricing is based on usage volume, such as API calls or data processed.",
+                },
+                {
+                  q: "Can Google Gemini assist in healthcare?",
+                  a: "Yes, it can help with patient queries and scheduling, but not for critical decisions.",
+                },
+              ]
+                .map((item, i) => ({ ...item, id: `faq${i}` }))
+                .filter((item, i) => showAllFaqs || i < 4)
+                .map((item, i) => (
+                  <div className="accordion-item mb-3" key={item.id}>
+                    <h2 className="accordion-header" id={`heading${item.id}`}>
+                      <button
+                        className={`accordion-button ${
+                          i !== 0 ? "collapsed" : ""
+                        }`}
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target={`#collapse${item.id}`}
+                        aria-expanded={i === 0 ? "true" : "false"}
+                        aria-controls={`collapse${item.id}`}
+                        style={{
+                          backgroundColor: "#161b22",
+                          color: "#c9d1d9",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        {item.q}
+                      </button>
+                    </h2>
+                    <div
+                      id={`collapse${item.id}`}
+                      className={`accordion-collapse collapse ${
+                        i === 0 ? "show" : ""
+                      }`}
+                      aria-labelledby={`heading${item.id}`}
+                      data-bs-parent="#faqAccordion"
+                    >
+                      <div
+                        className="accordion-body"
+                        style={{
+                          backgroundColor: "#0d1117",
+                          color: "#c9d1d9",
+                          border: "1px solid #238636",
+                          borderRadius: "8px",
+                          padding: "15px",
+                        }}
+                      >
+                        {item.a}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+
+              <div className="text-center mt-4">
+                <button
+                  className="btn btn-outline-light"
+                  onClick={() => setShowAllFaqs(!showAllFaqs)}
+                >
+                  {showAllFaqs ? "Show Less" : "Read More"}
+                </button>
+              </div>
+            </div>
+          </div>
+        );
+      case "why-we-use":
+        return (
+          <div className="container">
+            <div className="row g-4">
+              <div className="col-12">
+                <div className="custom-card text-light p-5 text-center">
+                  <h3 className="fw-bold mb-4 text-start text-primary">
+                    Why Use ChatGPT?
+                  </h3>
+
+                  <ul
+                    className="text-start"
+                    style={{
+                      listStyleType: "disc",
+                      paddingLeft: "1.5rem",
+                      fontSize: "1rem",
+                      lineHeight: "1.5",
+                    }}
+                  >
+                    <li className="mb-3">
+                      ChatGPT is excellent for writing, coding, brainstorming,
+                      and tutoring across subjects.
+                    </li>
+                    <li className="mb-3">
+                      Ideal for students, professionals, and creatives seeking
+                      fast and smart AI assistance.
+                    </li>
+                    <li className="mb-3">
+                      Supports plugins, web browsing, and file analysis with the
+                      latest GPT-4.5 model.
+                    </li>
+                    <li className="mb-3">
+                      Offers intuitive chat experience with memory, custom
+                      instructions, and conversation history.
+                    </li>
+                    <li className="mb-3">
+                      Available on web and mobile, integrated with tools like
+                      DALL·E, Python, and more.
+                    </li>
+                  </ul>
+
+                  <div className="text-center mt-4">
+                    <Button variant="primary" size="sm">
+                      Start Exploring Now
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+
+      case "alternative":
+        return (
+          <div className="container my-5">
+            <h4 className="text-center text-light mb-4">Alternatives</h4>
+            <div className="row justify-content-center gap-2">
+              <div
+                className="col-lg-8 col-md-8 col-sm-12"
+                style={{
+                  border: "1px solid #7B68EE",
+                  borderRadius: "12px",
+                  padding: "20px",
+                  backgroundColor: "#1e1e1e",
+                  minHeight: "100%",
+                }}
+              >
+                <ul className="ps-3" style={{ listStyleType: "disc" }}>
+                  <li className="mb-2">
+                    Gemini – Google’s AI model with strong multimodal
+                    understanding and app integrations.
+                  </li>
+                  <li className="mb-2">
+                    Claude – Known for context-rich responses and handling long
+                    documents effectively.
+                  </li>
+                  <li className="mb-2">
+                    Copilot – Microsoft’s AI integrated into Office and GitHub
+                    for productivity and code.
+                  </li>
+                  <li className="mb-2">
+                    Jasper – Great for AI content creation like marketing copy,
+                    blogs, and ads.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        );
+
+      default:
+        return null;
+    }
+  };
+
+  return (
+    <>
+      <div className="bg-dark">
+        <Link
+          to="/Aitools"
+          className="d-inline-block text-white text-decoration-none ml-3 py-1"
+        >
+          <i className="bi bi-arrow-left me-2"></i>Back to Directory
+        </Link>
+      </div>
+      <div className="bg-dark text-light min-vh-100 py-5">
+        <div className="container">
+          <div className="d-flex align-items-center justify-content-between mb-5">
+            {/* Left side (Text Section) */}
+            <div style={{ flex: 1, paddingRight: "30px" }}>
+              <img
+                src={Logo}
+                alt="Logo"
+                className="me-3"
+                style={{ width: "60px" }}
+              />
+              <h2>ChatGPTAI</h2>
+              <div className="text-warning mb-1">
+                ⭐⭐⭐⭐⭐ 95% Satisfaction
+              </div>
+              <p>
+                ChatGPT is an advanced AI chatbot developed by OpenAI using
+                GPT-3 and GPT-4, two of the most powerful language models
+                currently available. These models utilize transformer
+                architecture and machine learning techniques to generate text
+                that simulates human-like conversations. The technology behind
+                ChatGPT is grounded in natural language processing (NLP), which
+                helps it process, understand, and generate human-like responses
+                in natural language.
+              </p>
+            </div>
+
+            {/* Right side (Image Section) */}
+            <div style={{ flex: 1, textAlign: "center" }}>
+              <img
+                src={chatgpt}
+                className="img-fluid rounded-3"
+                style={{ maxWidth: "80%", height: "auto" }}
+              />
+            </div>
+          </div>
+          <section style={{ backgroundColor: "", padding: "3rem 0" }}>
+            <div className="container text-center">
+              <p className="text-primary">Create AI Content in 3 Easy Steps</p>
+              <h2
+                style={{
+                  fontWeight: "semibold",
+                  color: "#fff",
+                  marginBottom: "1rem",
+                }}
+              >
+                How does ChatGPT work?
+              </h2>
+
+              <div className="row g-4">
+                {/* Step 1 */}
+                <div className="col-md-4">
+                  <div
+                    style={{
+                      position: "relative",
+                      backgroundColor: "#1034A6",
+                      borderRadius: "12px",
+                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+                      padding: "2rem",
+                      height: "100%",
+                    }}
+                  >
+                    <style>
+                      {`
+              .step1 {
+                position: absolute;
+                bottom: 10px;
+                right: 15px;
+                font-size: 4rem;
+                font-weight: bold;
+                color: #7b61ff;
+                opacity: 0.6;
+              }
+            `}
+                    </style>
+                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+                      Ask Anything Naturally
+                    </h5>
+                    <p style={{ color: "#fff", margin: 0 }}>
+                      Just type your question or prompt like a normal
+                      conversation. ChatGPT understands context and intent
+                      instantly.
+                    </p>
+                    <div className="step1">1</div>
+                  </div>
+                </div>
+
+                {/* Step 2 */}
+                <div className="col-md-4">
+                  <div
+                    style={{
+                      position: "relative",
+                      backgroundColor: "#1034A6",
+                      borderRadius: "12px",
+                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+                      padding: "2rem",
+                      height: "100%",
+                    }}
+                  >
+                    <style>
+                      {`
+              .step2 {
+                position: absolute;
+                bottom: 10px;
+                right: 15px;
+                font-size: 4rem;
+                font-weight: bold;
+                color: #7b61ff;
+                opacity: 0.6;
+              }
+            `}
+                    </style>
+                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+                      ChatGPT Thinks & Responds
+                    </h5>
+                    <p style={{ color: "#fff", margin: 0 }}>
+                      Using GPT-4.5, it processes your prompt, reasons through
+                      context, and generates smart, helpful replies in seconds.
+                    </p>
+                    <div className="step2">2</div>
+                  </div>
+                </div>
+
+                {/* Step 3 */}
+                <div className="col-md-4">
+                  <div
+                    style={{
+                      position: "relative",
+                      backgroundColor: "#1034A6",
+                      borderRadius: "12px",
+                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+                      padding: "2rem",
+                      height: "100%",
+                    }}
+                  >
+                    <style>
+                      {`
+              .step3 {
+                position: absolute;
+                bottom: 10px;
+                right: 15px;
+                font-size: 4rem;
+                font-weight: bold;
+                color: #7b61ff;
+                opacity: 0.6;
+              }
+            `}
+                    </style>
+                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+                      Use, Refine or Expand
+                    </h5>
+                    <p style={{ color: "#fff", margin: 0 }}>
+                      Copy, edit, or ask follow-up questions. ChatGPT adapts to
+                      continue helping across writing, coding, research, and
+                      more.
+                    </p>
+                    <div className="step3">3</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Tab Navigation */}
+          <ul className="nav nav-tabs custom-tabs mb-4">
+            {[
+              "features",
+              "screenshots",
+              "reviews",
+              "FAQs",
+              // "technical",
+              "why-we-use",
+              "pros & Cons",
+              "alternative",
+            ].map((tab) => (
+              <li className="nav-item mb-2" key={tab}>
+                <button
+                  className={`nav-link ${activeTab === tab ? "active" : ""}`}
+                  onClick={() => setActiveTab(tab)}
+                >
+                  {tab.charAt(0).toUpperCase() + tab.slice(1)}
+                </button>
+              </li>
+            ))}
+          </ul>
+
+          {/* Tab Content */}
+          <div className="tab-content-area">{renderTabContent()}</div>
+
+          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
+            <h4 className="mb-3">Ready to get started with ChatGPTI?</h4>
+            <p className="mb-4">
+              Join thousands of professionals already boosting their
+              productivity!
+            </p>
+            <div>
+              <button className="btn btn-light me-3">Try Now for Free</button>
+              <button className="btn btn-outline-light">Schedule a Demo</button>
+            </div>
+            <small className="d-block mt-2">
+              No credit card required. 14-day free trial available.
+            </small>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Chatgpt;

@@ -1,0 +1,255 @@
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #1a202c; /* Dark gray background */
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+.navbar {
+  background: #1a202c; /* Dark gray background */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 1rem;
+  position: fixed;
+  top: 0;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: #ffffff; /* White text */
+  font-size: 1.5rem;
+}
+.navbar-brand:hover {
+  color: white;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-left {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  color: #e2e8f0; /* Light gray text */
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #38bdf8; /* Light blue on hover */
+  text-decoration: none;
+}
+
+.navbar-contact {
+  margin-left: auto;
+  padding-right: 1rem;
+}
+
+.contact-btn {
+  color: #ffffff; /* White text */
+  background: linear-gradient(
+    to right,
+    #0076ce,
+    #38bdf8
+  ); /* Gradient blue button */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: linear-gradient(
+    to right,
+    #38bdf8,
+    #0076ce
+  ); /* Reverse gradient */
+  box-shadow: 0 4px 10px rgba(56, 189, 248, 0.5); /* Glowing effect */
+}
+
+.glowing-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid rgba(56, 189, 248, 0.5); /* Light blue border */
+  border-radius: 50%;
+  animation: move-glow 3s infinite linear;
+  z-index: -1;
+}
+
+@keyframes move-glow {
+  0% {
+    transform: translate(0, 0);
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+  }
+  25% {
+    transform: translate(10px, 10px);
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.7);
+  }
+  50% {
+    transform: translate(0, 20px);
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.9);
+  }
+  75% {
+    transform: translate(-10px, 10px);
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.7);
+  }
+  100% {
+    transform: translate(0, 0);
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+  }
+}
+/* Hamburger Button */
+.navbar-toggler {
+  display: none;
+  background: none;
+  border: none;
+  color: #e2e8f0; /* Light gray */
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Dropdown Styling */
+.dropdown-card {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100vw;
+  background-color: #2d3748; /* Darker gray for dropdown */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  z-index: 9999;
+}
+
+.dropdown-card.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.dropdown-column {
+  background-color: #2d3748; /* Darker gray for dropdown items */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.dropdown-column:hover {
+  transform: scale(1.05);
+  background-color: #4a5568; /* Slightly lighter gray on hover */
+  transition: all 0.3s ease;
+}
+
+.dropdown-column h6 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #38bdf8; /* Light blue for headings */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dropdown-column a {
+  display: block;
+  color: #e2e8f0; /* Light gray text */
+  text-decoration: none;
+}
+
+.dropdown-column a:hover {
+  color: #38bdf8; /* Light blue on hover */
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 991.98px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+
+  .navbar-menu {
+    width: 100%;
+    flex-direction: column;
+    display: none;
+    background: #1a202c; /* Dark gray background for mobile menu */
+    padding: 1rem;
+  }
+
+  .navbar-menu.show {
+    display: flex;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-item {
+    width: 100%;
+    text-align: left;
+  }
+
+  .nav-link {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    color: #e2e8f0; /* Light gray text */
+  }
+
+  .navbar-contact {
+    display: none; /* Hide contact button on small screens */
+  }
+}
