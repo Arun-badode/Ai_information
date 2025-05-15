@@ -15,12 +15,8 @@ const AIAssistant = () => {
   return (
     <>
       <style>{`
-        .bg-ai {
-          background:"black;
-        }
-
         .text-vgear {
-          color: #00bcd4;
+          color: white;
         }
 
         .btn-vgear {
@@ -37,19 +33,13 @@ const AIAssistant = () => {
 
         .btn-outline-vgear {
           border-color: #00bcd4;
-          color: #00bcd4;
+          color: black;
           font-weight: 500;
         }
 
         .btn-outline-vgear:hover {
           background-color: #00bcd4;
-          color: white;
-        }
-
-        .feature-card:hover {
-          transform: translateY(-4px);
-          transition: 0.3s ease;
-          box-shadow: 0 0 12px rgba(0, 188, 212, 0.2);
+          color: black;
         }
 
         .chat-card {
@@ -57,24 +47,30 @@ const AIAssistant = () => {
           max-width: 500px;
           width: 100%;
           padding: 1rem;
-          background: white;
           box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-        }
-
-        .center-screen {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 100vh;
         }
 
         textarea::placeholder {
           color: #aaa;
         }
+
+        /* Fix for hover text color on white background */
+        .btn-outline-secondary.bg-white:hover {
+          color: black !important;
+        }
       `}</style>
 
-      <div className="bg-ai center-screen px-6">
-        <div className="chat-card">
+      <div
+        style={{
+          padding: "10px",
+          background: "#1A202C",
+          display: "flex",
+          justifyContent: "center",
+          alignContent: "center",
+          margin: "0 auto",
+        }}
+      >
+        <div className="chat-card bg-gradient-to-r from-sky-400 to-blue-1000">
           <div className="text-center mb-3">
             <h4 className="fw-bold text-vgear"> AI Assistant</h4>
             <p className="text-muted small m-0">Ask me anything.</p>
@@ -83,19 +79,19 @@ const AIAssistant = () => {
           <div className="d-flex align-items-center mb-3">
             <button
               onClick={toggleOptions}
-              className="btn btn-outline-vgear btn-sm"
+              className="btn btn-outline-vgear btn-sm bg-white"
             >
               <i className="fas fa-sliders-h me-2"></i> Options
             </button>
             {showOptions && (
               <div className="ms-2 d-flex gap-2 flex-wrap">
-                <button className="btn btn-outline-secondary btn-sm">
+                <button className="btn btn-outline-secondary btn-sm bg-white">
                   <i className="fas fa-image me-1"></i> Image
                 </button>
-                <button className="btn btn-outline-secondary btn-sm">
+                <button className="btn btn-outline-secondary btn-sm bg-white">
                   <i className="fas fa-code me-1"></i> Code
                 </button>
-                <button className="btn btn-outline-secondary btn-sm">
+                <button className="btn btn-outline-secondary btn-sm bg-white">
                   <i className="fas fa-book me-1"></i> Writing
                 </button>
               </div>
@@ -112,15 +108,15 @@ const AIAssistant = () => {
 
           <div className="d-flex justify-content-between align-items-center">
             <div>
-              <button className="btn btn-outline-secondary btn-sm me-2">
+              <button className="btn btn-outline-secondary bg-white btn-sm me-2">
                 <i className="fas fa-microphone"></i>
               </button>
-              <button className="btn btn-outline-secondary btn-sm">
+              <button className="btn btn-outline-secondary btn-sm bg-white">
                 <i className="fas fa-paperclip"></i>
               </button>
             </div>
-            <button className="btn btn-vgear btn-sm">
-              <i className="fas fa-paper-plane me-2"></i> Send
+            <button className="btn btn-vgear btn-sm bg-white">
+              <i className="fas fa-paper-plane me-2 text-black"> Send</i>
             </button>
           </div>
         </div>

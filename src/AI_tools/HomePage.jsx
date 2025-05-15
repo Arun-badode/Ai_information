@@ -23,13 +23,11 @@ const HomePage = () => {
       <Header />
       <AllAboutAITools />
       <TrendingAITools />
-
       <ToolTabs />
       <ReviewData />
       {/* <ToolsHub/> */}
       <ServiceCard />
       {/* <NewsCard /> */}
-
       <FAQ />
       <WhatWeDoSection />
       <Featured />
