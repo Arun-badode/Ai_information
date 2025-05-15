@@ -206,11 +206,7 @@ const AINewsPage = () => {
   };
 
   const GetLatestNews = async () => {
-    // if (!user || !user.image_id) {
-    //   console.error("user_id or image_id is missing");
-    //   return;
-    // }
-
+  
     try {
       const response = await axios.get("https://newsapi.org/v2/everything", {
         headers: {

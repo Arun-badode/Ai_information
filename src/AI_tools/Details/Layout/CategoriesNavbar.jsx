@@ -14,6 +14,7 @@ const CategoriesNavbar = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const navbarRef = useRef(null);
   const dropdownRefs = useRef({});
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   // Toggle dropdown visibility on button click
   const toggleDropdown = (dropdown, event) => {
@@ -49,9 +50,9 @@ const CategoriesNavbar = () => {
         style={{
           background: "linear-gradient(135deg, #3a7bd5, #7f53ac)",
           borderRadius: "10px",
-          marginTop: "0.3rem",
-
-          // top: 100,
+          marginTop: "0.1rem",
+          position: "sticky",
+          top: 100,
           width: "100%",
           zIndex: 1000,
           overflow: "visible",
@@ -200,6 +201,7 @@ const CategoriesNavbar = () => {
               </div>
             )}
           </li>
+
           {/* Ai for Music end  */}
 
           {/*   AI For  Resume */}
@@ -874,7 +876,6 @@ const CategoriesNavbar = () => {
                     <Link to="/Grammarly">Grammarly AI</Link>
                     <Link to="/CodaAI">Coda AI</Link>
                     <Link to="/MiroAI">Miro AI</Link>
-
                     <Link to="/OtterAI">Otter AI</Link>
                     <Link to="/QlikSenseAI">Qlik Sense AI</Link>
                   </div>
@@ -1325,6 +1326,447 @@ const CategoriesNavbar = () => {
 
           {/* Ai for search engines end  */}
         </ul>
+
+        <div className="mobile-category-toggle">
+          <button onClick={() => setShowMobileMenu((prev) => !prev)}>
+            Categories
+          </button>
+        </div>
+
+        {/* Conditionally show category list */}
+        {window.innerWidth <= 991 && (
+          <ul className={`nav-list flex ${showMobileMenu ? "active" : ""}`}>
+            {/* AI for Animation */}
+            <li
+              className="nav-item dropdown"
+              onClick={(e) => toggleDropdown("ai-video", e)}
+            >
+              <span className="dropdown-toggle text-white">
+                AI for Animation
+              </span>
+              {activeDropdown === "ai-video" && (
+                <div className="dropdown-card show">
+                  <div className="dropdown-grid-2">
+                    <div className="dropdown-column">
+                      <h6>
+                        Content Generation <FaPencilAlt size={20} />
+                      </h6>
+                      <Link
+                        to="/RunWayGen"
+                        onClick={() => setShowMobileMenu(false)}
+                      >
+                        RunWayGen
+                      </Link>
+                      <Link
+                        to="/DescriptAI"
+                        onClick={() => setShowMobileMenu(false)}
+                      >
+                        Descript AI
+                      </Link>
+                      <Link
+                        to="/Veedio"
+                        onClick={() => setShowMobileMenu(false)}
+                      >
+                        Veedio
+                      </Link>
+                      <Link
+                        to="/Lumen5"
+                        onClick={() => setShowMobileMenu(false)}
+                      >
+                        Lumen 5
+                      </Link>
+                      <Link
+                        to="/HeyGen"
+                        onClick={() => setShowMobileMenu(false)}
+                      >
+                        HeyGen
+                      </Link>
+                    </div>
+
+                    <div
+                      className="dropdown-column"
+                      style={{ minWidth: "150px" }}
+                    >
+                      <h6>
+                        Design Tools <SiAntdesign size={20} />
+                      </h6>
+                      <Link
+                        to="/Animoto"
+                        onClick={() => setShowMobileMenu(false)} // This will close the mobile menu when clicked
+                      >
+                        Animoto
+                      </Link>
+                      <Link
+                        to="/RephraseAI"
+                        onClick={() => setShowMobileMenu(false)} // Close mobile menu
+                      >
+                        Rephrase AI
+                      </Link>
+                      <Link
+                        to="/Magisto"
+                        onClick={() => setShowMobileMenu(false)} // Close mobile menu
+                      >
+                        Magisto
+                      </Link>
+                      <Link
+                        to="/SynthesiaAI"
+                        onClick={() => setShowMobileMenu(false)} // Close mobile menu
+                      >
+                        SynthesiaAI
+                      </Link>
+                      <Link
+                        to="/PictoryAI"
+                        onClick={() => setShowMobileMenu(false)} // Close mobile menu
+                      >
+                        PictoryAI
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </li>
+
+            {/* AI for Music */}
+            <li
+              className="nav-item dropdown"
+              onClick={() => toggleDropdown("music")}
+            >
+              <span className="dropdown-toggle text-white">AI For Music</span>
+              {activeDropdown === "music" && (
+                <div
+                  className="dropdown-card show"
+                  style={{
+                    maxWidth: "600px",
+                    left: "0rem",
+                    marginTop: "3rem",
+                    position: "absolute",
+                    zIndex: 1000,
+                  }}
+                >
+                  <div
+                    className={`dropdown-grid ${
+                      window.innerWidth <= 991 ? "single-column" : ""
+                    }`}
+                  >
+                    {/* Content Generation Column */}
+                    <div
+                      className="dropdown-column"
+                      style={{ minWidth: "150px" }}
+                    >
+                      <h6>
+                        Content Generation <FaPencilAlt size={20} />
+                      </h6>
+                      <Link
+                        to="/AmperMusicAI"
+                        onClick={() => setShowMobileMenu(false)}
+                      >
+                        AmperMusicAI
+                      </Link>
+                      <Link
+                        to="/AviaAI"
+                        onClick={() => setShowMobileMenu(false)}
+                      >
+                        AviaAI
+                      </Link>
+                      <Link
+                        to="/BoomyAI"
+                        onClick={() => setShowMobileMenu(false)}
+                      >
+                        BoomyAI
+                      </Link>
+                      <Link
+                        to="/DescriptAI"
+                        onClick={() => setShowMobileMenu(false)}
+                      >
+                        DescriptAI
+                      </Link>
+                      <Link
+                        to="/EcrettMusicAI"
+                        onClick={() => setShowMobileMenu(false)}
+                      >
+                        EcrettMusicAI
+                      </Link>
+                    </div>
+                    {/* Content Generation Column */}
+                    <div
+                      className="dropdown-column"
+                      style={{ minWidth: "150px" }}
+                    >
+                      <h6>
+                        Content Generation <FaPencilAlt size={20} />
+                      </h6>
+                      <Link
+                        to="/JukedeckAI"
+                        onClick={() => setShowMobileMenu(false)}
+                      >
+                        JukedeckAI
+                      </Link>
+                      <Link
+                        to="/ResembleAI"
+                        onClick={() => setShowMobileMenu(false)}
+                      >
+                        ResembleAI
+                      </Link>
+                      <Link
+                        to="/SoundrawAI"
+                        onClick={() => setShowMobileMenu(false)}
+                      >
+                        SoundrawAI
+                      </Link>
+                      <Link
+                        to="/VoiceModAI"
+                        onClick={() => setShowMobileMenu(false)}
+                      >
+                        VoiceModAI
+                      </Link>
+                      <Link
+                        to="/LalalAI"
+                        onClick={() => setShowMobileMenu(false)}
+                      >
+                        LalalAI
+                      </Link>
+                    </div>
+
+                    {/* Content Generation Column */}
+                    <div
+                      className="dropdown-column"
+                      style={{ minWidth: "150px" }}
+                    >
+                      <h6>
+                        Voice <FaPencilAlt size={20} />
+                      </h6>
+                      <Link
+                        to="/PlayHiAI"
+                        onClick={() => setShowMobileMenu(false)}
+                      >
+                        PlayHiAI
+                      </Link>
+                      <Link
+                        to="/DescriptOverdub"
+                        onClick={() => setShowMobileMenu(false)}
+                      >
+                        DescriptOverdub
+                      </Link>
+                      <Link
+                        to="/WallsaidAI"
+                        onClick={() => setShowMobileMenu(false)}
+                      >
+                        WallsaidAI
+                      </Link>
+                      <Link
+                        to="/LovoAi"
+                        onClick={() => setShowMobileMenu(false)}
+                      >
+                        LovoAi
+                      </Link>
+                      <Link
+                        to="/DeepgramAI"
+                        onClick={() => setShowMobileMenu(false)}
+                      >
+                        DeepgramAI
+                      </Link>
+                    </div>
+                    {/* Content Generation Column */}
+                    <div
+                      className="dropdown-column"
+                      style={{ minWidth: "150px" }}
+                    >
+                      <h6>
+                        Voice <FaPencilAlt size={20} />
+                      </h6>
+                      <Link
+                        to="/SpeechifyAI"
+                        onClick={() => setShowMobileMenu(false)}
+                      >
+                        SpeechifyAI
+                      </Link>
+                      <Link
+                        to="/AssemblyAI"
+                        onClick={() => setShowMobileMenu(false)}
+                      >
+                        AssemblyAI
+                      </Link>
+                      <Link
+                        to="/RevAI"
+                        onClick={() => setShowMobileMenu(false)}
+                      >
+                        RevAI
+                      </Link>
+                      <Link
+                        to="/MurfAI"
+                        onClick={() => setShowMobileMenu(false)}
+                      >
+                        MurfAI
+                      </Link>
+                      <Link
+                        to="/ElevenlabsAI"
+                        onClick={() => setShowMobileMenu(false)}
+                      >
+                        ElevenlabsAI
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </li>
+
+            {/* AI for Resume */}
+            <li
+              className="nav-item dropdown"
+              onClick={() => toggleDropdown("resume")}
+            >
+              <span className="dropdown-toggle text-white">AI for Resume</span>
+              {activeDropdown === "resume" && (
+                <div className="dropdown-card show">
+                  <div className="dropdown-grid">
+                    <div className="dropdown-column">
+                      <h6>
+                        Content Generation <FaPencilAlt size={20} />
+                      </h6>
+                      <Link
+                        to="JobScanAI/"
+                        onClick={() => setShowMobileMenu(false)}
+                      >
+                        JobScanAI
+                      </Link>
+                      <Link
+                        to="TestimA/"
+                        onClick={() => setShowMobileMenu(false)}
+                      >
+                        TestimA
+                      </Link>
+                      <Link
+                        to="FunctionizeAI/"
+                        onClick={() => setShowMobileMenu(false)}
+                      >
+                        FunctionizeAI
+                      </Link>
+                      <Link
+                        to="TricentisAI/"
+                        onClick={() => setShowMobileMenu(false)}
+                      >
+                        TricentisAI
+                      </Link>
+                      <Link
+                        to="PerfectoAI/"
+                        onClick={() => setShowMobileMenu(false)}
+                      >
+                        PerfectoAI
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </li>
+
+            {/* AI for Chatbots */}
+            <li
+              className="nav-item dropdown"
+              onClick={(e) => toggleDropdown("Chatbots", e)}
+            >
+              <span className="dropdown-toggle dropdown-toggle-hover text-white">
+                AI For Chatbots
+              </span>
+              {activeDropdown === "Chatbots" && (
+                <div
+                  className="dropdown-card show"
+                  style={{
+                    maxWidth: "520px",
+                    left: "0rem",
+                    marginTop: "3rem",
+                    position: "absolute",
+                    zIndex: 1000,
+                  }}
+                >
+                  <div
+                    className={`dropdown-grid ${
+                      window.innerWidth <= 991 ? "single-column" : ""
+                    }`}
+                  >
+                    {/* Content Generation Column */}
+                    <div
+                      className="dropdown-column"
+                      style={{ minWidth: "150px" }}
+                    >
+                      <h6>
+                        Content Generation <FaPencilAlt size={20} />
+                      </h6>
+
+                      <Link to="/Chatgpt">ChatGPTAI</Link>
+                      <Link to="/PerplexityAI">PerplexityAI</Link>
+                      <Link to="/Gemini">Gemini</Link>
+                      <Link to="/SnatchBot">SnatchBot</Link>
+                      <Link to="/PerplexityAI">PerplexityAI</Link>
+                      <Link to="/YouchatAI">YouchatAI</Link>
+                    </div>
+
+                    <div
+                      className="dropdown-column"
+                      style={{ minWidth: "150px" }}
+                    >
+                      <h6>
+                        Content Generation <FaPencilAlt size={20} />
+                      </h6>
+
+                      <Link to="/PoeAI">PoeAI</Link>
+                      <Link to="/ReplikaAI">ReplikaAI</Link>
+                      <Link to="/JasperAI">JasperAI</Link>
+                      <Link to="/Tidio">Tidio</Link>
+                      <Link to="/ClaudeAI">ClaudeAI</Link>
+                      <Link to="/CharacterAI">CharacterAI</Link>
+                    </div>
+
+                    {/* Content Generation Column */}
+                    <div
+                      className="dropdown-column"
+                      style={{ minWidth: "150px" }}
+                    >
+                      <h6>
+                        Content Generation <FaPencilAlt size={20} />
+                      </h6>
+
+                      <Link to="/PiAI">PIAI</Link>
+                      <Link to="/DriftAI">Drift AI</Link>
+                      <Link to="/FlowXO">FLowXO</Link>
+                      <Link to="/Botsify">Botsify</Link>
+                      <Link to="/AivoAI">Aivo AI</Link>
+                      <Link to="/MobileMonkey">Mobile Monkey</Link>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </li>
+
+            {/* AI Writing & Content Creation */}
+            <li
+              className="nav-item dropdown"
+              onClick={(e) => toggleDropdown("writing", e)}
+            >
+              <span className="dropdown-toggle text-white">AI for Writing</span>
+              {activeDropdown === "writing" && (
+                <div className="dropdown-card show">
+                  <div className="dropdown-grid">
+                    <div className="dropdown-column">
+                      <h6>
+                        Content Generation <FaPencilAlt size={20} />
+                      </h6>
+                      <Link
+                        to="/CopyAI"
+                        onClick={() => setShowMobileMenu(false)}
+                      >
+                        Copy AI
+                      </Link>
+                      <Link to="#">AI Writer 2</Link>
+                      <Link to="#">AI Writer 3</Link>
+                      <Link to="#">AI Writer 4</Link>
+                      <Link to="#">AI Writer 5</Link>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </li>
+          </ul>
+        )}
       </nav>
     </div>
   );
