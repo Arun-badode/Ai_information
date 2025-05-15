@@ -5,6 +5,7 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 import deatilimage from "../../../Images/DetailImage.png";
+import grammarly from "../../../../public/assets/Img/AI for Business/4.png";
 
 // review section data
 const reviews = [
@@ -567,7 +568,7 @@ const Grammarly = () => {
             {/* Right side (Image Section) */}
             <div style={{ flex: 1, textAlign: "center" }}>
               <img
-                src="/src/Images/4.png"
+                src={grammarly}
                 className="img-fluid rounded-3"
                 style={{ maxWidth: "80%", height: "auto" }}
               />
