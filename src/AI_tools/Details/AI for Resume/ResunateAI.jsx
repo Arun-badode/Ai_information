@@ -5,7 +5,7 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
-
+import resunate from "../../../../public/assets/Img/Ai for Resume/48.png";
 // review section data
 const reviews = [
   {
@@ -814,7 +814,7 @@ const ResunateAI = () => {
               className="col-6 col-md-12 "
             >
               <p className="text-primary">Write better, faster</p>
-              <h1>Hiration AI</h1>
+              <h1>Resunate AI</h1>
               <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
               <p>
                 Resunate AI is an innovative AI-powered platform designed to
@@ -858,7 +858,7 @@ const ResunateAI = () => {
               className="col-6 col-md-12 mb-5  "
             >
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
+                src={resunate}
                 style={{ MaxWidth: "100%", height: "300px" }}
               />
             </div>
@@ -1015,7 +1015,7 @@ const ResunateAI = () => {
           <div className="tab-content-area">{renderTabContent()}</div>
 
           <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with RunWayGen?</h4>
+            <h4 className="mb-3">Ready to get started with Resunate AI?</h4>
             <p className="mb-4">
               Join thousands of professionals already boosting their
               productivity!

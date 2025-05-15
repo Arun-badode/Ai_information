@@ -33,10 +33,19 @@ const ScrollToTopButton = () => {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-4 right-4 p-3 bg-blue-500 text-white rounded-full shadow-lg transition-opacity ${
+      className={`fixed bottom-4 left-4  text-white shadow-lg transition-opacity ${
         isVisible ? "opacity-100" : "opacity-0"
       }`}
-      style={{ display: isVisible ? "block" : "none" }}
+      style={{
+        display: isVisible ? "block" : "none",
+        width: "48px", // Equal width
+        height: "48px", // Equal height
+        borderRadius: "50%", // Makes it circular
+        fontSize: "20px", // Bigger arrow
+        textAlign: "center", // Centers content
+        lineHeight: "48px", // Vertical center
+        backgroundColor: "#005A9C",
+      }}
     >
       ↑
     </button>

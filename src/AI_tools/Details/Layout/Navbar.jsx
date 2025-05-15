@@ -88,6 +88,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import Chatbot from "./Chatbot";
 // import CategoriesNavbar from "./CategoriesNavbar";
 // import BreadcrumbScroll from "./BreadcrumbScroll";
 
@@ -152,6 +153,7 @@ const Navbar = () => {
       </nav>
       {/* <BreadcrumbScroll /> */}
       {/* <CategoriesNavbar /> */}
+      <Chatbot />
     </>
   );
 };

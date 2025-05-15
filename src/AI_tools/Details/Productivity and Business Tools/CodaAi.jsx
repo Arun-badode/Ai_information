@@ -5,6 +5,7 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
+import coda from "../../../../public/assets/Img/AI for Business/6.png";
 
 // review section data
 const reviews = [
@@ -588,7 +589,7 @@ const CodaAI = () => {
             {/* Right side (Image Section) */}
             <div style={{ flex: 1, textAlign: "center" }}>
               <img
-                src="/src/Images/6.png"
+                src={coda}
                 className="img-fluid rounded-3"
                 style={{ maxWidth: "80%", height: "auto" }}
               />
