@@ -36,15 +36,24 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
   margin: 0;
+
+  /* height: calc(2 * 40px + 1rem);  */
 }
 
-/* Navigation item */
+
 .nav-item {
   position: relative;
   font-size: 13px;
   display: inline-block;
+
+  flex: 0 0 10%; 
+  /* line-height: 20px;  */
+  /* white-space: nowrap; 
+  text-overflow: ellipsis; 
+  max-width: 10%; 
+  box-sizing: border-box;
+  text-align: center; */
 }
 
 /* Toggle button */
@@ -344,7 +353,6 @@ body {
     flex-direction: column;
   }
 }
-
 /* Hide category list on larger screens */
 @media (min-width: 992px) {
   .mobile-category-toggle {

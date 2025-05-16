@@ -1511,7 +1511,7 @@ const CategoriesNavbar = () => {
                   onClick={() => toggleDropdown(null)}
                   style={{
                     marginTop: "5rem",
-                    marginBottom: "2rem",
+                    marginBottom: "3rem",
                     padding: "0.5rem 1rem",
                     fontSize: "1rem",
                     background: "#38bdf8",
