@@ -775,7 +775,7 @@ const CategoriesNavbar = () => {
                 className="dropdown-card show"
                 style={{
                   maxWidth: "355px",
-                  left: "0rem",
+                  left: "-50rem",
                   marginTop: "0.8rem",
                   position: "absolute",
                   zIndex: 1000,
@@ -1490,8 +1490,6 @@ const CategoriesNavbar = () => {
                     AI For Search
                   </span>
                 </li>
-
-            
               </ul>
             ) : (
               // Dropdown open hai — sirf activeDropdown category ka dropdown content dikhayein fullscreen style
@@ -1512,7 +1510,8 @@ const CategoriesNavbar = () => {
                 <button
                   onClick={() => toggleDropdown(null)}
                   style={{
-                    marginBottom: "1rem",
+                    marginTop: "5rem",
+                    marginBottom: "2rem",
                     padding: "0.5rem 1rem",
                     fontSize: "1rem",
                     background: "#38bdf8",
@@ -2396,7 +2395,7 @@ const CategoriesNavbar = () => {
                     style={{
                       maxWidth: "340px",
                       left: "0",
-                      marginTop: "3rem",
+                      marginTop: "-35rem",
                       position: "absolute",
                       zIndex: 1000,
                       overflow: "visible",
@@ -2517,7 +2516,7 @@ const CategoriesNavbar = () => {
                     style={{
                       maxWidth: "355px",
                       left: "0",
-                      marginTop: "3rem",
+                      marginTop: "-35rem",
                       position: "absolute",
                       zIndex: 1000,
                       overflow: "visible",
@@ -2646,8 +2645,8 @@ const CategoriesNavbar = () => {
                     className="dropdown-card show"
                     style={{
                       maxWidth: "355px",
-                      left: "-16rem",
-                      marginTop: "3rem",
+                      left: "0rem",
+                      marginTop: "-35rem",
                       position: "absolute",
                       zIndex: 1000,
                       overflow: "visible",
@@ -2794,8 +2793,8 @@ const CategoriesNavbar = () => {
                     className="dropdown-card show"
                     style={{
                       maxWidth: "355px",
-                      left: "-20rem",
-                      marginTop: "3rem",
+                      left: "0rem",
+                      marginTop: "-40rem",
                       position: "absolute",
                       zIndex: 1000,
                       overflow: "visible",
@@ -2915,8 +2914,8 @@ const CategoriesNavbar = () => {
                     className="dropdown-card show"
                     style={{
                       maxWidth: "355px",
-                      left: "-18rem",
-                      marginTop: "3rem",
+                      left: "0rem",
+                      marginTop: "-40rem",
                       position: "absolute",
                       zIndex: 1000,
                       overflow: "visible",
@@ -2993,8 +2992,8 @@ const CategoriesNavbar = () => {
                     className="dropdown-card show"
                     style={{
                       maxWidth: "355px",
-                      left: "3rem",
-                      marginTop: "0.8rem",
+                      left: "0rem",
+                      marginTop: "-40rem",
                       position: "absolute",
                       zIndex: 1000,
                       overflow: "visible",
@@ -3151,7 +3150,7 @@ const CategoriesNavbar = () => {
                     style={{
                       maxWidth: "355px",
                       left: "0",
-                      marginTop: "3rem",
+                      marginTop: "-40rem",
                       position: "absolute",
                       zIndex: 1000,
                       overflow: "visible",
@@ -3237,7 +3236,7 @@ const CategoriesNavbar = () => {
                     style={{
                       maxWidth: "800px",
                       left: "0rem",
-                      marginTop: "0.8rem",
+                      marginTop: "-40rem",
                       position: "absolute",
                       zIndex: 1000,
                       overflow: "visible",
@@ -3495,7 +3494,7 @@ const CategoriesNavbar = () => {
                     style={{
                       maxWidth: "800px",
                       left: "0rem",
-                      marginTop: "0.8rem",
+                      marginTop: "-40rem",
                       position: "absolute",
                       zIndex: 1000,
                       overflow: "visible",
@@ -3607,7 +3606,7 @@ const CategoriesNavbar = () => {
                     style={{
                       maxWidth: "800px",
                       left: "0rem",
-                      marginTop: "0.8rem",
+                      marginTop: "-40rem",
                       position: "absolute",
                       zIndex: 1000,
                       overflow: "visible",
@@ -3754,8 +3753,8 @@ const CategoriesNavbar = () => {
                     className="dropdown-card show"
                     style={{
                       maxWidth: "355px",
-                      left: "-8rem",
-                      marginTop: "0.8rem",
+                      left: "0rem",
+                      marginTop: "-40rem",
                       position: "absolute",
                       zIndex: 1000,
                     }}
@@ -3874,8 +3873,8 @@ const CategoriesNavbar = () => {
                     className="dropdown-card show"
                     style={{
                       maxWidth: "355px",
-                      left: "-10rem",
-                      marginTop: "0.8rem",
+                      left: "0rem",
+                      marginTop: "-40rem",
                       position: "absolute",
                       zIndex: 1000,
                     }}
@@ -4003,8 +4002,8 @@ const CategoriesNavbar = () => {
                     className="dropdown-card show"
                     style={{
                       maxWidth: "355px",
-                      left: "-10rem",
-                      marginTop: "0.8rem",
+                      left: "0rem",
+                      marginTop: "-40rem",
                       position: "absolute",
                       zIndex: 1000,
                     }}
@@ -4114,8 +4113,8 @@ const CategoriesNavbar = () => {
                     className="dropdown-card show"
                     style={{
                       maxWidth: "355px",
-                      left: "-20rem",
-                      marginTop: "0.8rem",
+                      left: "0rem",
+                      marginTop: "-40rem",
                       position: "absolute",
                       zIndex: 1000,
                     }}
@@ -4229,6 +4228,101 @@ const CategoriesNavbar = () => {
                   </div>
                 )}
 
+                {activeDropdown === "recruitment" && (
+                  <div>
+                    <h2 className="text-white mb-4">AI for Recruitment</h2>
+                    <div className="dropdown-grid single-column">
+                      <div className="dropdown-column">
+                        <h6>Candidate Screening</h6>
+                        <Link
+                          to="/HireVue"
+                          onClick={() => {
+                            setShowMobileMenu(false);
+                            setActiveDropdown(null);
+                          }}
+                        >
+                          HireVue AI
+                        </Link>
+                        <Link
+                          to="/Pymetrics"
+                          onClick={() => {
+                            setShowMobileMenu(false);
+                            setActiveDropdown(null);
+                          }}
+                        >
+                          Pymetrics AI
+                        </Link>
+                        <Link
+                          to="/XOR"
+                          onClick={() => {
+                            setShowMobileMenu(false);
+                            setActiveDropdown(null);
+                          }}
+                        >
+                          XOR AI
+                        </Link>
+                        <Link
+                          to="/Hiretual"
+                          onClick={() => {
+                            setShowMobileMenu(false);
+                            setActiveDropdown(null);
+                          }}
+                        >
+                          Hiretual AI
+                        </Link>
+                        <Link
+                          to="/SeekOut"
+                          onClick={() => {
+                            setShowMobileMenu(false);
+                            setActiveDropdown(null);
+                          }}
+                        >
+                          SeekOut AI
+                        </Link>
+                      </div>
+                      <div className="dropdown-column">
+                        <h6>Interview & Assessment</h6>
+                        <Link
+                          to="/Vervoe"
+                          onClick={() => {
+                            setShowMobileMenu(false);
+                            setActiveDropdown(null);
+                          }}
+                        >
+                          Vervoe AI
+                        </Link>
+                        <Link
+                          to="/MyInterview"
+                          onClick={() => {
+                            setShowMobileMenu(false);
+                            setActiveDropdown(null);
+                          }}
+                        >
+                          MyInterview AI
+                        </Link>
+                        <Link
+                          to="/Zoho"
+                          onClick={() => {
+                            setShowMobileMenu(false);
+                            setActiveDropdown(null);
+                          }}
+                        >
+                          Zoho AI
+                        </Link>
+                        <Link
+                          to="/iCIMS"
+                          onClick={() => {
+                            setShowMobileMenu(false);
+                            setActiveDropdown(null);
+                          }}
+                        >
+                          iCIMS AI
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
                 {/* baki categories ke liye bhi similar structure */}
               </div>
             )}
@@ -4239,4 +4333,4 @@ const CategoriesNavbar = () => {
   );
 };
 
-export default CategoriesNavbar;
+export default CategoriesNavbar
