@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
-import magisto from "../../../Images/MagistoAI.png";
-import { Shield } from "lucide-react";
 
+import { Shield } from "lucide-react";
+import palo from "../../../../public/assets/Img/AI for Cybersecurity/8.png";
 // review section data
 const reviews = [
   {
@@ -702,10 +702,7 @@ const Palo = () => {
               }}
               className="col-6 col-md-12 mb-5  "
             >
-              <img
-                src={magisto}
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
+              <img src={palo} style={{ MaxWidth: "100%", height: "300px" }} />
             </div>
           </div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
