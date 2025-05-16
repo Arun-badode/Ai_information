@@ -5,7 +5,7 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
-import aifi from "../../../../public/assets/Img/Ai  for Retail/4.png";
+import grabango from "../../../../public/assets/Img/Ai  for Retail/8.png";
 // review section data
 const reviews = [
   {
@@ -893,7 +893,7 @@ const Grabango = () => {
               className="col-6 col-md-12 mb-5  "
             >
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
+                src={grabango}
                 style={{ MaxWidth: "100%", height: "300px" }}
               />
             </div>

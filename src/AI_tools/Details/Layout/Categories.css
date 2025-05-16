@@ -37,10 +37,8 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
-  margin: 0;
 
-  height: calc(2 * 40px + 1rem); /* 2 rows * item height + gap */
+  margin: 0;
 }
 
 /* Navigation item */
@@ -49,13 +47,7 @@ body {
   font-size: 13px;
   display: inline-block;
 
-  flex: 0 0 10%; /* Exactly 10 items per row */
-  line-height: 20px; /* adjust for vertical centering */
-  white-space: nowrap; /* prevent wrapping inside item */
-  text-overflow: ellipsis; /* if text too long */
-  max-width: 10%; /* Max width bhi 10% rakhein */
-  box-sizing: border-box;
-  text-align: center;
+  flex: 0 0 10%;
 }
 
 /* Toggle button */
