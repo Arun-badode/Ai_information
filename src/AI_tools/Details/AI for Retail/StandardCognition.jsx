@@ -880,7 +880,7 @@ const StandardCongnition = () => {
               className="col-6 col-md-12 mb-5  "
             >
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
+                src={standard}
                 style={{ MaxWidth: "100%", height: "300px" }}
               />
             </div>

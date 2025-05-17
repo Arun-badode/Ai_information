@@ -1,5 +1,12 @@
 import React, { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import GPT3 from "../../public/assets/Img/Trending AI tools/5.png";
+import Financial from "../../public/assets/Img/Trending AI tools/1.png";
+import GoogleAnalytics from "../../public/assets/Img/Trending AI tools/2.png";
+import HubSpot from "../../public/assets/Img/Trending AI tools/3.png";
+import DALL from "../../public/assets/Img/Trending AI tools/4.png";
+
+
 
 const TrendingTools = () => {
   const categories = [
@@ -18,51 +25,47 @@ const TrendingTools = () => {
       {
         name: "OpenAI GPT-4",
         description: "Next-gen conversational AI for businesses.",
-        image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDfQJssdP7BgB4nAAFl7XDLEn1IVwpWqqftQ&s",
+        image: GPT3,
         rating: 4.8,
       },
       {
         name: "AI Financial Tech",
         description: "AI for automating financial services.",
-        image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDyfcfZMSw_wdDyCZ3L1hDhf4o7cXopIvOiA&s",
+        image: Financial,
+
         rating: 4.7,
       },
       {
         name: "Google Analytics AI",
         description: "AI-enhanced web analytics for business growth.",
-        image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkUgpcBm-WVY4AyT-1eqafgpZv-mPJUoeYog&s",
+        image: GoogleAnalytics,
         rating: 4.6,
       },
       {
         name: "HubSpot AI",
         description: "AI-powered CRM for smarter marketing.",
-        image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL4yI3fL0zeMETPHzz87Dws0D8tnsgxpYLFA&s",
+        image: HubSpot,
         rating: 4.8,
       },
       {
-        name: "Zapier AI",
-        description: "AI-driven automation for workflows.",
-        image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTounDsF1wu36MGsjfCSRsA_3YQCvqjU1G0sQ&s",
-        rating: 4.5,
+        name: "AI Financial Tech",
+        description: "AI for automating financial services.",
+        image: Financial,
+
+        rating: 4.7,
       },
       {
-        name: "ActiveCampaign AI",
-        description: "AI for marketing automation and email campaigns.",
-        image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIAnyi0SWvftAGL-HrYVFDEJkESPgEvWJj6w&s",
-        rating: 4.6,
+        name: "HubSpot AI",
+        description: "AI-powered CRM for smarter marketing.",
+        image: HubSpot,
+        rating: 4.8,
       },
     ],
     Productivity: [
       {
         name: "DALL-E 2",
         description: "AI tool for creating stunning images from text prompts.",
-        image: "https://via.placeholder.com/150",
+        image: DALL,
         rating: 4.9,
       },
       {
@@ -194,15 +197,12 @@ const TrendingTools = () => {
   };
 
   return (
-    <div
-      className="bg-[#1A202C]
-
- text-white py-16"
-    >
+    <div className="bg-[#1A202C] text-white py-16">
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-3xl font-semibold mb-8">Trending AI Tools</h2>
 
-        <div className="flex justify-center items-center space-x-4 mb-8">
+        {/* Categories with horizontal scroll */}
+        <div className="flex justify-center items-center space-x-4 mb-8 overflow-x-auto px-4">
           {categories.map((category, index) => (
             <button
               key={index}
@@ -211,7 +211,7 @@ const TrendingTools = () => {
                 selectedCategory === category
                   ? "bg-white text-gray-900"
                   : "bg-gray-700 text-white"
-              } py-2 px-4 rounded-full hover:bg-gradient-to-r from-sky-400 to-blue-1000 hover:text-white transition duration-300`}
+              } py-1 sm:py-2 px-3 sm:px-4 rounded-full hover:bg-gradient-to-r from-sky-400 to-blue-1000 hover:text-white transition duration-300 whitespace-nowrap`}
             >
               {category}
             </button>
@@ -223,22 +223,26 @@ const TrendingTools = () => {
           categories.
         </p>
 
-        <div className="flex justify-between mb-6">
+        {/* Navigation Arrows */}
+        <div className="flex justify-between mb-6 px-4 max-w-xs mx-auto">
           <button
             onClick={prevSlide}
-            className="bg-gradient-to-r from-sky-400 to-blue-1000 p-2 rounded-full text-white hover:bg-indigo-500"
+            className="bg-gradient-to-r from-sky-400 to-blue-1000 p-3 rounded-full text-white hover:bg-indigo-500"
+            aria-label="Previous"
           >
-            <FaArrowLeft />
+            <FaArrowLeft size={20} />
           </button>
           <button
             onClick={nextSlide}
-            className="bg-gradient-to-r from-sky-400 to-blue-1000 p-2 rounded-full text-white hover:bg-indigo-500"
+            className="bg-gradient-to-r from-sky-400 to-blue-1000 p-3 rounded-full text-white hover:bg-indigo-500"
+            aria-label="Next"
           >
-            <FaArrowRight />
+            <FaArrowRight size={20} />
           </button>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        {/* Tools Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-4">
           {tools.slice(scrollIndex, scrollIndex + 4).map((tool, index) => (
             <div
               key={index}
@@ -247,7 +251,7 @@ const TrendingTools = () => {
               <img
                 src={tool.image}
                 alt={tool.name}
-                className="w-full h-32 object-cover rounded-lg mb-4"
+                className="w-full h-24 sm:h-32 object-cover rounded-lg mb-4"
               />
               <h3 className="text-xl font-semibold mb-2">{tool.name}</h3>
               <p className="text-sm mb-4">{tool.description}</p>

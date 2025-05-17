@@ -4,6 +4,8 @@ import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 
 import heyGen from "../../../../public/assets/Img/AI for Animation/10.png";
+import scn5 from "../../../../public/assets/Img/AI for Animation/scn5.jpg";
+import scn6 from "../../../../public/assets/Img/AI for Animation/scn6.jpg";
 
 // review section data
 const reviews = [
@@ -134,14 +136,14 @@ const HeyGen = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://10web.io/wp-content/uploads/2024/09/Hey_Gen_screenshot.png"
+                src={scn5}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://static.filehorse.com/screenshots/video-software/heygen-screenshot-01.png"
+                src={scn6}
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -543,8 +545,8 @@ const HeyGen = () => {
           <div className=" row d-flex align-items-center justify-content-between mb-1">
             {/* Left side (Text Section) */}
             <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
+              style={{ paddingRight: "30px" }}
+              className="col-md-6  col-12 order-2 order-md-1 "
             >
               <p className="text-primary">Write better, faster</p>
               <h1>Heygen AI</h1>
@@ -563,23 +565,35 @@ const HeyGen = () => {
               </p>
 
               <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
+                <a
+                  href="https://www.heygen.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary me-2"
+                >
+                  Explore Tool
+                </a>
               </div>
             </div>
 
             {/* Right side (Image Section) */}
             <div
               style={{
-                flex: 1,
                 textAlign: "center",
                 Width: "100%",
                 height: "250px",
               }}
-              className="col-6 col-md-12 mb-5  "
+              className="col-md-6 col-12 order-md-2 order-1 text-center mb-3 mb-md-0  "
             >
-              <img src={heyGen} style={{ MaxWidth: "100%", height: "300px" }} />
+              <img
+                src={heyGen}
+                style={{
+                  Width: "100%",
+                  height: "auto",
+                  maxHeight: "300px",
+                  objectFit: "contain",
+                }}
+              />
             </div>
           </div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
@@ -733,20 +747,7 @@ const HeyGen = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with HeyGen?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
+         
         </div>
       </div>
     </>
