@@ -653,6 +653,7 @@ const DeepgramAI = () => {
                 />
               </div>
 
+<<<<<<< HEAD
               {/* TEXT SECOND on mobile, LEFT on desktop */}
               <div className="order-1 order-md-0 w-100 w-md-50 pe-md-4">
                 <p className="text-primary">Write better, faster</p>
@@ -672,6 +673,21 @@ const DeepgramAI = () => {
                   <span className="badge bg-success me-2">Creative</span>
                   <span className="badge bg-warning text-dark">Paid</span>
                 </div>
+=======
+              {/* <div className="mb-3">
+                <span className="badge bg-primary me-2">Image Generation</span>
+                <span className="badge bg-success me-2">Creative</span>
+                <span className="badge bg-warning text-dark">Paid</span>
+              </div> */}<div className="mb-3">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary me-2"
+                >
+                  Explore Tool
+                </a>
+>>>>>>> 0f48f6a61d229582bd9afb789d3c1471df1a5973
               </div>
             </div>
           </div>
@@ -827,7 +843,7 @@ const DeepgramAI = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
+          {/* <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
             <h4 className="mb-3">Ready to get started with DeepgramAI?</h4>
             <p className="mb-4">
               Join thousands of professionals already boosting their
@@ -840,7 +856,7 @@ const DeepgramAI = () => {
             <small className="d-block mt-2">
               No credit card required. 14-day free trial available.
             </small>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

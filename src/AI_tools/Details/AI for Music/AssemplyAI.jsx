@@ -688,10 +688,24 @@ const AssemblyAI = () => {
                 supports real-time streaming, batch transcription, speaker
                 labeling, and multiple language models optimized for accuracy.
               </p>
+<<<<<<< HEAD
               <div className="mb-3">
+=======
+
+              {/* <div className="mb-3">
+>>>>>>> 0f48f6a61d229582bd9afb789d3c1471df1a5973
                 <span className="badge bg-primary me-2">Image Generation</span>
                 <span className="badge bg-success me-2">Creative</span>
                 <span className="badge bg-warning text-dark">Paid</span>
+              </div> */}<div className="mb-3">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary me-2"
+                >
+                  Explore Tool
+                </a>
               </div>
             </div>
 
@@ -866,7 +880,7 @@ const AssemblyAI = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
+          {/* <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
             <h4 className="mb-3">Ready to get started with AssemblyAI?</h4>
             <p className="mb-4">
               Join thousands of professionals already boosting their
@@ -879,7 +893,7 @@ const AssemblyAI = () => {
             <small className="d-block mt-2">
               No credit card required. 14-day free trial available.
             </small>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
