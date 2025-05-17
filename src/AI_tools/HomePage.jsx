@@ -19,7 +19,7 @@ import AIAssistant from "./AIAssistant";
 const HomePage = () => {
   return (
     <>
-      <AIAssistant />
+      {/* <AIAssistant /> */}
       <Header />
       <AllAboutAITools />
       <TrendingAITools />

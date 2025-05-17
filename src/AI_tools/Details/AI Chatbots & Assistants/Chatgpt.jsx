@@ -3,9 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Logo from "../../../Images/logo[2].png";
-import deatilimage from "../../../Images/DetailImage.png";
-import chatgpt from "../../../Images/ChatGptAI.png";
 
 // review section data
 const reviews = [
@@ -126,14 +123,14 @@ const Chatgpt = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src={deatilimage}
+                src=""
                 alt="Screenshot 1"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={deatilimage}
+                src=""
                 alt="Screenshot 2"
                 className="img-fluid rounded-3"
               />
@@ -630,7 +627,7 @@ const Chatgpt = () => {
             {/* Left side (Text Section) */}
             <div style={{ flex: 1, paddingRight: "30px" }}>
               <img
-                src={Logo}
+                src=""
                 alt="Logo"
                 className="me-3"
                 style={{ width: "60px" }}
@@ -654,7 +651,7 @@ const Chatgpt = () => {
             {/* Right side (Image Section) */}
             <div style={{ flex: 1, textAlign: "center" }}>
               <img
-                src={chatgpt}
+                src=""
                 className="img-fluid rounded-3"
                 style={{ maxWidth: "80%", height: "auto" }}
               />

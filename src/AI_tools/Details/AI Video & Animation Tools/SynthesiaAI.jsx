@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file importimport "./SynthesiaAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
+import scn15 from "../../../../public/assets/Img/AI for Animation/scn15.jpg";
+import scn16 from "../../../../public/assets/Img/AI for Animation/scn16.jpg";
+
 
 import Synthesia from "../../../../public/assets/Img/AI for Animation/15.png";
 
@@ -138,14 +141,14 @@ const SynthesiaAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl9J5XCR8FWWFxE9MmZbd_BQ4tBUm6ALgfpw&s"
+                src={scn15}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://penfriend.ai/wp-content/uploads/2024/08/copy-ai-screenshot-1024x527.png"
+                src={scn16}
                 alt="Screenshot 2"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
@@ -769,8 +772,8 @@ const SynthesiaAI = () => {
           <div className=" row d-flex align-items-center justify-content-between mb-1">
             {/* Left side (Text Section) */}
             <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
+              style={{ paddingRight: "30px" }}
+              className="col-md-6  col-12 order-2 order-md-1 "
             >
               <p className="text-primary">Write better, faster</p>
               <h1>Synthesia AI</h1>
@@ -787,26 +790,36 @@ const SynthesiaAI = () => {
                 video creation for marketing, training, and communication
                 purposes
               </p>
+
               <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
+                <a
+                  href="https://www.veed.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary me-2"
+                >
+                  Explore Tool
+                </a>
               </div>
             </div>
 
             {/* Right side (Image Section) */}
             <div
               style={{
-                flex: 1,
                 textAlign: "center",
                 Width: "100%",
                 height: "250px",
               }}
-              className="col-6 col-md-12 mb-5  "
+              className="col-md-6 col-12 order-md-2 order-1 text-center mb-3 mb-md-0  "
             >
               <img
                 src={Synthesia}
-                style={{ MaxWidth: "100%", height: "300px" }}
+                style={{
+                  Width: "100%",
+                  height: "auto",
+                  maxHeight: "300px",
+                  objectFit: "contain",
+                }}
               />
             </div>
           </div>
@@ -961,21 +974,6 @@ const SynthesiaAI = () => {
 
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
-
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with SynthesiaAI ?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
         </div>
       </div>
     </>

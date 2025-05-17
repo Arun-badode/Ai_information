@@ -1,90 +1,3 @@
-// import React, { useState } from "react";
-// import "./Navbar.css";
-// import BreadcrumbScroll from "./BreadcrumbScroll"
-// import CategoriesNavbar from "./CategoriesNavbar"
-// import { Link } from "react-router-dom";
-
-// const Navbar = () => {
-//   const [activeDropdown, setActiveDropdown] = useState(null);
-//   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to toggle the mobile menu
-
-//   const toggleDropdown = (dropdown) => {
-//     setActiveDropdown((prevState) =>
-//       prevState === dropdown ? null : dropdown
-//     );
-//   };
-
-//   const toggleMenu = () => {
-//     setIsMenuOpen(!isMenuOpen); // Toggle mobile menu visibility
-//   };
-
-//   return (
-//     <>
-//       <nav className="navbar">
-//         <Link to="/">
-//           <div className="navbar-brand px-4">AI Tools</div>
-//         </Link>
-
-//         {/* Navbar Menu */}
-//         <div className={`navbar-menu px-4 ${isMenuOpen ? "show" : ""}`}>
-//           <ul className="navbar-nav nav-left">
-//             <li className="nav-item">
-//               <Link to="/" className="nav-link">
-//                 Home
-//               </Link>
-//             </li>
-//             <li className="nav-item">
-//               <a href="#" className="nav-link">
-//                 Categories
-//               </a>
-//             </li>
-//             <li
-//               className="nav-item dropdown"
-//               onClick={() => toggleDropdown("tools")}
-//             >
-//               <Link to="/imagemindai" className="nav-link dropdown-toggle">
-//                 AI Tools
-//               </Link>
-//             </li>
-//             <li
-//               className="nav-item dropdown"
-//               onClick={() => toggleDropdown("news")}
-//             >
-//               <Link to="/AINewsPage" className="nav-link dropdown-toggle">
-//                 AI News
-//               </Link>
-//             </li>
-//             <li className="nav-item">
-//               <a href="#" className="nav-link">
-//                 Blog
-//               </a>
-//             </li>
-//           </ul>
-//         </div>
-
-//         {/* Contact Button */}
-//         <div className="navbar-contact">
-//           <button className="contact-btn bg-[#2e3a47]">Contact</button>
-//         </div>
-
-//         {/* Hamburger Icon for Mobile */}
-//         <div className="navbar-toggler" onClick={toggleMenu}>
-//           <span className="bar"></span>
-//           <span className="bar"></span>
-//           <span className="bar"></span>
-//         </div>
-//       </nav>
-
-//       <div>
-//         <BreadcrumbScroll />
-//         <CategoriesNavbar />
-//       </div>
-//     </>
-//   );
-// };
-
-// export default Navbar;
-
 import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
@@ -135,11 +48,11 @@ const Navbar = () => {
                 AI News
               </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a href="#" className="nav-link">
                 Blog
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
 

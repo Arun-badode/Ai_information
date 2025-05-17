@@ -44,7 +44,7 @@ body {
   list-style: none;
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 50px;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -54,12 +54,17 @@ body {
   position: relative;
 }
 
-.nav-link {
-  color: #e2e8f0; /* Light gray text */
-  font-weight: 500;
-  text-decoration: none;
-  transition: all 0.3s ease;
+
+.nav-link,
+.nav-link:focus,
+.nav-link:active {
+  color: #e2e8f0;  /* Jo aapka default color hai */
+  background-color: transparent; /* Agar background change ho raha hai to clear kar dein */
+  outline: none; /* Focus outline hata sakte hain agar aapko na chahiye */
+  white-space: nowrap; /* Text line break na ho */
 }
+
+
 
 .nav-link:hover {
   color: #38bdf8; /* Light blue on hover */

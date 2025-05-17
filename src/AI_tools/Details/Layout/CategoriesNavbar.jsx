@@ -69,7 +69,7 @@ const CategoriesNavbar = () => {
               <div
                 className="dropdown-card show"
                 style={{
-                  maxWidth: "355px",
+                  maxWidth: "400px",
                   left: "0",
                   marginTop: "3rem",
                   position: "absolute",
@@ -127,7 +127,7 @@ const CategoriesNavbar = () => {
               <div
                 className="dropdown-card show"
                 style={{
-                  maxWidth: "600px",
+                  maxWidth: "800px",
                   left: "0rem",
                   marginTop: "3rem",
                   position: "absolute",
@@ -1014,7 +1014,7 @@ const CategoriesNavbar = () => {
                       Content Generation <FaPencilAlt size={20} />
                     </h6>
                     <Link to="/Sensei">Sensei AI</Link>
-                    <Link to="/Standard">Standard Cognition AI</Link>
+                    <Link to="/StandardCognition">Standard Cognition AI</Link>
                     <Link to="/Trigo">Trigo AI</Link>
                     <Link to="/Zippin">Zippin AI</Link>
                     <Link to="/PensaSystem">PensaSystem AI</Link>

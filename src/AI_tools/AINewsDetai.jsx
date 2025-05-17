@@ -111,3 +111,10 @@ const AINewsDetail = () => {
 };
 
 export default AINewsDetail;
+
+
+
+
+
+
+

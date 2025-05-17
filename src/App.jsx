@@ -176,7 +176,8 @@ import Smmry from "./AI_tools/Details/AI for Document managment/Smmry";
 import Summarizebot from "./AI_tools/Details/AI for Document managment/Summarizebot";
 import UpsumAI from "./AI_tools/Details/AI for Document managment/UpsumAI";
 import UpwordAI from "./AI_tools/Details/AI for Document managment/UpwordAI";
-// AI for Documnet managment  end //
+
+
 // Ai for Mapping//
 import Ayoa from "./AI_tools/Details/AI Mapping/Ayoa";
 import Coggle from "./AI_tools/Details/AI Mapping/Coggle";
@@ -499,7 +500,7 @@ const App = () => {
         <Route path="/ensaSystem" element={<PensaSystem />}></Route>
         <Route path="/Sensei" element={<Sensei />}></Route>
         <Route
-          path="/StandardCongnition"
+          path="/StandardCognition"
           element={<StandardCongnition />}
         ></Route>
         <Route path="/Trigo" element={<Trigo />}></Route>

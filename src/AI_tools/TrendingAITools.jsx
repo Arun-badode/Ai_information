@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+// import Chatgpt from "../../public/assets/Imges/ChatGptAI.png";
 
 const TrendingTools = () => {
   const categories = [
@@ -19,7 +20,7 @@ const TrendingTools = () => {
         name: "OpenAI GPT-4",
         description: "Next-gen conversational AI for businesses.",
         image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDfQJssdP7BgB4nAAFl7XDLEn1IVwpWqqftQ&s",
+      "",
         rating: 4.8,
       },
       {
@@ -194,15 +195,12 @@ const TrendingTools = () => {
   };
 
   return (
-    <div
-      className="bg-[#1A202C]
-
- text-white py-16"
-    >
+    <div className="bg-[#1A202C] text-white py-16">
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-3xl font-semibold mb-8">Trending AI Tools</h2>
 
-        <div className="flex justify-center items-center space-x-4 mb-8">
+        {/* Categories with horizontal scroll */}
+        <div className="flex justify-center items-center space-x-4 mb-8 overflow-x-auto px-4">
           {categories.map((category, index) => (
             <button
               key={index}
@@ -211,7 +209,7 @@ const TrendingTools = () => {
                 selectedCategory === category
                   ? "bg-white text-gray-900"
                   : "bg-gray-700 text-white"
-              } py-2 px-4 rounded-full hover:bg-gradient-to-r from-sky-400 to-blue-1000 hover:text-white transition duration-300`}
+              } py-1 sm:py-2 px-3 sm:px-4 rounded-full hover:bg-gradient-to-r from-sky-400 to-blue-1000 hover:text-white transition duration-300 whitespace-nowrap`}
             >
               {category}
             </button>
@@ -223,22 +221,26 @@ const TrendingTools = () => {
           categories.
         </p>
 
-        <div className="flex justify-between mb-6">
+        {/* Navigation Arrows */}
+        <div className="flex justify-between mb-6 px-4 max-w-xs mx-auto">
           <button
             onClick={prevSlide}
-            className="bg-gradient-to-r from-sky-400 to-blue-1000 p-2 rounded-full text-white hover:bg-indigo-500"
+            className="bg-gradient-to-r from-sky-400 to-blue-1000 p-3 rounded-full text-white hover:bg-indigo-500"
+            aria-label="Previous"
           >
-            <FaArrowLeft />
+            <FaArrowLeft size={20} />
           </button>
           <button
             onClick={nextSlide}
-            className="bg-gradient-to-r from-sky-400 to-blue-1000 p-2 rounded-full text-white hover:bg-indigo-500"
+            className="bg-gradient-to-r from-sky-400 to-blue-1000 p-3 rounded-full text-white hover:bg-indigo-500"
+            aria-label="Next"
           >
-            <FaArrowRight />
+            <FaArrowRight size={20} />
           </button>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        {/* Tools Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-4">
           {tools.slice(scrollIndex, scrollIndex + 4).map((tool, index) => (
             <div
               key={index}
@@ -247,7 +249,7 @@ const TrendingTools = () => {
               <img
                 src={tool.image}
                 alt={tool.name}
-                className="w-full h-32 object-cover rounded-lg mb-4"
+                className="w-full h-24 sm:h-32 object-cover rounded-lg mb-4"
               />
               <h3 className="text-xl font-semibold mb-2">{tool.name}</h3>
               <p className="text-sm mb-4">{tool.description}</p>

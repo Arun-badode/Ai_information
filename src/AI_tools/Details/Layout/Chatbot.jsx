@@ -75,12 +75,19 @@ const Chatbot = () => {
               display: "flex",
             }}
           >
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Type a message..."
-              style={{ flex: 1 }}
-            />
+            
+            <div className="input-group">
+              <button className="btn btn-outline-secondary bg-white btn-sm">
+                <i className="fas fa-microphone"></i>
+              </button>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Type a message..."
+                style={{ flex: 1 }}
+              />
+              {/* Yahan aapka send button agar hai to woh input ke right side rahega */}
+            </div>
 
             <button
               className="btn btn ms-2 text-white"

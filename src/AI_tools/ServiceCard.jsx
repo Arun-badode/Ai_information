@@ -17,11 +17,11 @@ const ServiceCard = ({ imgSrc, title, description }) => {
 
 const Services = () => {
   return (
-    <section className="py-20 px-6 bg-[#1A202C]">
-      <h2 className="text-center text-[#38BDF8] text-4xl font-bold mb-12">
+    <section className="py-5 px-6 bg-[#1A202C]">
+      <h2 className="text-center font-bold font-roboto text-6xl text-white">
         Top 10 AI Tools
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-5">
         <ServiceCard
           imgSrc={service1}
           title="ChatGPT"

@@ -1,6 +1,6 @@
 /* AINewsPage.css */
 
-.ainp-back-link {
+/* .ainp-back-link {
     color: #0dcaf0;
     text-decoration: none;
     font-weight: 500;
@@ -112,4 +112,84 @@
   .text-muted small {
     font-size: 0.85rem;
   }
+   */
+
+
+
+
+   
+  /* General Section Title */
+.section-title {
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: #222;
+}
+
+/* News Card Styles */
+.ainp-news-card {
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.ainp-news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.ainp-news-card img {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.news-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #111;
+}
+
+.news-meta {
+  font-size: 0.8rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.news-description {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* Trending Card */
+.ainp-trending {
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.trending-item h6 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.btn-primary,
+.btn-outline-primary {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-primary:hover,
+.btn-outline-primary:hover {
+  transform: scale(1.05);
+}
+
+.text-muted small {
+  font-size: 0.85rem;
+}
+
   
+
+
