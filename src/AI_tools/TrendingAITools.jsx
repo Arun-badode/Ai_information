@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-// import Chatgpt from "../../public/assets/Imges/ChatGptAI.png";
+import GPT3 from "../../public/assets/Img/Trending AI tools/5.png";
+import Financial from "../../public/assets/Img/Trending AI tools/1.png";
+import GoogleAnalytics from "../../public/assets/Img/Trending AI tools/2.png";
+import HubSpot from "../../public/assets/Img/Trending AI tools/3.png";
+import DALL from "../../public/assets/Img/Trending AI tools/4.png";
+
+
 
 const TrendingTools = () => {
   const categories = [
@@ -19,51 +25,47 @@ const TrendingTools = () => {
       {
         name: "OpenAI GPT-4",
         description: "Next-gen conversational AI for businesses.",
-        image:
-      "",
+        image: GPT3,
         rating: 4.8,
       },
       {
         name: "AI Financial Tech",
         description: "AI for automating financial services.",
-        image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDyfcfZMSw_wdDyCZ3L1hDhf4o7cXopIvOiA&s",
+        image: Financial,
+
         rating: 4.7,
       },
       {
         name: "Google Analytics AI",
         description: "AI-enhanced web analytics for business growth.",
-        image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkUgpcBm-WVY4AyT-1eqafgpZv-mPJUoeYog&s",
+        image: GoogleAnalytics,
         rating: 4.6,
       },
       {
         name: "HubSpot AI",
         description: "AI-powered CRM for smarter marketing.",
-        image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL4yI3fL0zeMETPHzz87Dws0D8tnsgxpYLFA&s",
+        image: HubSpot,
         rating: 4.8,
       },
       {
-        name: "Zapier AI",
-        description: "AI-driven automation for workflows.",
-        image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTounDsF1wu36MGsjfCSRsA_3YQCvqjU1G0sQ&s",
-        rating: 4.5,
+        name: "AI Financial Tech",
+        description: "AI for automating financial services.",
+        image: Financial,
+
+        rating: 4.7,
       },
       {
-        name: "ActiveCampaign AI",
-        description: "AI for marketing automation and email campaigns.",
-        image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIAnyi0SWvftAGL-HrYVFDEJkESPgEvWJj6w&s",
-        rating: 4.6,
+        name: "HubSpot AI",
+        description: "AI-powered CRM for smarter marketing.",
+        image: HubSpot,
+        rating: 4.8,
       },
     ],
     Productivity: [
       {
         name: "DALL-E 2",
         description: "AI tool for creating stunning images from text prompts.",
-        image: "https://via.placeholder.com/150",
+        image: DALL,
         rating: 4.9,
       },
       {

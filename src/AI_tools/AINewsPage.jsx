@@ -205,7 +205,18 @@ import axios from "axios";
 
 const AINewsPage = () => {
   const [latestNews, setLatestNews] = useState([]);
-  const [visibleNewsCount, setVisibleNewsCount] = useState(10);
+  const [visibleNewsCount, setVisibleNewsCount] = useState(10); // Number of items to show initially
+   const [trending, setTrending] = useState([]);
+
+  const featuredNews = {
+    title: "OpenAI's GPT-5 Breakthrough!",
+    description:
+      "GPT-5 brings memory retention, multimodal learning, and dynamic personalities.",
+    image: "https://i.postimg.cc/1tFh88zN/bcdfe4cf5cea4d05381c03cc20ea5db3.jpg",
+    link: "/news/gpt-5-release",
+    date: "April 26, 2025",
+    tags: ["Featured", "Code Assistants"],
+  };
 
   const GetLatestNews = async () => {
     try {
@@ -242,6 +253,32 @@ const AINewsPage = () => {
     }, 100);
   };
 
+
+   const GetTrending = async () => {
+    try {
+      const response = await axios.get("https://newsapi.org/v2/everything", {
+        headers: {
+          Authorization: `Bearer d9c1cfb73dbd4e38b1f317d430df037b`,
+        },
+        params: {
+          q: "technology AND AI", // fixed query
+          sources: "techcrunch,the-verge,wired,ars-technica", // corrected source names
+          sortBy: "publishedAt",
+          language: "en",
+          pageSize: 10, // limit for performance
+        },
+      });
+
+      // response.data.articles contains the articles array
+      setTrending(response.data.articles);
+    } catch (error) {
+      console.error("Error fetching latest news:", error);
+    }
+  };
+
+  useEffect(() => {
+    GetTrending();
+  }, []);
   const trendingTopics = [
     {
       title: "Image Generation",
@@ -306,16 +343,28 @@ const AINewsPage = () => {
             ))}
           </div>
 
-          {visibleNewsCount < latestNews.length && (
-            <div className="text-center mt-4">
-              <button
-                className="btn btn-primary px-5 py-2"
-                onClick={loadMoreNews}
-              >
-                Load More
-              </button>
-            </div>
-          )}
+         <div className="col-lg-4">
+      <h3 className="text-white mb-4">🔥 Trending Topics</h3>
+      <div className="card bg-dark text-white p-3 shadow-sm" style={{ maxHeight: "600px", overflowY: "auto" }}>
+        {trendingTopics.length === 0 && <p>Loading...</p>}
+        {trendingTopics.map((topic, index) => (
+          <div key={index} className="d-flex align-items-center mb-3">
+            <img
+              src={topic.urlToImage || "https://via.placeholder.com/50"}
+              alt={topic.title}
+              style={{
+                width: "50px",
+                height: "50px",
+                objectFit: "cover",
+                borderRadius: "8px",
+                marginRight: "10px",
+              }}
+            />
+            <h6 className="mb-0">{topic.title}</h6>
+          </div>
+        ))}
+      </div>
+    </div>
         </div>
 
         <div className="col-lg-4">

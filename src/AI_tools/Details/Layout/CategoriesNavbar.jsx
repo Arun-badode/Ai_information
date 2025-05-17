@@ -247,7 +247,7 @@ const CategoriesNavbar = () => {
                       Design Tools <SiAntdesign size={20} />
                     </h6>
                     <Link to="RessumeAI/">RessumeAI</Link>
-                    <Link to="ApplitoolsAI/">ApplitoolsAI</Link>
+                    <Link to="/Applitool">ApplitoolsAI</Link>
                     <Link to="AppvanceAI/">AppvanceAI</Link>
                     <Link to="RainForestAI/">RainForestAI</Link>
                     <Link to="LambdaTestAI/">LambdaTestAI</Link>

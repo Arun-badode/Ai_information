@@ -4,7 +4,7 @@ import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
-import deatilimage from "../../../Images/DetailImage.png";
+import applitools from "../../../../public/assets/Img/Ai for Resume/2.png";
 
 // review section data
 const reviews = [
@@ -73,7 +73,7 @@ const styles = {
     borderColor: "#2ea043",
   },
 };
-const ApplitoolsAI = () => {
+const Applitool = () => {
   const [activeTab, setActiveTab] = useState("Features"); // Set the default
   //  active tab as 'features'
   const [showAllFaqs, setShowAllFaqs] = useState(false);
@@ -803,8 +803,8 @@ const ApplitoolsAI = () => {
           <div className=" row d-flex align-items-center justify-content-between mb-1">
             {/* Left side (Text Section) */}
             <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
+              style={{ paddingRight: "30px" }}
+              className="col-md-6  col-12 order-2 order-md-1 "
             >
               <p className="text-primary">Write better, faster</p>
               <h1>Applitools AI</h1>
@@ -830,56 +830,66 @@ const ApplitoolsAI = () => {
               </p>
 
               <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary me-2"
+                >
+                  Explore Tool
+                </a>
               </div>
             </div>
-
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
           </div>
-          <section style={{ backgroundColor: "", padding: "3rem 0" }}>
-            <div className="container text-center">
-              <p className="text-primary">Create Videos in 3 Simple Steps</p>
-              <h2
-                style={{
-                  fontWeight: "semibold",
-                  color: "#fff",
-                  marginBottom: "1rem",
-                }}
-              >
-                How Applitools AI Works?
-              </h2>
 
-              <div className="row g-4">
-                {/* Step 1 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#1034A6",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>
-                      {`
+          {/* Right side (Image Section) */}
+          <div
+                       style={{
+                         textAlign: "center",
+                         Width: "100%",
+                         height: "250px",
+                       }}
+                       className="col-md-6 col-12 order-md-2 order-1 text-center mb-3 mb-md-0  "
+                     >
+                       <img
+                         src={applitools}
+                         style={{
+                           Width: "100%",
+                           height: "auto",
+                           maxHeight: "300px",
+                           objectFit: "contain",
+                         }}
+                       />
+                     </div>
+        </div>
+        <section style={{ backgroundColor: "", padding: "3rem 0" }}>
+          <div className="container text-center">
+            <p className="text-primary">Create Videos in 3 Simple Steps</p>
+            <h2
+              style={{
+                fontWeight: "semibold",
+                color: "#fff",
+                marginBottom: "1rem",
+              }}
+            >
+              How Applitools AI Works?
+            </h2>
+
+            <div className="row g-4">
+              {/* Step 1 */}
+              <div className="col-md-4">
+                <div
+                  style={{
+                    position: "relative",
+                    backgroundColor: "#1034A6",
+                    borderRadius: "12px",
+                    boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+                    padding: "2rem",
+                    height: "100%",
+                  }}
+                >
+                  <style>
+                    {`
               .step1 {
                 position: absolute;
                 bottom: 10px;
@@ -890,34 +900,34 @@ const ApplitoolsAI = () => {
                 opacity: 0.6;
               }
             `}
-                    </style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Automated Testing:
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Applitools AI automates visual testing for mobile and web
-                      applications, detecting visual defects such as layout
-                      changes, missing elements, or design inconsistencies
-                      across different devices and browsers.
-                    </p>
-                    <div className="step1">1</div>
-                  </div>
+                  </style>
+                  <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+                    Automated Testing:
+                  </h5>
+                  <p style={{ color: "#fff", margin: 0 }}>
+                    Applitools AI automates visual testing for mobile and web
+                    applications, detecting visual defects such as layout
+                    changes, missing elements, or design inconsistencies across
+                    different devices and browsers.
+                  </p>
+                  <div className="step1">1</div>
                 </div>
+              </div>
 
-                {/* Step 2 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#1034A6",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>
-                      {`
+              {/* Step 2 */}
+              <div className="col-md-4">
+                <div
+                  style={{
+                    position: "relative",
+                    backgroundColor: "#1034A6",
+                    borderRadius: "12px",
+                    boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+                    padding: "2rem",
+                    height: "100%",
+                  }}
+                >
+                  <style>
+                    {`
               .step2 {
                 position: absolute;
                 bottom: 10px;
@@ -928,34 +938,34 @@ const ApplitoolsAI = () => {
                 opacity: 0.6;
               }
             `}
-                    </style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Cross-Browser Testing:
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Applitools supports cross-browser testing, ensuring the UI
-                      is consistent across all supported web browsers and
-                      versions, allowing you to identify issues before they
-                      impact your users.
-                    </p>
-                    <div className="step2">2</div>
-                  </div>
+                  </style>
+                  <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+                    Cross-Browser Testing:
+                  </h5>
+                  <p style={{ color: "#fff", margin: 0 }}>
+                    Applitools supports cross-browser testing, ensuring the UI
+                    is consistent across all supported web browsers and
+                    versions, allowing you to identify issues before they impact
+                    your users.
+                  </p>
+                  <div className="step2">2</div>
                 </div>
+              </div>
 
-                {/* Step 3 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#1034A6",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>
-                      {`
+              {/* Step 3 */}
+              <div className="col-md-4">
+                <div
+                  style={{
+                    position: "relative",
+                    backgroundColor: "#1034A6",
+                    borderRadius: "12px",
+                    boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+                    padding: "2rem",
+                    height: "100%",
+                  }}
+                >
+                  <style>
+                    {`
               .step3 {
                 position: absolute;
                 bottom: 10px;
@@ -966,54 +976,51 @@ const ApplitoolsAI = () => {
                 opacity: 0.6;
               }
             `}
-                    </style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Mobile and Web Testing:
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Applitools offers solutions for both mobile and web
-                      testing, enabling teams to perform thorough testing on
-                      apps and websites across various platforms and devices
-                      without manual intervention.
-                    </p>
-                    <div className="step3">3</div>
-                  </div>
+                  </style>
+                  <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+                    Mobile and Web Testing:
+                  </h5>
+                  <p style={{ color: "#fff", margin: 0 }}>
+                    Applitools offers solutions for both mobile and web testing,
+                    enabling teams to perform thorough testing on apps and
+                    websites across various platforms and devices without manual
+                    intervention.
+                  </p>
+                  <div className="step3">3</div>
                 </div>
               </div>
             </div>
-          </section>
+          </div>
+        </section>
 
-          {/* Tab Navigation */}
-          <ul className="nav nav-tabs custom-tabs mb-4">
-            {[
-              "Features",
-              "Screenshots",
-              "Reviews",
-              "FAQs",
-              "Technical",
-              "Why-We-Use",
-              "Pros & Cons",
-              "Alternative",
-            ].map((tab) => (
-              <li className="nav-item mb-2" key={tab}>
-                <button
-                  className={`nav-link ${activeTab === tab ? "active" : ""}`}
-                  onClick={() => setActiveTab(tab)}
-                >
-                  {tab.charAt(0).toUpperCase() + tab.slice(1)}
-                </button>
-              </li>
-            ))}
-          </ul>
+        {/* Tab Navigation */}
+        <ul className="nav nav-tabs custom-tabs mb-4">
+          {[
+            "Features",
+            "Screenshots",
+            "Reviews",
+            "FAQs",
+            "Technical",
+            "Why-We-Use",
+            "Pros & Cons",
+            "Alternative",
+          ].map((tab) => (
+            <li className="nav-item mb-2" key={tab}>
+              <button
+                className={`nav-link ${activeTab === tab ? "active" : ""}`}
+                onClick={() => setActiveTab(tab)}
+              >
+                {tab.charAt(0).toUpperCase() + tab.slice(1)}
+              </button>
+            </li>
+          ))}
+        </ul>
 
-          {/* Tab Content */}
-          <div className="tab-content-area">{renderTabContent()}</div>
-
-        
-        </div>
+        {/* Tab Content */}
+        <div className="tab-content-area">{renderTabContent()}</div>
       </div>
     </>
   );
 };
 
-export default ApplitoolsAI;
+export default Applitool;
