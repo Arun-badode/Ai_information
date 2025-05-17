@@ -5,7 +5,7 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
-import teal from "../../../../public/assets/Img/Ai for Resume/49.png";
+
 // review section data
 const reviews = [
   {
@@ -256,7 +256,7 @@ const TealHQAI = () => {
                 },
               ]
 
-                .map((item, i) => ({ ...item, id: `faq${i}` }))
+                .map((item, i) => ({ ...item, id: ` faq${i}` }))
                 .filter((item, i) => showAllFaqs || i < 4)
                 .map((item, i) => (
                   <div className="accordion-item mb-3" key={item.id}>
@@ -692,7 +692,7 @@ const TealHQAI = () => {
                   minHeight: "100%",
                 }}
               >
-                <h5 className="text-warning text-start mb-4">⚠️ Cons</h5>
+                <h5 className="text-warning text-start mb-4">⚠ Cons</h5>
                 <ul className="ps-3" style={{ listStyleType: "disc" }}>
                   <li className="mb-2">
                     <strong>Premium Features Only:</strong> Some advanced

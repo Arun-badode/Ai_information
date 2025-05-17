@@ -1,5 +1,7 @@
 @import "tailwindcss";
-
+body{
+overflow-x: hidden;
+}
 /* Custom Scrollbar */
 .custom-scrollbar::-webkit-scrollbar {
   height: 5px; /* Reduced height */

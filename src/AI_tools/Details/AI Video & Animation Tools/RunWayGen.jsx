@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import Logo from "../../../Images/logo[2].png";
-import deatilimage from "../../../Images/DetailImage.png";
-
 import RunWayGen1 from "../../../../public/assets/Img/AI for Animation/7.png";
+import scn1 from "../../../../public/assets/Img/AI for Animation/scn1.jpg";
+import scn2 from "../../../../public/assets/Img/AI for Animation/scn2.jpg";
 
 // review section data
 const reviews = [
@@ -141,14 +139,14 @@ const RunWayGen = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
+                src={scn1}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
+                src={scn2}
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -620,11 +618,11 @@ const RunWayGen = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className="row align-items-center mb-4">
+          <div className=" row align-items-center  mb-4">
             {/* Left side (Text Section) */}
             <div
-              className="col-12 col-md-6 order-2 order-md-1"
               style={{ paddingRight: "30px" }}
+              className="col-md-6  col-12 order-2 order-md-1 "
             >
               <p className="text-primary">Write better, faster</p>
               <h1>RunWayGen-3</h1>
@@ -640,19 +638,30 @@ const RunWayGen = () => {
               </p>
 
               <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
+                <a
+                  href="https://runwayml.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary me-2"
+                >
+                  Explore Tool
+                </a>
               </div>
             </div>
 
             {/* Right side (Image Section) */}
-            <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-3 mb-md-0">
+            <div
+              style={{
+                textAlign: "center",
+                Width: "100%",
+                height: "250px",
+              }}
+              className="col-md-6 col-12 order-md-2 order-1 text-center mb-3 mb-md-0  "
+            >
               <img
                 src={RunWayGen1}
-                alt="RunWay Gen-3"
                 style={{
-                  width: "100%",
+                  Width: "100%",
                   height: "auto",
                   maxHeight: "300px",
                   objectFit: "contain",
@@ -814,21 +823,6 @@ const RunWayGen = () => {
 
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
-
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with RunWayGen?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
         </div>
       </div>
     </>

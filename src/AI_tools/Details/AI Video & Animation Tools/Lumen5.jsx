@@ -4,6 +4,8 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 
 import lumen5 from "../../../../public/assets/Img/AI for Animation/9.png";
+import scn7 from "../../../../public/assets/Img/AI for Animation/scn7.jpg";
+import scn8 from "../../../../public/assets/Img/AI for Animation/scn8.jpg";
 
 // review section data
 const reviews = [
@@ -138,14 +140,14 @@ const Lumen5 = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://gdm-catalog-fmapi-prod.imgix.net/ProductScreenshot/0a42d8dd-170a-467c-a3cc-9ed336beafdb.png?ixlib=rb-1.0.0&ch=Width%2CDPR&auto=format&w=750&h=450&q=50"
+                src={scn7}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoGHts3-CaAjlI3rNaBK4KrtVBJVz01KnMfg&s"
+                src={scn8}
                 alt="Screenshot 2"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
@@ -758,8 +760,8 @@ const Lumen5 = () => {
           <div className=" row d-flex align-items-center justify-content-between mb-1">
             {/* Left side (Text Section) */}
             <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
+              style={{ paddingRight: "30px" }}
+              className="col-md-6  col-12 order-2 order-md-1 "
             >
               <p className="text-primary">Write better, faster</p>
               <h1>Lumen5</h1>
@@ -775,23 +777,35 @@ const Lumen5 = () => {
               </p>
 
               <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
+                <a
+                  href="https://lumen5.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary me-2"
+                >
+                  Explore Tool
+                </a>
               </div>
             </div>
 
             {/* Right side (Image Section) */}
             <div
               style={{
-                flex: 1,
                 textAlign: "center",
                 Width: "100%",
                 height: "250px",
               }}
-              className="col-6 col-md-12 mb-5  "
+              className="col-md-6 col-12 order-md-2 order-1 text-center mb-3 mb-md-0  "
             >
-              <img src={lumen5} style={{ MaxWidth: "100%", height: "300px" }} />
+              <img
+                src={lumen5}
+                style={{
+                  Width: "100%",
+                  height: "auto",
+                  maxHeight: "300px",
+                  objectFit: "contain",
+                }}
+              />
             </div>
           </div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
@@ -946,21 +960,6 @@ const Lumen5 = () => {
 
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
-
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with Lumen5?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
         </div>
       </div>
     </>

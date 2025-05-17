@@ -77,12 +77,12 @@ const AIAssistant = () => {
           </div>
 
           <div className="d-flex align-items-center mb-3">
-            <button
+            {/* <button
               onClick={toggleOptions}
               className="btn btn-outline-vgear btn-sm bg-white"
             >
               <i className="fas fa-sliders-h me-2"></i> Options
-            </button>
+            </button> */}
             {showOptions && (
               <div className="ms-2 d-flex gap-2 flex-wrap">
                 <button className="btn btn-outline-secondary btn-sm bg-white">
@@ -111,9 +111,9 @@ const AIAssistant = () => {
               <button className="btn btn-outline-secondary bg-white btn-sm me-2">
                 <i className="fas fa-microphone"></i>
               </button>
-              <button className="btn btn-outline-secondary btn-sm bg-white">
+              {/* <button className="btn btn-outline-secondary btn-sm bg-white">
                 <i className="fas fa-paperclip"></i>
-              </button>
+              </button> */}
             </div>
             <button className="btn btn-vgear btn-sm bg-white">
               <i className="fas fa-paper-plane me-2 text-black"> Send</i>

@@ -660,8 +660,8 @@ const DescriptAI = () => {
           <div className=" row d-flex align-items-center justify-content-between mb-1">
             {/* Left side (Text Section) */}
             <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
+              style={{ paddingRight: "30px" }}
+              className="col-md-6  col-12 order-2 order-md-1 "
             >
               <p className="text-primary">Write better, faster</p>
               <h1>Descript AI</h1>
@@ -684,16 +684,20 @@ const DescriptAI = () => {
             {/* Right side (Image Section) */}
             <div
               style={{
-                flex: 1,
                 textAlign: "center",
                 Width: "100%",
                 height: "250px",
               }}
-              className="col-6 col-md-12 mb-5  "
+              className="col-md-6 col-12 order-md-2 order-1 text-center mb-3 mb-md-0  "
             >
               <img
                 src={descript}
-                style={{ MaxWidth: "100%", height: "300px" }}
+                style={{
+                  Width: "100%",
+                  height: "auto",
+                  maxHeight: "300px",
+                  objectFit: "contain",
+                }}
               />
             </div>
           </div>

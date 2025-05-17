@@ -3,6 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import animoto from "../../../../public/assets/Img/AI for Animation/12.png";
+import scn3 from "../../../../public/assets/Img/AI for Animation/scn3.jpg"
+import scn4 from "../../../../public/assets/Img/AI for Animation/scn4.jpg";
+
 
 // review section data
 const reviews = [
@@ -130,14 +133,14 @@ const Animoto = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://d8uzp82hd82jh.cloudfront.net/storage/tools/animoto/screenshot.webp"
+                src={scn3}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://blog.ishosting.com/hs-fs/hubfs/blog/animoto-review/animoto-blog.png?width=883&height=500&name=animoto-blog.png"
+                src={scn4}
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -662,8 +665,8 @@ const Animoto = () => {
           <div className=" row d-flex align-items-center justify-content-between mb-1">
             {/* Left side (Text Section) */}
             <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
+              style={{ paddingRight: "30px" }}
+              className="col-md-6  col-12 order-2 order-md-1 "
             >
               <p className="text-primary">Write better, faster</p>
               <h1>Animoto AI</h1>
@@ -679,25 +682,34 @@ const Animoto = () => {
               </p>
 
               <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
+                <a
+                  href="https://animoto.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary me-2"
+                >
+                  Explore Tool
+                </a>
               </div>
             </div>
 
             {/* Right side (Image Section) */}
             <div
               style={{
-                flex: 1,
                 textAlign: "center",
                 Width: "100%",
                 height: "250px",
               }}
-              className="col-6 col-md-12 mb-5  "
+              className="col-md-6 col-12 order-md-2 order-1 text-center mb-3 mb-md-0  "
             >
               <img
                 src={animoto}
-                style={{ MaxWidth: "100%", height: "300px" }}
+                style={{
+                  Width: "100%",
+                  height: "auto",
+                  maxHeight: "300px",
+                  objectFit: "contain",
+                }}
               />
             </div>
           </div>
@@ -852,20 +864,7 @@ const Animoto = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with Animoto?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
+        
         </div>
       </div>
     </>

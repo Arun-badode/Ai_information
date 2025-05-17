@@ -649,7 +649,7 @@ const Luminance = () => {
               className="col-6 col-md-12 "
             >
               <p className="text-primary">Write better, faster</p>
-              <h1>Introduction: What is Luminance AI</h1>
+              <h1> Luminance AI</h1>
               <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
               <p>
                 Luminance AI is an advanced legal technology platform that
