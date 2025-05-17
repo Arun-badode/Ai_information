@@ -5,7 +5,7 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
-
+import standard from "../../../../public/assets/Img/Ai  for Retail/1.png";
 // review section data
 const reviews = [
   {

@@ -204,8 +204,13 @@ body {
   text-decoration: underline;
 }
 
+
+
+
+
+
 /* Responsive Design */
-@media (max-width: 991.98px) {
+/* @media (max-width: 991.98px) {
   .navbar {
     flex-direction: row;
     justify-content: space-between;
@@ -221,8 +226,73 @@ body {
     width: 100%;
     flex-direction: column;
     display: none;
-    background: #1a202c; /* Dark gray background for mobile menu */
+    background: #1a202c; 
     padding: 1rem;
+  }
+
+
+
+
+   
+
+
+  
+  .navbar-menu.show {
+    display: flex;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-item {
+    width: 100%;
+    text-align: left;
+  }
+
+  .nav-link {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    color: #e2e8f0; 
+  }
+
+  .navbar-contact {
+    display: none; 
+  }
+}
+ */
+
+
+
+
+
+ @media (max-width: 991.98px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    /* position: relative; */
+    z-index: 1050; /* Ensure navbar itself is above other components */
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+
+  .navbar-menu {
+    width: 100%;
+    flex-direction: column;
+    display: none;
+    background: #1a202c;
+    padding: 1rem;
+    position: relative; /* Important for z-index to work */
+    z-index: 1100; /* Set above dropdown or other components */
   }
 
   .navbar-menu.show {
@@ -246,10 +316,11 @@ body {
     display: block;
     width: 100%;
     padding: 10px 0;
-    color: #e2e8f0; /* Light gray text */
+    color: #e2e8f0;
+    z-index: 1101; /* Just in case, ensures nav links are clickable */
   }
 
   .navbar-contact {
-    display: none; /* Hide contact button on small screens */
+    display: none;
   }
 }

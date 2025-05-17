@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
 import Rainforest from "../../../Images/Rainforest.png";
+import trello from "../../../../public/assets/Img/AI for Business/1.png";
 
 // review section data
 const reviews = [
@@ -693,10 +694,7 @@ const TrelloAI = () => {
               }}
               className="col-6 col-md-12 mb-5  "
             >
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
+              <img src={trello} style={{ MaxWidth: "100%", height: "300px" }} />
             </div>
           </div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>

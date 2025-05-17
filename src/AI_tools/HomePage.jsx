@@ -14,20 +14,20 @@ import ToolsHub from "./ToolsHub";
 import ToolTabs from "./ToolTabs";
 import { BsReverseLayoutTextWindowReverse } from "react-icons/bs";
 import ReviewData from "./ReviewsData";
+import AIAssistant from "./AIAssistant";
 
 const HomePage = () => {
   return (
     <>
+      <AIAssistant />
       <Header />
       <AllAboutAITools />
       <TrendingAITools />
-
       <ToolTabs />
       <ReviewData />
       {/* <ToolsHub/> */}
       <ServiceCard />
       {/* <NewsCard /> */}
-
       <FAQ />
       <WhatWeDoSection />
       <Featured />
