@@ -153,7 +153,7 @@ const Navbar = () => {
       </nav>
       {/* <BreadcrumbScroll /> */}
       {/* <CategoriesNavbar /> */}
-      <Chatbot />
+      < Chatbot/>
     </>
   );
 };
