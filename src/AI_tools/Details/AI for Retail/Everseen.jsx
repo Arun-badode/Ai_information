@@ -858,11 +858,27 @@ const Everseen = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
+          <div className="row d-flex align-items-center justify-content-between mb-1">
+            {/* Right side (Image Section) first on mobile */}
             <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
+              className="col-md-6 order-1 order-md-2 text-center mb-3 mb-md-0"
+              style={{ width: "100%", height: "250px" }}
+            >
+              <img
+                src={everseen}
+                alt="Everseen AI"
+                style={{
+                  maxWidth: "100%",
+                  height: "300px",
+                  objectFit: "contain",
+                }}
+              />
+            </div>
+
+            {/* Left side (Text Section) second on mobile */}
+            <div
+              className="col-md-6 order-2 order-md-1"
+              style={{ paddingRight: "30px" }}
             >
               <p className="text-primary">Write better, faster</p>
               <h1>Everseen AI:</h1>
@@ -881,22 +897,6 @@ const Everseen = () => {
                 <span className="badge bg-success me-2">Creative</span>
                 <span className="badge bg-warning text-dark">Paid</span>
               </div>
-            </div>
-
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src={everseen}
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
             </div>
           </div>
 

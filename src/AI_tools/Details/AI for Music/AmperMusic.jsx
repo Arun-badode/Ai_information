@@ -821,11 +821,11 @@ const AmperMusicAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
+          <div className="row align-items-center mb-4">
             {/* Left side (Text Section) */}
             <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
+              className="col-12 col-md-6 order-2 order-md-1"
+              style={{ paddingRight: "30px" }}
             >
               <p className="text-primary">Write better, faster</p>
               <h1>Amper Music AI:</h1>
@@ -846,16 +846,17 @@ const AmperMusicAI = () => {
             </div>
 
             {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img src={amper} style={{ MaxWidth: "100%", height: "300px" }} />
+            <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-3 mb-md-0">
+              <img
+                src={amper}
+                alt="Amper Music AI"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  maxHeight: "300px",
+                  objectFit: "contain",
+                }}
+              />
             </div>
           </div>
 
