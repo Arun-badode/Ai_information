@@ -24,7 +24,7 @@ const Footer = () => {
                 <Link
                   to="/AIComparisonPage"
                   href="#"
-                  className="text-gray-300 hover:text-yellow-500 no-underline"
+                  className=" hover:text-yellow-500 text-white no-underline"
                 >
                   AI Comparison Page
                 </Link>
@@ -32,7 +32,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/Aitools"
-                  className="text-gray-300 hover:text-yellow-500 no-underline"
+                  className="text-white hover:text-yellow-500 no-underline"
                 >
                   Ai Tools
                 </Link>
@@ -40,7 +40,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/AINewsPage"
-                  className="text-gray-300 hover:text-yellow-500 no-underline"
+                  className="text-white hover:text-yellow-500 no-underline"
                 >
                   Ai News
                 </Link>
@@ -48,7 +48,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/ailearninghub"
-                  className="text-gray-300 hover:text-yellow-500 no-underline"
+                  className="text-white hover:text-yellow-500 no-underline"
                 >
                   Ai Learning Hub
                 </Link>
@@ -56,7 +56,7 @@ const Footer = () => {
               <li>
                 <a
                   href="/imagemindai"
-                  className="text-gray-300 hover:text-yellow-500 no-underline"
+                  className="text-white hover:text-yellow-500 no-underline"
                 >
                   Ai Tools Details
                 </a>
@@ -66,12 +66,12 @@ const Footer = () => {
 
           {/* Company */}
           <div className="text-left">
-            <h5 className="text-white mb-3 pb-2">Services</h5>
+            <h5 className="text-white font-bold mb-3 pb-2">Services</h5>
             <ul className="list-none space-y-2">
               <li>
                 <Link
                   to="/AboutUs"
-                  className="text-gray-300 hover:text-yellow-500 no-underline"
+                  className="text-white hover:text-yellow-500 no-underline"
                 >
                   About Us
                 </Link>
@@ -80,7 +80,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/PrivacyPolicy"
-                  className="text-gray-300 hover:text-yellow-500 no-underline"
+                  className="text-white hover:text-yellow-500 no-underline"
                 >
                   Privacy Policy
                 </Link>
@@ -88,7 +88,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/AIContact"
-                  className="text-gray-300 hover:text-yellow-500 no-underline"
+                  className="text-white hover:text-yellow-500 no-underline"
                 >
                   Contact
                 </Link>
@@ -96,7 +96,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/TermsOfService"
-                  className="text-gray-300 hover:text-yellow-500 no-underline"
+                  className="text-white hover:text-yellow-500 no-underline"
                 >
                   Terms&Condition
                 </Link>
@@ -106,29 +106,29 @@ const Footer = () => {
 
           {/* Connect */}
           <div className="text-left">
-            <h5 className="text-white mb-3  pb-2">Connect</h5>
+            <h5 className="text-white font-bold mb-3  pb-2">Connect</h5>
             <div className="mb-3">
               <a
                 href="#"
-                className="text-gray-300 hover:text-yellow-500 text-2xl mr-3 no-underline"
+                className="text-white hover:text-yellow-500 text-2xl mr-3 no-underline"
               >
                 <i className="fab fa-instagram"></i>
               </a>
               <a
                 href="#"
-                className="text-gray-300 hover:text-yellow-500 text-2xl mr-3 no-underline"
+                className="text-white hover:text-yellow-500 text-2xl mr-3 no-underline"
               >
                 <i className="fab fa-twitter"></i>
               </a>
               <a
                 href="#"
-                className="text-gray-300 hover:text-yellow-500 text-2xl mr-3 no-underline"
+                className="text-white hover:text-yellow-500 text-2xl mr-3 no-underline"
               >
                 <i className="fab fa-linkedin"></i>
               </a>
               <a
                 href="#"
-                className="text-gray-300 hover:text-yellow-500 text-2xl no-underline"
+                className="text-white hover:text-yellow-500 text-2xl no-underline"
               >
                 <i className="fab fa-behance"></i>
               </a>
@@ -137,7 +137,7 @@ const Footer = () => {
               <i className="fas fa-envelope mr-2"></i>
               <a
                 href="mailto:info@aitooldesign.com"
-                className="text-gray-300 hover:text-yellow-500 no-underline"
+                className="text-white hover:text-yellow-500 no-underline"
               >
                 info@aitooldesign.com
               </a>
@@ -146,7 +146,7 @@ const Footer = () => {
               <i className="fas fa-phone-alt mr-2"></i>
               <a
                 href="tel:+15551234567"
-                className="text-gray-300 hover:text-yellow-500 no-underline"
+                className="text-white hover:text-yellow-500 no-underline"
               >
                 +1 (555) 123-4567
               </a>
