@@ -212,7 +212,7 @@ const CategoriesNavbar = () => {
               <div
                 className="dropdown-card show"
                 style={{
-                  maxWidth: "800px",
+                  maxWidth: "400px",
                   left: "0rem",
                   marginTop: "3rem",
                   position: "absolute",
@@ -232,36 +232,8 @@ const CategoriesNavbar = () => {
                     <h6>
                       Content Generation <FaPencilAlt size={20} />
                     </h6>
-                    <Link to="JobScanAI/">JobScanAI</Link>
-                    <Link to="TestimA/">TestimA</Link>
-                    <Link to="FunctionizeAI/">FunctionizeAI</Link>
-                    <Link to="TricentisAI/">TricentisAI</Link>
-                    <Link to="PerfectoAI/">PerfectoAI</Link>
-                  </div>
-                  {/* Design Tools Column */}
-                  <div
-                    className="dropdown-column"
-                    style={{ minWidth: "150px" }}
-                  >
-                    <h6>
-                      Design Tools <SiAntdesign size={20} />
-                    </h6>
-                    <Link to="RessumeAI/">RessumeAI</Link>
-                    <Link to="/Applitool">ApplitoolsAI</Link>
-                    <Link to="AppvanceAI/">AppvanceAI</Link>
-                    <Link to="RainForestAI/">RainForestAI</Link>
-                    <Link to="LambdaTestAI/">LambdaTestAI</Link>
-                  </div>
-                  {/* Content Generation Column */}
-                  <div
-                    className="dropdown-column"
-                    style={{ minWidth: "150px" }}
-                  >
-                    <h6>
-                      Content Generation <FaPencilAlt size={20} />
-                    </h6>
                     <Link to="ReZiAI/">ReZiAI</Link>
-                    <Link to="EnhanevA/">EnhanevA</Link>
+                    <Link to="/EnhanevAI">EnhanevAI</Link>
                     <Link to="KickResume/">KickResume</Link>
                     <Link to="ZetyAI/">ZetyAI</Link>
                     <Link to="VisualAI/">VisualAI</Link>
@@ -274,10 +246,11 @@ const CategoriesNavbar = () => {
                     <h6>
                       Design Tools <SiAntdesign size={20} />
                     </h6>
-                    <Link to="ResunateAI/">ResunateAI</Link>
-                    <Link to="TealHQAI/">TealHQAI</Link>
-                    <Link to="HirationAI/">HirationAI</Link>
-                    <Link to="BrowserStackAI/">BrowserStackAI</Link>
+                    <Link to="/ResunateAI">ResunateAI</Link>
+                    <Link to="/TealHQAI">TealHQAI</Link>
+                    <Link to="/HirationAI">HirationAI</Link>
+                    <Link to="/RessumeAI">RessumeAI</Link>
+                    <Link to="/JobScanAI">JobScanAI</Link>
                   </div>
                 </div>
               </div>
@@ -351,7 +324,7 @@ const CategoriesNavbar = () => {
                     </h6>
 
                     <Link to="/PiAI">PIAI</Link>
-                    <Link to="/DriftAI">Drift AI</Link>
+                    <Link to="/driftai">Drift AI</Link>
                     <Link to="/FlowXO">FLowXO</Link>
                     <Link to="/Botsify">Botsify</Link>
                     <Link to="/AivoAI">Aivo AI</Link>
@@ -678,8 +651,6 @@ const CategoriesNavbar = () => {
                     <Link to="/AnonosAI">Anonos AI</Link>
                     <Link to="/VaulTree">VaulTree AI</Link>
                     <Link to="/Duality">Duality AI</Link>
-                    <Link to="/"></Link>
-                    <Link to="/"></Link>
                   </div>
                   {/* Content Generation Column */}
                   <div
@@ -1757,7 +1728,7 @@ const CategoriesNavbar = () => {
                             setActiveDropdown(null);
                           }}
                         >
-                          PlayHiAI
+                          Play.ht AI
                         </Link>
                         <Link
                           to="/DescriptOverdub"
@@ -1868,7 +1839,7 @@ const CategoriesNavbar = () => {
                           Content Generation <FaPencilAlt size={20} />
                         </h6>
                         <Link
-                          to="JobScanAI/"
+                          to="/JobScanAI"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
@@ -1877,7 +1848,7 @@ const CategoriesNavbar = () => {
                           JobScanAI
                         </Link>
                         <Link
-                          to="TestimA/"
+                          to="/TestimA"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
@@ -1886,7 +1857,7 @@ const CategoriesNavbar = () => {
                           TestimA
                         </Link>
                         <Link
-                          to="FunctionizeAI/"
+                          to="/FunctionizeAI"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
@@ -1895,7 +1866,7 @@ const CategoriesNavbar = () => {
                           FunctionizeAI
                         </Link>
                         <Link
-                          to="TricentisAI/"
+                          to="/TricentisAI"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
@@ -1904,7 +1875,7 @@ const CategoriesNavbar = () => {
                           TricentisAI
                         </Link>
                         <Link
-                          to="PerfectoAI/"
+                          to="/PerfectoAI"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
@@ -1923,7 +1894,7 @@ const CategoriesNavbar = () => {
                           Design Tools <SiAntdesign size={20} />
                         </h6>
                         <Link
-                          to="RessumeAI/"
+                          to="/RessumeAI"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
@@ -1932,7 +1903,7 @@ const CategoriesNavbar = () => {
                           RessumeAI
                         </Link>
                         <Link
-                          to="ApplitoolsAI/"
+                          to="/ApplitoolsAI"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
@@ -1941,7 +1912,7 @@ const CategoriesNavbar = () => {
                           ApplitoolsAI
                         </Link>
                         <Link
-                          to="AppvanceAI/"
+                          to="/AppvanceAI"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
@@ -1950,7 +1921,7 @@ const CategoriesNavbar = () => {
                           AppvanceAI
                         </Link>
                         <Link
-                          to="RainForestAI/"
+                          to="/RainForestAI"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
@@ -1959,7 +1930,7 @@ const CategoriesNavbar = () => {
                           RainForestAI
                         </Link>
                         <Link
-                          to="LambdaTestAI/"
+                          to="/LambdaTestAI"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
@@ -1978,7 +1949,7 @@ const CategoriesNavbar = () => {
                           Content Generation <FaPencilAlt size={20} />
                         </h6>
                         <Link
-                          to="ReZiAI/"
+                          to="/ReZiAI"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
@@ -1987,7 +1958,7 @@ const CategoriesNavbar = () => {
                           ReZiAI
                         </Link>
                         <Link
-                          to="EnhanevA/"
+                          to="/EnhanevA"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
@@ -1996,7 +1967,7 @@ const CategoriesNavbar = () => {
                           EnhanevA
                         </Link>
                         <Link
-                          to="KickResume/"
+                          to="/KickResume"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
@@ -2005,7 +1976,7 @@ const CategoriesNavbar = () => {
                           KickResume
                         </Link>
                         <Link
-                          to="ZetyAI/"
+                          to="/ZetyAI"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
@@ -2014,7 +1985,7 @@ const CategoriesNavbar = () => {
                           ZetyAI
                         </Link>
                         <Link
-                          to="VisualAI/"
+                          to="/VisualAI"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
@@ -2033,7 +2004,7 @@ const CategoriesNavbar = () => {
                           Design Tools <SiAntdesign size={20} />
                         </h6>
                         <Link
-                          to="ResunateAI/"
+                          to="/ResunateAI"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
@@ -2042,7 +2013,7 @@ const CategoriesNavbar = () => {
                           ResunateAI
                         </Link>
                         <Link
-                          to="TealHQAI/"
+                          to="/TealHQAI"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
@@ -2051,7 +2022,7 @@ const CategoriesNavbar = () => {
                           TealHQAI
                         </Link>
                         <Link
-                          to="HirationAI/"
+                          to="/HirationAI"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
@@ -2060,7 +2031,7 @@ const CategoriesNavbar = () => {
                           HirationAI
                         </Link>
                         <Link
-                          to="BrowserStackAI/"
+                          to="/BrowserStackAI"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
@@ -4333,4 +4304,4 @@ const CategoriesNavbar = () => {
   );
 };
 
-export default CategoriesNavbar
+export default CategoriesNavbar;

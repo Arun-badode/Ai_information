@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import aivo from "../../../../public/assets/Img/AI Chatbots & Assistants/1.jpg";
 
 
 
@@ -581,38 +582,64 @@ const Botsify = () => {
         </Link>
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
-        <div className="container">
-          <div className="d-flex align-items-center justify-content-between mb-5">
-            {/* Left side (Text Section) */}
-            <div style={{ flex: 1, paddingRight: "30px" }}>
-              <img
-                src='{Logo}'
-                alt="Logo"
-                className="me-3"
-                style={{ width: "60px" }}
-              />
-              <h2>Botsify</h2>
-              <div className="text-warning mb-1">
-                ⭐⭐⭐⭐⭐ 95% Satisfaction
-              </div>
-              <p>
-                Botsify is a no-code chatbot platform that enables businesses to
-                create AI-powered chatbots for various channels, including
-                websites, Facebook Messenger, WhatsApp, Slack, and SMS. It
-                offers a user-friendly interface, allowing users to build and
-                deploy chatbots without any programming knowledge. ​
-              </p>
-            </div>
 
-            {/* Right side (Image Section) */}
-            <div style={{ flex: 1, textAlign: "center" }}>
-              <img
-                src="https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2024/05/a-robot-coming-out-of-a-laptop-screen-with-the-perplexity-ai-logo-in-its-hand.jpg"
-                className="img-fluid rounded-3"
-                style={{ maxWidth: "80%", height: "auto" }}
-              />
-            </div>
-          </div>
+          <div className="container">
+                            <div className="row align-items-start">
+                              {/* Left side (Text Section) */}
+                              <div
+                                style={{ paddingRight: "30px" }}
+                                className="col-md-6 col-12 order-2 order-md-1"
+                              >
+                                <p className="text-primary">Write better, faster</p>
+                                <h2>Aivo AI</h2>
+                                <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+                                <p>
+                        Aivo is an AI-powered customer service platform that enables
+                        businesses to automate their customer support and communication
+                        processes using chatbots and live chat. It is designed to
+                        provide intelligent conversations with users across multiple
+                        channels such as websites, WhatsApp, Facebook Messenger,
+                        Instagram, and SMS. Aivo enhances customer engagement, drives
+                        sales, and ensures seamless support through its AI-driven
+                        capabilities.
+                      </p>
+                                <div className="mb-3">
+                                  <a
+                                    href= " https://aivo.ai"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="btn btn-primary me-2"
+                                  >
+                                    Explore Tool
+                                  </a>
+                                </div>
+                              </div>
+                  
+                              {/* Right side (Image Section) */}
+                              <div
+                                style={{
+                                  textAlign: "center",
+                                  Width: "100%",
+                                  height: "250px",
+                                }}
+                                className="col-md-6 col-12 order-md-2 order-1 text-center mb-3 mb-md-0  "
+                              >
+                                <img
+                                  src={aivo}
+                                  alt="aivo"
+                                  style={{
+                                    Width: "100%",
+                                    height: "auto",
+                                    maxHeight: "300px",
+                                    objectFit: "contain",
+                                  }}
+                                />
+                              </div>
+                            </div>
+                          </div>
+        
+
+
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">
@@ -744,7 +771,7 @@ const Botsify = () => {
             </small>
           </div>
         </div>
-      </div>
+    
     </>
   );
 };

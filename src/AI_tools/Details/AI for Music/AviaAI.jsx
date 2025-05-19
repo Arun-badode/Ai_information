@@ -823,16 +823,23 @@ const AviaAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>AIVA AI:</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
+          <div className="row d-flex align-items-center justify-content-between mb-4">
+            {/* Image Section - show first on mobile */}
+            <div className="col-md-6 col-12 text-center order-1 order-md-2 mb-3 mb-md-0">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
+                alt="AIVA AI"
+                className="img-fluid"
+                style={{ maxHeight: "300px", objectFit: "contain" }}
+              />
+            </div>
+
+            {/* Text Section - show below image on mobile, but left side on desktop */}
+            <div className="col-md-6 col-12 order-2 order-md-1">
+              <p className="text-primary mb-1">Write better, faster</p>
+              <h1 className="h3">AIVA AI:</h1>
+              <div className="text-warning mb-2">⭐⭐⭐⭐⭐</div>
+              <p className="mb-3">
                 AIVA (Artificial Intelligence Virtual Artist) is a cutting-edge
                 music composition tool that leverages the power of AI to create
                 original and high-quality music across multiple genres. Designed
@@ -845,27 +852,21 @@ const AviaAI = () => {
                 and content creation.
               </p>
 
-              <div className="mb-3">
+              {/* <div className="mb-3">
                 <span className="badge bg-primary me-2">Image Generation</span>
                 <span className="badge bg-success me-2">Creative</span>
                 <span className="badge bg-warning text-dark">Paid</span>
+              </div> */}
+              <div className="mb-3">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary me-2"
+                >
+                  Explore Tool
+                </a>
               </div>
-            </div>
-
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
             </div>
           </div>
 
@@ -1027,7 +1028,7 @@ const AviaAI = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
+          {/* <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
             <h4 className="mb-3">Ready to get started with AviaAI?</h4>
             <p className="mb-4">
               Join thousands of professionals already boosting their
@@ -1040,7 +1041,7 @@ const AviaAI = () => {
             <small className="d-block mt-2">
               No credit card required. 14-day free trial available.
             </small>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

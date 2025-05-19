@@ -679,7 +679,7 @@ const Applitool = () => {
                   minHeight: "100%",
                 }}
               >
-                <h5 className="text-warning text-start mb-4">⚠️ Cons</h5>
+                <h5 className="text-warning text-start mb-4">⚠ Cons</h5>
                 <ul className="ps-3" style={{ listStyleType: "disc" }}>
                   <li className="mb-2">
                     <strong>Dependence on Image-Based Testing:</strong> While
@@ -799,8 +799,8 @@ const Applitool = () => {
         </a>
       </div>
 
-      <div className="bg-dark text-light">
-        <div className="bg-dark text-light ">
+      <div className="bg-dark text-light min-vh-100 py-5">
+        <div className="bg-dark text-light min-vh-100 py-5">
           <div className="container">
             <div className="row d-flex align-items-center justify-content-between mb-1">
               {/* Left side (Text Section) */}

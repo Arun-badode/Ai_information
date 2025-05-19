@@ -39,13 +39,12 @@ body {
   margin: 0;
 }
 
-
 .nav-item {
   position: relative;
   font-size: 13px;
   display: inline-block;
 
-  flex: 0 0 10%; 
+  flex: 0 0 10%;
   /* line-height: 20px;  */
   /* white-space: nowrap; 
   text-overflow: ellipsis; 
@@ -120,18 +119,6 @@ body {
   color: #38bdf8;
   text-decoration: underline;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Medium Screens */
 @media (max-width: 991.98px) {
@@ -255,16 +242,7 @@ body {
   padding: 0;
 }
 
-
-
-
-
-
-
-
-
 /* Mobile toggle button */
-
 
 /* Initially hide the button */
 .mobile-category-toggle {
@@ -293,13 +271,11 @@ body {
 @media (max-width: 991px) {
   .mobile-category-toggle {
     display: block;
-    
   }
 
   /* Hide category list on mobile by default */
   .categories-navbar .nav-list {
     display: none !important;
-  
   }
 
   /* Show category list when button is clicked */
@@ -310,14 +286,13 @@ body {
 }
 /* Hide category list on larger screens */
 
- 
 @media (min-width: 992px) {
   .mobile-category-toggle {
-    display: none; 
+    display: none;
   }
 
   .categories-navbar .nav-list {
-    display: flex !important; 
+    display: flex !important;
     flex-direction: row;
   }
   /* @media (min-width: 992px) {
@@ -335,20 +310,17 @@ body {
     }
 }   */
 
+  @media (min-width: 992px) {
+    .categories-navbar .nav-list {
+      display: flex !important;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
 
-
-
-@media (min-width: 992px) {
-  .categories-navbar .nav-list {
-    display: flex !important;
-    flex-direction: row;
-    flex-wrap: wrap;
+    .nav-item {
+      flex: 0 0 10%;
+      max-width: 10%;
+      box-sizing: border-box;
+    }
   }
-
-  .nav-item {
-    flex: 0 0 10%;
-    max-width: 10%;
-    box-sizing: border-box;
-  }
-}
 }

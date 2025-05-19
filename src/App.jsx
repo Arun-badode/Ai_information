@@ -73,7 +73,6 @@ import MidJourney from "./AI_tools/Details/AI for image/MidJourney";
 
 // AI for Software Testing
 import RainforestQA from "./AI_tools/Details/AI for Software Testing/RainforestQA";
-// import ApplitoolsAI from "./AI_tools/Details/AI for Software Testing/ApplitoolsAI";
 import LambdaTestAI from "./AI_tools/Details/AI for Software Testing/LambdaTestAI";
 import PerfectoAI from "./AI_tools/Details/AI for Software Testing/PerfectoAI";
 import FunctionizeAI from "./AI_tools/Details/AI for Software Testing/FunctionizeAI";
@@ -101,20 +100,17 @@ import MoocLab from "./AI_tools/Details/AI for Education/MoocLab";
 
 // AI for Resume //
 import JobScanAI from "./AI_tools/Details/AI for Resume/JobScanAI";
-import TestimAI from "./AI_tools/Details/AI for Resume/TestimAI";
-import TricentisAI from "./AI_tools/Details/AI for Resume/TricentisAI";
+
 import RessumeAI from "./AI_tools/Details/AI for Resume/ResumeAI";
-import AppvanceAI from "./AI_tools/Details/AI for Resume/AppvanceAI";
-import RainForestAI from "./AI_tools/Details/AI for Resume/RainForestAI";
+
 import ReZiAI from "./AI_tools/Details/AI for Resume/ReziAI";
 import EnhanevAI from "./AI_tools/Details/AI for Resume/EnhanevAI";
 import KickResume from "./AI_tools/Details/AI for Resume/KickResume";
 import ZetyAI from "./AI_tools/Details/AI for Resume/ZetyAI";
 import VisualAI from "./AI_tools/Details/AI for Resume/VisualAI";
 import ResunateAI from "./AI_tools/Details/AI for Resume/ResunateAI";
-import TealHQAI from "./AI_tools/Details/AI for Resume/TealHQAI";
+// import TealHQAI from "./AI_tools/Details/AI for Resume/TealHQAI";
 import HirationAI from "./AI_tools/Details/AI for Resume/HirationAI";
-import Applitool from "./AI_tools/Details/AI for Resume/Applitool";
 
 // AI for SEO//
 
@@ -177,7 +173,6 @@ import Smmry from "./AI_tools/Details/AI for Document managment/Smmry";
 import Summarizebot from "./AI_tools/Details/AI for Document managment/Summarizebot";
 import UpsumAI from "./AI_tools/Details/AI for Document managment/UpsumAI";
 import UpwordAI from "./AI_tools/Details/AI for Document managment/UpwordAI";
-
 
 // Ai for Mapping//
 import Ayoa from "./AI_tools/Details/AI Mapping/Ayoa";
@@ -274,7 +269,7 @@ import BraveSearch from "./AI_tools/Details/Ai for Search engines/BraveSearch";
 import Komo from "./AI_tools/Details/Ai for Search engines/Komo";
 import MetaPhor from "./AI_tools/Details/Ai for Search engines/MetaPhor";
 import Mojeek from "./AI_tools/Details/Ai for Search engines/Mojeek";
-
+import Applitool from "./AI_tools/Details/AI for Education/Applitoo";
 
 const App = () => {
   return (
@@ -387,14 +382,14 @@ const App = () => {
         <Route path="/uminarAI" element={<LuminarAI />}></Route>
         {/* AI for Software Testing */}
         <Route path="/RainforestQA" element={<RainforestQA />}></Route>
-        {/* <Route path="/ApplitoolsAI" element={<ApplitoolsAI />}></Route> */}
         <Route path="/LambdaTestAI" element={<LambdaTestAI />}></Route>
-        <Route path="PerfectoAI" element={<PerfectoAI />}></Route>
+        <Route path="/PerfectoAI" element={<PerfectoAI />}></Route>
         <Route path="/FunctionizeAI" element={<FunctionizeAI />}></Route>
         <Route path="/Testimio" element={<Testimio />}></Route>
         <Route path="/BrowserStackAI" element={<BrowserStackAI />}></Route>
         <Route path="/AppvancelIQ" element={<AppvanceIQ />}></Route>
         <Route path="/TricentisToscaAI" element={<TricentisToscaAI />}></Route>
+        <Route path="/ApplitoolsAI" element={<Applitool />}></Route>
         {/* AI in E-commerce */}
         <Route path="/AlgoliaAI" element={<AlgoliaAI />}></Route>
         <Route path="/BoldMetricsAI" element={<BoldMetricsAI />}></Route>
@@ -404,28 +399,18 @@ const App = () => {
         <Route path="/LilyAI" element={<LilyAI />}></Route>
         <Route path="/StyleAI" element={<StyleAI />}></Route>
         <Route path="/PhraseeAI" element={<PhraseeAI />}></Route>
-        <Route path="/ViSenzeAI " element={<ViSenzeAI />}></Route>
+        <Route path="/ViSenzeAI" element={<ViSenzeAI />}></Route>
         {/* AI for resume  */}
         <Route path="/JobScanAI" element={<JobScanAI />}></Route>
-        <Route path="/TestimA" element={<TestimAI />}></Route>
-        <Route path="/FunctionizeAI" element={<FunctionizeAI />}></Route>
-        <Route path="/TricentisAI" element={<TricentisAI />}></Route>
-        <Route path="/PerfectoAI" element={<PerfectoAI />}></Route>
         <Route path="/RessumeAI" element={<RessumeAI />}></Route>
-       <Route path="/Applitool" element={<Applitool/>}></Route>
-        <Route path="/AppvanceAI" element={<AppvanceAI />}></Route>
-        <Route path="/RainForestAI" element={<RainForestAI />}></Route>
-        <Route path="/LambdaTestAI" element={<LambdaTestAI />}></Route>
         <Route path="/ReZiAI" element={<ReZiAI />}></Route>
-        <Route path="/EnhanevAI" element={<EnhanevAI />}></Route>
+        <Route path="/EnhanevAI" element={<EnhanevAI/>}></Route>
         <Route path="/KickResume" element={<KickResume />}></Route>
         <Route path="/ZetyAI" element={<ZetyAI />}></Route>
         <Route path="/VisualAI" element={<VisualAI />}></Route>
         <Route path="/ResunateAI" element={<ResunateAI />}></Route>
-        <Route path="/TealHQAI" element={<TealHQAI />}></Route>
+        {/* <Route path="/TealHQAI" element={<TealHQAI />}></Route> */}
         <Route path="/HirationAI" element={<HirationAI />}></Route>
-        <Route path="/BrowserStackAI" element={<BrowserStackAI />}></Route>
-      
         {/* AI for resume   end */}
         {/* Ai for SEO  */}
         <Route path="/ClearScopeAI" element={<ClearScopeAI />}></Route>
@@ -457,7 +442,7 @@ const App = () => {
         <Route path="/ResembleAI" element={<ResembleAI />}></Route>
         <Route path="/SoundrawAI" element={<SoundrawAI />}></Route>
         <Route path="/VoiceModAI" element={<VoiceModAI />}></Route>
-        <Route path="/PlayHiAI/" element={<PlayHiAI />}></Route>
+        <Route path="/PlayHiAI" element={<PlayHiAI />}></Route>
         <Route path="/DescriptOverdub" element={<DescriptOverdub />}></Route>
         <Route path="/WallsaidAI" element={<WallsaidAI />}></Route>
         <Route path="/LovoAi" element={<LovoAi />}></Route>

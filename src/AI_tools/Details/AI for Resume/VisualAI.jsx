@@ -5,7 +5,7 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
-import visual from "../../../../public/assets/Img/Ai for Resume/46.png";
+import visual from "../../../../public/assets/Img/Ai for Resume/45.png";
 // review section data
 const reviews = [
   {
@@ -798,11 +798,23 @@ const VisualAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
+          <div className="row align-items-center mb-5">
+            {/* Right side (Image Section) */}
+            <div className="col-md-6 col-12 text-center">
+              <img
+                src={visual}
+                alt="Zety"
+                style={{
+                  maxWidth: "100%",
+                  height: "300px",
+                  objectFit: "contain",
+                }}
+              />
+            </div>
             {/* Left side (Text Section) */}
             <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
+              className="col-md-6 col-12 mb-4 mb-md-0"
+              style={{ paddingRight: "30px" }}
             >
               <p className="text-primary">Write better, faster</p>
               <h1>VisualCV AI</h1>
@@ -817,203 +829,172 @@ const VisualAI = () => {
                 creation, and career development, making it an all-in-one
                 solution for job seekers.
               </p>
-
-              <p>
-                VisualCV is highly regarded for its clean, modern resume
-                templates, ease of use, and AI-powered resume optimization
-                features. Users appreciate its customizable templates,
-                ATS-friendly designs, and the ability to create personalized job
-                alerts. The platform stands out for its professional portfolio
-                options, making it a strong contender in the AI-powered resume
-                builder market.
-              </p>
-
               <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
-            </div>
-
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img src={visual} style={{ MaxWidth: "100%", height: "300px" }} />
-            </div>
-          </div>
-
-          <section style={{ backgroundColor: "#0b1e3d", padding: "3rem 0" }}>
-            <div className="container text-center">
-              <p className="text-primary">
-                Create Stunning Resumes with VisualCV AI
-              </p>
-              <h2
-                style={{
-                  fontWeight: "600",
-                  color: "#fff",
-                  marginBottom: "1rem",
-                }}
-              >
-                How VisualCV AI Helps You Craft a Professional Resume
-              </h2>
-
-              <div className="row g-4">
-                {/* Step 1 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#1034A6",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
-            .step1 {
-              position: absolute;
-              bottom: 10px;
-              right: 15px;
-              font-size: 4rem;
-              font-weight: bold;
-              color: #7b61ff;
-              opacity: 0.6;
-            }
-          `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Analyzes Your Professional Profile
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      VisualCV AI examines your experience and career goals to
-                      ensure your resume reflects your unique skills and
-                      aspirations.
-                    </p>
-                    <div className="step1">1</div>
-                  </div>
-                </div>
-
-                {/* Step 2 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#1034A6",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
-            .step2 {
-              position: absolute;
-              bottom: 10px;
-              right: 15px;
-              font-size: 4rem;
-              font-weight: bold;
-              color: #7b61ff;
-              opacity: 0.6;
-            }
-          `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Customizes Your Resume for Targeted Roles
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      VisualCV AI adjusts every section of your resume, from
-                      experience to skills, tailoring it to specific job roles
-                      and industries.
-                    </p>
-                    <div className="step2">2</div>
-                  </div>
-                </div>
-
-                {/* Step 3 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#1034A6",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
-            .step3 {
-              position: absolute;
-              bottom: 10px;
-              right: 15px;
-              font-size: 4rem;
-              font-weight: bold;
-              color: #7b61ff;
-              opacity: 0.6;
-            }
-          `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Generates a Professionally Designed Resume
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      VisualCV AI generates a visually stunning, industry-ready
-                      resume that highlights your key achievements and
-                      professional experience.
-                    </p>
-                    <div className="step3">3</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Tab Navigation */}
-          <ul className="nav nav-tabs custom-tabs mb-4">
-            {[
-              "Features",
-              "Screenshots",
-              "Reviews",
-              "FAQs",
-              "Technical",
-              "Why-We-Use",
-              "Pros & Cons",
-              "Alternative",
-            ].map((tab) => (
-              <li className="nav-item mb-2" key={tab}>
-                <button
-                  className={`nav-link ${activeTab === tab ? "active" : ""}`}
-                  onClick={() => setActiveTab(tab)}
+                <a
+                  href="https://zety.com/resume-builder"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary me-2"
                 >
-                  {tab.charAt(0).toUpperCase() + tab.slice(1)}
-                </button>
-              </li>
-            ))}
-          </ul>
-
-          {/* Tab Content */}
-          <div className="tab-content-area">{renderTabContent()}</div>
-
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with RunWayGen?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
+                  Explore Tool
+                </a>
+              </div>
             </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
           </div>
         </div>
+
+        <section style={{ backgroundColor: "#0b1e3d", padding: "5rem 0" }}>
+          <div className="container text-center">
+            <p className="text-primary">
+              Create Stunning Resumes with VisualCV AI
+            </p>
+            <h2
+              style={{
+                fontWeight: "600",
+                color: "#fff",
+                marginBottom: "1rem",
+              }}
+            >
+              How VisualCV AI Helps You Craft a Professional Resume
+            </h2>
+
+            <div className="row g-4">
+              {/* Step 1 */}
+              <div className="col-md-4">
+                <div
+                  className="position-relative"
+                  style={{
+                    backgroundColor: "#1034A6",
+                    borderRadius: "12px",
+                    boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+                    padding: "2rem",
+                    height: "100%",
+                  }}
+                >
+                  <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+                    Analyzes Your Professional Profile
+                  </h5>
+                  <p style={{ color: "#fff", margin: 0 }}>
+                    VisualCV AI examines your experience and career goals to
+                    ensure your resume reflects your unique skills and
+                    aspirations.
+                  </p>
+                  <div
+                    style={{
+                      position: "absolute",
+                      bottom: "10px",
+                      right: "15px",
+                      fontSize: "4rem",
+                      fontWeight: "bold",
+                      color: "#7b61ff",
+                      opacity: 0.6,
+                    }}
+                  >
+                    1
+                  </div>
+                </div>
+              </div>
+
+              {/* Step 2 */}
+              <div className="col-md-4">
+                <div
+                  className="position-relative"
+                  style={{
+                    backgroundColor: "#1034A6",
+                    borderRadius: "12px",
+                    boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+                    padding: "2rem",
+                    height: "100%",
+                  }}
+                >
+                  <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+                    Customizes Your Resume for Targeted Roles
+                  </h5>
+                  <p style={{ color: "#fff", margin: 0 }}>
+                    VisualCV AI adjusts every section of your resume, from
+                    experience to skills, tailoring it to specific job roles and
+                    industries.
+                  </p>
+                  <div
+                    style={{
+                      position: "absolute",
+                      bottom: "10px",
+                      right: "15px",
+                      fontSize: "4rem",
+                      fontWeight: "bold",
+                      color: "#7b61ff",
+                      opacity: 0.6,
+                    }}
+                  >
+                    2
+                  </div>
+                </div>
+              </div>
+
+              {/* Step 3 */}
+              <div className="col-md-4">
+                <div
+                  className="position-relative"
+                  style={{
+                    backgroundColor: "#1034A6",
+                    borderRadius: "12px",
+                    boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+                    padding: "2rem",
+                    height: "100%",
+                  }}
+                >
+                  <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+                    Generates a Professionally Designed Resume
+                  </h5>
+                  <p style={{ color: "#fff", margin: 0 }}>
+                    VisualCV AI generates a visually stunning, industry-ready
+                    resume that highlights your key achievements and
+                    professional experience.
+                  </p>
+                  <div
+                    style={{
+                      position: "absolute",
+                      bottom: "10px",
+                      right: "15px",
+                      fontSize: "4rem",
+                      fontWeight: "bold",
+                      color: "#7b61ff",
+                      opacity: 0.6,
+                    }}
+                  >
+                    3
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Tab Navigation */}
+        <ul className="nav nav-tabs custom-tabs mb-4">
+          {[
+            "Features",
+            "Screenshots",
+            "Reviews",
+            "FAQs",
+            "Technical",
+            "Why-We-Use",
+            "Pros & Cons",
+            "Alternative",
+          ].map((tab) => (
+            <li className="nav-item mb-2" key={tab}>
+              <button
+                className={`nav-link ${activeTab === tab ? "active" : ""}`}
+                onClick={() => setActiveTab(tab)}
+              >
+                {tab.charAt(0).toUpperCase() + tab.slice(1)}
+              </button>
+            </li>
+          ))}
+        </ul>
+
+        {/* Tab Content */}
+        <div className="tab-content-area">{renderTabContent()}</div>
       </div>
     </>
   );

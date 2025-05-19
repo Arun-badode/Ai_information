@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import aivo from "../../../../public/assets/Img/AI Chatbots & Assistants/1.jpg";
 
 
 // review section data
@@ -80,7 +81,7 @@ const AivoAI = () => {
     switch (activeTab) {
       case "features":
         return (
-          <div className="row g-4">
+          <div className="row g-4 px-4">
             {[
               {
                 title: "AI-Powered Chatbots",
@@ -115,7 +116,7 @@ const AivoAI = () => {
                 desc: "Measure chatbot performance, customer satisfaction, and user behavior to continuously optimize the experience and business impact.",
               },
             ].map((feature, index) => (
-              <div className="col-md-4" key={index}>
+              <div className="col-md-4 px-4" key={index}>
                 <div className="custom-card text-light p-4 h-100">
                   <div className="icon mb-3">{feature.icon}</div>
                   <h5 className="fw-bold">{feature.title}</h5>
@@ -577,21 +578,19 @@ const AivoAI = () => {
         </Link>
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
-        <div className="container">
-          <div className="d-flex align-items-center justify-content-between mb-5">
-            {/* Left side (Text Section) */}
-            <div style={{ flex: 1, paddingRight: "30px" }}>
-              <img
-                src=""
-                alt="Logo"
-                className="me-3"
-                style={{ width: "60px" }}
-              />
-              <h2>Aivo AI</h2>
-              <div className="text-warning mb-1">
-                ⭐⭐⭐⭐⭐ 95% Satisfaction
-              </div>
-              <p>
+       
+
+             <div className="container">
+                    <div className="row align-items-start">
+                      {/* Left side (Text Section) */}
+                      <div
+                        style={{ paddingRight: "30px" }}
+                        className="col-md-6 col-12 order-2 order-md-1"
+                      >
+                        <p className="text-primary">Write better, faster</p>
+                        <h2>Aivo AI</h2>
+                        <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+                        <p>
                 Aivo is an AI-powered customer service platform that enables
                 businesses to automate their customer support and communication
                 processes using chatbots and live chat. It is designed to
@@ -601,18 +600,43 @@ const AivoAI = () => {
                 sales, and ensures seamless support through its AI-driven
                 capabilities.
               </p>
-            </div>
+                        <div className="mb-3">
+                          <a
+                            href= " https://aivo.ai"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn btn-primary me-2"
+                          >
+                            Explore Tool
+                          </a>
+                        </div>
+                      </div>
+          
+                      {/* Right side (Image Section) */}
+                      <div
+                        style={{
+                          textAlign: "center",
+                          Width: "100%",
+                          height: "250px",
+                        }}
+                        className="col-md-6 col-12 order-md-2 order-1 text-center mb-3 mb-md-0  "
+                      >
+                        <img
+                          src={aivo}
+                          alt="aivo"
+                          style={{
+                            Width: "100%",
+                            height: "auto",
+                            maxHeight: "300px",
+                            objectFit: "contain",
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </div>
 
-            {/* Right side (Image Section) */}
-            <div style={{ flex: 1, textAlign: "center" }}>
-              <img
-                src="https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2024/05/a-robot-coming-out-of-a-laptop-screen-with-the-perplexity-ai-logo-in-its-hand.jpg"
-                className="img-fluid rounded-3"
-                style={{ maxWidth: "80%", height: "auto" }}
-              />
-            </div>
-          </div>
-          <section style={{ backgroundColor: "", padding: "3rem 0" }}>
+
+<section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">
                 Create Conversations with Aivo AI in 3 Easy Steps
@@ -704,7 +728,7 @@ const AivoAI = () => {
           </section>
 
           {/* Tab Navigation */}
-          <ul className="nav nav-tabs custom-tabs mb-4">
+          <ul className="nav nav-tabs custom-tabs mb-4 py-3 px-10">
             {[
               "features",
               "screenshots",
@@ -715,7 +739,7 @@ const AivoAI = () => {
               "pros & Cons",
               "alternative",
             ].map((tab) => (
-              <li className="nav-item mb-2" key={tab}>
+              <li className="nav-item mb-2 px-12" key={tab}>
                 <button
                   className={`nav-link ${activeTab === tab ? "active" : ""}`}
                   onClick={() => setActiveTab(tab)}
@@ -729,22 +753,9 @@ const AivoAI = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with AivoAI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
+        
         </div>
-      </div>
+   
     </>
   );
 };
