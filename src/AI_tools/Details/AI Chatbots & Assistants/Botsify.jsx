@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import botsify from "../../../../public/assets/Img/AI Chatbots & Assistants/2.jpg";
 
 
 
@@ -582,19 +583,16 @@ const Botsify = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className="d-flex align-items-center justify-content-between mb-5">
+          <div className="row align-items-start">
             {/* Left side (Text Section) */}
-            <div style={{ flex: 1, paddingRight: "30px" }}>
-              <img
-                src='{Logo}'
-                alt="Logo"
-                className="me-3"
-                style={{ width: "60px" }}
-              />
+            <div
+              style={{ paddingRight: "30px" }}
+              className="col-md-6 col-12 order-2 order-md-1"
+            >
+              <p className="text-primary">Write better, faster</p>
               <h2>Botsify</h2>
-              <div className="text-warning mb-1">
-                ⭐⭐⭐⭐⭐ 95% Satisfaction
-              </div>
+
+              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
               <p>
                 Botsify is a no-code chatbot platform that enables businesses to
                 create AI-powered chatbots for various channels, including
@@ -602,148 +600,157 @@ const Botsify = () => {
                 offers a user-friendly interface, allowing users to build and
                 deploy chatbots without any programming knowledge. ​
               </p>
+
+              <div className="mb-3">
+                <a
+                  href="  https://botsify.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary me-2"
+                >
+                  Explore Tool
+                </a>
+              </div>
             </div>
 
             {/* Right side (Image Section) */}
-            <div style={{ flex: 1, textAlign: "center" }}>
+            <div
+              style={{
+                textAlign: "center",
+                Width: "100%",
+                height: "250px",
+              }}
+              className="col-md-6 col-12 order-md-2 order-1 text-center mb-3 mb-md-0  "
+            >
               <img
-                src="https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2024/05/a-robot-coming-out-of-a-laptop-screen-with-the-perplexity-ai-logo-in-its-hand.jpg"
-                className="img-fluid rounded-3"
-                style={{ maxWidth: "80%", height: "auto" }}
+                src={botsify}
+                alt="botsify"
+                style={{
+                  Width: "100%",
+                  height: "auto",
+                  maxHeight: "300px",
+                  objectFit: "contain",
+                }}
               />
             </div>
           </div>
-          <section style={{ backgroundColor: "", padding: "3rem 0" }}>
-            <div className="container text-center">
-              <p className="text-primary">
-                Create Conversations with Botsify in 3 Easy Steps
-              </p>
-              <h2
-                style={{
-                  fontWeight: "semibold",
-                  color: "#fff",
-                  marginBottom: "1rem",
-                }}
-              >
-                How does Botsify work?
-              </h2>
+        </div>
 
-              <div className="row g-4">
-                {/* Step 1 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#1034A6",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Start a Conversation with Botsify
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Begin by engaging with Botsify. It processes your queries
-                      and provides instant, context-aware responses with no
-                      setup required.
-                    </p>
-                    <div className="step1">1</div>
-                  </div>
+        <section style={{ backgroundColor: "", padding: "3rem 0" }}>
+          <div className="container text-center">
+            <p className="text-primary">
+              Create Conversations with Botsify in 3 Easy Steps
+            </p>
+            <h2
+              style={{
+                fontWeight: "semibold",
+                color: "#fff",
+                marginBottom: "1rem",
+              }}
+            >
+              How does Botsify work?
+            </h2>
+
+            <div className="row g-4">
+              {/* Step 1 */}
+              <div className="col-md-4">
+                <div
+                  style={{
+                    position: "relative",
+                    backgroundColor: "#1034A6",
+                    borderRadius: "12px",
+                    boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+                    padding: "2rem",
+                    height: "100%",
+                  }}
+                >
+                  <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+                    Start a Conversation with Botsify
+                  </h5>
+                  <p style={{ color: "#fff", margin: 0 }}>
+                    Begin by engaging with Botsify. It processes your queries
+                    and provides instant, context-aware responses with no setup
+                    required.
+                  </p>
+                  <div className="step1">1</div>
                 </div>
+              </div>
 
-                {/* Step 2 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#1034A6",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Botsify Processes Your Query
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Botsify uses AI to understand user inputs and provide
-                      answers instantly. It integrates with various platforms,
-                      including websites and social media.
-                    </p>
-                    <div className="step2">2</div>
-                  </div>
+              {/* Step 2 */}
+              <div className="col-md-4">
+                <div
+                  style={{
+                    position: "relative",
+                    backgroundColor: "#1034A6",
+                    borderRadius: "12px",
+                    boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+                    padding: "2rem",
+                    height: "100%",
+                  }}
+                >
+                  <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+                    Botsify Processes Your Query
+                  </h5>
+                  <p style={{ color: "#fff", margin: 0 }}>
+                    Botsify uses AI to understand user inputs and provide
+                    answers instantly. It integrates with various platforms,
+                    including websites and social media.
+                  </p>
+                  <div className="step2">2</div>
                 </div>
+              </div>
 
-                {/* Step 3 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#1034A6",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Automate Your Customer Support with Botsify
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Automate customer interactions, manage leads, and engage
-                      your customers across multiple channels using Botsify.
-                    </p>
-                    <div className="step3">3</div>
-                  </div>
+              {/* Step 3 */}
+              <div className="col-md-4">
+                <div
+                  style={{
+                    position: "relative",
+                    backgroundColor: "#1034A6",
+                    borderRadius: "12px",
+                    boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+                    padding: "2rem",
+                    height: "100%",
+                  }}
+                >
+                  <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+                    Automate Your Customer Support with Botsify
+                  </h5>
+                  <p style={{ color: "#fff", margin: 0 }}>
+                    Automate customer interactions, manage leads, and engage
+                    your customers across multiple channels using Botsify.
+                  </p>
+                  <div className="step3">3</div>
                 </div>
               </div>
             </div>
-          </section>
-
-          {/* Tab Navigation */}
-          <ul className="nav nav-tabs custom-tabs mb-4">
-            {[
-              "features",
-              "screenshots",
-              "reviews",
-              "FAQs",
-              // "technical",
-              "why-we-use",
-              "pros & Cons",
-              "alternative",
-            ].map((tab) => (
-              <li className="nav-item mb-2" key={tab}>
-                <button
-                  className={`nav-link ${activeTab === tab ? "active" : ""}`}
-                  onClick={() => setActiveTab(tab)}
-                >
-                  {tab.charAt(0).toUpperCase() + tab.slice(1)}
-                </button>
-              </li>
-            ))}
-          </ul>
-
-          {/* Tab Content */}
-          <div className="tab-content-area">{renderTabContent()}</div>
-
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with Botsify?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
           </div>
-        </div>
+        </section>
+
+        {/* Tab Navigation */}
+        <ul className="nav nav-tabs custom-tabs mb-4">
+          {[
+            "features",
+            "screenshots",
+            "reviews",
+            "FAQs",
+            // "technical",
+            "why-we-use",
+            "pros & Cons",
+            "alternative",
+          ].map((tab) => (
+            <li className="nav-item mb-2" key={tab}>
+              <button
+                className={`nav-link ${activeTab === tab ? "active" : ""}`}
+                onClick={() => setActiveTab(tab)}
+              >
+                {tab.charAt(0).toUpperCase() + tab.slice(1)}
+              </button>
+            </li>
+          ))}
+        </ul>
+
+        {/* Tab Content */}
+        <div className="tab-content-area">{renderTabContent()}</div>
       </div>
     </>
   );
