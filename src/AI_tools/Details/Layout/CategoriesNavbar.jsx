@@ -150,7 +150,7 @@ const CategoriesNavbar = () => {
                     <Link to="/AmperMusicAI">AmperMusicAI</Link>
                     <Link to="/AviaAI">AviaAI</Link>
                     <Link to="/BoomyAI">BoomyAI</Link>
-                    <Link to="/DescriptAI">DescriptAI</Link>
+
                     <Link to="/EcrettMusicAI">EcrettMusicAI</Link>
                   </div>
                   {/* Content Generation Column */}

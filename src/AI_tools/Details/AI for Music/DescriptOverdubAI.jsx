@@ -634,61 +634,53 @@ const DescriptOverdub = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>Descript Overdub - Information</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                {" "}
-                Descript Overdub is an advanced AI-powered text-to-speech (TTS)
-                and voice cloning tool designed to help content creators,
-                podcasters, video editors, and marketers generate
-                natural-sounding AI voices. Overdub uses cutting-edge deep
-                learning algorithms to produce highly customizable voiceovers
-                from text input. It enables users to clone their own voice or
-                any other voice they wish to create, allowing them to generate
-                lifelike, human-like audio content for various applications,
-                including podcasts, videos, and more. The tool is perfect for
-                individuals and businesses looking to produce high-quality voice
-                content quickly and affordably.
-              </p>
-
-              {/* <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div> */}
-              <div className="mb-3">
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary me-2"
-                >
-                  Explore Tool
-                </a>
+         
+            <div className="row align-items-center mb-1">
+              {/* Image Section - Mobile me row 1, Desktop me column 2 */}
+              <div
+                className="col-12 col-md-6 order-1 order-md-2 text-center mb-3 mb-md-0"
+                style={{ height: "250px" }}
+              >
+                <img
+                  src=""
+                  alt="Descript Overdub"
+                  style={{ maxWidth: "100%", height: "300px" }}
+                />
               </div>
-            </div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src="data:image/png;base64,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"
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
+              {/* Text Section - Mobile me row 2, Desktop me column 1 */}
+              <div
+                className="col-12 col-md-6 order-2 order-md-1"
+                style={{ paddingRight: "30px" }}
+              >
+                <p className="text-primary">Write better, faster</p>
+                <h1>Descript Overdub</h1>
+                <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+                <p>
+                  Descript Overdub is an advanced AI-powered text-to-speech
+                  (TTS) and voice cloning tool designed to help content
+                  creators, podcasters, video editors, and marketers generate
+                  natural-sounding AI voices. Overdub uses cutting-edge deep
+                  learning algorithms to produce highly customizable voiceovers
+                  from text input. It enables users to clone their own voice or
+                  any other voice they wish to create, allowing them to generate
+                  lifelike, human-like audio content for various applications,
+                  including podcasts, videos, and more. The tool is perfect for
+                  individuals and businesses looking to produce high-quality
+                  voice content quickly and affordably.
+                </p>
+
+                <div className="mb-3">
+                  <a
+                    href="https://www.descript.com/overdub"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-primary me-2"
+                  >
+                    Explore Tool
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
@@ -860,7 +852,7 @@ const DescriptOverdub = () => {
             </small>
           </div> */}
         </div>
-      </div>
+      
     </>
   );
 };

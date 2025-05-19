@@ -816,15 +816,20 @@ const SoundrawAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
+          <div className="row align-items-center mb-4">
+            <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-3 mb-md-0">
+              <img
+                src=""
+                alt="Soundraw AI"
+                className="img-fluid"
+                style={{ maxHeight: "300px", objectFit: "contain" }}
+              />
+            </div>
+
+            <div className="col-12 col-md-6 order-2 order-md-1">
               <p className="text-primary">Write better, faster</p>
               <h1>Soundraw AI:</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+              <div className="text-warning mb-2">⭐⭐⭐⭐⭐</div>
               <p>
                 Soundraw is an AI-powered music generation tool that allows
                 users to create unique, royalty-free music tracks quickly and
@@ -835,35 +840,14 @@ const SoundrawAI = () => {
                 ideal tool for creators in need of custom tracks for videos,
                 podcasts, ads, games, and much more.
               </p>
-
-              {/* <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div> */}
-              <div className="mb-3">
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary me-2"
-                >
-                  Explore Tool
-                </a>
-              </div>
-            </div>
-
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img src={sound} style={{ MaxWidth: "100%", height: "300px" }} />
+              <a
+                href="https://soundraw.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary"
+              >
+                Explore Tool
+              </a>
             </div>
           </div>
 

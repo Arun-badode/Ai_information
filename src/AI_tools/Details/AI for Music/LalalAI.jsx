@@ -826,11 +826,23 @@ const LalalAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
+          <div className="row d-flex align-items-center justify-content-between mb-1">
+            {/* Image: mobile pe pehle row, desktop pe right side */}
             <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
+              className="col-12 col-md-6 order-1 order-md-2 mb-3 mb-md-0"
+              style={{ textAlign: "center", height: "250px" }}
+            >
+              <img
+                src={lala}
+                alt="LALAL.AI"
+                style={{ maxWidth: "100%", height: "300px" }}
+              />
+            </div>
+
+            {/* Text: mobile pe dusre row, desktop pe left side */}
+            <div
+              className="col-12 col-md-6 order-2 order-md-1"
+              style={{ paddingRight: "30px" }}
             >
               <p className="text-primary">Write better, faster</p>
               <h1>LALAL.AI:</h1>
@@ -846,14 +858,9 @@ const LalalAI = () => {
                 and separate audio tracks for various projects.
               </p>
 
-              {/* <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div> */}
               <div className="mb-3">
                 <a
-                  href=""
+                  href="https://lalal.ai"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary me-2"
@@ -861,19 +868,6 @@ const LalalAI = () => {
                   Explore Tool
                 </a>
               </div>
-            </div>
-
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img src={lala} style={{ MaxWidth: "100%", height: "300px" }} />
             </div>
           </div>
 

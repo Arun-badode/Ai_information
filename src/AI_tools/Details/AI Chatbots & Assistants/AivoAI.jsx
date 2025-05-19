@@ -5,7 +5,6 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import aivo from "../../../../public/assets/Img/AI Chatbots & Assistants/1.jpg";
 
-
 // review section data
 const reviews = [
   {
@@ -131,18 +130,10 @@ const AivoAI = () => {
         return (
           <div className="row g-4">
             <div className="col-md-6">
-              <img
-                src=""
-                alt="Screenshot 1"
-                className="img-fluid rounded-3"
-              />
+              <img src="" alt="Screenshot 1" className="img-fluid rounded-3" />
             </div>
             <div className="col-md-6">
-              <img
-                src=""
-                alt="Screenshot 2"
-                className="img-fluid rounded-3"
-              />
+              <img src="" alt="Screenshot 2" className="img-fluid rounded-3" />
             </div>
           </div>
         );
@@ -578,19 +569,21 @@ const AivoAI = () => {
         </Link>
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
-       
-
-             <div className="container">
-                    <div className="row align-items-start">
-                      {/* Left side (Text Section) */}
-                      <div
-                        style={{ paddingRight: "30px" }}
-                        className="col-md-6 col-12 order-2 order-md-1"
-                      >
-                        <p className="text-primary">Write better, faster</p>
-                        <h2>Aivo AI</h2>
-                        <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-                        <p>
+        <div className="container">
+          <div className="d-flex align-items-center justify-content-between mb-5">
+            {/* Left side (Text Section) */}
+            <div className="" style={{ flex: 1, paddingRight: "30px" }}>
+              <img
+                src=""
+                alt="Logo"
+                className="me-3"
+                style={{ width: "60px" }}
+              />
+              <h2>Aivo AI</h2>
+              <div className="text-warning mb-1">
+                ⭐⭐⭐⭐⭐ 95% Satisfaction
+              </div>
+              <p>
                 Aivo is an AI-powered customer service platform that enables
                 businesses to automate their customer support and communication
                 processes using chatbots and live chat. It is designed to

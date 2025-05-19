@@ -404,7 +404,7 @@ const App = () => {
         <Route path="/JobScanAI" element={<JobScanAI />}></Route>
         <Route path="/RessumeAI" element={<RessumeAI />}></Route>
         <Route path="/ReZiAI" element={<ReZiAI />}></Route>
-        <Route path="/EnhanevAI" element={<EnhanevAI/>}></Route>
+        <Route path="/EnhanevAI" element={<EnhanevAI />}></Route>
         <Route path="/KickResume" element={<KickResume />}></Route>
         <Route path="/ZetyAI" element={<ZetyAI />}></Route>
         <Route path="/VisualAI" element={<VisualAI />}></Route>
@@ -433,7 +433,6 @@ const App = () => {
         <Route path="/AmperMusicAI" element={<AmperMusicAI />}></Route>
         <Route path="/AviaAI" element={<AviaAI />}></Route>
         <Route path="/BoomyAI" element={<BoomyAI />}></Route>
-        <Route path="/DescriptAI" element={<DescriptAI />}></Route>
         <Route path="/EcrettMusicAI" element={<EcrettMusicAI />}></Route>
         <Route path="/ElevenlabsAI" element={<ElevenlabsAI />}></Route>
         <Route path="/JukedeckAI" element={<JukedeckAI />}></Route>
@@ -450,10 +449,7 @@ const App = () => {
         <Route path="/AssemblyAI" element={<AssemblyAI />}></Route>
         <Route path="/SpeechifyAI" element={<SpeechifyAI />}></Route>
         <Route path="/RevAI" element={<RevAI />}></Route>
-        {/* ai for music end  */}
-        {/* Ai for Image generation */}
-        {/* Ai for Image generation end */}
-        {/* Ai for Document managment */}
+        {/* Ai for Document managment   start */}
         <Route path="/BrieflyAI" element={<BrieflyAI />}></Route>
         <Route path="/DeepDyveAI" element={<DeepDyveAI />}></Route>
         <Route path="/Explainpaper" element={<Explainpaper />}></Route>

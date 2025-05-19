@@ -14,23 +14,25 @@ import ToolsHub from "./ToolsHub";
 import ToolTabs from "./ToolTabs";
 
 import ReviewData from "./ReviewsData";
+import AIAssistant from "./AIAssistant";
 
 
 const HomePage = () => {
   return (
     <>
-      {/* <AIAssistant /> */}
+    <AIAssistant/>
       <Header />
       <AllAboutAITools />
       <TrendingAITools />
       <ToolTabs />
-      <ReviewData />
+
       {/* <ToolsHub/> */}
       <ServiceCard />
       {/* <NewsCard /> */}
       <FAQ />
       <WhatWeDoSection />
       <Featured />
+      <ReviewData />
       <StatsSection />
       <SubscribeSection />
     </>

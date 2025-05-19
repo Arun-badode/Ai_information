@@ -811,14 +811,24 @@ const MurfAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
+          <div className="row d-flex align-items-center justify-content-between mb-1">
+            {/* Right side (Image Section) — shown first on mobile */}
+            <div className="col-12 col-md-6 text-center order-1 order-md-2 mb-4 mb-md-0">
+              <img
+                src={murf}
+                alt="Murf AI"
+                className="img-fluid"
+                style={{ maxHeight: "300px", objectFit: "contain" }}
+              />
+            </div>
+
+            {/* Left side (Text Section) — shown second on mobile */}
             <div
               style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
+              className="col-12 col-md-6 order-2 order-md-1"
             >
               <p className="text-primary">Write better, faster</p>
-              <h1>Murf.ai:</h1>
+              <h1>Murf.ai</h1>
               <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
               <p>
                 Murf.ai is an innovative AI-powered platform that specializes in
@@ -831,14 +841,9 @@ const MurfAI = () => {
                 transforming text into natural, expressive voice.
               </p>
 
-              {/* <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div> */}
               <div className="mb-3">
                 <a
-                  href=""
+                  href="https://murf.ai/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary me-2"
@@ -846,19 +851,6 @@ const MurfAI = () => {
                   Explore Tool
                 </a>
               </div>
-            </div>
-
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img src={murf} style={{ MaxWidth: "100%", height: "300px" }} />
             </div>
           </div>
 
