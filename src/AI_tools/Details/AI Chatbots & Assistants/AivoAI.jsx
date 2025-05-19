@@ -4,7 +4,6 @@ import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-
 // review section data
 const reviews = [
   {
@@ -130,18 +129,10 @@ const AivoAI = () => {
         return (
           <div className="row g-4">
             <div className="col-md-6">
-              <img
-                src=""
-                alt="Screenshot 1"
-                className="img-fluid rounded-3"
-              />
+              <img src="" alt="Screenshot 1" className="img-fluid rounded-3" />
             </div>
             <div className="col-md-6">
-              <img
-                src=""
-                alt="Screenshot 2"
-                className="img-fluid rounded-3"
-              />
+              <img src="" alt="Screenshot 2" className="img-fluid rounded-3" />
             </div>
           </div>
         );
@@ -580,7 +571,7 @@ const AivoAI = () => {
         <div className="container">
           <div className="d-flex align-items-center justify-content-between mb-5">
             {/* Left side (Text Section) */}
-            <div style={{ flex: 1, paddingRight: "30px" }}>
+            <div className="" style={{ flex: 1, paddingRight: "30px" }}>
               <img
                 src=""
                 alt="Logo"

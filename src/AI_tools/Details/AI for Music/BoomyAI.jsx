@@ -104,7 +104,7 @@ const BoomyAI = () => {
                   desc: "Boomy AI gives you complete control over your music. Easily adjust instruments, tempo, and mood to align with your project needs and vision.",
                 },
                 {
-                  icon: "🎚️",
+                  icon: "🎚",
                   title: "Easy Integration with Projects",
                   desc: "Boomy AI seamlessly integrates with your creative workflow. Add your AI-generated music to videos, apps, podcasts, and more, all without worrying about licensing.",
                 },
@@ -689,7 +689,7 @@ const BoomyAI = () => {
                   minHeight: "100%",
                 }}
               >
-                <h5 className="text-warning text-start mb-4">⚠️ Cons</h5>
+                <h5 className="text-warning text-start mb-4">⚠ Cons</h5>
                 <ul className="ps-3" style={{ listStyleType: "disc" }}>
                   <li className="mb-2">
                     <strong>Limited Customization:</strong> While Boomy allows
@@ -818,67 +818,12 @@ const BoomyAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-<<<<<<< HEAD
-=======
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>Boomy AI:</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Boomy is an AI music generator that allows users to create
-                unique, royalty-free music in just a few clicks. The platform
-                harnesses advanced artificial intelligence to produce custom
-                music tracks without requiring any prior knowledge of music
-                theory or composition. Whether you’re a content creator,
-                YouTuber, filmmaker, or social media influencer, Boomy offers an
-                accessible, fast, and cost-effective way to generate
-                high-quality music for various projects, including videos,
-                podcasts, games, and more.
-              </p>
-
-              {/* <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div> */}
-              <div className="mb-3">
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary me-2"
-                >
-                  Explore Tool
-                </a>
-              </div>
-            </div>
-
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img src={boomy} style={{ MaxWidth: "100%", height: "300px" }} />
-            </div>
-          </div>
-
->>>>>>> 0f48f6a61d229582bd9afb789d3c1471df1a5973
           <section style={{ backgroundColor: "#1b1f2b", padding: "3rem 0" }}>
             <div className="container text-center">
               <div className="row d-flex align-items-center justify-content-between mb-4">
-                {/* Image Section - full width on mobile, half on desktop */}
+                {/* Image Section - mobile pe pehle dikhana, desktop pe baad me */}
                 <div
-                  className="col-12 col-md-6 mb-2 mb-md-0"
+                  className="col-12 col-md-6 mb-2 mb-md-0 order-1 order-md-2"
                   style={{ textAlign: "center" }}
                 >
                   <img
@@ -893,13 +838,13 @@ const BoomyAI = () => {
                   />
                 </div>
 
-                {/* Text Section - full width on mobile, half on desktop */}
+                {/* Text Section - mobile pe baad me, desktop pe pehle */}
                 <div
-                  className="col-12 col-md-6"
+                  className="col-12 col-md-6 order-2 order-md-1"
                   style={{ paddingRight: "30px" }}
                 >
                   <p className="text-primary">Write better, faster</p>
-                  <h1>Boomy AI:</h1>
+                  <h1>Boomy AI</h1>
                   <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
                   <p>
                     Boomy is an AI music generator that allows users to create
@@ -915,11 +860,14 @@ const BoomyAI = () => {
                   </p>
 
                   <div className="mb-3">
-                    <span className="badge bg-primary me-2">
-                      Image Generation
-                    </span>
-                    <span className="badge bg-success me-2">Creative</span>
-                    <span className="badge bg-warning text-dark">Paid</span>
+                    <a
+                      href="https://boomy.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-primary me-2"
+                    >
+                      Explore Tool
+                    </a>
                   </div>
                 </div>
               </div>
@@ -1082,21 +1030,6 @@ const BoomyAI = () => {
 
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
-
-          {/* <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with BoomyAI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div> */}
         </div>
       </div>
     </>

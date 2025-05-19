@@ -639,12 +639,13 @@ const DeepgramAI = () => {
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
           <div className="container">
-            <div className="d-block d-md-flex align-items-center justify-content-between mb-4">
-              {/* IMAGE FIRST on mobile, RIGHT on desktop */}
-              <div className="order-0 order-md-1 w-100 w-md-50 text-center mb-3 mb-md-0">
+            <div className="row align-items-center mb-4">
+              {/* Image Section - mobile: first, desktop: second (right side) */}
+              <div className="col-12 col-md-6 order-1 order-md-2 mb-3 mb-md-0 text-center">
                 <img
-                  src="your-image-url-here"
+                  src={deepgramImage} // Replace with your image URL or import
                   alt="Deepgram AI"
+                  className="img-fluid"
                   style={{
                     maxWidth: "100%",
                     height: "300px",
@@ -653,41 +654,32 @@ const DeepgramAI = () => {
                 />
               </div>
 
-<<<<<<< HEAD
-              {/* TEXT SECOND on mobile, LEFT on desktop */}
-              <div className="order-1 order-md-0 w-100 w-md-50 pe-md-4">
-                <p className="text-primary">Write better, faster</p>
-                <h1>Deepgram AI - Information</h1>
+              {/* Text Section - mobile: second, desktop: first (left side) */}
+              <div
+                className="col-12 col-md-6 order-2 order-md-1"
+                style={{ paddingRight: "30px" }}
+              >
+                <p className="text-primary">Transcribe smarter, faster</p>
+                <h1>Deepgram AI</h1>
                 <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
                 <p>
-                  Deepgram AI is an advanced speech recognition platform that
-                  leverages artificial intelligence and deep learning to provide
-                  powerful, accurate transcription and voice recognition
-                  solutions. It helps businesses with real-time audio-to-text
-                  for podcasts, videos, calls, and more.
+                  Deepgram is an AI-powered speech recognition platform that
+                  enables fast and accurate transcription of audio and video
+                  content. Using end-to-end deep learning models, Deepgram
+                  delivers high-performance speech-to-text solutions for
+                  enterprises, call centers, podcasts, meetings, and real-time
+                  applications.
                 </p>
                 <div className="mb-3">
-                  <span className="badge bg-primary me-2">
-                    Image Generation
-                  </span>
-                  <span className="badge bg-success me-2">Creative</span>
-                  <span className="badge bg-warning text-dark">Paid</span>
+                  <a
+                    href="https://deepgram.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-primary me-2"
+                  >
+                    Explore Tool
+                  </a>
                 </div>
-=======
-              {/* <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div> */}<div className="mb-3">
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary me-2"
-                >
-                  Explore Tool
-                </a>
->>>>>>> 0f48f6a61d229582bd9afb789d3c1471df1a5973
               </div>
             </div>
           </div>

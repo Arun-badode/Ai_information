@@ -3,8 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Logo from "../../../Images/logo[2].png";
-import deatilimage from "../../../Images/DetailImage.png";
 
 // review section data
 const reviews = [
@@ -824,14 +822,26 @@ const JukedeckAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
+          <div className="row d-flex align-items-center justify-content-between mb-1">
+            {/* Image - mobile pe pehle, desktop pe right side */}
             <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
+              className="col-12 col-md-6 order-1 order-md-2 mb-3 mb-md-0"
+              style={{ textAlign: "center", height: "250px" }}
+            >
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
+                alt="Jukedeck AI"
+                style={{ maxWidth: "100%", height: "300px" }}
+              />
+            </div>
+
+            {/* Text - mobile pe baad mein, desktop pe left side */}
+            <div
+              className="col-12 col-md-6 order-2 order-md-1"
+              style={{ paddingRight: "30px" }}
             >
               <p className="text-primary">Write better, faster</p>
-              <h1>Jukedeck AI:</h1>
+              <h1>Jukedeck AI</h1>
               <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
               <p>
                 Jukedeck AI is an innovative music generation platform that uses
@@ -847,14 +857,9 @@ const JukedeckAI = () => {
                 music.
               </p>
 
-              {/* <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div> */}
               <div className="mb-3">
                 <a
-                  href=""
+                  href="https://jukedeck.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary me-2"
@@ -862,22 +867,6 @@ const JukedeckAI = () => {
                   Explore Tool
                 </a>
               </div>
-            </div>
-
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
             </div>
           </div>
 
@@ -1040,21 +1029,6 @@ const JukedeckAI = () => {
 
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
-
-          {/* <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with JukedeckAI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div> */}
         </div>
       </div>
     </>

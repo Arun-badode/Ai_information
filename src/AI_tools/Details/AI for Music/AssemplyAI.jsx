@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 
 // review section data
@@ -678,7 +677,7 @@ const AssemblyAI = () => {
         <div className="container">
           <div className="row align-items-center justify-content-between mb-4">
             {/* Left Side - Text Section */}
-            <div className="col-md-6 col-12 mb-3 mb-md-0 pe-md-4">
+            <div className="col-md-6 col-12 mb-3 mb-md-0 pe-md-4  order-2 order-md-1 ">
               <p className="text-primary mb-1">Write better, faster</p>
               <h1 className="h3">AssemblyAI</h1>
               <div className="text-warning mb-2">⭐⭐⭐⭐⭐</div>
@@ -688,18 +687,15 @@ const AssemblyAI = () => {
                 supports real-time streaming, batch transcription, speaker
                 labeling, and multiple language models optimized for accuracy.
               </p>
-<<<<<<< HEAD
-              <div className="mb-3">
-=======
 
               {/* <div className="mb-3">
->>>>>>> 0f48f6a61d229582bd9afb789d3c1471df1a5973
                 <span className="badge bg-primary me-2">Image Generation</span>
                 <span className="badge bg-success me-2">Creative</span>
                 <span className="badge bg-warning text-dark">Paid</span>
-              </div> */}<div className="mb-3">
+              </div> */}
+              <div className="mb-3">
                 <a
-                  href=""
+                  href=" https://www.assemblyai.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary me-2"
@@ -710,7 +706,7 @@ const AssemblyAI = () => {
             </div>
 
             {/* Right Side - Image Section */}
-            <div className="col-md-6 col-12 text-center">
+            <div className="col-md-6 col-12   order-1 order-md-2  text-center">
               <img
                 src="data:image/png;base64,iVBORw0K..." // shortened for readability
                 className="img-fluid"

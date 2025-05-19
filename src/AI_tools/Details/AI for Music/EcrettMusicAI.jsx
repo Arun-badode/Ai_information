@@ -827,53 +827,51 @@ const EcrettMusicAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>Ecrett Music AI:</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Ecrett Music AI is an innovative artificial intelligence
-                platform that enables users to create original, royalty-free
-                music with just a few clicks. Designed for creators of all kinds
-                — YouTubers, filmmakers, podcasters, advertisers, and game
-                developers — Ecrett Music offers a simple yet powerful way to
-                generate professional-quality soundtracks without any prior
-                musical knowledge.
-              </p>
-
-              {/* <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div> */}
-              <div className="mb-3">
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary me-2"
-                >
-                  Explore Tool
-                </a>
+          <div className="container">
+            <div className="row d-flex align-items-center justify-content-between mb-1">
+              {/* Image Section */}
+              <div
+                className="col-12 col-md-6 order-1 order-md-2 mb-3 mb-md-0"
+                style={{ textAlign: "center" }}
+              >
+                {/* Image placeholder */}
+                <img
+                  src="" // Yahan image ka URL ya src add kar sakte hain agar chahiye
+                  alt="Ecrett Music"
+                  style={{ maxWidth: "100%", height: "300px" }}
+                />
               </div>
-            </div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img src={ecrett} style={{ MaxWidth: "100%", height: "300px" }} />
+              {/* Text Section */}
+              <div
+                className="col-12 col-md-6 order-2 order-md-1"
+                style={{ paddingRight: "30px" }}
+              >
+                <p className="text-primary">
+                  Create royalty-free music instantly
+                </p>
+                <h1>Ecrett Music</h1>
+                <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+                <p>
+                  Ecrett Music is an AI-powered music generator that helps
+                  content creators, filmmakers, and marketers produce original,
+                  royalty-free music tracks in seconds. Simply select the mood,
+                  genre, and length, and Ecrett will generate unique music
+                  tailored to your project needs. No musical skills required!
+                  Perfect for YouTube videos, podcasts, ads, games, and more.
+                </p>
+
+                <div className="mb-3">
+                  <a
+                    href="https://ecrettmusic.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-primary me-2"
+                  >
+                    Explore Tool
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -1036,21 +1034,6 @@ const EcrettMusicAI = () => {
 
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
-
-          {/* <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with EcrettMusicAI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div> */}
         </div>
       </div>
     </>

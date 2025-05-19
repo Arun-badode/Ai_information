@@ -433,7 +433,6 @@ const App = () => {
         <Route path="/AmperMusicAI" element={<AmperMusicAI />}></Route>
         <Route path="/AviaAI" element={<AviaAI />}></Route>
         <Route path="/BoomyAI" element={<BoomyAI />}></Route>
-        <Route path="/DescriptAI" element={<DescriptAI />}></Route>
         <Route path="/EcrettMusicAI" element={<EcrettMusicAI />}></Route>
         <Route path="/ElevenlabsAI" element={<ElevenlabsAI />}></Route>
         <Route path="/JukedeckAI" element={<JukedeckAI />}></Route>

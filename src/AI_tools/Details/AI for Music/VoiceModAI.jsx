@@ -828,11 +828,11 @@ const VoiceModAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
+          <div className="row d-flex align-items-center justify-content-between mb-1">
             {/* Left side (Text Section) */}
             <div
               style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
+              className="col-12 col-md-6 order-2 order-md-1"
             >
               <p className="text-primary">Write better, faster</p>
               <h1>Voicemod AI:</h1>
@@ -850,11 +850,6 @@ const VoiceModAI = () => {
                 including Discord, Twitch, YouTube, and many others.
               </p>
 
-              {/* <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div> */}
               <div className="mb-3">
                 <a
                   href=""
@@ -872,15 +867,18 @@ const VoiceModAI = () => {
               style={{
                 flex: 1,
                 textAlign: "center",
-                Width: "100%",
+                width: "100%",
                 height: "250px",
               }}
-              className="col-6 col-md-12 mb-5  "
+              className="col-12 col-md-6 mb-5 order-1 order-md-2"
             >
-              <img src={voice} style={{ MaxWidth: "100%", height: "300px" }} />
+              <img
+                src={voice}
+                style={{ maxWidth: "100%", height: "300px" }}
+                alt="Voicemod AI"
+              />
             </div>
           </div>
-
           <section style={{ backgroundColor: "#1b1f2b", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">
@@ -1014,7 +1012,6 @@ const VoiceModAI = () => {
               </div>
             </div>
           </section>
-
           {/* Tab Navigation */}
           <ul className="nav nav-tabs custom-tabs mb-4">
             {[
@@ -1037,10 +1034,8 @@ const VoiceModAI = () => {
               </li>
             ))}
           </ul>
-
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
-
           {/* <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
             <h4 className="mb-3">Ready to get started with VoiceModAI?</h4>
             <p className="mb-4">

@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
 
-
 // review section data
 const reviews = [
   {
@@ -851,12 +850,8 @@ const AviaAI = () => {
                 favorite in industries such as film, video games, advertising,
                 and content creation.
               </p>
-<<<<<<< HEAD
-              <div>
-=======
 
               {/* <div className="mb-3">
->>>>>>> 0f48f6a61d229582bd9afb789d3c1471df1a5973
                 <span className="badge bg-primary me-2">Image Generation</span>
                 <span className="badge bg-success me-2">Creative</span>
                 <span className="badge bg-warning text-dark">Paid</span>
