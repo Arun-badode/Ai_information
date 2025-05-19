@@ -3,9 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Logo from "../../../Images/logo[2].png";
-import deatilimage from "../../../Images/DetailImage.png";
-import resume from "../../../../public/assets/Img/Ai for Resume/41.png";
+
+import resume from "../../../../public/assets/Img/Ai for Resume/44.png";
 // review section data
 const reviews = [
   {
@@ -326,6 +325,7 @@ const RessumeAI = () => {
             <div className="col-md-6">
               <img
                 src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
+                alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -774,11 +774,11 @@ const RessumeAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
+          <div className="row align-items-start">
             {/* Left side (Text Section) */}
             <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
+              style={{ paddingRight: "30px" }}
+              className="col-md-6 col-12 order-2 order-md-1"
             >
               <p className="text-primary">Write better, faster</p>
               <h1>Resume.io AI</h1>
@@ -805,54 +805,69 @@ const RessumeAI = () => {
               </p>
 
               <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
+                <a
+                  href="https://www.resumeai.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary me-2"
+                >
+                  Explore Tool
+                </a>
               </div>
             </div>
 
             {/* Right side (Image Section) */}
             <div
               style={{
-                flex: 1,
                 textAlign: "center",
                 Width: "100%",
                 height: "250px",
               }}
-              className="col-6 col-md-12 mb-5  "
+              className="col-md-6 col-12 order-md-2 order-1 text-center mb-3 mb-md-0  "
             >
-              <img src={resume} style={{ MaxWidth: "100%", height: "300px" }} />
+              <img
+                src={resume}
+                alt="Enhancv AI"
+                style={{
+                  Width: "100%",
+                  height: "auto",
+                  maxHeight: "300px",
+                  objectFit: "contain",
+                }}
+              />
             </div>
           </div>
-          <section style={{ backgroundColor: "#0b1e3d", padding: "3rem 0" }}>
-            <div className="container text-center">
-              <p className="text-primary">
-                Build Smarter Resumes in 3 Easy Steps
-              </p>
-              <h2
-                style={{
-                  fontWeight: "600",
-                  color: "#fff",
-                  marginBottom: "1rem",
-                }}
-              >
-                How Resume.io AI Assists You
-              </h2>
+        </div>
 
-              <div className="row g-4">
-                {/* Step 1 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#1034A6",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
+        <section style={{ backgroundColor: "#0b1e3d", padding: "3rem 0" }}>
+          <div className="container text-center">
+            <p className="text-primary">
+              Build Smarter Resumes in 3 Easy Steps
+            </p>
+            <h2
+              style={{
+                fontWeight: "600",
+                color: "#fff",
+                marginBottom: "1rem",
+              }}
+            >
+              How Resume.io AI Assists You
+            </h2>
+
+            <div className="row g-4">
+              {/* Step 1 */}
+              <div className="col-md-4">
+                <div
+                  style={{
+                    position: "relative",
+                    backgroundColor: "#1034A6",
+                    borderRadius: "12px",
+                    boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+                    padding: "2rem",
+                    height: "100%",
+                  }}
+                >
+                  <style>{`
             .step1 {
               position: absolute;
               bottom: 10px;
@@ -863,31 +878,31 @@ const RessumeAI = () => {
               opacity: 0.6;
             }
           `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Analyzes Your Career Goals
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Resume.io AI understands your professional background and
-                      aspirations to create a framework that aligns with your
-                      job search strategy.
-                    </p>
-                    <div className="step1">1</div>
-                  </div>
+                  <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+                    Analyzes Your Career Goals
+                  </h5>
+                  <p style={{ color: "#fff", margin: 0 }}>
+                    Resume.io AI understands your professional background and
+                    aspirations to create a framework that aligns with your job
+                    search strategy.
+                  </p>
+                  <div className="step1">1</div>
                 </div>
+              </div>
 
-                {/* Step 2 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#1034A6",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
+              {/* Step 2 */}
+              <div className="col-md-4">
+                <div
+                  style={{
+                    position: "relative",
+                    backgroundColor: "#1034A6",
+                    borderRadius: "12px",
+                    boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+                    padding: "2rem",
+                    height: "100%",
+                  }}
+                >
+                  <style>{`
             .step2 {
               position: absolute;
               bottom: 10px;
@@ -898,31 +913,31 @@ const RessumeAI = () => {
               opacity: 0.6;
             }
           `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Personalizes Every Section
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      From headline to experience bullets, the AI customizes
-                      your resume tone, format, and keywords to fit the role
-                      you’re targeting.
-                    </p>
-                    <div className="step2">2</div>
-                  </div>
+                  <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+                    Personalizes Every Section
+                  </h5>
+                  <p style={{ color: "#fff", margin: 0 }}>
+                    From headline to experience bullets, the AI customizes your
+                    resume tone, format, and keywords to fit the role you’re
+                    targeting.
+                  </p>
+                  <div className="step2">2</div>
                 </div>
+              </div>
 
-                {/* Step 3 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#1034A6",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
+              {/* Step 3 */}
+              <div className="col-md-4">
+                <div
+                  style={{
+                    position: "relative",
+                    backgroundColor: "#1034A6",
+                    borderRadius: "12px",
+                    boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+                    padding: "2rem",
+                    height: "100%",
+                  }}
+                >
+                  <style>{`
             .step3 {
               position: absolute;
               bottom: 10px;
@@ -933,62 +948,45 @@ const RessumeAI = () => {
               opacity: 0.6;
             }
           `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Outputs Job-Ready Resumes
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Download a polished, recruiter-friendly resume that’s
-                      built to stand out—ready for any job board or direct
-                      submission.
-                    </p>
-                    <div className="step3">3</div>
-                  </div>
+                  <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+                    Outputs Job-Ready Resumes
+                  </h5>
+                  <p style={{ color: "#fff", margin: 0 }}>
+                    Download a polished, recruiter-friendly resume that’s built
+                    to stand out—ready for any job board or direct submission.
+                  </p>
+                  <div className="step3">3</div>
                 </div>
               </div>
             </div>
-          </section>
-
-          {/* Tab Navigation */}
-          <ul className="nav nav-tabs custom-tabs mb-4">
-            {[
-              "Features",
-              "Screenshots",
-              "Reviews",
-              "FAQs",
-              "Technical",
-              "Why-We-Use",
-              "Pros & Cons",
-              "Alternative",
-            ].map((tab) => (
-              <li className="nav-item mb-2" key={tab}>
-                <button
-                  className={`nav-link ${activeTab === tab ? "active" : ""}`}
-                  onClick={() => setActiveTab(tab)}
-                >
-                  {tab.charAt(0).toUpperCase() + tab.slice(1)}
-                </button>
-              </li>
-            ))}
-          </ul>
-
-          {/* Tab Content */}
-          <div className="tab-content-area">{renderTabContent()}</div>
-
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with RunWayGen?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
           </div>
-        </div>
+        </section>
+
+        {/* Tab Navigation */}
+        <ul className="nav nav-tabs custom-tabs mb-4">
+          {[
+            "Features",
+            "Screenshots",
+            "Reviews",
+            "FAQs",
+            "Technical",
+            "Why-We-Use",
+            "Pros & Cons",
+            "Alternative",
+          ].map((tab) => (
+            <li className="nav-item mb-2" key={tab}>
+              <button
+                className={`nav-link ${activeTab === tab ? "active" : ""}`}
+                onClick={() => setActiveTab(tab)}
+              >
+                {tab.charAt(0).toUpperCase() + tab.slice(1)}
+              </button>
+            </li>
+          ))}
+        </ul>
+
+        {/* Tab Content */}
+        <div className="tab-content-area">{renderTabContent()}</div>
       </div>
     </>
   );

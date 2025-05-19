@@ -634,7 +634,7 @@ const DescriptOverdub = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className="container">
+         
             <div className="row align-items-center mb-1">
               {/* Image Section - Mobile me row 1, Desktop me column 2 */}
               <div
@@ -683,7 +683,6 @@ const DescriptOverdub = () => {
               </div>
             </div>
           </div>
-
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>
@@ -853,7 +852,7 @@ const DescriptOverdub = () => {
             </small>
           </div> */}
         </div>
-      </div>
+      
     </>
   );
 };
