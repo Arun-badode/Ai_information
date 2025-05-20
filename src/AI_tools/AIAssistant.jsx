@@ -123,6 +123,11 @@ const [human_message, sethuman_message] = useState("");
             value={human_message}
             onChange={handleMessageChange}
             placeholder="Type your message here..."
+            onKeyDown={(e) => {
+              if (e.key === "Enter" && (human_message.trim() )) {
+                handleSend();
+              }
+            }}
           />
 
           { botResponse.redirect_url && (

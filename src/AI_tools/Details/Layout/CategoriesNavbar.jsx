@@ -54,7 +54,7 @@ const CategoriesNavbar = () => {
           position: "sticky",
           top: 100,
           width: "100%",
-          zIndex: 1000,
+          zIndex: 100,
           overflow: "visible",
         }}
       >
