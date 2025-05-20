@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
-import magisto from "../../../Images/MagistoAI.png";
+import google from "../../../../public/assets/Img/AI for Business/google.png";
 
 // review section data
 const reviews = [
@@ -638,7 +638,7 @@ const HeapAnalytics = () => {
     className="col-12 col-md-6 mb-5"
   >
     <img
-      src={heapImage} // replace with your heap image variable
+      src={google} // replace with your heap image variable
       alt="Heap Analytics AI"
       style={{ maxWidth: "100%", height: "300px" }}
       className="img-fluid"

@@ -874,7 +874,7 @@ const CategoriesNavbar = () => {
                     <Link to="/OracleAI"> Oracle AI</Link>
                     <Link to="/PowerBI ">Power BI AI </Link>
                     <Link to="/SASAI">SAS AI</Link>
-                    <Link to="/EvernoteA">EvernoteAI</Link>
+                    <Link to="/EvernoteAI">EvernoteAI</Link>
                     <Link to="/RescueAI">RescueAI</Link>
                   </div>
                 </div>

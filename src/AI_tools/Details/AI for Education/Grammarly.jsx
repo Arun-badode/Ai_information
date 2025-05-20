@@ -5,8 +5,8 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
-import img13 from "../../../../public/assets/Img/AI for Education/img-11.jpg"
-import img14 from "../../../../public/assets/Img/AI for Education/img-14.gif"
+import grammi1 from '../../../../public/assets/Img/AI for Business/grammi1.png'
+import grammi2 from '../../../../public/assets/Img/AI for Business/grammi2.png'
 import g from "../../../../public/assets/Img/AI for Education/AI For Education/8.png"
 // review section data
 const reviews = [
@@ -372,14 +372,15 @@ const Grammarly = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src={img13}
-                alt=""
+                src={grammi1}
+                alt="screenshot1"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={img14}
+                src={grammi2}
+                alt="screenshot2"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -634,51 +635,59 @@ const Grammarly = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-              <div className="d-flex flex-column flex-md-row align-items-center justify-content-between mb-5">
-            {/* Left side (Text Section) */}
-           <div style={{ flex: 1, paddingRight: "30px" }} className="order-2 order-md-1">
-              <p className="text-primary">Write better, faster</p>
-              <h1> Grammarly for Education: Complete Guide</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                {" "}
-                Grammarly for Education is an advanced AI-powered writing
-                assistant designed specifically for students, teachers, and
-                educational institutions. It provides real-time grammar
-                corrections, plagiarism checking, academic writing support, and
-                personalized feedback to improve writing quality across all
-                levels of education. Whether it's helping high school students
-                with their essays, assisting university students in crafting
-                research papers, or offering teachers a way to deliver clearer
-                feedback, Grammarly for Education enhances the learning and
-                teaching experience. It integrates smoothly with LMS platforms
-                like Canvas and provides a dedicated admin dashboard for schools
-                and colleges to manage usage and monitor student learning
-                outcomes. Grammarly for Education is ideal for virtual
-                classrooms, remote learning, and traditional classrooms, making
-                it a versatile tool for today's education landscape.
-              </p>
+            <div className="row align-items-center g-4 mb-5">
+  {/* Left side (Text Section) */}
+  <div className="col-lg-6 col-12 order-lg-1 order-2 pe-lg-4">
+    <p className="text-primary mb-2">Write better, faster</p>
+    <h1 className="mb-3">Grammarly for Education: Complete Guide</h1>
+    <div className="text-warning mb-3">⭐⭐⭐⭐⭐</div>
+    
+    <div className="mb-3">
+      Grammarly for Education is an advanced AI-powered writing
+      assistant designed specifically for students, teachers, and
+      educational institutions. It provides real-time grammar
+      corrections, plagiarism checking, academic writing support, and
+      personalized feedback to improve writing quality across all
+      levels of education.
+    </div>
+    
+    <div className="mb-4">
+      Whether it's helping high school students with their essays, assisting university students in crafting
+      research papers, or offering teachers a way to deliver clearer
+      feedback, Grammarly for Education enhances the learning and
+      teaching experience. It integrates smoothly with LMS platforms
+      like Canvas and provides a dedicated admin dashboard for schools
+      and colleges to manage usage and monitor student learning
+      outcomes.
+    </div>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
-            </div>
+    <div className="mb-3">
+      <a
+        href="https://www.grammarly.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary btn-lg px-4"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
 
-            {/* Right side (Image Section) */}
-              <div
-              style={{ flex: 1, textAlign: "center" }}
-              className="order-1 order-md-2 mb-4 mb-md-0"
-            >
-              <img
-                src={g}
-                className="img-fluid rounded-3"
-                style={{ maxWidth: "80%", height: "auto" }}
-                alt="Quizlet AI platform illustration"
-              />
-            </div>
-          </div>
+  {/* Right side (Image Section) */}
+  <div className="col-lg-6 col-12 order-lg-2 order-1 text-center">
+    <img
+      src={g}
+      alt="Grammarly for Education Interface"
+      className="img-fluid rounded-3 shadow-sm"
+      style={{ 
+        maxWidth: "100%", 
+        height: "auto",
+        maxHeight: "400px",
+        objectFit: "contain"
+      }}
+    />
+  </div>
+</div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>
