@@ -43,13 +43,13 @@ const AILandingPage = () => {
           <div className="mt-4 d-flex gap-3 flex-wrap justify-content-center">
             <div className="position-relative">
               <span className="glow-ring-fixed"></span>
-              <button className="bg-gradient-to-r from-blue-500 to-teal-400 px-4 py-2 rounded-full shadow-sm text-white position-relative">
+              <button className="bg-gradient-to-r from-blue-500 to-teal-400 px-4 py-2 rounded-full shadow-sm text-white position-relative" style={{borderRadius:"20px"}}>
                 Visit AI Info Hub
               </button>
             </div>
             <div className="position-relative">
               <span className="glow-ring-fixed"></span>
-              <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-full shadow-sm position-relative">
+              <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-full shadow-sm position-relative" style={{borderRadius:"20px"}}>
                 Browse Learning Guides
               </button>
             </div>
