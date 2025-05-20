@@ -168,20 +168,26 @@ const Chatbot = () => {
 
   const handleChange = (e) => sethuman_message(e.target.value);
 
-  // Handle text message send
-  const handleSend = async () => {
-    if (!human_message.trim()) return;
-    try {
-      const response = await fetch("https://ai-tools-assistant-production.up.railway.app/chat", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ human_message }),
-      });
-      const data = await response.json();
-      setBotResponse(data || { response: "No response from bot." });
-      sethuman_message("");
-    } catch (error) {
-      setBotResponse({ response: "Error: " + error.message });
+
+   const handleSend = async () => {
+    if (audioFile) {
+      // Send audio if available
+      await handleAudioUpload(audioFile);
+      setAudioFile(null); // Clear after sending
+    } else if (human_message.trim()) {
+      // Otherwise send text
+      try {
+        const response = await fetch("https://ai-tools-assistant-production.up.railway.app/chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ human_message }),
+        });
+        const data = await response.json();
+        setBotResponse(data || { response: "No response from bot." });
+        sethuman_message("");
+      } catch (error) {
+        setBotResponse({ response: "Error: " + error.message });
+      }
     }
   };
 
@@ -216,35 +222,46 @@ const Chatbot = () => {
   };
 
   // Handle recording
-  const handleRecord = async () => {
-    if (isRecording) {
-      mediaRecorderRef.current.stop();
-      setIsRecording(false);
-    } else {
-      if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-        mediaRecorderRef.current = new window.MediaRecorder(stream);
-        audioChunksRef.current = [];
-        mediaRecorderRef.current.ondataavailable = (e) => {
-          audioChunksRef.current.push(e.data);
-        };
-        mediaRecorderRef.current.onstop = () => {
-          const audioBlob = new Blob(audioChunksRef.current, { type: "audio/wav" });
-          setAudioFile(audioBlob);
-          handleAudioUpload(audioBlob);
-        };
-        mediaRecorderRef.current.start();
-        setIsRecording(true);
+ const handleRecord = async () => {
+  if (isRecording) {
+    mediaRecorderRef.current.stop();
+    setIsRecording(false);
+  } else {
+    if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      // Try to use audio/wav, fallback to default if not supported
+      let options = { mimeType: "audio/wav" };
+      if (!MediaRecorder.isTypeSupported("audio/wav")) {
+        options = {};
       }
+      mediaRecorderRef.current = new window.MediaRecorder(stream, options);
+      audioChunksRef.current = [];
+      mediaRecorderRef.current.ondataavailable = (e) => {
+        audioChunksRef.current.push(e.data);
+      };
+      mediaRecorderRef.current.onstop = () => {
+        // Check type, convert if not wav
+        let audioBlob = new Blob(audioChunksRef.current, { type: "audio/wav" });
+        if (audioBlob.type !== "audio/wav") {
+          // fallback: use webm and show error
+          alert("Your browser does not support recording in WAV format. Please use Chrome or convert the file to WAV before uploading.");
+          return;
+        }
+        setAudioFile(audioBlob);
+        handleAudioUpload(audioBlob);
+      };
+      mediaRecorderRef.current.start();
+      setIsRecording(true);
     }
-  };
+  }
+};
 
   // Redirect if redirect_url exists
   useEffect(() => {
     if (botResponse?.redirect_url) {
       navigate(botResponse.redirect_url);
     }
-  }, [botResponse, navigate]);
+  }, [botResponse,navigate]);
 
   return (
     <div style={{ position: "fixed", bottom: "10px", right: "20px", zIndex: 1000 }}>
@@ -307,23 +324,20 @@ const Chatbot = () => {
               <audio controls src={audioUrl} style={{ marginTop: "10px" }} />
             )}
           </div>
-          <div style={{ padding: "10px", borderTop: "1px solid #ddd", display: "flex", flexDirection: "column", gap: "8px" }}>
+                  <div style={{ padding: "10px", borderTop: "1px solid #ddd", display: "flex", flexDirection: "column", gap: "8px" }}>
             <div style={{ display: "flex", gap: "8px" }}>
-              <button
+         
+              {/* Removed file input for upload */}
+              
+            </div>
+        <div style={{ display: "flex", gap: "8px" }}>
+          <button
                 className={`btn btn-outline-secondary bg-white btn-sm ${isRecording ? "text-danger" : ""}`}
                 onClick={handleRecord}
                 title={isRecording ? "Stop Recording" : "Record Audio"}
               >
-                <i className="fas fa-microphone"></i> {isRecording ? "Stop" : "Record"}
+                <i className="fas fa-microphone"></i> {isRecording ? "Stop" : ""}
               </button>
-              <input
-                type="file"
-                accept="audio/*"
-                onChange={handleFileChange}
-                style={{ flex: 1 }}
-              />
-            </div>
-            <div style={{ display: "flex", gap: "8px" }}>
               <input
                 type="text"
                 className="form-control"
@@ -332,29 +346,11 @@ const Chatbot = () => {
                 onChange={handleChange}
                 style={{ flex: 1 }}
               />
-
-              { (audioUrl || audioFile) ?  <button
-                className="btn btn ms-2 text-white"
-                style={{ backgroundColor: "#005A9C" }}
-                
-                onClick={handleAudioUpload}
-              >
-                Send Audio
-              </button> :  
               <button
                 className="btn btn ms-2 text-white"
                 style={{ backgroundColor: "#005A9C" }}
-                
                 onClick={handleSend}
-              >
-                Send
-              </button> }
-
-              <button
-                className="btn btn ms-2 text-white"
-                style={{ backgroundColor: "#005A9C" }}
-                
-                onClick={handleSend}
+                // disabled={!human_message.trim() && !audioFile}
               >
                 Send
               </button>
