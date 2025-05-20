@@ -109,7 +109,7 @@ import KickResume from "./AI_tools/Details/AI for Resume/KickResume";
 import ZetyAI from "./AI_tools/Details/AI for Resume/ZetyAI";
 import VisualAI from "./AI_tools/Details/AI for Resume/VisualAI";
 import ResunateAI from "./AI_tools/Details/AI for Resume/ResunateAI";
-import TealHQAI from "./AI_tools/Details/AI for Resume/TealHQAI";
+// import TealHQAI from "./AI_tools/Details/AI for Resume/TealHQAI";
 import HirationAI from "./AI_tools/Details/AI for Resume/HirationAI";
 
 // AI for SEO//
@@ -387,7 +387,7 @@ const App = () => {
         <Route path="/FunctionizeAI" element={<FunctionizeAI />}></Route>
         <Route path="/Testimio" element={<Testimio />}></Route>
         <Route path="/BrowserStackAI" element={<BrowserStackAI />}></Route>
-        <Route path="/AppvancelIQ" element={<AppvanceIQ />}></Route>
+        <Route path="/AppvanceIQ" element={<AppvanceIQ />}></Route>
         <Route path="/TricentisToscaAI" element={<TricentisToscaAI />}></Route>
         <Route path="/ApplitoolsAI" element={<Applitool />}></Route>
         {/* AI in E-commerce */}
@@ -409,7 +409,7 @@ const App = () => {
         <Route path="/ZetyAI" element={<ZetyAI />}></Route>
         <Route path="/VisualAI" element={<VisualAI />}></Route>
         <Route path="/ResunateAI" element={<ResunateAI />}></Route>
-        <Route path="/TealHQAI" element={<TealHQAI />}></Route>
+        {/* <Route path="/TealHQAI" element={<TealHQAI />}></Route> */}
         <Route path="/HirationAI" element={<HirationAI />}></Route>
         {/* AI for resume   end */}
         {/* Ai for SEO  */}
@@ -449,10 +449,7 @@ const App = () => {
         <Route path="/AssemblyAI" element={<AssemblyAI />}></Route>
         <Route path="/SpeechifyAI" element={<SpeechifyAI />}></Route>
         <Route path="/RevAI" element={<RevAI />}></Route>
-        {/* ai for music end  */}
-        {/* Ai for Image generation */}
-        {/* Ai for Image generation end */}
-        {/* Ai for Document managment */}
+        {/* Ai for Document managment   start */}
         <Route path="/BrieflyAI" element={<BrieflyAI />}></Route>
         <Route path="/DeepDyveAI" element={<DeepDyveAI />}></Route>
         <Route path="/Explainpaper" element={<Explainpaper />}></Route>

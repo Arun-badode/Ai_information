@@ -140,7 +140,7 @@ const Applitool = () => {
       case "FAQs":
         return (
           <div className="faq-section container py-4">
-            <h3 className="text-center text-white mb-4 text-primary">
+            <h3 className="text-center text-white mb-4 px-6 text-primary">
               Frequently Asked Questions
             </h3>
 
@@ -313,7 +313,7 @@ const Applitool = () => {
 
       case "Screenshots":
         return (
-          <div className="row g-4">
+          <div className="row g-4 px-5">
             <div className="col-md-6">
               <img
                 src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
@@ -990,7 +990,7 @@ const Applitool = () => {
         </section>
 
         {/* Tab Navigation */}
-        <ul className="nav nav-tabs custom-tabs mb-4">
+        <ul className="nav nav-tabs custom-tabs mb-4 px-5">
           {[
             "Features",
             "Screenshots",

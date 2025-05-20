@@ -5,7 +5,7 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
-import enhanev from "../../../../public/assets/Img/Ai for Resume/43.png";
+import enhanev from "../../../../public/assets/Img/Ai for Resume/42.png";
 // review section data
 const reviews = [
   {
@@ -328,6 +328,7 @@ const EnhanevAI = () => {
             <div className="col-md-6">
               <img
                 src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
+                alr=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -793,11 +794,11 @@ const EnhanevAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
+          <div className="row align-items-start">
             {/* Left side (Text Section) */}
             <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
+              style={{ paddingRight: "30px" }}
+              className="col-md-6 col-12 order-2 order-md-1"
             >
               <p className="text-primary">Write better, faster</p>
               <h1>Enhancv AI</h1>
@@ -825,28 +826,39 @@ const EnhanevAI = () => {
               </p>
 
               <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
+                <a
+                  href=" https://enhancv.com/ai-resume-builder/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary me-2"
+                >
+                  Explore Tool
+                </a>
               </div>
             </div>
 
             {/* Right side (Image Section) */}
             <div
               style={{
-                flex: 1,
                 textAlign: "center",
                 Width: "100%",
                 height: "250px",
               }}
-              className="col-6 col-md-12 mb-5  "
+              className="col-md-6 col-12 order-md-2 order-1 text-center mb-3 mb-md-0  "
             >
               <img
                 src={enhanev}
-                style={{ MaxWidth: "100%", height: "300px" }}
+                alt="Enhancv AI"
+                style={{
+                  Width: "100%",
+                  height: "auto",
+                  maxHeight: "300px",
+                  objectFit: "contain",
+                }}
               />
             </div>
           </div>
+
           <section style={{ backgroundColor: "#0b1e3d", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">
@@ -994,21 +1006,6 @@ const EnhanevAI = () => {
 
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
-
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with RunWayGen?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
         </div>
       </div>
     </>

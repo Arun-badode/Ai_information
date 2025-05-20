@@ -5,9 +5,18 @@ import Financial from "../../public/assets/Img/Trending AI tools/1.png";
 import GoogleAnalytics from "../../public/assets/Img/Trending AI tools/2.png";
 import HubSpot from "../../public/assets/Img/Trending AI tools/3.png";
 import DALL from "../../public/assets/Img/Trending AI tools/4.png";
-
-
-
+import TensorFlow from "../../public/assets/Img/Trending AI tools/6.png";
+import BERT from "../../public/assets/Img/Trending AI tools/7.png";
+import Deepfake from "../../public/assets/Img/Trending AI tools/8.png";
+import Scholarcy  from "../../public/assets/Img/Trending AI tools/9.png";
+import Semantic from "../../public/assets/Img/Trending AI tools/10.png";
+import Artbreeder from "../../public/assets/Img/Trending AI tools/11.png";
+import Craiyon from "../../public/assets/Img/Trending AI tools/12.png";
+import  Canva from "../../public/assets/Img/Trending AI tools/13.png";
+import Logojoy from "../../public/assets/Img/Trending AI tools/14.png";
+import Mailchimp from "../../public/assets/Img/Trending AI tools/15.png";
+import  Grammarly from "../../public/assets/Img/Trending AI tools/16.png";
+import RunWayGen1 from "../../public/assets/Img/AI for Animation/7.png";
 const TrendingTools = () => {
   const categories = [
     "Marketing",
@@ -71,13 +80,13 @@ const TrendingTools = () => {
       {
         name: "GPT-3",
         description: "AI-powered text generation tool for content creation.",
-        image: "https://via.placeholder.com/150",
+        image: GPT3,
         rating: 4.7,
       },
       {
         name: "Notion AI",
         description: "AI to help with note-taking and knowledge management.",
-        image: "https://via.placeholder.com/150",
+        image: "https://ia.placeholder.com/150",
         rating: 4.8,
       },
     ],
@@ -85,20 +94,20 @@ const TrendingTools = () => {
       {
         name: "TensorFlow",
         description: "Open-source AI framework for building ML models.",
-        image: "https://via.placeholder.com/150",
+        image: TensorFlow,
         rating: 4.5,
       },
       {
         name: "BERT",
         description:
           "Transformers-based AI for natural language understanding.",
-        image: "https://via.placeholder.com/150",
+        image: BERT,
         rating: 4.6,
       },
       {
         name: "Runway ML",
         description: "AI for designers to create AI-based visual content.",
-        image: "https://via.placeholder.com/150",
+        image: RunWayGen1,
         rating: 4.7,
       },
     ],
@@ -106,13 +115,13 @@ const TrendingTools = () => {
       {
         name: "Deepfake",
         description: "AI for creating hyper-realistic video manipulation.",
-        image: "https://via.placeholder.com/150",
+        image: Deepfake,
         rating: 4.3,
       },
       {
         name: "Synthesia",
         description: "AI tool for generating synthetic video content.",
-        image: "https://via.placeholder.com/150",
+        image: "",
         rating: 4.4,
       },
     ],
@@ -120,13 +129,13 @@ const TrendingTools = () => {
       {
         name: "Scholarcy AI",
         description: "AI-based research summarizer.",
-        image: "https://via.placeholder.com/150",
+        image: Scholarcy,
         rating: 4.6,
       },
       {
         name: "Semantic Scholar",
         description: "AI-powered academic search engine.",
-        image: "https://via.placeholder.com/150",
+        image: Semantic,
         rating: 4.7,
       },
     ],
@@ -134,13 +143,13 @@ const TrendingTools = () => {
       {
         name: "Artbreeder",
         description: "AI tool for generating art and images from text.",
-        image: "https://via.placeholder.com/150",
+        image: Artbreeder,
         rating: 4.9,
       },
       {
         name: "Craiyon",
         description: "AI-based tool to generate images from text prompts.",
-        image: "https://via.placeholder.com/150",
+        image: Craiyon,
         rating: 4.5,
       },
     ],
@@ -148,13 +157,13 @@ const TrendingTools = () => {
       {
         name: "Canva AI",
         description: "AI-powered tool for designing social media graphics.",
-        image: "https://via.placeholder.com/150",
+        image: Canva,
         rating: 4.8,
       },
       {
         name: "Logojoy",
         description: "AI logo generator for your brand identity.",
-        image: "https://via.placeholder.com/150",
+        image: Logojoy,
         rating: 4.7,
       },
     ],
@@ -162,13 +171,13 @@ const TrendingTools = () => {
       {
         name: "Mailchimp AI",
         description: "AI for email marketing campaigns.",
-        image: "https://via.placeholder.com/150",
+        image: Mailchimp,
         rating: 4.6,
       },
       {
         name: "Grammarly",
         description: "AI-based writing assistant for email drafting.",
-        image: "https://via.placeholder.com/150",
+        image: Grammarly,
         rating: 4.9,
       },
     ],

@@ -212,7 +212,7 @@ const CategoriesNavbar = () => {
               <div
                 className="dropdown-card show"
                 style={{
-                  maxWidth: "800px",
+                  maxWidth: "400px",
                   left: "0rem",
                   marginTop: "3rem",
                   position: "absolute",
@@ -233,7 +233,7 @@ const CategoriesNavbar = () => {
                       Content Generation <FaPencilAlt size={20} />
                     </h6>
                     <Link to="ReZiAI/">ReZiAI</Link>
-                    <Link to="EnhanevA/">EnhanevA</Link>
+                    <Link to="/EnhanevAI">EnhanevAI</Link>
                     <Link to="KickResume/">KickResume</Link>
                     <Link to="ZetyAI/">ZetyAI</Link>
                     <Link to="VisualAI/">VisualAI</Link>
