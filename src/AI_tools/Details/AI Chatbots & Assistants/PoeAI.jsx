@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
+import poe1 from "../../../../public/assets/Img/AI For Chatbots/poe1.png";
 
 // review section data
 const reviews = [
@@ -137,14 +137,14 @@ const PoeAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src=""
+                src={poe1}
                 alt="Screenshot 1"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
-                src=""
+                src={poe1}
                 alt="Screenshot 2"
                 className="img-fluid rounded-3"
               />
@@ -669,6 +669,16 @@ const PoeAI = () => {
                 learning, are leveraged for a wide range of use cases including
                 SEO, content optimization, and even project management.
               </p>
+              <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
+        <a
+          href="https://poe.com/login"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-primary btn-lg px-4"
+        >
+          Explore Tool
+        </a>
+      </div>
             
             </div>
 
@@ -708,20 +718,7 @@ const PoeAI = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with PoeAI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
+        
         </div>
       </div>
     </>

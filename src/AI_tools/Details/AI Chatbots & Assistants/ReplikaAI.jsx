@@ -3,6 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import replika1 from "../../../../public/assets/Img/AI For Chatbots/Replika1.png";
+import replika2 from "../../../../public/assets/Img/AI For Chatbots/Replika2.png";
 
 // review section data
 const reviews = [
@@ -124,14 +126,14 @@ const ReplikaAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src=''
+                src={replika1}
                 alt="Screenshot 1"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={deatilimage}
+                src={replika2} 
                 alt="Screenshot 2"
                 className="img-fluid rounded-3"
               />
@@ -664,12 +666,7 @@ const ReplikaAI = () => {
           <div className="d-flex align-items-center justify-content-between mb-5">
             {/* Left side (Text Section) */}
             <div style={{ flex: 1, paddingRight: "30px" }}>
-              <img
-                src={Logo}
-                alt="Logo"
-                className="me-3"
-                style={{ width: "60px" }}
-              />
+
               <h2>ReplikAI</h2>
               <div className="text-warning mb-1">
                 ⭐⭐⭐⭐⭐ 95% Satisfaction
@@ -683,6 +680,16 @@ const ReplikaAI = () => {
                 help users navigate their mental health, relationships, and
                 self-care routines.
               </p>
+              <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
+        <a
+          href="https://replika.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-primary btn-lg px-4"
+        >
+          Explore Tool
+        </a>
+      </div>
             </div>
 
             {/* Right side (Image Section) */}
@@ -721,20 +728,7 @@ const ReplikaAI = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with ReplikaAI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
+     
         </div>
       </div>
     </>

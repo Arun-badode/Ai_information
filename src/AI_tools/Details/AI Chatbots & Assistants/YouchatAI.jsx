@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
+import you1 from "../../../../public/assets/Img/AI For Chatbots/you1.png";
 // review section data
 const reviews = [
   {
@@ -134,25 +134,27 @@ const YouchatAI = () => {
           </div>
         );
 
-      case "screenshots":
-        return (
-          <div className="row g-4">
-            <div className="col-md-6">
-              <img
-                src={deatilimage}
-                alt="Screenshot 1"
-                className="img-fluid rounded-3"
-              />
-            </div>
-            <div className="col-md-6">
-              <img
-                src={deatilimage}
-                alt="Screenshot 2"
-                className="img-fluid rounded-3"
-              />
-            </div>
-          </div>
-        );
+     case "screenshots":
+  return (
+    <div className="row g-4">
+      <div className="col-md-6 col-12">
+        <img
+          src={you1}
+          alt="Screenshot 1"
+          className="img-fluid rounded-3 shadow-sm"
+          loading="lazy"
+        />
+      </div>
+      <div className="col-md-6 col-12">
+        <img
+          src=""// Fixed typo in variable name
+          alt="Screenshot 2"
+          className="img-fluid rounded-3 shadow-sm"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  );
 
       case "reviews":
         return (
@@ -730,6 +732,17 @@ const YouchatAI = () => {
                 making it a versatile tool for both small businesses and
                 enterprise-level operations.
               </p>
+              
+              <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
+        <a
+          href="https://you.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-primary btn-lg px-4"
+        >
+          Explore Tool
+        </a>
+      </div>
             </div>
 
             {/* Right side (Image Section) */}
@@ -737,7 +750,7 @@ const YouchatAI = () => {
               <img
                 src="https://media.licdn.com/dms/image/v2/D5612AQHWntWHSokJuA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1726640143001?e=2147483647&v=beta&t=2GzNPQMOGcjV0VXbbMKnwSPDgkGhf2gyrOLDCQ_3Qew"
                 className="img-fluid rounded-3"
-                style={{ maxWidth: "80%", height: "auto" }}
+                style={{ maxWidth: "100%", height: "auto" }}
               />
             </div>
           </div>
@@ -873,7 +886,7 @@ const YouchatAI = () => {
           <ul className="nav nav-tabs custom-tabs mb-4">
             {[
               "features",
-              "screenshots",
+              "screenshot",
               "reviews",
               "FAQs",
               "technical",
@@ -895,20 +908,6 @@ const YouchatAI = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with YouchatAI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
         </div>
       </div>
     </>

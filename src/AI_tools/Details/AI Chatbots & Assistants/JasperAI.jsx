@@ -624,11 +624,16 @@ const JasperAI = () => {
                 writing assistants on the market.
               </p>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
+              <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
+        <a
+          href="https://clickup.com/blog/jasper-ai-vs-writesonic/?utm_source=google&utm_medium=cpc&utm_campaign=gs_cpc_arlv_nnc_nb_trial_all-devices_troas_lp_x_all-departments_x_taskmanagement&utm_content=all-countries_kw-target_text_all-industries_all-features_all-use-cases_ai_phrase&utm_term=b_&utm_creative=689516930805_Challenger-SMB-15052023_rsa&utm_custom1=&utm_custom2=&utm_lptheme=&utm_lpmod=&gad_source=1&gad_campaignid=20991268246&gbraid=0AAAAACR5vIKIHssgjqxKdwWIbEC6WC4zw&gclid=Cj0KCQjw0LDBBhCnARIsAMpYlApE3524hTNsJZLJTRxyqh7hIRnc74-y22EzdaINyH0GIl1DVM3AR9kaAhpHEALw_wcB"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-primary btn-lg px-4"
+        >
+          Explore Tool
+        </a>
+      </div>
             </div>
 
             {/* Right side (Image Section) */}
@@ -798,20 +803,7 @@ const JasperAI = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with Jasper?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
+         
         </div>
       </div>
     </>

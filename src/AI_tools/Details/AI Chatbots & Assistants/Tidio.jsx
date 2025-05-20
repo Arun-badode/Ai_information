@@ -133,14 +133,14 @@ const Tidio = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src={deatilimage}
+                src=""
                 alt="Screenshot 1"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={deatilimage}
+                src=""
                 alt="Screenshot 2"
                 className="img-fluid rounded-3"
               />
