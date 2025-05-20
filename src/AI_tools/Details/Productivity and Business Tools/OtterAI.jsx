@@ -576,38 +576,51 @@ const OtterAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className="d-flex align-items-center justify-content-between mb-5">
-            {/* Left side (Text Section) */}
-            <div style={{ flex: 1, paddingRight: "30px" }}>
-              <img
-                src={Logo}
-                alt="Logo"
-                className="me-3"
-                style={{ width: "60px" }}
-              />
-              <h2>Otter.ai</h2>
-              <div className="text-warning mb-1">
-                ⭐⭐⭐⭐⭐ 95% Satisfaction
-              </div>
-              <p>
-                Otter.ai provides a fully automated transcription service
-                powered by AI. It supports various audio and video formats and
-                converts them into editable text in real-time. It’s highly
-                accurate in detecting words, punctuation, and tone. This makes
-                it ideal for meetings, interviews, content creation, and
-                podcasts.
-              </p>
-            </div>
+        <div className="d-flex align-items-center justify-content-between mb-5">
+  {/* Left side (Text Section) */}
+  <div style={{ flex: 1, paddingRight: "30px" }}>
+    <img
+      src={Logo}
+      alt="Otter.ai Logo"
+      className="me-3"
+      style={{ width: "60px" }}
+    />
+    <h2>Otter.ai</h2>
+    <div className="text-warning mb-1">
+      ⭐⭐⭐⭐⭐ 95% Satisfaction
+    </div>
+    <p>
+      Otter.ai provides a fully automated transcription service
+      powered by AI. It supports various audio and video formats and
+      converts them into editable text in real-time. It’s highly
+      accurate in detecting words, punctuation, and tone. This makes
+      it ideal for meetings, interviews, content creation, and
+      podcasts.
+    </p>
+    <div className="mb-3">
+      <a
+        href="https://otter.ai/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary me-2"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
 
-            {/* Right side (Image Section) */}
-            <div style={{ flex: 1, textAlign: "center" }}>
-              <img
-                src={otter}
-                className="img-fluid rounded-3"
-                style={{ maxWidth: "80%", height: "auto" }}
-              />
-            </div>
-          </div>
+  {/* Right side (Image Section) */}
+  <div style={{ flex: 1, textAlign: "center" }}>
+    <img
+      src={otter}
+      alt="Otter.ai interface"
+      className="img-fluid rounded-3"
+      style={{ maxWidth: "80%", height: "auto" }}
+      loading="lazy"
+    />
+  </div>
+</div>
+
 
           {/* Tab Navigation */}
           <ul className="nav nav-tabs custom-tabs mb-4">

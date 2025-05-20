@@ -630,59 +630,66 @@ const PowerBI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>Power AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Power BI is a powerful business analytics tool from Microsoft
-                that helps you visualize your data and share insights across
-                your organization. Power BI AI leverages artificial intelligence
-                (AI) machine learning capabilities to enhance the tool's
-                functionality, enabling businesses to make smarter, data-driven
-                decisions. It integrates AI features and machine learning models
-                directly into the data analysis and visualization process,
-                making it easier to extract valuable insights from large
-                datasets.
-              </p>
-              <p>
-                Power BI AI brings artificial intelligence into the world of
-                data analytics. With the integration of advanced machine
-                learning, AI-driven predictions, and automated data processing,
-                Power BI transforms how businesses analyze and visualize their
-                data. Key AI features in Power BI include predictive analytics,
-                natural language processing, data automation, and machine
-                learning models.
-              </p>
+         <div className="row d-flex align-items-center justify-content-between mb-1">
+  {/* Left side (Text Section) */}
+  <div
+    style={{ flex: 1, paddingRight: "30px" }}
+    className="col-6 col-md-12"
+  >
+    <p className="text-primary">Write better, faster</p>
+    <h1>Power AI</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      Power BI is a powerful business analytics tool from Microsoft
+      that helps you visualize your data and share insights across
+      your organization. Power BI AI leverages artificial intelligence
+      (AI) machine learning capabilities to enhance the tool's
+      functionality, enabling businesses to make smarter, data-driven
+      decisions. It integrates AI features and machine learning models
+      directly into the data analysis and visualization process,
+      making it easier to extract valuable insights from large
+      datasets.
+    </p>
+    <p>
+      Power BI AI brings artificial intelligence into the world of
+      data analytics. With the integration of advanced machine
+      learning, AI-driven predictions, and automated data processing,
+      Power BI transforms how businesses analyze and visualize their
+      data. Key AI features in Power BI include predictive analytics,
+      natural language processing, data automation, and machine
+      learning models.
+    </p>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2"> Business</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
-            </div>
+    <div className="mb-3">
+      <a
+        href="https://app.powerbi.com/singleSignOn?ru=https%3A%2F%2Fapp.powerbi.com%2F%3FnoSignUpCheck%3D1"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary me-2"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src={magisto}
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
-          </div>
+  {/* Right side (Image Section) */}
+  <div
+    style={{
+      flex: 1,
+      textAlign: "center",
+      width: "100%",
+      height: "250px",
+    }}
+    className="col-6 col-md-12 mb-5"
+  >
+    <img
+      src={magisto}
+      alt="Power BI AI Interface"
+      style={{ maxWidth: "100%", height: "250px", objectFit: "contain" }}
+    />
+  </div>
+</div>
+
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>
@@ -834,20 +841,7 @@ const PowerBI = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with Power BI AI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
+
         </div>
       </div>
     </>

@@ -547,39 +547,46 @@ const Grammarly = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className="d-flex align-items-center justify-content-between mb-5">
-            {/* Left side (Text Section) */}
-            <div style={{ flex: 1, paddingRight: "30px" }}>
-              <img
-                src={Logo}
-                alt="Logo"
-                className="me-3"
-                style={{ width: "60px" }}
-              />
-              <h2>Grammarly AI</h2>
-              <div className="text-warning mb-1">
-                ⭐⭐⭐⭐⭐ 95% Satisfaction
-              </div>
-              <p>
-                Grammarly AI is an advanced artificial intelligence-powered
-                writing assistant designed to assist writers, students,
-                professionals, and businesses in improving their written
-                communication. By leveraging AI and machine learning, Grammarly
-                analyzes your text for grammar, spelling, punctuation, clarity,
-                tone, and style, providing real-time suggestions for
-                improvement.
-              </p>
-            </div>
+       <div className="d-flex flex-column flex-md-row align-items-center justify-content-between mb-5">
+  {/* Left side (Text Section) */}
+  <div style={{ flex: 1, paddingRight: "30px" }} className="mb-4 mb-md-0">
+    <div className="d-flex align-items-center mb-3">
+      <img
+        src={Logo}
+        alt="Grammarly Logo"
+        className="me-3"
+        style={{ width: "60px", height: "auto" }}
+      />
+      <h2 className="mb-0">Grammarly AI</h2>
+    </div>
 
-            {/* Right side (Image Section) */}
-            <div style={{ flex: 1, textAlign: "center" }}>
-              <img
-                src={grammarly}
-                className="img-fluid rounded-3"
-                style={{ maxWidth: "80%", height: "auto" }}
-              />
-            </div>
-          </div>
+    <div className="text-warning mb-2">⭐⭐⭐⭐⭐ 95% Satisfaction</div>
+
+    <p>
+      Grammarly AI is an advanced artificial intelligence-powered writing assistant designed to assist writers, students, professionals, and businesses in improving their written communication. By leveraging AI and machine learning, Grammarly analyzes your text for grammar, spelling, punctuation, clarity, tone, and style, providing real-time suggestions for improvement.
+    </p>
+
+    <a
+      href="https://www.grammarly.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="btn btn-primary"
+    >
+      Explore Tool
+    </a>
+  </div>
+
+  {/* Right side (Image Section) */}
+  <div style={{ flex: 1, textAlign: "center" }}>
+    <img
+      src={grammarly}
+      alt="Grammarly AI"
+      className="img-fluid rounded-3"
+      style={{ maxWidth: "80%", height: "auto" }}
+    />
+  </div>
+</div>
+
 
           {/* Tab Navigation */}
           <ul className="nav nav-tabs custom-tabs mb-4">
@@ -607,20 +614,6 @@ const Grammarly = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with Grammarly AI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
         </div>
       </div>
     </>
