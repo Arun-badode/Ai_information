@@ -711,7 +711,7 @@ const SpeechifyAI = () => {
               </p>
               <div className="mb-3">
                 <a
-                  href=""
+                  href="https://speechify.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary me-2"

@@ -828,57 +828,53 @@ const VoiceModAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className="row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-12 col-md-6 order-2 order-md-1"
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>Voicemod AI:</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Voicemod AI is an advanced voice modulation tool that allows
-                users to change their voice in real time. Whether you're a
-                gamer, a content creator, a streamer, or a business looking to
-                engage your audience, Voicemod provides a broad range of
-                customizable voice effects, making it one of the most popular
-                tools in the voice modulation market. It uses AI-powered voice
-                synthesis technology, allowing users to apply voice changes,
-                effects, and transformations for both entertainment and
-                professional use. Voicemod supports a variety of platforms,
-                including Discord, Twitch, YouTube, and many others.
-              </p>
+          <div className="container">
+            <div className="row d-flex align-items-center justify-content-between mb-4">
+              <div
+                className="col-12 col-md-6 order-2 order-md-1"
+                style={{ paddingRight: "30px" }}
+              >
+                <p className="text-primary">Write better, faster</p>
+                <h1>Voicemod AI:</h1>
+                <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+                <p>
+                  Voicemod AI is an advanced voice modulation tool that allows
+                  users to change their voice in real time. Whether you're a
+                  gamer, a content creator, a streamer, or a business looking to
+                  engage your audience, Voicemod provides a broad range of
+                  customizable voice effects, making it one of the most popular
+                  tools in the voice modulation market. It uses AI-powered voice
+                  synthesis technology, allowing users to apply voice changes,
+                  effects, and transformations for both entertainment and
+                  professional use. Voicemod supports a variety of platforms,
+                  including Discord, Twitch, YouTube, and many others.
+                </p>
 
-              <div className="mb-3">
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary me-2"
-                >
-                  Explore Tool
-                </a>
+                <div className="mb-3">
+                  <a
+                    href="https://www.voicemod.net/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-primary me-2"
+                  >
+                    Explore Tool
+                  </a>
+                </div>
+              </div>
+
+              <div
+                className="col-12 col-md-6 order-1 order-md-2 text-center"
+                style={{ height: "auto" }}
+              >
+                <img
+                  src={voice}
+                  alt="Voicemod AI"
+                  style={{ maxWidth: "100%", height: "300px" }}
+                />
               </div>
             </div>
-
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                width: "100%",
-                height: "250px",
-              }}
-              className="col-12 col-md-6 mb-5 order-1 order-md-2"
-            >
-              <img
-                src={voice}
-                style={{ maxWidth: "100%", height: "300px" }}
-                alt="Voicemod AI"
-              />
-            </div>
           </div>
+
           <section style={{ backgroundColor: "#1b1f2b", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">
@@ -1036,20 +1032,6 @@ const VoiceModAI = () => {
           </ul>
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
-          {/* <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with VoiceModAI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div> */}
         </div>
       </div>
     </>
