@@ -601,12 +601,12 @@ const QuizletAI = () => {
   return (
     <>
       <div className="bg-dark">
-        <Link
-          to="/Aitools"
-          className="d-inline-block text-white text-decoration-none ml-3 py-1"
+       <a
+          href="/Aitools"
+          className="d-inline-block text-white text-decoration-none  mt-3 ml-3 py-1 px-2 ms-5 border rounded-sm"
         >
-          <i className="bi bi-arrow-left me-2"></i>Back to Directory
-        </Link>
+          <i className="bi bi-arrow-left me-2"></i>Back  {" "}
+        </a>
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
