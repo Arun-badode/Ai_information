@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
 import pageOptimizerProAI from "../../../../public/assets/Img/Ai for SEO/7.png";
-import scan1 from "../../../../public/assets/Img/AI for SEO/scan15.png";
-import scan2 from "../../../../public/assets/Img/AI for SEO/scan16.png";
+import scan1 from "../../../../public/assets/Img/AI for SEO/scan17.png";
+import scan2 from "../../../../public/assets/Img/AI for SEO/scan18.png";
 
 // review section data
 const reviews = [
@@ -315,14 +315,14 @@ const PageOptimizerProAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
+                src={scan1}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
+                src={scan2}
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -798,21 +798,18 @@ const PageOptimizerProAI = () => {
   return (
     <>
       <div className="bg-dark d-flex  justify-content-between align-items-center ">
-      <a
+        <a
           href="/Aitools"
           className="d-inline-block text-white text-decoration-none  mt-3 ml-3 py-1 px-2 ms-5 border rounded-sm"
         >
-          <i className="bi bi-arrow-left me-2"></i>Back  {" "}
+          <i className="bi bi-arrow-left me-2"></i>Back{" "}
         </a>
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
+          <div className="row d-flex align-items-center justify-content-between mb-1 flex-md-row flex-column-reverse">
             {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
+            <div className="col-md-6 col-12 mt-4 mt-md-0">
               <p className="text-primary">Write better, faster</p>
               <h1>PageOptimizer Pro AI</h1>
               <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
@@ -824,27 +821,28 @@ const PageOptimizerProAI = () => {
                 it analyzes your pages against top-ranking competitors and
                 provides actionable insights for improvement.
               </p>
-
               <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
+                <a
+                  href="https://pageoptimizer.pro/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary me-2"
+                >
+                  Explore more
+                </a>
               </div>
             </div>
 
             {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
+            <div className="col-md-6 col-12 text-center">
               <img
                 src={pageOptimizerProAI}
-                style={{ MaxWidth: "100%", height: "300px" }}
+                alt="PageOptimizer Pro AI"
+                style={{
+                  maxWidth: "100%",
+                  height: "300px",
+                  objectFit: "contain",
+                }}
               />
             </div>
           </div>
@@ -999,21 +997,6 @@ const PageOptimizerProAI = () => {
 
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
-
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with RunWayGen?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
         </div>
       </div>
     </>

@@ -3,9 +3,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 
-import doma from '../../../../public/assets/Img/AI for Business/doma.jpg'
-import doma1 from '../../../../public/assets/Img/AI for Business/doma1.png'
-import doma2 from '../../../../public/assets/Img/AI for Business/doma2.png'
+import magisto from "../../../../public/assets/Img/AI for Animation/14.png";
+import scn9 from "../../../../public/assets/Img/AI for Animation/scn9.jpg";
+import scn10 from "../../../../public/assets/Img/AI for Animation/scn10.jpg";
+
 // review section data
 const reviews = [
   {
@@ -73,7 +74,7 @@ const styles = {
     borderColor: "#2ea043",
   },
 };
-const DomoAI = () => {
+const Ryter = () => {
   const [activeTab, setActiveTab] = useState("features"); // Set the default active tab as 'features'
   const [showAllFaqs, setShowAllFaqs] = useState(false);
 
@@ -83,36 +84,34 @@ const DomoAI = () => {
         return (
           <div className="row g-4">
             <div className="text-center">
-              <p className="text-primary">Explore Data Smarter with Domo AI</p>
-              <h3 className="">
-                Real-Time Intelligence & Automated Decision-Making
-              </h3>
+              <p className="text-primary">Create Stunning Videos in Minutes</p>
+              <h3 className=""> Drag-and-Drop Simplicity & Custom Branding</h3>
             </div>
             {[
               {
-                icon: "⚙️",
-                title: "AutoML:",
-                desc: "Build and deploy predictive models without writing code using Domo’s built-in AutoML workflows.",
-              },
-              {
-                icon: "💡",
-                title: "Intelligent Alerts:",
-                desc: "Set up AI-powered alerts to get notified about anomalies, trends, or important changes in your data.",
+                icon: "✍️",
+                title: "AI-Powered Writing:",
+                desc: "Generate high-quality content for blogs, ads, emails, and more in seconds.",
               },
               {
                 icon: "🧠",
-                title: "Jupyter Workspaces:",
-                desc: "Run advanced analytics with integrated Jupyter Notebooks supporting Python and R for custom ML solutions.",
+                title: "Smart Tones & Use Cases:",
+                desc: "Choose from 20+ tones and 40+ use cases to match your writing needs.",
               },
               {
-                icon: "🔍",
-                title: "Natural Language Queries:",
-                desc: "Ask data questions in everyday language and get instant answers with AI-driven visual summaries.",
+                icon: "🌍",
+                title: "Multilingual Support:",
+                desc: "Create content in over 30 languages to connect with a global audience.",
               },
               {
-                icon: "🌐",
-                title: "Domo Everywhere:",
-                desc: "Embed interactive dashboards with AI insights into portals, apps, and client platforms with full branding control.",
+                icon: "💡",
+                title: "Idea Generator:",
+                desc: "Get creative content ideas instantly, from blog topics to catchy taglines.",
+              },
+              {
+                icon: "📄",
+                title: "Document Management:",
+                desc: "Organize, edit, and export all your writings from one central dashboard.",
               },
             ].map((feature, index) => (
               <div className="col-md-4" key={index}>
@@ -134,15 +133,14 @@ const DomoAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src={doma1}
-                alt="screenshot"
+                src={scn9}
+                alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={doma2}
-                alt="screenshot"
+                src={scn10}
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -262,124 +260,84 @@ const DomoAI = () => {
             <div className="accordion" id="faqAccordion">
               {[
                 {
-                  q: "What is Domo AI?",
-                  a: "Domo AI is the artificial intelligence and machine learning capability built into the Domo platform, enabling data-driven predictions, intelligent alerts, and natural language insights.",
+                  q: "What is Rytr AI?",
+                  a: "Rytr is an AI-powered writing assistant that helps you generate content for blogs, emails, ads, and more in seconds.",
                 },
                 {
-                  q: "How does AI work in Domo?",
-                  a: "Domo AI leverages AutoML, Python/R integrations, and prebuilt models to analyze data, predict trends, and offer automated insights within dashboards and cards.",
+                  q: "How does Rytr AI work?",
+                  a: "Rytr uses advanced natural language processing (NLP) to understand your input and generate human-like text based on your needs.",
                 },
                 {
-                  q: "Is Domo AI beginner-friendly?",
-                  a: "Yes, Domo provides an intuitive interface with drag-and-drop tools and natural language query features suitable for non-technical users.",
+                  q: "Is Rytr beginner-friendly?",
+                  a: "Yes, Rytr is designed to be easy for beginners, with a simple interface and ready-to-use templates for multiple use cases.",
                 },
                 {
-                  q: "Is Domo AI free to use?",
-                  a: "Domo offers AI features with its subscription plans. Advanced AI functionalities may require higher-tier licenses or add-ons like AutoML or Jupyter Workspaces.",
+                  q: "Is Rytr free to use?",
+                  a: "Rytr offers a free plan with limited monthly characters. Paid plans provide more usage and premium features.",
                 },
                 {
-                  q: "What platforms is Domo available on?",
-                  a: "Domo is a fully cloud-based platform accessible via web and mobile apps for both iOS and Android.",
+                  q: "What languages does Rytr support?",
+                  a: "Rytr supports over 30 languages including English, Spanish, French, German, Hindi, and more.",
                 },
                 {
-                  q: "What makes Domo AI unique?",
-                  a: "Domo combines real-time data pipelines, AutoML, and BI visualization in one platform with AI-driven decision-making and embedded analytics.",
+                  q: "What makes Rytr AI unique?",
+                  a: "Its ease of use, fast content generation, built-in templates, and support for multiple tones make it stand out.",
                 },
                 {
-                  q: "Who should use Domo AI?",
-                  a: "Business analysts, executives, and teams that require real-time insights, cross-departmental collaboration, and embedded intelligence.",
+                  q: "Who should use Rytr?",
+                  a: "Rytr is ideal for content writers, marketers, business owners, students, and anyone needing quick quality content.",
                 },
                 {
-                  q: "Can Domo AI be used for forecasting?",
-                  a: "Yes, Domo's AutoML and forecasting features allow you to predict future trends and model various business scenarios.",
+                  q: "Can Rytr write blog posts?",
+                  a: "Yes, Rytr can generate complete blog outlines, introductions, body content, and conclusions.",
                 },
                 {
-                  q: "Does Domo AI support real-time analytics?",
-                  a: "Yes, Domo's architecture supports real-time data streaming, dashboard updates, and instant alerts.",
+                  q: "Can I use Rytr for SEO content?",
+                  a: "Yes, Rytr includes tools for writing meta descriptions, SEO-friendly titles, and keyword-rich content.",
                 },
                 {
-                  q: "Can I use natural language in Domo AI?",
-                  a: "Yes, Domo offers natural language querying, allowing users to ask data questions in plain English for instant insights.",
+                  q: "Does Rytr offer different writing tones?",
+                  a: "Yes, it provides 20+ tones like convincing, humorous, formal, enthusiastic, and more.",
                 },
                 {
-                  q: "What AI tools are built into Domo?",
-                  a: "Domo includes AutoML, predictive analytics, intelligent alerts, Jupyter Notebook integration, and NLP querying.",
+                  q: "Does Rytr save my writing history?",
+                  a: "Yes, Rytr stores your writing sessions so you can revisit and edit them later.",
                 },
                 {
-                  q: "Can I use Domo AI on mobile devices?",
-                  a: "Yes, Domo's mobile app supports full interactivity with dashboards, alerts, and AI-powered reports.",
+                  q: "Can I collaborate with a team on Rytr?",
+                  a: "Team features are available in premium plans, allowing members to share documents and collaborate.",
                 },
                 {
-                  q: "Can Domo AI generate automated insights?",
-                  a: "Yes, Domo AI generates predictive cards and alerts that proactively surface key business insights.",
+                  q: "Does Rytr have templates?",
+                  a: "Yes, Rytr offers 40+ use-case templates such as product descriptions, job descriptions, cover letters, and more.",
                 },
                 {
-                  q: "Does Domo integrate with cloud tools?",
-                  a: "Yes, Domo supports 1,000+ connectors including Google Cloud, AWS, Microsoft Azure, and many SaaS apps.",
+                  q: "Can I use Rytr to write ad copy?",
+                  a: "Absolutely. Rytr has specific templates for Facebook ads, Google ads, and sales copywriting.",
                 },
                 {
-                  q: "Is coding required to use Domo AI?",
-                  a: "No coding is needed for most users, but developers can use Python, R, and SQL for advanced modeling within Jupyter or scripting environments.",
+                  q: "Does Rytr support plagiarism checking?",
+                  a: "Rytr includes an integrated plagiarism checker in its premium plans.",
                 },
                 {
-                  q: "Can Domo AI handle unstructured data?",
-                  a: "Yes, Domo can analyze unstructured data through integrations with AI/ML models and external processing tools.",
+                  q: "Can Rytr write in a formal tone?",
+                  a: "Yes, Rytr supports formal tone along with many others for business and academic writing.",
                 },
                 {
-                  q: "Can Domo AI be used for sales forecasting?",
-                  a: "Absolutely, Domo AI is widely used for sales pipeline analysis, revenue forecasting, and performance tracking.",
+                  q: "Is Rytr good for social media content?",
+                  a: "Yes, Rytr is great for writing captions, bios, tweets, LinkedIn posts, and more.",
                 },
                 {
-                  q: "Can Domo detect anomalies?",
-                  a: "Yes, Domo's AI alerts detect data anomalies and notify users in real time via email or mobile.",
+                  q: "Does Rytr work on mobile?",
+                  a: "Rytr works on any modern browser, including mobile browsers. There is no dedicated app yet.",
                 },
                 {
-                  q: "What is Domo AutoML?",
-                  a: "Domo AutoML lets users train, evaluate, and deploy predictive models without writing code, using intuitive workflows.",
+                  q: "Can I export content from Rytr?",
+                  a: "Yes, you can download your content in DOCX format or copy it directly from the editor.",
                 },
                 {
-                  q: "Can I share AI insights in Domo?",
-                  a: "Yes, Domo supports real-time dashboard sharing, alerts, scheduled reports, and secure publishing with Domo Everywhere.",
-                },
-                {
-                  q: "Does Domo support data storytelling?",
-                  a: "Yes, you can build interactive dashboards and combine cards to narrate a complete business story visually.",
-                },
-                {
-                  q: "What industries benefit from Domo AI?",
-                  a: "Retail, finance, healthcare, logistics, manufacturing, and marketing teams commonly use Domo AI for strategic insights.",
-                },
-                {
-                  q: "Can I schedule reports using Domo?",
-                  a: "Yes, Domo supports report scheduling and automated alert delivery to stakeholders.",
-                },
-                {
-                  q: "What data formats does Domo support?",
-                  a: "Domo supports Excel, CSV, JSON, XML, and integrates with APIs, SQL databases, and cloud apps like Google Sheets and Salesforce.",
-                },
-                {
-                  q: "Is Domo AI cloud-based?",
-                  a: "Yes, Domo is entirely cloud-native, built for scalability, speed, and collaboration.",
-                },
-                {
-                  q: "Can Domo be used offline?",
-                  a: "No, Domo requires internet connectivity as it’s a fully cloud-based solution.",
-                },
-                {
-                  q: "Can I customize AI models in Domo?",
-                  a: "Yes, advanced users can build, tune, and deploy custom ML models using Python or R inside Jupyter Workspaces.",
-                },
-                {
-                  q: "Does Domo offer white-labeling?",
-                  a: "Yes, with Domo Everywhere, you can embed dashboards into your own platforms with full branding control.",
-                },
-                {
-                  q: "Does Domo offer customer support?",
-                  a: "Yes, Domo provides comprehensive support through documentation, live chat, customer success teams, and community forums.",
-                },
-                {
-                  q: "Does Domo support team collaboration?",
-                  a: "Yes, Domo enables teams to collaborate on dashboards, share insights in real time, and annotate visualizations for better communication.",
+                  q: "Does Rytr provide customer support?",
+                  a: "Yes, Rytr offers customer support via chat and email, and has a helpful knowledge base.",
                 },
               ]
 
@@ -449,7 +407,7 @@ const DomoAI = () => {
               <div className="col-12">
                 <div className="custom-card text-light p-5 text-center">
                   <h3 className="fw-bold mb-4 text-start text-primary">
-                    Why Use Domo AI?
+                    Why Use Rytr AI?
                   </h3>
 
                   <ul
@@ -462,32 +420,30 @@ const DomoAI = () => {
                     }}
                   >
                     <li className="mb-3">
-                      Domo AI transforms raw data into actionable insights using
-                      AutoML, natural language queries, and intelligent alerts.
+                      Rytr helps you generate high-quality written content in
+                      seconds using AI.
                     </li>
                     <li className="mb-3">
-                      It’s perfect for enterprises that need real-time
-                      decision-making across departments and large-scale data
-                      environments.
+                      Ideal for marketers, bloggers, freelancers, and
+                      entrepreneurs needing fast content output.
                     </li>
                     <li className="mb-3">
-                      Domo’s Magic ETL and pre-built connectors make data
-                      integration and preparation fast and user-friendly.
+                      Supports 30+ languages, 20+ tones, and 40+ use cases —
+                      from blogs to product descriptions.
                     </li>
                     <li className="mb-3">
-                      Supports advanced modeling and scripting with R, Python,
-                      and Jupyter integration for custom AI/ML workflows.
+                      Easy-to-use interface with built-in plagiarism checker and
+                      document organization tools.
                     </li>
                     <li className="mb-3">
-                      With Domo Everywhere, you can embed dashboards and
-                      collaborate securely with internal and external
-                      stakeholders.
+                      Perfect for anyone looking to streamline content creation
+                      without hiring a writer.
                     </li>
                   </ul>
 
                   <div className="text-center mt-4">
                     <Button variant="primary" size="sm">
-                      Explore Domo AI
+                      Start Writing Now
                     </Button>
                   </div>
                 </div>
@@ -515,24 +471,20 @@ const DomoAI = () => {
                 <h5 className="text-success text-start mb-4">✅ Pros</h5>
                 <ul className="ps-3" style={{ listStyleType: "disc" }}>
                   <li className="mb-2">
-                    Real-time data visualizations and dashboards powered by AI
-                    and AutoML.
+                    Quickly generates high-quality content for blogs, ads, and
+                    emails.
                   </li>
                   <li className="mb-2">
-                    Easy-to-use natural language queries and intelligent alerts
-                    for quick insights.
+                    Supports 30+ languages and 20+ writing tones.
                   </li>
                   <li className="mb-2">
-                    Extensive connector library with 1,000+ pre-built data
-                    integrations.
+                    Offers 40+ use-case templates for various content needs.
                   </li>
                   <li className="mb-2">
-                    Embedded machine learning models with support for Python, R,
-                    and Jupyter Notebooks.
+                    Easy to use, even for non-writers or beginners.
                   </li>
                   <li className="mb-2">
-                    Domo Everywhere enables white-labeled dashboard sharing and
-                    external collaboration.
+                    Includes plagiarism checker and document management.
                   </li>
                 </ul>
               </div>
@@ -551,26 +503,23 @@ const DomoAI = () => {
                 <h5 className="text-warning text-start mb-4">⚠ Cons</h5>
                 <ul className="ps-3" style={{ listStyleType: "disc" }}>
                   <li className="mb-2">
-                    Pricing may be high for small teams or startups compared to
-                    simpler BI tools.
+                    Free plan has a monthly character limit and fewer features.
                   </li>
                   <li className="mb-2">
-                    Initial setup and data modeling require a learning curve.
+                    Generated content may sometimes require manual refinement.
                   </li>
                   <li className="mb-2">
-                    Some AI capabilities are more limited without advanced plan
-                    tiers.
+                    No native desktop or mobile app available (browser-only).
                   </li>
                   <li className="mb-2">
-                    Advanced customization may need support from Domo experts or
-                    developers.
+                    Lacks deep formatting or layout tools for long-form
+                    documents.
                   </li>
                 </ul>
               </div>
             </div>
           </div>
         );
-
       case "alternative":
         return (
           <div className="container my-5">
@@ -588,29 +537,24 @@ const DomoAI = () => {
               >
                 <ul className="ps-3" style={{ listStyleType: "disc" }}>
                   <li className="mb-2">
-                    Tableau – Known for its interactive dashboards and AI tools
-                    like Explain Data and Einstein Discovery, great for visual
-                    analytics.
+                    Jasper AI – Advanced AI writing tool with powerful features
+                    for marketing and long-form content.
                   </li>
                   <li className="mb-2">
-                    Power BI – Microsoft's AI-enabled platform integrates with
-                    Azure ML and Excel, offering scalable business intelligence
-                    for enterprises.
+                    Copy.ai – User-friendly AI writer with templates for social
+                    media, blogs, and product descriptions.
                   </li>
                   <li className="mb-2">
-                    Looker (Google Cloud) – Focuses on embedded analytics and
-                    AI-powered exploration using LookML and seamless integration
-                    with BigQuery.
+                    Writesonic – Great for SEO-focused content, ad copy, and
+                    chatbot integrations.
                   </li>
                   <li className="mb-2">
-                    Sisense – Provides AI-driven analytics and embedded
-                    intelligence with strong API support for customizable
-                    solutions.
+                    Scalenut – Combines AI writing with content planning and SEO
+                    optimization tools.
                   </li>
                   <li className="mb-2">
-                    Qlik Sense – Offers associative data exploration and
-                    Augmented Intelligence to surface key insights from complex
-                    datasets.
+                    Anyword – Focused on performance-driven copy with predictive
+                    analytics and targeting features.
                   </li>
                 </ul>
               </div>
@@ -632,60 +576,66 @@ const DomoAI = () => {
         >
           <i className="bi bi-arrow-left me-2"></i>Back to Directory{" "}
         </a> */}
-      <a
+        <a
           href="/Aitools"
           className="d-inline-block text-white text-decoration-none  mt-3 ml-3 py-1 px-2 ms-5 border rounded-sm"
         >
-          <i className="bi bi-arrow-left me-2"></i>Back  {" "}
+          <i className="bi bi-arrow-left me-2"></i>Back{" "}
         </a>
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-        <div className="row align-items-center g-4 mb-4">
-  {/* Left side (Text Section) */}
-  <div className="col-lg-6 col-12 order-lg-1 order-2 pe-lg-4">
-    <p className="text-primary mb-2">Grow better, faster</p>
-    <h1 className="mb-3">Domo AI</h1>
-    <div className="text-warning mb-3">⭐⭐⭐⭐⭐</div>
-    <p className="mb-3">
-      Domo AI is a powerful platform that integrates artificial
-      intelligence and machine learning into its business intelligence
-      (BI) services. Designed for modern enterprises, Domo AI
-      transforms how businesses visualize, analyze, and act on their
-      data by delivering smart, real-time, and AI-driven insights.
-    </p>
-    <p className="mb-4">
-      Leveraging Domo AI analytics, machine learning models, and
-      predictive analytics, organizations can enhance decision-making,
-      improve performance, and drive growth.
-    </p>
+          <div className=" row d-flex align-items-center justify-content-between mb-1">
+            {/* Left side (Text Section) */}
+            <div
+              style={{ paddingRight: "30px" }}
+              className="col-md-6  col-12 order-2 order-md-1 "
+            >
+              <p className="text-primary">Write better, faster</p>
+              <h1>RYTR AI</h1>
+              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+              <p>
+                Rytr is an AI-powered writing assistant designed to help users
+                generate high-quality content quickly and easily. Using advanced
+                machine learning algorithms, Rytr can create various forms of
+                written content, such as blog posts, social media posts, product
+                descriptions, email copy, and much more. It aims to save time
+                for content creators and marketers by automating the writing
+                process, making it an excellent tool for individuals and
+                businesses.
+              </p>
 
-    <div className="mb-3">
-      <a
-        href="https://domoai.app/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="btn btn-primary btn-lg px-4"
-      >
-        Explore Tool
-      </a>
-    </div>
-  </div>
+              <div className="mb-3">
+                <a
+                  href="https://rytr.me"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary me-2"
+                >
+                  Explore Tool
+                </a>
+              </div>
+            </div>
 
-  {/* Right side (Image Section) */}
-  <div className="col-lg-6 col-12 order-lg-2 order-1 text-center mb-4 mb-lg-0">
-    <img
-      src={doma}
-      alt="Domo AI Platform Interface"
-      className="img-fluid rounded-3 shadow"
-      style={{
-        maxHeight: "350px",
-        width: "auto",
-        objectFit: "contain"
-      }}
-    />
-  </div>
-</div>
+            {/* Right side (Image Section) */}
+            <div
+              style={{
+                textAlign: "center",
+                Width: "100%",
+                height: "250px",
+              }}
+              className="col-md-6 col-12 order-md-2 order-1 text-center mb-3 mb-md-0  "
+            >
+              <img
+                src={magisto}
+                style={{
+                  Width: "100%",
+                  height: "auto",
+                  maxHeight: "300px",
+                  objectFit: "contain",
+                }}
+              />
+            </div>
+          </div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>
@@ -696,7 +646,7 @@ const DomoAI = () => {
                   marginBottom: "1rem",
                 }}
               >
-                How to Use Domo AI?
+                How to Use Rytr AI?
               </h2>
 
               <div className="row g-4">
@@ -726,12 +676,12 @@ const DomoAI = () => {
         `}
                     </style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Connect and Unify Data
+                      Choose Use Case
                     </h5>
                     <p style={{ color: "#fff", margin: 0 }}>
-                      Import data from spreadsheets, databases, APIs, or cloud
-                      services using Domo's 1,000+ connectors, and centralize it
-                      in one platform.
+                      Start by selecting a writing use case such as blog ideas,
+                      product description, ad copy, or email content from the
+                      Rytr dashboard.
                     </p>
                     <div className="step1">1</div>
                   </div>
@@ -763,12 +713,12 @@ const DomoAI = () => {
         `}
                     </style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Apply AI & Machine Learning
+                      Set Tone & Input
                     </h5>
                     <p style={{ color: "#fff", margin: 0 }}>
-                      Use Domo AI tools to run predictive analytics, generate
-                      insights using natural language queries, and build custom
-                      ML models with AutoML.
+                      Choose a tone of voice (e.g., formal, persuasive), select
+                      the language, and add a short description or keywords as
+                      your prompt.
                     </p>
                     <div className="step2">2</div>
                   </div>
@@ -800,12 +750,11 @@ const DomoAI = () => {
         `}
                     </style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Share and Automate
+                      Generate & Export
                     </h5>
                     <p style={{ color: "#fff", margin: 0 }}>
-                      Build interactive dashboards, set alerts, and automate
-                      business workflows across departments using Domo
-                      Everywhere and real-time collaboration tools.
+                      Click “Ryte for me” to generate your content instantly.
+                      You can edit, rephrase, and download it as needed.
                     </p>
                     <div className="step3">3</div>
                   </div>
@@ -839,11 +788,10 @@ const DomoAI = () => {
 
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
-
         </div>
       </div>
     </>
   );
 };
 
-export default DomoAI;
+export default Ryter;

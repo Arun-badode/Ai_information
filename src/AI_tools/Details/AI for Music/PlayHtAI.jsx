@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
-
+import play from "../../../../public/assets/Img/Ai for Music/3.png";
+import screen1 from "../../../../public/assets/Img/Ai for Music/play-screenshot1.jpg";
+import screen2 from "../../../../public/assets/Img/Ai for Music/play-screenshot2.jpg";
 // review section data
 const reviews = [
   {
@@ -373,14 +375,14 @@ const PlayHiAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src=""
+                src={screen1}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src=""
+                src={screen2}
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -641,7 +643,7 @@ const PlayHiAI = () => {
             {/* Image Section - mobile me pehle dikhaye, desktop me right side */}
             <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-3 mb-md-0">
               <img
-                src="https://play.ht/_next/static/media/dashboard_img.2d2eb95b.png" // Image link, customize kar sakte ho
+                src={play}
                 alt="Play.ht AI"
                 className="img-fluid"
                 style={{ maxHeight: "300px", objectFit: "contain" }}

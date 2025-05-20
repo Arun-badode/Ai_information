@@ -366,10 +366,10 @@ const CategoriesNavbar = () => {
                       Content Generation <FaPencilAlt size={20} />
                     </h6>
                     <Link to="/CopyAI">Copy AI</Link>
-                    <a href="#">AI Writer 2</a>
-                    <a href="#">AI Writer 3</a>
-                    <a href="#">AI Writer 4</a>
-                    <a href="#">AI Writer 5</a>
+                    <Link to="/Writtersonic">Writesonic Ai</Link>
+                    <Link to="/Ryter">Rytr AI</Link>
+                    <Link to="/"></Link>
+                    <Link to="/"></Link>
                   </div>
                   {/* Design Tools Column */}
                   <div
@@ -379,11 +379,11 @@ const CategoriesNavbar = () => {
                     <h6>
                       Design Tools <SiAntdesign size={20} />
                     </h6>
-                    <a href="#">Logo 1</a>
-                    <a href="#">Logo 2</a>
-                    <a href="#">Logo 3</a>
-                    <a href="#">Logo 4</a>
-                    <a href="#">Logo 5</a>
+                    <Link to="/"></Link>
+                    <Link to="/"></Link>
+                    <Link to="/"></Link>
+                    <Link to="/"></Link>
+                    <Link to="/"></Link>
                   </div>
                 </div>
               </div>
@@ -660,11 +660,11 @@ const CategoriesNavbar = () => {
                     <h6>
                       Content Generation <FaPencilAlt size={20} />
                     </h6>
-                    <Link to="/"></Link>
-                    <Link to="/"></Link>
-                    <Link to="/"></Link>
-                    <Link to="/"></Link>
-                    <Link to="/"></Link>
+                    <Link to="/Apheris">Apheris AI</Link>
+                    <Link to="/Enveil">Enveil AI </Link>
+                    <Link to="/Evervault">Evervault AI</Link>
+                    <Link to="/Inpher ">Inpher AI </Link>
+                    <Link to="/Skyflow">Skyflow AI</Link>
                     <Link to="/"></Link>
                   </div>
                 </div>

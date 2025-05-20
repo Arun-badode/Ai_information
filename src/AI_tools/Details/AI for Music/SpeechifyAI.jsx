@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import speechify from "../../../../public/assets/Img/Ai for Music/8.png";
+import screen1 from "../../../../public/assets/Img/Ai for Music/speechify-sctreenshot1.jpg";
 
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 
@@ -408,7 +410,7 @@ const SpeechifyAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src=""
+                src={screen1}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
@@ -694,7 +696,7 @@ const SpeechifyAI = () => {
               style={{ height: "250px" }}
             >
               <img
-                src=""
+                src={speechify}
                 alt="Speechify AI Illustration"
                 style={{ maxWidth: "100%", height: "300px" }}
               />

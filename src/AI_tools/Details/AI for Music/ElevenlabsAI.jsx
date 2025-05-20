@@ -5,7 +5,10 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
-import eleven from "../../../../public/assets/Img/Ai for Music/1.png";
+import eleven from "../../../../public/assets/Img/Ai for Music/13.png";
+import screen1 from "../../../../public/assets/Img/Ai for Music/eleventlabs-screenshot1.jpg";
+import screen2 from "../../../../public/assets/Img/Ai for Music/eleventlabs-screenshot2.jpg";
+
 // review section data
 const reviews = [
   {
@@ -317,14 +320,14 @@ const ElevenlabsAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
+                src={screen1}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
+                src={screen2}
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -807,7 +810,7 @@ const ElevenlabsAI = () => {
           href="/Aitools"
           className="d-inline-block text-white text-decoration-none  mt-3 ml-3 py-1 px-2 ms-5 border rounded-sm"
         >
-          <i className="bi bi-arrow-left me-2"></i>Back  {" "}
+          <i className="bi bi-arrow-left me-2"></i>Back{" "}
         </a>
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">

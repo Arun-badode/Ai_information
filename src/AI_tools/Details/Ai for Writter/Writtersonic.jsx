@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
+import magisto from "../../../Images/MagistoAI.png";
 
-import doma from '../../../../public/assets/Img/AI for Business/doma.jpg'
-import doma1 from '../../../../public/assets/Img/AI for Business/doma1.png'
-import doma2 from '../../../../public/assets/Img/AI for Business/doma2.png'
 // review section data
 const reviews = [
   {
@@ -73,7 +71,7 @@ const styles = {
     borderColor: "#2ea043",
   },
 };
-const DomoAI = () => {
+const Writtersonic = () => {
   const [activeTab, setActiveTab] = useState("features"); // Set the default active tab as 'features'
   const [showAllFaqs, setShowAllFaqs] = useState(false);
 
@@ -83,36 +81,53 @@ const DomoAI = () => {
         return (
           <div className="row g-4">
             <div className="text-center">
-              <p className="text-primary">Explore Data Smarter with Domo AI</p>
+              <p className="text-primary">
+                Optimize Your Time with Writesonic AI
+              </p>
               <h3 className="">
-                Real-Time Intelligence & Automated Decision-Making
+                Smart Scheduling Assistant for Work-Life Balance
               </h3>
             </div>
             {[
               {
-                icon: "⚙️",
-                title: "AutoML:",
-                desc: "Build and deploy predictive models without writing code using Domo’s built-in AutoML workflows.",
+                icon: "📝",
+                title: "Blog and Article Writing Tools:",
+                desc: "Designed to generate blog posts, articles, and web content quickly and effectively, saving time and effort.",
               },
               {
-                icon: "💡",
-                title: "Intelligent Alerts:",
-                desc: "Set up AI-powered alerts to get notified about anomalies, trends, or important changes in your data.",
+                icon: "📚",
+                title: "Long-form Content Assistant:",
+                desc: "Helps users craft comprehensive, in-depth long-form content such as guides, research posts, and tutorials.",
               },
               {
-                icon: "🧠",
-                title: "Jupyter Workspaces:",
-                desc: "Run advanced analytics with integrated Jupyter Notebooks supporting Python and R for custom ML solutions.",
+                icon: "✍️",
+                title: "Short-form Content Generator:",
+                desc: "Specializes in producing short content like social media captions, ad headlines, taglines, and snippets.",
               },
               {
                 icon: "🔍",
-                title: "Natural Language Queries:",
-                desc: "Ask data questions in everyday language and get instant answers with AI-driven visual summaries.",
+                title: "SEO Optimization Features:",
+                desc: "Suggests keywords, meta tags, and content structure improvements to ensure high visibility in search engines.",
               },
               {
-                icon: "🌐",
-                title: "Domo Everywhere:",
-                desc: "Embed interactive dashboards with AI insights into portals, apps, and client platforms with full branding control.",
+                icon: "🛒",
+                title: "Product Description Generator:",
+                desc: "Creates persuasive, engaging product descriptions for eCommerce platforms like Shopify, Amazon, and Etsy.",
+              },
+              {
+                icon: "📧",
+                title: "Email and Ad Copy Tools:",
+                desc: "Crafts impactful marketing emails and attention-grabbing ad copy to boost engagement and conversion.",
+              },
+              {
+                icon: "🎯",
+                title: "Real-time Tone Adjustment:",
+                desc: "Allows dynamic tone customization—professional, casual, friendly, or authoritative—to match your brand voice.",
+              },
+              {
+                icon: "🧩",
+                title: "Browser Extension:",
+                desc: "Provides quick access to writing tools directly in your browser for seamless content generation anywhere online.",
               },
             ].map((feature, index) => (
               <div className="col-md-4" key={index}>
@@ -120,7 +135,9 @@ const DomoAI = () => {
                   className="custom-card text-light p-4 h-100"
                   style={{ border: "1px solid #7B68EE" }}
                 >
-                  <div className="icon mb-3">{feature.icon}</div>
+                  <div className="icon mb-3" style={{ fontSize: "1.5rem" }}>
+                    {feature.icon}
+                  </div>
                   <h5 className="fw-bold">{feature.title}</h5>
                   <p>{feature.desc}</p>
                 </div>
@@ -134,15 +151,14 @@ const DomoAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src={doma1}
-                alt="screenshot"
+                src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
+                alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={doma2}
-                alt="screenshot"
+                src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -262,129 +278,129 @@ const DomoAI = () => {
             <div className="accordion" id="faqAccordion">
               {[
                 {
-                  q: "What is Domo AI?",
-                  a: "Domo AI is the artificial intelligence and machine learning capability built into the Domo platform, enabling data-driven predictions, intelligent alerts, and natural language insights.",
+                  q: "What is Writesonic AI?",
+                  a: "Writesonic is an AI-powered writing assistant that helps users generate high-quality content, including blog posts, ads, emails, and more.",
                 },
                 {
-                  q: "How does AI work in Domo?",
-                  a: "Domo AI leverages AutoML, Python/R integrations, and prebuilt models to analyze data, predict trends, and offer automated insights within dashboards and cards.",
+                  q: "How does Writesonic work?",
+                  a: "Writesonic uses natural language processing and machine learning to generate human-like content based on user input and selected templates.",
                 },
                 {
-                  q: "Is Domo AI beginner-friendly?",
-                  a: "Yes, Domo provides an intuitive interface with drag-and-drop tools and natural language query features suitable for non-technical users.",
+                  q: "Can Writesonic write long-form blog articles?",
+                  a: "Yes, Writesonic can generate detailed long-form blog posts, including introductions, body content, and conclusions.",
                 },
                 {
-                  q: "Is Domo AI free to use?",
-                  a: "Domo offers AI features with its subscription plans. Advanced AI functionalities may require higher-tier licenses or add-ons like AutoML or Jupyter Workspaces.",
+                  q: "Is Writesonic good for short-form content?",
+                  a: "Absolutely. It excels at generating ad copy, product descriptions, social media posts, and headlines.",
                 },
                 {
-                  q: "What platforms is Domo available on?",
-                  a: "Domo is a fully cloud-based platform accessible via web and mobile apps for both iOS and Android.",
+                  q: "Does Writesonic support SEO optimization?",
+                  a: "Yes, it includes SEO-friendly tools like meta descriptions, keyword suggestions, and structured outlines.",
                 },
                 {
-                  q: "What makes Domo AI unique?",
-                  a: "Domo combines real-time data pipelines, AutoML, and BI visualization in one platform with AI-driven decision-making and embedded analytics.",
+                  q: "Is Writesonic easy to use for beginners?",
+                  a: "Yes, the interface is beginner-friendly and comes with guided prompts and templates for different content needs.",
                 },
                 {
-                  q: "Who should use Domo AI?",
-                  a: "Business analysts, executives, and teams that require real-time insights, cross-departmental collaboration, and embedded intelligence.",
+                  q: "What types of templates does Writesonic offer?",
+                  a: "Writesonic provides over 100 templates for blogs, ads, landing pages, product descriptions, and more.",
                 },
                 {
-                  q: "Can Domo AI be used for forecasting?",
-                  a: "Yes, Domo's AutoML and forecasting features allow you to predict future trends and model various business scenarios.",
+                  q: "Can Writesonic be used for marketing content?",
+                  a: "Yes, it's widely used by marketers to create ad copy, emails, landing pages, and product promotions.",
                 },
                 {
-                  q: "Does Domo AI support real-time analytics?",
-                  a: "Yes, Domo's architecture supports real-time data streaming, dashboard updates, and instant alerts.",
+                  q: "Does Writesonic support paraphrasing?",
+                  a: "Yes, it has a built-in paraphrasing tool for rewriting and improving existing content.",
                 },
                 {
-                  q: "Can I use natural language in Domo AI?",
-                  a: "Yes, Domo offers natural language querying, allowing users to ask data questions in plain English for instant insights.",
+                  q: "Is there a free plan available?",
+                  a: "Yes, Writesonic offers a free trial with limited credits so users can test the platform before upgrading.",
                 },
                 {
-                  q: "What AI tools are built into Domo?",
-                  a: "Domo includes AutoML, predictive analytics, intelligent alerts, Jupyter Notebook integration, and NLP querying.",
+                  q: "Does Writesonic have an API?",
+                  a: "Yes, but API access is only available to users on the Pro and higher-tier plans.",
                 },
                 {
-                  q: "Can I use Domo AI on mobile devices?",
-                  a: "Yes, Domo's mobile app supports full interactivity with dashboards, alerts, and AI-powered reports.",
+                  q: "Can I generate product descriptions with Writesonic?",
+                  a: "Yes, it includes specialized templates for creating compelling eCommerce product descriptions.",
                 },
                 {
-                  q: "Can Domo AI generate automated insights?",
-                  a: "Yes, Domo AI generates predictive cards and alerts that proactively surface key business insights.",
+                  q: "What languages does Writesonic support?",
+                  a: "Writesonic supports over 25 global languages, making it useful for international content creation.",
                 },
                 {
-                  q: "Does Domo integrate with cloud tools?",
-                  a: "Yes, Domo supports 1,000+ connectors including Google Cloud, AWS, Microsoft Azure, and many SaaS apps.",
+                  q: "Is there a browser extension for Writesonic?",
+                  a: "No, as of now, Writesonic does not offer an official browser extension, but content can be easily copied into any platform.",
                 },
                 {
-                  q: "Is coding required to use Domo AI?",
-                  a: "No coding is needed for most users, but developers can use Python, R, and SQL for advanced modeling within Jupyter or scripting environments.",
+                  q: "Can Writesonic generate headlines and titles?",
+                  a: "Yes, it can create catchy headlines for blogs, ads, and social posts using headline generator tools.",
                 },
                 {
-                  q: "Can Domo AI handle unstructured data?",
-                  a: "Yes, Domo can analyze unstructured data through integrations with AI/ML models and external processing tools.",
+                  q: "Can I control the tone and style of content?",
+                  a: "Yes, you can select tones like friendly, professional, witty, or casual for customized output.",
                 },
                 {
-                  q: "Can Domo AI be used for sales forecasting?",
-                  a: "Absolutely, Domo AI is widely used for sales pipeline analysis, revenue forecasting, and performance tracking.",
+                  q: "Is Writesonic cloud-based?",
+                  a: "Yes, it is entirely cloud-based and accessible from any modern browser with internet connectivity.",
                 },
                 {
-                  q: "Can Domo detect anomalies?",
-                  a: "Yes, Domo's AI alerts detect data anomalies and notify users in real time via email or mobile.",
+                  q: "Does Writesonic support real-time editing?",
+                  a: "Yes, users can edit content directly in the editor and regenerate specific sections in real time.",
                 },
                 {
-                  q: "What is Domo AutoML?",
-                  a: "Domo AutoML lets users train, evaluate, and deploy predictive models without writing code, using intuitive workflows.",
+                  q: "What industries can benefit from Writesonic?",
+                  a: "Writesonic is used across industries like eCommerce, marketing, education, SaaS, finance, and more.",
                 },
                 {
-                  q: "Can I share AI insights in Domo?",
-                  a: "Yes, Domo supports real-time dashboard sharing, alerts, scheduled reports, and secure publishing with Domo Everywhere.",
+                  q: "Does Writesonic integrate with other tools?",
+                  a: "Currently, Writesonic does not offer native integrations, but content can be exported into various platforms.",
                 },
                 {
-                  q: "Does Domo support data storytelling?",
-                  a: "Yes, you can build interactive dashboards and combine cards to narrate a complete business story visually.",
+                  q: "Is Writesonic mobile-friendly?",
+                  a: "Yes, Writesonic works on mobile browsers, but the experience is better on desktops due to the layout.",
                 },
                 {
-                  q: "What industries benefit from Domo AI?",
-                  a: "Retail, finance, healthcare, logistics, manufacturing, and marketing teams commonly use Domo AI for strategic insights.",
+                  q: "Can I use Writesonic for academic writing?",
+                  a: "While not tailored for academic citations, it can help draft essays, summaries, and content outlines.",
                 },
                 {
-                  q: "Can I schedule reports using Domo?",
-                  a: "Yes, Domo supports report scheduling and automated alert delivery to stakeholders.",
+                  q: "How accurate is the content generated by Writesonic?",
+                  a: "The content is creative and fluent, though factual accuracy should be manually reviewed.",
                 },
                 {
-                  q: "What data formats does Domo support?",
-                  a: "Domo supports Excel, CSV, JSON, XML, and integrates with APIs, SQL databases, and cloud apps like Google Sheets and Salesforce.",
+                  q: "Is there a plagiarism checker in Writesonic?",
+                  a: "No, Writesonic does not currently include a built-in plagiarism checker.",
                 },
                 {
-                  q: "Is Domo AI cloud-based?",
-                  a: "Yes, Domo is entirely cloud-native, built for scalability, speed, and collaboration.",
+                  q: "Does Writesonic offer customer support?",
+                  a: "Yes, Writesonic provides support via live chat, email, and an extensive help center.",
                 },
                 {
-                  q: "Can Domo be used offline?",
-                  a: "No, Domo requires internet connectivity as it’s a fully cloud-based solution.",
+                  q: "Can I collaborate with my team on Writesonic?",
+                  a: "Yes, team collaboration features are available in the higher pricing tiers.",
                 },
                 {
-                  q: "Can I customize AI models in Domo?",
-                  a: "Yes, advanced users can build, tune, and deploy custom ML models using Python or R inside Jupyter Workspaces.",
+                  q: "Can I export Writesonic content to Word or PDF?",
+                  a: "Yes, you can copy and paste your content into Word, Google Docs, or export it manually.",
                 },
                 {
-                  q: "Does Domo offer white-labeling?",
-                  a: "Yes, with Domo Everywhere, you can embed dashboards into your own platforms with full branding control.",
+                  q: "Does Writesonic support A/B testing for content?",
+                  a: "While not a testing tool, you can generate multiple variations of content for manual A/B testing.",
                 },
                 {
-                  q: "Does Domo offer customer support?",
-                  a: "Yes, Domo provides comprehensive support through documentation, live chat, customer success teams, and community forums.",
+                  q: "How secure is Writesonic?",
+                  a: "Writesonic follows industry-standard security protocols and keeps your content private and encrypted.",
                 },
                 {
-                  q: "Does Domo support team collaboration?",
-                  a: "Yes, Domo enables teams to collaborate on dashboards, share insights in real time, and annotate visualizations for better communication.",
+                  q: "What is the refund policy of Writesonic?",
+                  a: "Writesonic generally does not offer refunds, but users can cancel anytime to stop recurring charges.",
                 },
               ]
 
                 .map((item, i) => ({ ...item, id: `faq${i}` }))
-                .filter((item, i, arr) => showAllFaqs || i < 4)
+                .filter((item, i) => showAllFaqs || i < 4)
                 .map((item, i) => (
                   <div className="accordion-item mb-3" key={item.id}>
                     <h2 className="accordion-header" id={`heading${item.id}`}>
@@ -447,9 +463,10 @@ const DomoAI = () => {
           <div className="container">
             <div className="row g-4">
               <div className="col-12">
+                {/* Writesonic AI Section */}
                 <div className="custom-card text-light p-5 text-center">
                   <h3 className="fw-bold mb-4 text-start text-primary">
-                    Why Use Domo AI?
+                    Why Use Writesonic AI?
                   </h3>
 
                   <ul
@@ -462,33 +479,36 @@ const DomoAI = () => {
                     }}
                   >
                     <li className="mb-3">
-                      Domo AI transforms raw data into actionable insights using
-                      AutoML, natural language queries, and intelligent alerts.
+                      <strong>Fast Content Generation:</strong> Writesonic AI
+                      produces high-quality content in seconds, helping you save
+                      time on writing and editing.
                     </li>
                     <li className="mb-3">
-                      It’s perfect for enterprises that need real-time
-                      decision-making across departments and large-scale data
-                      environments.
+                      <strong>Supports All Content Types:</strong> Whether you
+                      need blog posts, ad copy, product descriptions, or social
+                      media content—Writesonic covers it all.
                     </li>
                     <li className="mb-3">
-                      Domo’s Magic ETL and pre-built connectors make data
-                      integration and preparation fast and user-friendly.
+                      <strong>SEO Optimization:</strong> Integrated SEO tools
+                      help you create content that ranks better by including
+                      keyword suggestions and optimized structure.
                     </li>
                     <li className="mb-3">
-                      Supports advanced modeling and scripting with R, Python,
-                      and Jupyter integration for custom AI/ML workflows.
+                      <strong>User-Friendly Interface:</strong> With its
+                      intuitive dashboard and over 100 pre-built templates, it’s
+                      beginner-friendly and easy to navigate.
                     </li>
                     <li className="mb-3">
-                      With Domo Everywhere, you can embed dashboards and
-                      collaborate securely with internal and external
-                      stakeholders.
+                      <strong>Affordable Plans:</strong> Writesonic offers
+                      budget-friendly pricing, including a free trial, making it
+                      accessible to freelancers, marketers, and teams.
                     </li>
                   </ul>
 
                   <div className="text-center mt-4">
-                    <Button variant="primary" size="sm">
-                      Explore Domo AI
-                    </Button>
+                    <button className="btn btn-primary btn-sm">
+                      Explore Writesonic AI
+                    </button>
                   </div>
                 </div>
               </div>
@@ -515,24 +535,32 @@ const DomoAI = () => {
                 <h5 className="text-success text-start mb-4">✅ Pros</h5>
                 <ul className="ps-3" style={{ listStyleType: "disc" }}>
                   <li className="mb-2">
-                    Real-time data visualizations and dashboards powered by AI
-                    and AutoML.
+                    <strong>Intuitive Interface:</strong> Easy to use and
+                    navigate, even for beginners with no prior writing tool
+                    experience.
                   </li>
                   <li className="mb-2">
-                    Easy-to-use natural language queries and intelligent alerts
-                    for quick insights.
+                    <strong>Wide Variety of Templates:</strong> Access to over
+                    100 content templates for blog posts, ads, emails, and more.
                   </li>
                   <li className="mb-2">
-                    Extensive connector library with 1,000+ pre-built data
-                    integrations.
+                    <strong>Supports Both Long and Short Content:</strong>{" "}
+                    Whether it’s a full-length article or short social copy,
+                    Writesonic delivers.
                   </li>
                   <li className="mb-2">
-                    Embedded machine learning models with support for Python, R,
-                    and Jupyter Notebooks.
+                    <strong>Budget-friendly Pricing:</strong> Competitive
+                    pricing tiers with a free trial plan to test features before
+                    committing.
                   </li>
                   <li className="mb-2">
-                    Domo Everywhere enables white-labeled dashboard sharing and
-                    external collaboration.
+                    <strong>Strong SEO Features:</strong> Built-in tools for
+                    optimizing blog and web content for search engines.
+                  </li>
+                  <li className="mb-2">
+                    <strong>Fast and Creative Outputs:</strong> Generates
+                    high-quality drafts in seconds, offering a creative head
+                    start.
                   </li>
                 </ul>
               </div>
@@ -548,22 +576,25 @@ const DomoAI = () => {
                   minHeight: "100%",
                 }}
               >
-                <h5 className="text-warning text-start mb-4">⚠ Cons</h5>
+                <h5 className="text-warning text-start mb-4">❌ Cons</h5>
                 <ul className="ps-3" style={{ listStyleType: "disc" }}>
                   <li className="mb-2">
-                    Pricing may be high for small teams or startups compared to
-                    simpler BI tools.
+                    <strong>Long-form Outputs May Need Refinement:</strong>{" "}
+                    While fast, the long-form results sometimes need manual
+                    polishing.
                   </li>
                   <li className="mb-2">
-                    Initial setup and data modeling require a learning curve.
+                    <strong>Occasional Factual Inaccuracies:</strong> As with
+                    many AI writers, fact-checking is essential for accuracy.
                   </li>
                   <li className="mb-2">
-                    Some AI capabilities are more limited without advanced plan
-                    tiers.
+                    <strong>API Limited to Premium Users:</strong> API access is
+                    only available on the Pro and higher plans.
                   </li>
                   <li className="mb-2">
-                    Advanced customization may need support from Domo experts or
-                    developers.
+                    <strong>Limited Offline Support:</strong> The platform
+                    requires an internet connection and doesn’t support offline
+                    mode.
                   </li>
                 </ul>
               </div>
@@ -574,7 +605,9 @@ const DomoAI = () => {
       case "alternative":
         return (
           <div className="container my-5">
-            <h4 className="text-center text-light mb-4">Alternatives</h4>
+            <h4 className="text-center text-light mb-4">
+              Alternatives to Writesonic AI
+            </h4>
             <div className="row justify-content-center gap-2">
               <div
                 className="col-lg-8 col-md-8 col-sm-12"
@@ -588,29 +621,47 @@ const DomoAI = () => {
               >
                 <ul className="ps-3" style={{ listStyleType: "disc" }}>
                   <li className="mb-2">
-                    Tableau – Known for its interactive dashboards and AI tools
-                    like Explain Data and Einstein Discovery, great for visual
-                    analytics.
+                    <strong>Jasper AI</strong> – A leading AI writer with robust
+                    tools for long-form content, ad copy, and tone
+                    customization.
                   </li>
                   <li className="mb-2">
-                    Power BI – Microsoft's AI-enabled platform integrates with
-                    Azure ML and Excel, offering scalable business intelligence
-                    for enterprises.
+                    <strong>Copy.ai</strong> – Great for generating short-form
+                    marketing content like social media posts, product
+                    descriptions, and ad headlines.
                   </li>
                   <li className="mb-2">
-                    Looker (Google Cloud) – Focuses on embedded analytics and
-                    AI-powered exploration using LookML and seamless integration
-                    with BigQuery.
+                    <strong>ChatGPT (by OpenAI)</strong> – A conversational AI
+                    ideal for content brainstorming, rewriting, and creative
+                    writing.
                   </li>
                   <li className="mb-2">
-                    Sisense – Provides AI-driven analytics and embedded
-                    intelligence with strong API support for customizable
-                    solutions.
+                    <strong>Rytr</strong> – A cost-effective writing tool for
+                    creating SEO meta tags, email copy, and brief articles.
                   </li>
                   <li className="mb-2">
-                    Qlik Sense – Offers associative data exploration and
-                    Augmented Intelligence to surface key insights from complex
-                    datasets.
+                    <strong>Grammarly</strong> – Known for grammar checking but
+                    also offers AI-enhanced content suggestions and rewriting
+                    capabilities.
+                  </li>
+                  <li className="mb-2">
+                    <strong>Anyword</strong> – Focused on performance-based
+                    marketing copy with predictive analytics for ad text and
+                    email campaigns.
+                  </li>
+                  <li className="mb-2">
+                    <strong>Frase</strong> – Combines content generation with
+                    real-time SEO guidance, perfect for blog writers.
+                  </li>
+                  <li className="mb-2">
+                    <strong>Surfer SEO</strong> – Specializes in optimizing
+                    articles for search engine ranking with keyword and
+                    structure recommendations.
+                  </li>
+                  <li className="mb-2">
+                    <strong>Quillbot</strong> – Excellent for paraphrasing,
+                    summarizing, and improving sentence flow in academic or web
+                    content.
                   </li>
                 </ul>
               </div>
@@ -626,66 +677,60 @@ const DomoAI = () => {
   return (
     <>
       <div className="bg-dark d-flex  justify-content-between align-items-center ">
-        {/* <a
+        <a
           href="/Aitools"
           className="d-inline-block text-white text-decoration-none ml-3 py-1"
         >
           <i className="bi bi-arrow-left me-2"></i>Back to Directory{" "}
-        </a> */}
-      <a
-          href="/Aitools"
-          className="d-inline-block text-white text-decoration-none  mt-3 ml-3 py-1 px-2 ms-5 border rounded-sm"
-        >
-          <i className="bi bi-arrow-left me-2"></i>Back  {" "}
         </a>
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-        <div className="row align-items-center g-4 mb-4">
-  {/* Left side (Text Section) */}
-  <div className="col-lg-6 col-12 order-lg-1 order-2 pe-lg-4">
-    <p className="text-primary mb-2">Grow better, faster</p>
-    <h1 className="mb-3">Domo AI</h1>
-    <div className="text-warning mb-3">⭐⭐⭐⭐⭐</div>
-    <p className="mb-3">
-      Domo AI is a powerful platform that integrates artificial
-      intelligence and machine learning into its business intelligence
-      (BI) services. Designed for modern enterprises, Domo AI
-      transforms how businesses visualize, analyze, and act on their
-      data by delivering smart, real-time, and AI-driven insights.
-    </p>
-    <p className="mb-4">
-      Leveraging Domo AI analytics, machine learning models, and
-      predictive analytics, organizations can enhance decision-making,
-      improve performance, and drive growth.
-    </p>
+          <div className=" row d-flex align-items-center justify-content-between mb-1">
+            {/* Left side (Text Section) */}
+            <div
+              style={{ flex: 1, paddingRight: "30px" }}
+              className="col-6 col-md-12 "
+            >
+              <p className="text-primary">
+                Create stunning visuals effortlessly
+              </p>
+              <h1>Writesonic AI</h1>
+              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
 
-    <div className="mb-3">
-      <a
-        href="https://domoai.app/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="btn btn-primary btn-lg px-4"
-      >
-        Explore Tool
-      </a>
-    </div>
-  </div>
+              <p>
+                Writesonic is an AI-powered writing assistant designed to help
+                users generate high-quality content in seconds. It uses advanced
+                machine learning models to create various types of content,
+                including blog posts, ad copy, product descriptions, email
+                marketing, SEO-friendly articles, and landing pages. The tool
+                aims to save time and enhance productivity for creators,
+                marketers, and businesses by automating content creation.
+              </p>
 
-  {/* Right side (Image Section) */}
-  <div className="col-lg-6 col-12 order-lg-2 order-1 text-center mb-4 mb-lg-0">
-    <img
-      src={doma}
-      alt="Domo AI Platform Interface"
-      className="img-fluid rounded-3 shadow"
-      style={{
-        maxHeight: "350px",
-        width: "auto",
-        objectFit: "contain"
-      }}
-    />
-  </div>
-</div>
+              <div className="mb-3">
+                <span className="badge bg-primary me-2">Writing</span>
+                <span className="badge bg-success me-2">Creative</span>
+                <span className="badge bg-warning text-dark">Paid</span>
+              </div>
+            </div>
+
+            {/* Right side (Image Section) */}
+            <div
+              style={{
+                flex: 1,
+                textAlign: "center",
+                Width: "100%",
+                height: "250px",
+              }}
+              className="col-6 col-md-12 mb-5  "
+            >
+              <img
+                src={magisto}
+                style={{ MaxWidth: "100%", height: "300px" }}
+              />
+            </div>
+          </div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>
@@ -696,9 +741,8 @@ const DomoAI = () => {
                   marginBottom: "1rem",
                 }}
               >
-                How to Use Domo AI?
+                How to Use Writesonic AI?
               </h2>
-
               <div className="row g-4">
                 {/* Step 1 */}
                 <div className="col-md-4">
@@ -726,12 +770,12 @@ const DomoAI = () => {
         `}
                     </style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Connect and Unify Data
+                      Create Your Account
                     </h5>
                     <p style={{ color: "#fff", margin: 0 }}>
-                      Import data from spreadsheets, databases, APIs, or cloud
-                      services using Domo's 1,000+ connectors, and centralize it
-                      in one platform.
+                      Sign up on <strong>Writesonic</strong> using your email or
+                      Google account to access the dashboard and start your AI
+                      writing journey.
                     </p>
                     <div className="step1">1</div>
                   </div>
@@ -763,12 +807,12 @@ const DomoAI = () => {
         `}
                     </style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Apply AI & Machine Learning
+                      Choose a Template
                     </h5>
                     <p style={{ color: "#fff", margin: 0 }}>
-                      Use Domo AI tools to run predictive analytics, generate
-                      insights using natural language queries, and build custom
-                      ML models with AutoML.
+                      Select from 100+ templates for blog posts, product
+                      descriptions, ads, emails, and more—designed to fit your
+                      content needs.
                     </p>
                     <div className="step2">2</div>
                   </div>
@@ -800,12 +844,12 @@ const DomoAI = () => {
         `}
                     </style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Share and Automate
+                      Generate and Refine
                     </h5>
                     <p style={{ color: "#fff", margin: 0 }}>
-                      Build interactive dashboards, set alerts, and automate
-                      business workflows across departments using Domo
-                      Everywhere and real-time collaboration tools.
+                      Enter your input, click generate, and instantly receive
+                      AI-written content. Edit or regenerate as needed to match
+                      your tone and goals.
                     </p>
                     <div className="step3">3</div>
                   </div>
@@ -840,10 +884,24 @@ const DomoAI = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
+          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
+            <h4 className="mb-3">Ready to get started with Writesonic AI?</h4>
+            <p className="mb-4">
+              Join thousands of professionals already boosting their
+              productivity!
+            </p>
+            <div>
+              <button className="btn btn-light me-3">Try Now for Free</button>
+              <button className="btn btn-outline-light">Schedule a Demo</button>
+            </div>
+            <small className="d-block mt-2">
+              No credit card required. free trial available.
+            </small>
+          </div>
         </div>
       </div>
     </>
   );
 };
 
-export default DomoAI;
+export default Writtersonic;
