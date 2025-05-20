@@ -649,52 +649,57 @@ const ArtbreederAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>Artbreeder: The Complete AI Art Breeding Guide</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Artbreeder is an innovative platform that uses AI and machine
-                learning to facilitate the creation of art. By blending and
-                modifying images using a genetic algorithm, users can generate
-                new and unique artworks. The platform operates based on the
-                StyleGAN architecture (from NVIDIA), allowing users to alter
-                images by manipulating "genes." These genes represent various
-                traits or attributes of the image (e.g., color, shape, texture).
-                The result is the creation of entirely new images with highly
-                personalized elements. Artbreeder democratizes image creation,
-                making it accessible to artists, designers, writers, and anyone
-                looking to create something visually appealing with little
-                technical expertise. By manipulating visual DNA, it offers a
-                playground for those looking to create art, especially in the
-                genres of portraiture, fantasy, anime, and landscapes.
-              </p>
+         <div className="row align-items-center g-4 mb-4">
+  {/* Left side (Text Section) */}
+  <div className="col-lg-6 col-12 order-lg-1 order-2 pe-lg-4">
+    <p className="text-primary mb-2">Write better, faster</p>
+    <h1 className="mb-3">Artbreeder: The Complete AI Art Breeding Guide</h1>
+    <div className="text-warning mb-3">⭐⭐⭐⭐⭐</div>
+    <p className="mb-3">
+      Artbreeder is an innovative platform that uses AI and machine
+      learning to facilitate the creation of art. By blending and
+      modifying images using a genetic algorithm, users can generate
+      new and unique artworks. The platform operates based on the
+      StyleGAN architecture (from NVIDIA), allowing users to alter
+      images by manipulating "genes." These genes represent various
+      traits or attributes of the image (e.g., color, shape, texture).
+      The result is the creation of entirely new images with highly
+      personalized elements.
+    </p>
+    <p className="mb-4">
+      Artbreeder democratizes image creation, making it accessible to artists, 
+      designers, writers, and anyone looking to create something visually 
+      appealing with little technical expertise. By manipulating visual DNA, 
+      it offers a playground for those looking to create art, especially in 
+      the genres of portraiture, fantasy, anime, and landscapes.
+    </p>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
-            </div>
+    <div className="mb-3">
+      <a
+        href="https://www.artbreeder.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary btn-lg px-4"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img src="" style={{ MaxWidth: "100%", height: "300px" }} />
-            </div>
-          </div>
+  {/* Right side (Image Section) */}
+  <div className="col-lg-6 col-12 order-lg-2 order-1 text-center">
+    <img
+      src="https://www.artbreeder.com/static/images/artbreeder-collage.jpg"
+      alt="Artbreeder AI Art Examples"
+      className="img-fluid rounded shadow-lg"
+      style={{
+        maxHeight: "400px",
+        width: "auto",
+        objectFit: "cover"
+      }}
+    />
+  </div>
+</div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>
@@ -860,20 +865,7 @@ const ArtbreederAI = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with Artbreeder?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
+          
         </div>
       </div>
     </>

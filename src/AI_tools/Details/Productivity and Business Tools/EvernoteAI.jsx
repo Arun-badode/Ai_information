@@ -634,54 +634,38 @@ const EvernoteAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>Evernote AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Evernote has evolved from a simple note-taking app to an
-                AI-powered productivity tool. With Evernote AI features, users
-                can automate organization, improve search capabilities, and
-                enhance note-taking efficiency. This guide will explore how AI
-                in Evernote works, its benefits, and how professionals,
-                students, and businesses can leverage its smart notes, AI
-                integrations, and automation features.
-              </p>
+       <div className="row d-flex align-items-center justify-content-between mb-3">
+  {/* Left side (Text Section) */}
+  <div className="col-md-6 mb-4 mb-md-0">
+    <p className="text-primary">Write better, faster</p>
+    <h1>Evernote AI</h1>
+    <div className="text-warning mb-2">⭐⭐⭐⭐⭐</div>
+    <p>
+      Evernote has evolved from a simple note-taking app to an AI-powered productivity tool. With Evernote AI features, users can automate organization, improve search capabilities, and enhance note-taking efficiency. This guide will explore how AI in Evernote works, its benefits, and how professionals, students, and businesses can leverage its smart notes, AI integrations, and automation features.
+    </p>
+    <p>
+      Evernote uses artificial intelligence (AI) and machine learning to enhance productivity, streamline workflows, and optimize note-taking. Features like Evernote AI organization, AI-powered notes, and AI content categorization help users manage large amounts of information with minimal effort.
+    </p>
+    <a
+      href="https://evernote-ai.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="btn btn-primary mt-2"
+    >
+      Explore Tool
+    </a>
+  </div>
 
-              <p>
-                Evernote uses artificial intelligence (AI) and machine learning
-                to enhance productivity, streamline workflows, and optimize
-                note-taking. Features like Evernote AI organization, AI-powered
-                notes, and AI content categorization help users manage large
-                amounts of information with minimal effort.
-              </p>
-              <div className="mb-3">
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
-            </div>
+  {/* Right side (Image Section) */}
+  <div className="col-md-6 text-center">
+    <img
+      src={evernote}
+      alt="Evernote AI"
+      style={{ maxWidth: "100%", height: "300px", objectFit: "contain" }}
+    />
+  </div>
+</div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src={evernote}
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
-          </div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>
@@ -836,20 +820,7 @@ const EvernoteAI = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with Evernote AI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. free trial available.
-            </small>
-          </div>
+          
         </div>
       </div>
     </>

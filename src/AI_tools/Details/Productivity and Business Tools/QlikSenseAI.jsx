@@ -590,54 +590,61 @@ const QlikSenseAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Grow better, faster</p>
-              <h1>Qlik Sens AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Qlik Sense AI is a leading data analytics and business
-                intelligence tool that leverages artificial intelligence in Qlik
-                Sense to enhance data analysis, predictive modeling, and
-                visualization. It empowers businesses to make data-driven
-                decisions by providing deeper insights through advanced machine
-                learning, AI-powered data analysis, and real-time reporting.
-              </p>
-              <p>
-                Qlik Sense is a self-service data visualization and business
-                intelligence tool that helps organizations analyze, interpret,
-                and visualize large volumes of data. By incorporating Qlik Sense
-                AI, users can unlock the potential of machine learning and
-                predictive analytics to drive better business outcomes.
-              </p>
+       <div className="row d-flex align-items-center justify-content-between mb-1">
+  {/* Left side (Text Section) */}
+  <div
+    style={{ flex: 1, paddingRight: "30px" }}
+    className="col-6 col-md-12"
+  >
+    <p className="text-primary">Grow better, faster</p>
+    <h1>Qlik Sense AI</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      Qlik Sense AI is a leading data analytics and business
+      intelligence tool that leverages artificial intelligence in Qlik
+      Sense to enhance data analysis, predictive modeling, and
+      visualization. It empowers businesses to make data-driven
+      decisions by providing deeper insights through advanced machine
+      learning, AI-powered data analysis, and real-time reporting.
+    </p>
+    <p>
+      Qlik Sense is a self-service data visualization and business
+      intelligence tool that helps organizations analyze, interpret,
+      and visualize large volumes of data. By incorporating Qlik Sense
+      AI, users can unlock the potential of machine learning and
+      predictive analytics to drive better business outcomes.
+    </p>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2">Business</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
-            </div>
+    <div className="mb-3">
+      <a
+        href="https://www.qlik.com/us/products/qlik-ai-ml"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary me-2"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src={magisto}
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
-          </div>
+  {/* Right side (Image Section) */}
+  <div
+    style={{
+      flex: 1,
+      textAlign: "center",
+      width: "100%",
+      height: "250px",
+    }}
+    className="col-6 col-md-12 mb-5"
+  >
+    <img
+      src={magisto}
+      alt="Qlik Sense AI dashboard"
+      style={{ maxWidth: "100%", height: "250px", objectFit: "contain" }}
+    />
+  </div>
+</div>
+
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>
@@ -789,20 +796,6 @@ const QlikSenseAI = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with Qlik Sense AI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. free trial available.
-            </small>
-          </div>
         </div>
       </div>
     </>

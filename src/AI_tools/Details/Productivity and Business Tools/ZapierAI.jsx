@@ -3,8 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Logo from "../../../Images/logo[2].png";
-import deatilimage from "../../../Images/DetailImage.png";
+
+import zaper1 from "../../../../public/assets/Img/AI for Business/zapier1.png";
+import zaper2 from "../../../../public/assets/Img/AI for Business/zapier2.png";
 
 // review section data
 const reviews = [
@@ -85,7 +86,7 @@ const ZapierAI = () => {
   };
   const renderTabContent = () => {
     switch (activeTab) {
-      case "Features":
+      case "features":
         return (
           <div className="row g-4">
             {[
@@ -130,14 +131,14 @@ const ZapierAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src={deatilimage}
+                src={zaper1}
                 alt="Screenshot 1"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={deatilimage}
+                src={zaper2}
                 alt="Screenshot 2"
                 className="img-fluid rounded-3"
               />
@@ -536,45 +537,58 @@ const ZapierAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className="d-flex align-items-center justify-content-between mb-5">
-            {/* Left side (Text Section) */}
-            <div style={{ flex: 1, paddingRight: "30px" }}>
-              <img
-                src={Logo}
-                alt="Logo"
-                className="me-3"
-                style={{ width: "60px" }}
-              />
-              <h2>Zapier AI</h2>
-              <div className="text-warning mb-1">
-                ⭐⭐⭐⭐⭐ 95% Satisfaction
-              </div>
-              <p>
-                Zapier AI is an intelligent automation platform that integrates
-                artificial intelligence to help businesses and individuals
-                automate workflows, save time, and enhance productivity. Through
-                AI-powered workflows, Zapier connects hundreds of apps, making
-                tasks seamless without the need for manual intervention. It
-                facilitates automation for repetitive tasks across various
-                applications like CRM systems, email marketing tools, social
-                media platforms, and more.
-              </p>
-            </div>
+   
 
-            {/* Right side (Image Section) */}
-            <div style={{ flex: 1, textAlign: "center" }}>
-              <img
-                src="/src/Images/WhatsApp Image 2025-05-07 at 15.17.45.jpeg"
-                className="img-fluid rounded-3"
-                style={{ maxWidth: "80%", height: "auto" }}
-              />
-            </div>
-          </div>
+
+    <div className="row align-items-center mb-5">
+      {/* Left side (Text Section) */}
+      <div className="col-lg-6 col-md-12 order-lg-1 order-2 mb-4 mb-lg-0 pe-lg-4">
+        <h2>Zapier AI</h2>
+        <div className="text-warning mb-2">
+          ⭐⭐⭐⭐⭐ 95% Satisfaction
+        </div>
+        <p className="mb-4">
+          Zapier AI is an intelligent automation platform that integrates
+          artificial intelligence to help businesses and individuals
+          automate workflows, save time, and enhance productivity. Through
+          AI-powered workflows, Zapier connects hundreds of apps, making
+          tasks seamless without the need for manual intervention. It
+          facilitates automation for repetitive tasks across various
+          applications like CRM systems, email marketing tools, social
+          media platforms, and more.
+        </p>
+        <div className="d-flex flex-wrap gap-3">
+          <a
+            href="https://zapier.com/ai"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary btn-lg px-4"
+          >
+            Explore Tool
+          </a>
+        </div>
+      </div>
+
+      {/* Right side (Image Section) */}
+      <div className="col-lg-6 col-md-12 order-lg-2 order-1 text-center mb-4 mb-lg-0">
+        <img
+          src={zapierImage}
+          className="img-fluid rounded-3"
+          style={{ maxWidth: "100%", height: "auto" }}
+          alt="Zapier AI Interface"
+        />
+      </div>
+    </div>
+  );
+
+
+export default ZapierSection;
+
 
           {/* Tab Navigation */}
           <ul className="nav nav-tabs custom-tabs mb-4">
             {[
-              "Features",
+              "features",
               "Screenshots",
               "Reviews",
               "FAQs",
@@ -597,20 +611,7 @@ const ZapierAI = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with Zapier AI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
+         
         </div>
       </div>
     </>

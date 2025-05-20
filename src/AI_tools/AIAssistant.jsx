@@ -1,12 +1,32 @@
 import React, { useState } from "react";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const AIAssistant = () => {
-  const [message, setMessage] = useState("");
+const [human_message, sethuman_message] = useState("");
+  const [botResponse, setBotResponse] = useState({});
   const [showOptions, setShowOptions] = useState(false);
 
+   const navigate = useNavigate();
   const handleMessageChange = (e) => {
-    setMessage(e.target.value);
+   sethuman_message(e.target.value);
   };
+
+
+  const handleSend = async () => {
+     try {
+        const response = await fetch("https://ai-tools-assistant-production.up.railway.app/chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ human_message }),
+        });
+        const data = await response.json();
+        setBotResponse(data || { response: "No response from bot." });
+        sethuman_message("");
+      } catch (error) {
+        setBotResponse({ response: "Error: " + error.message });
+      }
+  }
+  
 
   const toggleOptions = () => {
     setShowOptions(!showOptions);
@@ -100,10 +120,28 @@ const AIAssistant = () => {
           <textarea
             className="form-control mb-3"
             rows={3}
-            value={message}
+            value={human_message}
             onChange={handleMessageChange}
             placeholder="Type your message here..."
+            onKeyDown={(e) => {
+              if (e.key === "Enter" && (human_message.trim() )) {
+                handleSend();
+              }
+            }}
           />
+
+          { botResponse.redirect_url && (
+            navigate(botResponse.redirect_url)
+          )}
+
+          { botResponse?.response && (
+            <div className="card bg-white">
+              <div className="card-body">
+                <p className="card-text">{botResponse.response}</p>
+              </div>
+            </div>
+          )}
+
 
           <div className="d-flex justify-content-between align-items-center">
             <div>
@@ -114,7 +152,7 @@ const AIAssistant = () => {
                 <i className="fas fa-paperclip"></i>
               </button> */}
             </div>
-            <button className="btn btn-vgear btn-sm bg-white">
+            <button className="btn btn-vgear btn-sm bg-white" onClick={handleSend}>
               <i className="fas fa-paper-plane me-2 text-black"> Send</i>
             </button>
           </div>

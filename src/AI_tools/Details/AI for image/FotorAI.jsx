@@ -636,58 +636,55 @@ const FotorAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">
-                Create stunning visuals effortlessly
-              </p>
-              <h1>Fotor AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+         <div className="row align-items-center justify-content-between mb-4">
+  {/* Left side (Text Section) */}
+  <div className="col-lg-6 col-md-12 mb-4 mb-lg-0 pe-lg-4">
+    <p className="text-primary">Create stunning visuals effortlessly</p>
+    <h1>Fotor AI</h1>
+    <div className="text-warning mb-2">⭐⭐⭐⭐⭐</div>
 
-              <p>
-                Fotor AI is a powerful AI-powered photo editing tool that
-                leverages advanced algorithms to provide a wide range of editing
-                features for both beginners and professionals. It can transform
-                your images through various functions, including image
-                upscaling, photo restoration, portrait enhancement, object
-                removal, and artistic effects. Fotor AI uses artificial
-                intelligence to simplify and enhance the photo editing process,
-                making it accessible for users of all skill levels. Whether
-                you're looking to improve the quality of a portrait, remove
-                unwanted backgrounds, or convert your photos into stunning
-                artwork, Fotor AI offers all the tools you need to create
-                high-quality images. Its user-friendly interface, coupled with
-                AI-driven features, makes it ideal for use in both professional
-                and personal photography projects.
-              </p>
+    <p>
+      Fotor AI is a powerful AI-powered photo editing tool that leverages advanced
+      algorithms to provide a wide range of editing features for both beginners and
+      professionals. It can transform your images through various functions, including
+      image upscaling, photo restoration, portrait enhancement, object removal, and
+      artistic effects.
+    </p>
+    <p>
+      Fotor AI uses artificial intelligence to simplify and enhance the photo editing
+      process, making it accessible for users of all skill levels. Whether you're
+      looking to improve the quality of a portrait, remove unwanted backgrounds, or
+      convert your photos into stunning artwork, Fotor AI offers all the tools you
+      need to create high-quality images.
+    </p>
+    <p>
+      Its user-friendly interface, coupled with AI-driven features, makes it ideal
+      for use in both professional and personal photography projects.
+    </p>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2"> Image</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
-            </div>
+    <div className="mb-3">
+      <a
+        href="https://www.fotor.com/ai-image-generator/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary me-2"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src={magisto}
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
-          </div>
+  {/* Right side (Image Section) */}
+  <div className="col-lg-6 col-md-12 text-center">
+    <img
+      src={magisto}
+      alt="Fotor AI Preview"
+      className="img-fluid"
+      style={{ maxHeight: "300px", width: "100%", objectFit: "contain" }}
+    />
+  </div>
+</div>
+
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>
@@ -841,20 +838,7 @@ const FotorAI = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with Fotor AI ?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. free trial available.
-            </small>
-          </div>
+
         </div>
       </div>
     </>

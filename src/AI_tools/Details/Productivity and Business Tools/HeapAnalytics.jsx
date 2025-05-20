@@ -598,62 +598,54 @@ const HeapAnalytics = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Grow better, faster</p>
-              <h1>Heap Analytics AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Heap Analytics is an advanced analytics platform designed to
-                provide real-time insights into user behavior and activity
-                across web and mobile apps. It automatically captures every user
-                interaction, such as clicks, form submissions, page views, and
-                more, without requiring manual tracking code. This makes it a
-                powerful tool for marketers, product teams, and business
-                analysts looking for a simple way to gather valuable data and
-                insights. Heap's platform is known for its ease of use and
-                robust integration with other business tools
-              </p>
+       <div className="row d-flex align-items-center justify-content-between mb-5">
+  {/* Left side (Text Section) */}
+  <div
+    style={{ flex: 1, paddingRight: "30px" }}
+    className="col-12 col-md-6"
+  >
+    <p className="text-primary">Grow better, faster</p>
+    <h1>Heap Analytics AI</h1>
+    <div className="text-warning mb-2">⭐⭐⭐⭐⭐</div>
+    <p className="mb-3">
+      Heap Analytics is an advanced analytics platform designed to provide real-time insights into user behavior and activity across web and mobile apps. It automatically captures every user interaction, such as clicks, form submissions, page views, and more, without requiring manual tracking code. This makes it a powerful tool for marketers, product teams, and business analysts looking for a simple way to gather valuable data and insights. Heap's platform is known for its ease of use and robust integration with other business tools.
+    </p>
 
-              <p>
-                Heap Analytics is a data analytics tool that helps businesses
-                collect, analyze, and visualize user behavior data without
-                relying on complex setup or manual event tracking. Unlike
-                traditional analytics platforms that require predefined tracking
-                tags, Heap automatically records every user interaction, which
-                helps organizations better understand user behavior and improve
-                decision-making processes. With Heap, users can track data
-                points across their website or mobile app and gain insights into
-                customer journeys, conversions, and business growth.
-              </p>
+    <p className="mb-4">
+      Heap Analytics is a data analytics tool that helps businesses collect, analyze, and visualize user behavior data without relying on complex setup or manual event tracking. Unlike traditional analytics platforms that require predefined tracking tags, Heap automatically records every user interaction, which helps organizations better understand user behavior and improve decision-making processes. With Heap, users can track data points across their website or mobile app and gain insights into customer journeys, conversions, and business growth.
+    </p>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2"> Business</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
-            </div>
+    <div className="mb-3">
+      <a
+        href="https://www.heap.io/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src={magisto}
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
-          </div>
+  {/* Right side (Image Section) */}
+  <div
+    style={{
+      flex: 1,
+      textAlign: "center",
+      width: "100%",
+      height: "250px",
+    }}
+    className="col-12 col-md-6 mb-5"
+  >
+    <img
+      src={heapImage} // replace with your heap image variable
+      alt="Heap Analytics AI"
+      style={{ maxWidth: "100%", height: "300px" }}
+      className="img-fluid"
+    />
+  </div>
+</div>
+
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>
@@ -807,22 +799,7 @@ const HeapAnalytics = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">
-              Ready to get started with Heap Analytics AI?
-            </h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. free trial available.
-            </small>
-          </div>
+       
         </div>
       </div>
     </>

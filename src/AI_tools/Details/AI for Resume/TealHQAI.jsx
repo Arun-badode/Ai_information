@@ -799,14 +799,15 @@
 //     }
 //   };
 
+// <<<<<<< HEAD
 //   return (
 //     <>
 //       <div className="bg-dark d-flex  justify-content-between align-items-center ">
-// //       <a
+//         <a
 //           href="/Aitools"
-//           className="d-inline-block text-white text-decoration-none  mt-3 ml-3 py-1 px-2 ms-5 border rounded-sm"
+//           className="d-inline-block text-white text-decoration-none ml-3 py-1"
 //         >
-//           <i className="bi bi-arrow-left me-2"></i>Back  {" "}
+//           <i className="bi bi-arrow-left me-2"></i>Back to Directory{" "}
 //         </a>
 //       </div>
 //       <div className="bg-dark text-light min-vh-100 py-5">
@@ -831,6 +832,40 @@
 //                 seeker, a career changer, or a freelancer, TealHQ Career Copilot
 //                 AI provides the tools to take your career to the next level.
 //               </p>
+// =======
+// //   return (
+// //     <>
+// //       <div className="bg-dark d-flex  justify-content-between align-items-center ">
+// // //       <a
+// //           href="/Aitools"
+// //           className="d-inline-block text-white text-decoration-none  mt-3 ml-3 py-1 px-2 ms-5 border rounded-sm"
+// //         >
+// //           <i className="bi bi-arrow-left me-2"></i>Back  {" "}
+// //         </a>
+// //       </div>
+// //       <div className="bg-dark text-light min-vh-100 py-5">
+// //         <div className="container">
+// //           <div className=" row d-flex align-items-center justify-content-between mb-1">
+// //             {/* Left side (Text Section) */}
+// //             <div
+// //               style={{ flex: 1, paddingRight: "30px" }}
+// //               className="col-6 col-md-12 "
+// //             >
+// //               <p className="text-primary">Write better, faster</p>
+// //               <h1>TealHQ Career Copilot AI</h1>
+// //               <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+// //               <p>
+// //                 TealHQ Career Copilot AI is an innovative career development
+// //                 platform designed to assist job seekers with AI-powered tools
+// //                 that optimize resumes, help with job search, provide
+// //                 personalized career advice, and offer job matching. It aims to
+// //                 streamline the job application process by providing everything a
+// //                 job seeker needs, from resume building and ATS optimization to
+// //                 job alerts and interview preparation. Whether you're a job
+// //                 seeker, a career changer, or a freelancer, TealHQ Career Copilot
+// //                 AI provides the tools to take your career to the next level.
+// //               </p>
+// >>>>>>> 7b93dea8598e92fa2173da0f96c56d8053ec74ec
 
 //               <p>
 //                 TealHQ has received positive reviews for its AI-powered
