@@ -4,6 +4,10 @@ import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import resunate from "../../../../public/assets/Img/Ai for Resume/47.png";
+import Resumate1 from "../../../../public/assets/Img/Ai for Resume/Resumate1.png";
+import Resumate2 from "../../../../public/assets/Img/Ai for Resume/Resumate2.png";
+
+
 // review section data
 const reviews = [
   {
@@ -83,7 +87,7 @@ const ResunateAI = () => {
           <div className="row g-4">
             <div className="text-center">
               <p className="text-primary">
-                Effortless Resume Creation with Resunate AI
+                Effortless Resume Creation with Resumate AI
               </p>
               <h3 className="">
                 ATS-Friendly Resume Design for Career Success
@@ -93,7 +97,7 @@ const ResunateAI = () => {
               {
                 icon: "📝",
                 title: "ATS Optimization Recommendations",
-                desc: "Resunate AI provides intelligent recommendations to optimize your resume for Applicant Tracking Systems (ATS), ensuring your resume passes automated screenings and gets noticed by recruiters.",
+                desc: "Resumate AI provides intelligent recommendations to optimize your resume for Applicant Tracking Systems (ATS), ensuring your resume passes automated screenings and gets noticed by recruiters.",
               },
               {
                 icon: "🌍",
@@ -103,12 +107,12 @@ const ResunateAI = () => {
               {
                 icon: "⚡",
                 title: "Fast and Efficient Resume Customization",
-                desc: "Resunate AI simplifies the resume-building process, enabling you to quickly generate a professional, ATS-optimized resume without hassle.",
+                desc: "Resumate AI simplifies the resume-building process, enabling you to quickly generate a professional, ATS-optimized resume without hassle.",
               },
               {
                 icon: "🔍",
                 title: "Job-Specific Content Recommendations",
-                desc: "Resunate AI customizes your resume with job-specific keywords and content suggestions, helping you stand out for the roles you're applying to.",
+                desc: "Resumate AI customizes your resume with job-specific keywords and content suggestions, helping you stand out for the roles you're applying to.",
               },
               {
                 icon: "🎯",
@@ -145,112 +149,112 @@ const ResunateAI = () => {
             <div className="accordion" id="faqAccordion">
               {[
                 {
-                  q: "What is Resunate AI?",
-                  a: "Resunate AI is an advanced platform that helps job seekers craft visually stunning, ATS-optimized resumes and cover letters, significantly improving their chances of standing out during the job application process.",
+                  q: "What is Resumate AI?",
+                  a: "Resumate AI is an advanced platform that helps job seekers craft visually stunning, ATS-optimized resumes and cover letters, significantly improving their chances of standing out during the job application process.",
                 },
                 {
-                  q: "How does Resunate AI improve resume creation?",
-                  a: "Resunate AI provides tailored keyword suggestions, industry-specific templates, and real-time feedback, ensuring that your resume is both visually appealing and ATS-compatible.",
+                  q: "How does Resumate AI improve resume creation?",
+                  a: "Resumate AI provides tailored keyword suggestions, industry-specific templates, and real-time feedback, ensuring that your resume is both visually appealing and ATS-compatible.",
                 },
                 {
-                  q: "What are the key features of Resunate AI?",
-                  a: "Resunate AI offers industry-specific templates, real-time content suggestions, ATS optimization, customizable designs, and the ability to create professional cover letters to improve your job application outcomes.",
+                  q: "What are the key features of Resumate AI?",
+                  a: "Resumate AI offers industry-specific templates, real-time content suggestions, ATS optimization, customizable designs, and the ability to create professional cover letters to improve your job application outcomes.",
                 },
                 {
-                  q: "Can Resunate AI help me create a cover letter?",
-                  a: "Yes, Resunate AI includes a cover letter builder with personalized content recommendations, helping you craft a cover letter that complements your resume.",
+                  q: "Can Resumate AI help me create a cover letter?",
+                  a: "Yes, Resumate AI includes a cover letter builder with personalized content recommendations, helping you craft a cover letter that complements your resume.",
                 },
                 {
-                  q: "Is Resunate AI compatible with Applicant Tracking Systems (ATS)?",
-                  a: "Yes, Resunate AI is specifically designed to optimize your resume for ATS, helping you navigate automated screening processes and improve your visibility to recruiters.",
+                  q: "Is Resumate AI compatible with Applicant Tracking Systems (ATS)?",
+                  a: "Yes, Resumate AI is specifically designed to optimize your resume for ATS, helping you navigate automated screening processes and improve your visibility to recruiters.",
                 },
                 {
-                  q: "What resume formats does Resunate AI support?",
-                  a: "Resunate AI supports multiple formats, including PDF and DOCX, ensuring your resume is compatible with ATS systems and ready for submission to employers.",
+                  q: "What resume formats does Resumate AI support?",
+                  a: "Resumate AI supports multiple formats, including PDF and DOCX, ensuring your resume is compatible with ATS systems and ready for submission to employers.",
                 },
                 {
                   q: "Can I export my resume to LinkedIn?",
-                  a: "While Resunate AI does not offer direct LinkedIn integration, you can export your resume in formats that can be easily uploaded to your LinkedIn profile manually.",
+                  a: "While Resumate AI does not offer direct LinkedIn integration, you can export your resume in formats that can be easily uploaded to your LinkedIn profile manually.",
                 },
                 {
-                  q: "Does Resunate AI offer job-specific recommendations?",
-                  a: "Yes, Resunate AI provides customized suggestions based on the job you are applying for, ensuring your resume highlights the most relevant skills and experiences for each specific role.",
+                  q: "Does Resumate AI offer job-specific recommendations?",
+                  a: "Yes, Resumate AI provides customized suggestions based on the job you are applying for, ensuring your resume highlights the most relevant skills and experiences for each specific role.",
                 },
                 {
-                  q: "How does Resunate AI optimize my resume for different industries?",
-                  a: "Resunate AI provides industry-specific templates and recommendations, helping you customize your resume to meet the expectations and standards of various fields like technology, healthcare, finance, and more.",
+                  q: "How does Resumate AI optimize my resume for different industries?",
+                  a: "Resumate AI provides industry-specific templates and recommendations, helping you customize your resume to meet the expectations and standards of various fields like technology, healthcare, finance, and more.",
                 },
                 {
-                  q: "Can I customize the design of my resume in Resunate AI?",
-                  a: "Yes, Resunate AI offers a wide range of customizable templates, allowing you to create a visually appealing resume that is also optimized for ATS compatibility.",
+                  q: "Can I customize the design of my resume in Resumate AI?",
+                  a: "Yes, Resumate AI offers a wide range of customizable templates, allowing you to create a visually appealing resume that is also optimized for ATS compatibility.",
                 },
                 {
-                  q: "Can Resunate AI help me build a portfolio?",
-                  a: "Resunate AI focuses primarily on resume and cover letter creation, but it can help you build a strong personal brand, which can be showcased through an online portfolio, especially useful for creative professionals.",
+                  q: "Can Resumate AI help me build a portfolio?",
+                  a: "Resumate AI focuses primarily on resume and cover letter creation, but it can help you build a strong personal brand, which can be showcased through an online portfolio, especially useful for creative professionals.",
                 },
                 {
-                  q: "Is Resunate AI cloud-based?",
-                  a: "Yes, Resunate AI is cloud-based, allowing you to access and update your resume from any device with an internet connection, making it convenient for job seekers on the move.",
+                  q: "Is Resumate AI cloud-based?",
+                  a: "Yes, Resumate AI is cloud-based, allowing you to access and update your resume from any device with an internet connection, making it convenient for job seekers on the move.",
                 },
                 {
-                  q: "Does Resunate AI offer feedback on my resume?",
-                  a: "Yes, Resunate AI provides real-time feedback on your resume’s content, design, and ATS compatibility, offering actionable suggestions for improvement.",
+                  q: "Does Resumate AI offer feedback on my resume?",
+                  a: "Yes, Resumate AI provides real-time feedback on your resume’s content, design, and ATS compatibility, offering actionable suggestions for improvement.",
                 },
                 {
-                  q: "Can Resunate AI suggest job titles based on my experience?",
-                  a: "Yes, Resunate AI suggests relevant job titles based on your skills and experience, helping you target positions that align with your qualifications.",
+                  q: "Can Resumate AI suggest job titles based on my experience?",
+                  a: "Yes, Resumate AI suggests relevant job titles based on your skills and experience, helping you target positions that align with your qualifications.",
                 },
                 {
-                  q: "Does Resunate AI integrate with job boards?",
-                  a: "Resunate AI allows you to export your resume in formats compatible with popular job boards like LinkedIn and Indeed, simplifying the job application process.",
+                  q: "Does Resumate AI integrate with job boards?",
+                  a: "Resumate AI allows you to export your resume in formats compatible with popular job boards like LinkedIn and Indeed, simplifying the job application process.",
                 },
                 {
                   q: "Can I download my resume in multiple formats?",
-                  a: "Yes, Resunate AI offers various download options, including PDF and DOCX, ensuring your resume is ready for different application needs.",
+                  a: "Yes, Resumate AI offers various download options, including PDF and DOCX, ensuring your resume is ready for different application needs.",
                 },
                 {
-                  q: "Can Resunate AI help me create a LinkedIn profile?",
-                  a: "While Resunate AI doesn’t directly create LinkedIn profiles, it helps you craft high-quality resume content that can be seamlessly transferred to your LinkedIn profile.",
+                  q: "Can Resumate AI help me create a LinkedIn profile?",
+                  a: "While Resumate AI doesn’t directly create LinkedIn profiles, it helps you craft high-quality resume content that can be seamlessly transferred to your LinkedIn profile.",
                 },
                 {
-                  q: "Is Resunate AI suitable for beginners?",
-                  a: "Yes, Resunate AI is user-friendly and offers step-by-step guidance, making it easy for beginners to optimize their resumes effectively.",
+                  q: "Is Resumate AI suitable for beginners?",
+                  a: "Yes, Resumate AI is user-friendly and offers step-by-step guidance, making it easy for beginners to optimize their resumes effectively.",
                 },
                 {
-                  q: "Can Resunate AI help me with resume maintenance?",
-                  a: "Yes, Resunate AI makes it easy to update your resume as you gain new skills and experiences, ensuring it stays up-to-date for job applications.",
+                  q: "Can Resumate AI help me with resume maintenance?",
+                  a: "Yes, Resumate AI makes it easy to update your resume as you gain new skills and experiences, ensuring it stays up-to-date for job applications.",
                 },
                 {
-                  q: "Does Resunate AI support multilingual resumes?",
-                  a: "Yes, Resunate AI supports multiple languages, allowing you to create resumes in various languages for international job opportunities.",
+                  q: "Does Resumate AI support multilingual resumes?",
+                  a: "Yes, Resumate AI supports multiple languages, allowing you to create resumes in various languages for international job opportunities.",
                 },
                 {
-                  q: "What industries does Resunate AI cater to?",
-                  a: "Resunate AI serves a wide range of industries, including technology, healthcare, finance, education, and marketing, offering customized resume templates and advice for each field.",
+                  q: "What industries does Resumate AI cater to?",
+                  a: "Resumate AI serves a wide range of industries, including technology, healthcare, finance, education, and marketing, offering customized resume templates and advice for each field.",
                 },
                 {
-                  q: "Is Resunate AI free to use?",
-                  a: "Resunate AI offers both free and premium plans. The free plan includes basic features, while the premium plan unlocks advanced tools and additional customization options.",
+                  q: "Is Resumate AI free to use?",
+                  a: "Resumate AI offers both free and premium plans. The free plan includes basic features, while the premium plan unlocks advanced tools and additional customization options.",
                 },
                 {
-                  q: "Can Resunate AI help me with job interview preparation?",
-                  a: "While Resunate AI specializes in resume and cover letter creation, it also provides useful tips and resources to support your job interview preparation.",
+                  q: "Can Resumate AI help me with job interview preparation?",
+                  a: "While Resumate AI specializes in resume and cover letter creation, it also provides useful tips and resources to support your job interview preparation.",
                 },
                 {
-                  q: "Does Resunate AI provide analytics on my resume?",
-                  a: "Yes, Resunate AI offers performance analytics on your resume, providing insights into how well it aligns with industry trends and job market expectations.",
+                  q: "Does Resumate AI provide analytics on my resume?",
+                  a: "Yes, Resumate AI offers performance analytics on your resume, providing insights into how well it aligns with industry trends and job market expectations.",
                 },
                 {
-                  q: "How secure is my data with Resunate AI?",
-                  a: "Resunate AI prioritizes data security, using encryption to protect your personal information and complying with privacy regulations to ensure your data remains confidential.",
+                  q: "How secure is my data with Resumate AI?",
+                  a: "Resumate AI prioritizes data security, using encryption to protect your personal information and complying with privacy regulations to ensure your data remains confidential.",
                 },
                 {
-                  q: "How do I start using Resunate AI?",
-                  a: "To get started with Resunate AI, simply sign up, upload your resume, and follow the intuitive prompts to optimize it for your job applications.",
+                  q: "How do I start using Resumate AI?",
+                  a: "To get started with Resumate AI, simply sign up, upload your resume, and follow the intuitive prompts to optimize it for your job applications.",
                 },
                 {
-                  q: "Can Resunate AI help me create resumes for multiple jobs?",
-                  a: "Yes, Resunate AI allows you to create and customize multiple versions of your resume, each tailored to different job roles, increasing your chances of success.",
+                  q: "Can Resumate AI help me create resumes for multiple jobs?",
+                  a: "Yes, Resumate AI allows you to create and customize multiple versions of your resume, each tailored to different job roles, increasing your chances of success.",
                 },
               ]
 
@@ -318,14 +322,14 @@ const ResunateAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
+                src={Resumate1}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
+                src={Resumate2}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
@@ -547,14 +551,14 @@ const ResunateAI = () => {
               <div className="col-12">
                 <div className="custom-card text-light p-5 text-center">
                   <h3 className="fw-bold mb-4 text-start text-primary">
-                    Why Resunate AI is the Best Choice for Resume Creation and
+                    Why Resumate AI is the Best Choice for Resume Creation and
                     Optimization
                   </h3>
 
                   <p className="text-start text-muted mb-3">
-                    Resunate AI revolutionizes the way you create and optimize
+                    Resumate AI revolutionizes the way you create and optimize
                     your resume by combining intuitive design with advanced
-                    content recommendations. Here’s why Resunate AI is the
+                    content recommendations. Here’s why Resumate AI is the
                     preferred tool for job seekers looking to craft standout,
                     ATS-ready resumes:
                   </p>
@@ -570,7 +574,7 @@ const ResunateAI = () => {
                   >
                     <li className="mb-3">
                       <strong>Tailored Templates for Every Industry:</strong>{" "}
-                      Resunate AI offers a wide selection of professionally
+                      Resumate AI offers a wide selection of professionally
                       designed templates that not only look great but are
                       optimized for different job sectors.
                     </li>
@@ -581,7 +585,7 @@ const ResunateAI = () => {
                       making your resume more impactful.
                     </li>
                     <li className="mb-3">
-                      <strong>ATS Optimization:</strong> Resunate AI ensures
+                      <strong>ATS Optimization:</strong> Resumate AI ensures
                       that your resume is fully compatible with Applicant
                       Tracking Systems (ATS), increasing your chances of passing
                       ATS filters and getting noticed by employers.
@@ -614,7 +618,7 @@ const ResunateAI = () => {
 
                   <div className="text-center mt-4">
                     <button className="btn btn-primary btn-sm">
-                      Let Resunate AI Help You Build and Optimize Your Resume
+                      Let Resumate AI Help You Build and Optimize Your Resume
                       for Career Success
                     </button>
                   </div>
@@ -628,10 +632,10 @@ const ResunateAI = () => {
         return (
           <div className="container my-5">
             <h4 className="text-center text-light mb-2">
-              Why Resunate AI is Highly Recommended
+              Why Resumate AI is Highly Recommended
             </h4>
             <p className="text-center text-secondary mb-4">
-              Resunate AI stands out as an innovative platform for building
+              Resumate AI stands out as an innovative platform for building
               personalized, ATS-ready resumes. Below are the key advantages and
               considerations when using this platform.
             </p>
@@ -650,13 +654,13 @@ const ResunateAI = () => {
                 <h5 className="text-success text-start mb-4">✅ Pros</h5>
                 <ul className="ps-3" style={{ listStyleType: "disc" }}>
                   <li className="mb-2">
-                    <strong>AI-Driven Resume Optimization:</strong> Resunate AI
+                    <strong>AI-Driven Resume Optimization:</strong> Resumate AI
                     provides intelligent suggestions to tailor your resume for
                     specific roles and industries, maximizing your chances of
                     success.
                   </li>
                   <li className="mb-2">
-                    <strong>ATS Compatibility:</strong> Resunate AI ensures your
+                    <strong>ATS Compatibility:</strong> Resumate AI ensures your
                     resume passes through Applicant Tracking Systems (ATS),
                     making it more likely to be noticed by recruiters.
                   </li>
@@ -672,7 +676,7 @@ const ResunateAI = () => {
                     most to your target role.
                   </li>
                   <li className="mb-2">
-                    <strong>Quick and Easy Process:</strong> Resunate AI
+                    <strong>Quick and Easy Process:</strong> Resumate AI
                     simplifies the resume-building process, allowing you to
                     create a professional resume in just a few steps.
                   </li>
@@ -708,7 +712,7 @@ const ResunateAI = () => {
                     not appeal to those who prefer more anonymous options.
                   </li>
                   <li className="mb-2">
-                    <strong>Limited Visual Customization:</strong> Resunate AI
+                    <strong>Limited Visual Customization:</strong> Resumate AI
                     focuses on content optimization, which may not satisfy users
                     looking for more creative flexibility in visual design.
                   </li>
@@ -731,7 +735,7 @@ const ResunateAI = () => {
               Explore Powerful Alternatives for Building Resumes
             </h4>
             <p className="text-center text-secondary mb-4">
-              Resunate AI presents a collection of top resume-building platforms
+              Resumate AI presents a collection of top resume-building platforms
               that help you craft standout resumes, tailored to your career
               aspirations and professional journey.
             </p>
@@ -748,7 +752,7 @@ const ResunateAI = () => {
               >
                 <ul className="ps-3" style={{ listStyleType: "disc" }}>
                   <li className="mb-2">
-                    <strong>Resunate AI</strong>: Build personalized, ATS-ready
+                    <strong>Resumate AI</strong>: Build personalized, ATS-ready
                     resumes using AI-driven features that tailor content for
                     specific roles and employers.
                   </li>
@@ -817,7 +821,7 @@ const ResunateAI = () => {
             <div className="col-md-6 col-12 text-center">
               <img
                 src={resunate}
-                alt="resunate"
+                alt="Resumate"
                 style={{
                   maxWidth: "100%",
                   height: "300px",
@@ -831,22 +835,22 @@ const ResunateAI = () => {
               style={{ paddingRight: "30px" }}
             >
               <p className="text-primary">Write better, faster</p>
-              <h1>Resunate AI</h1>
+              <h1>Resumate AI</h1>
 
               <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
               <p>
-                Resunate AI is an innovative AI-powered platform designed to
+                Resumate AI is an innovative AI-powered platform designed to
                 help job seekers optimize their resumes and CVs, making them
                 more attractive to recruiters and Applicant Tracking Systems
-                (ATS). Resunate AI offers a suite of tools, including resume
+                (ATS). Resumate AI offers a suite of tools, including resume
                 building, ATS optimization, job search tools, job
-                recommendations, and career coaching. By utilizing AI, Resunate
+                recommendations, and career coaching. By utilizing AI, Resumate
                 streamlines the resume creation process and ensures it aligns
                 with industry standards and job descriptions.
               </p>
               <div className="mb-3">
                 <a
-                  href=" https://www.resunate.com"
+                  href="https://www.resumateai.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary me-2"
