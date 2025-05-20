@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
 import pageOptimizerProAI from "../../../../public/assets/Img/Ai for SEO/7.png";
+import scan1 from "../../../../public/assets/Img/AI for SEO/scan15.png";
+import scan2 from "../../../../public/assets/Img/AI for SEO/scan16.png";
+
 // review section data
 const reviews = [
   {
@@ -795,11 +798,11 @@ const PageOptimizerProAI = () => {
   return (
     <>
       <div className="bg-dark d-flex  justify-content-between align-items-center ">
-        <a
+      <a
           href="/Aitools"
-          className="d-inline-block text-white text-decoration-none ml-3 py-1"
+          className="d-inline-block text-white text-decoration-none  mt-3 ml-3 py-1 px-2 ms-5 border rounded-sm"
         >
-          <i className="bi bi-arrow-left me-2"></i>Back to Directory{" "}
+          <i className="bi bi-arrow-left me-2"></i>Back  {" "}
         </a>
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">

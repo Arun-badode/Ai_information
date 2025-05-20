@@ -232,23 +232,7 @@ const TrendingTools = () => {
           categories.
         </p>
 
-        {/* Navigation Arrows */}
-        <div className="flex justify-between mb-6 px-4 max-w-xs mx-auto">
-          <button
-            onClick={prevSlide}
-            className="bg-gradient-to-r from-sky-400 to-blue-1000 p-3 rounded-full text-white hover:bg-indigo-500"
-            aria-label="Previous"
-          >
-            <FaArrowLeft size={20} />
-          </button>
-          <button
-            onClick={nextSlide}
-            className="bg-gradient-to-r from-sky-400 to-blue-1000 p-3 rounded-full text-white hover:bg-indigo-500"
-            aria-label="Next"
-          >
-            <FaArrowRight size={20} />
-          </button>
-        </div>
+        
 
         {/* Tools Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-4">
@@ -267,6 +251,23 @@ const TrendingTools = () => {
               <span className="text-yellow-400">{`⭐ ${tool.rating}`}</span>
             </div>
           ))}
+        </div>
+        {/* Navigation Arrows */}
+        <div className="flex justify-between mt-6 px-4 max-w-xs mx-auto">
+          <button
+            onClick={prevSlide}
+            className="bg-gradient-to-r from-sky-400 to-blue-1000 p-3 rounded-full text-white hover:bg-indigo-500"
+            aria-label="Previous"
+          >
+            <FaArrowLeft size={20} />
+          </button>
+          <button
+            onClick={nextSlide}
+            className="bg-gradient-to-r from-sky-400 to-blue-1000 p-3 rounded-full text-white hover:bg-indigo-500"
+            aria-label="Next"
+          >
+            <FaArrowRight size={20} />
+          </button>
         </div>
       </div>
     </div>

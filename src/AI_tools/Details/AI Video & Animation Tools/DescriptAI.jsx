@@ -648,11 +648,17 @@ const DescriptAI = () => {
   return (
     <>
       <div className="bg-dark d-flex  justify-content-between align-items-center ">
-        <a
+        {/* <a
           href="/Aitools"
           className="d-inline-block text-white text-decoration-none ml-3 py-1"
         >
           <i className="bi bi-arrow-left me-2"></i>Back to Directory{" "}
+        </a> */}
+        <a
+          href="/Aitools"
+          className="d-inline-block text-white text-decoration-none  mt-3 ml-3 py-1 px-2 ms-5 border rounded-sm"
+        >
+          <i className="bi bi-arrow-left me-2"></i>Back  {" "}
         </a>
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
@@ -857,20 +863,6 @@ const DescriptAI = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with DescriptAI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
         </div>
       </div>
     </>

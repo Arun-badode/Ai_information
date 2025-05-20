@@ -82,8 +82,8 @@ const ToolTabs = () => {
         <Row className="flex-nowrap overflow-auto">
           {tools[activeTab].length > 0 ? (
             tools[activeTab].map((tool, idx) => (
-              <Col md={4} key={idx} className="mb-3 flex-shrink-0">
-                <Card className="tool-card bg-gradient-to-r from-sky-400 to-blue-1000 p-4 rounded-lg shadow-lg hover:bg-indigo-600 transition duration-300">
+                          <Col md={4} key={idx} className="mb-3 flex-shrink-0">
+                <Card className="tool-card bg-gradient-to-r from-gray-800 to-gray-900 p-4 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300">
                   <img
                     src={tool.icon}
                     alt={tool.name}
@@ -93,23 +93,23 @@ const ToolTabs = () => {
                     <h5 className="text-xl font-semibold text-white mb-2">
                       {tool.name}
                     </h5>
-                    <p className="text-sm text-[#E2E8F0] mb-3">{tool.desc}</p>
+                    <p className="text-sm text-gray-300 mb-3">{tool.desc}</p>
                     <div className="flex justify-center flex-wrap gap-2">
                       {tool.tags.map((tag, i) => (
                         <Badge
                           key={i}
-                          className="bg-dark text-warning px-2 py-1 rounded"
+                          className="bg-gray-700 text-gray-300 px-2 py-1 rounded"
                         >
                           {tag}
                         </Badge>
                       ))}
                     </div>
                   </div>
-                  <div className="mt-3 text-center text-[#E2E8F0]">
-                    <div className="text-[#A0AEC0]">
+                  <div className="mt-3 text-center text-gray-300" style={{display:"flex",justifyContent:"space-around"}}>
+                    <div className="text-gray-400">
                       <i className="bi bi-bookmark"></i> {tool.votes}
                     </div>
-                    <div className="text-[#38BDF8] fw-bold ">
+                    <div className="text-gray-300 fw-bold">
                       <i className="bi bi-arrow-up"></i> {tool.votes}
                     </div>
                   </div>
