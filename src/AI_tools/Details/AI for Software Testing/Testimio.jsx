@@ -3,9 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Logo from "../../../Images/logo[2].png";
-import deatilimage from "../../../Images/DetailImage.png";
-
+import testimio from '../../../../public/assets/Img/AI for software testing/testiomio.png'
+import testim1 from '../../../../public/assets/Img/AI for software testing/testim1.png'
+import testim2 from '../../../../public/assets/Img/AI for software testing/testim2.png'
 // review section data
 const reviews = [
   {
@@ -333,14 +333,15 @@ const Testimio = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
-                alt=""
+                src={testim1}
+                alt="screenshot1"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
+                src={testim2}
+                alt="screenshot2"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -728,46 +729,46 @@ const Testimio = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>Testim.io</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Testim.io is an AI-powered test automation platform designed to help teams automate software testing across different environments. It uses advanced AI-driven testing capabilities to streamline the testing process, offering features such as cross-platform testing, performance testing, regression testing, mobile testing, API testing, and more. The platform is particularly useful for teams adopting continuous integration and continuous testing practices, as it integrates seamlessly into DevOps pipelines, providing real-time feedback during test execution.
-              </p>
+         <div className="row align-items-center justify-content-between g-4 mb-4">
+  {/* Left side (Text Section) */}
+  <div className="col-lg-6 col-12 order-lg-1 order-2 pe-lg-4">
+    <p className="text-primary mb-2">Write better, faster</p>
+    <h1 className="mb-3">Testim.io</h1>
+    <div className="text-warning mb-3">⭐⭐⭐⭐⭐</div>
+    <p className="mb-3">
+      Testim.io is an AI-powered test automation platform designed to help teams automate software testing across different environments. It uses advanced AI-driven testing capabilities to streamline the testing process, offering features such as cross-platform testing, performance testing, regression testing, mobile testing, API testing, and more. The platform is particularly useful for teams adopting continuous integration and continuous testing practices, as it integrates seamlessly into DevOps pipelines, providing real-time feedback during test execution.
+    </p>
 
-              <p>
-                Testim.io focuses on automating both functional and non-functional testing and utilizes machine learning to improve test optimization and execution speed. It’s suitable for testing complex applications, mobile apps, web apps, and SaaS platforms, offering significant advantages in efficiency, accuracy, and scalability.
-              </p>
+    <p className="mb-4">
+      Testim.io focuses on automating both functional and non-functional testing and utilizes machine learning to improve test optimization and execution speed. It's suitable for testing complex applications, mobile apps, web apps, and SaaS platforms, offering significant advantages in efficiency, accuracy, and scalability.
+    </p>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
-            </div>
+    <div className="d-flex flex-wrap gap-3">
+      <a
+        href="https://www.testim.io/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary btn-lg px-4"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
-          </div>
+  {/* Right side (Image Section) */}
+  <div className="col-lg-6 col-12 order-lg-2 order-1 text-center">
+    <img
+      src={testimio}
+      alt="Testim.io AI Testing Platform"
+      className="img-fluid rounded"
+      style={{
+        maxHeight: "350px",
+        width: "auto",
+        objectFit: "contain"
+      }}
+    />
+  </div>
+</div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Create Videos in 3 Simple Steps</p>
@@ -916,20 +917,7 @@ const Testimio = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with RunWayGen?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
+        
         </div>
       </div>
     </>
