@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
 import visual from "../../../../public/assets/Img/Ai for Resume/45.png";
+import VisualCV1 from "../../../../public/assets/Img/Ai for Resume/VisualCV1.png";
+import VisualCV2 from "../../../../public/assets/Img/Ai for Resume/VisualCV2.png";
 // review section data
 const reviews = [
   {
@@ -320,14 +322,14 @@ const VisualAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
+                src={VisualCV1}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
+                src={VisualCV2}
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -837,7 +839,7 @@ const VisualAI = () => {
               </p>
               <div className="mb-3">
                 <a
-                  href="https://zety.com/resume-builder"
+                  href="https://www.visualcv.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary me-2"

@@ -452,7 +452,7 @@ const RunWayGen = () => {
               <div className="col-12">
                 <div className="custom-card text-light p-5 text-center">
                   <h3 className="fw-bold mb-4 text-start text-primary">
-                    Why Use RunWayGen-3?
+                    Why Use RunWayGen-4?
                   </h3>
 
                   <ul
@@ -465,7 +465,7 @@ const RunWayGen = () => {
                     }}
                   >
                     <li class="mb-3">
-                      Runway Gen-3 can be used in filmmaking, content marketing,
+                      Runway Gen-4 can be used in filmmaking, content marketing,
                       educational videos, storytelling, and digital branding.
                     </li>
                     <li class="mb-3">
@@ -631,12 +631,12 @@ const RunWayGen = () => {
               className="col-md-6  col-12 order-2 order-md-1 "
             >
               <p className="text-primary">Write better, faster</p>
-              <h1>RunWayGen-3</h1>
+              <h1>RunWayGen-4</h1>
               <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
               <p>
-                Runway Gen-3 is an AI-powered video generation model developed
+                Runway Gen-4 is an AI-powered video generation model developed
                 by Runway, designed to produce hyper-realistic and cinematic
-                videos from text prompts. It's the successor to Runway Gen-2 and
+                videos from text prompts. It's the successor to Runway Gen-3 and
                 integrates improved video quality, motion control, and scene
                 consistency. The platform is ideal for creators looking to
                 produce videos without cameras, actors, or traditional editing

@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
 import hiration from "../../../../public/assets/Img/Ai for Resume/46.png";
+import hiration1 from "../../../../public/assets/Img/Ai for Resume/hiration1.png";
+import hiration2 from "../../../../public/assets/Img/Ai for Resume/hiration2.png";
 // review section data
 const reviews = [
   {
@@ -320,14 +322,14 @@ const HirationAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
+                src={hiration1}
                 alt=""
-                className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
+                className="img-fluid rounded-3  w-100 h-100 object-fit-cover bg-cover "
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
+                src={hiration2}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
