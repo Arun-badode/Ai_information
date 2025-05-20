@@ -52,7 +52,11 @@ const Chatbot = () => {
   const audioContextRef = useRef(null);
   const scriptProcessorRef = useRef(null);
   const audioDataRef = useRef([]);
-  const sampleRateRef = useRef(16000); // 16kHz is common for speech
+  const sampleRateRef = useRef(16000);
+
+  const silenceTimeoutRef = useRef(null);
+const SILENCE_DURATION = 2000; // ms of silence before auto-stop
+const SILENCE_THRESHOLD = 0.01; // adjust for your environment // 16kHz is common for speech
 
   const toggleChatbot = () => setIsOpen(!isOpen);
 
@@ -80,29 +84,39 @@ const Chatbot = () => {
   };
 
   // Handle audio file upload
-  const handleAudioUpload = async (file) => {
-    const formData = new FormData();
-    formData.append("audio_file", file, "recording.wav");
-    try {
-      const response = await fetch("https://ai-tools-assistant-production.up.railway.app/voice_assistant", {
-        method: "POST",
-        body: formData,
-      });
-      const data = await response.json();
-      setTranscription(data.transcription || "");
-      setBotResponse(data);
-      if (data.audio_url) {
-        setAudioUrl("https://ai-tools-assistant-production.up.railway.app" + data.audio_url);
-      }
-    } catch (error) {
-      setBotResponse({ response: "Error: " + error.message });
+const handleAudioUpload = async (file) => {
+  const formData = new FormData();
+  formData.append("audio_file", file, "recording.wav");
+  try {
+    const response = await fetch("https://ai-tools-assistant-production.up.railway.app/voice_assistant", {
+      method: "POST",
+      body: formData,
+    });
+    const data = await response.json();
+    setTranscription(data.transcription || "");
+    setBotResponse(data);
+    if (data.audio_url) {
+      const fullUrl = "https://ai-tools-assistant-production.up.railway.app" + data.audio_url;
+      setAudioUrl(fullUrl);
+
+      // Auto play audio
+      const audio = new Audio(fullUrl);
+      audio.play();
     }
-  };
+  } catch (error) {
+    setBotResponse({ response: "Error: " + error.message });
+  }
+};
 
   // Handle recording (start/stop)
 const handleRecord = async () => {
   if (isRecording) {
     // Stop recording
+
+      if (silenceTimeoutRef.current) {
+    clearTimeout(silenceTimeoutRef.current);
+    silenceTimeoutRef.current = null;
+  }
     scriptProcessorRef.current.disconnect();
     audioContextRef.current.close();
     mediaStreamRef.current.getTracks().forEach(track => track.stop());
@@ -137,10 +151,27 @@ const handleRecord = async () => {
       source.connect(scriptProcessorRef.current);
       scriptProcessorRef.current.connect(audioContextRef.current.destination);
 
-      scriptProcessorRef.current.onaudioprocess = (e) => {
-        const channelData = e.inputBuffer.getChannelData(0);
-        audioDataRef.current.push(new Float32Array(channelData));
-      };
+   scriptProcessorRef.current.onaudioprocess = (e) => {
+  const channelData = e.inputBuffer.getChannelData(0);
+  audioDataRef.current.push(new Float32Array(channelData));
+
+  // Detect silence
+  const isSilent = !Array.from(channelData).some(sample => Math.abs(sample) > SILENCE_THRESHOLD);
+
+  if (!isSilent) {
+
+    if (silenceTimeoutRef.current) {
+      clearTimeout(silenceTimeoutRef.current);
+      silenceTimeoutRef.current = null;
+    }
+  } else if (!silenceTimeoutRef.current) {
+
+    silenceTimeoutRef.current = setTimeout(() => {
+
+      handleRecord();
+    }, SILENCE_DURATION);
+  }
+};
 
       setIsRecording(true);
     } catch (err) {
@@ -213,9 +244,10 @@ const handleRecord = async () => {
                 <strong>Transcription:</strong> {transcription}
               </div>
             )}
-            {audioUrl && (
+            
+            {/* {audioUrl && (
               <audio controls src={audioUrl} style={{ marginTop: "10px" }} />
-            )}
+            )} */}
           </div>
           <div style={{ padding: "10px", borderTop: "1px solid #ddd", display: "flex", flexDirection: "column", gap: "8px" }}>
            
