@@ -81,6 +81,7 @@ const SILENCE_THRESHOLD = 0.01; // adjust for your environment // 16kHz is commo
         setBotResponse({ response: "Error: " + error.message });
       }
     }
+    setTranscription("");
   };
 
   // Handle audio file upload
@@ -96,16 +97,22 @@ const handleAudioUpload = async (file) => {
     setTranscription(data.transcription || "");
     setBotResponse(data);
     if (data.audio_url) {
-      const fullUrl = "https://ai-tools-assistant-production.up.railway.app" + data.audio_url;
+      const fullUrl =  data.audio_url;
+      console.log(fullUrl)
       setAudioUrl(fullUrl);
 
       // Auto play audio
       const audio = new Audio(fullUrl);
       audio.play();
+      setTranscription("")
+    
+
     }
   } catch (error) {
     setBotResponse({ response: "Error: " + error.message });
   }
+  setAudioFile(null)
+
 };
 
   // Handle recording (start/stop)
@@ -185,7 +192,7 @@ const handleRecord = async () => {
     if (botResponse?.redirect_url) {
       navigate(botResponse.redirect_url);
     }
-  }, [botResponse, navigate]);
+  }, [botResponse]);
 
   return (
     <div style={{ position: "fixed", bottom: "10px", right: "20px", zIndex: 1000 }}>
