@@ -595,46 +595,47 @@ const DeepDreamGeneratorAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>What is Deep Dream Generator</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Deep Dream Generator is a powerful AI-powered art tool that
-                transforms images into dreamlike, surreal, and psychedelic
-                artworks. Originally developed by Google engineers in 2015, the
-                tool uses convolutional neural networks (CNNs) to reinterpret
-                and enhance patterns in images, producing hallucinogenic
-                visuals. It’s now an online creative platform where users can
-                upload photos and apply dream-inspired filters, neural style
-                transfers, and deep AI interpretations.
-              </p>
+       <div className="row align-items-center justify-content-between mb-4">
+  {/* Left side (Text Section) */}
+  <div className="col-lg-6 col-md-12 mb-4 mb-lg-0 pe-lg-4">
+    <p className="text-primary">Write better, faster</p>
+    <h1>What is Deep Dream Generator</h1>
+    <div className="text-warning mb-2">⭐⭐⭐⭐⭐</div>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
-            </div>
+    <p>
+      Deep Dream Generator is a powerful AI-powered art tool that transforms images into
+      dreamlike, surreal, and psychedelic artworks. Originally developed by Google engineers
+      in 2015, the tool uses convolutional neural networks (CNNs) to reinterpret and enhance
+      patterns in images, producing hallucinogenic visuals.
+    </p>
+    <p>
+      It’s now an online creative platform where users can upload photos and apply
+      dream-inspired filters, neural style transfers, and deep AI interpretations.
+    </p>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img src="" style={{ MaxWidth: "100%", height: "300px" }} />
-            </div>
-          </div>
+    <div className="mb-3">
+      <a
+        href="https://deepdreamgenerator.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary me-2"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
+
+  {/* Right side (Image Section) */}
+  <div className="col-lg-6 col-md-12 text-center">
+    <img
+      src="" // Add your image URL here
+      alt="Deep Dream Generator Preview"
+      className="img-fluid"
+      style={{ maxHeight: "300px", width: "100%", objectFit: "contain" }}
+    />
+  </div>
+</div>
+
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>
@@ -778,22 +779,6 @@ const DeepDreamGeneratorAI = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">
-              Ready to get started with Deep Dream Generator?
-            </h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
         </div>
       </div>
     </>
