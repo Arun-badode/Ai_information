@@ -74,7 +74,7 @@ const styles = {
     borderColor: "#2ea043",
   },
 };
-const Sudowriter = () => {
+const Spingboat = () => {
   const [activeTab, setActiveTab] = useState("features"); // Set the default active tab as 'features'
   const [showAllFaqs, setShowAllFaqs] = useState(false);
 
@@ -84,36 +84,38 @@ const Sudowriter = () => {
         return (
           <div className="row g-4">
             <div className="text-center">
-              <p className="text-primary">Write Smarter, Not Harder</p>
+              <p className="text-primary">
+                Rewrite and Spin Content Effortlessly
+              </p>
               <h3 className="">
-                AI-Powered Creative Writing Tools for Authors & Storytellers
+                Fast, Automated Text Rewriting & Paraphrasing
               </h3>
             </div>
             {[
               {
-                icon: "🧠",
-                title: "Story Engine:",
-                desc: "Build entire plots, arcs, and scenes with AI-driven structure support.",
+                icon: "🔄",
+                title: "Automatic Text Spinning:",
+                desc: "Instantly rewrite and paraphrase your articles to create unique versions.",
               },
               {
-                icon: "✨",
-                title: "Rewrite & Expand:",
-                desc: "Improve or lengthen your content instantly while keeping your original tone.",
+                icon: "✍️",
+                title: "Natural Language Processing:",
+                desc: "Spin content while preserving meaning and readability using advanced AI.",
               },
               {
-                icon: "🖋️",
-                title: "Describe Feature:",
-                desc: "Turn simple words into rich, vivid descriptions perfect for novels and scripts.",
+                icon: "⚡",
+                title: "Fast Processing Speed:",
+                desc: "Get spun content delivered in seconds to meet your tight deadlines.",
               },
               {
-                icon: "🎭",
-                title: "Character Brainstorming:",
-                desc: "Generate unique character traits, motivations, and dialogue suggestions.",
+                icon: "🌐",
+                title: "Multiple Language Support:",
+                desc: "Spin text in various languages to reach a global audience.",
               },
               {
-                icon: "📚",
-                title: "Genre-Specific Suggestions:",
-                desc: "Get recommendations tailored to sci-fi, romance, horror, fantasy, and more.",
+                icon: "🔍",
+                title: "Plagiarism Reduction:",
+                desc: "Helps reduce duplicate content issues by generating unique text variations.",
               },
             ].map((feature, index) => (
               <div className="col-md-4" key={index}>
@@ -262,64 +264,84 @@ const Sudowriter = () => {
             <div className="accordion" id="faqAccordion">
               {[
                 {
-                  q: "What is Sudowrite?",
-                  a: "Sudowrite is an AI-powered creative writing assistant designed to help authors, screenwriters, and storytellers generate and refine content.",
+                  q: "What is Spinbot AI?",
+                  a: "Spinbot AI is an automated text rewriting and paraphrasing tool that helps users create unique content quickly by transforming existing text.",
                 },
                 {
-                  q: "How does Sudowrite work?",
-                  a: "It uses advanced GPT-based AI to assist with idea generation, rewriting, expanding, describing, and brainstorming creative content.",
+                  q: "How does Spinbot AI work?",
+                  a: "It uses advanced natural language processing to rewrite sentences while preserving the original meaning, producing fresh and unique variations.",
                 },
                 {
-                  q: "Is Sudowrite good for fiction writers?",
-                  a: "Yes, it's particularly effective for fiction writers, offering tools for plot, dialogue, world-building, and character development.",
+                  q: "Is Spinbot AI easy to use for beginners?",
+                  a: "Yes, Spinbot offers a simple interface where you just paste your text and get spun content instantly without technical knowledge.",
                 },
                 {
-                  q: "Can Sudowrite help with writer's block?",
-                  a: "Absolutely. Sudowrite's tools like 'Describe', 'Expand', and 'Brainstorm' are made to spark ideas and keep your writing flowing.",
+                  q: "Is Spinbot free to use?",
+                  a: "Spinbot offers a free version with some limits; premium plans unlock faster speeds and no ads.",
                 },
                 {
-                  q: "Is Sudowrite beginner-friendly?",
-                  a: "Yes, it has a user-friendly interface and guided features, making it easy for both beginners and experienced authors to use.",
+                  q: "What platforms is Spinbot available on?",
+                  a: "Spinbot is a web-based tool accessible on any modern browser across desktop and mobile devices.",
                 },
                 {
-                  q: "What makes Sudowrite different from ChatGPT?",
-                  a: "Sudowrite is focused specifically on long-form creative writing, offering unique features like Story Engine, Describe, and Rewrite tools.",
+                  q: "What makes Spinbot AI unique?",
+                  a: "Spinbot specializes in quick and efficient text spinning with minimal manual input, ideal for content marketers and writers needing fresh content fast.",
                 },
                 {
-                  q: "What platforms support Sudowrite?",
-                  a: "Sudowrite is a web-based app, so you can access it on any device with an internet connection and browser.",
+                  q: "Who should use Spinbot AI?",
+                  a: "Content creators, bloggers, SEO specialists, and marketers looking to avoid duplicate content issues and refresh articles.",
                 },
                 {
-                  q: "Can I use Sudowrite for non-fiction or essays?",
-                  a: "Yes, although it’s optimized for storytelling, many writers also use it to refine non-fiction writing and essays.",
+                  q: "Can Spinbot be used for SEO content?",
+                  a: "Yes, it helps generate unique variations of existing SEO content to improve search rankings.",
                 },
                 {
-                  q: "Does Sudowrite support multiple genres?",
-                  a: "Yes, it works across genres like fantasy, sci-fi, romance, horror, and more with tailored writing suggestions.",
+                  q: "Does Spinbot support multiple languages?",
+                  a: "Currently, Spinbot primarily supports English text rewriting.",
                 },
                 {
-                  q: "Can I collaborate with others on Sudowrite?",
-                  a: "Currently, it doesn't offer real-time collaboration but you can share and export your writing easily.",
+                  q: "Does Spinbot have an API?",
+                  a: "Spinbot offers API access for enterprise users to integrate text spinning capabilities into their workflows.",
                 },
                 {
-                  q: "Does Sudowrite store my writing securely?",
-                  a: "Yes, your drafts are saved in your account securely, and you can export or delete them anytime.",
+                  q: "Can I export spun content from Spinbot?",
+                  a: "Yes, you can copy or download the rewritten text after spinning.",
                 },
                 {
-                  q: "Is there a free version of Sudowrite?",
-                  a: "Sudowrite offers a free trial with limited credits. Full access requires a subscription plan.",
+                  q: "Does Spinbot check for plagiarism?",
+                  a: "Spinbot does not provide built-in plagiarism checking; it focuses on content rewriting.",
                 },
                 {
-                  q: "Can I export my stories from Sudowrite?",
-                  a: "Yes, you can export your content in plain text or document formats from the interface.",
+                  q: "Is Spinbot suitable for academic writing?",
+                  a: "Spinbot is not recommended for academic or highly technical writing due to possible changes in meaning.",
                 },
                 {
-                  q: "Does Sudowrite offer a plagiarism checker?",
-                  a: "No, Sudowrite does not include a built-in plagiarism checker.",
+                  q: "Can Spinbot maintain the original tone?",
+                  a: "Spinbot attempts to preserve tone but heavy spinning can alter style and voice.",
                 },
                 {
-                  q: "Can Sudowrite help with editing grammar?",
-                  a: "While it's not a grammar checker like Grammarly, it can improve flow, tone, and clarity of your sentences.",
+                  q: "Is Spinbot safe to use?",
+                  a: "Yes, Spinbot ensures your text is private and not stored permanently on their servers.",
+                },
+                {
+                  q: "Does Spinbot offer customer support?",
+                  a: "Support is available via email and FAQs on the official website.",
+                },
+                {
+                  q: "Does Spinbot support bulk spinning?",
+                  a: "Bulk spinning options are available in premium plans.",
+                },
+                {
+                  q: "Can Spinbot rewrite social media posts?",
+                  a: "Yes, it’s effective for generating varied social media content to keep your feeds fresh.",
+                },
+                {
+                  q: "Does Spinbot have a desktop or mobile app?",
+                  a: "No, Spinbot currently operates as a browser-based service only.",
+                },
+                {
+                  q: "Can I use Spinbot offline?",
+                  a: "No, Spinbot requires an internet connection to process content.",
                 },
               ]
 
@@ -387,47 +409,45 @@ const Sudowriter = () => {
           <div className="container">
             <div className="row g-4">
               <div className="col-12">
-                <div className="custom-card text-light p-5 text-center">
-                  <h3 className="fw-bold mb-4 text-start text-primary">
-                    Why Use Sudowrite AI?
-                  </h3>
+                <h3 className="fw-bold mb-4 text-start text-primary">
+                  Why Use Spinbot AI?
+                </h3>
 
-                  <ul
-                    className="text-start"
-                    style={{
-                      listStyleType: "disc",
-                      paddingLeft: "1.5rem",
-                      fontSize: "1rem",
-                      lineHeight: "1.5",
-                    }}
-                  >
-                    <li className="mb-3">
-                      Sudowrite helps writers overcome writer’s block and
-                      enhance creativity using AI.
-                    </li>
-                    <li className="mb-3">
-                      Ideal for authors, screenwriters, and creatives working on
-                      fiction, scripts, or poetry.
-                    </li>
-                    <li className="mb-3">
-                      Offers tools like Describe, Expand, Rewrite, and
-                      Brainstorm to craft compelling narratives.
-                    </li>
-                    <li className="mb-3">
-                      Story Engine guides you through building entire plots,
-                      scenes, and character arcs.
-                    </li>
-                    <li className="mb-3">
-                      Web-based and easy to use—no installation needed, just
-                      start writing with AI support.
-                    </li>
-                  </ul>
+                <ul
+                  className="text-start"
+                  style={{
+                    listStyleType: "disc",
+                    paddingLeft: "1.5rem",
+                    fontSize: "1rem",
+                    lineHeight: "1.5",
+                  }}
+                >
+                  <li className="mb-3">
+                    Spinbot AI is perfect for quickly generating unique
+                    rewritten content.
+                  </li>
+                  <li className="mb-3">
+                    Ideal for bloggers, marketers, and SEO specialists who need
+                    fresh content fast.
+                  </li>
+                  <li className="mb-3">
+                    Offers automated text spinning with natural language
+                    processing to maintain meaning.
+                  </li>
+                  <li className="mb-3">
+                    Simplifies content creation without needing manual rewriting
+                    or deep writing skills.
+                  </li>
+                  <li className="mb-3">
+                    Spinbot is a web-based, easy-to-use platform accessible from
+                    any device.
+                  </li>
+                </ul>
 
-                  <div className="text-center mt-4">
-                    <Button variant="primary" size="sm">
-                      Start Writing Now
-                    </Button>
-                  </div>
+                <div className="text-center mt-4">
+                  <Button variant="primary" size="sm">
+                    Start Creating Now
+                  </Button>
                 </div>
               </div>
             </div>
@@ -453,24 +473,22 @@ const Sudowriter = () => {
                 <h5 className="text-success text-start mb-4">✅ Pros</h5>
                 <ul className="ps-3" style={{ listStyleType: "disc" }}>
                   <li className="mb-2">
-                    Excellent for overcoming writer’s block with AI-generated
-                    suggestions.
+                    Quickly generates unique, rewritten content from existing
+                    text.
                   </li>
                   <li className="mb-2">
-                    Intuitive features like “Describe,” “Rewrite,” and “Expand”
-                    speed up creative writing.
+                    Easy to use with minimal input required — just paste and
+                    spin.
                   </li>
                   <li className="mb-2">
-                    Story Engine helps structure full-length novels,
-                    screenplays, and stories.
+                    Helps avoid duplicate content issues for SEO and marketing.
                   </li>
                   <li className="mb-2">
-                    Tailored tools for fiction writers across genres like
-                    fantasy, horror, romance, and more.
+                    Supports multiple languages (primarily English) for broader
+                    reach.
                   </li>
                   <li className="mb-2">
-                    Web-based and easy to use on any modern browser—no setup
-                    required.
+                    Web-based, accessible on any device without installation.
                   </li>
                 </ul>
               </div>
@@ -489,17 +507,18 @@ const Sudowriter = () => {
                 <h5 className="text-warning text-start mb-4">⚠ Cons</h5>
                 <ul className="ps-3" style={{ listStyleType: "disc" }}>
                   <li className="mb-2">
-                    Not ideal for factual or highly technical writing tasks.
+                    May alter meaning if heavily spun; manual review is
+                    recommended.
                   </li>
                   <li className="mb-2">
-                    No built-in grammar checker like Grammarly.
+                    Limited to primarily English language support.
                   </li>
                   <li className="mb-2">
-                    Lacks real-time collaboration or multi-user document
-                    sharing.
+                    No built-in plagiarism detection or grammar correction.
                   </li>
                   <li className="mb-2">
-                    Requires a subscription after the limited free trial.
+                    Free version includes usage limits and ads; premium unlocks
+                    full features.
                   </li>
                 </ul>
               </div>
@@ -523,24 +542,24 @@ const Sudowriter = () => {
               >
                 <ul className="ps-3" style={{ listStyleType: "disc" }}>
                   <li className="mb-2">
-                    Jasper AI – Advanced AI writing platform ideal for
-                    marketing, long-form content, and brand copy.
+                    QuillBot – Popular AI paraphrasing tool offering advanced
+                    rewriting and grammar suggestions.
                   </li>
                   <li className="mb-2">
-                    Copy.ai – Easy-to-use tool for generating social media
-                    captions, blog intros, and product descriptions.
+                    WordAi – AI-powered content spinner focused on producing
+                    human-readable, unique articles.
                   </li>
                   <li className="mb-2">
-                    Writesonic – SEO-focused AI writer with blog generation,
-                    ads, and chatbot capabilities.
+                    Paraphraser.io – User-friendly paraphrasing platform
+                    supporting multiple languages and tones.
                   </li>
                   <li className="mb-2">
-                    NovelAI – Popular for generating fiction and anime-style
-                    storytelling with customizable controls.
+                    Spin Rewriter – Offers bulk spinning and ENL technology for
+                    natural language rewriting.
                   </li>
                   <li className="mb-2">
-                    Scalenut – Combines AI writing with SEO planning, topic
-                    clusters, and keyword research tools.
+                    Chimp Rewriter – Desktop software with advanced AI rewriting
+                    and SEO optimization features.
                   </li>
                 </ul>
               </div>
@@ -578,31 +597,30 @@ const Sudowriter = () => {
               className="col-md-6  col-12 order-2 order-md-1 "
             >
               <p className="text-primary">Write better, faster</p>
-              <h1>Sudowrite AI</h1>
+              <h1>Spinbot AI</h1>
               <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
               <p>
-                Sudowrite is an AI-powered writing tool designed to assist
-                writers in creative writing, novel creation, content generation,
-                and much more. As an AI writing assistant, Sudowrite helps
-                authors overcome writer's block, brainstorm ideas, generate plot
-                twists, and refine their stories. Whether you're a novelist,
-                screenwriter, or content creator, Sudowrite provides tools that
-                make writing faster and more efficient.
+                Spinbot is an online text and article rewriter tool that allows
+                users to quickly generate unique content by rephrasing existing
+                text. Whether you're a content creator, marketer, or student,
+                Spinbot offers a fast and reliable way to create fresh content
+                while maintaining readability and coherence. In this review,
+                we'll cover Spinbot's features, pricing, pros and cons, and its
+                use in various industries like SEO, blogging, eCommerce, and
+                digital marketing.
               </p>
               <p>
-                Sudowrite is a creative AI tool specifically tailored for
-                fiction and non-fiction writers. By utilizing artificial
-                intelligence, Sudowrite helps generate content ideas, develop
-                plot structures, and improve your overall writing quality.
-                Sudowrite assists in brainstorming ideas, generating dialogue,
-                and even providing creative prompts, making it an ideal tool for
-                writers who struggle with creativity or are simply looking to
-                streamline their writing process.
+                Spinbot is an AI-powered content spinner and article rewriter
+                tool. It helps users by generating unique variations of any
+                given text. This tool is especially helpful for bloggers,
+                content marketers, and SEO professionals who need to produce
+                multiple versions of content without manually rewording every
+                sentence.
               </p>
 
               <div className="mb-3">
                 <a
-                  href="https://sudowrite.com/"
+                  href="https://spinbot.com/"
                   rel="noopener noreferrer"
                   className="btn btn-primary me-2"
                 >
@@ -641,7 +659,7 @@ const Sudowriter = () => {
                   marginBottom: "1rem",
                 }}
               >
-                How to Use Sudowrite AI?
+                How to Use Spinbot AI?
               </h2>
 
               <div className="row g-4">
@@ -657,25 +675,23 @@ const Sudowriter = () => {
                       height: "100%",
                     }}
                   >
-                    <style>
-                      {`
-          .step1 {
-            position: absolute;
-            bottom: 10px;
-            right: 15px;
-            font-size: 4rem;
-            font-weight: bold;
-            color: #7b61ff;
-            opacity: 0.6;
-          }
-        `}
-                    </style>
+                    <style>{`
+        .step1 {
+          position: absolute;
+          bottom: 10px;
+          right: 15px;
+          font-size: 4rem;
+          font-weight: bold;
+          color: #7b61ff;
+          opacity: 0.6;
+        }
+      `}</style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Start a New Document
+                      Paste Your Text
                     </h5>
                     <p style={{ color: "#fff", margin: 0 }}>
-                      Log in to Sudowrite and begin by creating a new document
-                      for your story, novel, or scene.
+                      Start by pasting the text you want to rewrite or spin into
+                      the Spinbot editor.
                     </p>
                     <div className="step1">1</div>
                   </div>
@@ -693,25 +709,23 @@ const Sudowriter = () => {
                       height: "100%",
                     }}
                   >
-                    <style>
-                      {`
-          .step2 {
-            position: absolute;
-            bottom: 10px;
-            right: 15px;
-            font-size: 4rem;
-            font-weight: bold;
-            color: #7b61ff;
-            opacity: 0.6;
-          }
-        `}
-                    </style>
+                    <style>{`
+        .step2 {
+          position: absolute;
+          bottom: 10px;
+          right: 15px;
+          font-size: 4rem;
+          font-weight: bold;
+          color: #7b61ff;
+          opacity: 0.6;
+        }
+      `}</style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Use AI Writing Tools
+                      Customize Settings
                     </h5>
                     <p style={{ color: "#fff", margin: 0 }}>
-                      Choose from features like “Describe,” “Rewrite,” or
-                      “Expand” to craft better scenes and characters.
+                      Adjust the spinning settings if needed, such as the level
+                      of rewriting or avoiding certain words.
                     </p>
                     <div className="step2">2</div>
                   </div>
@@ -729,25 +743,23 @@ const Sudowriter = () => {
                       height: "100%",
                     }}
                   >
-                    <style>
-                      {`
-          .step3 {
-            position: absolute;
-            bottom: 10px;
-            right: 15px;
-            font-size: 4rem;
-            font-weight: bold;
-            color: #7b61ff;
-            opacity: 0.6;
-          }
-        `}
-                    </style>
+                    <style>{`
+        .step3 {
+          position: absolute;
+          bottom: 10px;
+          right: 15px;
+          font-size: 4rem;
+          font-weight: bold;
+          color: #7b61ff;
+          opacity: 0.6;
+        }
+      `}</style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Build and Export
+                      Generate & Copy
                     </h5>
                     <p style={{ color: "#fff", margin: 0 }}>
-                      Use the “Story Engine” to outline full plots, then export
-                      your manuscript when you're ready to publish or review.
+                      Click the "Spin" button to generate your rewritten text,
+                      then copy or export it as needed.
                     </p>
                     <div className="step3">3</div>
                   </div>
@@ -787,4 +799,4 @@ const Sudowriter = () => {
   );
 };
 
-export default Sudowriter;
+export default Spingboat;

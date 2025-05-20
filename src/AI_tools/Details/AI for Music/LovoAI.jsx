@@ -630,12 +630,12 @@ const LovoAi = () => {
           href="/Aitools"
           className="d-inline-block text-white text-decoration-none  mt-3 ml-3 py-1 px-2 ms-5 border rounded-sm"
         >
-          <i className="bi bi-arrow-left me-2"></i>Back  {" "}
+          <i className="bi bi-arrow-left me-2"></i>Back{" "}
         </a>
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className="row d-flex align-items-center justify-content-between mb-1">
+          <div className="row d-flex align-items-center justify-content-between mb-1 lovaaiflex">
             {/* Left side (Text Section) */}
             <div
               style={{ flex: 1, paddingRight: "30px" }}
@@ -838,21 +838,6 @@ const LovoAi = () => {
 
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
-
-          {/* <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with LovoAi?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div> */}
         </div>
       </div>
     </>

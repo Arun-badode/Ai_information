@@ -368,8 +368,7 @@ const CategoriesNavbar = () => {
                     <Link to="/CopyAI">Copy AI</Link>
                     <Link to="/Writtersonic">Writesonic Ai</Link>
                     <Link to="/Ryter">Rytr AI</Link>
-                    <Link to="/"></Link>
-                    <Link to="/"></Link>
+                    <Link to="/Hyperwriter">Hyperwriter AI</Link>
                   </div>
                   {/* Design Tools Column */}
                   <div
@@ -379,11 +378,11 @@ const CategoriesNavbar = () => {
                     <h6>
                       Design Tools <SiAntdesign size={20} />
                     </h6>
-                    <Link to="/"></Link>
-                    <Link to="/"></Link>
-                    <Link to="/"></Link>
-                    <Link to="/"></Link>
-                    <Link to="/"></Link>
+                    <Link to="/Sudowriter">Sudowriter AI</Link>
+                    <Link to="/Wordtune">Wordtune AI</Link>
+                    <Link to="/Spingboat">Spingbot SI</Link>
+                    <Link to="/Contentbot">Contentboat AI</Link>
+                    <Link to="/Longshot">Longshot AI</Link>
                   </div>
                 </div>
               </div>
@@ -874,7 +873,7 @@ const CategoriesNavbar = () => {
                     <Link to="/OracleAI"> Oracle AI</Link>
                     <Link to="/PowerBI ">Power BI AI </Link>
                     <Link to="/SASAI">SAS AI</Link>
-                    <Link to="/EvernoteA">EvernoteAI</Link>
+                    <Link to="/EvernoteAI">EvernoteAI</Link>
                     <Link to="/RescueAI">RescueAI</Link>
                   </div>
                 </div>

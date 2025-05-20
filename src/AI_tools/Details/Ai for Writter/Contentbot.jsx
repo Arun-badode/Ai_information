@@ -74,7 +74,7 @@ const styles = {
     borderColor: "#2ea043",
   },
 };
-const Sudowriter = () => {
+const Contentbot = () => {
   const [activeTab, setActiveTab] = useState("features"); // Set the default active tab as 'features'
   const [showAllFaqs, setShowAllFaqs] = useState(false);
 
@@ -91,29 +91,29 @@ const Sudowriter = () => {
             </div>
             {[
               {
-                icon: "🧠",
-                title: "Story Engine:",
-                desc: "Build entire plots, arcs, and scenes with AI-driven structure support.",
+                icon: "🤖",
+                title: "AI Content Generation:",
+                desc: "Create blog posts, articles, and marketing copy quickly with AI-powered writing tools.",
               },
               {
-                icon: "✨",
+                icon: "✍️",
                 title: "Rewrite & Expand:",
-                desc: "Improve or lengthen your content instantly while keeping your original tone.",
+                desc: "Enhance existing content by rewriting or expanding text while maintaining your voice.",
               },
               {
-                icon: "🖋️",
-                title: "Describe Feature:",
-                desc: "Turn simple words into rich, vivid descriptions perfect for novels and scripts.",
+                icon: "⚙️",
+                title: "Automated Content Ideas:",
+                desc: "Generate headlines, blog topics, and social media captions automatically.",
               },
               {
-                icon: "🎭",
-                title: "Character Brainstorming:",
-                desc: "Generate unique character traits, motivations, and dialogue suggestions.",
+                icon: "📈",
+                title: "SEO Optimization:",
+                desc: "Get SEO-friendly content suggestions and keyword integration to boost your search rankings.",
               },
               {
-                icon: "📚",
-                title: "Genre-Specific Suggestions:",
-                desc: "Get recommendations tailored to sci-fi, romance, horror, fantasy, and more.",
+                icon: "🔗",
+                title: "Multichannel Support:",
+                desc: "Create content tailored for blogs, emails, ads, social media, and more from one platform.",
               },
             ].map((feature, index) => (
               <div className="col-md-4" key={index}>
@@ -262,64 +262,64 @@ const Sudowriter = () => {
             <div className="accordion" id="faqAccordion">
               {[
                 {
-                  q: "What is Sudowrite?",
-                  a: "Sudowrite is an AI-powered creative writing assistant designed to help authors, screenwriters, and storytellers generate and refine content.",
+                  q: "What is ContentBot AI?",
+                  a: "ContentBot AI is an AI-powered content generation platform designed to help marketers, bloggers, and businesses quickly create high-quality written content.",
                 },
                 {
-                  q: "How does Sudowrite work?",
-                  a: "It uses advanced GPT-based AI to assist with idea generation, rewriting, expanding, describing, and brainstorming creative content.",
+                  q: "How does ContentBot AI work?",
+                  a: "It uses advanced AI models to generate, rewrite, and optimize content for various marketing and creative needs.",
                 },
                 {
-                  q: "Is Sudowrite good for fiction writers?",
-                  a: "Yes, it's particularly effective for fiction writers, offering tools for plot, dialogue, world-building, and character development.",
+                  q: "Is ContentBot AI good for marketing professionals?",
+                  a: "Yes, it offers specialized templates and tools for blog posts, ad copy, email marketing, and social media content.",
                 },
                 {
-                  q: "Can Sudowrite help with writer's block?",
-                  a: "Absolutely. Sudowrite's tools like 'Describe', 'Expand', and 'Brainstorm' are made to spark ideas and keep your writing flowing.",
+                  q: "Can ContentBot AI help with writer's block?",
+                  a: "Absolutely. It provides content ideas, rewrites, and expansions to keep your writing fresh and flowing.",
                 },
                 {
-                  q: "Is Sudowrite beginner-friendly?",
-                  a: "Yes, it has a user-friendly interface and guided features, making it easy for both beginners and experienced authors to use.",
+                  q: "Is ContentBot AI beginner-friendly?",
+                  a: "Yes, with an intuitive interface and ready-to-use templates, it’s suitable for beginners and experienced users alike.",
                 },
                 {
-                  q: "What makes Sudowrite different from ChatGPT?",
-                  a: "Sudowrite is focused specifically on long-form creative writing, offering unique features like Story Engine, Describe, and Rewrite tools.",
+                  q: "What makes ContentBot AI different from other AI writers?",
+                  a: "ContentBot AI combines multiple content generation methods with SEO-focused tools and automation features.",
                 },
                 {
-                  q: "What platforms support Sudowrite?",
-                  a: "Sudowrite is a web-based app, so you can access it on any device with an internet connection and browser.",
+                  q: "What platforms support ContentBot AI?",
+                  a: "ContentBot AI is web-based and accessible from any modern browser on desktop or mobile devices.",
                 },
                 {
-                  q: "Can I use Sudowrite for non-fiction or essays?",
-                  a: "Yes, although it’s optimized for storytelling, many writers also use it to refine non-fiction writing and essays.",
+                  q: "Can I use ContentBot AI for non-marketing content?",
+                  a: "Yes, ContentBot AI can also generate general blog articles, product descriptions, and other types of written content.",
                 },
                 {
-                  q: "Does Sudowrite support multiple genres?",
-                  a: "Yes, it works across genres like fantasy, sci-fi, romance, horror, and more with tailored writing suggestions.",
+                  q: "Does ContentBot AI support multiple languages?",
+                  a: "Yes, it supports several languages, helping you reach a global audience.",
                 },
                 {
-                  q: "Can I collaborate with others on Sudowrite?",
-                  a: "Currently, it doesn't offer real-time collaboration but you can share and export your writing easily.",
+                  q: "Can I collaborate with others using ContentBot AI?",
+                  a: "Currently, it doesn’t have built-in collaboration, but you can share and export your content easily.",
                 },
                 {
-                  q: "Does Sudowrite store my writing securely?",
-                  a: "Yes, your drafts are saved in your account securely, and you can export or delete them anytime.",
+                  q: "Does ContentBot AI save my data securely?",
+                  a: "Yes, all your generated content is securely saved in your account with privacy protections.",
                 },
                 {
-                  q: "Is there a free version of Sudowrite?",
-                  a: "Sudowrite offers a free trial with limited credits. Full access requires a subscription plan.",
+                  q: "Is there a free version of ContentBot AI?",
+                  a: "ContentBot AI offers a free trial with limited usage; full access requires a paid subscription.",
                 },
                 {
-                  q: "Can I export my stories from Sudowrite?",
-                  a: "Yes, you can export your content in plain text or document formats from the interface.",
+                  q: "Can I export content from ContentBot AI?",
+                  a: "Yes, content can be exported in various formats or copied directly from the platform.",
                 },
                 {
-                  q: "Does Sudowrite offer a plagiarism checker?",
-                  a: "No, Sudowrite does not include a built-in plagiarism checker.",
+                  q: "Does ContentBot AI include plagiarism checking?",
+                  a: "No, plagiarism checking is not currently integrated.",
                 },
                 {
-                  q: "Can Sudowrite help with editing grammar?",
-                  a: "While it's not a grammar checker like Grammarly, it can improve flow, tone, and clarity of your sentences.",
+                  q: "Can ContentBot AI help improve grammar and tone?",
+                  a: "Yes, it provides suggestions to enhance clarity, tone, and style but is not a full grammar checker.",
                 },
               ]
 
@@ -389,7 +389,7 @@ const Sudowriter = () => {
               <div className="col-12">
                 <div className="custom-card text-light p-5 text-center">
                   <h3 className="fw-bold mb-4 text-start text-primary">
-                    Why Use Sudowrite AI?
+                    Why Use ContentBot AI?
                   </h3>
 
                   <ul
@@ -402,24 +402,24 @@ const Sudowriter = () => {
                     }}
                   >
                     <li className="mb-3">
-                      Sudowrite helps writers overcome writer’s block and
-                      enhance creativity using AI.
+                      ContentBot AI helps marketers, bloggers, and businesses
+                      create high-quality content quickly with AI assistance.
                     </li>
                     <li className="mb-3">
-                      Ideal for authors, screenwriters, and creatives working on
-                      fiction, scripts, or poetry.
+                      Ideal for producing blog posts, ad copy, email campaigns,
+                      and social media content.
                     </li>
                     <li className="mb-3">
-                      Offers tools like Describe, Expand, Rewrite, and
-                      Brainstorm to craft compelling narratives.
+                      Offers features like content generation, rewriting, idea
+                      suggestions, and SEO optimization.
                     </li>
                     <li className="mb-3">
-                      Story Engine guides you through building entire plots,
-                      scenes, and character arcs.
+                      Provides automation tools to streamline your content
+                      marketing workflow.
                     </li>
                     <li className="mb-3">
-                      Web-based and easy to use—no installation needed, just
-                      start writing with AI support.
+                      Web-based and user-friendly—no complex setup required;
+                      start creating content instantly.
                     </li>
                   </ul>
 
@@ -453,24 +453,24 @@ const Sudowriter = () => {
                 <h5 className="text-success text-start mb-4">✅ Pros</h5>
                 <ul className="ps-3" style={{ listStyleType: "disc" }}>
                   <li className="mb-2">
-                    Excellent for overcoming writer’s block with AI-generated
-                    suggestions.
+                    Generates high-quality marketing and blog content quickly
+                    with AI.
                   </li>
                   <li className="mb-2">
-                    Intuitive features like “Describe,” “Rewrite,” and “Expand”
-                    speed up creative writing.
+                    Supports multiple content types including ads, emails,
+                    social media, and blogs.
                   </li>
                   <li className="mb-2">
-                    Story Engine helps structure full-length novels,
-                    screenplays, and stories.
+                    SEO-focused tools help improve search rankings and keyword
+                    integration.
                   </li>
                   <li className="mb-2">
-                    Tailored tools for fiction writers across genres like
-                    fantasy, horror, romance, and more.
+                    User-friendly interface suitable for marketers, bloggers,
+                    and small businesses.
                   </li>
                   <li className="mb-2">
-                    Web-based and easy to use on any modern browser—no setup
-                    required.
+                    Cloud-based platform accessible from any modern browser
+                    without setup.
                   </li>
                 </ul>
               </div>
@@ -489,17 +489,17 @@ const Sudowriter = () => {
                 <h5 className="text-warning text-start mb-4">⚠ Cons</h5>
                 <ul className="ps-3" style={{ listStyleType: "disc" }}>
                   <li className="mb-2">
-                    Not ideal for factual or highly technical writing tasks.
+                    Limited support for highly technical or academic writing.
                   </li>
                   <li className="mb-2">
-                    No built-in grammar checker like Grammarly.
+                    No integrated plagiarism checker included.
                   </li>
                   <li className="mb-2">
-                    Lacks real-time collaboration or multi-user document
-                    sharing.
+                    Collaboration features are minimal or absent.
                   </li>
                   <li className="mb-2">
-                    Requires a subscription after the limited free trial.
+                    Full features require a paid subscription after the free
+                    trial.
                   </li>
                 </ul>
               </div>
@@ -523,24 +523,24 @@ const Sudowriter = () => {
               >
                 <ul className="ps-3" style={{ listStyleType: "disc" }}>
                   <li className="mb-2">
-                    Jasper AI – Advanced AI writing platform ideal for
-                    marketing, long-form content, and brand copy.
+                    Jasper AI – Powerful AI platform for marketing copy, blog
+                    writing, and brand storytelling.
                   </li>
                   <li className="mb-2">
-                    Copy.ai – Easy-to-use tool for generating social media
-                    captions, blog intros, and product descriptions.
+                    Copy.ai – User-friendly AI tool for creating social media
+                    posts, ads, and product descriptions.
                   </li>
                   <li className="mb-2">
-                    Writesonic – SEO-focused AI writer with blog generation,
-                    ads, and chatbot capabilities.
+                    Writesonic – AI content generator with strong SEO
+                    capabilities and chatbot integrations.
                   </li>
                   <li className="mb-2">
-                    NovelAI – Popular for generating fiction and anime-style
-                    storytelling with customizable controls.
+                    Peppertype.ai – AI writing assistant designed for marketing
+                    teams and content creators.
                   </li>
                   <li className="mb-2">
-                    Scalenut – Combines AI writing with SEO planning, topic
-                    clusters, and keyword research tools.
+                    Scalenut – Integrated AI writing and SEO platform with
+                    keyword research and content planning.
                   </li>
                 </ul>
               </div>
@@ -578,26 +578,19 @@ const Sudowriter = () => {
               className="col-md-6  col-12 order-2 order-md-1 "
             >
               <p className="text-primary">Write better, faster</p>
-              <h1>Sudowrite AI</h1>
+              <h1>ContentBot AI</h1>
               <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
               <p>
-                Sudowrite is an AI-powered writing tool designed to assist
-                writers in creative writing, novel creation, content generation,
-                and much more. As an AI writing assistant, Sudowrite helps
-                authors overcome writer's block, brainstorm ideas, generate plot
-                twists, and refine their stories. Whether you're a novelist,
-                screenwriter, or content creator, Sudowrite provides tools that
-                make writing faster and more efficient.
-              </p>
-              <p>
-                Sudowrite is a creative AI tool specifically tailored for
-                fiction and non-fiction writers. By utilizing artificial
-                intelligence, Sudowrite helps generate content ideas, develop
-                plot structures, and improve your overall writing quality.
-                Sudowrite assists in brainstorming ideas, generating dialogue,
-                and even providing creative prompts, making it an ideal tool for
-                writers who struggle with creativity or are simply looking to
-                streamline their writing process.
+                ContentBot AI is a robust writing tool designed to simplify
+                content creation using artificial intelligence. The platform
+                harnesses cutting-edge AI technology to help businesses,
+                bloggers, marketers, and content creators produce high-quality,
+                SEO-optimized content at scale. Whether you're creating blog
+                posts, social media content, newsletters, or product
+                descriptions, ContentBot offers a range of tools tailored to
+                different writing needs. It’s designed to assist in generating
+                creative and engaging text that resonates with the target
+                audience while ensuring relevance and quality.
               </p>
 
               <div className="mb-3">
@@ -641,7 +634,7 @@ const Sudowriter = () => {
                   marginBottom: "1rem",
                 }}
               >
-                How to Use Sudowrite AI?
+                How to Use ContentBot AI?
               </h2>
 
               <div className="row g-4">
@@ -657,25 +650,23 @@ const Sudowriter = () => {
                       height: "100%",
                     }}
                   >
-                    <style>
-                      {`
-          .step1 {
-            position: absolute;
-            bottom: 10px;
-            right: 15px;
-            font-size: 4rem;
-            font-weight: bold;
-            color: #7b61ff;
-            opacity: 0.6;
-          }
-        `}
-                    </style>
+                    <style>{`
+        .step1 {
+          position: absolute;
+          bottom: 10px;
+          right: 15px;
+          font-size: 4rem;
+          font-weight: bold;
+          color: #7b61ff;
+          opacity: 0.6;
+        }
+      `}</style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Start a New Document
+                      Sign Up and Choose Template
                     </h5>
                     <p style={{ color: "#fff", margin: 0 }}>
-                      Log in to Sudowrite and begin by creating a new document
-                      for your story, novel, or scene.
+                      Create an account on ContentBot AI and select a content
+                      template such as blog post, ad copy, or email.
                     </p>
                     <div className="step1">1</div>
                   </div>
@@ -693,25 +684,23 @@ const Sudowriter = () => {
                       height: "100%",
                     }}
                   >
-                    <style>
-                      {`
-          .step2 {
-            position: absolute;
-            bottom: 10px;
-            right: 15px;
-            font-size: 4rem;
-            font-weight: bold;
-            color: #7b61ff;
-            opacity: 0.6;
-          }
-        `}
-                    </style>
+                    <style>{`
+        .step2 {
+          position: absolute;
+          bottom: 10px;
+          right: 15px;
+          font-size: 4rem;
+          font-weight: bold;
+          color: #7b61ff;
+          opacity: 0.6;
+        }
+      `}</style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Use AI Writing Tools
+                      Input Keywords & Customize
                     </h5>
                     <p style={{ color: "#fff", margin: 0 }}>
-                      Choose from features like “Describe,” “Rewrite,” or
-                      “Expand” to craft better scenes and characters.
+                      Enter relevant keywords, select tone and language options,
+                      and customize the content prompt.
                     </p>
                     <div className="step2">2</div>
                   </div>
@@ -729,25 +718,23 @@ const Sudowriter = () => {
                       height: "100%",
                     }}
                   >
-                    <style>
-                      {`
-          .step3 {
-            position: absolute;
-            bottom: 10px;
-            right: 15px;
-            font-size: 4rem;
-            font-weight: bold;
-            color: #7b61ff;
-            opacity: 0.6;
-          }
-        `}
-                    </style>
+                    <style>{`
+        .step3 {
+          position: absolute;
+          bottom: 10px;
+          right: 15px;
+          font-size: 4rem;
+          font-weight: bold;
+          color: #7b61ff;
+          opacity: 0.6;
+        }
+      `}</style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Build and Export
+                      Generate & Review Content
                     </h5>
                     <p style={{ color: "#fff", margin: 0 }}>
-                      Use the “Story Engine” to outline full plots, then export
-                      your manuscript when you're ready to publish or review.
+                      Click the generate button to create your content, then
+                      review, edit, and export as needed.
                     </p>
                     <div className="step3">3</div>
                   </div>
@@ -787,4 +774,4 @@ const Sudowriter = () => {
   );
 };
 
-export default Sudowriter;
+export default Contentbot;

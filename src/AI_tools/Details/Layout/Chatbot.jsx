@@ -264,7 +264,7 @@ const handleRecord = async () => {
                 onClick={handleRecord}
                 title={isRecording ? "Stop Recording" : "Record Audio"}
               >
-                <i className="fas fa-microphone"></i> {isRecording ? "Stop" : "Record"}
+                <i className="fas fa-microphone"></i> {isRecording ? "Stop" : ""}
               </button>
               <input
                 type="text"

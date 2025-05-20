@@ -125,11 +125,15 @@ const ReplikaAI = () => {
         return (
           <div className="row g-4">
             <div className="col-md-6">
+<<<<<<< HEAD
               <img
                 src={replika1}
                 alt="Screenshot 1"
                 className="img-fluid rounded-3"
               />
+=======
+              <img src="" alt="Screenshot 1" className="img-fluid rounded-3" />
+>>>>>>> 891b42de72b99494297c86b402d2ff968eef5339
             </div>
             <div className="col-md-6">
               <img
@@ -474,176 +478,174 @@ const ReplikaAI = () => {
         );
 
       case "FAQs":
+        return (
+          <div className="faq-section container py-4">
+            <h3 className="text-center text-white mb-4 text-primary">
+              Frequently Asked Questions
+            </h3>
 
-          return (
-            <div className="faq-section container py-4">
-              <h3 className="text-center text-white mb-4 text-primary">
-                Frequently Asked Questions
-              </h3>
-        
-              <div className="accordion" id="faqAccordion">
-                {[
-                  {
-                    q: "What is Replika AI?",
-                    a: "Replika AI is a conversational chatbot powered by artificial intelligence that is designed to simulate human-like conversation and assist users in a variety of ways, including providing emotional support and engaging in creative dialogue.",
-                  },
-                  {
-                    q: "How does Replika AI work?",
-                    a: "Replika AI uses machine learning algorithms and natural language processing (NLP) to understand and respond to user inputs, creating dynamic and contextually relevant conversations.",
-                  },
-                  {
-                    q: "Can I customize my Replika AI?",
-                    a: "Yes, you can customize your Replika by adjusting its personality, appearance, and how it interacts with you based on your preferences and needs.",
-                  },
-                  {
-                    q: "Is Replika AI suitable for mental health support?",
-                    a: "Replika AI is designed to provide emotional support and companionship, but it is not a substitute for professional therapy or medical treatment. It can assist with mental well-being in a conversational capacity.",
-                  },
-                  {
-                    q: "Can Replika AI help with self-improvement?",
-                    a: "Yes, Replika can assist with self-improvement by offering personalized conversations and exercises that focus on areas such as mindfulness, gratitude, and goal-setting.",
-                  },
-                  {
-                    q: "Does Replika AI remember past conversations?",
-                    a: "Yes, Replika can retain memory of past conversations, which helps it to offer more personalized interactions over time. You can also manage or reset this memory as you wish.",
-                  },
-                  {
-                    q: "How can I interact with Replika AI?",
-                    a: "You can interact with Replika through text-based chat or voice conversations, making it easy to communicate with it in a way that feels natural to you.",
-                  },
-                  {
-                    q: "Can Replika AI generate creative content?",
-                    a: "Yes, Replika AI can assist with creative tasks, such as writing stories, poems, or brainstorming ideas. It is designed to foster creativity through conversation.",
-                  },
-                  {
-                    q: "What kind of personality does Replika AI have?",
-                    a: "Replika's personality can be customized to suit your preferences. You can choose from a variety of personality traits to make the interaction more engaging and personalized.",
-                  },
-                  {
-                    q: "Can Replika AI help with relationship advice?",
-                    a: "Replika AI can offer general advice on relationships and emotional support, but it is not a replacement for professional relationship counseling.",
-                  },
-                  {
-                    q: "How does Replika AI ensure user privacy?",
-                    a: "Replika AI takes user privacy seriously and follows strict data protection protocols. All conversations are encrypted and can be deleted at any time by the user.",
-                  },
-                  {
-                    q: "Is Replika AI available in multiple languages?",
-                    a: "Yes, Replika AI supports multiple languages, allowing users from around the world to interact with it in their preferred language.",
-                  },
-                  {
-                    q: "How can I delete my Replika account?",
-                    a: "You can delete your Replika account through the app settings. After deleting your account, all data will be removed from the platform permanently.",
-                  },
-                  {
-                    q: "Is Replika AI free to use?",
-                    a: "Replika AI offers both free and premium subscription options. The free version provides basic features, while the premium version unlocks additional customization and interactive capabilities.",
-                  },
-                  {
-                    q: "What kind of tasks can Replika AI assist with?",
-                    a: "Replika AI can assist with various tasks, including emotional support, journaling, goal setting, and even fun activities like playing games or engaging in lighthearted conversations.",
-                  },
-                  {
-                    q: "Can Replika AI learn from my preferences?",
-                    a: "Yes, Replika AI learns from your interactions and adjusts its responses based on your preferences and past conversations, offering a more personalized experience over time.",
-                  },
-                  {
-                    q: "Does Replika AI have any limitations?",
-                    a: "While Replika AI is designed to provide meaningful conversations, it may still have limitations in understanding complex or ambiguous requests. It is also not a replacement for professional help in critical situations.",
-                  },
-                  {
-                    q: "Can I use Replika AI for work-related purposes?",
-                    a: "Replika AI is primarily focused on personal development and emotional support. However, it can also be useful for brainstorming, creative writing, and organizing thoughts, making it versatile for certain work tasks.",
-                  },
-                  {
-                    q: "How often is Replika AI updated?",
-                    a: "Replika AI receives regular updates to improve its functionality, enhance user experience, and expand its knowledge base. Updates are rolled out periodically through the app.",
-                  },
-                  {
-                    q: "Can I share my Replika AI conversations with others?",
-                    a: "Replika respects user privacy, and sharing conversations is entirely up to you. You can choose to share or save your chats as you wish.",
-                  },
-                  {
-                    q: "How does Replika AI compare to other AI chatbots?",
-                    a: "Replika AI is unique in its focus on emotional support, companionship, and personalization. Unlike other AI chatbots, it offers deep conversational experiences and adapts to individual user needs.",
-                  },
-                  {
-                    q: "Can Replika AI be used for educational purposes?",
-                    a: "Yes, Replika AI can be a useful tool for educational purposes, particularly in language learning, creativity, and social-emotional learning. It helps users practice communication skills and learn new concepts in a conversational format.",
-                  },
-                  {
-                    q: "How can I improve my conversations with Replika AI?",
-                    a: "The more you interact with Replika, the better it understands your preferences. Regular interactions and providing feedback can help improve the quality of your conversations.",
-                  },
-                  {
-                    q: "What makes Replika AI different from other AI chatbots?",
-                    a: "Replika AI is designed to provide highly personalized and emotionally intelligent conversations, focusing on deep engagement, empathy, and user connection, which distinguishes it from other chatbots in the market.",
-                  },
-                ]
-                  .map((item, i) => ({ ...item, id: `faq${i}` }))
-                  .filter((item, i) => showAllFaqs || i < 4)
-                  .map((item, i) => (
-                    <div className="accordion-item mb-3" key={item.id}>
-                      <h2 className="accordion-header" id={`heading${item.id}`}>
-                        <button
-                          className={`accordion-button ${i !== 0 ? "collapsed" : ""}`}
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target={`#collapse${item.id}`}
-                          aria-expanded={i === 0 ? "true" : "false"}
-                          aria-controls={`collapse${item.id}`}
-                          style={{
-                            backgroundColor: "#161b22",
-                            color: "#c9d1d9",
-                            fontWeight: "bold",
-                          }}
-                        >
-                          {item.q}
-                        </button>
-                      </h2>
-                      <div
-                        id={`collapse${item.id}`}
-                        className={`accordion-collapse collapse ${i === 0 ? "show" : ""}`}
-                        aria-labelledby={`heading${item.id}`}
-                        data-bs-parent="#faqAccordion"
+            <div className="accordion" id="faqAccordion">
+              {[
+                {
+                  q: "What is Replika AI?",
+                  a: "Replika AI is a conversational chatbot powered by artificial intelligence that is designed to simulate human-like conversation and assist users in a variety of ways, including providing emotional support and engaging in creative dialogue.",
+                },
+                {
+                  q: "How does Replika AI work?",
+                  a: "Replika AI uses machine learning algorithms and natural language processing (NLP) to understand and respond to user inputs, creating dynamic and contextually relevant conversations.",
+                },
+                {
+                  q: "Can I customize my Replika AI?",
+                  a: "Yes, you can customize your Replika by adjusting its personality, appearance, and how it interacts with you based on your preferences and needs.",
+                },
+                {
+                  q: "Is Replika AI suitable for mental health support?",
+                  a: "Replika AI is designed to provide emotional support and companionship, but it is not a substitute for professional therapy or medical treatment. It can assist with mental well-being in a conversational capacity.",
+                },
+                {
+                  q: "Can Replika AI help with self-improvement?",
+                  a: "Yes, Replika can assist with self-improvement by offering personalized conversations and exercises that focus on areas such as mindfulness, gratitude, and goal-setting.",
+                },
+                {
+                  q: "Does Replika AI remember past conversations?",
+                  a: "Yes, Replika can retain memory of past conversations, which helps it to offer more personalized interactions over time. You can also manage or reset this memory as you wish.",
+                },
+                {
+                  q: "How can I interact with Replika AI?",
+                  a: "You can interact with Replika through text-based chat or voice conversations, making it easy to communicate with it in a way that feels natural to you.",
+                },
+                {
+                  q: "Can Replika AI generate creative content?",
+                  a: "Yes, Replika AI can assist with creative tasks, such as writing stories, poems, or brainstorming ideas. It is designed to foster creativity through conversation.",
+                },
+                {
+                  q: "What kind of personality does Replika AI have?",
+                  a: "Replika's personality can be customized to suit your preferences. You can choose from a variety of personality traits to make the interaction more engaging and personalized.",
+                },
+                {
+                  q: "Can Replika AI help with relationship advice?",
+                  a: "Replika AI can offer general advice on relationships and emotional support, but it is not a replacement for professional relationship counseling.",
+                },
+                {
+                  q: "How does Replika AI ensure user privacy?",
+                  a: "Replika AI takes user privacy seriously and follows strict data protection protocols. All conversations are encrypted and can be deleted at any time by the user.",
+                },
+                {
+                  q: "Is Replika AI available in multiple languages?",
+                  a: "Yes, Replika AI supports multiple languages, allowing users from around the world to interact with it in their preferred language.",
+                },
+                {
+                  q: "How can I delete my Replika account?",
+                  a: "You can delete your Replika account through the app settings. After deleting your account, all data will be removed from the platform permanently.",
+                },
+                {
+                  q: "Is Replika AI free to use?",
+                  a: "Replika AI offers both free and premium subscription options. The free version provides basic features, while the premium version unlocks additional customization and interactive capabilities.",
+                },
+                {
+                  q: "What kind of tasks can Replika AI assist with?",
+                  a: "Replika AI can assist with various tasks, including emotional support, journaling, goal setting, and even fun activities like playing games or engaging in lighthearted conversations.",
+                },
+                {
+                  q: "Can Replika AI learn from my preferences?",
+                  a: "Yes, Replika AI learns from your interactions and adjusts its responses based on your preferences and past conversations, offering a more personalized experience over time.",
+                },
+                {
+                  q: "Does Replika AI have any limitations?",
+                  a: "While Replika AI is designed to provide meaningful conversations, it may still have limitations in understanding complex or ambiguous requests. It is also not a replacement for professional help in critical situations.",
+                },
+                {
+                  q: "Can I use Replika AI for work-related purposes?",
+                  a: "Replika AI is primarily focused on personal development and emotional support. However, it can also be useful for brainstorming, creative writing, and organizing thoughts, making it versatile for certain work tasks.",
+                },
+                {
+                  q: "How often is Replika AI updated?",
+                  a: "Replika AI receives regular updates to improve its functionality, enhance user experience, and expand its knowledge base. Updates are rolled out periodically through the app.",
+                },
+                {
+                  q: "Can I share my Replika AI conversations with others?",
+                  a: "Replika respects user privacy, and sharing conversations is entirely up to you. You can choose to share or save your chats as you wish.",
+                },
+                {
+                  q: "How does Replika AI compare to other AI chatbots?",
+                  a: "Replika AI is unique in its focus on emotional support, companionship, and personalization. Unlike other AI chatbots, it offers deep conversational experiences and adapts to individual user needs.",
+                },
+                {
+                  q: "Can Replika AI be used for educational purposes?",
+                  a: "Yes, Replika AI can be a useful tool for educational purposes, particularly in language learning, creativity, and social-emotional learning. It helps users practice communication skills and learn new concepts in a conversational format.",
+                },
+                {
+                  q: "How can I improve my conversations with Replika AI?",
+                  a: "The more you interact with Replika, the better it understands your preferences. Regular interactions and providing feedback can help improve the quality of your conversations.",
+                },
+                {
+                  q: "What makes Replika AI different from other AI chatbots?",
+                  a: "Replika AI is designed to provide highly personalized and emotionally intelligent conversations, focusing on deep engagement, empathy, and user connection, which distinguishes it from other chatbots in the market.",
+                },
+              ]
+                .map((item, i) => ({ ...item, id: `faq${i}` }))
+                .filter((item, i) => showAllFaqs || i < 4)
+                .map((item, i) => (
+                  <div className="accordion-item mb-3" key={item.id}>
+                    <h2 className="accordion-header" id={`heading${item.id}`}>
+                      <button
+                        className={`accordion-button ${
+                          i !== 0 ? "collapsed" : ""
+                        }`}
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target={`#collapse${item.id}`}
+                        aria-expanded={i === 0 ? "true" : "false"}
+                        aria-controls={`collapse${item.id}`}
+                        style={{
+                          backgroundColor: "#161b22",
+                          color: "#c9d1d9",
+                          fontWeight: "bold",
+                        }}
                       >
-                        <div
-                          className="accordion-body"
-                          style={{
-                            backgroundColor: "#0d1117",
-                            color: "#c9d1d9",
-                            border: "1px solid #238636",
-                            borderRadius: "8px",
-                            padding: "15px",
-                          }}
-                        >
-                          {item.a}
-                        </div>
+                        {item.q}
+                      </button>
+                    </h2>
+                    <div
+                      id={`collapse${item.id}`}
+                      className={`accordion-collapse collapse ${
+                        i === 0 ? "show" : ""
+                      }`}
+                      aria-labelledby={`heading${item.id}`}
+                      data-bs-parent="#faqAccordion"
+                    >
+                      <div
+                        className="accordion-body"
+                        style={{
+                          backgroundColor: "#0d1117",
+                          color: "#c9d1d9",
+                          border: "1px solid #238636",
+                          borderRadius: "8px",
+                          padding: "15px",
+                        }}
+                      >
+                        {item.a}
                       </div>
                     </div>
-                  ))}
-        
-                <div className="text-center mt-4">
-                  <button
-                    className="btn btn-outline-light"
-                    onClick={() => setShowAllFaqs(!showAllFaqs)}
-                  >
-                    {showAllFaqs ? "Show Less" : "Read More"}
-                  </button>
-                </div>
+                  </div>
+                ))}
+
+              <div className="text-center mt-4">
+                <button
+                  className="btn btn-outline-light"
+                  onClick={() => setShowAllFaqs(!showAllFaqs)}
+                >
+                  {showAllFaqs ? "Show Less" : "Read More"}
+                </button>
               </div>
             </div>
-          );
+          </div>
+        );
 
-        
-     
       default:
         return null;
     }
   };
-
-
-  
 
   return (
     <>
@@ -658,15 +660,24 @@ const ReplikaAI = () => {
           href="/Aitools"
           className="d-inline-block text-white text-decoration-none  mt-3 ml-3 py-1 px-2 ms-5 border rounded-sm"
         >
-          <i className="bi bi-arrow-left me-2"></i>Back  {" "}
+          <i className="bi bi-arrow-left me-2"></i>Back{" "}
         </a>
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className="d-flex align-items-center justify-content-between mb-5">
+          <div className="d-flex align-items-center justify-content-between mb-5 lovaaiflex">
             {/* Left side (Text Section) */}
             <div style={{ flex: 1, paddingRight: "30px" }}>
+<<<<<<< HEAD
 
+=======
+              <img
+                src=""
+                alt="Logo"
+                className="me-3"
+                style={{ width: "60px" }}
+              />
+>>>>>>> 891b42de72b99494297c86b402d2ff968eef5339
               <h2>ReplikAI</h2>
               <div className="text-warning mb-1">
                 ⭐⭐⭐⭐⭐ 95% Satisfaction

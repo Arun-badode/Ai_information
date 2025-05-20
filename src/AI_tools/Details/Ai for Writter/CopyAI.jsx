@@ -560,7 +560,7 @@ const CopyAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
+          <div className=" row d-flex align-items-center justify-content-between mb-1 lovaaiflex">
             {/* Left side (Text Section) */}
             <div
               style={{ flex: 1, paddingRight: "30px" }}

@@ -4,6 +4,8 @@ import "../../ImageMindAI.css";
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 
 import evernote from "../../../../public/assets/Img/AI for Business/2.png";
+import evernote12 from '../../../../public/assets/Img/AI for Business/evernote12.png'
+import evernote22 from '../../../../public/assets/Img/AI for Business/evernote22.png'
 // review section data
 const reviews = [
   {
@@ -130,14 +132,15 @@ const EvernoteAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
-                alt=""
+                src={evernote12}
+                alt="screenshot"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
+                src={evernote22}
+                alt="screenshot22"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

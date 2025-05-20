@@ -561,22 +561,16 @@ const AivoAI = () => {
   return (
     <>
       <div className="bg-dark">
-        {/* <Link
-          to="/Aitools"
-          className="d-inline-block text-white text-decoration-none ml-3 py-1"
-        >
-          <i className="bi bi-arrow-left me-2"></i>Back to Directory
-        </Link> */}
         <a
           href="/Aitools"
           className="d-inline-block text-white text-decoration-none  mt-3 ml-3 py-1 px-2 ms-5 border rounded-sm"
         >
-          <i className="bi bi-arrow-left me-2"></i>Back  {" "}
+          <i className="bi bi-arrow-left me-2"></i>Back{" "}
         </a>
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className="d-flex align-items-center justify-content-between mb-5">
+          <div className="d-flex align-items-center justify-content-between mb-5 lovaaiflex">
             {/* Left side (Text Section) */}
             <div className="" style={{ flex: 1, paddingRight: "30px" }}>
               <img
@@ -599,162 +593,158 @@ const AivoAI = () => {
                 sales, and ensures seamless support through its AI-driven
                 capabilities.
               </p>
-                        <div className="mb-3">
-                          <a
-                            href= " https://aivo.ai"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="btn btn-primary me-2"
-                          >
-                            Explore Tool
-                          </a>
-                        </div>
-                      </div>
-          
-                      {/* Right side (Image Section) */}
-                      <div
-                        style={{
-                          textAlign: "center",
-                          Width: "100%",
-                          height: "250px",
-                        }}
-                        className="col-md-6 col-12 order-md-2 order-1 text-center mb-3 mb-md-0  "
-                      >
-                        <img
-                          src={aivo}
-                          alt="aivo"
-                          style={{
-                            Width: "100%",
-                            height: "auto",
-                            maxHeight: "300px",
-                            objectFit: "contain",
-                          }}
-                        />
-                      </div>
-                    </div>
-                  </div>
+              <div className="mb-3">
+                <a
+                  href=" https://aivo.ai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary me-2"
+                >
+                  Explore Tool
+                </a>
+              </div>
+            </div>
 
-
-<section style={{ backgroundColor: "", padding: "3rem 0" }}>
-            <div className="container text-center">
-              <p className="text-primary">
-                Create Conversations with Aivo AI in 3 Easy Steps
-              </p>
-              <h2
+            {/* Right side (Image Section) */}
+            <div
+              style={{
+                textAlign: "center",
+                Width: "100%",
+                height: "250px",
+              }}
+              className="col-md-6 col-12 order-md-2 order-1 text-center mb-3 mb-md-0  "
+            >
+              <img
+                src={aivo}
+                alt="aivo"
                 style={{
-                  fontWeight: "semibold",
-                  color: "#fff",
-                  marginBottom: "1rem",
+                  Width: "100%",
+                  height: "auto",
+                  maxHeight: "300px",
+                  objectFit: "contain",
                 }}
-              >
-                How does Aivo AI work?
-              </h2>
+              />
+            </div>
+          </div>
+        </div>
 
-              <div className="row g-4">
-                {/* Step 1 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#1034A6",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Start a Conversation with Aivo AI
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Aivo AI allows you to engage in real-time conversations.
-                      Simply input a query, and it provides contextual responses
-                      instantly.
-                    </p>
-                    <div className="step1">1</div>
-                  </div>
+        <section style={{ backgroundColor: "", padding: "3rem 0" }}>
+          <div className="container text-center">
+            <p className="text-primary">
+              Create Conversations with Aivo AI in 3 Easy Steps
+            </p>
+            <h2
+              style={{
+                fontWeight: "semibold",
+                color: "#fff",
+                marginBottom: "1rem",
+              }}
+            >
+              How does Aivo AI work?
+            </h2>
+
+            <div className="row g-4">
+              {/* Step 1 */}
+              <div className="col-md-4">
+                <div
+                  style={{
+                    position: "relative",
+                    backgroundColor: "#1034A6",
+                    borderRadius: "12px",
+                    boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+                    padding: "2rem",
+                    height: "100%",
+                  }}
+                >
+                  <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+                    Start a Conversation with Aivo AI
+                  </h5>
+                  <p style={{ color: "#fff", margin: 0 }}>
+                    Aivo AI allows you to engage in real-time conversations.
+                    Simply input a query, and it provides contextual responses
+                    instantly.
+                  </p>
+                  <div className="step1">1</div>
                 </div>
+              </div>
 
-                {/* Step 2 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#1034A6",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Aivo AI Processes Your Query
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Aivo AI analyzes your input and provides intelligent,
-                      real-time responses, allowing for efficient customer
-                      support and engagement.
-                    </p>
-                    <div className="step2">2</div>
-                  </div>
+              {/* Step 2 */}
+              <div className="col-md-4">
+                <div
+                  style={{
+                    position: "relative",
+                    backgroundColor: "#1034A6",
+                    borderRadius: "12px",
+                    boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+                    padding: "2rem",
+                    height: "100%",
+                  }}
+                >
+                  <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+                    Aivo AI Processes Your Query
+                  </h5>
+                  <p style={{ color: "#fff", margin: 0 }}>
+                    Aivo AI analyzes your input and provides intelligent,
+                    real-time responses, allowing for efficient customer support
+                    and engagement.
+                  </p>
+                  <div className="step2">2</div>
                 </div>
+              </div>
 
-                {/* Step 3 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#1034A6",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Automate Sales and Support with Aivo AI
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Automate your sales processes, customer support, and
-                      improve customer engagement with Aivo AI’s advanced
-                      conversational abilities.
-                    </p>
-                    <div className="step3">3</div>
-                  </div>
+              {/* Step 3 */}
+              <div className="col-md-4">
+                <div
+                  style={{
+                    position: "relative",
+                    backgroundColor: "#1034A6",
+                    borderRadius: "12px",
+                    boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+                    padding: "2rem",
+                    height: "100%",
+                  }}
+                >
+                  <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+                    Automate Sales and Support with Aivo AI
+                  </h5>
+                  <p style={{ color: "#fff", margin: 0 }}>
+                    Automate your sales processes, customer support, and improve
+                    customer engagement with Aivo AI’s advanced conversational
+                    abilities.
+                  </p>
+                  <div className="step3">3</div>
                 </div>
               </div>
             </div>
-          </section>
+          </div>
+        </section>
 
-          {/* Tab Navigation */}
-          <ul className="nav nav-tabs custom-tabs mb-4 py-3 px-10">
-            {[
-              "features",
-              "screenshots",
-              "reviews",
-              "FAQs",
-              // "technical",
-              "why-we-use",
-              "pros & Cons",
-              "alternative",
-            ].map((tab) => (
-              <li className="nav-item mb-2 px-12" key={tab}>
-                <button
-                  className={`nav-link ${activeTab === tab ? "active" : ""}`}
-                  onClick={() => setActiveTab(tab)}
-                >
-                  {tab.charAt(0).toUpperCase() + tab.slice(1)}
-                </button>
-              </li>
-            ))}
-          </ul>
+        {/* Tab Navigation */}
+        <ul className="nav nav-tabs custom-tabs mb-4 py-3 px-10">
+          {[
+            "features",
+            "screenshots",
+            "reviews",
+            "FAQs",
+            // "technical",
+            "why-we-use",
+            "pros & Cons",
+            "alternative",
+          ].map((tab) => (
+            <li className="nav-item mb-2 px-12" key={tab}>
+              <button
+                className={`nav-link ${activeTab === tab ? "active" : ""}`}
+                onClick={() => setActiveTab(tab)}
+              >
+                {tab.charAt(0).toUpperCase() + tab.slice(1)}
+              </button>
+            </li>
+          ))}
+        </ul>
 
-          {/* Tab Content */}
-          <div className="tab-content-area">{renderTabContent()}</div>
-
-        
-        </div>
-   
+        {/* Tab Content */}
+        <div className="tab-content-area">{renderTabContent()}</div>
+      </div>
     </>
   );
 };

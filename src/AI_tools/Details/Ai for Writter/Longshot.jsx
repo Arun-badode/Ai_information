@@ -74,7 +74,7 @@ const styles = {
     borderColor: "#2ea043",
   },
 };
-const Sudowriter = () => {
+const Longshot = () => {
   const [activeTab, setActiveTab] = useState("features"); // Set the default active tab as 'features'
   const [showAllFaqs, setShowAllFaqs] = useState(false);
 
@@ -91,29 +91,29 @@ const Sudowriter = () => {
             </div>
             {[
               {
-                icon: "🧠",
-                title: "Story Engine:",
-                desc: "Build entire plots, arcs, and scenes with AI-driven structure support.",
+                icon: "🤖",
+                title: "AI Content Generation:",
+                desc: "Generate detailed blog posts, articles, and marketing copy quickly using advanced AI.",
               },
               {
-                icon: "✨",
+                icon: "✍️",
                 title: "Rewrite & Expand:",
-                desc: "Improve or lengthen your content instantly while keeping your original tone.",
+                desc: "Improve existing content by rewriting sentences or expanding paragraphs while keeping your unique voice.",
               },
               {
-                icon: "🖋️",
-                title: "Describe Feature:",
-                desc: "Turn simple words into rich, vivid descriptions perfect for novels and scripts.",
+                icon: "💡",
+                title: "Automated Content Ideas:",
+                desc: "Automatically generate compelling headlines, blog topics, and social media captions to keep content fresh.",
               },
               {
-                icon: "🎭",
-                title: "Character Brainstorming:",
-                desc: "Generate unique character traits, motivations, and dialogue suggestions.",
+                icon: "📈",
+                title: "SEO Optimization:",
+                desc: "Boost your search rankings with keyword-rich content suggestions and SEO analysis tools.",
               },
               {
-                icon: "📚",
-                title: "Genre-Specific Suggestions:",
-                desc: "Get recommendations tailored to sci-fi, romance, horror, fantasy, and more.",
+                icon: "🌐",
+                title: "Multichannel Support:",
+                desc: "Create optimized content for blogs, emails, ads, social media, and more all within a single platform.",
               },
             ].map((feature, index) => (
               <div className="col-md-4" key={index}>
@@ -262,64 +262,148 @@ const Sudowriter = () => {
             <div className="accordion" id="faqAccordion">
               {[
                 {
-                  q: "What is Sudowrite?",
-                  a: "Sudowrite is an AI-powered creative writing assistant designed to help authors, screenwriters, and storytellers generate and refine content.",
+                  q: "What is LongShot AI?",
+                  a: "LongShot AI is an advanced AI-powered content creation platform designed to help marketers, bloggers, and businesses generate in-depth, SEO-optimized long-form content quickly.",
                 },
                 {
-                  q: "How does Sudowrite work?",
-                  a: "It uses advanced GPT-based AI to assist with idea generation, rewriting, expanding, describing, and brainstorming creative content.",
+                  q: "How does LongShot AI work?",
+                  a: "It leverages advanced AI models to research topics, generate, rewrite, and optimize content tailored for marketing and creative purposes.",
                 },
                 {
-                  q: "Is Sudowrite good for fiction writers?",
-                  a: "Yes, it's particularly effective for fiction writers, offering tools for plot, dialogue, world-building, and character development.",
+                  q: "Is LongShot AI good for marketing professionals?",
+                  a: "Yes, LongShot AI provides specialized templates and tools for blog posts, product descriptions, ad copy, and social media content.",
                 },
                 {
-                  q: "Can Sudowrite help with writer's block?",
-                  a: "Absolutely. Sudowrite's tools like 'Describe', 'Expand', and 'Brainstorm' are made to spark ideas and keep your writing flowing.",
+                  q: "Can LongShot AI help with writer's block?",
+                  a: "Absolutely. LongShot AI offers content ideas, expansions, and rewriting features to keep your writing flowing smoothly.",
                 },
                 {
-                  q: "Is Sudowrite beginner-friendly?",
-                  a: "Yes, it has a user-friendly interface and guided features, making it easy for both beginners and experienced authors to use.",
+                  q: "Is LongShot AI beginner-friendly?",
+                  a: "Yes, with an easy-to-use interface and prebuilt templates, it suits both beginners and experienced content creators.",
                 },
                 {
-                  q: "What makes Sudowrite different from ChatGPT?",
-                  a: "Sudowrite is focused specifically on long-form creative writing, offering unique features like Story Engine, Describe, and Rewrite tools.",
+                  q: "What makes LongShot AI different from other AI writers?",
+                  a: "LongShot AI integrates deep research, fact-checking, and SEO optimization within its AI-driven content generation process.",
                 },
                 {
-                  q: "What platforms support Sudowrite?",
-                  a: "Sudowrite is a web-based app, so you can access it on any device with an internet connection and browser.",
+                  q: "What platforms support LongShot AI?",
+                  a: "LongShot AI is a web-based platform accessible via any modern browser on desktop or mobile devices.",
                 },
                 {
-                  q: "Can I use Sudowrite for non-fiction or essays?",
-                  a: "Yes, although it’s optimized for storytelling, many writers also use it to refine non-fiction writing and essays.",
+                  q: "Can I use LongShot AI for non-marketing content?",
+                  a: "Yes, it can generate a wide range of content including educational articles, how-to guides, and product descriptions.",
                 },
                 {
-                  q: "Does Sudowrite support multiple genres?",
-                  a: "Yes, it works across genres like fantasy, sci-fi, romance, horror, and more with tailored writing suggestions.",
+                  q: "Does LongShot AI support multiple languages?",
+                  a: "Yes, LongShot AI supports several languages to help you create content for global audiences.",
                 },
                 {
-                  q: "Can I collaborate with others on Sudowrite?",
-                  a: "Currently, it doesn't offer real-time collaboration but you can share and export your writing easily.",
+                  q: "Can I collaborate with others using LongShot AI?",
+                  a: "Currently, LongShot AI does not offer built-in collaboration features, but content can be shared and exported easily.",
                 },
                 {
-                  q: "Does Sudowrite store my writing securely?",
-                  a: "Yes, your drafts are saved in your account securely, and you can export or delete them anytime.",
+                  q: "Does LongShot AI save my data securely?",
+                  a: "Yes, your generated content and data are securely stored with privacy and security measures.",
                 },
                 {
-                  q: "Is there a free version of Sudowrite?",
-                  a: "Sudowrite offers a free trial with limited credits. Full access requires a subscription plan.",
+                  q: "Is there a free version of LongShot AI?",
+                  a: "LongShot AI offers a free trial with limited features; full access requires a paid subscription.",
                 },
                 {
-                  q: "Can I export my stories from Sudowrite?",
-                  a: "Yes, you can export your content in plain text or document formats from the interface.",
+                  q: "Can I export content from LongShot AI?",
+                  a: "Yes, content can be exported in various formats or copied directly from the platform’s editor.",
                 },
                 {
-                  q: "Does Sudowrite offer a plagiarism checker?",
-                  a: "No, Sudowrite does not include a built-in plagiarism checker.",
+                  q: "Does LongShot AI include plagiarism checking?",
+                  a: "No, plagiarism detection is not currently integrated within LongShot AI.",
                 },
                 {
-                  q: "Can Sudowrite help with editing grammar?",
-                  a: "While it's not a grammar checker like Grammarly, it can improve flow, tone, and clarity of your sentences.",
+                  q: "Can LongShot AI help improve grammar and tone?",
+                  a: "Yes, it provides suggestions for clarity, tone, and style improvements but is not a dedicated grammar checker.",
+                },
+                {
+                  q: "What types of content can LongShot AI create?",
+                  a: "It can generate blog posts, product descriptions, social media content, ad copy, emails, and more.",
+                },
+                {
+                  q: "How does LongShot AI handle SEO?",
+                  a: "LongShot AI includes keyword research tools and SEO-friendly content suggestions to improve your search rankings.",
+                },
+                {
+                  q: "Can LongShot AI help with content research?",
+                  a: "Yes, it performs topic research to generate fact-based content outlines and ideas.",
+                },
+                {
+                  q: "Is LongShot AI suitable for eCommerce content?",
+                  a: "Absolutely, it specializes in creating product descriptions and marketing copy optimized for eCommerce platforms.",
+                },
+                {
+                  q: "How customizable is the content generated by LongShot AI?",
+                  a: "You can adjust tone, length, keywords, and style to tailor the content to your brand voice.",
+                },
+                {
+                  q: "Does LongShot AI have templates?",
+                  a: "Yes, it offers a wide range of templates for different content types and industries.",
+                },
+                {
+                  q: "Can LongShot AI generate content for social media?",
+                  a: "Yes, it can create captions, posts, and ads optimized for platforms like Facebook, Instagram, and LinkedIn.",
+                },
+                {
+                  q: "Is LongShot AI suitable for long-form content?",
+                  a: "Yes, it’s specifically designed to assist with creating detailed and well-researched long-form articles.",
+                },
+                {
+                  q: "Does LongShot AI provide content editing tools?",
+                  a: "Yes, it allows you to rewrite, expand, and polish your content within the platform.",
+                },
+                {
+                  q: "How fast is content generated by LongShot AI?",
+                  a: "Content is generated in seconds to minutes depending on length and complexity.",
+                },
+                {
+                  q: "Can I use LongShot AI on mobile devices?",
+                  a: "Yes, the web platform is fully responsive and accessible on mobile browsers.",
+                },
+                {
+                  q: "Does LongShot AI support multiple user accounts?",
+                  a: "Team accounts and multi-user management features are available on higher-tier plans.",
+                },
+                {
+                  q: "Can LongShot AI be integrated with other tools?",
+                  a: "It offers API access and integrations with popular platforms to streamline your workflow.",
+                },
+                {
+                  q: "Is training required to use LongShot AI?",
+                  a: "No formal training is needed; the interface is user-friendly and intuitive.",
+                },
+                {
+                  q: "Can I schedule content creation in LongShot AI?",
+                  a: "Scheduling features are not built-in but can be managed through integrations with publishing tools.",
+                },
+                {
+                  q: "How accurate is the AI-generated content?",
+                  a: "LongShot AI strives for accuracy by combining AI generation with research and fact-checking.",
+                },
+                {
+                  q: "Does LongShot AI support multiple content languages?",
+                  a: "Yes, it supports several languages to help you create localized content.",
+                },
+                {
+                  q: "Can I get customer support for LongShot AI?",
+                  a: "Yes, customer support is available via email, chat, and help documentation.",
+                },
+                {
+                  q: "What payment plans does LongShot AI offer?",
+                  a: "Multiple subscription tiers are available, including monthly and annual plans tailored to your usage.",
+                },
+                {
+                  q: "Is LongShot AI suitable for beginners?",
+                  a: "Yes, its intuitive interface and templates make it easy for beginners to start creating content.",
+                },
+                {
+                  q: "Can I cancel my LongShot AI subscription anytime?",
+                  a: "Yes, subscriptions can be canceled anytime without penalty.",
                 },
               ]
 
@@ -389,7 +473,7 @@ const Sudowriter = () => {
               <div className="col-12">
                 <div className="custom-card text-light p-5 text-center">
                   <h3 className="fw-bold mb-4 text-start text-primary">
-                    Why Use Sudowrite AI?
+                    Why Use LongShot AI?
                   </h3>
 
                   <ul
@@ -402,24 +486,24 @@ const Sudowriter = () => {
                     }}
                   >
                     <li className="mb-3">
-                      Sudowrite helps writers overcome writer’s block and
-                      enhance creativity using AI.
+                      LongShot AI helps marketers, bloggers, and businesses
+                      generate detailed, SEO-optimized content quickly using AI.
                     </li>
                     <li className="mb-3">
-                      Ideal for authors, screenwriters, and creatives working on
-                      fiction, scripts, or poetry.
+                      Ideal for creating long-form blog posts, product
+                      descriptions, email newsletters, and social media content.
                     </li>
                     <li className="mb-3">
-                      Offers tools like Describe, Expand, Rewrite, and
-                      Brainstorm to craft compelling narratives.
+                      Includes powerful features like content generation,
+                      rewriting, idea generation, and SEO analysis.
                     </li>
                     <li className="mb-3">
-                      Story Engine guides you through building entire plots,
-                      scenes, and character arcs.
+                      Offers automation tools to simplify and speed up your
+                      content marketing process.
                     </li>
                     <li className="mb-3">
-                      Web-based and easy to use—no installation needed, just
-                      start writing with AI support.
+                      Web-based, intuitive platform requiring no complex
+                      setup—start creating high-quality content instantly.
                     </li>
                   </ul>
 
@@ -453,24 +537,24 @@ const Sudowriter = () => {
                 <h5 className="text-success text-start mb-4">✅ Pros</h5>
                 <ul className="ps-3" style={{ listStyleType: "disc" }}>
                   <li className="mb-2">
-                    Excellent for overcoming writer’s block with AI-generated
-                    suggestions.
+                    Generates detailed, SEO-optimized long-form content quickly
+                    using AI.
                   </li>
                   <li className="mb-2">
-                    Intuitive features like “Describe,” “Rewrite,” and “Expand”
-                    speed up creative writing.
+                    Supports diverse content formats including blogs, ads,
+                    emails, and social media.
                   </li>
                   <li className="mb-2">
-                    Story Engine helps structure full-length novels,
-                    screenplays, and stories.
+                    Built-in SEO tools help improve keyword targeting and search
+                    engine rankings.
                   </li>
                   <li className="mb-2">
-                    Tailored tools for fiction writers across genres like
-                    fantasy, horror, romance, and more.
+                    User-friendly interface designed for marketers, bloggers,
+                    and content teams.
                   </li>
                   <li className="mb-2">
-                    Web-based and easy to use on any modern browser—no setup
-                    required.
+                    Cloud-based platform accessible from any device without
+                    installation.
                   </li>
                 </ul>
               </div>
@@ -489,17 +573,18 @@ const Sudowriter = () => {
                 <h5 className="text-warning text-start mb-4">⚠ Cons</h5>
                 <ul className="ps-3" style={{ listStyleType: "disc" }}>
                   <li className="mb-2">
-                    Not ideal for factual or highly technical writing tasks.
+                    Limited capabilities for technical, scientific, or academic
+                    writing.
                   </li>
                   <li className="mb-2">
-                    No built-in grammar checker like Grammarly.
+                    Does not include a built-in plagiarism checker.
                   </li>
                   <li className="mb-2">
-                    Lacks real-time collaboration or multi-user document
-                    sharing.
+                    Collaboration tools are limited or not available.
                   </li>
                   <li className="mb-2">
-                    Requires a subscription after the limited free trial.
+                    Full access and advanced features require a paid
+                    subscription after trial.
                   </li>
                 </ul>
               </div>
@@ -523,24 +608,24 @@ const Sudowriter = () => {
               >
                 <ul className="ps-3" style={{ listStyleType: "disc" }}>
                   <li className="mb-2">
-                    Jasper AI – Advanced AI writing platform ideal for
-                    marketing, long-form content, and brand copy.
+                    Jasper AI – Advanced AI writing platform for marketing,
+                    long-form content, and brand storytelling.
                   </li>
                   <li className="mb-2">
-                    Copy.ai – Easy-to-use tool for generating social media
-                    captions, blog intros, and product descriptions.
+                    Copy.ai – Easy-to-use AI tool for social media content, ads,
+                    and product descriptions.
                   </li>
                   <li className="mb-2">
-                    Writesonic – SEO-focused AI writer with blog generation,
-                    ads, and chatbot capabilities.
+                    Writesonic – AI content generator with SEO focus and chatbot
+                    capabilities.
                   </li>
                   <li className="mb-2">
-                    NovelAI – Popular for generating fiction and anime-style
-                    storytelling with customizable controls.
+                    Peppertype.ai – AI writing assistant built for marketing
+                    teams and content creators.
                   </li>
                   <li className="mb-2">
-                    Scalenut – Combines AI writing with SEO planning, topic
-                    clusters, and keyword research tools.
+                    Scalenut – AI writing platform integrated with SEO tools for
+                    keyword research and content planning.
                   </li>
                 </ul>
               </div>
@@ -578,31 +663,22 @@ const Sudowriter = () => {
               className="col-md-6  col-12 order-2 order-md-1 "
             >
               <p className="text-primary">Write better, faster</p>
-              <h1>Sudowrite AI</h1>
+              <h1>LongShot AI</h1>
               <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
               <p>
-                Sudowrite is an AI-powered writing tool designed to assist
-                writers in creative writing, novel creation, content generation,
-                and much more. As an AI writing assistant, Sudowrite helps
-                authors overcome writer's block, brainstorm ideas, generate plot
-                twists, and refine their stories. Whether you're a novelist,
-                screenwriter, or content creator, Sudowrite provides tools that
-                make writing faster and more efficient.
-              </p>
-              <p>
-                Sudowrite is a creative AI tool specifically tailored for
-                fiction and non-fiction writers. By utilizing artificial
-                intelligence, Sudowrite helps generate content ideas, develop
-                plot structures, and improve your overall writing quality.
-                Sudowrite assists in brainstorming ideas, generating dialogue,
-                and even providing creative prompts, making it an ideal tool for
-                writers who struggle with creativity or are simply looking to
-                streamline their writing process.
+                LongShot AI is an AI-powered content generation tool designed to
+                help users create high-quality content efficiently. It leverages
+                artificial intelligence to assist with writing blog posts,
+                social media content, emails, landing pages, product
+                descriptions, SEO-optimized content, and more. LongShot AI is
+                particularly useful for marketers, businesses, content creators,
+                and freelance writers looking to enhance their writing processes
+                with AI.
               </p>
 
               <div className="mb-3">
                 <a
-                  href="https://sudowrite.com/"
+                  href="https://www.longshot.ai/"
                   rel="noopener noreferrer"
                   className="btn btn-primary me-2"
                 >
@@ -641,7 +717,7 @@ const Sudowriter = () => {
                   marginBottom: "1rem",
                 }}
               >
-                How to Use Sudowrite AI?
+                How to Use LongShot AI?
               </h2>
 
               <div className="row g-4">
@@ -657,25 +733,23 @@ const Sudowriter = () => {
                       height: "100%",
                     }}
                   >
-                    <style>
-                      {`
-          .step1 {
-            position: absolute;
-            bottom: 10px;
-            right: 15px;
-            font-size: 4rem;
-            font-weight: bold;
-            color: #7b61ff;
-            opacity: 0.6;
-          }
-        `}
-                    </style>
+                    <style>{`
+        .step1 {
+          position: absolute;
+          bottom: 10px;
+          right: 15px;
+          font-size: 4rem;
+          font-weight: bold;
+          color: #7b61ff;
+          opacity: 0.6;
+        }
+      `}</style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Start a New Document
+                      Sign Up and Select Content Type
                     </h5>
                     <p style={{ color: "#fff", margin: 0 }}>
-                      Log in to Sudowrite and begin by creating a new document
-                      for your story, novel, or scene.
+                      Create your LongShot AI account and pick a content type
+                      like blog post, article, or marketing copy.
                     </p>
                     <div className="step1">1</div>
                   </div>
@@ -693,25 +767,23 @@ const Sudowriter = () => {
                       height: "100%",
                     }}
                   >
-                    <style>
-                      {`
-          .step2 {
-            position: absolute;
-            bottom: 10px;
-            right: 15px;
-            font-size: 4rem;
-            font-weight: bold;
-            color: #7b61ff;
-            opacity: 0.6;
-          }
-        `}
-                    </style>
+                    <style>{`
+        .step2 {
+          position: absolute;
+          bottom: 10px;
+          right: 15px;
+          font-size: 4rem;
+          font-weight: bold;
+          color: #7b61ff;
+          opacity: 0.6;
+        }
+      `}</style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Use AI Writing Tools
+                      Add Keywords & Customize Settings
                     </h5>
                     <p style={{ color: "#fff", margin: 0 }}>
-                      Choose from features like “Describe,” “Rewrite,” or
-                      “Expand” to craft better scenes and characters.
+                      Input your keywords, set tone, language, and SEO
+                      preferences to tailor the output.
                     </p>
                     <div className="step2">2</div>
                   </div>
@@ -729,25 +801,23 @@ const Sudowriter = () => {
                       height: "100%",
                     }}
                   >
-                    <style>
-                      {`
-          .step3 {
-            position: absolute;
-            bottom: 10px;
-            right: 15px;
-            font-size: 4rem;
-            font-weight: bold;
-            color: #7b61ff;
-            opacity: 0.6;
-          }
-        `}
-                    </style>
+                    <style>{`
+        .step3 {
+          position: absolute;
+          bottom: 10px;
+          right: 15px;
+          font-size: 4rem;
+          font-weight: bold;
+          color: #7b61ff;
+          opacity: 0.6;
+        }
+      `}</style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Build and Export
+                      Generate, Edit & Export
                     </h5>
                     <p style={{ color: "#fff", margin: 0 }}>
-                      Use the “Story Engine” to outline full plots, then export
-                      your manuscript when you're ready to publish or review.
+                      Generate your content, then review, edit, and export in
+                      your preferred format.
                     </p>
                     <div className="step3">3</div>
                   </div>
@@ -787,4 +857,4 @@ const Sudowriter = () => {
   );
 };
 
-export default Sudowriter;
+export default Longshot;
