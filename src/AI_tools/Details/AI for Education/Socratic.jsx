@@ -5,7 +5,9 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
-
+import img2 from "../../../../public/assets/Img/AI for Education/img-2.png"
+import img from "../../../../public/assets/Img/AI for Education/image_1.png"
+import b from "../../../../public/assets/Img/AI for Education/AI For Education/2.png"
 // review section data
 const reviews = [
   {
@@ -130,14 +132,14 @@ const Socratic = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src={deatilimage}
+                src={img2}
                 alt="Screenshot 1"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={deatilimage}
+                src={img}
                 alt="Screenshot 2"
                 className="img-fluid rounded-3"
               />
@@ -621,15 +623,9 @@ const Socratic = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className="d-flex align-items-center justify-content-between mb-5">
+          <div className="d-flex flex-column flex-md-row align-items-center justify-content-between mb-5">
             {/* Left side (Text Section) */}
-            <div style={{ flex: 1, paddingRight: "30px" }}>
-              <img
-                src={Logo}
-                alt="Logo"
-                className="me-3"
-                style={{ width: "60px" }}
-              />
+            <div style={{ flex: 1, paddingRight: "30px" }} className="order-2 order-md-1">
               <h2>Socratic by Google: The Ultimate AI-powered Learning Tool</h2>
               <div className="text-warning mb-1">
                 ⭐⭐⭐⭐⭐ 95% Satisfaction
@@ -645,12 +641,22 @@ const Socratic = () => {
                 capabilities, Socratic aims to enhance learning, making it more
                 accessible and interactive for students of all ages.
               </p>
+                 <div className="mb-3">
+                <a
+                  href="https://coderbyte.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary me-2"
+                >
+                  Explore Tool
+                </a>
+              </div>
             </div>
 
             {/* Right side (Image Section) */}
             <div style={{ flex: 1, textAlign: "center" }}>
               <img
-                src="https://images.indianexpress.com/2023/05/ChatGPT-Code-Interpreter.jpg"
+                src={b}
                 className="img-fluid rounded-3"
                 style={{ maxWidth: "80%", height: "auto" }}
               />
@@ -682,21 +688,6 @@ const Socratic = () => {
 
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
-
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with ChatGPTI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
         </div>
       </div>
     </>

@@ -5,6 +5,10 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
+import algoliaai from "../../../../public/assets/Img/AI for E-commerce/algolia.png"
+import algoliass1 from "../../../../public/assets/Img/AI for E-commerce/algoliass1.png"
+import algoliass2 from "../../../../public/assets/Img/AI for E-commerce/algoliass2.png"
+
 
 // review section data
 const reviews = [
@@ -310,14 +314,14 @@ const AlgoliaAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
+                src={algoliass1}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
+                src={algoliass2}
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -750,56 +754,54 @@ const AlgoliaAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>Algolia AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Algolia AI is an advanced AI-powered search and discovery
-                platform designed to optimize the search experience for
-                ecommerce businesses, developers, and website owners. Algolia
-                helps companies improve product search accuracy, personalize
-                user experiences, and boost overall conversion rates. Utilizing
-                machine learning and natural language processing (NLP), Algolia
-                AI enhances real-time search, search rankings, product
-                recommendations, and much more.
-              </p>
+          <div className="container-fluid">
+  <div className="row align-items-center justify-content-between mb-1 g-4">
+    {/* Left side (Text Section) */}
+    <div className="col-lg-6 col-md-12 order-lg-1 order-2">
+      <p className="text-primary">Write better, faster</p>
+      <h1>Algolia AI</h1>
+      <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+      <p className="mb-3">
+        Algolia AI is an advanced AI-powered search and discovery
+        platform designed to optimize the search experience for
+        ecommerce businesses, developers, and website owners. Algolia
+        helps companies improve product search accuracy, personalize
+        user experiences, and boost overall conversion rates. Utilizing
+        machine learning and natural language processing (NLP), Algolia
+        AI enhances real-time search, search rankings, product
+        recommendations, and much more.
+      </p>
 
-              <p>
-                By indexing large amounts of data, Algolia AI offers instant
-                search results, personalized suggestions, and dynamic filtering,
-                making it a powerful solution for any business looking to
-                enhance their search and product discovery experience.
-              </p>
+      <p className="mb-4">
+        By indexing large amounts of data, Algolia AI offers instant
+        search results, personalized suggestions, and dynamic filtering,
+        making it a powerful solution for any business looking to
+        enhance their search and product discovery experience.
+      </p>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
-            </div>
+      <div className="mb-3">
+        <a
+          href="https://www.algolia.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-primary me-2"
+        >
+          Explore Tool
+        </a>
+      </div>
+    </div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
-          </div>
+    {/* Right side (Image Section) */}
+    <div className="col-lg-6 col-md-12 order-lg-2 order-1 text-center">
+      <img
+        src={algoliaai}
+        alt="algoliaai"
+        className="img-fluid"
+        style={{ maxHeight: "300px", width: "auto" }}
+      />
+    </div>
+  </div>
+</div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Create Videos in 3 Simple Steps</p>

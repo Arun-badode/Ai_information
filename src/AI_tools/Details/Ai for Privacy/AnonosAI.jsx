@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 
+import b from "../../../../public/assets/Img/_AI for Privacy and Data Protection/2.png"
 // review section data
 const reviews = [
   {
@@ -600,12 +601,9 @@ const AnonosAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
+                    <div className="d-flex flex-column flex-md-row align-items-center justify-content-between mb-5">
             {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
+           <div style={{ flex: 1, paddingRight: "30px" }} className="order-2 order-md-1">
               <p className="text-primary">Write better, faster</p>
               <h1>Anonos AI</h1>
               <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
@@ -627,17 +625,17 @@ const AnonosAI = () => {
             </div>
 
             {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img src="" style={{ MaxWidth: "100%", height: "300px" }} />
-            </div>
+           <div
+                                 style={{ flex: 1, textAlign: "center" }}
+                                 className="order-1 order-md-2 mb-4 mb-md-0"
+                               >
+                                 <img
+                                   src={b}
+                                   className="img-fluid rounded-3"
+                                   style={{ maxWidth: "80%", height: "auto" }}
+                                   alt="Quizlet AI platform illustration"
+                                 />
+                               </div>
           </div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
@@ -792,21 +790,6 @@ const AnonosAI = () => {
 
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
-
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with AnonosAI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
         </div>
       </div>
     </>

@@ -643,7 +643,7 @@ const DeepgramAI = () => {
               {/* Image Section - mobile: first, desktop: second (right side) */}
               <div className="col-12 col-md-6 order-1 order-md-2 mb-3 mb-md-0 text-center">
                 <img
-                  src={deepgramImage} // Replace with your image URL or import
+                  src=""
                   alt="Deepgram AI"
                   className="img-fluid"
                   style={{
@@ -834,21 +834,6 @@ const DeepgramAI = () => {
 
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
-
-          {/* <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with DeepgramAI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div> */}
         </div>
       </div>
     </>

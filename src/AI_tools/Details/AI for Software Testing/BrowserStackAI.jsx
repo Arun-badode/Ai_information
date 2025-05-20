@@ -3,9 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Logo from "../../../Images/logo[2].png";
-import deatilimage from "../../../Images/DetailImage.png";
-
+import browserstack from '../../../../public/assets/Img/AI for software testing/browserstack.png'
+import browserstack1 from '../../../../public/assets/Img/AI for software testing/browserstack1.png'
+import browserstack2 from '../../../../public/assets/Img/AI for software testing/browserstack2.png'
 // review section data
 const reviews = [
   {
@@ -334,14 +334,15 @@ const BrowserStackAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
-                alt=""
+                src={browserstack1}
+                alt="screenshot1"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
+                src={browserstack2}
+                alt="screenshot2"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -730,42 +731,49 @@ const BrowserStackAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1> BrowserStack AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                BrowserStack AI is a powerful AI-driven browser testing tool that helps developers and QA teams perform automated testing across different browsers, devices, and operating systems. It integrates seamlessly with popular frameworks like Selenium, making it easy to scale testing efforts for web applications. By leveraging AI and machine learning, BrowserStack AI enhances the accuracy and speed of cross-browser testing, ensuring that web applications work consistently across all platforms. It is especially useful in continuous integration (CI) environments, automating browser compatibility checks, and offering real-time feedback during the testing process.
-              </p>
+          <div className="container-fluid px-0">
+  <div className="row align-items-center g-4 g-lg-5 mb-4">
+    {/* Left side (Text Section) - Order changes on mobile */}
+    <div className="col-lg-6 col-md-12 order-2 order-lg-1 pe-lg-5">
+      <p className="text-primary mb-2 fw-semibold">Write better, faster</p>
+      <h1 className="display-5 mb-3">BrowserStack AI</h1>
+      <div className="text-warning mb-3 fs-5">⭐⭐⭐⭐⭐</div>
+      <p className="lead mb-4">
+        BrowserStack AI is a powerful AI-driven browser testing tool that helps developers and QA teams perform automated testing across different browsers, devices, and operating systems.
+      </p>
+      <p className="mb-4">
+        It integrates seamlessly with popular frameworks like Selenium, making it easy to scale testing efforts for web applications. By leveraging AI and machine learning, BrowserStack AI enhances the accuracy and speed of cross-browser testing, ensuring that web applications work consistently across all platforms.
+      </p>
+      <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
+        <a
+          href="https://www.browserstack.com/live?utm_source=bing&utm_medium=cpc&utm_platform=paidads&utm_content=&utm_campaign=Bing-Search-Brand-India&utm_campaigncode=Automate+149846&utm_term=p+browserstack%20automate%20desktop"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-primary btn-lg px-4"
+        >
+          Explore Tool
+        </a>
+      </div>
+    </div>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
-            </div>
-
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
-          </div>
+    {/* Right side (Image Section) - Order changes on mobile */}
+    <div className="col-lg-6 col-md-12 order-1 order-lg-2">
+      <div className="d-flex justify-content-center align-items-center h-100">
+        <img
+          src={browserstack}
+          alt="browserstack"
+          className="img-fluid rounded-3 shadow"
+          style={{ 
+            maxWidth: "100%", 
+            height: "auto",
+            maxHeight: "400px",
+            objectFit: "contain" 
+          }}
+        />
+      </div>
+    </div>
+  </div>
+</div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Create Videos in 3 Simple Steps</p>
@@ -914,20 +922,6 @@ const BrowserStackAI = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with RunWayGen?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
         </div>
       </div>
     </>
