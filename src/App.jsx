@@ -277,6 +277,12 @@ import Enveil from "./AI_tools/Details/Ai for Privacy/Enveil";
 import Skyflow from "./AI_tools/Details/Ai for Privacy/Skyflow";
 import Writtersonic from "./AI_tools/Details/Ai for Writter/Writtersonic";
 import Ryter from "./AI_tools/Details/Ai for Writter/Ryter";
+import Hyperwriter from "./AI_tools/Details/Ai for Writter/Hyperwriter";
+import Sudowriter from "./AI_tools/Details/Ai for Writter/Sudowriter";
+import Wordtune from "./AI_tools/Details/Ai for Writter/Wordtune";
+import Spingboat from "./AI_tools/Details/Ai for Writter/Spingboat";
+import Longshot from "./AI_tools/Details/Ai for Writter/Longshot";
+import Contentbot from "./AI_tools/Details/Ai for Writter/Contentbot";
 
 const App = () => {
   return (
@@ -334,8 +340,12 @@ const App = () => {
         <Route path="/CopyAI" element={<CopyAI />}></Route>
         <Route path="/Writtersonic" element={<Writtersonic />}></Route>
         <Route path="/Ryter" element={<Ryter />}></Route>
-        <Route path="/CopyAI" element={<CopyAI />}></Route>
-        <Route path="/CopyAI" element={<CopyAI />}></Route>
+        <Route path="/Hyperwriter" element={<Hyperwriter />}></Route>
+        <Route path="/Sudowriter" element={<Sudowriter />}></Route>
+        <Route path="/Wordtune" element={<Wordtune />}></Route>
+        <Route path="/Spingboat" element={<Spingboat />}></Route>
+        <Route path="/Longshot" element={<Longshot />}></Route>
+        <Route path="/Contentbot" element={<Contentbot />}></Route>
         {/* Productivity and Business Tools */}
         <Route path="/MicrosoftCopilot" element={<MicrosoftCopilot />}></Route>
         <Route path="/ZapierAI" element={<ZapierAI />}></Route>
@@ -438,7 +448,7 @@ const App = () => {
         ></Route>
         <Route path="/ScalenutAI" element={<ScalenutAI />}></Route>
         <Route path="/SurferSEOAI" element={<SurferSEOAI />}></Route>
-        <Route path="/WriterZenAI" element={<WriterZenAI />}></Route>
+        <Route path="/WriterZenAI " element={<WriterZenAI />}></Route>
         {/* Ai for SEO   ENd  */}
         {/* Ai for Music */}
         <Route path="/AmperMusicAI" element={<AmperMusicAI />}></Route>

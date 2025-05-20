@@ -4,7 +4,6 @@ import "../../../AI_tools/ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-
 // review section data
 const reviews = [
   {
@@ -134,18 +133,10 @@ const SnatchBot = () => {
         return (
           <div className="row g-4">
             <div className="col-md-6">
-              <img
-                src={deatilimage}
-                alt="Screenshot 1"
-                className="img-fluid rounded-3"
-              />
+              <img src="" alt="Screenshot 1" className="img-fluid rounded-3" />
             </div>
             <div className="col-md-6">
-              <img
-                src={deatilimage}
-                alt="Screenshot 2"
-                className="img-fluid rounded-3"
-              />
+              <img src="" alt="Screenshot 2" className="img-fluid rounded-3" />
             </div>
           </div>
         );
@@ -609,7 +600,7 @@ const SnatchBot = () => {
           href="/Aitools"
           className="d-inline-block text-white text-decoration-none  mt-3 ml-3 py-1 px-2 ms-5 border rounded-sm"
         >
-          <i className="bi bi-arrow-left me-2"></i>Back  {" "}
+          <i className="bi bi-arrow-left me-2"></i>Back{" "}
         </a>
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
@@ -648,7 +639,7 @@ const SnatchBot = () => {
             {/* Right side (Image Section) */}
             <div style={{ flex: 1, textAlign: "center" }}>
               <img
-                src={deatilimage}
+                src=""
                 alt="Dashboard Preview"
                 className="img-fluid rounded-3"
                 style={{ maxWidth: "80%", height: "auto" }}
