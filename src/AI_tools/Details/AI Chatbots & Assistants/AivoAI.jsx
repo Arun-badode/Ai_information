@@ -570,7 +570,7 @@ const AivoAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className="d-flex align-items-center justify-content-between mb-5">
+          <div className="d-flex align-items-center justify-content-between mb-5 lovaaiflex">
             {/* Left side (Text Section) */}
             <div className="" style={{ flex: 1, paddingRight: "30px" }}>
               <img
