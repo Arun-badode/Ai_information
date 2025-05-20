@@ -2765,7 +2765,7 @@ const CategoriesNavbar = () => {
                     style={{
                       maxWidth: "355px",
                       left: "0rem",
-                      marginTop: "-40rem",
+                      marginTop: "-37rem",
                       position: "absolute",
                       zIndex: 1000,
                       overflow: "visible",
@@ -2886,7 +2886,7 @@ const CategoriesNavbar = () => {
                     style={{
                       maxWidth: "355px",
                       left: "0rem",
-                      marginTop: "-40rem",
+                      marginTop: "-37rem",
                       position: "absolute",
                       zIndex: 1000,
                       overflow: "visible",
@@ -2964,7 +2964,7 @@ const CategoriesNavbar = () => {
                     style={{
                       maxWidth: "355px",
                       left: "0rem",
-                      marginTop: "-40rem",
+                      marginTop: "-37rem",
                       position: "absolute",
                       zIndex: 1000,
                       overflow: "visible",
@@ -3121,7 +3121,7 @@ const CategoriesNavbar = () => {
                     style={{
                       maxWidth: "355px",
                       left: "0",
-                      marginTop: "-40rem",
+                      marginTop: "-37rem",
                       position: "absolute",
                       zIndex: 1000,
                       overflow: "visible",
@@ -3207,7 +3207,7 @@ const CategoriesNavbar = () => {
                     style={{
                       maxWidth: "800px",
                       left: "0rem",
-                      marginTop: "-40rem",
+                      marginTop: "-37rem",
                       position: "absolute",
                       zIndex: 1000,
                       overflow: "visible",
@@ -3465,7 +3465,7 @@ const CategoriesNavbar = () => {
                     style={{
                       maxWidth: "800px",
                       left: "0rem",
-                      marginTop: "-40rem",
+                      marginTop: "-37rem",
                       position: "absolute",
                       zIndex: 1000,
                       overflow: "visible",
@@ -3577,7 +3577,7 @@ const CategoriesNavbar = () => {
                     style={{
                       maxWidth: "800px",
                       left: "0rem",
-                      marginTop: "-40rem",
+                      marginTop: "-37rem",
                       position: "absolute",
                       zIndex: 1000,
                       overflow: "visible",
@@ -3725,7 +3725,7 @@ const CategoriesNavbar = () => {
                     style={{
                       maxWidth: "355px",
                       left: "0rem",
-                      marginTop: "-40rem",
+                      marginTop: "-37rem",
                       position: "absolute",
                       zIndex: 1000,
                     }}
@@ -3845,7 +3845,7 @@ const CategoriesNavbar = () => {
                     style={{
                       maxWidth: "355px",
                       left: "0rem",
-                      marginTop: "-40rem",
+                      marginTop: "-37rem",
                       position: "absolute",
                       zIndex: 1000,
                     }}
@@ -3974,7 +3974,7 @@ const CategoriesNavbar = () => {
                     style={{
                       maxWidth: "355px",
                       left: "0rem",
-                      marginTop: "-40rem",
+                      marginTop: "-37rem",
                       position: "absolute",
                       zIndex: 1000,
                     }}
@@ -4085,7 +4085,7 @@ const CategoriesNavbar = () => {
                     style={{
                       maxWidth: "355px",
                       left: "0rem",
-                      marginTop: "-40rem",
+                      marginTop: "-37rem",
                       position: "absolute",
                       zIndex: 1000,
                     }}
