@@ -20,8 +20,8 @@ import AIAssistant from "./AIAssistant";
 const HomePage = () => {
   return (
     <>
-    <AIAssistant/>
       <Header />
+    <AIAssistant/>
       <AllAboutAITools />
       <TrendingAITools />
       <ToolTabs />

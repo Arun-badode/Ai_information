@@ -24,9 +24,9 @@ const SubscribeSection = () => {
           <input
             type="email"
             placeholder="Your email address"
-            className="px-6 py-3 w-64 rounded-full text-white bg-[#84bcf8] bg-opacity-50 border-none "
+            className="px-6 py-3 w-64 rounded-full text-white bg-[#101828] bg-opacity-50 border-none "
           />
-          <button className="bg-white text-black px-8 py-3 rounded-full font-semibold border-2 border-white hover:bg-white hover:text-black transition">
+          <button className="bg-white text-black px-8 py-3 rounded-full font-semibold border-2 border-white hover:bg-white hover:text-black transition" style={{marginLeft:"20px",borderRadius:"20px"}}>
             Subscribe
           </button>
         </div>

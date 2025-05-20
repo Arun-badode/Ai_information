@@ -141,7 +141,7 @@ const Featured = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#042b54] text-white">
+    <div className=" bg-[#042b54] text-white">
       <section className="py-20 bg-gradient-to-r from-[#1E3D59] to-[#84bcf8] relative">
         <div className="container mx-auto px-8 text-center">
           <h2 className="text-4xl font-bold mb-10 text-white">
@@ -156,7 +156,7 @@ const Featured = () => {
             ❮
           </button>
           <button
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-[#1E3D59] p-3 rounded-full hover:bg-blue-700 z-10"
+            className="absolute right-10 top-1/2 transform -translate-y-1/2 bg-[#1E3D59] p-3 rounded-full hover:bg-blue-700 z-10"
             onClick={scrollRight}
           >
             ❯
@@ -181,8 +181,8 @@ const Featured = () => {
                 <h3 className="text-2xl font-bold text-white mb-2">
                   {tool.name}
                 </h3>
-                <p className="text-gray-400 mb-4">{tool.category}</p>
-                <p className="text-yellow-500">
+                <p className="text-gray-400 "  style={{margin:"0px"}}>{tool.category}</p>
+                <p className="text-yellow-500" style={{margin:"0px"}}>
                   {"★".repeat(Math.round(tool.rating))} ({tool.rating})
                 </p>
                 <Link to="/Aitools">
