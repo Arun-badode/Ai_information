@@ -5,6 +5,7 @@ import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import perplexity from "../../../../public/assets/Img/AI For Chatbots/perplexity.png"
+import perplexity1 from "../../../../public/assets/Img/AI For Chatbots/perplexity1.png"
 
 
 // review section data
@@ -125,14 +126,14 @@ const PerplexityAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src=""
+                src={perplexity1}
                 alt="Screenshot 1"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
-                src=""
+                src={perplexity1}
                 alt="Screenshot 2"
                 className="img-fluid rounded-3"
               />

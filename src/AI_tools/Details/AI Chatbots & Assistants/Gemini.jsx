@@ -3,7 +3,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../../AI_tools/ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import gemini from "../../../../public/assets/Img/AI For Chatbots/gemini.png"
+import gemini from "../../../../public/assets/Img/AI For Chatbots/gemini.png";
+import gemini1 from "../../../../public/assets/Img/AI For Chatbots/gemni1.png";
+
+
 
 
 // review section data
@@ -141,14 +144,14 @@ const Gemini = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                // src=""
+                src={gemini1}
                 alt="Screenshot 1"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
-                // src=""
+                src={gemini1}
                 alt="Screenshot 2"
                 className="img-fluid rounded-3"
               />
@@ -665,15 +668,16 @@ const Gemini = () => {
                 systems, providing real-time conversational experiences across
                 websites, applications, and business workflows.
               </p>
-              <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
-              <div>
-                <button className="btn btn-primary me-2">Try Now</button>
-                <button className="btn btn-outline-light">Watch Demo</button>
-              </div>
+             <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
+        <a
+          href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024hiIN_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gad_campaignid=20437330548&gbraid=0AAAAApk5Bhl7WjDzrctHIwJLkyckNMU5u&gclid=Cj0KCQjw0LDBBhCnARIsAMpYlArDs77ha5TaVJwQZQWeP1UmoBIag9rA9OKlGbriZcrt-fhOGmF4pcQaArpYEALw_wcB&gclsrc=aw.ds"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-primary btn-lg px-4"
+        >
+          Explore Tool
+        </a>
+      </div>
             </div>
 
             {/* Right side (Image Section) */}
@@ -838,20 +842,7 @@ const Gemini = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with GeminiAI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
+      
         </div>
       </div>
     </>
