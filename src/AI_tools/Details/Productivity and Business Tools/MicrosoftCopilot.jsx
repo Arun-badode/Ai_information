@@ -5,6 +5,7 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
+import microsoft1 from "../../../../public/assets/Img/AI for Business/microsoft1.png";
 
 // review section data
 const reviews = [
@@ -85,7 +86,7 @@ const MicrosoftCopilot = () => {
   };
   const renderTabContent = () => {
     switch (activeTab) {
-      case "Features":
+      case "features":
         return (
           <div className="row g-4">
             {[
@@ -94,24 +95,24 @@ const MicrosoftCopilot = () => {
                 desc: "Microsoft Copilot is an AI assistant integrated into Microsoft 365 applications, enhancing productivity and creativity.",
               },
               {
-                title: "",
-                desc: "",
+                title:"Microsoft Copilot – AI",
+                desc: "Microsoft Copilot is an AI assistant integrated into Microsoft 365 applications, enhancing productivity and creativity.",
               },
               {
-                title: "",
-                desc: "",
+                title: "Microsoft Copilot – AI",
+                desc: "Microsoft Copilot is an AI assistant integrated into Microsoft 365 applications, enhancing productivity and creativity.",
               },
               {
-                title: "",
-                desc: "",
+                title: "Microsoft Copilot – AI",
+                desc: "Microsoft Copilot is an AI assistant integrated into Microsoft 365 applications, enhancing productivity and creativity.",
               },
               {
-                title: "",
-                desc: "",
+                title:"Microsoft Copilot – AI",
+                desc: "Microsoft Copilot is an AI assistant integrated into Microsoft 365 applications, enhancing productivity and creativity.",
               },
               {
-                title: "",
-                desc: "",
+                title:"Microsoft Copilot – AI",
+                desc: "Microsoft Copilot is an AI assistant integrated into Microsoft 365 applications, enhancing productivity and creativity.",
               },
             ].map((feature, index) => (
               <div className="col-md-4" key={index}>
@@ -130,14 +131,14 @@ const MicrosoftCopilot = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src={deatilimage}
+                src={microsoft1}
                 alt="Screenshot 1"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={deatilimage}
+                src={microsoft1}
                 alt="Screenshot 2"
                 className="img-fluid rounded-3"
               />
@@ -562,39 +563,46 @@ const MicrosoftCopilot = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className="d-flex align-items-center justify-content-between mb-5">
-            {/* Left side (Text Section) */}
-            <div style={{ flex: 1, paddingRight: "30px" }}>
-              <img
-                src={Logo}
-                alt="Logo"
-                className="me-3"
-                style={{ width: "60px" }}
-              />
-              <h2>Microsoft Copilot – AI</h2>
-              <div className="text-warning mb-1">
-                ⭐⭐⭐⭐⭐ 95% Satisfaction
-              </div>
-              <p>
-              Microsoft Copilot (also known as Microsoft 365 Copilot) is a cutting-edge AI assistant in Microsoft that seamlessly integrates into Microsoft 365 applications like Word, Excel, PowerPoint, Outlook, and Teams. Powered by GPT-4 and Microsoft Graph, Copilot transforms how users interact with Microsoft Office tools, making it easier to create content, analyze data, and automate repetitive tasks.
+         <div className="row align-items-center mb-5">
+  {/* Left side (Text Section) */}
+  <div className="col-lg-6 col-md-12 mb-4 mb-lg-0" style={{ paddingRight: "30px" }}>
+    <div className="d-flex align-items-center mb-3">
+    
+      <h2 className="mb-0">Microsoft Copilot – AI</h2>
+    </div>
+    <div className="text-warning mb-2">
+      ⭐⭐⭐⭐⭐ 95% Satisfaction
+    </div>
+    <p className="mb-4">
+      Microsoft Copilot (also known as Microsoft 365 Copilot) is a cutting-edge AI assistant in Microsoft that seamlessly integrates into Microsoft 365 applications like Word, Excel, PowerPoint, Outlook, and Teams. Powered by GPT-4 and Microsoft Graph, Copilot transforms how users interact with Microsoft Office tools, making it easier to create content, analyze data, and automate repetitive tasks.
+    </p>
+    <div className="d-flex flex-wrap gap-3">
+      <a
+        href="https://copilot.microsoft.com/chats/rQ7tt1PAQCHXDkRhSbpmZ"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary btn-lg px-4"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
 
-              </p>
-            </div>
-
-            {/* Right side (Image Section) */}
-            <div style={{ flex: 1, textAlign: "center" }}>
-              <img
-                src="/src/Images/WhatsApp Image 2025-05-07 at 14.40.33.jpeg"
-                className="img-fluid rounded-3"
-                style={{ maxWidth: "80%", height: "auto" }}
-              />
-            </div>
-          </div>
+  {/* Right side (Image Section) */}
+  <div className="col-lg-6 col-md-12 text-center">
+    <img
+      src="/src/Images/WhatsApp Image 2025-05-07 at 14.40.33.jpeg"
+      className="img-fluid rounded-3"
+      style={{ maxWidth: "100%", height: "auto" }}
+      alt="Microsoft Copilot"
+    />
+  </div>
+</div>
 
           {/* Tab Navigation */}
           <ul className="nav nav-tabs custom-tabs mb-4">
             {[
-              "Features",
+              "features",
               "Screenshots",
               "Reviews",
               "FAQs",
@@ -617,20 +625,7 @@ const MicrosoftCopilot = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with Microsoft Copilot–AI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
+      
         </div>
       </div>
     </>
