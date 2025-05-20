@@ -86,7 +86,7 @@ const Notion = () => {
   };
   const renderTabContent = () => {
     switch (activeTab) {
-      case "Features":
+      case "features":
         return (
           <div className="row g-4">
             {[
@@ -521,39 +521,49 @@ const Notion = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className="d-flex align-items-center justify-content-between mb-5">
-            {/* Left side (Text Section) */}
-            <div style={{ flex: 1, paddingRight: "30px" }}>
-              <img
-                src={Logo}
-                alt="Logo"
-                className="me-3"
-                style={{ width: "60px" }}
-              />
-              <h2>Notion AI</h2>
-              <div className="text-warning mb-1">
-                ⭐⭐⭐⭐⭐ 95% Satisfaction
-              </div>
-              <p>
-              Notion AI is an integrated artificial intelligence assistant within the Notion workspace. It enhances productivity by assisting users in writing, summarizing, brainstorming, and automating various tasks directly within their notes and documents.​
+     <div className="d-flex align-items-center justify-content-between mb-5">
+  {/* Left side (Text Section) */}
+  <div style={{ flex: 1, paddingRight: "30px" }}>
+    <img
+      src={Logo}
+      alt="Notion Logo"
+      className="me-3"
+      style={{ width: "60px" }}
+    />
+    <h2>Notion AI</h2>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐ 95% Satisfaction</div>
+    <p className="mb-3">
+      Notion AI is an integrated artificial intelligence assistant within the Notion workspace. It enhances productivity by assisting users in writing, summarizing, brainstorming, and automating various tasks directly within their notes and documents.
+    </p>
 
-              </p>
-            </div>
+    <div className="mb-3">
+      <a
+        href="https://www.notion.com/help/guides/category/ai"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary me-2"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
 
-            {/* Right side (Image Section) */}
-            <div style={{ flex: 1, textAlign: "center" }}>
-              <img
-                src={notion}
-                className="img-fluid rounded-3"
-                style={{ maxWidth: "80%", height: "auto" }}
-              />
-            </div>
-          </div>
+  {/* Right side (Image Section) */}
+  <div style={{ flex: 1, textAlign: "center" }}>
+    <img
+      src={notion}
+      alt="Notion AI Screenshot"
+      className="img-fluid rounded-3"
+      style={{ maxWidth: "80%", height: "auto" }}
+    />
+  </div>
+</div>
+
 
           {/* Tab Navigation */}
           <ul className="nav nav-tabs custom-tabs mb-4">
             {[
-              "Features",
+              "features",
               "Screenshots",
               "Reviews",
               "FAQs",

@@ -638,57 +638,64 @@ const OracleAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Grow better, faster</p>
-              <h1>Oracle AI </h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+         <div className="row d-flex align-items-center justify-content-between mb-1">
+  {/* Left side (Text Section) */}
+  <div
+    style={{ flex: 1, paddingRight: "30px" }}
+    className="col-6 col-md-12"
+  >
+    <p className="text-primary">Grow better, faster</p>
+    <h1>Oracle AI</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
 
-              <p>
-                Oracle Analytics is a comprehensive platform designed to help
-                businesses gain actionable insights from their data through
-                advanced analytics, visualization tools, and AI-driven
-                capabilities. This powerful platform supports enterprise-level
-                analytics, offering intuitive data exploration and reporting
-                tools to drive decision-making across various industries.
-              </p>
-              <p>
-                Oracle Analytics is an end-to-end solution that allows users to
-                access, analyze, and visualize data in real time. By utilizing
-                the power of AI, machine learning, and cloud infrastructure,
-                Oracle Analytics empowers organizations to turn data into
-                actionable insights. The platform is designed to work with data
-                from various sources, including cloud-based platforms,
-                on-premise databases, and third-party applications.
-              </p>
+    <p>
+      Oracle Analytics is a comprehensive platform designed to help
+      businesses gain actionable insights from their data through
+      advanced analytics, visualization tools, and AI-driven
+      capabilities. This powerful platform supports enterprise-level
+      analytics, offering intuitive data exploration and reporting
+      tools to drive decision-making across various industries.
+    </p>
+    <p>
+      Oracle Analytics is an end-to-end solution that allows users to
+      access, analyze, and visualize data in real time. By utilizing
+      the power of AI, machine learning, and cloud infrastructure,
+      Oracle Analytics empowers organizations to turn data into
+      actionable insights. The platform is designed to work with data
+      from various sources, including cloud-based platforms,
+      on-premise databases, and third-party applications.
+    </p>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2"> Business</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
-            </div>
+    <div className="mb-3">
+      <a
+        href="https://www.oracle.com/artificial-intelligence/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary me-2"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src={magisto}
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
-          </div>
+  {/* Right side (Image Section) */}
+  <div
+    style={{
+      flex: 1,
+      textAlign: "center",
+      width: "100%",
+      height: "250px",
+    }}
+    className="col-6 col-md-12 mb-5"
+  >
+    <img
+      src={magisto}
+      style={{ maxWidth: "100%", height: "300px" }}
+      alt="Oracle AI Illustration"
+    />
+  </div>
+</div>
+
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>
@@ -842,20 +849,7 @@ const OracleAI = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with Oracle AI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. free trial available.
-            </small>
-          </div>
+         
         </div>
       </div>
     </>

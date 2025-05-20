@@ -629,54 +629,47 @@ const RemoveBg = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">
-                Create stunning visuals effortlessly
-              </p>
-              <h1>Remove.bg AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+       <div className="row align-items-center justify-content-between mb-4">
+  {/* Left side (Text Section) */}
+  <div className="col-lg-6 col-md-12 mb-4 mb-lg-0 pe-lg-4">
+    <p className="text-primary">Create stunning visuals effortlessly</p>
+    <h1>Remove.bg AI</h1>
+    <div className="text-warning mb-2">⭐⭐⭐⭐⭐</div>
 
-              <p>
-                Remove.bg is an AI-powered tool designed to remove backgrounds
-                from photos quickly and accurately. Whether you’re a
-                photographer, e-commerce seller, social media influencer, or
-                business professional, Remove.bg simplifies the process of
-                background removal with a powerful AI engine that detects and
-                isolates subjects in photos. It’s perfect for creating
-                transparent PNGs, product images, portraits, and even video
-                background removal. Remove.bg works seamlessly on both web
-                platforms and mobile devices, making it a go-to solution for
-                background removal for images and videos.
-              </p>
+    <p>
+      Remove.bg is an AI-powered tool designed to remove backgrounds from photos
+      quickly and accurately. Whether you’re a photographer, e-commerce seller,
+      social media influencer, or business professional, Remove.bg simplifies
+      the process of background removal with a powerful AI engine that detects
+      and isolates subjects in photos. It’s perfect for creating transparent PNGs,
+      product images, portraits, and even video background removal. Remove.bg
+      works seamlessly on both web platforms and mobile devices, making it a go-to
+      solution for background removal for images and videos.
+    </p>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2"> Image</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
-            </div>
+    <div className="mb-3">
+      <a
+        href="https://www.remove.bg/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary me-2"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src={magisto}
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
-          </div>
+  {/* Right side (Image Section) */}
+  <div className="col-lg-6 col-md-12 text-center">
+    <img
+      src={magisto} // Replace with actual Remove.bg image URL
+      alt="Remove.bg AI Example"
+      className="img-fluid"
+      style={{ maxHeight: "300px", objectFit: "contain" }}
+    />
+  </div>
+</div>
+
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>
@@ -830,20 +823,7 @@ const RemoveBg = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with Remove.bg AI ?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. free trial available.
-            </small>
-          </div>
+         
         </div>
       </div>
     </>
