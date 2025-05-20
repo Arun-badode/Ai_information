@@ -61,7 +61,7 @@ const AIAssistant = () => {
 
       <div
         style={{
-          padding: "10px",
+          padding: "40px 0px ",
           background: "#1A202C",
           display: "flex",
           justifyContent: "center",
