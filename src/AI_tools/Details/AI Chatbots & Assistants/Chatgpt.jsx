@@ -3,7 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
+import chatgpt from "../../../../public/assets/Img/AI For Chatbots/chatgpt.png";
+import chatgpt1 from "../../../../public/assets/Img/AI For Chatbots/chatgpt1.png";
+import chatgpt2 from "../../../../public/assets/Img/AI For Chatbots/chatgpt2.png";
 // review section data
 const reviews = [
   {
@@ -123,14 +125,14 @@ const Chatgpt = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src=""
+                src={chatgpt1}
                 alt="Screenshot 1"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
-                src=""
+                src={chatgpt2}
                 alt="Screenshot 2"
                 className="img-fluid rounded-3"
               />
@@ -632,12 +634,7 @@ const Chatgpt = () => {
           <div className="d-flex align-items-center justify-content-between mb-5">
             {/* Left side (Text Section) */}
             <div style={{ flex: 1, paddingRight: "30px" }}>
-              <img
-                src=""
-                alt="Logo"
-                className="me-3"
-                style={{ width: "60px" }}
-              />
+           
               <h2>ChatGPTAI</h2>
               <div className="text-warning mb-1">
                 ⭐⭐⭐⭐⭐ 95% Satisfaction
@@ -652,14 +649,25 @@ const Chatgpt = () => {
                 helps it process, understand, and generate human-like responses
                 in natural language.
               </p>
+              
+              <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
+        <a
+          href="https://openai.com/index/chatgpt/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-primary btn-lg px-4"
+        >
+          Explore Tool
+        </a>
+      </div>
             </div>
 
             {/* Right side (Image Section) */}
             <div style={{ flex: 1, textAlign: "center" }}>
               <img
-                src=""
+                src={chatgpt}
                 className="img-fluid rounded-3"
-                style={{ maxWidth: "80%", height: "auto" }}
+                style={{ maxWidth: "100%", height: "auto" }}
               />
             </div>
           </div>

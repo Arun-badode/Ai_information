@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
 import coda from "../../../../public/assets/Img/AI for Business/6.png";
+import coda1 from '../../../../public/assets/Img/AI for Business/coda1.png'
+import coda2 from '../../../../public/assets/Img/AI for Business/coda2.png'
 
 // review section data
 const reviews = [
@@ -131,14 +133,14 @@ const CodaAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src={deatilimage}
+                src={coda1}
                 alt="Screenshot 1"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={deatilimage}
+                src={coda2}
                 alt="Screenshot 2"
                 className="img-fluid rounded-3"
               />
@@ -567,50 +569,55 @@ const CodaAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className="d-flex align-items-center justify-content-between mb-5">
-            {/* Left side (Text Section) */}
-            <div style={{ flex: 1, paddingRight: "30px" }}>
-              <img
-                src={Logo}
-                alt="Logo"
-                className="me-3"
-                style={{ width: "60px" }}
-              />
-              <h2>Coda AI:</h2>
-              <div className="text-warning mb-1">
-                ⭐⭐⭐⭐⭐ 95% Satisfaction
-              </div>
-              <p>
-                Coda AI is a versatile, AI-powered tool designed to help
-                individuals, teams, and businesses automate their workflows,
-                improve productivity, and streamline document management. It
-                integrates advanced features like document creation, task
-                management, team collaboration, and data organization, all in a
-                single platform. By leveraging machine learning and real-time
-                updates, Coda AI helps businesses achieve better collaboration,
-                optimize workflows, and manage projects with efficiency.
-              </p>
-                  <div className="mb-3">
-                <a
-                  href="https://www.codeai.studio/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary me-2"
-                >
-                  Explore Tool
-                </a>
-              </div>
-            </div>
+         <div className="row align-items-center g-4 mb-5">
+  {/* Left side (Text Section) */}
+  <div className="col-lg-6 col-12 order-lg-1 order-2 pe-lg-4">
+    <div className="d-flex align-items-center mb-3">
+     
+      <h2 className="mb-0">Coda AI</h2>
+    </div>
+    <div className="text-warning mb-3">
+      ⭐⭐⭐⭐⭐ 95% Satisfaction
+    </div>
+    <p className="mb-4">
+      Coda AI is a versatile, AI-powered tool designed to help
+      individuals, teams, and businesses automate their workflows,
+      improve productivity, and streamline document management. It
+      integrates advanced features like document creation, task
+      management, team collaboration, and data organization, all in a
+      single platform.
+    </p>
+    <p className="mb-4">
+      By leveraging machine learning and real-time
+      updates, Coda AI helps businesses achieve better collaboration,
+      optimize workflows, and manage projects with efficiency.
+    </p>
+    <div className="mb-3">
+      <a
+        href="https://www.codeai.studio/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary btn-lg px-4"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
 
-            {/* Right side (Image Section) */}
-            <div style={{ flex: 1, textAlign: "center" }}>
-              <img
-                src={coda}
-                className="img-fluid rounded-3"
-                style={{ maxWidth: "80%", height: "auto" }}
-              />
-            </div>
-          </div>
+  {/* Right side (Image Section) */}
+  <div className="col-lg-6 col-12 order-lg-2 order-1 text-center">
+    <img
+      src={coda}
+      alt="Coda AI Interface"
+      className="img-fluid rounded-3 shadow-sm"
+      style={{ 
+        maxWidth: "100%", 
+        height: "auto",
+        maxHeight: "350px"
+      }}
+    />
+  </div>
+</div>
 
           {/* Tab Navigation */}
           <ul className="nav nav-tabs custom-tabs mb-4">

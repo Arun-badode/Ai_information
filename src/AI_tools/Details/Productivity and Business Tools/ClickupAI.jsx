@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
 import clickup from "../../../Images/ClickupAI.jpg";
+import clickup1 from '../../../../public/assets/Img/AI for Business/clickup1.png'
+import clickup2 from '../../../../public/assets/Img/AI for Business/clickup2.png'
 
 // review section data
 const reviews = [
@@ -132,14 +134,14 @@ const ClickupAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src={deatilimage}
+                src={clickup1}
                 alt="Screenshot 1"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={deatilimage}
+                src={clickup2}
                 alt="Screenshot 2"
                 className="img-fluid rounded-3"
               />
@@ -544,33 +546,49 @@ const ClickupAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className="d-flex align-items-center justify-content-between mb-5">
-            {/* Left side (Text Section) */}
-            <div style={{ flex: 1, paddingRight: "30px" }}>
-              <img
-                src={Logo}
-                alt="Logo"
-                className="me-3"
-                style={{ width: "60px" }}
-              />
-              <h2>ClickUp AI</h2>
-              <div className="text-warning mb-1">
-                ⭐⭐⭐⭐⭐ 95% Satisfaction
+         <div className="row align-items-center g-4 mb-5">
+  {/* Left side (Text Section) */}
+  <div className="col-lg-6 col-12 order-lg-1 order-2 pe-lg-4">
+    <div className="d-flex align-items-center mb-3">
+    
+      <h2 className="mb-0">ClickUp AI</h2>
+    </div>
+    <div className="text-warning mb-3">
+      ⭐⭐⭐⭐⭐ 95% Satisfaction
+    </div>
+    <p className="mb-0">
+      ClickUp AI is an innovative feature integrated within the ClickUp platform, 
+      designed to enhance project management through artificial intelligence (AI). 
+      It combines advanced AI tools and automation to streamline tasks, boost 
+      productivity, and provide intelligent assistance in project planning, 
+      writing, and task management.
+    </p>
+    <div className="mb-3">
+                <a
+                  href="https://clickup.com/ai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary me-2"
+                >
+                  Explore Tool
+                </a>
               </div>
-              <p>
-             ClickUp AI is an innovative feature integrated within the ClickUp platform, designed to enhance project management through artificial intelligence (AI). It combines advanced AI tools and automation to streamline tasks, boost productivity, and provide intelligent assistance in project planning, writing, and task management.
-              </p>
-            </div>
+  </div>
 
-            {/* Right side (Image Section) */}
-            <div style={{ flex: 1, textAlign: "center" }}>
-              <img
-                src={clickup}
-                className="img-fluid rounded-3"
-                style={{ maxWidth: "80%", height: "auto" }}
-              />
-            </div>
-          </div>
+  {/* Right side (Image Section) */}
+  <div className="col-lg-6 col-12 order-lg-2 order-1 text-center">
+    <img
+      src={clickup}
+      alt="ClickUp AI Interface"
+      className="img-fluid rounded-3 shadow-sm"
+      style={{ 
+        maxWidth: "100%", 
+        height: "auto",
+        maxHeight: "300px"
+      }}
+    />
+  </div>
+</div>
 
           {/* Tab Navigation */}
           <ul className="nav nav-tabs custom-tabs mb-4">
