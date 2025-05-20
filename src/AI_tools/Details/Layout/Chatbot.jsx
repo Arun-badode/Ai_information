@@ -266,6 +266,11 @@ const handleRecord = async () => {
                 value={human_message || ""}
                 onChange={handleChange}
                 style={{ flex: 1 }}
+                onKeyDown={(e) => {
+    if (e.key === "Enter" && (human_message.trim() || audioFile)) {
+      handleSend();
+    }
+  }}
               />
               <button
                 className="btn btn ms-2 text-white"
