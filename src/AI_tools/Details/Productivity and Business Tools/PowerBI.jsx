@@ -615,11 +615,17 @@ const PowerBI = () => {
   return (
     <>
       <div className="bg-dark d-flex  justify-content-between align-items-center ">
-        <a
+        {/* <a
           href="/Aitools"
           className="d-inline-block text-white text-decoration-none ml-3 py-1"
         >
           <i className="bi bi-arrow-left me-2"></i>Back to Directory{" "}
+        </a> */}
+           <a
+          href="/Aitools"
+          className="d-inline-block text-white text-decoration-none ml-3 py-3 ms-3"
+        >
+          <i className="bi bi-arrow-left me-2"></i>Back {" "}
         </a>
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
