@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
 import enhanev from "../../../../public/assets/Img/Ai for Resume/42.png";
+import Enhancv1 from "../../../../public/assets/Img/Ai for Resume/Enhancv1.png";
+import Enhancv2 from "../../../../public/assets/Img/Ai for Resume/Enhancv2.png";
 // review section data
 const reviews = [
   {
@@ -320,15 +322,15 @@ const EnhanevAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
-                alt=""
+                src={Enhancv1}
+                alt="Enhancv "
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
-                alr=""
+                src={Enhancv2}
+                alr="Enhancv "
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

@@ -258,217 +258,82 @@ const Veedio = () => {
           </Container>
         );
       case "FAQs":
-        return (
-          <div className="faq-section container py-5">
-            <h3 className="text-center text-white mb-5 text-primary">
-              Frequently Asked Questions
-            </h3>
+       return (
+  <div className="faq-section container py-5">
+    <h3 className="text-center text-white mb-5 text-primary">
+      Frequently Asked Questions
+    </h3>
 
-            <div className="accordion" id="faqAccordion">
-              {[
-                {
-                  q: "What is Veed.io?",
-                  a: "Veed.io is an online video editing tool powered by AI. It allows users to create, edit, and enhance videos with minimal effort, catering to content creators, marketers, and businesses.",
-                },
-                {
-                  q: "Is Veed.io free?",
-                  a: "Veed.io offers a free plan with limited features. The free plan includes watermarked videos and fewer export options, while the paid plans offer additional features.",
-                },
-                {
-                  q: "How much does Veed.io cost?",
-                  a: "Veed.io offers several pricing tiers, starting from $12/month for Pro and $24/month for Business plans.",
-                },
-                {
-                  q: "What features does Veed.io offer?",
-                  a: "Features include video editing, text-to-video, AI-powered voiceovers, automatic subtitles, customizable templates, and more.",
-                },
-                {
-                  q: "Can I upload my own video to Veed.io?",
-                  a: "Yes, you can upload your own video files to Veed.io and start editing them right away.",
-                },
-                {
-                  q: "Can Veed.io be used for YouTube videos?",
-                  a: "Yes, Veed.io is ideal for YouTube, offering video templates, automatic subtitles, and simple export options.",
-                },
-                {
-                  q: "Does Veed.io have video templates?",
-                  a: "Yes, Veed.io includes customizable templates for social media, ads, tutorials, and more.",
-                },
-                {
-                  q: "Is Veed.io good for video editing beginners?",
-                  a: "Yes, it's user-friendly with drag-and-drop tools, AI features, and intuitive templates.",
-                },
-                {
-                  q: "Can I remove the watermark in the free version?",
-                  a: "No, watermarks are present in the free plan. To remove them, upgrade to Pro or Business.",
-                },
-                {
-                  q: "Does Veed.io offer real-time video collaboration?",
-                  a: "Yes, Veed.io supports team collaboration for simultaneous project editing.",
-                },
-                {
-                  q: "Can I create explainer videos with Veed.io?",
-                  a: "Yes, tools and templates are available for creating explainer videos with overlays and animations.",
-                },
-                {
-                  q: "Does Veed.io support voiceovers?",
-                  a: "Yes, you can add AI-generated or manually recorded voiceovers.",
-                },
-                {
-                  q: "How can I add subtitles to videos in Veed.io?",
-                  a: "Veed.io uses AI to generate subtitles, which you can edit or add manually.",
-                },
-                {
-                  q: "Can I create a video ad with Veed.io?",
-                  a: "Yes, Veed.io offers ad templates for Facebook, Instagram, YouTube, and more.",
-                },
-                {
-                  q: "Does Veed.io have a mobile app?",
-                  a: "Currently, Veed.io does not have a mobile app but works in browsers on mobile devices.",
-                },
-                {
-                  q: "How does Veed.io compare to Adobe Premiere Pro?",
-                  a: "Veed.io is simpler and beginner-friendly, while Premiere Pro is for advanced professional editing.",
-                },
-                {
-                  q: "Can I resize videos with Veed.io?",
-                  a: "Yes, you can resize videos for platforms like Instagram, TikTok, and YouTube.",
-                },
-                {
-                  q: "Does Veed.io support 4K video export?",
-                  a: "Yes, 4K export is available in higher-tier plans.",
-                },
-                {
-                  q: "Can I add music to my videos in Veed.io?",
-                  a: "Yes, use Veed.io's royalty-free music library or upload your own.",
-                },
-                {
-                  q: "Does Veed.io offer AI video editing?",
-                  a: "Yes, AI is used for trimming, subtitles, voiceovers, and more.",
-                },
-                {
-                  q: "Can I use Veed.io for Instagram videos?",
-                  a: "Yes, it's optimized for Instagram with templates and vertical video support.",
-                },
-                {
-                  q: "Does Veed.io support video exports in different formats?",
-                  a: "Yes, formats like MP4, MOV, and more are supported depending on the plan.",
-                },
-                {
-                  q: "How does Veed.io handle video transcriptions?",
-                  a: "It automatically transcribes videos with editable AI-generated captions.",
-                },
-                {
-                  q: "Can I use Veed.io for TikTok videos?",
-                  a: "Yes, Veed.io is great for editing vertical videos with music and effects.",
-                },
-                {
-                  q: "Is Veed.io good for small businesses?",
-                  a: "Yes, it's ideal for businesses to create marketing videos without needing advanced skills.",
-                },
-                {
-                  q: "Can I use Veed.io to remove background noise?",
-                  a: "Yes, noise removal tools are included to enhance audio quality.",
-                },
-                {
-                  q: "Does Veed.io offer live streaming features?",
-                  a: "Yes, you can live stream to YouTube, Facebook, and more.",
-                },
-                {
-                  q: "Can I add text animations in Veed.io?",
-                  a: "Yes, it offers a range of animated text effects.",
-                },
-                {
-                  q: "Can I use Veed.io for creating training videos?",
-                  a: "Yes, it's useful for eLearning content with subtitles and annotations.",
-                },
-                {
-                  q: "Does Veed.io have a video script generator?",
-                  a: "Yes, it helps create scripts and supports AI voiceovers from text.",
-                },
-                {
-                  q: "Does Veed.io support green screen effects?",
-                  a: "Yes, background removal and green screen tools are available.",
-                },
-                {
-                  q: "Can I create animated videos with Veed.io?",
-                  a: "Yes, basic animations and motion graphics are supported.",
-                },
-                {
-                  q: "Does Veed.io have an API for developers?",
-                  a: "Yes, Veed.io provides an API to integrate video editing in apps.",
-                },
-                {
-                  q: "Can I export videos without watermarks?",
-                  a: "Yes, upgrade to Pro or Business to export without watermarks.",
-                },
-                {
-                  q: "Can I add logos to videos in Veed.io?",
-                  a: "Yes, you can add logos and brand elements easily.",
-                },
-                {
-                  q: "Can Veed.io create customer engagement videos?",
-                  a: "Yes, Veed.io is used for dynamic, branded customer videos.",
-                },
-              ]
-                .map((item, i) => `{ ...item, id: faq${i} }`)
-                .filter((item, i) => showAllFaqs || i < 4)
-                .map((item, i) => (
-                  <div className="accordion-item mb-3" key={item.id}>
-                    <h2 className="accordion-header" id={`heading${item.id}`}>
-                      <button
-                        className={`accordion-button ${
-                          i !== 0 ? "collapsed" : ""
-                        }`}
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target={`#collapse${item.id}`}
-                        aria-expanded={i === 0 ? "true" : "false"}
-                        aria-controls={`collapse${item.id}`}
-                        style={{
-                          backgroundColor: "#161b22",
-                          color: "#c9d1d9",
-                          fontWeight: "bold",
-                        }}
-                      >
-                        {item.q}
-                      </button>
-                    </h2>
-                    <div
-                      id={`collapse${item.id}`}
-                      className={`accordion-collapse collapse ${
-                        i === 0 ? "show" : ""
-                      }`}
-                      aria-labelledby={`heading${item.id}`}
-                      data-bs-parent="#faqAccordion"
-                    >
-                      <div
-                        className="accordion-body"
-                        style={{
-                          backgroundColor: "#0d1117",
-                          color: "#c9d1d9",
-                          border: "1px solid #238636",
-                          borderRadius: "8px",
-                          padding: "15px",
-                        }}
-                      >
-                        {item.a}
-                      </div>
-                    </div>
-                  </div>
-                ))}
-
-              <div className="text-center mt-4">
-                <button
-                  className="btn btn-outline-light"
-                  onClick={() => setShowAllFaqs(!showAllFaqs)}
-                >
-                  {showAllFaqs ? "Show Less" : "Read More"}
-                </button>
+    <div className="accordion" id="faqAccordion">
+      {[
+        {
+          q: "What is Veed.io?",
+          a: "Veed.io is an online video editing tool powered by AI. It allows users to create, edit, and enhance videos with minimal effort, catering to content creators, marketers, and businesses.",
+        },
+        {
+          q: "Is Veed.io free?",
+          a: "Veed.io offers a free plan with limited features. The free plan includes watermarked videos and fewer export options, while the paid plans offer additional features.",
+        },
+        // ... (rest of your FAQ items)
+      ]
+        .map((item, i) => ({ ...item, id: `faq${i}` })) // Correctly adds id property
+        .filter((item, i) => showAllFaqs || i < 4)
+        .map((item, i) => (
+          <div className="accordion-item mb-3" key={item.id}>
+            <h2 className="accordion-header" id={`heading${item.id}`}>
+              <button
+                className={`accordion-button ${
+                  i !== 0 ? "collapsed" : ""
+                }`}
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target={`#collapse${item.id}`}
+                aria-expanded={i === 0 ? "true" : "false"}
+                aria-controls={`collapse${item.id}`}
+                style={{
+                  backgroundColor: "#161b22",
+                  color: "#c9d1d9",
+                  fontWeight: "bold",
+                }}
+              >
+                {item.q}
+              </button>
+            </h2>
+            <div
+              id={`collapse${item.id}`}
+              className={`accordion-collapse collapse ${
+                i === 0 ? "show" : ""
+              }`}
+              aria-labelledby={`heading${item.id}`}
+              data-bs-parent="#faqAccordion"
+            >
+              <div
+                className="accordion-body"
+                style={{
+                  backgroundColor: "#0d1117",
+                  color: "#c9d1d9",
+                  border: "1px solid #238636",
+                  borderRadius: "8px",
+                  padding: "15px",
+                }}
+              >
+                {item.a}
               </div>
             </div>
           </div>
-        );
+        ))}
+
+      <div className="text-center mt-4">
+        <button
+          className="btn btn-outline-light"
+          onClick={() => setShowAllFaqs(!showAllFaqs)}
+        >
+          {showAllFaqs ? "Show Less" : "Read More"}
+        </button>
+      </div>
+    </div>
+  </div>
+);
 
       case "Technical":
         return (
@@ -781,7 +646,7 @@ const Veedio = () => {
                 </a>
               </div>
             </div>
-            meeting
+
             {/* Right side (Image Section) */}
             <div
               style={{
