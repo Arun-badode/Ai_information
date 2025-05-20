@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
+import assembly from "../../../../public/assets/Img/Ai for Music/9.png";
+import screen1 from "../../../../public/assets/Img/Ai for Music/assembly -screenshot1.jpg";
+import screen2 from "../../../../public/assets/Img/Ai for Music/assembly-screenshot2.jpg";
 
 // review section data
 const reviews = [
@@ -406,14 +409,14 @@ const AssemblyAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.gizmochina.com/wp-content/uploads/2023/06/Screenshot-2023-06-23-165608.png"
+                src={screen1}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={Rephrase}
+                src={screen2}
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -676,7 +679,7 @@ const AssemblyAI = () => {
           href="/Aitools"
           className="d-inline-block text-white text-decoration-none  mt-3 ml-3 py-1 px-2 ms-5 border rounded-sm"
         >
-          <i className="bi bi-arrow-left me-2"></i>Back  {" "}
+          <i className="bi bi-arrow-left me-2"></i>Back{" "}
         </a>
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
@@ -714,7 +717,7 @@ const AssemblyAI = () => {
             {/* Right Side - Image Section */}
             <div className="col-md-6 col-12   order-1 order-md-2  text-center">
               <img
-                src="data:image/png;base64,iVBORw0K..." // shortened for readability
+                src={assembly}
                 className="img-fluid"
                 alt="AssemblyAI"
                 style={{ maxHeight: "300px", objectFit: "contain" }}

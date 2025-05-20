@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
-
+import deepgram from "../../../../public/assets/Img/Ai for Music/7.png";
+import screen1 from "../../../../public/assets/Img/Ai for Music/deepgram-screenshot1.jpg";
+import screen2 from "../../../../public/assets/Img/Ai for Music/deepgram-screenshot2.jpg";
 // review section data
 const reviews = [
   {
@@ -379,14 +381,14 @@ const DeepgramAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.gizmochina.com/wp-content/uploads/2023/06/Screenshot-2023-06-23-165608.png"
+                src={screen1}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src=""
+                src={screen2}
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -649,7 +651,7 @@ const DeepgramAI = () => {
               {/* Image Section - mobile: first, desktop: second (right side) */}
               <div className="col-12 col-md-6 order-1 order-md-2 mb-3 mb-md-0 text-center">
                 <img
-                  src=""
+                  src={deepgram}
                   alt="Deepgram AI"
                   className="img-fluid"
                   style={{

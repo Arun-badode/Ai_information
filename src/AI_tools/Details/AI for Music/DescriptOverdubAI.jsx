@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
-
+import descriptoverdub from "../../../../public/assets/Img/Ai for Music/4.png";
+import screen1 from "../../../../public/assets/Img/Ai for Music/descriptOverdub-screenshot1.jpg";
+import screen2 from "../../../../public/assets/Img/Ai for Music/descriptOverdub-screenshot2.jpg";
 // review section data
 const reviews = [
   {
@@ -371,14 +373,14 @@ const DescriptOverdub = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.gizmochina.com/wp-content/uploads/2023/06/Screenshot-2023-06-23-165608.png"
+                src={screen1}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src=""
+                src={screen2}
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -640,83 +642,82 @@ const DescriptOverdub = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-         
-            <div className="row align-items-center mb-1">
-              {/* Image Section - Mobile me row 1, Desktop me column 2 */}
-              <div
-                className="col-12 col-md-6 order-1 order-md-2 text-center mb-3 mb-md-0"
-                style={{ height: "250px" }}
-              >
-                <img
-                  src=""
-                  alt="Descript Overdub"
-                  style={{ maxWidth: "100%", height: "300px" }}
-                />
-              </div>
+          <div className="row align-items-center mb-1">
+            {/* Image Section - Mobile me row 1, Desktop me column 2 */}
+            <div
+              className="col-12 col-md-6 order-1 order-md-2 text-center mb-3 mb-md-0"
+              style={{ height: "250px" }}
+            >
+              <img
+                src={descriptoverdub}
+                alt="Descript Overdub"
+                style={{ maxWidth: "100%", height: "300px" }}
+              />
+            </div>
 
-              {/* Text Section - Mobile me row 2, Desktop me column 1 */}
-              <div
-                className="col-12 col-md-6 order-2 order-md-1"
-                style={{ paddingRight: "30px" }}
-              >
-                <p className="text-primary">Write better, faster</p>
-                <h1>Descript Overdub</h1>
-                <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-                <p>
-                  Descript Overdub is an advanced AI-powered text-to-speech
-                  (TTS) and voice cloning tool designed to help content
-                  creators, podcasters, video editors, and marketers generate
-                  natural-sounding AI voices. Overdub uses cutting-edge deep
-                  learning algorithms to produce highly customizable voiceovers
-                  from text input. It enables users to clone their own voice or
-                  any other voice they wish to create, allowing them to generate
-                  lifelike, human-like audio content for various applications,
-                  including podcasts, videos, and more. The tool is perfect for
-                  individuals and businesses looking to produce high-quality
-                  voice content quickly and affordably.
-                </p>
+            {/* Text Section - Mobile me row 2, Desktop me column 1 */}
+            <div
+              className="col-12 col-md-6 order-2 order-md-1"
+              style={{ paddingRight: "30px" }}
+            >
+              <p className="text-primary">Write better, faster</p>
+              <h1>Descript Overdub</h1>
+              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+              <p>
+                Descript Overdub is an advanced AI-powered text-to-speech (TTS)
+                and voice cloning tool designed to help content creators,
+                podcasters, video editors, and marketers generate
+                natural-sounding AI voices. Overdub uses cutting-edge deep
+                learning algorithms to produce highly customizable voiceovers
+                from text input. It enables users to clone their own voice or
+                any other voice they wish to create, allowing them to generate
+                lifelike, human-like audio content for various applications,
+                including podcasts, videos, and more. The tool is perfect for
+                individuals and businesses looking to produce high-quality voice
+                content quickly and affordably.
+              </p>
 
-                <div className="mb-3">
-                  <a
-                    href="https://www.descript.com/overdub"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-primary me-2"
-                  >
-                    Explore Tool
-                  </a>
-                </div>
+              <div className="mb-3">
+                <a
+                  href="https://www.descript.com/overdub"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary me-2"
+                >
+                  Explore Tool
+                </a>
               </div>
             </div>
           </div>
-          <section style={{ backgroundColor: "", padding: "3rem 0" }}>
-            <div className="container text-center">
-              <p className="text-primary">Explore in 3 Simple Steps</p>
-              <h2
-                style={{
-                  fontWeight: "semibold",
-                  color: "#fff",
-                  marginBottom: "1rem",
-                }}
-              >
-                How To Use Descript Overdub
-              </h2>
+        </div>
+        <section style={{ backgroundColor: "", padding: "3rem 0" }}>
+          <div className="container text-center">
+            <p className="text-primary">Explore in 3 Simple Steps</p>
+            <h2
+              style={{
+                fontWeight: "semibold",
+                color: "#fff",
+                marginBottom: "1rem",
+              }}
+            >
+              How To Use Descript Overdub
+            </h2>
 
-              <div className="row g-4">
-                {/* Step 1 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#1034A6",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>
-                      {`
+            <div className="row g-4">
+              {/* Step 1 */}
+              <div className="col-md-4">
+                <div
+                  style={{
+                    position: "relative",
+                    backgroundColor: "#1034A6",
+                    borderRadius: "12px",
+                    boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+                    padding: "2rem",
+                    height: "100%",
+                  }}
+                >
+                  <style>
+                    {`
               .step1 {
                 position: absolute;
                 bottom: 10px;
@@ -727,34 +728,33 @@ const DescriptOverdub = () => {
                 opacity: 0.6;
               }
             `}
-                    </style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Content Creators:
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Podcasters, YouTubers, and audiobook narrators use
-                      Descript Overdub to quickly generate high-quality
-                      voiceovers without the need for a professional voice
-                      actor.
-                    </p>
-                    <div className="step1">1</div>
-                  </div>
+                  </style>
+                  <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+                    Content Creators:
+                  </h5>
+                  <p style={{ color: "#fff", margin: 0 }}>
+                    Podcasters, YouTubers, and audiobook narrators use Descript
+                    Overdub to quickly generate high-quality voiceovers without
+                    the need for a professional voice actor.
+                  </p>
+                  <div className="step1">1</div>
                 </div>
+              </div>
 
-                {/* Step 2 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#1034A6",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>
-                      {`
+              {/* Step 2 */}
+              <div className="col-md-4">
+                <div
+                  style={{
+                    position: "relative",
+                    backgroundColor: "#1034A6",
+                    borderRadius: "12px",
+                    boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+                    padding: "2rem",
+                    height: "100%",
+                  }}
+                >
+                  <style>
+                    {`
               .step2 {
                 position: absolute;
                 bottom: 10px;
@@ -765,32 +765,32 @@ const DescriptOverdub = () => {
                 opacity: 0.6;
               }
             `}
-                    </style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Video Production
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Video editors can create voiceovers for video scripts,
-                      allowing for more efficient video editing.
-                    </p>
-                    <div className="step2">2</div>
-                  </div>
+                  </style>
+                  <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+                    Video Production
+                  </h5>
+                  <p style={{ color: "#fff", margin: 0 }}>
+                    Video editors can create voiceovers for video scripts,
+                    allowing for more efficient video editing.
+                  </p>
+                  <div className="step2">2</div>
                 </div>
+              </div>
 
-                {/* Step 3 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#1034A6",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>
-                      {`
+              {/* Step 3 */}
+              <div className="col-md-4">
+                <div
+                  style={{
+                    position: "relative",
+                    backgroundColor: "#1034A6",
+                    borderRadius: "12px",
+                    boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+                    padding: "2rem",
+                    height: "100%",
+                  }}
+                >
+                  <style>
+                    {`
               .step3 {
                 position: absolute;
                 bottom: 10px;
@@ -801,49 +801,49 @@ const DescriptOverdub = () => {
                 opacity: 0.6;
               }
             `}
-                    </style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Customer Support:
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Businesses use it to create virtual assistants and
-                      automated phone systems that provide accurate and
-                      human-like responses.
-                    </p>
-                    <div className="step3">3</div>
-                  </div>
+                  </style>
+                  <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+                    Customer Support:
+                  </h5>
+                  <p style={{ color: "#fff", margin: 0 }}>
+                    Businesses use it to create virtual assistants and automated
+                    phone systems that provide accurate and human-like
+                    responses.
+                  </p>
+                  <div className="step3">3</div>
                 </div>
               </div>
             </div>
-          </section>
+          </div>
+        </section>
 
-          {/* Tab Navigation */}
-          <ul className="nav nav-tabs custom-tabs mb-4">
-            {[
-              "features",
-              "screenshots",
-              "reviews",
-              "FAQ",
+        {/* Tab Navigation */}
+        <ul className="nav nav-tabs custom-tabs mb-4">
+          {[
+            "features",
+            "screenshots",
+            "reviews",
+            "FAQ",
 
-              "why-we-use",
-              "pros & cons",
-              "alternative",
-            ].map((tab) => (
-              <li className="nav-item mb-2" key={tab}>
-                <button
-                  className={`nav-link ${activeTab === tab ? "active" : ""}`}
-                  onClick={() => setActiveTab(tab)}
-                >
-                  {tab.charAt(0).toUpperCase() + tab.slice(1)}
-                </button>
-              </li>
-            ))}
-          </ul>
+            "why-we-use",
+            "pros & cons",
+            "alternative",
+          ].map((tab) => (
+            <li className="nav-item mb-2" key={tab}>
+              <button
+                className={`nav-link ${activeTab === tab ? "active" : ""}`}
+                onClick={() => setActiveTab(tab)}
+              >
+                {tab.charAt(0).toUpperCase() + tab.slice(1)}
+              </button>
+            </li>
+          ))}
+        </ul>
 
-          {/* Tab Content */}
-          <div className="tab-content-area">{renderTabContent()}</div>
+        {/* Tab Content */}
+        <div className="tab-content-area">{renderTabContent()}</div>
 
-          {/* <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
+        {/* <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
             <h4 className="mb-3">Ready to get started with DescriptOverdub?</h4>
             <p className="mb-4">
               Join thousands of professionals already boosting their
@@ -857,8 +857,7 @@ const DescriptOverdub = () => {
               No credit card required. 14-day free trial available.
             </small>
           </div> */}
-        </div>
-      
+      </div>
     </>
   );
 };

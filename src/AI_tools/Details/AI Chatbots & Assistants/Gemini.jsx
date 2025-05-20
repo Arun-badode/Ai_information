@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../../AI_tools/ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import gemini from "../../../../public/assets/Img/AI For Chatbots/gemini.png"
 
 
 // review section data
@@ -651,12 +652,7 @@ const Gemini = () => {
           <div className="d-flex align-items-center justify-content-between mb-5">
             {/* Left side (Text Section) */}
             <div style={{ flex: 1, paddingRight: "30px" }}>
-              <img
-                src=""
-                alt="Logo"
-                className="me-3"
-                style={{ width: "60px" }}
-              />
+       
               <h2>Google Gemini</h2>
               <div className="text-warning mb-1">
                 ⭐⭐⭐⭐⭐ 95% Satisfaction
@@ -683,10 +679,10 @@ const Gemini = () => {
             {/* Right side (Image Section) */}
             <div style={{ flex: 1, textAlign: "center" }}>
               <img
-                src=""
+                src={gemini}
                 alt="Dashboard Preview"
                 className="img-fluid rounded-3"
-                style={{ maxWidth: "80%", height: "auto" }}
+                style={{ maxWidth: "100%", height: "auto" }}
               />
             </div>
           </div>
