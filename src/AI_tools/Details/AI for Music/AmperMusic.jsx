@@ -5,8 +5,11 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 // import Logo from "../../../Images/logo[2].png";
 // import deatilimage from "../../../Images/DetailImage.png";
-import amper from "../../../../public/assets/Img/Ai for Music/7.png";
+import amper from "../../../../public/assets/Img/Ai for Music/19.png";
+import screen1 from "../../../../public/assets/Img/Ai for Music/amper-screenshot1.jpg";
+import screen2 from "../../../../public/assets/Img/Ai for Music/amper-screenshot2.png";
 // review section data
+
 const reviews = [
   {
     name: "Alex Johnson",
@@ -311,14 +314,14 @@ const AmperMusicAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
+                src={screen1}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
+                src={screen2}
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -840,7 +843,7 @@ const AmperMusicAI = () => {
 
               <div className="mb-3">
                 <a
-                  href="https://www.ampermusic.com"
+                  href="https://welcome.ai/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary me-2"

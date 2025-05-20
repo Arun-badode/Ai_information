@@ -660,11 +660,11 @@ const CategoriesNavbar = () => {
                     <h6>
                       Content Generation <FaPencilAlt size={20} />
                     </h6>
-                    <Link to="/"></Link>
-                    <Link to="/"></Link>
-                    <Link to="/"></Link>
-                    <Link to="/"></Link>
-                    <Link to="/"></Link>
+                    <Link to="/Apheris">Apheris AI</Link>
+                    <Link to="/Enveil">Enveil AI </Link>
+                    <Link to="/Evervault">Evervault AI</Link>
+                    <Link to="/Inpher ">Inpher AI </Link>
+                    <Link to="/Skyflow">Skyflow AI</Link>
                     <Link to="/"></Link>
                   </div>
                 </div>

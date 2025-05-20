@@ -270,6 +270,11 @@ import Komo from "./AI_tools/Details/Ai for Search engines/Komo";
 import MetaPhor from "./AI_tools/Details/Ai for Search engines/MetaPhor";
 import Mojeek from "./AI_tools/Details/Ai for Search engines/Mojeek";
 import Applitool from "./AI_tools/Details/AI for Education/Applitoo";
+import Apheris from "./AI_tools/Details/Ai for Privacy/Apheris";
+import Evervault from "./AI_tools/Details/Ai for Privacy/Evervault";
+import Inpher from "./AI_tools/Details/Ai for Privacy/Inpher";
+import Enveil from "./AI_tools/Details/Ai for Privacy/Enveil";
+import Skyflow from "./AI_tools/Details/Ai for Privacy/Skyflow";
 
 const App = () => {
   return (
@@ -528,6 +533,11 @@ const App = () => {
         <Route path="/AnonosAI" element={<AnonosAI />}></Route>
         <Route path="/Vaultree" element={<VaultreeAI />}></Route>
         <Route path="/Duality" element={<DualityAI />}></Route>
+        <Route path="/Apheris" element={<Apheris />}></Route>
+        <Route path="/Enveil" element={<Enveil />}></Route>
+        <Route path="/Evervault" element={<Evervault />}></Route>
+        <Route path="/Inpher" element={<Inpher />}></Route>
+        <Route path="/Skyflow" element={<Skyflow />}></Route>
         {/* Ai for Privacy end  */}
         {/* Ai for Seacrh Engine  */}
         <Route path="/Andi" element={<Andi />}></Route>

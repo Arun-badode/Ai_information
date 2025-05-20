@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
-
+import play from "../../../../public/assets/Img/Ai for Music/3.png";
+import screen1 from "../../../../public/assets/Img/Ai for Music/play-screenshot1.jpg";
+import screen2 from "../../../../public/assets/Img/Ai for Music/play-screenshot2.jpg";
 // review section data
 const reviews = [
   {

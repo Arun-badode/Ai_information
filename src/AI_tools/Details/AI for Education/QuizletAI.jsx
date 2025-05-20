@@ -5,7 +5,7 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
-import a from "../../../../public/assets/Img/AI for Education/AI For Education/1.png"
+import a from "../../../../public/assets/Img/AI for Education/AI For Education/1.png";
 // review section data
 const reviews = [
   {
@@ -85,7 +85,7 @@ const QuizletAI = () => {
   };
   const renderTabContent = () => {
     switch (activeTab) {
-      case "Features":
+      case "features":
         return (
           <div className="row g-4">
             {[
@@ -257,43 +257,49 @@ const QuizletAI = () => {
 
                 <h5>Personalization</h5>
                 <p className="fs-5">
-                  Quizlet AI tailors the learning experience to each individual’s needs, making studying more efficient and effective.
+                  Quizlet AI tailors the learning experience to each
+                  individual’s needs, making studying more efficient and
+                  effective.
                 </p>
 
                 <h5>Efficiency:</h5>
                 <p className="fs-5 mt-3">
-                  The AI-powered study tools are designed to focus on areas that need improvement, allowing students to spend more time
+                  The AI-powered study tools are designed to focus on areas that
+                  need improvement, allowing students to spend more time
                   learning and less time on content they already know.
-
                 </p>
 
                 <h5>Smart Study Plans</h5>
                 <p className="fs-5 mt-3">
-                  Quizlet generates smart study schedules based on the user’s goals, ensuring optimal study sessions.
+                  Quizlet generates smart study schedules based on the user’s
+                  goals, ensuring optimal study sessions.
                 </p>
 
                 <h5>Data-Driven Insights</h5>
                 <p className="fs-5 mt-3">
-                  Teachers and students gain valuable insights from detailed learning reports, identifying trends and areas for improvement.
-
+                  Teachers and students gain valuable insights from detailed
+                  learning reports, identifying trends and areas for
+                  improvement.
                 </p>
 
                 <h5>Enhanced Engagement</h5>
                 <p className="fs-5 mt-3">
-                  Interactive learning modes and gamified study sessions keep students motivated.
-
+                  Interactive learning modes and gamified study sessions keep
+                  students motivated.
                 </p>
 
                 <h5>Adaptive Learning Paths</h5>
                 <p className="fs-5 mt-3">
-                  With AI, the platform continuously adapts study paths according to performance, ensuring that no student is left behind.
-
+                  With AI, the platform continuously adapts study paths
+                  according to performance, ensuring that no student is left
+                  behind.
                 </p>
 
                 <h5>Continuous Learning Adaptation</h5>
                 <p className="fs-5 mt-3">
-                  Quizlet AI constantly adapts to your study habits, updating learning paths and presenting material that ensures steady progress.
-
+                  Quizlet AI constantly adapts to your study habits, updating
+                  learning paths and presenting material that ensures steady
+                  progress.
                 </p>
 
                 <Button variant="primary" size="lg" className="mt-4">
@@ -323,20 +329,27 @@ const QuizletAI = () => {
                 <h5 className="text-success text-start mb-4">✅ Pros</h5>
                 <ul className="ps-3" style={{ listStyleType: "disc" }}>
                   <li className="mb-2">
-                    Customizable Learning: Quizlet AI adapts to each learner’s pace, creating a more personalized and efficient learning experience.
-
+                    Customizable Learning: Quizlet AI adapts to each learner’s
+                    pace, creating a more personalized and efficient learning
+                    experience.
                   </li>
-                  <li className="mb-2">Comprehensive Learning Tools: It combines flashcards, quizzes, and study sessions, all designed to improve retention and understanding.</li>
-                  <li className="mb-2">Engaging Interface: The platform uses gamification to keep students motivated with points, levels, and achievements.
+                  <li className="mb-2">
+                    Comprehensive Learning Tools: It combines flashcards,
+                    quizzes, and study sessions, all designed to improve
+                    retention and understanding.
+                  </li>
+                  <li className="mb-2">
+                    Engaging Interface: The platform uses gamification to keep
+                    students motivated with points, levels, and achievements.
                   </li>
                   <li className="mb-2">
                     {" "}
-                    Progress Tracking: Both students and teachers can monitor progress and identify areas for improvement.
-
+                    Progress Tracking: Both students and teachers can monitor
+                    progress and identify areas for improvement.
                   </li>
                   <li className="mb-2">
-                    Collaboration: Quizlet supports peer-to-peer learning with group study modes and collaborative assignments.
-
+                    Collaboration: Quizlet supports peer-to-peer learning with
+                    group study modes and collaborative assignments.
                   </li>
                 </ul>
               </div>
@@ -355,24 +368,29 @@ const QuizletAI = () => {
                 <h5 className="text-warning text-start mb-4">⚠ Cons</h5>
                 <ul className="ps-3" style={{ listStyleType: "disc" }}>
                   <li className="mb-2">
-                    Subscription Costs: Some advanced features and tools require a paid subscription, which might not be affordable for all users.
-
+                    Subscription Costs: Some advanced features and tools require
+                    a paid subscription, which might not be affordable for all
+                    users.
                   </li>
                   <li className="mb-2">
                     {" "}
-                    Limited for Advanced Topics: While great for basic learning, Quizlet may not have the depth required for more advanced, niche subjects.
+                    Limited for Advanced Topics: While great for basic learning,
+                    Quizlet may not have the depth required for more advanced,
+                    niche subjects.
                   </li>
                   <li className="mb-2">
-                    Requires Internet: Quizlet’s AI features are internet-dependent, making it less useful in offline environments.
-
+                    Requires Internet: Quizlet’s AI features are
+                    internet-dependent, making it less useful in offline
+                    environments.
                   </li>
                   <li className="mb-2">
-                    May Over-Optimize: Some learners may feel that the AI’s suggestions are too repetitive or narrowly focused on certain types of content.
-
+                    May Over-Optimize: Some learners may feel that the AI’s
+                    suggestions are too repetitive or narrowly focused on
+                    certain types of content.
                   </li>
                   <li className="mb-2">
-                    Learning Dependency: Some students may become too reliant on Quizlet and not develop their own learning techniques.
-
+                    Learning Dependency: Some students may become too reliant on
+                    Quizlet and not develop their own learning techniques.
                   </li>
                 </ul>
               </div>
@@ -385,7 +403,6 @@ const QuizletAI = () => {
           <div className="container my-5">
             <h4 className="text-center text-light mb-4">
               Alternatives to Quizlet AI
-
             </h4>
             <div className="row justify-content-center gap-2">
               <div
@@ -400,22 +417,26 @@ const QuizletAI = () => {
               >
                 <ul className="ps-3" style={{ listStyleType: "disc" }}>
                   <li className="mb-3">
-                    <strong>Anki:</strong> A popular flashcard app that uses spaced repetition algorithms to help learners memorize information.
-
+                    <strong>Anki:</strong> A popular flashcard app that uses
+                    spaced repetition algorithms to help learners memorize
+                    information.
                   </li>
                   <li className="mb-3">
-                    <strong>Kahoot!:</strong> An interactive quiz platform that is widely used in classrooms, offering gamified learning experiences.
-
+                    <strong>Kahoot!:</strong> An interactive quiz platform that
+                    is widely used in classrooms, offering gamified learning
+                    experiences.
                   </li>
                   <li className="mb-3">
-                    <strong>Duolingo:</strong> A language learning app that uses AI to create personalized learning paths for users.
+                    <strong>Duolingo:</strong> A language learning app that uses
+                    AI to create personalized learning paths for users.
                   </li>
                   <li className="mb-3">
-                    <strong>Cram.com:</strong> Another flashcard tool with features similar to Quizlet but with additional study modes.
-
+                    <strong>Cram.com:</strong> Another flashcard tool with
+                    features similar to Quizlet but with additional study modes.
                   </li>
                   <li className="mb-3">
-                    <strong>Brainscape</strong>  A flashcard platform that uses cognitive science to enhance the learning experience.
+                    <strong>Brainscape</strong> A flashcard platform that uses
+                    cognitive science to enhance the learning experience.
                   </li>
                 </ul>
               </div>
@@ -532,7 +553,6 @@ const QuizletAI = () => {
                   q: " Does Quizlet AI offer learning analytics?",
                   a: "Yes, Quizlet AI provides learning analytics that give you detailed insights into your progress and areas needing improvement.",
                 },
-
               ]
                 .map((item, i) => ({ ...item, id: `faq${i}` }))
                 .filter((item, i, arr) => showAllFaqs || i < 4)
@@ -540,8 +560,9 @@ const QuizletAI = () => {
                   <div className="accordion-item mb-3" key={item.id}>
                     <h2 className="accordion-header" id={`heading${item.id}`}>
                       <button
-                        className={`accordion-button ${i !== 0 ? "collapsed" : ""
-                          }`}
+                        className={`accordion-button ${
+                          i !== 0 ? "collapsed" : ""
+                        }`}
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target={`#collapse${item.id}`}
@@ -558,8 +579,9 @@ const QuizletAI = () => {
                     </h2>
                     <div
                       id={`collapse${item.id}`}
-                      className={`accordion-collapse collapse ${i === 0 ? "show" : ""
-                        }`}
+                      className={`accordion-collapse collapse ${
+                        i === 0 ? "show" : ""
+                      }`}
                       aria-labelledby={`heading${item.id}`}
                       data-bs-parent="#faqAccordion"
                     >
@@ -597,7 +619,6 @@ const QuizletAI = () => {
     }
   };
 
-
   return (
     <>
       <div className="bg-dark">
@@ -612,13 +633,24 @@ const QuizletAI = () => {
         <div className="container">
           <div className="d-flex flex-column flex-md-row align-items-center justify-content-between mb-5">
             {/* Left side (Text Section) */}
-            <div style={{ flex: 1, paddingRight: "30px" }} className="order-2 order-md-1">
+            <div
+              style={{ flex: 1, paddingRight: "30px" }}
+              className="order-2 order-md-1"
+            >
               <h2>Quizlet AI Overview</h2>
               <div className="text-warning mb-1">
                 ⭐⭐⭐⭐⭐ 95% Satisfaction
               </div>
               <p>
-                Quizlet AI is an advanced AI-powered learning platform that uses artificial intelligence to enhance the study experience for both students and teachers. Quizlet is known for its study tools, including flashcards, personalized learning paths, adaptive learning algorithms, and more. It allows learners to engage in smart study plans, track progress, and improve retention through data-driven techniques. The integration of AI ensures that learners receive personalized study experiences and insights based on their performance.
+                Quizlet AI is an advanced AI-powered learning platform that uses
+                artificial intelligence to enhance the study experience for both
+                students and teachers. Quizlet is known for its study tools,
+                including flashcards, personalized learning paths, adaptive
+                learning algorithms, and more. It allows learners to engage in
+                smart study plans, track progress, and improve retention through
+                data-driven techniques. The integration of AI ensures that
+                learners receive personalized study experiences and insights
+                based on their performance.
               </p>
               <div className="mb-3">
                 <a
@@ -646,11 +678,10 @@ const QuizletAI = () => {
             </div>
           </div>
 
-
           {/* Tab Navigation */}
           <ul className="nav nav-tabs custom-tabs mb-4">
             {[
-              "Features",
+              "features",
               "Screenshots",
               "Reviews",
               "FAQs",
@@ -672,7 +703,6 @@ const QuizletAI = () => {
 
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
-
         </div>
       </div>
     </>

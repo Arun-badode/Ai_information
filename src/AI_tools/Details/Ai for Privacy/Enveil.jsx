@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./ImageMindAI.css";
+// import "./ImageMindAI.css";
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 // import magisto from "../../../Images/MagistoAI.png";
 
-// review section data
 const reviews = [
   {
     name: "Alex Johnson",
