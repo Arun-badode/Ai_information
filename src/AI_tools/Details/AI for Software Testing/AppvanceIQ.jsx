@@ -3,8 +3,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Logo from "../../../Images/logo[2].png";
-import deatilimage from "../../../Images/DetailImage.png";
+import appvance from '../../../../public/assets/Img/AI for software testing/appvance.png'
+
+import appvance11 from '../../../../public/assets/Img/AI for software testing/appvance11.png'
+import appvance12 from '../../../../public/assets/Img/AI for software testing/appvance12.png'
 
 // review section data
 const reviews = [
@@ -130,14 +132,14 @@ const AppvanceIQ = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src={deatilimage}
+                src={appvance11}
                 alt="Screenshot 1"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={deatilimage}
+                src={appvance12}
                 alt="Screenshot 2"
                 className="img-fluid rounded-3"
               />
@@ -687,49 +689,56 @@ const AppvanceIQ = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className="d-flex align-items-center justify-content-between mb-5">
-            {/* Left side (Text Section) */}
-            <div style={{ flex: 1, paddingRight: "30px" }}>
-              <img
-                src={Logo}
-                alt="Logo"
-                className="me-3"
-                style={{ width: "60px" }}
-              />
-              <h2>Appvance IQ</h2>
-              <div className="text-warning mb-1">
-                ⭐⭐⭐⭐⭐ 95% Satisfaction
-              </div>
-              <p>
-                Appvance IQ is a powerful AI-powered test automation platform
-                designed to streamline the software testing process. It
-                integrates AI-driven testing capabilities, enabling teams to
-                automate functional, performance, and regression tests across a
-                variety of platforms. Appvance IQ allows for cross-browser and
-                cross-platform testing, providing deep insights into the quality
-                of applications through fast and efficient test automation.
-              </p>
-              <p>
-                By using AI-powered testing, Appvance IQ reduces the manual
-                effort involved in creating and executing tests, allowing teams
-                to focus on higher-level activities such as application
-                development and user experience. With support for cloud-based
-                testing, continuous integration, mobile app testing, web app
-                testing, and more, it’s an essential tool for modern agile teams
-                looking to speed up their testing processes while maintaining
-                high-quality standards.
-              </p>
-            </div>
+         <div className="container-fluid p-0">
+  <div className="row g-0 align-items-center justify-content-between mb-5">
+    {/* Left side (Text Section) - Order changes on mobile */}
+    <div className="col-lg-6 col-md-12 p-3 p-lg-5 order-2 order-lg-1">
+      <h2 className="display-5 mb-3">Appvance IQ</h2>
+      <div className="text-warning mb-3">
+        ⭐⭐⭐⭐⭐ 95% Satisfaction
+      </div>
+      <p className="lead mb-4">
+        Appvance IQ is a powerful AI-powered test automation platform
+        designed to streamline the software testing process. It
+        integrates AI-driven testing capabilities, enabling teams to
+        automate functional, performance, and regression tests across a
+        variety of platforms.
+      </p>
+      <p className="mb-4">
+        By using AI-powered testing, Appvance IQ reduces the manual
+        effort involved in creating and executing tests, allowing teams
+        to focus on higher-level activities such as application
+        development and user experience. With support for cloud-based
+        testing, continuous integration, mobile app testing, web app
+        testing, and more, it's an essential tool for modern agile teams
+        looking to speed up their testing processes while maintaining
+        high-quality standards.
+      </p>
+      <div className="d-grid gap-2 d-md-block mb-4 mb-lg-0">
+        <a
+          href="https://appvance.ai/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-primary btn-lg px-4 me-md-2"
+        >
+          Explore Tool
+        </a>
+      </div>
+    </div>
 
-            {/* Right side (Image Section) */}
-            <div style={{ flex: 1, textAlign: "center" }}>
-              <img
-                src="https://images.indianexpress.com/2023/05/ChatGPT-Code-Interpreter.jpg"
-                className="img-fluid rounded-3"
-                style={{ maxWidth: "80%", height: "auto" }}
-              />
-            </div>
-          </div>
+    {/* Right side (Image Section) - Order changes on mobile */}
+    <div className="col-lg-6 col-md-12 order-1 order-lg-2">
+      <div className="p-3 p-lg-5 text-center">
+        <img
+          src={appvance}
+          alt="appvance"
+          className="img-fluid rounded-3 shadow"
+          style={{ maxWidth: "100%", height: "auto" }}
+        />
+      </div>
+    </div>
+  </div>
+</div>
 
           {/* Tab Navigation */}
           <ul className="nav nav-tabs custom-tabs mb-4">
@@ -757,20 +766,7 @@ const AppvanceIQ = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with ChatGPTI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
+    
         </div>
       </div>
     </>

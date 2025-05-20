@@ -387,7 +387,7 @@ const App = () => {
         <Route path="/FunctionizeAI" element={<FunctionizeAI />}></Route>
         <Route path="/Testimio" element={<Testimio />}></Route>
         <Route path="/BrowserStackAI" element={<BrowserStackAI />}></Route>
-        <Route path="/AppvancelIQ" element={<AppvanceIQ />}></Route>
+        <Route path="/AppvanceIQ" element={<AppvanceIQ />}></Route>
         <Route path="/TricentisToscaAI" element={<TricentisToscaAI />}></Route>
         <Route path="/ApplitoolsAI" element={<Applitool />}></Route>
         {/* AI in E-commerce */}

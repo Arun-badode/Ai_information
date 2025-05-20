@@ -3,8 +3,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Logo from "../../../Images/logo[2].png";
-import deatilimage from "../../../Images/DetailImage.png";
+import perfecto from '../../../../public/assets/Img/AI for software testing/perfecto.png'
+import perfectio1 from '../../../../public/assets/Img/AI for software testing/perfectio1.png'
+import perfectio2 from '../../../../public/assets/Img/AI for software testing/perfectio2.png'
+
+
 
 // review section data
 const reviews = [
@@ -310,14 +313,15 @@ const PerfectoAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
-                alt=""
+                src={perfectio1}
+                alt="screenshot1"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
+                src={perfectio2}
+                alt="screenshot2"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -738,51 +742,51 @@ const PerfectoAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>Perfecto AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Perfecto AI is an AI-powered test automation platform designed
-                to streamline and optimize the software testing process. The
-                tool supports automation for web and mobile applications,
-                offering a wide range of features such as cross-browser testing,
-                API testing, performance testing, regression testing, UI
-                testing, and more. Powered by AI, Perfecto automates repetitive
-                testing tasks, reducing manual efforts, and improving test
-                accuracy. The platform is highly suited for DevOps and CI/CD
-                pipelines, providing real-time feedback and enhancing testing
-                processes at scale.
-              </p>
+      <div className="row align-items-center justify-content-between mb-4">
+  {/* Left side (Text Section) */}
+  <div className="col-lg-6 col-md-12 order-lg-1 order-2 pe-lg-4">
+    <p className="text-primary">Write better, faster</p>
+    <h1>Perfecto AI</h1>
+    <div className="text-warning mb-3">⭐⭐⭐⭐⭐</div>
+    <p className="mb-3">
+      Perfecto AI is an AI-powered test automation platform designed
+      to streamline and optimize the software testing process. The
+      tool supports automation for web and mobile applications,
+      offering a wide range of features such as cross-browser testing,
+      API testing, performance testing, regression testing, UI
+      testing, and more. Powered by AI, Perfecto automates repetitive
+      testing tasks, reducing manual efforts, and improving test
+      accuracy. The platform is highly suited for DevOps and CI/CD
+      pipelines, providing real-time feedback and enhancing testing
+      processes at scale.
+    </p>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
-            </div>
+    <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
+      <a
+        href="https://www.perfecto.io/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary btn-lg px-4"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
-          </div>
+  {/* Right side (Image Section) */}
+  <div className="col-lg-6 col-md-12 order-lg-2 order-1 mb-4 mb-lg-0 text-center">
+    <img
+      src={perfecto}
+      alt="Perfecto AI"
+      className="img-fluid"
+      style={{ 
+        maxHeight: "300px", 
+        width: "auto",
+        objectFit: "contain" 
+      }}
+    />
+  </div>
+</div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Create Videos in 3 Simple Steps</p>
@@ -936,20 +940,7 @@ const PerfectoAI = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with RunWayGen?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
+          
         </div>
       </div>
     </>
