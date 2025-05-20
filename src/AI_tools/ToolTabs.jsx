@@ -82,8 +82,8 @@ const ToolTabs = () => {
         <Row className="flex-nowrap overflow-auto">
           {tools[activeTab].length > 0 ? (
             tools[activeTab].map((tool, idx) => (
-              <Col md={4} key={idx} className="mb-3 flex-shrink-0">
-                <Card className="tool-card bg-gradient-to-r from-sky-400 to-blue-1000 p-4 rounded-lg shadow-lg hover:bg-indigo-600 transition duration-300">
+                            <Col md={4} key={idx} className="mb-3 flex-shrink-0">
+                <Card className="tool-card bg-gradient-to-r from-purple-500 to-indigo-700 p-4 rounded-lg shadow-lg hover:bg-indigo-600 transition duration-300">
                   <img
                     src={tool.icon}
                     alt={tool.name}
@@ -105,7 +105,7 @@ const ToolTabs = () => {
                       ))}
                     </div>
                   </div>
-                  <div className="mt-3 text-center text-[#E2E8F0]">
+                  <div className="mt-3 text-center text-[#E2E8F0]" style={{display:"flex",justifyContent:"space-around"}}>
                     <div className="text-[#A0AEC0]">
                       <i className="bi bi-bookmark"></i> {tool.votes}
                     </div>

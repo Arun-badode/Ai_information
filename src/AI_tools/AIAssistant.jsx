@@ -44,8 +44,7 @@ const AIAssistant = () => {
 
         .chat-card {
           border-radius: 16px;
-          max-width: 500px;
-          width: 100%;
+          width: 90%;
           padding: 1rem;
           box-shadow: 0 4px 20px rgba(0,0,0,0.1);
         }
@@ -108,9 +107,9 @@ const AIAssistant = () => {
 
           <div className="d-flex justify-content-between align-items-center">
             <div>
-              <button className="btn btn-outline-secondary bg-white btn-sm me-2">
+              {/* <button className="btn btn-outline-secondary bg-white btn-sm me-2">
                 <i className="fas fa-microphone"></i>
-              </button>
+              </button> */}
               {/* <button className="btn btn-outline-secondary btn-sm bg-white">
                 <i className="fas fa-paperclip"></i>
               </button> */}
