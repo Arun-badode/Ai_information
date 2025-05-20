@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
-import magisto from "../../../Images/MagistoAI.png";
+
+import doma from '../../../../public/assets/Img/AI for Business/doma.jpg'
 import doma1 from '../../../../public/assets/Img/AI for Business/doma1.png'
 import doma2 from '../../../../public/assets/Img/AI for Business/doma2.png'
 // review section data
@@ -640,54 +641,51 @@ const DomoAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Grow better, faster</p>
-              <h1>Domo AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Domo AI is a powerful platform that integrates artificial
-                intelligence and machine learning into its business intelligence
-                (BI) services. Designed for modern enterprises, Domo AI
-                transforms how businesses visualize, analyze, and act on their
-                data by delivering smart, real-time, and AI-driven insights.
-                Leveraging Domo AI analytics, machine learning models, and
-                predictive analytics, organizations can enhance decision-making,
-                improve performance, and drive growth.
-              </p>
+        <div className="row align-items-center g-4 mb-4">
+  {/* Left side (Text Section) */}
+  <div className="col-lg-6 col-12 order-lg-1 order-2 pe-lg-4">
+    <p className="text-primary mb-2">Grow better, faster</p>
+    <h1 className="mb-3">Domo AI</h1>
+    <div className="text-warning mb-3">⭐⭐⭐⭐⭐</div>
+    <p className="mb-3">
+      Domo AI is a powerful platform that integrates artificial
+      intelligence and machine learning into its business intelligence
+      (BI) services. Designed for modern enterprises, Domo AI
+      transforms how businesses visualize, analyze, and act on their
+      data by delivering smart, real-time, and AI-driven insights.
+    </p>
+    <p className="mb-4">
+      Leveraging Domo AI analytics, machine learning models, and
+      predictive analytics, organizations can enhance decision-making,
+      improve performance, and drive growth.
+    </p>
 
-             <div className="mb-3">
-                <a
-                  href="https://domoai.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary me-2"
-                >
-                  Explore Tool
-                </a>
-              </div>
-            </div>
+    <div className="mb-3">
+      <a
+        href="https://domoai.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary btn-lg px-4"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src={magisto}
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
-          </div>
+  {/* Right side (Image Section) */}
+  <div className="col-lg-6 col-12 order-lg-2 order-1 text-center mb-4 mb-lg-0">
+    <img
+      src={doma}
+      alt="Domo AI Platform Interface"
+      className="img-fluid rounded-3 shadow"
+      style={{
+        maxHeight: "350px",
+        width: "auto",
+        objectFit: "contain"
+      }}
+    />
+  </div>
+</div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>

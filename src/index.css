@@ -34,3 +34,10 @@ button {
 .scrollbar-hide::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }
+
+@media (min-width: 320px) and (max-width: 440px){
+  .lovaaiflex{
+  flex-direction: column-reverse;
+  }
+
+}
