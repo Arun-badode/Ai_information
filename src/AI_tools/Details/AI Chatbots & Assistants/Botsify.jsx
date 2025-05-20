@@ -5,8 +5,6 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import botsify from "../../../../public/assets/Img/AI Chatbots & Assistants/2.jpg";
 
-
-
 // review section data
 const reviews = [
   {
@@ -131,18 +129,10 @@ const Botsify = () => {
         return (
           <div className="row g-4">
             <div className="col-md-6">
-              <img
-                src=''
-                alt="Screenshot 1"
-                className="img-fluid rounded-3"
-              />
+              <img src="" alt="Screenshot 1" className="img-fluid rounded-3" />
             </div>
             <div className="col-md-6">
-              <img
-                src={deatilimage}
-                alt="Screenshot 2"
-                className="img-fluid rounded-3"
-              />
+              <img src="" alt="Screenshot 2" className="img-fluid rounded-3" />
             </div>
           </div>
         );
@@ -584,7 +574,7 @@ const Botsify = () => {
           href="/Aitools"
           className="d-inline-block text-white text-decoration-none  mt-3 ml-3 py-1 px-2 ms-5 border rounded-sm"
         >
-          <i className="bi bi-arrow-left me-2"></i>Back  {" "}
+          <i className="bi bi-arrow-left me-2"></i>Back{" "}
         </a>
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">

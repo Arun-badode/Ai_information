@@ -74,7 +74,7 @@ const styles = {
     borderColor: "#2ea043",
   },
 };
-const Sudowriter = () => {
+const Wordtune = () => {
   const [activeTab, setActiveTab] = useState("features"); // Set the default active tab as 'features'
   const [showAllFaqs, setShowAllFaqs] = useState(false);
 
@@ -91,29 +91,29 @@ const Sudowriter = () => {
             </div>
             {[
               {
-                icon: "🧠",
-                title: "Story Engine:",
-                desc: "Build entire plots, arcs, and scenes with AI-driven structure support.",
+                icon: "🔄",
+                title: "Rewrite & Paraphrase:",
+                desc: "Effortlessly rewrite sentences or entire paragraphs to improve clarity and style.",
               },
               {
-                icon: "✨",
-                title: "Rewrite & Expand:",
-                desc: "Improve or lengthen your content instantly while keeping your original tone.",
+                icon: "🎯",
+                title: "Tone Control:",
+                desc: "Adjust the tone of your writing to be formal, casual, confident, or friendly with a single click.",
               },
               {
-                icon: "🖋️",
-                title: "Describe Feature:",
-                desc: "Turn simple words into rich, vivid descriptions perfect for novels and scripts.",
-              },
-              {
-                icon: "🎭",
-                title: "Character Brainstorming:",
-                desc: "Generate unique character traits, motivations, and dialogue suggestions.",
+                icon: "✍️",
+                title: "Smart Suggestions:",
+                desc: "Get AI-powered suggestions for sentence completions, improvements, and alternative phrasing.",
               },
               {
                 icon: "📚",
-                title: "Genre-Specific Suggestions:",
-                desc: "Get recommendations tailored to sci-fi, romance, horror, fantasy, and more.",
+                title: "Grammar & Clarity:",
+                desc: "Enhance grammar, fix awkward phrasing, and make your writing more concise and readable.",
+              },
+              {
+                icon: "🌐",
+                title: "Multilingual Support:",
+                desc: "Rewrite and improve text in multiple languages for global communication.",
               },
             ].map((feature, index) => (
               <div className="col-md-4" key={index}>
@@ -262,64 +262,64 @@ const Sudowriter = () => {
             <div className="accordion" id="faqAccordion">
               {[
                 {
-                  q: "What is Sudowrite?",
-                  a: "Sudowrite is an AI-powered creative writing assistant designed to help authors, screenwriters, and storytellers generate and refine content.",
+                  q: "What is Wordtune?",
+                  a: "Wordtune is an AI-powered writing assistant designed to help you rewrite, rephrase, and improve your writing with enhanced clarity and tone.",
                 },
                 {
-                  q: "How does Sudowrite work?",
-                  a: "It uses advanced GPT-based AI to assist with idea generation, rewriting, expanding, describing, and brainstorming creative content.",
+                  q: "How does Wordtune work?",
+                  a: "It uses advanced natural language processing to suggest alternate phrasings, adjust tone, and improve grammar as you write.",
                 },
                 {
-                  q: "Is Sudowrite good for fiction writers?",
-                  a: "Yes, it's particularly effective for fiction writers, offering tools for plot, dialogue, world-building, and character development.",
+                  q: "Is Wordtune good for professional writing?",
+                  a: "Yes, Wordtune is ideal for emails, reports, essays, and marketing copy requiring polished and clear language.",
                 },
                 {
-                  q: "Can Sudowrite help with writer's block?",
-                  a: "Absolutely. Sudowrite's tools like 'Describe', 'Expand', and 'Brainstorm' are made to spark ideas and keep your writing flowing.",
+                  q: "Can Wordtune help with writer’s block?",
+                  a: "Absolutely. Wordtune offers suggestions to rephrase or expand your sentences, sparking creativity and flow.",
                 },
                 {
-                  q: "Is Sudowrite beginner-friendly?",
-                  a: "Yes, it has a user-friendly interface and guided features, making it easy for both beginners and experienced authors to use.",
+                  q: "Is Wordtune beginner-friendly?",
+                  a: "Yes, it has an intuitive interface that integrates with browsers and popular writing platforms.",
                 },
                 {
-                  q: "What makes Sudowrite different from ChatGPT?",
-                  a: "Sudowrite is focused specifically on long-form creative writing, offering unique features like Story Engine, Describe, and Rewrite tools.",
+                  q: "What makes Wordtune different from other AI writing tools?",
+                  a: "Wordtune focuses on rewriting and tone adjustments, helping users express ideas clearly and with the right style.",
                 },
                 {
-                  q: "What platforms support Sudowrite?",
-                  a: "Sudowrite is a web-based app, so you can access it on any device with an internet connection and browser.",
+                  q: "What platforms support Wordtune?",
+                  a: "Wordtune works as a browser extension on Chrome and Edge and integrates with platforms like Google Docs and Gmail.",
                 },
                 {
-                  q: "Can I use Sudowrite for non-fiction or essays?",
-                  a: "Yes, although it’s optimized for storytelling, many writers also use it to refine non-fiction writing and essays.",
+                  q: "Can Wordtune assist with grammar correction?",
+                  a: "While Wordtune improves grammar contextually, it is not a full grammar checker like Grammarly.",
                 },
                 {
-                  q: "Does Sudowrite support multiple genres?",
-                  a: "Yes, it works across genres like fantasy, sci-fi, romance, horror, and more with tailored writing suggestions.",
+                  q: "Does Wordtune support multiple languages?",
+                  a: "Currently, Wordtune primarily supports English.",
                 },
                 {
-                  q: "Can I collaborate with others on Sudowrite?",
-                  a: "Currently, it doesn't offer real-time collaboration but you can share and export your writing easily.",
+                  q: "Can I collaborate using Wordtune?",
+                  a: "Wordtune does not provide direct collaboration but works within platforms where collaboration is available.",
                 },
                 {
-                  q: "Does Sudowrite store my writing securely?",
-                  a: "Yes, your drafts are saved in your account securely, and you can export or delete them anytime.",
+                  q: "Does Wordtune save my writing?",
+                  a: "No, Wordtune processes your text on-the-fly and does not store your writing data.",
                 },
                 {
-                  q: "Is there a free version of Sudowrite?",
-                  a: "Sudowrite offers a free trial with limited credits. Full access requires a subscription plan.",
+                  q: "Is there a free version of Wordtune?",
+                  a: "Yes, Wordtune offers a free plan with limited daily rewrites and a premium version with unlimited features.",
                 },
                 {
-                  q: "Can I export my stories from Sudowrite?",
-                  a: "Yes, you can export your content in plain text or document formats from the interface.",
+                  q: "Can I export content rewritten by Wordtune?",
+                  a: "Wordtune modifies your text directly in the editor, so you can save or export content as you normally would.",
                 },
                 {
-                  q: "Does Sudowrite offer a plagiarism checker?",
-                  a: "No, Sudowrite does not include a built-in plagiarism checker.",
+                  q: "Does Wordtune offer tone customization?",
+                  a: "Yes, you can adjust your writing to sound formal, casual, or persuasive using tone controls.",
                 },
                 {
-                  q: "Can Sudowrite help with editing grammar?",
-                  a: "While it's not a grammar checker like Grammarly, it can improve flow, tone, and clarity of your sentences.",
+                  q: "Can Wordtune improve my email writing?",
+                  a: "Yes, many users rely on Wordtune to write clear, professional emails quickly.",
                 },
               ]
 
@@ -389,7 +389,7 @@ const Sudowriter = () => {
               <div className="col-12">
                 <div className="custom-card text-light p-5 text-center">
                   <h3 className="fw-bold mb-4 text-start text-primary">
-                    Why Use Sudowrite AI?
+                    Why Use Wordtune AI?
                   </h3>
 
                   <ul
@@ -402,24 +402,24 @@ const Sudowriter = () => {
                     }}
                   >
                     <li className="mb-3">
-                      Sudowrite helps writers overcome writer’s block and
-                      enhance creativity using AI.
+                      Wordtune enhances your writing by offering AI-powered
+                      rewriting and tone adjustment.
                     </li>
                     <li className="mb-3">
-                      Ideal for authors, screenwriters, and creatives working on
-                      fiction, scripts, or poetry.
+                      Ideal for professionals, students, and marketers aiming
+                      for clear and effective communication.
                     </li>
                     <li className="mb-3">
-                      Offers tools like Describe, Expand, Rewrite, and
-                      Brainstorm to craft compelling narratives.
+                      Offers real-time suggestions to improve grammar, clarity,
+                      and style without changing your meaning.
                     </li>
                     <li className="mb-3">
-                      Story Engine guides you through building entire plots,
-                      scenes, and character arcs.
+                      Works seamlessly as a browser extension with Google Docs,
+                      Gmail, LinkedIn, and more.
                     </li>
                     <li className="mb-3">
-                      Web-based and easy to use—no installation needed, just
-                      start writing with AI support.
+                      No complex setup required—just start writing and Wordtune
+                      helps you express your ideas better.
                     </li>
                   </ul>
 
@@ -453,24 +453,24 @@ const Sudowriter = () => {
                 <h5 className="text-success text-start mb-4">✅ Pros</h5>
                 <ul className="ps-3" style={{ listStyleType: "disc" }}>
                   <li className="mb-2">
-                    Excellent for overcoming writer’s block with AI-generated
-                    suggestions.
+                    Powerful AI rewriting and paraphrasing to improve clarity
+                    and style.
                   </li>
                   <li className="mb-2">
-                    Intuitive features like “Describe,” “Rewrite,” and “Expand”
-                    speed up creative writing.
+                    Tone control allows customization for formal, casual, or
+                    persuasive writing.
                   </li>
                   <li className="mb-2">
-                    Story Engine helps structure full-length novels,
-                    screenplays, and stories.
+                    Easy integration with popular platforms like Google Docs,
+                    Gmail, and LinkedIn.
                   </li>
                   <li className="mb-2">
-                    Tailored tools for fiction writers across genres like
-                    fantasy, horror, romance, and more.
+                    Helps overcome writer’s block by suggesting alternate
+                    phrasings and sentence completions.
                   </li>
                   <li className="mb-2">
-                    Web-based and easy to use on any modern browser—no setup
-                    required.
+                    Simple browser extension—no separate app or complex setup
+                    needed.
                   </li>
                 </ul>
               </div>
@@ -489,17 +489,19 @@ const Sudowriter = () => {
                 <h5 className="text-warning text-start mb-4">⚠ Cons</h5>
                 <ul className="ps-3" style={{ listStyleType: "disc" }}>
                   <li className="mb-2">
-                    Not ideal for factual or highly technical writing tasks.
+                    Limited to English language support at present.
                   </li>
                   <li className="mb-2">
-                    No built-in grammar checker like Grammarly.
+                    Not a full grammar or spell checker; best used alongside
+                    other tools.
                   </li>
                   <li className="mb-2">
-                    Lacks real-time collaboration or multi-user document
-                    sharing.
+                    No dedicated desktop or mobile app—works only via browser
+                    extension.
                   </li>
                   <li className="mb-2">
-                    Requires a subscription after the limited free trial.
+                    Premium subscription required for unlimited rewriting and
+                    advanced features.
                   </li>
                 </ul>
               </div>
@@ -523,24 +525,24 @@ const Sudowriter = () => {
               >
                 <ul className="ps-3" style={{ listStyleType: "disc" }}>
                   <li className="mb-2">
-                    Jasper AI – Advanced AI writing platform ideal for
-                    marketing, long-form content, and brand copy.
+                    Grammarly – Comprehensive writing assistant with grammar
+                    checking, tone detection, and clarity improvements.
                   </li>
                   <li className="mb-2">
-                    Copy.ai – Easy-to-use tool for generating social media
-                    captions, blog intros, and product descriptions.
+                    QuillBot – AI-powered paraphrasing and summarization tool to
+                    rewrite and improve your text.
                   </li>
                   <li className="mb-2">
-                    Writesonic – SEO-focused AI writer with blog generation,
-                    ads, and chatbot capabilities.
+                    Hemingway Editor – Helps make your writing clear and concise
+                    by highlighting complex sentences and errors.
                   </li>
                   <li className="mb-2">
-                    NovelAI – Popular for generating fiction and anime-style
-                    storytelling with customizable controls.
+                    ProWritingAid – All-in-one writing assistant with grammar,
+                    style, and readability checks plus in-depth reports.
                   </li>
                   <li className="mb-2">
-                    Scalenut – Combines AI writing with SEO planning, topic
-                    clusters, and keyword research tools.
+                    Linguix – AI writing assistant offering grammar checking,
+                    style improvements, and vocabulary suggestions.
                   </li>
                 </ul>
               </div>
@@ -578,31 +580,21 @@ const Sudowriter = () => {
               className="col-md-6  col-12 order-2 order-md-1 "
             >
               <p className="text-primary">Write better, faster</p>
-              <h1>Sudowrite AI</h1>
+              <h1>Wordtune AI</h1>
               <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
               <p>
-                Sudowrite is an AI-powered writing tool designed to assist
-                writers in creative writing, novel creation, content generation,
-                and much more. As an AI writing assistant, Sudowrite helps
-                authors overcome writer's block, brainstorm ideas, generate plot
-                twists, and refine their stories. Whether you're a novelist,
-                screenwriter, or content creator, Sudowrite provides tools that
-                make writing faster and more efficient.
-              </p>
-              <p>
-                Sudowrite is a creative AI tool specifically tailored for
-                fiction and non-fiction writers. By utilizing artificial
-                intelligence, Sudowrite helps generate content ideas, develop
-                plot structures, and improve your overall writing quality.
-                Sudowrite assists in brainstorming ideas, generating dialogue,
-                and even providing creative prompts, making it an ideal tool for
-                writers who struggle with creativity or are simply looking to
-                streamline their writing process.
+                Wordtune is an AI-powered writing tool that helps improve and
+                optimize text through its advanced features such as
+                paraphrasing, grammar correction, sentence restructuring, and
+                style adjustments. It assists users in enhancing their writing
+                by suggesting improvements to tone, clarity, and overall
+                structure, making it ideal for content creators, writers, and
+                professionals.
               </p>
 
               <div className="mb-3">
                 <a
-                  href="https://sudowrite.com/"
+                  href="https://www.wordtune.com/"
                   rel="noopener noreferrer"
                   className="btn btn-primary me-2"
                 >
@@ -641,7 +633,7 @@ const Sudowriter = () => {
                   marginBottom: "1rem",
                 }}
               >
-                How to Use Sudowrite AI?
+                How to Use Wordtune AI?
               </h2>
 
               <div className="row g-4">
@@ -671,11 +663,11 @@ const Sudowriter = () => {
         `}
                     </style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Start a New Document
+                      Install Browser Extension
                     </h5>
                     <p style={{ color: "#fff", margin: 0 }}>
-                      Log in to Sudowrite and begin by creating a new document
-                      for your story, novel, or scene.
+                      Add the Wordtune extension to your Chrome or Edge browser
+                      for seamless integration with your writing platforms.
                     </p>
                     <div className="step1">1</div>
                   </div>
@@ -707,11 +699,11 @@ const Sudowriter = () => {
         `}
                     </style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Use AI Writing Tools
+                      Start Writing & Select Text
                     </h5>
                     <p style={{ color: "#fff", margin: 0 }}>
-                      Choose from features like “Describe,” “Rewrite,” or
-                      “Expand” to craft better scenes and characters.
+                      Write in your favorite editor, highlight text, and use
+                      Wordtune’s rewriting, tone adjustment, or suggestions.
                     </p>
                     <div className="step2">2</div>
                   </div>
@@ -743,11 +735,11 @@ const Sudowriter = () => {
         `}
                     </style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Build and Export
+                      Review & Export
                     </h5>
                     <p style={{ color: "#fff", margin: 0 }}>
-                      Use the “Story Engine” to outline full plots, then export
-                      your manuscript when you're ready to publish or review.
+                      Review Wordtune’s suggestions, apply the changes you like,
+                      and continue editing or export your polished content.
                     </p>
                     <div className="step3">3</div>
                   </div>
@@ -787,4 +779,4 @@ const Sudowriter = () => {
   );
 };
 
-export default Sudowriter;
+export default Wordtune;

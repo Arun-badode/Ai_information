@@ -4,8 +4,8 @@ import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 
 import magisto from "../../../../public/assets/Img/AI for Animation/14.png";
-import scn9 from "../../../../public/assets/Img/AI for Animation/scn9.jpg";
-import scn10 from "../../../../public/assets/Img/AI for Animation/scn10.jpg";
+// import scn9 from "../../../../public/assets/Img/AI for privacy/scn9.jpg";
+// import scn10 from "../../../../public/assets/Img/AI for privacy/scn10.jpg";
 
 // review section data
 const reviews = [
@@ -74,7 +74,7 @@ const styles = {
     borderColor: "#2ea043",
   },
 };
-const Sudowriter = () => {
+const Hyperwriter = () => {
   const [activeTab, setActiveTab] = useState("features"); // Set the default active tab as 'features'
   const [showAllFaqs, setShowAllFaqs] = useState(false);
 
@@ -84,36 +84,34 @@ const Sudowriter = () => {
         return (
           <div className="row g-4">
             <div className="text-center">
-              <p className="text-primary">Write Smarter, Not Harder</p>
-              <h3 className="">
-                AI-Powered Creative Writing Tools for Authors & Storytellers
-              </h3>
+              <p className="text-primary">Create Stunning Videos in Minutes</p>
+              <h3 className=""> Drag-and-Drop Simplicity & Custom Branding</h3>
             </div>
             {[
               {
+                icon: "⚡",
+                title: "AI Autocomplete:",
+                desc: "Write faster with real-time AI suggestions that complete your thoughts as you type.",
+              },
+              {
+                icon: "🔁",
+                title: "Rewrite Assistant:",
+                desc: "Quickly rephrase sentences or paragraphs while preserving your intended meaning.",
+              },
+              {
+                icon: "🔍",
+                title: "Research Companion:",
+                desc: "Get instant summaries, facts, and sources from the web without leaving your document.",
+              },
+              {
                 icon: "🧠",
-                title: "Story Engine:",
-                desc: "Build entire plots, arcs, and scenes with AI-driven structure support.",
+                title: "Memory-Powered Context:",
+                desc: "HyperWrite remembers what you’ve written to maintain context across long documents.",
               },
               {
-                icon: "✨",
-                title: "Rewrite & Expand:",
-                desc: "Improve or lengthen your content instantly while keeping your original tone.",
-              },
-              {
-                icon: "🖋️",
-                title: "Describe Feature:",
-                desc: "Turn simple words into rich, vivid descriptions perfect for novels and scripts.",
-              },
-              {
-                icon: "🎭",
-                title: "Character Brainstorming:",
-                desc: "Generate unique character traits, motivations, and dialogue suggestions.",
-              },
-              {
-                icon: "📚",
-                title: "Genre-Specific Suggestions:",
-                desc: "Get recommendations tailored to sci-fi, romance, horror, fantasy, and more.",
+                icon: "📝",
+                title: "Smart Templates:",
+                desc: "Use pre-built templates for emails, reports, blogs, and more to streamline your writing process.",
               },
             ].map((feature, index) => (
               <div className="col-md-4" key={index}>
@@ -262,64 +260,84 @@ const Sudowriter = () => {
             <div className="accordion" id="faqAccordion">
               {[
                 {
-                  q: "What is Sudowrite?",
-                  a: "Sudowrite is an AI-powered creative writing assistant designed to help authors, screenwriters, and storytellers generate and refine content.",
+                  q: "What is HyperWrite AI?",
+                  a: "HyperWrite is an AI-powered writing assistant designed to enhance productivity through features like autocomplete, rewriting, and research support.",
                 },
                 {
-                  q: "How does Sudowrite work?",
-                  a: "It uses advanced GPT-based AI to assist with idea generation, rewriting, expanding, describing, and brainstorming creative content.",
+                  q: "How does HyperWrite AI work?",
+                  a: "It uses advanced language models to generate text suggestions, rewrite content, summarize information, and even search the web in real-time.",
                 },
                 {
-                  q: "Is Sudowrite good for fiction writers?",
-                  a: "Yes, it's particularly effective for fiction writers, offering tools for plot, dialogue, world-building, and character development.",
+                  q: "Is HyperWrite suitable for long-form content?",
+                  a: "Yes, HyperWrite is especially good for long-form writing like essays, articles, and creative projects thanks to its context retention.",
                 },
                 {
-                  q: "Can Sudowrite help with writer's block?",
-                  a: "Absolutely. Sudowrite's tools like 'Describe', 'Expand', and 'Brainstorm' are made to spark ideas and keep your writing flowing.",
+                  q: "Is HyperWrite free to use?",
+                  a: "HyperWrite offers a free plan with limited daily usage. Premium plans unlock more generations, memory, and advanced features.",
                 },
                 {
-                  q: "Is Sudowrite beginner-friendly?",
-                  a: "Yes, it has a user-friendly interface and guided features, making it easy for both beginners and experienced authors to use.",
+                  q: "What makes HyperWrite different from other AI tools?",
+                  a: "Its real-time autocomplete, memory-based personalization, and research assistant set it apart from other tools like ChatGPT and Rytr.",
                 },
                 {
-                  q: "What makes Sudowrite different from ChatGPT?",
-                  a: "Sudowrite is focused specifically on long-form creative writing, offering unique features like Story Engine, Describe, and Rewrite tools.",
+                  q: "Does HyperWrite support rewriting content?",
+                  a: "Yes, the 'Rewrite' tool allows you to improve tone, grammar, or clarity while preserving meaning.",
                 },
                 {
-                  q: "What platforms support Sudowrite?",
-                  a: "Sudowrite is a web-based app, so you can access it on any device with an internet connection and browser.",
+                  q: "Can I use HyperWrite for research?",
+                  a: "Yes, the Research Assistant tool pulls reliable sources and summaries from the web directly into your writing environment.",
                 },
                 {
-                  q: "Can I use Sudowrite for non-fiction or essays?",
-                  a: "Yes, although it’s optimized for storytelling, many writers also use it to refine non-fiction writing and essays.",
+                  q: "Does HyperWrite save my documents?",
+                  a: "Yes, all your sessions and documents are saved in your dashboard for later editing or export.",
                 },
                 {
-                  q: "Does Sudowrite support multiple genres?",
-                  a: "Yes, it works across genres like fantasy, sci-fi, romance, horror, and more with tailored writing suggestions.",
+                  q: "Is HyperWrite good for students?",
+                  a: "Absolutely. Students use it for essays, summaries, citations, and brainstorming academic content.",
                 },
                 {
-                  q: "Can I collaborate with others on Sudowrite?",
-                  a: "Currently, it doesn't offer real-time collaboration but you can share and export your writing easily.",
+                  q: "Can I use HyperWrite for creative writing?",
+                  a: "Yes, HyperWrite is excellent for creative writing, especially when you need help building ideas, character dialogue, or descriptions.",
                 },
                 {
-                  q: "Does Sudowrite store my writing securely?",
-                  a: "Yes, your drafts are saved in your account securely, and you can export or delete them anytime.",
+                  q: "What writing formats does HyperWrite support?",
+                  a: "It supports blog posts, essays, reports, emails, stories, and virtually any type of written content.",
                 },
                 {
-                  q: "Is there a free version of Sudowrite?",
-                  a: "Sudowrite offers a free trial with limited credits. Full access requires a subscription plan.",
+                  q: "Can I collaborate with others on HyperWrite?",
+                  a: "While it doesn't have live collaboration, you can share and export documents with others easily.",
                 },
                 {
-                  q: "Can I export my stories from Sudowrite?",
-                  a: "Yes, you can export your content in plain text or document formats from the interface.",
+                  q: "Does HyperWrite have a mobile app?",
+                  a: "Currently, HyperWrite is browser-based and optimized for desktop and mobile use, but no dedicated mobile app exists yet.",
                 },
                 {
-                  q: "Does Sudowrite offer a plagiarism checker?",
-                  a: "No, Sudowrite does not include a built-in plagiarism checker.",
+                  q: "Is HyperWrite secure for sensitive content?",
+                  a: "Yes, HyperWrite uses encrypted connections and secure servers to store your content safely.",
                 },
                 {
-                  q: "Can Sudowrite help with editing grammar?",
-                  a: "While it's not a grammar checker like Grammarly, it can improve flow, tone, and clarity of your sentences.",
+                  q: "Does HyperWrite offer tone customization?",
+                  a: "Yes, you can adjust the tone and style when rewriting or generating content.",
+                },
+                {
+                  q: "Does HyperWrite support different languages?",
+                  a: "Currently, HyperWrite primarily supports English, but language capabilities are expanding.",
+                },
+                {
+                  q: "Is there a plagiarism checker in HyperWrite?",
+                  a: "No built-in plagiarism checker is currently available, but you can use third-party tools alongside it.",
+                },
+                {
+                  q: "What type of users is HyperWrite best for?",
+                  a: "It's great for professionals, students, marketers, content creators, and anyone who writes regularly.",
+                },
+                {
+                  q: "Can I use HyperWrite for email writing?",
+                  a: "Yes, you can generate, rewrite, and polish professional or casual emails quickly.",
+                },
+                {
+                  q: "Does HyperWrite offer customer support?",
+                  a: "Yes, HyperWrite provides customer support via email and also maintains a helpful resource center.",
                 },
               ]
 
@@ -389,7 +407,7 @@ const Sudowriter = () => {
               <div className="col-12">
                 <div className="custom-card text-light p-5 text-center">
                   <h3 className="fw-bold mb-4 text-start text-primary">
-                    Why Use Sudowrite AI?
+                    Why Use HyperWrite AI?
                   </h3>
 
                   <ul
@@ -402,24 +420,25 @@ const Sudowriter = () => {
                     }}
                   >
                     <li className="mb-3">
-                      Sudowrite helps writers overcome writer’s block and
-                      enhance creativity using AI.
+                      HyperWrite boosts your writing productivity with real-time
+                      AI autocomplete and smart suggestions.
                     </li>
                     <li className="mb-3">
-                      Ideal for authors, screenwriters, and creatives working on
-                      fiction, scripts, or poetry.
+                      Great for students, researchers, marketers, and
+                      professionals who need writing, summarizing, or rewriting
+                      support.
                     </li>
                     <li className="mb-3">
-                      Offers tools like Describe, Expand, Rewrite, and
-                      Brainstorm to craft compelling narratives.
+                      Includes a Research Assistant that pulls facts, summaries,
+                      and citations directly from the web.
                     </li>
                     <li className="mb-3">
-                      Story Engine guides you through building entire plots,
-                      scenes, and character arcs.
+                      Offers personalized writing through memory-based context
+                      retention across documents.
                     </li>
                     <li className="mb-3">
-                      Web-based and easy to use—no installation needed, just
-                      start writing with AI support.
+                      Simple, browser-based platform with smart templates and a
+                      distraction-free writing environment.
                     </li>
                   </ul>
 
@@ -453,24 +472,22 @@ const Sudowriter = () => {
                 <h5 className="text-success text-start mb-4">✅ Pros</h5>
                 <ul className="ps-3" style={{ listStyleType: "disc" }}>
                   <li className="mb-2">
-                    Excellent for overcoming writer’s block with AI-generated
-                    suggestions.
+                    Real-time AI autocomplete boosts writing speed and
+                    creativity.
                   </li>
                   <li className="mb-2">
-                    Intuitive features like “Describe,” “Rewrite,” and “Expand”
-                    speed up creative writing.
+                    Research Assistant fetches live data, summaries, and
+                    citations.
                   </li>
                   <li className="mb-2">
-                    Story Engine helps structure full-length novels,
-                    screenplays, and stories.
+                    Personalized suggestions using memory/context retention.
                   </li>
                   <li className="mb-2">
-                    Tailored tools for fiction writers across genres like
-                    fantasy, horror, romance, and more.
+                    Versatile for blogs, essays, emails, reports, and creative
+                    writing.
                   </li>
                   <li className="mb-2">
-                    Web-based and easy to use on any modern browser—no setup
-                    required.
+                    Browser-based — no downloads or installations required.
                   </li>
                 </ul>
               </div>
@@ -489,17 +506,16 @@ const Sudowriter = () => {
                 <h5 className="text-warning text-start mb-4">⚠ Cons</h5>
                 <ul className="ps-3" style={{ listStyleType: "disc" }}>
                   <li className="mb-2">
-                    Not ideal for factual or highly technical writing tasks.
+                    Limited support for languages beyond English (as of now).
                   </li>
                   <li className="mb-2">
-                    No built-in grammar checker like Grammarly.
+                    No built-in plagiarism checker included.
                   </li>
                   <li className="mb-2">
-                    Lacks real-time collaboration or multi-user document
-                    sharing.
+                    Not ideal for highly technical or legal writing.
                   </li>
                   <li className="mb-2">
-                    Requires a subscription after the limited free trial.
+                    No real-time collaboration or shared workspace features yet.
                   </li>
                 </ul>
               </div>
@@ -523,24 +539,24 @@ const Sudowriter = () => {
               >
                 <ul className="ps-3" style={{ listStyleType: "disc" }}>
                   <li className="mb-2">
-                    Jasper AI – Advanced AI writing platform ideal for
-                    marketing, long-form content, and brand copy.
+                    GrammarlyGO – Offers smart text generation, rewriting, and
+                    grammar correction with contextual awareness.
                   </li>
                   <li className="mb-2">
-                    Copy.ai – Easy-to-use tool for generating social media
-                    captions, blog intros, and product descriptions.
+                    Notion AI – Combines note-taking and writing with AI
+                    assistance for planning, writing, and summarizing tasks.
                   </li>
                   <li className="mb-2">
-                    Writesonic – SEO-focused AI writer with blog generation,
-                    ads, and chatbot capabilities.
+                    Jasper AI – Great for marketing copy, emails, and content
+                    strategy with extensive customization.
                   </li>
                   <li className="mb-2">
-                    NovelAI – Popular for generating fiction and anime-style
-                    storytelling with customizable controls.
+                    Wordtune – Ideal for rewriting and improving sentence
+                    structure with tone control options.
                   </li>
                   <li className="mb-2">
-                    Scalenut – Combines AI writing with SEO planning, topic
-                    clusters, and keyword research tools.
+                    Writesonic – A broader AI content platform with article
+                    writing, chatbot integration, and SEO tools.
                   </li>
                 </ul>
               </div>
@@ -556,12 +572,6 @@ const Sudowriter = () => {
   return (
     <>
       <div className="bg-dark d-flex  justify-content-between align-items-center ">
-        {/* <a
-          href="/Aitools"
-          className="d-inline-block text-white text-decoration-none ml-3 py-1"
-        >
-          <i className="bi bi-arrow-left me-2"></i>Back to Directory{" "}
-        </a> */}
         <a
           href="/Aitools"
           className="d-inline-block text-white text-decoration-none  mt-3 ml-3 py-1 px-2 ms-5 border rounded-sm"
@@ -578,31 +588,20 @@ const Sudowriter = () => {
               className="col-md-6  col-12 order-2 order-md-1 "
             >
               <p className="text-primary">Write better, faster</p>
-              <h1>Sudowrite AI</h1>
+              <h1>HyperWrite AI</h1>
               <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
               <p>
-                Sudowrite is an AI-powered writing tool designed to assist
-                writers in creative writing, novel creation, content generation,
-                and much more. As an AI writing assistant, Sudowrite helps
-                authors overcome writer's block, brainstorm ideas, generate plot
-                twists, and refine their stories. Whether you're a novelist,
-                screenwriter, or content creator, Sudowrite provides tools that
-                make writing faster and more efficient.
-              </p>
-              <p>
-                Sudowrite is a creative AI tool specifically tailored for
-                fiction and non-fiction writers. By utilizing artificial
-                intelligence, Sudowrite helps generate content ideas, develop
-                plot structures, and improve your overall writing quality.
-                Sudowrite assists in brainstorming ideas, generating dialogue,
-                and even providing creative prompts, making it an ideal tool for
-                writers who struggle with creativity or are simply looking to
-                streamline their writing process.
+                HyperWrite is an advanced AI-powered writing assistant designed
+                to help users improve, generate, and optimize content for
+                various purposes—be it blogs, emails, essays, or marketing copy.
+                With features like sentence rephrasing, content summarization,
+                and grammar suggestions, it caters to students, professionals,
+                bloggers, and businesses alike.
               </p>
 
               <div className="mb-3">
                 <a
-                  href="https://sudowrite.com/"
+                  href="https://www.hyperwriteai.com/"
                   rel="noopener noreferrer"
                   className="btn btn-primary me-2"
                 >
@@ -641,7 +640,7 @@ const Sudowriter = () => {
                   marginBottom: "1rem",
                 }}
               >
-                How to Use Sudowrite AI?
+                How to Use HyperWrite AI?
               </h2>
 
               <div className="row g-4">
@@ -671,11 +670,12 @@ const Sudowriter = () => {
         `}
                     </style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Start a New Document
+                      Open a New Document
                     </h5>
                     <p style={{ color: "#fff", margin: 0 }}>
-                      Log in to Sudowrite and begin by creating a new document
-                      for your story, novel, or scene.
+                      Log in to HyperWrite and start a new document. You can
+                      begin from scratch or paste your existing content for
+                      suggestions.
                     </p>
                     <div className="step1">1</div>
                   </div>
@@ -707,11 +707,11 @@ const Sudowriter = () => {
         `}
                     </style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Use AI Writing Tools
+                      Use Tools Like Autocomplete or Rewrite
                     </h5>
                     <p style={{ color: "#fff", margin: 0 }}>
-                      Choose from features like “Describe,” “Rewrite,” or
-                      “Expand” to craft better scenes and characters.
+                      As you write, use the AI Autocomplete to finish sentences
+                      or use tools like “Rewrite” to improve tone and clarity.
                     </p>
                     <div className="step2">2</div>
                   </div>
@@ -743,11 +743,11 @@ const Sudowriter = () => {
         `}
                     </style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Build and Export
+                      Summarize or Export
                     </h5>
                     <p style={{ color: "#fff", margin: 0 }}>
-                      Use the “Story Engine” to outline full plots, then export
-                      your manuscript when you're ready to publish or review.
+                      Use the Research Assistant or Summarize tools for deeper
+                      insights, then export or copy your content when ready.
                     </p>
                     <div className="step3">3</div>
                   </div>
@@ -787,4 +787,4 @@ const Sudowriter = () => {
   );
 };
 
-export default Sudowriter;
+export default Hyperwriter;
