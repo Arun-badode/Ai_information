@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar">
+      <nav className="navbar" style={{zIndex:"10000"}}>
         {/* Left side - Brand */}
         <Link to="/">
           <div className="navbar-brand px-2">AI Tools</div>

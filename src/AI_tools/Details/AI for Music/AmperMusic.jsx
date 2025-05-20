@@ -840,7 +840,7 @@ const AmperMusicAI = () => {
 
               <div className="mb-3">
                 <a
-                  href="https://www.shutterstock.com/discover/amper-music"
+                  href="https://www.ampermusic.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary me-2"

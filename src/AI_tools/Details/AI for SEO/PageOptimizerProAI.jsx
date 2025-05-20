@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
 import pageOptimizerProAI from "../../../../public/assets/Img/Ai for SEO/7.png";
+import scan1 from "../../../../public/assets/Img/AI for SEO/scan15.png";
+import scan2 from "../../../../public/assets/Img/AI for SEO/scan16.png";
+
 // review section data
 const reviews = [
   {

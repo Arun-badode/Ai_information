@@ -956,7 +956,7 @@ const AlgoliaAI = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          
+      
         </div>
       </div>
     </>

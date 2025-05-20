@@ -851,14 +851,9 @@ const AviaAI = () => {
                 and content creation.
               </p>
 
-              {/* <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div> */}
               <div className="mb-3">
                 <a
-                  href=""
+                  href="https://www.aiva.ai"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary me-2"

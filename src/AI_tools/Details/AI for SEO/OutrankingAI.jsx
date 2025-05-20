@@ -6,6 +6,10 @@ import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
 import outrankingAI from "../../../../public/assets/Img/Ai for SEO/3.png";
+
+
+import scan1 from "../../../../public/assets/Img/Ai for SEO/scan15.png";
+import scan2 from "../../../../public/assets/Img/Ai for SEO/scan16.png";
 // review section data
 const reviews = [
   {
@@ -309,14 +313,14 @@ const OutrankingAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
+                src={scan1}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
+                src={scan2}
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -790,11 +794,12 @@ const OutrankingAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
+          <div className="row align-item-center mb-4">
             {/* Left side (Text Section) */}
             <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
+              style={{  paddingRight: "30px" }}
+              className="col-12 col-md-6 order-2 order-md-1 "
+            
             >
               <p className="text-primary">Write better, faster</p>
               <h1>Outranking.io AI</h1>
@@ -815,9 +820,14 @@ const OutrankingAI = () => {
               </p>
 
               <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
+                <a
+                  href="https://www.clearscope.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary me-2"
+                >
+                  Explore Tool
+                </a>
               </div>
             </div>
 
@@ -988,20 +998,7 @@ const OutrankingAI = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with RunWayGen?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
+      
         </div>
       </div>
     </>
