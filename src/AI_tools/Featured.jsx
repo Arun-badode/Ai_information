@@ -141,7 +141,7 @@ const Featured = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#042b54] text-white">
+    <div className=" bg-[#042b54] text-white">
       <section className="py-20 bg-gradient-to-r from-[#1E3D59] to-[#84bcf8] relative">
         <div className="container mx-auto px-8 text-center">
           <h2 className="text-4xl font-bold mb-10 text-white">
