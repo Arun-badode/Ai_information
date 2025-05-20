@@ -54,7 +54,7 @@ import RephraseAI from "./AI_tools/Details/AI Video & Animation Tools/RephraseAI
 import Magisto from "./AI_tools/Details/AI Video & Animation Tools/Magisto";
 import SynthesiaAI from "./AI_tools/Details/AI Video & Animation Tools/SynthesiaAI";
 import { ChartColumnDecreasing, CopySlashIcon } from "lucide-react";
-import CopyAI from "./AI_tools/Details/AI Mapping/CopyAI";
+import CopyAI from "./AI_tools/Details/Ai for Writter/CopyAI";
 
 /* Productivity and Business Tools */
 import MicrosoftCopilot from "./AI_tools/Details/Productivity and Business Tools/MicrosoftCopilot";
@@ -275,6 +275,8 @@ import Evervault from "./AI_tools/Details/Ai for Privacy/Evervault";
 import Inpher from "./AI_tools/Details/Ai for Privacy/Inpher";
 import Enveil from "./AI_tools/Details/Ai for Privacy/Enveil";
 import Skyflow from "./AI_tools/Details/Ai for Privacy/Skyflow";
+import Writtersonic from "./AI_tools/Details/Ai for Writter/Writtersonic";
+import Ryter from "./AI_tools/Details/Ai for Writter/Ryter";
 
 const App = () => {
   return (
@@ -329,6 +331,10 @@ const App = () => {
         <Route path="/Magisto" element={<Magisto />}></Route>
         <Route path="/SynthesiaAI" element={<SynthesiaAI />}></Route>
         {/* AI Writting and content creation */}
+        <Route path="/CopyAI" element={<CopyAI />}></Route>
+        <Route path="/Writtersonic" element={<Writtersonic />}></Route>
+        <Route path="/Ryter" element={<Ryter />}></Route>
+        <Route path="/CopyAI" element={<CopyAI />}></Route>
         <Route path="/CopyAI" element={<CopyAI />}></Route>
         {/* Productivity and Business Tools */}
         <Route path="/MicrosoftCopilot" element={<MicrosoftCopilot />}></Route>

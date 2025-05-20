@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
-import play from "../../../../public/assets/Img/Ai for Music/3.png";
-import screen1 from "../../../../public/assets/Img/Ai for Music/play-screenshot1.jpg";
-import screen2 from "../../../../public/assets/Img/Ai for Music/play-screenshot2.jpg";
+import rev from "../../../../public/assets/Img/Ai for Music/10.png";
+import screen1 from "../../../../public/assets/Img/Ai for Music/reva-screenshot1.jpg";
+import screen2 from "../../../../public/assets/Img/Ai for Music/rev-screenshot2.jpg";
 // review section data
 const reviews = [
   {
@@ -350,14 +350,14 @@ const RevAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.gizmochina.com/wp-content/uploads/2023/06/Screenshot-2023-06-23-165608.png"
+                src={screen1}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src=""
+                src={screen2}
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -626,7 +626,7 @@ const RevAI = () => {
           href="/Aitools"
           className="d-inline-block text-white text-decoration-none  mt-3 ml-3 py-1 px-2 ms-5 border rounded-sm"
         >
-          <i className="bi bi-arrow-left me-2"></i>Back  {" "}
+          <i className="bi bi-arrow-left me-2"></i>Back{" "}
         </a>
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
@@ -635,7 +635,7 @@ const RevAI = () => {
             {/* Image Section - mobile pehle, desktop right */}
             <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-3 mb-md-0">
               <img
-                src="https://assets-global.website-files.com/60f6c9a47c3a74307f6e7cf3/636a6f419a746979d05cf28b_Frame%20427319529-min-p-800.webp"
+                src={rev}
                 alt="Rev.ai"
                 className="img-fluid"
                 style={{ maxHeight: "300px", objectFit: "contain" }}
