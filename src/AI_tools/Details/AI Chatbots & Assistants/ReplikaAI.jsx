@@ -125,15 +125,7 @@ const ReplikaAI = () => {
         return (
           <div className="row g-4">
             <div className="col-md-6">
-<<<<<<< HEAD
-              <img
-                src={replika1}
-                alt="Screenshot 1"
-                className="img-fluid rounded-3"
-              />
-=======
               <img src="" alt="Screenshot 1" className="img-fluid rounded-3" />
->>>>>>> 891b42de72b99494297c86b402d2ff968eef5339
             </div>
             <div className="col-md-6">
               <img
@@ -668,16 +660,12 @@ const ReplikaAI = () => {
           <div className="d-flex align-items-center justify-content-between mb-5 lovaaiflex">
             {/* Left side (Text Section) */}
             <div style={{ flex: 1, paddingRight: "30px" }}>
-<<<<<<< HEAD
-
-=======
               <img
                 src=""
                 alt="Logo"
                 className="me-3"
                 style={{ width: "60px" }}
               />
->>>>>>> 891b42de72b99494297c86b402d2ff968eef5339
               <h2>ReplikAI</h2>
               <div className="text-warning mb-1">
                 ⭐⭐⭐⭐⭐ 95% Satisfaction
