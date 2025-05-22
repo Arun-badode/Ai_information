@@ -292,6 +292,7 @@ import Schedular from "./AI_tools/Details/Ai for meeting/Scheduler";
 import Adam from "./AI_tools/Details/Ai for meeting/Adam";
 import Trevor from "./AI_tools/Details/Ai for meeting/Trevor";
 import Sidekick from "./AI_tools/Details/Ai for meeting/Sidekick";
+import AIBlog from "./AI_tools/AiBlog";
 
 const App = () => {
   return (
@@ -308,7 +309,7 @@ const App = () => {
         <Route path="/aicomparisonpage" element={<AIComparisonPage />} />
         <Route path="/aboutus" element={<AboutPage />} />
         <Route path="/ainewspage" element={<AINewsPage />} />
-        <Route path="/aiblog" element={<AiBlog />} />
+        <Route path="/aiblog" element={<AIBlog />} />
         {/* <Route path="/news/:id" element={<AINewsDetail />} /> */}
         <Route path="/aicontact" element={<AIContact />} />
         <Route path="/termsofservice" element={<TermsOfService />} />
