@@ -308,6 +308,7 @@ const App = () => {
         <Route path="/aicomparisonpage" element={<AIComparisonPage />} />
         <Route path="/aboutus" element={<AboutPage />} />
         <Route path="/ainewspage" element={<AINewsPage />} />
+        <Route path="/aiblog" element={<AiBlog />} />
         {/* <Route path="/news/:id" element={<AINewsDetail />} /> */}
         <Route path="/aicontact" element={<AIContact />} />
         <Route path="/termsofservice" element={<TermsOfService />} />
