@@ -283,6 +283,15 @@ import Wordtune from "./AI_tools/Details/Ai for Writter/Wordtune";
 import Spingboat from "./AI_tools/Details/Ai for Writter/Spingboat";
 import Longshot from "./AI_tools/Details/Ai for Writter/Longshot";
 import Contentbot from "./AI_tools/Details/Ai for Writter/Contentbot";
+import Clara from "./AI_tools/Details/Ai for meeting/Clara";
+import Clockwise from "./AI_tools/Details/Ai for meeting/Clockwise";
+import Kronologic from "./AI_tools/Details/Ai for meeting/Kronologic";
+import Motion from "./AI_tools/Details/Ai for meeting/Motion";
+import Reclaim from "./AI_tools/Details/Ai for meeting/Reclaim";
+import Schedular from "./AI_tools/Details/Ai for meeting/Scheduler";
+import Adam from "./AI_tools/Details/Ai for meeting/Adam";
+import Trevor from "./AI_tools/Details/Ai for meeting/Trevor";
+import Sidekick from "./AI_tools/Details/Ai for meeting/Sidekick";
 
 const App = () => {
   return (
@@ -566,6 +575,24 @@ const App = () => {
         <Route path="/Mojeek" element={<Mojeek />}></Route>
         <Route path="/SearxNG" element={<SearxNG />}></Route>
         {/* Ai for Seacrh Engine end   */}
+
+{/* Ai for Metting */}
+
+                  <Route path="/Clara" element={<Clara/>}></Route>
+                   <Route path="/Clockwise" element={<Clockwise/>}></Route>
+                    <Route path="/Kronologic" element={<Kronologic/>}></Route>
+                     <Route path="/Motion" element={<Motion/>}></Route>
+                      <Route path="/Reclaim" element={<Reclaim/>}></Route>
+                       <Route path="/Schedular" element={<Schedular/>}></Route>
+                        <Route path="/Adam" element={<Adam/>}></Route>
+                          <Route path="/Trevor" element={<Trevor/>}></Route>
+                              <Route path="/Sidekick" element={<Sidekick/>}></Route>
+                        
+                    
+
+{/* Ai for Metting  end  */}
+
+        {/*  */}
       </Routes>
       <Footer />
       <ScrollToTopButton />
