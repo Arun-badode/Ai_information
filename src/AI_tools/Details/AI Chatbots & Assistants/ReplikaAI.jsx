@@ -125,7 +125,7 @@ const ReplikaAI = () => {
         return (
           <div className="row g-4">
             <div className="col-md-6">
-              <img src="" alt="Screenshot 1" className=" " />
+              <img src="" alt="Screenshot 1" className="img-fluid rounded-3" />
             </div>
             <div className="col-md-6">
               <img
