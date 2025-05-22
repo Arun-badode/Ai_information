@@ -6,6 +6,9 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import magisto from "../../../../public/assets/Img/AI for Animation/14.png";
 import scn9 from "../../../../public/assets/Img/AI for Animation/scn9.jpg";
 import scn10 from "../../../../public/assets/Img/AI for Animation/scn10.jpg";
+import spinbotSS1 from '../../../../public/assets/Img/AI for Writing/spinbotSS1.png';
+import spinbotSS2 from '../../../../public/assets/Img/AI for Writing/spinbotSS2.png';
+
 
 // review section data
 const reviews = [
@@ -137,14 +140,15 @@ const Spingboat = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src={scn9}
-                alt=""
+                src={spinbotSS1}
+                alt="spinbot"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={scn10}
+                src={spinbotSS2}
+                alt="spinbot"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

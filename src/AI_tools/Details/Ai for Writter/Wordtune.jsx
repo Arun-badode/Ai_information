@@ -6,6 +6,9 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import magisto from "../../../../public/assets/Img/AI for Animation/14.png";
 import scn9 from "../../../../public/assets/Img/AI for Animation/scn9.jpg";
 import scn10 from "../../../../public/assets/Img/AI for Animation/scn10.jpg";
+import wordtuneSS1 from '../../../../public/assets/Img/AI for Writing/wordtuneSS1.png';
+import wordtuneSS2 from '../../../../public/assets/Img/AI for Writing/wordtuneSS2.png';
+
 
 // review section data
 const reviews = [
@@ -135,14 +138,15 @@ const Wordtune = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src={scn9}
-                alt=""
+                src={wordtuneSS1}
+                alt="wordtune"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={scn10}
+                src={wordtuneSS2}
+                alt="wordtune"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

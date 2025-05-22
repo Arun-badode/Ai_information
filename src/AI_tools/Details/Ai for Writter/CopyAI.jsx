@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css";
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
+import copyaiSS1 from '../../../../public/assets/Img/AI for Writing/copyaiSS1.png';
+import copyaiSS2 from '../../../../public/assets/Img/AI for Writing/copyaiSS2.png';
+
 
 // review section data
 const reviews = [
@@ -132,14 +135,15 @@ const CopyAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://images.softwaresuggest.com/latest_screenshots/copyai-20231226184408.png"
-                alt=""
+                src={copyaiSS1}
+                alt="copyai"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.trickyenough.com/wp-content/uploads/2023/12/image-37-1024x489.png"
+                src={copyaiSS2}
+                alt="copy ai"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -562,29 +566,27 @@ const CopyAI = () => {
         <div className="container">
           <div className=" row d-flex align-items-center justify-content-between mb-1 lovaaiflex">
             {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1> Copy.ai</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Copy.ai is an AI-powered content generation platform designed to
-                help users create high-quality copy quickly and efficiently.
-                Whether you’re writing blog posts, social media content, product
-                descriptions, or ad copy, Copy.ai automates writing tasks using
-                advanced language models. It is tailored for marketers, content
-                creators, eCommerce businesses, and anyone who needs compelling
-                written content fast.
-              </p>
+            <div className="col-12 col-md-6 mb-4 px-3 px-md-4">
+  <p className="text-primary">Write better, faster</p>
+  <h1>Copy.ai</h1>
+  <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+  <p>
+    Copy.ai is an AI-powered content generation platform designed to help users
+    create high-quality copy quickly and efficiently. Whether you’re writing blog
+    posts, social media content, product descriptions, or ad copy, Copy.ai automates
+    writing tasks using advanced language models. It is tailored for marketers,
+    content creators, eCommerce businesses, and anyone who needs compelling
+    written content fast.
+  </p>
+  <a
+    href="https://www.copy.ai"
+    rel="noopener noreferrer"
+    className="btn btn-primary"
+  >
+    Explore Tool
+  </a>
+</div>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
-            </div>
 
             {/* Right side (Image Section) */}
             <div
@@ -597,7 +599,7 @@ const CopyAI = () => {
               className="col-6 col-md-12 mb-5  "
             >
               <img
-                src="data:image/jpeg;base64,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"
+                src=''
                 style={{ MaxWidth: "100%", height: "300px" }}
               />
             </div>

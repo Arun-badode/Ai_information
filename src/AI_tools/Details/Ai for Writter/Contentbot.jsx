@@ -6,6 +6,9 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import magisto from "../../../../public/assets/Img/AI for Animation/14.png";
 import scn9 from "../../../../public/assets/Img/AI for Animation/scn9.jpg";
 import scn10 from "../../../../public/assets/Img/AI for Animation/scn10.jpg";
+import contentbotSS1 from '../../../../public/assets/Img/AI for Writing/contentbotSS1.png';
+import contentbotSS2 from '../../../../public/assets/Img/AI for Writing/contentbotSS2.png';
+
 
 // review section data
 const reviews = [
@@ -135,14 +138,15 @@ const Contentbot = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src={scn9}
-                alt=""
+                src={contentbotSS1}
+                alt="contentbot"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={scn10}
+                src={contentbotSS2}
+                alt="contentbot"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -595,7 +599,7 @@ const Contentbot = () => {
 
               <div className="mb-3">
                 <a
-                  href="https://sudowrite.com/"
+                  href=" https://contentbot.ai"
                   rel="noopener noreferrer"
                   className="btn btn-primary me-2"
                 >

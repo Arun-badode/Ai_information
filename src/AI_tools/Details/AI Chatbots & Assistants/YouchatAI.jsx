@@ -4,6 +4,11 @@ import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import you1 from "../../../../public/assets/Img/AI For Chatbots/you1.png";
+import YouchatSS from '../../../../public/assets/Img/AI Chatbots & Assistants/29.png'
+import YouChatSS1 from '../../../../public/assets/Img/AI Chatbots & Assistants/YouChatSS1.png'
+import YouChatSS2 from '../../../../public/assets/Img/AI Chatbots & Assistants/YouChatSS2.png'
+
+
 // review section data
 const reviews = [
   {
@@ -139,7 +144,7 @@ const YouchatAI = () => {
     <div className="row g-4">
       <div className="col-md-6 col-12">
         <img
-          src={you1}
+          src={YouChatSS1}
           alt="Screenshot 1"
           className="img-fluid rounded-3 shadow-sm"
           loading="lazy"
@@ -147,7 +152,7 @@ const YouchatAI = () => {
       </div>
       <div className="col-md-6 col-12">
         <img
-          src=""// Fixed typo in variable name
+          src={YouChatSS2}// Fixed typo in variable name
           alt="Screenshot 2"
           className="img-fluid rounded-3 shadow-sm"
           loading="lazy"
@@ -716,7 +721,7 @@ const YouchatAI = () => {
           <div className="d-flex align-items-center justify-content-between mb-5 lovaaiflex">
             {/* Left side (Text Section) */}
             <div style={{ flex: 1, paddingRight: "30px" }}>
-              <h2>Comprehensive Guide to YouChat AI and Its Capabilities</h2>
+              <h2>YouChat </h2>
               <div className="text-warning mb-1">
                 ⭐⭐⭐⭐⭐ 95% Satisfaction
               </div>
@@ -748,7 +753,7 @@ const YouchatAI = () => {
             {/* Right side (Image Section) */}
             <div style={{ flex: 1, textAlign: "center" }}>
               <img
-                src="https://media.licdn.com/dms/image/v2/D5612AQHWntWHSokJuA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1726640143001?e=2147483647&v=beta&t=2GzNPQMOGcjV0VXbbMKnwSPDgkGhf2gyrOLDCQ_3Qew"
+                src={YouchatSS}
                 className="img-fluid rounded-3"
                 style={{ maxWidth: "100%", height: "auto" }}
               />
@@ -886,7 +891,7 @@ const YouchatAI = () => {
           <ul className="nav nav-tabs custom-tabs mb-4">
             {[
               "features",
-              "screenshot",
+              "screenshots",
               "reviews",
               "FAQs",
               "technical",
