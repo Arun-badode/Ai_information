@@ -283,6 +283,7 @@ import Wordtune from "./AI_tools/Details/Ai for Writter/Wordtune";
 import Spingboat from "./AI_tools/Details/Ai for Writter/Spingboat";
 import Longshot from "./AI_tools/Details/Ai for Writter/Longshot";
 import Contentbot from "./AI_tools/Details/Ai for Writter/Contentbot";
+import AiBlog from "./AI_tools/AiBlog";
 
 const App = () => {
   return (
@@ -299,6 +300,7 @@ const App = () => {
         <Route path="/aicomparisonpage" element={<AIComparisonPage />} />
         <Route path="/aboutus" element={<AboutPage />} />
         <Route path="/ainewspage" element={<AINewsPage />} />
+        <Route path="/aiblog" element={<AiBlog />} />
         {/* <Route path="/news/:id" element={<AINewsDetail />} /> */}
         <Route path="/aicontact" element={<AIContact />} />
         <Route path="/termsofservice" element={<TermsOfService />} />
