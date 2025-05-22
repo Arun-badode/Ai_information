@@ -3,7 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 
-import magisto from "../../../../public/assets/Img/AI for Animation/14.png";
+
+import clara from "../../../../public/assets/Img/AI for Meeting/5.png";
 import scn1 from "../../../../public/assets/Img/AI for Meeting/claraS1.png";
 import scn2 from "../../../../public/assets/Img/AI for Meeting/ClaraS2.png";
 
@@ -664,7 +665,7 @@ const Clara = () => {
               className="col-md-6 col-12 order-md-2 order-1 text-center mb-3 mb-md-0  "
             >
               <img
-                src={magisto}
+                src={clara}
                 style={{
                   Width: "100%",
                   height: "auto",

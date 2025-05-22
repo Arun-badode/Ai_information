@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import magisto from "../../../Images/MagistoAI.png";
+import clockwise from "../../../../public/assets/Img/AI for Meeting/3.png";
 import scn1 from "../../../../public/assets/Img/AI for Meeting/clockwiseS1.png";
 import scn2 from "../../../../public/assets/Img/AI for Meeting/ClockwiseS2.png";
 
@@ -665,7 +666,7 @@ const Clockwise = () => {
     style={{ height: "250px" }}
   >
     <img
-      src={magisto}
+      src={clockwise}
       style={{ maxWidth: "100%", height: "300px", objectFit: "contain" }}
       alt="Clockwise AI"
     />
