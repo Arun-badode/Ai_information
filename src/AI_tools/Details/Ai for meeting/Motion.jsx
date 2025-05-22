@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
-import magisto from "../../../Images/MagistoAI.png";
+import motion from "../../../../public/assets/Img/AI for Meeting/1.png";
 import scn1 from "../../../../public/assets/Img/AI for Meeting/motionS1.png";
 import scn2 from "../../../../public/assets/Img/AI for Meeting/motionS2.png";
 
@@ -609,7 +609,7 @@ const Motion = () => {
     style={{ height: "250px" }}
   >
     <img
-      src={magisto}
+      src={motion}
       style={{ maxWidth: "100%", height: "300px", objectFit: "contain" }}
       alt="Motion AI"
     />
