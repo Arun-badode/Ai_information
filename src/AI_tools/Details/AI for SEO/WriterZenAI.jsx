@@ -412,13 +412,14 @@ const WriterZenAI = () => {
             <div className="col-md-6">
               <img
                 src={scan1}
-                alt=""
+                alt="WriteZen"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={scan2}
+                alt="WriteZen"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

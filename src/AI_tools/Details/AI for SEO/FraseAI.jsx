@@ -317,12 +317,14 @@ const FraseAI = () => {
             <div className="col-md-6">
               <img
                 src={scn7}
+                alt="frace"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={scn8}
+                alt="frace"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -841,6 +843,7 @@ const FraseAI = () => {
             >
               <img
                 src={fraseAI}
+                alt="frace"
                 style={{ width:"100%", height:"auto", maxHeight:"300px", objectFit:"contain",}}
               />
             </div>

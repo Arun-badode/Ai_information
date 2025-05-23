@@ -316,13 +316,14 @@ const PageOptimizerProAI = () => {
             <div className="col-md-6">
               <img
                 src={scan1}
-                alt=""
+                alt="PageOptimizerPro"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={scan2}
+                alt="PageOptimizerPro"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

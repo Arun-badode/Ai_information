@@ -315,13 +315,14 @@ const AviaAI = () => {
             <div className="col-md-6">
               <img
                 src={screen1}
-                alt=""
+                alt="aviaai"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={screen2}
+                alt="aviaai"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

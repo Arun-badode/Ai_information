@@ -315,14 +315,14 @@ const ContentHarmanyAI = () => {
             <div className="col-md-6">
               <img
                 src={scan3}
-                alt="Harmanya"
+                alt="ContentHarmanya"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={scan4}
-                alt="Harmanya"
+                alt="ContentHarmanya"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -824,6 +824,7 @@ const ContentHarmanyAI = () => {
             >
               <img
                 src={contentHarmanyAI}
+                alt="ContentHarmanya"
                 style={{ width:"100%", height:"auto", maxHeight:"300px", objectFit:"contain",}}              />
             </div>
           </div>

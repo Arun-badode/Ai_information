@@ -374,13 +374,14 @@ const DescriptOverdub = () => {
             <div className="col-md-6">
               <img
                 src={screen1}
-                alt=""
+                alt="DescriptionOverDub"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={screen2}
+                alt="DescriptionOverDub"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

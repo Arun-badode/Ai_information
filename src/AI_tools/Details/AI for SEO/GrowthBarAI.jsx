@@ -318,13 +318,14 @@ const GrowthBarAI = () => {
             <div className="col-md-6">
               <img
                 src={scn9}
-                alt=""
+                alt="growthbar"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={scn10}
+                alt="growthbar"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -828,6 +829,7 @@ const GrowthBarAI = () => {
             >
               <img
                 src={growthBarAI}
+                alt="growthbar"
                 style={{ width:"100%", height:"auto", maxHeight:"300px", objectFit:"contain",}}
               />
             </div>

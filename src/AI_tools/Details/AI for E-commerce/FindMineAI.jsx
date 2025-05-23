@@ -311,14 +311,14 @@ const FindMineAI = () => {
             <div className="col-md-6">
               <img
                 src={findmine1}
-                alt="findmine screenshot"
+                alt="findmine "
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={findmine2}
-                alt="findmine screenshot"
+                alt="findmine"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

@@ -314,12 +314,14 @@ const VoiceModAI = () => {
             <div className="col-md-6">
               <img
                 src={screen1}
+                alt="voicemod"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={screen2}
+                alt="voicemod"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
