@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import "./PrivateAI.css"; // <-- custom CSS file import
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
-
+import inpher from "../../../../public/assets/Img/AI for Privacy/7.jpg"
 // review section data
 const reviews = [
   {
@@ -661,10 +661,14 @@ const InpherAI= () => {
 
                 </p>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
+                 <div className="mb-3">
+                <a
+                  href="https://adam.ai/"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary me-2"
+                >
+                  Explore Tool
+                </a>
               </div>
             </div>
 
@@ -679,7 +683,7 @@ const InpherAI= () => {
               className="col-6 col-md-12 mb-5  "
             >
               <img
-                src=""
+                src={inpher}
                 style={{ MaxWidth: "100%", height: "300px" }}
               />
             </div>
@@ -832,20 +836,6 @@ const InpherAI= () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with Inpher AI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
         </div>
       </div>
     </>

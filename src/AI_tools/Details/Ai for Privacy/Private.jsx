@@ -4,7 +4,7 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 // review section data
 
-import a from "../../../../public/assets/Img/_AI for Privacy and Data Protection/1.png"
+import a from "../../../../public/assets/Img/AI for Privacy/1.jpg"
 
 
 
@@ -683,10 +683,14 @@ const PrivateAI = () => {
                 access and breaches.
               </p>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
+               <div className="mb-3">
+                <a
+                  href=" https://www.private-ai.com."
+                  rel="noopener noreferrer"
+                  className="btn btn-primary me-2"
+                >
+                  Explore Tool
+                </a>
               </div>
             </div>
 

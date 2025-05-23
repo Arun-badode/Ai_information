@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
 import aifi from "../../../../public/assets/Img/Ai  for Retail/4.png";
+import s1 from "../../../../public/assets/Img/Ai  for Retail/aifi-s1.png";
+import s2 from "../../../../public/assets/Img/Ai  for Retail/Aifi-s2.png";
 // review section data
 const reviews = [
   {
@@ -336,14 +338,14 @@ const AiFi = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
+                src={s1}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
+                src={s2}
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -852,43 +854,48 @@ const AiFi = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>AiFi AI:</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                AiFi AI is an artificial intelligence-powered platform that
-                enables autonomous, cashierless retail experiences. It leverages
-                advanced computer vision, machine learning, and edge AI to track
-                customer movements and product interactions in real time —
-                removing the need for traditional checkout counters or scanners.
-              </p>
+         
+        <div className="row align-items-center mb-4">
+  {/* Right side (Image Section) - shown first on mobile, second on desktop */}
+  <div
+    className="col-md-6 col-12 order-1 order-md-2 text-center mb-4 mb-md-0"
+    style={{ height: "250px" }}
+  >
+    <img
+      src={aifi}
+      alt="AiFi"
+      style={{ maxWidth: "100%", height: "300px", objectFit: "contain" }}
+    />
+  </div>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
-            </div>
+  {/* Left side (Text Section) - shown second on mobile, first on desktop */}
+  <div
+    className="col-md-6 col-12 order-2 order-md-1"
+    style={{ paddingRight: "30px" }}
+  >
+    <p className="text-primary">Write better, faster</p>
+    <h1>AiFi AI:</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      AiFi AI is an artificial intelligence-powered platform that
+      enables autonomous, cashierless retail experiences. It leverages
+      advanced computer vision, machine learning, and edge AI to track
+      customer movements and product interactions in real time —
+      removing the need for traditional checkout counters or scanners.
+    </p>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img src={aifi} style={{ MaxWidth: "100%", height: "300px" }} />
-            </div>
-          </div>
+    <div className="mb-3">
+      <a
+        href="https://aifi.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary me-2"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
+</div>
 
           <section style={{ backgroundColor: "#283e55", padding: "3rem 0" }}>
             <div className="container text-center">
