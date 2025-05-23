@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
 
+
 // review section data
 const reviews = [
   {
@@ -853,7 +854,7 @@ const BrieflyAI = () => {
 
               <div className="mb-3">
                 <a
-                                 href=" https://www.senseicopilot.com/"
+                                 href="https://www.brieflyai.com"
                                  rel="noopener noreferrer"
                                  className="btn btn-primary me-2"
                                >

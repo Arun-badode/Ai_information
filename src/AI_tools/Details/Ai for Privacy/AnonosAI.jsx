@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
+import anonosaiSS1 from '../../../../public/assets/Img/AI for Privacy/anonosaiSS1.png';
+import anonosaiSS2 from '../../../../public/assets/Img/AI for Privacy/anonosaiSS2.png';
+
 
 import b from "../../../../public/assets/Img/AI for Privacy/2.jpg"
 // review section data
@@ -130,14 +133,15 @@ const AnonosAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
-                alt=""
+                src={anonosaiSS1}
+                alt="anonosai"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
+                src={anonosaiSS2}
+                alt="anonosai"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -619,7 +623,7 @@ const AnonosAI = () => {
 
               <div className="mb-3">
                 <a
-                  href="https://adam.ai/"
+                  href="https://www.anonos.com"
                   rel="noopener noreferrer"
                   className="btn btn-primary me-2"
                 >
