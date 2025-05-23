@@ -4,7 +4,10 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 // review section data
 
-import a from "../../../../public/assets/Img/_AI for Privacy and Data Protection/1.png"
+import a from "../../../../public/assets/Img/AI for Privacy/1.jpg"
+import privateaiSS1 from '../../../../public/assets/Img/AI for Privacy/privateaiSS1.png';
+import privateaiSS2 from '../../../../public/assets/Img/AI for Privacy/privateaiSS2.png';
+
 
 
 
@@ -133,14 +136,15 @@ const PrivateAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
-                alt=""
+                src={privateaiSS1}
+                alt="privateai"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
+                src={privateaiSS2}
+                alt="privateai"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
 import everseen from "../../../../public/assets/Img/Ai  for Retail/7.png";
+import ev1 from "../../../../public/assets/Img/Ai  for Retail/ev-s1.png";
+import ev2 from "../../../../public/assets/Img/Ai  for Retail/ev-s2.png";
+
 // review section data
 const reviews = [
   {
@@ -338,14 +341,14 @@ const Everseen = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
+                src={ev1}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
+                src={ev2}
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

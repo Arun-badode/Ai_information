@@ -626,7 +626,7 @@ const AdobeFireflyAI = () => {
   {/* Left side (Text Section) */}
   <div className="col-lg-6 col-12 order-lg-1 order-2 pe-lg-4">
     <p className="text-primary mb-2">Write better, faster</p>
-    <h1 className="mb-3">Adobe Firefly: The Complete AI Art Guide for Creatives</h1>
+    <h1 className="mb-3">Adobe Firefly</h1>
     <div className="text-warning mb-3">⭐⭐⭐⭐⭐</div>
     <p className="mb-3">
       Adobe Firefly is an AI-driven creative tool designed to enhance

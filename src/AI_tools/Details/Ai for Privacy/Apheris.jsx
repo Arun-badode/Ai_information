@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 // import "./ImageMindAI.css";
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
-// import magisto from "../../../Images/MagistoAI.png";
+import apheris from "../../../../public/assets/Img/AI for Privacy/9.jpg"
+import apherisSS1 from '../../../../public/assets/Img/AI for Privacy/apherisSS1.png';
+import apherisSS2 from '../../../../public/assets/Img/AI for Privacy/apherisSS2.png';
+
 
 // review section data
 const reviews = [
@@ -132,14 +135,15 @@ const ApherisAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
-                alt=""
+                src={apherisSS1}
+                alt="apheris"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
+                src={apherisSS2}
+                alt="apheris"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -607,51 +611,61 @@ const ApherisAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Grow better, faster</p>
-              <h1>Apheris AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Apheris AI is a leading platform designed for privacy-preserving
-                machine learning and secure data collaboration. The platform
-                enables businesses to securely process, analyze, and share
-                sensitive data without compromising privacy. By leveraging
-                AI-powered encryption and privacy-first solutions, Apheris AI
-                supports industries such as healthcare, finance, and enterprise
-                in protecting their data and complying with global privacy
-                regulations like GDPR and CCPA.
-              </p>
+         <div className="row align-items-center mb-4">
+  {/* Image Section — mobile pe pehle, desktop pe baad me */}
+  <div
+    className="col-12 col-md-6 order-1 order-md-2 text-center mb-4 mb-md-0"
+    style={{ height: "auto" }}
+  >
+    <img
+      src={apheris}
+      alt="Apheris AI"
+      style={{ maxWidth: "100%", height: "300px", objectFit: "contain" }}
+      className="img-fluid"
+    />
+  </div>
 
-              <p>
-                Apheris AI provides tools for enterprises to enable secure data
-                sharing, data governance, and AI model training with encrypted
-                data. It ensures data privacy and allows companies to carry out
-                secure data analytics, helping them develop privacy-preserving
-                AI solutions. The platform is especially valuable for
-                organizations working with highly sensitive information,
-                ensuring that data processing and AI model development adhere to
-                the strictest privacy standards.
-              </p>
-            </div>
+  {/* Text Section — mobile pe baad me, desktop pe pehle */}
+  <div
+    className="col-12 col-md-6 order-2 order-md-1"
+    style={{ paddingRight: "30px" }}
+  >
+    <p className="text-primary">Grow better, faster</p>
+    <h1>Apheris AI</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      Apheris AI is a leading platform designed for privacy-preserving
+      machine learning and secure data collaboration. The platform
+      enables businesses to securely process, analyze, and share
+      sensitive data without compromising privacy. By leveraging
+      AI-powered encryption and privacy-first solutions, Apheris AI
+      supports industries such as healthcare, finance, and enterprise
+      in protecting their data and complying with global privacy
+      regulations like GDPR and CCPA.
+    </p>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img src="" style={{ MaxWidth: "100%", height: "300px" }} />
-            </div>
-          </div>
+    <p>
+      Apheris AI provides tools for enterprises to enable secure data
+      sharing, data governance, and AI model training with encrypted
+      data. It ensures data privacy and allows companies to carry out
+      secure data analytics, helping them develop privacy-preserving
+      AI solutions. The platform is especially valuable for
+      organizations working with highly sensitive information,
+      ensuring that data processing and AI model development adhere to
+      the strictest privacy standards.
+    </p>
+    <div className="mb-3">
+      <a
+        href="https://www.apheris.com"
+        rel="noopener noreferrer"
+        className="btn btn-primary me-2"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
+</div>
+
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>
