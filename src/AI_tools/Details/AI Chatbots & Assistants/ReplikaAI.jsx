@@ -124,17 +124,13 @@ const ReplikaAI = () => {
       case "screenshots":
         return (
           <div className="row g-4">
-            <div className="col-md-6">
-<<<<<<< HEAD
-              <img
-                src={replika1}
-                alt="Screenshot 1"
-                className="img-fluid rounded-3"
-              />
-=======
-              <img src="" alt="Screenshot 1" className="img-fluid rounded-3" />
->>>>>>> 891b42de72b99494297c86b402d2ff968eef5339
-            </div>
+<div className="col-md-6">
+  <img
+    src={replika1}
+    alt="Screenshot 1"
+    className="img-fluid rounded-3"
+  />
+</div>
             <div className="col-md-6">
               <img
                 src={replika2} 
@@ -668,50 +664,36 @@ const ReplikaAI = () => {
           <div className="d-flex align-items-center justify-content-between mb-5 lovaaiflex">
             {/* Left side (Text Section) */}
             <div style={{ flex: 1, paddingRight: "30px" }}>
-<<<<<<< HEAD
-
-=======
-              <img
-                src=""
-                alt="Logo"
-                className="me-3"
-                style={{ width: "60px" }}
-              />
->>>>>>> 891b42de72b99494297c86b402d2ff968eef5339
-              <h2>ReplikAI</h2>
-              <div className="text-warning mb-1">
-                ⭐⭐⭐⭐⭐ 95% Satisfaction
-              </div>
-              <p>
-                Replika AI is an AI-powered chatbot and virtual assistant
-                designed to provide users with emotional support, companionship,
-                and personal development through conversational AI. Developed
-                with natural language processing (NLP) technology, Replika can
-                engage in meaningful conversations, understand emotions, and
-                help users navigate their mental health, relationships, and
-                self-care routines.
-              </p>
-              <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
-        <a
-          href="https://replika.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn btn-primary btn-lg px-4"
-        >
-          Explore Tool
-        </a>
-      </div>
-            </div>
-
-            {/* Right side (Image Section) */}
-            <div style={{ flex: 1, textAlign: "center" }}>
-              <img
-                src="https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2024/05/a-robot-coming-out-of-a-laptop-screen-with-the-perplexity-ai-logo-in-its-hand.jpg"
-                className="img-fluid rounded-3"
-                style={{ maxWidth: "80%", height: "auto" }}
-              />
-            </div>
-          </div>
+<h2>Replika AI</h2>
+<p>
+  Replika AI is an AI-powered chatbot and virtual assistant
+  designed to provide users with emotional support, companionship,
+  and personal development through conversational AI. Developed
+  with natural language processing (NLP) technology, Replika can
+  engage in meaningful conversations, understand emotions, and
+  help users navigate their mental health, relationships, and
+  self-care routines.
+</p>
+<div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
+  <a
+    href="https://replika.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="btn btn-primary btn-lg px-4"
+  >
+    Explore Tool
+  </a>
+</div>
+</div>
+{/* Right side (Image Section) */}
+<div style={{ flex: 1, textAlign: "center" }}>
+  <img
+    src="https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2024/05/a-robot-coming-out-of-a-laptop-screen-with-the-perplexity-ai-logo-in-its-hand.jpg"
+    className="img-fluid rounded-3"
+    style={{ maxWidth: "80%", height: "auto" }}
+  />
+</div>
+</div>
 
           {/* Tab Navigation */}
           <ul className="nav nav-tabs custom-tabs mb-4">
