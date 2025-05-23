@@ -3,6 +3,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../../AI_tools/ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import SnatchBotImg from '../../../../public/assets/Img/AI Chatbots & Assistants/37.png'
+import SnatchBotSS1 from '../../../../public/assets/Img/AI Chatbots & Assistants/SnatchBotSS1.png'
+import SnatchBotSS2 from '../../../../public/assets/Img/AI Chatbots & Assistants/SnatchBotSS2.png'
+
 
 // review section data
 const reviews = [
@@ -133,10 +137,10 @@ const SnatchBot = () => {
         return (
           <div className="row g-4">
             <div className="col-md-6">
-              <img src="" alt="Screenshot 1" className="img-fluid rounded-3" />
+              <img src={SnatchBotSS1} alt="SnatchBot1" className="img-fluid rounded-3" />
             </div>
             <div className="col-md-6">
-              <img src="" alt="Screenshot 2" className="img-fluid rounded-3" />
+              <img src={SnatchBotSS2} alt="SnatchBot2" className="img-fluid rounded-3" />
             </div>
           </div>
         );
@@ -626,20 +630,21 @@ const SnatchBot = () => {
                 efficiency.
               </p>
               <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
+                <a
+                                 href="https://www.herohunt.ai/recruitment-solutions/snatchbot"
+                                 rel="noopener noreferrer"
+                                 className="btn btn-primary me-2"
+                               >
+                                 Explore Tool
+                               </a>
               </div>
-              <div>
-                <button className="btn btn-primary me-2">Try Now</button>
-                <button className="btn btn-outline-light">Watch Demo</button>
-              </div>
+             
             </div>
 
             {/* Right side (Image Section) */}
             <div style={{ flex: 1, textAlign: "center" }}>
-              <img
-                src=""
+              <img 
+                src={SnatchBotImg}
                 alt="Dashboard Preview"
                 className="img-fluid rounded-3"
                 style={{ maxWidth: "80%", height: "auto" }}
@@ -672,20 +677,7 @@ const SnatchBot = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with SnatchBot?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
+          
         </div>
       </div>
     </>

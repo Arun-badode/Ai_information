@@ -6,6 +6,11 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import magisto from "../../../../public/assets/Img/AI for Animation/14.png";
 // import scn9 from "../../../../public/assets/Img/AI for privacy/scn9.jpg";
 // import scn10 from "../../../../public/assets/Img/AI for privacy/scn10.jpg";
+import hyperwriteSS1 from '../../../../public/assets/Img/AI for Writing/hyperwriteSS1.png';
+import hyperwriteSS2 from '../../../../public/assets/Img/AI for Writing/hyperwriteSS2.png';
+import hyperwriteImg from '../../../../public/assets/Img/AI for Writing/7.png'
+
+
 
 // review section data
 const reviews = [
@@ -133,14 +138,15 @@ const Hyperwriter = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src={scn9}
-                alt=""
+                src={hyperwriteSS1}
+                alt="hyperwrite"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={scn10}
+                src={hyperwriteSS2}
+                alt="hyperwrite"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -620,7 +626,7 @@ const Hyperwriter = () => {
               className="col-md-6 col-12 order-md-2 order-1 text-center mb-3 mb-md-0  "
             >
               <img
-                src={magisto}
+                src={hyperwriteImg}
                 style={{
                   Width: "100%",
                   height: "auto",

@@ -4,6 +4,9 @@ import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import aivo from "../../../../public/assets/Img/AI Chatbots & Assistants/1.jpg";
+import aivoSS1 from '../../../../public/assets/Img/AI Chatbots & Assistants/aivoImg1.png'
+import aivoSS2 from '../../../../public/assets/Img/AI Chatbots & Assistants/aivoImg2.png'
+
 
 // review section data
 const reviews = [
@@ -130,10 +133,10 @@ const AivoAI = () => {
         return (
           <div className="row g-4">
             <div className="col-md-6">
-              <img src="" alt="Screenshot 1" className="img-fluid rounded-3" />
+              <img src={aivoSS1} alt="aivo" className="img-fluid rounded-3" />
             </div>
             <div className="col-md-6">
-              <img src="" alt="Screenshot 2" className="img-fluid rounded-3" />
+              <img src={aivoSS2} alt="aivo" className="img-fluid rounded-3" />
             </div>
           </div>
         );
@@ -573,12 +576,7 @@ const AivoAI = () => {
           <div className="d-flex align-items-center justify-content-between mb-5 lovaaiflex">
             {/* Left side (Text Section) */}
             <div className="" style={{ flex: 1, paddingRight: "30px" }}>
-              <img
-                src=""
-                alt="Logo"
-                className="me-3"
-                style={{ width: "60px" }}
-              />
+            
               <h2>Aivo AI</h2>
               <div className="text-warning mb-1">
                 ⭐⭐⭐⭐⭐ 95% Satisfaction

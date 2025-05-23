@@ -4,6 +4,7 @@ import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import character from "../../../../public/assets/Img/AI Chatbots & Assistants/32.png";
+import characteraiss from '../../../../public/assets/Img/AI Chatbots & Assistants/characteraiSS1.png'
 
 
 // review section data
@@ -131,15 +132,15 @@ const CharacterAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src=""
-                alt="Screenshot 1"
+                src={characteraiss}
+                alt="characerai"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
-                src=""
-                alt="Screenshot 2"
+                src={characteraiss}
+                alt="characteraiss"
                 className="img-fluid rounded-3"
               />
             </div>
@@ -651,6 +652,13 @@ const CharacterAI = () => {
                 engagement, content generation, and business automation
                 capabilities.
               </p>
+              <a
+                                 href=" https://character.ai"
+                                 rel="noopener noreferrer"
+                                 className="btn btn-primary me-2"
+                               >
+                                 Explore Tool
+                               </a>
             </div>
 
             {/* Right side (Image Section) */}

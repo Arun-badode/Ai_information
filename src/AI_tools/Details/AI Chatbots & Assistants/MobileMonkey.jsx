@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import mobilemonkey from '../../../../public/assets/Img/AI Chatbots & Assistants/38.png'
 
 // review section data
 const reviews = [
@@ -579,12 +580,7 @@ const MobileMonkey = () => {
           <div className="d-flex align-items-center justify-content-between mb-5 lovaaiflex">
             {/* Left side (Text Section) */}
             <div style={{ flex: 1, paddingRight: "30px" }}>
-              <img
-                src=""
-                alt="Logo"
-                className="me-3"
-                style={{ width: "60px" }}
-              />
+           
               <h2>MobileMonkey</h2>
               <div className="text-warning mb-1">
                 ⭐⭐⭐⭐⭐ 95% Satisfaction
@@ -599,12 +595,20 @@ const MobileMonkey = () => {
                 sizes and industries, offering a scalable solution to improve
                 customer engagement and automate repetitive tasks.
               </p>
+
+              <a
+                                 href=" https://app.mobilemonkey.com/"
+                                 rel="noopener noreferrer"
+                                 className="btn btn-primary me-2"
+                               >
+                                 Explore Tool
+                               </a>
             </div>
 
             {/* Right side (Image Section) */}
             <div style={{ flex: 1, textAlign: "center" }}>
               <img
-                src="https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2024/05/a-robot-coming-out-of-a-laptop-screen-with-the-perplexity-ai-logo-in-its-hand.jpg"
+                src={mobilemonkey}
                 className="img-fluid rounded-3"
                 style={{ maxWidth: "80%", height: "auto" }}
               />

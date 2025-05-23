@@ -3,6 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import flowxoSS1 from '../../../../public/assets/Img/AI Chatbots & Assistants/flowxoSS1.png'
+import flowxoSS2 from '../../../../public/assets/Img/AI Chatbots & Assistants/flowxoSS2.png'
+
 
 // review section data
 const reviews = [
@@ -126,15 +129,15 @@ const FlowXO = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src=""
-                alt="Screenshot 1"
+                src={flowxoSS1}
+                alt="flowxo"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
-                src=""
-                alt="Screenshot 2"
+                src={flowxoSS2}
+                alt="flowxo"
                 className="img-fluid rounded-3"
               />
             </div>
@@ -596,6 +599,14 @@ const FlowXO = () => {
                 customer support, lead generation, sales funnels, and
                 appointment scheduling without coding.
               </p>
+
+              <a
+                                 href=" https://flowxo.com"
+                                 rel="noopener noreferrer"
+                                 className="btn btn-primary me-2"
+                               >
+                                 Explore Tool
+                               </a>
             </div>
 
             {/* Right side (Image Section) */}
