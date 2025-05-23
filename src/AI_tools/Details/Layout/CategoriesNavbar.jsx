@@ -232,11 +232,11 @@ const CategoriesNavbar = () => {
                     <h6>
                       Content Generation <FaPencilAlt size={20} />
                     </h6>
-                    <Link to="ReZiAI/">ReZiAI</Link>
+                    <Link to="/ReZiAI">ReZiAI</Link>
                     <Link to="/EnhanevAI">EnhanevAI</Link>
-                    <Link to="KickResume/">KickResume</Link>
-                    <Link to="ZetyAI/">ZetyAI</Link>
-                    <Link to="VisualAI/">VisualAI</Link>
+                    <Link to="/KickResume">KickResume</Link>
+                    <Link to="/ZetyAI">ZetyAI</Link>
+                    <Link to="/VisualAI">VisualAI</Link>
                   </div>
                   {/* Design Tools Column */}
                   <div
