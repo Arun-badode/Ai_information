@@ -8,7 +8,7 @@ import scn9 from "../../../../public/assets/Img/AI for Animation/scn9.jpg";
 import scn10 from "../../../../public/assets/Img/AI for Animation/scn10.jpg";
 import wordtuneSS1 from '../../../../public/assets/Img/AI for Writing/wordtuneSS1.png';
 import wordtuneSS2 from '../../../../public/assets/Img/AI for Writing/wordtuneSS2.png';
-
+import wordtuneImg from '../../../../public/assets/Img/AI for Writing/10.png'
 
 // review section data
 const reviews = [
@@ -617,7 +617,7 @@ const Wordtune = () => {
               className="col-md-6 col-12 order-md-2 order-1 text-center mb-3 mb-md-0  "
             >
               <img
-                src={magisto}
+                src={wordtuneImg}
                 style={{
                   Width: "100%",
                   height: "auto",

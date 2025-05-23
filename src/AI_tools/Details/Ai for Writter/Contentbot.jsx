@@ -8,7 +8,7 @@ import scn9 from "../../../../public/assets/Img/AI for Animation/scn9.jpg";
 import scn10 from "../../../../public/assets/Img/AI for Animation/scn10.jpg";
 import contentbotSS1 from '../../../../public/assets/Img/AI for Writing/contentbotSS1.png';
 import contentbotSS2 from '../../../../public/assets/Img/AI for Writing/contentbotSS2.png';
-
+import contentbotImg from '../../../../public/assets/Img/AI for Writing/13.png'
 
 // review section data
 const reviews = [
@@ -618,7 +618,7 @@ const Contentbot = () => {
               className="col-md-6 col-12 order-md-2 order-1 text-center mb-3 mb-md-0  "
             >
               <img
-                src={magisto}
+                src={contentbotImg}
                 style={{
                   Width: "100%",
                   height: "auto",

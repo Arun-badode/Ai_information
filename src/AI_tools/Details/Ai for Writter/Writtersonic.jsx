@@ -5,6 +5,7 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import magisto from "../../../Images/MagistoAI.png";
 import writesonicSS1 from '../../../../public/assets/Img/AI for Writing/writesonicSS1.png';
 import writesonicSS2 from '../../../../public/assets/Img/AI for Writing/writesonicSS2.png';
+import writersonicImg from '../../../../public/assets/Img/AI for Writing/3.png'
 
 
 
@@ -728,7 +729,7 @@ const Writtersonic = () => {
             {/* Right side (Image Section) */}
            <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-3 mb-md-0">
   <img
-    src={magisto}
+    src={writersonicImg}
     style={{
       maxWidth: "100%",
       height: "auto",

@@ -6,6 +6,9 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import magisto from "../../../../public/assets/Img/AI for Animation/14.png";
 import scn9 from "../../../../public/assets/Img/AI for Animation/scn9.jpg";
 import scn10 from "../../../../public/assets/Img/AI for Animation/scn10.jpg";
+import longshotSS1 from '../../../../public/assets/Img/AI for Writing/longshotSS1.png';
+import longshotSS2 from '../../../../public/assets/Img/AI for Writing/longshotSS2.png';
+import longshotImg from '../../../../public/assets/Img/AI for Writing/11.png'
 
 // review section data
 const reviews = [
@@ -135,14 +138,15 @@ const Longshot = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src={scn9}
-                alt=""
+                src={longshotSS1}
+                alt="longshot"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={scn10}
+                src={longshotSS2}
+                alt="longshot"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -697,7 +701,7 @@ const Longshot = () => {
               className="col-md-6 col-12 order-md-2 order-1 text-center mb-3 mb-md-0  "
             >
               <img
-                src={magisto}
+                src={longshotImg}
                 style={{
                   Width: "100%",
                   height: "auto",

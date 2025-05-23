@@ -4,6 +4,7 @@ import "../../ImageMindAI.css";
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import copyaiSS1 from '../../../../public/assets/Img/AI for Writing/copyaiSS1.png';
 import copyaiSS2 from '../../../../public/assets/Img/AI for Writing/copyaiSS2.png';
+import copyaiImg from '../../../../public/assets/Img/AI for Writing/2.png'
 
 
 // review section data
@@ -599,7 +600,7 @@ const CopyAI = () => {
               className="col-6 col-md-12 mb-5  "
             >
               <img
-                src=''
+                src={copyaiImg}
                 style={{ MaxWidth: "100%", height: "300px" }}
               />
             </div>
@@ -756,20 +757,7 @@ const CopyAI = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with CopyAI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
+         
         </div>
       </div>
     </>

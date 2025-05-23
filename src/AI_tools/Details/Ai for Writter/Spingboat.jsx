@@ -8,6 +8,7 @@ import scn9 from "../../../../public/assets/Img/AI for Animation/scn9.jpg";
 import scn10 from "../../../../public/assets/Img/AI for Animation/scn10.jpg";
 import spinbotSS1 from '../../../../public/assets/Img/AI for Writing/spinbotSS1.png';
 import spinbotSS2 from '../../../../public/assets/Img/AI for Writing/spinbotSS2.png';
+import spinbotImg from '../../../../public/assets/Img/AI for Writing/17.png'
 
 
 // review section data
@@ -643,7 +644,7 @@ const Spingboat = () => {
               className="col-md-6 col-12 order-md-2 order-1 text-center mb-3 mb-md-0  "
             >
               <img
-                src={magisto}
+                src={spinbotImg}
                 style={{
                   Width: "100%",
                   height: "auto",

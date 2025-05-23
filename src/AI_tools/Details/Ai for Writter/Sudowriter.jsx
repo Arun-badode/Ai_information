@@ -8,7 +8,7 @@ import scn9 from "../../../../public/assets/Img/AI for Animation/scn9.jpg";
 import scn10 from "../../../../public/assets/Img/AI for Animation/scn10.jpg";
 import sudowriteSS1 from '../../../../public/assets/Img/AI for Writing/sudowriteSS1.png';
 import sudowriteSS2 from '../../../../public/assets/Img/AI for Writing/sudowriteSS2.png';
-
+import sudowriteImg from '../../../../public/assets/Img/AI for Writing/5.png'
 
 // review section data
 const reviews = [
@@ -625,7 +625,7 @@ const Sudowriter = () => {
               className="col-md-6 col-12 order-md-2 order-1 text-center mb-3 mb-md-0  "
             >
               <img
-                src={magisto}
+                src={sudowriteImg}
                 style={{
                   Width: "100%",
                   height: "auto",

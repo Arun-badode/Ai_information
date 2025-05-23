@@ -8,7 +8,7 @@ import magisto from "../../../../public/assets/Img/AI for Animation/14.png";
 // import scn10 from "../../../../public/assets/Img/AI for privacy/scn10.jpg";
 import hyperwriteSS1 from '../../../../public/assets/Img/AI for Writing/hyperwriteSS1.png';
 import hyperwriteSS2 from '../../../../public/assets/Img/AI for Writing/hyperwriteSS2.png';
-
+import hyperwriteImg from '../../../../public/assets/Img/AI for Writing/7.png'
 
 
 
@@ -626,7 +626,7 @@ const Hyperwriter = () => {
               className="col-md-6 col-12 order-md-2 order-1 text-center mb-3 mb-md-0  "
             >
               <img
-                src={magisto}
+                src={hyperwriteImg}
                 style={{
                   Width: "100%",
                   height: "auto",
