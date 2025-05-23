@@ -5,6 +5,8 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 
 import { Shield } from "lucide-react";
 import shield from "../../../../public/assets/Img/AI for Cybersecurity/6.png";
+import shield1 from "../../../../public/assets/Img/AI for Cybersecurity/Shield1.png";
+import shield2 from "../../../../public/assets/Img/AI for Cybersecurity/Shield2.png";
 // review section data
 const reviews = [
   {
@@ -131,14 +133,14 @@ const ShieldAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
+                src={shield1}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
+                src={shield2}
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -646,18 +648,14 @@ const ShieldAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
+          <div className="row align-items-center justify-content-between mb-4 flex-wrap">
             {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
+            <div className="col-12 col-lg-6 mb-4 mb-lg-0" style={{ paddingRight: "30px" }}>
               <p className="text-primary">
                 Create stunning visuals effortlessly
               </p>
-              <h1> AI Shield</h1>
+              <h1>AI Shield</h1>
               <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-
               <p>
                 AI Shield is a state-of-the-art cybersecurity platform that
                 leverages artificial intelligence to protect against a wide
@@ -668,33 +666,33 @@ const ShieldAI = () => {
                 analytics and automated responses to combat threats such as
                 malware, phishing, and data breaches effectively.
               </p>
-
-              <div className="mb-3">
-                <span className="badge bg-primary me-2"> Security</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
+              <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
+                <a
+                  href="https://www.boschaishield.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary btn-lg px-4"
+                >
+                  Explore Tool
+                </a>
               </div>
             </div>
-
             {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img src={shield} style={{ MaxWidth: "100%", height: "300px" }} />
+            <div className="col-12 col-lg-6 mb-4 mb-lg-0 text-center">
+              <img
+                src={shield}
+                className="img-fluid rounded-3"
+                style={{ maxWidth: "100%", height: "auto" }}
+                alt="AI Shield"
+              />
             </div>
           </div>
-          <section style={{ backgroundColor: "", padding: "3rem 0" }}>
+          <section style={{ padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>
               <h2
                 style={{
-                  fontWeight: "semibold",
+                  fontWeight: "600",
                   color: "#fff",
                   marginBottom: "1rem",
                 }}
@@ -703,7 +701,7 @@ const ShieldAI = () => {
               </h2>
               <div className="row g-4">
                 {/* Step 1 */}
-                <div className="col-md-4">
+                <div className="col-12 col-md-4">
                   <div
                     style={{
                       position: "relative",
@@ -714,19 +712,6 @@ const ShieldAI = () => {
                       height: "100%",
                     }}
                   >
-                    <style>
-                      {`
-          .step1 {
-            position: absolute;
-            bottom: 10px;
-            right: 15px;
-            font-size: 4rem;
-            font-weight: bold;
-            color: #7b61ff;
-            opacity: 0.6;
-          }
-        `}
-                    </style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
                       Deploy AI Shield Across Your Network
                     </h5>
@@ -735,12 +720,23 @@ const ShieldAI = () => {
                       endpoints, cloud resources, and user activity across your
                       infrastructure.
                     </p>
-                    <div className="step1">1</div>
+                    <div
+                      style={{
+                        position: "absolute",
+                        bottom: 10,
+                        right: 15,
+                        fontSize: "4rem",
+                        fontWeight: "bold",
+                        color: "#7b61ff",
+                        opacity: 0.6,
+                      }}
+                    >
+                      1
+                    </div>
                   </div>
                 </div>
-
                 {/* Step 2 */}
-                <div className="col-md-4">
+                <div className="col-12 col-md-4">
                   <div
                     style={{
                       position: "relative",
@@ -751,19 +747,6 @@ const ShieldAI = () => {
                       height: "100%",
                     }}
                   >
-                    <style>
-                      {`
-          .step2 {
-            position: absolute;
-            bottom: 10px;
-            right: 15px;
-            font-size: 4rem;
-            font-weight: bold;
-            color: #7b61ff;
-            opacity: 0.6;
-          }
-        `}
-                    </style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
                       Analyze Data with AI Shield’s Threat Detection
                     </h5>
@@ -772,12 +755,23 @@ const ShieldAI = () => {
                       analyze data, detecting potential threats in real-time
                       before they can impact your systems.
                     </p>
-                    <div className="step2">2</div>
+                    <div
+                      style={{
+                        position: "absolute",
+                        bottom: 10,
+                        right: 15,
+                        fontSize: "4rem",
+                        fontWeight: "bold",
+                        color: "#7b61ff",
+                        opacity: 0.6,
+                      }}
+                    >
+                      2
+                    </div>
                   </div>
                 </div>
-
                 {/* Step 3 */}
-                <div className="col-md-4">
+                <div className="col-12 col-md-4">
                   <div
                     style={{
                       position: "relative",
@@ -788,19 +782,6 @@ const ShieldAI = () => {
                       height: "100%",
                     }}
                   >
-                    <style>
-                      {`
-          .step3 {
-            position: absolute;
-            bottom: 10px;
-            right: 15px;
-            font-size: 4rem;
-            font-weight: bold;
-            color: #7b61ff;
-            opacity: 0.6;
-          }
-        `}
-                    </style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
                       Take Action with AI Shield’s Autonomous Response
                     </h5>
@@ -809,21 +790,31 @@ const ShieldAI = () => {
                       isolating compromised devices, blocking malicious
                       activity, and initiating remediation actions.
                     </p>
-                    <div className="step3">3</div>
+                    <div
+                      style={{
+                        position: "absolute",
+                        bottom: 10,
+                        right: 15,
+                        fontSize: "4rem",
+                        fontWeight: "bold",
+                        color: "#7b61ff",
+                        opacity: 0.6,
+                      }}
+                    >
+                      3
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </section>
-
           {/* Tab Navigation */}
-          <ul className="nav nav-tabs custom-tabs mb-4">
+          <ul className="nav nav-tabs custom-tabs mb-4 flex-wrap">
             {[
               "features",
               "screenshots",
               "reviews",
               "FAQs",
-
               "why-we-use",
               "pros & cons",
               "alternative",
@@ -838,24 +829,8 @@ const ShieldAI = () => {
               </li>
             ))}
           </ul>
-
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
-
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with Shield AI ?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. free trial available.
-            </small>
-          </div>
         </div>
       </div>
     </>

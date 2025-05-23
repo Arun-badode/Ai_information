@@ -135,13 +135,14 @@ const OracleAI = () => {
             <div className="col-md-6">
               <img
                 src={oracle2}
-                alt=""
+                alt="Oracle AI"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={oracle1}
+                alt="Oracle AI"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

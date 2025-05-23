@@ -133,13 +133,14 @@ const RescueAI = () => {
             <div className="col-md-6">
               <img
                 src={rescue1}
-                alt=""
+                alt="RescueTime AI"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={rescue1}
+                alt="RescueTime AI"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -589,7 +590,7 @@ const RescueAI = () => {
   >
     <img
       src={rescue}
-      alt="RescueTime AI screenshot"
+      alt="RescueTime AI"
       style={{ maxWidth: "100%", height: "300px", objectFit: "contain" }}
     />
   </div>

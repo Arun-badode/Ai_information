@@ -134,13 +134,14 @@ const SASAI = () => {
             <div className="col-md-6">
               <img
                 src={sas1}
-                alt=""
+                alt="SAS AI"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={sas2}
+                alt="SAS AI"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

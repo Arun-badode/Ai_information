@@ -4,6 +4,8 @@ import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 
 import cynet from "../../../../public/assets/Img/AI for Cybersecurity/5.png";
+import cynet1 from "../../../../public/assets/Img/AI for Cybersecurity/Cynet1.png"
+import cynet2 from "../../../../public/assets/Img/AI for Cybersecurity/Cynet2.png";           
 // review section data
 const reviews = [
   {
@@ -72,7 +74,7 @@ const styles = {
   },
 };
 const CynetAI = () => {
-  const [activeTab, setActiveTab] = useState("features"); // Set the default active tab as 'features'
+  const [activeTab, setActiveTab] = useState("features");
   const [showAllFaqs, setShowAllFaqs] = useState(false);
 
   const renderTabContent = () => {
@@ -144,14 +146,14 @@ const CynetAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
+                src={cynet1}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
+                src={cynet2}
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -621,34 +623,24 @@ const CynetAI = () => {
 
   return (
     <>
-      <div className="bg-dark d-flex  justify-content-between align-items-center ">
-        {/* <a
-          href="/Aitools"
-          className="d-inline-block text-white text-decoration-none ml-3 py-1"
-        >
-          <i className="bi bi-arrow-left me-2"></i>Back to Directory{" "}
-        </a> */}
+      <div className="bg-dark d-flex justify-content-between align-items-center flex-wrap">
         <a
           href="/Aitools"
-          className="d-inline-block text-white text-decoration-none  mt-3 ml-3 py-1 px-2 ms-5 border rounded-sm"
+          className="d-inline-block text-white text-decoration-none mt-3 ml-3 py-1 px-2 ms-5 border rounded-sm"
         >
-          <i className="bi bi-arrow-left me-2"></i>Back  {" "}
+          <i className="bi bi-arrow-left me-2"></i>Back{" "}
         </a>
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
+          <div className="row align-items-center justify-content-between mb-4 flex-wrap">
             {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
+            <div className="col-12 col-lg-6 mb-4 mb-lg-0" style={{ paddingRight: "30px" }}>
               <p className="text-primary">
                 Create stunning visuals effortlessly
               </p>
               <h1>Cynet 360 AI</h1>
               <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-
               <p>
                 Cynet AI, 360 AI, and Cynet 360 AI are cutting-edge technologies
                 in the cybersecurity space that leverage artificial intelligence
@@ -661,43 +653,42 @@ const CynetAI = () => {
                 threats, these AI-based tools play a pivotal role in fortifying
                 the defense systems of organizations worldwide.
               </p>
-
-              <div className="mb-3">
-                <span className="badge bg-primary me-2"> Security</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
+              <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
+                <a
+                  href="https://www.cynet.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary btn-lg px-4"
+                >
+                  Explore Tool
+                </a>
               </div>
             </div>
-
             {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img src={cynet} style={{ MaxWidth: "100%", height: "300px" }} />
+            <div className="col-12 col-lg-6 mb-4 mb-lg-0 text-center">
+              <img
+                src={cynet}
+                className="img-fluid rounded-3"
+                style={{ maxWidth: "100%", height: "auto" }}
+                alt="Cynet 360 AI"
+              />
             </div>
           </div>
-          <section style={{ backgroundColor: "", padding: "3rem 0" }}>
+          <section style={{ padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>
               <h2
                 style={{
-                  fontWeight: "semibold",
+                  fontWeight: "600",
                   color: "#fff",
                   marginBottom: "1rem",
                 }}
               >
                 How to Use Cynet 360
               </h2>
-
               <div className="row g-4">
                 {/* Step 1 */}
-                <div className="col-md-4">
+                <div className="col-12 col-md-4">
                   <div
                     style={{
                       position: "relative",
@@ -708,19 +699,6 @@ const CynetAI = () => {
                       height: "100%",
                     }}
                   >
-                    <style>
-                      {`
-          .step1 {
-            position: absolute;
-            bottom: 10px;
-            right: 15px;
-            font-size: 4rem;
-            font-weight: bold;
-            color: #7b61ff;
-            opacity: 0.6;
-          }
-        `}
-                    </style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
                       Deploy Cynet 360 Agent
                     </h5>
@@ -729,12 +707,23 @@ const CynetAI = () => {
                       collecting behavioral and system activity data for
                       real-time protection.
                     </p>
-                    <div className="step1">1</div>
+                    <div
+                      style={{
+                        position: "absolute",
+                        bottom: 10,
+                        right: 15,
+                        fontSize: "4rem",
+                        fontWeight: "bold",
+                        color: "#7b61ff",
+                        opacity: 0.6,
+                      }}
+                    >
+                      1
+                    </div>
                   </div>
                 </div>
-
                 {/* Step 2 */}
-                <div className="col-md-4">
+                <div className="col-12 col-md-4">
                   <div
                     style={{
                       position: "relative",
@@ -745,19 +734,6 @@ const CynetAI = () => {
                       height: "100%",
                     }}
                   >
-                    <style>
-                      {`
-          .step2 {
-            position: absolute;
-            bottom: 10px;
-            right: 15px;
-            font-size: 4rem;
-            font-weight: bold;
-            color: #7b61ff;
-            opacity: 0.6;
-          }
-        `}
-                    </style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
                       Activate Autonomous Breach Protection
                     </h5>
@@ -766,12 +742,23 @@ const CynetAI = () => {
                       detect, block, and remediate threats without manual
                       intervention.
                     </p>
-                    <div className="step2">2</div>
+                    <div
+                      style={{
+                        position: "absolute",
+                        bottom: 10,
+                        right: 15,
+                        fontSize: "4rem",
+                        fontWeight: "bold",
+                        color: "#7b61ff",
+                        opacity: 0.6,
+                      }}
+                    >
+                      2
+                    </div>
                   </div>
                 </div>
-
                 {/* Step 3 */}
-                <div className="col-md-4">
+                <div className="col-12 col-md-4">
                   <div
                     style={{
                       position: "relative",
@@ -782,19 +769,6 @@ const CynetAI = () => {
                       height: "100%",
                     }}
                   >
-                    <style>
-                      {`
-          .step3 {
-            position: absolute;
-            bottom: 10px;
-            right: 15px;
-            font-size: 4rem;
-            font-weight: bold;
-            color: #7b61ff;
-            opacity: 0.6;
-          }
-        `}
-                    </style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
                       Monitor and Control via Cynet Dashboard
                     </h5>
@@ -803,21 +777,31 @@ const CynetAI = () => {
                       threat hunting, and customize protection policies across
                       all endpoints.
                     </p>
-                    <div className="step3">3</div>
+                    <div
+                      style={{
+                        position: "absolute",
+                        bottom: 10,
+                        right: 15,
+                        fontSize: "4rem",
+                        fontWeight: "bold",
+                        color: "#7b61ff",
+                        opacity: 0.6,
+                      }}
+                    >
+                      3
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </section>
-
           {/* Tab Navigation */}
-          <ul className="nav nav-tabs custom-tabs mb-4">
+          <ul className="nav nav-tabs custom-tabs mb-4 flex-wrap">
             {[
               "features",
               "screenshots",
               "reviews",
               "FAQs",
-
               "why-we-use",
               "pros & cons",
               "alternative",
@@ -832,24 +816,8 @@ const CynetAI = () => {
               </li>
             ))}
           </ul>
-
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
-
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with Cynet AI ?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. free trial available.
-            </small>
-          </div>
         </div>
       </div>
     </>

@@ -633,34 +633,24 @@ const Cylance = () => {
 
   return (
     <>
-      <div className="bg-dark d-flex  justify-content-between align-items-center ">
-        {/* <a
-          href="/Aitools"
-          className="d-inline-block text-white text-decoration-none ml-3 py-1"
-        >
-          <i className="bi bi-arrow-left me-2"></i>Back to Directory{" "}
-        </a> */}
+      <div className="bg-dark d-flex justify-content-between align-items-center flex-wrap">
         <a
           href="/Aitools"
-          className="d-inline-block text-white text-decoration-none  mt-3 ml-3 py-1 px-2 ms-5 border rounded-sm"
+          className="d-inline-block text-white text-decoration-none mt-3 ml-3 py-1 px-2 ms-5 border rounded-sm"
         >
-          <i className="bi bi-arrow-left me-2"></i>Back  {" "}
+          <i className="bi bi-arrow-left me-2"></i>Back{" "}
         </a>
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
+          <div className="row align-items-center justify-content-between mb-4 flex-wrap">
             {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
+            <div className="col-12 col-lg-6 mb-4 mb-lg-0" style={{ paddingRight: "30px" }}>
               <p className="text-primary">
                 Create stunning visuals effortlessly
               </p>
               <h1>Cylance AI</h1>
               <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-
               <p>
                 Cylance AI refers to a set of cybersecurity solutions powered by
                 artificial intelligence and machine learning, designed to
@@ -673,7 +663,6 @@ const Cylance = () => {
                 providing organizations with enhanced security and reduced
                 reliance on manual interventions.
               </p>
-
               <p>
                 Cylance's AI-driven security tools integrate seamlessly with
                 both cloud and on-premises environments, offering solutions that
@@ -681,46 +670,42 @@ const Cylance = () => {
                 behavioral patterns, Cylance’s AI can identify new, unknown
                 threats and respond to them faster than traditional systems.
               </p>
-
-              <div className="mb-3">
-                <span className="badge bg-primary me-2"> Security</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
+              <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
+                <a
+                  href="https://www.browserstack.com/live?utm_source=bing&utm_medium=cpc&utm_platform=paidads&utm_content=&utm_campaign=Bing-Search-Brand-India&utm_campaigncode=Automate+149846&utm_term=p+browserstack%20automate%20desktop"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary btn-lg px-4"
+                >
+                  Explore Tool
+                </a>
               </div>
             </div>
-
             {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
+            <div className="col-12 col-lg-6 mb-4 mb-lg-0 text-center">
               <img
                 src={cylance}
-                style={{ MaxWidth: "100%", height: "300px" }}
+                className="img-fluid rounded-3"
+                style={{ maxWidth: "100%", height: "auto" }}
+                alt="Cylance AI"
               />
             </div>
           </div>
-          <section style={{ backgroundColor: "", padding: "3rem 0" }}>
+          <section style={{ padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>
               <h2
                 style={{
-                  fontWeight: "semibold",
+                  fontWeight: "600",
                   color: "#fff",
                   marginBottom: "1rem",
                 }}
               >
                 How to Use Cylance AI?
               </h2>
-
               <div className="row g-4">
                 {/* Step 1 */}
-                <div className="col-md-4">
+                <div className="col-12 col-md-4">
                   <div
                     style={{
                       position: "relative",
@@ -731,19 +716,6 @@ const Cylance = () => {
                       height: "100%",
                     }}
                   >
-                    <style>
-                      {`
-          .step1 {
-            position: absolute;
-            bottom: 10px;
-            right: 15px;
-            font-size: 4rem;
-            font-weight: bold;
-            color: #7b61ff;
-            opacity: 0.6;
-          }
-        `}
-                    </style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
                       Install CylancePROTECT Agents
                     </h5>
@@ -751,12 +723,23 @@ const Cylance = () => {
                       Deploy CylancePROTECT agents on endpoints to enable
                       AI-powered threat detection and prevention in real time.
                     </p>
-                    <div className="step1">1</div>
+                    <div
+                      style={{
+                        position: "absolute",
+                        bottom: 10,
+                        right: 15,
+                        fontSize: "4rem",
+                        fontWeight: "bold",
+                        color: "#7b61ff",
+                        opacity: 0.6,
+                      }}
+                    >
+                      1
+                    </div>
                   </div>
                 </div>
-
                 {/* Step 2 */}
-                <div className="col-md-4">
+                <div className="col-12 col-md-4">
                   <div
                     style={{
                       position: "relative",
@@ -767,19 +750,6 @@ const Cylance = () => {
                       height: "100%",
                     }}
                   >
-                    <style>
-                      {`
-          .step2 {
-            position: absolute;
-            bottom: 10px;
-            right: 15px;
-            font-size: 4rem;
-            font-weight: bold;
-            color: #7b61ff;
-            opacity: 0.6;
-          }
-        `}
-                    </style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
                       Leverage AI to Detect and Prevent Threats
                     </h5>
@@ -788,12 +758,23 @@ const Cylance = () => {
                       detect and block known and unknown threats before they
                       execute.
                     </p>
-                    <div className="step2">2</div>
+                    <div
+                      style={{
+                        position: "absolute",
+                        bottom: 10,
+                        right: 15,
+                        fontSize: "4rem",
+                        fontWeight: "bold",
+                        color: "#7b61ff",
+                        opacity: 0.6,
+                      }}
+                    >
+                      2
+                    </div>
                   </div>
                 </div>
-
                 {/* Step 3 */}
-                <div className="col-md-4">
+                <div className="col-12 col-md-4">
                   <div
                     style={{
                       position: "relative",
@@ -804,19 +785,6 @@ const Cylance = () => {
                       height: "100%",
                     }}
                   >
-                    <style>
-                      {`
-          .step3 {
-            position: absolute;
-            bottom: 10px;
-            right: 15px;
-            font-size: 4rem;
-            font-weight: bold;
-            color: #7b61ff;
-            opacity: 0.6;
-          }
-        `}
-                    </style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
                       Monitor and Manage Threats with the Console
                     </h5>
@@ -825,25 +793,27 @@ const Cylance = () => {
                       investigation, and management of security incidents across
                       your endpoints.
                     </p>
-                    <div className="step3">3</div>
+                    <div
+                      style={{
+                        position: "absolute",
+                        bottom: 10,
+                        right: 15,
+                        fontSize: "4rem",
+                        fontWeight: "bold",
+                        color: "#7b61ff",
+                        opacity: 0.6,
+                      }}
+                    >
+                      3
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </section>
-
           {/* Tab Navigation */}
-          <ul className="nav nav-tabs custom-tabs mb-4">
-            {[
-              "features",
-              "screenshots",
-              "reviews",
-              "FAQs",
-
-              "why-we-use",
-              "pros & cons",
-              "alternative",
-            ].map((tab) => (
+          <ul className="nav nav-tabs custom-tabs mb-4 flex-wrap">
+            {["features", "screenshots", "reviews", "FAQs", "why-we-use", "pros & cons", "alternative"].map((tab) => (
               <li className="nav-item mb-2" key={tab}>
                 <button
                   className={`nav-link ${activeTab === tab ? "active" : ""}`}
@@ -854,24 +824,8 @@ const Cylance = () => {
               </li>
             ))}
           </ul>
-
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
-
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with Cylance AI ?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. free trial available.
-            </small>
-          </div>
         </div>
       </div>
     </>

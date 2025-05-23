@@ -132,13 +132,14 @@ const PowerBI = () => {
             <div className="col-md-6">
               <img
                 src={power1}
-                alt=""
+                alt="powerBI"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={power2}
+                alt="Power AI"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
