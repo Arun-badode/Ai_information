@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar" style={{zIndex:"10000"}}>
+      <nav className="navbar" style={{ zIndex: "10000" }}>
         {/* Left side - Brand */}
         <Link to="/">
           <div className="navbar-brand px-2">AI Tools</div>
@@ -38,35 +38,50 @@ const Navbar = () => {
                 Categories
               </a>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link to="/imagemindai" className="nav-link">
                 AI Tools
               </Link>
-            </li>
+            </li> */}
             <li className="nav-item">
               <Link to="/AINewsPage" className="nav-link">
                 AI News
               </Link>
             </li>
             <li className="nav-item">
-              <Link to= "/AiBlog" className="nav-link">
+              <Link to="/AiBlog" className="nav-link">
                 AI Blog
               </Link>
             </li>
           </ul>
         </div>
 
+
+
+
+
+
+
+
         {/* Desktop-only Contact Button */}
         <div className="navbar-contact">
-          <button className="contact-btn relative overflow-hidden text-white px-4 py-2 rounded-md">
+          <Link
+            to="/aicontact"
+            className="contact-btn relative overflow-hidden text-white px-4 py-2 rounded-md"
+          >
             Contact
             <span className="glowing-ring"></span>
-          </button>
+          </Link>
         </div>
+
+
+
+
+
       </nav>
       {/* <BreadcrumbScroll /> */}
       {/* <CategoriesNavbar /> */}
-      < Chatbot/>
+      < Chatbot />
     </>
   );
 };
