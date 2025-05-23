@@ -1,4 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
+import replika1 from '../../../../public/assets/Img/AI For Chatbots/replika1.png';
+import replika2 from '../../../../public/assets/Img/AI For Chatbots/replika2.png';
+import replika from '../../../../public/assets/Img/AI For Chatbots/replika.png';
 
 const ReplikaAI = () => {
   const [activeTab, setActiveTab] = useState("features"); // Set the default active tab as 'features'
@@ -51,12 +54,12 @@ const ReplikaAI = () => {
         return (
           <div className="row g-4">
             <div className="col-md-6">
-              <img src="" alt="Screenshot 1" className="img-fluid rounded-3" />
+              <img src={replika1} alt="screenshots 1" className="img-fluid rounded-3" />
             </div>
             <div className="col-md-6">
               <img
                 src={replika2} 
-                alt="Screenshot 2"
+                alt="screenshots 2"
                 className="img-fluid rounded-3"
               />
             </div>
@@ -586,12 +589,7 @@ const ReplikaAI = () => {
           <div className="d-flex align-items-center justify-content-between mb-5 lovaaiflex">
             {/* Left side (Text Section) */}
             <div style={{ flex: 1, paddingRight: "30px" }}>
-              <img
-                src=""
-                alt="Logo"
-                className="me-3"
-                style={{ width: "60px" }}
-              />
+              
               <h2>ReplikAI</h2>
               <div className="text-warning mb-1">
                 ⭐⭐⭐⭐⭐ 95% Satisfaction
@@ -620,7 +618,7 @@ const ReplikaAI = () => {
             {/* Right side (Image Section) */}
             <div style={{ flex: 1, textAlign: "center" }}>
               <img
-                src="https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2024/05/a-robot-coming-out-of-a-laptop-screen-with-the-perplexity-ai-logo-in-its-hand.jpg"
+                src={replika}
                 className="img-fluid rounded-3"
                 style={{ maxWidth: "80%", height: "auto" }}
               />

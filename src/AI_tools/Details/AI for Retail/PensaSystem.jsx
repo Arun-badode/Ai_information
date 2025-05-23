@@ -3,8 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Logo from "../../../Images/logo[2].png";
-import deatilimage from "../../../Images/DetailImage.png";
+
 import pensa from "../../../../public/assets/Img/Ai  for Retail/10.png";
 import pn1 from "../../../../public/assets/Img/Ai  for Retail/pn-s1.png";
 import pn2 from "../../../../public/assets/Img/Ai  for Retail/pn-s2.png";

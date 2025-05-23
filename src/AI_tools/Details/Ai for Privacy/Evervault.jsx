@@ -4,6 +4,9 @@ import "../../ImageMindAI.css"; // <-- custom CSS file import
 // import "./PrivateAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import   evervault from "../../../../public/assets/Img/AI for Privacy/5.jpg"
+import evervaultSS1 from '../../../../public/assets/Img/AI for Privacy/evervaultSS1.png';
+import evervaultSS2 from '../../../../public/assets/Img/AI for Privacy/evervaultSS2.png';
+
 // review section data
 const reviews = [
   {
@@ -130,14 +133,15 @@ const Evervault = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
-                alt=""
+                src={evervaultSS1}
+                alt="evervault"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
+                src={evervaultSS2}
+                alt="evervault"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -687,51 +691,51 @@ const Evervault = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>EverVault AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Evervault AI is a cutting-edge tool designed to provide advanced
-                encryption and data security for sensitive information. Built
-                with AI-powered encryption technology, it offers businesses and
-                organizations a powerful solution to protect their data, ensure
-                compliance with regulations like GDPR and HIPAA, and maintain
-                the privacy of their users. It is an essential tool for
-                enterprises that handle confidential information and require
-                secure cloud-based storage and data sharing solutions.
-              </p>
+         <div className="row align-items-center mb-4">
+  {/* Image Section - First on mobile, second on desktop */}
+  <div
+    className="col-12 col-md-6 order-1 order-md-2 text-center mb-4 mb-md-0"
+    style={{ height: "auto" }}
+  >
+    <img
+      src={evervault}
+      alt="EverVault AI"
+      style={{ maxWidth: "100%", height: "300px", objectFit: "contain" }}
+      className="img-fluid"
+    />
+  </div>
 
-            
-                 <div className="mb-3">
-                <a
-                  href="https://adam.ai/"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary me-2"
-                >
-                  Explore Tool
-                </a>
-              </div>
-            </div>
+  {/* Text Section - Second on mobile, first on desktop */}
+  <div
+    className="col-12 col-md-6 order-2 order-md-1"
+    style={{ paddingRight: "30px" }}
+  >
+    <p className="text-primary">Write better, faster</p>
+    <h1>EverVault AI</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      Evervault AI is a cutting-edge tool designed to provide advanced
+      encryption and data security for sensitive information. Built with
+      AI-powered encryption technology, it offers businesses and organizations
+      a powerful solution to protect their data, ensure compliance with
+      regulations like GDPR and HIPAA, and maintain the privacy of their users.
+      It is an essential tool for enterprises that handle confidential
+      information and require secure cloud-based storage and data sharing
+      solutions.
+    </p>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img src={evervault} style={{ MaxWidth: "100%", height: "300px" }} />
-            </div>
-          </div>
+    <div className="mb-3">
+      <a
+        href="https://evervault.com"
+        rel="noopener noreferrer"
+        className="btn btn-primary me-2"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
+</div>
+
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>

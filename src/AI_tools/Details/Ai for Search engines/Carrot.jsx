@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import magisto from "../../../Images/MagistoAI.png";
+import carrot2 from "../../../../public/assets/Img/Ai for Search engines/Carrot2.png";
 
 // review section data
 const reviews = [
@@ -134,14 +135,14 @@ const Carrot = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
+                src={carrot2}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
+                src={carrot2}
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -702,11 +703,16 @@ const Carrot = () => {
                 similarity, improving search and content discovery.
               </p>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2"> Search</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
+            <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
+        <a
+          href="https://search.carrot2.org/#/search/web"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-primary btn-lg px-4"
+        >
+          Explore Tool
+        </a>
+      </div>
             </div>
 
             {/* Right side (Image Section) */}
@@ -876,20 +882,7 @@ const Carrot = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with Carrot2 AI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. free trial available.
-            </small>
-          </div>
+       
         </div>
       </div>
     </>

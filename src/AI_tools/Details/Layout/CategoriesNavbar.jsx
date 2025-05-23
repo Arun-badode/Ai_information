@@ -232,11 +232,11 @@ const CategoriesNavbar = () => {
                     <h6>
                       Content Generation <FaPencilAlt size={20} />
                     </h6>
-                    <Link to="ReZiAI/">ReZiAI</Link>
+                    <Link to="/ReZiAI">ReZiAI</Link>
                     <Link to="/EnhanevAI">EnhanevAI</Link>
-                    <Link to="KickResume/">KickResume</Link>
-                    <Link to="ZetyAI/">ZetyAI</Link>
-                    <Link to="VisualAI/">VisualAI</Link>
+                    <Link to="/KickResume">KickResume</Link>
+                    <Link to="/ZetyAI">ZetyAI</Link>
+                    <Link to="/VisualAI">VisualAI</Link>
                   </div>
                   {/* Design Tools Column */}
                   <div
@@ -734,7 +734,7 @@ const CategoriesNavbar = () => {
           {/* AI for mapping */}
           <li
             className="nav-item dropdown "
-            onClick={() => toggleDropdown("mapping")}
+            onClick={(e) => toggleDropdown("mapping",e)}
           >
             <span className="dropdown-toggle text-white">
               {" "}
@@ -745,7 +745,7 @@ const CategoriesNavbar = () => {
                 className="dropdown-card show"
                 style={{
                   maxWidth: "355px",
-                  left: "-50rem",
+                  left: "-5rem",
                   marginTop: "0.8rem",
                   position: "absolute",
                   zIndex: 1000,
@@ -822,9 +822,10 @@ const CategoriesNavbar = () => {
                     <Link to="/MicrosoftCopilot">MicroSoftCopilot</Link>
                     <Link to="/ZapierAI">ZapierAI</Link>
                     <Link to="/Notion">Notion</Link>
-                    <Link to="/ClickupAI">ClickupAI</Link>
+                    
 
                     <Link to="/ClickupAI">ClickupAI</Link>
+                    <Link to="/QlikSenseAI">Qlik Sense AI</Link>
                   </div>
 
                   {/* Content Generation Column */}
@@ -841,7 +842,7 @@ const CategoriesNavbar = () => {
                     <Link to="/CodaAI">Coda AI</Link>
                     <Link to="/MiroAI">Miro AI</Link>
                     <Link to="/OtterAI">Otter AI</Link>
-                    <Link to="/QlikSenseAI">Qlik Sense AI</Link>
+                    
                   </div>
 
                   {/* Content Generation Column */}
@@ -853,9 +854,9 @@ const CategoriesNavbar = () => {
                       Content Generation <FaPencilAlt size={20} />
                     </h6>
 
-                    <Link to="/TableauAI">Tableau AI</Link>
+                    {/* <Link to="/TableauAI">Tableau AI</Link> */}
                     <Link to="/DomoAI">Domo AI</Link>
-                    <Link to="/ZohoAnalytics">Zoho Analytics</Link>
+                    <Link to="/ZohoAnalyticsAI">Zoho Analytics</Link>
                     <Link to="/GoogleAnalyticsAI">Google Analytics AI</Link>
 
                     <Link to="/HeapAnalytics">Heap Analytics</Link>
@@ -1372,6 +1373,7 @@ const CategoriesNavbar = () => {
                 </li>
 
                 <li
+
                   className="nav-item"
                   onClick={() => toggleDropdown("image")}
                 >

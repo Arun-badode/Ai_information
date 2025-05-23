@@ -3,7 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import mobilemonkey from '../../../../public/assets/Img/AI Chatbots & Assistants/38.png'
+import mobilemonkey from '../../../../public/assets/Img/AI Chatbots & Assistants/38.png';
+import costomerai from "../../../../public/assets/Img/AI For Chatbots/Customersai.png";
 
 // review section data
 const reviews = [
@@ -119,14 +120,14 @@ const MobileMonkey = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src=""
+                src={costomerai}
                 alt="Screenshot 1"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
-                src=""
+                src={costomerai}
                 alt="Screenshot 2"
                 className="img-fluid rounded-3"
               />
@@ -730,20 +731,7 @@ const MobileMonkey = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with MobileMonkey ?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
+        
         </div>
       </div>
     </>

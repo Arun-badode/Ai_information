@@ -3,6 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import google from "../../../../public/assets/Img/AI for Business/google.png";
+import heap1 from "../../../../public/assets/Img/AI for Business/heap1.png";
+import heap2 from "../../../../public/assets/Img/AI for Business/heap2.png";
 
 // review section data
 const reviews = [
@@ -134,14 +136,14 @@ const HeapAnalytics = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
+                src={heap1}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
+                src={heap2}
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

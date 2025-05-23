@@ -3,6 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import magisto from "../../../Images/MagistoAI.png";
+import mojeek1 from "../../../../public/assets/Img/Ai for Search engines/Mojeek1.png"
+import mojeek2 from "../../../../public/assets/Img/Ai for Search engines/Mojeek2.png"
+
 
 // review section data
 const reviews = [
@@ -135,14 +138,15 @@ const Mojeek = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
-                alt=""
+                src={mojeek1}
+                alt="mojeek1"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
+                src={mojeek2}
+                alt="mojeek2"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -701,11 +705,16 @@ const Mojeek = () => {
                 tool for SEO, content discovery, and web scraping.
               </p>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2"> Search</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
+            <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
+        <a
+          href="https://www.mojeek.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-primary btn-lg px-4"
+        >
+          Explore Tool
+        </a>
+      </div>
             </div>
 
             {/* Right side (Image Section) */}
@@ -874,21 +883,6 @@ const Mojeek = () => {
 
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
-
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with Mojeek AI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. free trial available.
-            </small>
-          </div>
         </div>
       </div>
     </>

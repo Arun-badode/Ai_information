@@ -640,11 +640,16 @@ const SearxNG = () => {
                 offering users a comprehensive search experience.
               </p>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2"> Security</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
+            <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
+        <a
+          href="https://www.browserstack.com/live?utm_source=bing&utm_medium=cpc&utm_platform=paidads&utm_content=&utm_campaign=Bing-Search-Brand-India&utm_campaigncode=Automate+149846&utm_term=p+browserstack%20automate%20desktop"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-primary btn-lg px-4"
+        >
+          Explore Tool
+        </a>
+      </div>
             </div>
 
             {/* Right side (Image Section) */}
@@ -814,21 +819,6 @@ const SearxNG = () => {
 
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
-
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with SearxNG AI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. free trial available.
-            </small>
-          </div>
         </div>
       </div>
     </>
