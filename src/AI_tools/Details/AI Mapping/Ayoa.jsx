@@ -5,6 +5,9 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
+import ayoaSS1 from '../../../../public/assets/Img/Ai for Mind Mapping/ayoaSS1.png';
+import ayoaSS2 from '../../../../public/assets/Img/Ai for Mind Mapping/ayoaSS2.png';
+
 
 // review section data
 const reviews = [
@@ -321,14 +324,15 @@ const Ayoa = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
-                alt=""
+                src={ayoaSS1}
+                alt="ayoa"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
+                src={ayoaSS2}
+                alt="ayoa"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -843,50 +847,38 @@ const Ayoa = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>Ayoa AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Ayoa AI is an intelligent task management and project planning
-                software that enhances productivity through artificial
-                intelligence. This tool integrates mind mapping, task
-                prioritization, and collaboration features to assist teams and
-                individuals in managing their workflows effectively. Ayoa AI
-                combines various productivity techniques such as visual task
-                management, Kanban boards, Gantt charts, and AI-driven task
-                automation to simplify the management of personal and team
-                tasks.
-              </p>
+         <div className="row d-flex align-items-center justify-content-between mb-1 flex-column flex-md-row">
+  {/* Image Section - Pehle dikhayega mobile me */}
+  <div className="col-12 col-md-6 order-1 order-md-2 mb-3 mb-md-0 text-center">
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
+      alt="Ayoa AI"
+      style={{ width: "100%", height: "300px", objectFit: "cover" }}
+    />
+  </div>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
-            </div>
+  {/* Text Section - Baad me dikhayega mobile me */}
+  <div className="col-12 col-md-6 order-2 order-md-1" style={{ paddingRight: "30px" }}>
+    <p className="text-primary">Write better, faster</p>
+    <h1>Ayoa AI</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      Ayoa AI is an intelligent task management and project planning
+      software that enhances productivity through artificial intelligence.
+      This tool integrates mind mapping, task prioritization, and
+      collaboration features to assist teams and individuals in managing
+      their workflows effectively.
+    </p>
+    <a
+      href="https://www.ayoa.com/ai/"
+      rel="noopener noreferrer"
+      className="btn btn-primary me-2"
+    >
+      Explore Tool
+    </a>
+  </div>
+</div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
-          </div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Create Videos in 3 Simple Steps</p>
@@ -1036,20 +1028,7 @@ const Ayoa = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with Ayoa?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
+          
         </div>
       </div>
     </>
