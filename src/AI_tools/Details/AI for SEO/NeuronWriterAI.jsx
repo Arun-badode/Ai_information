@@ -299,14 +299,14 @@ const NeuronWriterAI = () => {
             <div className="col-md-6">
               <img
                 src={scan1}
-                alt=""
+                alt="NeuronWritter"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={scan2}
-                alt=""
+                alt="NeuronWritter"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -795,6 +795,7 @@ const NeuronWriterAI = () => {
             >
               <img
                 src={neuronWriterAI}
+                alt="NeuronWritter"
                 style={{ MaxWidth: "100%", height: "300px" }}
               />
             </div>

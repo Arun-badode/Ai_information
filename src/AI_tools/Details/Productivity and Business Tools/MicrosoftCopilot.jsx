@@ -132,14 +132,14 @@ const MicrosoftCopilot = () => {
             <div className="col-md-6">
               <img
                 src={microsoft1}
-                alt="Screenshot 1"
+                alt="Microsoft Copilot – AI"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={microsoft1}
-                alt="Screenshot 2"
+                alt="Microsoft Copilot – AI"
                 className="img-fluid rounded-3"
               />
             </div>
@@ -594,7 +594,7 @@ const MicrosoftCopilot = () => {
       src="/src/Images/WhatsApp Image 2025-05-07 at 14.40.33.jpeg"
       className="img-fluid rounded-3"
       style={{ maxWidth: "100%", height: "auto" }}
-      alt="Microsoft Copilot"
+      alt="Microsoft Copilot – AI"
     />
   </div>
 </div>

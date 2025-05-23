@@ -855,6 +855,7 @@ const DashWordAI = () => {
             >
               <img
                 src={dashWordAI}
+                alt="dashword"
                 style={{ width:"100%", height:"auto", maxHeight:"300px", objectFit:"contain",}}              />
             </div>
           </div>

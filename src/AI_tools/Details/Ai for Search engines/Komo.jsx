@@ -630,8 +630,8 @@ const Komo = () => {
           <div className="row d-flex align-items-center justify-content-between mb-1">
             {/* Left side (Text Section) */}
             <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-12 col-md-6 order-2 order-md-1 mb-5 mb-md-0"
+            
+              className=" col-md-6 order-2 order-md-1 mb-5 mb-md-0"
             >
               <p className="text-primary">
                 Create stunning visuals effortlessly

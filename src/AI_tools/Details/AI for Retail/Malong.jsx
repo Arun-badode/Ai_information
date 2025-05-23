@@ -996,21 +996,6 @@ const Malong = () => {
 
   {/* Tab Content */}
   <div className="tab-content-area">{renderTabContent()}</div>
-
-  {/* CTA Section */}
-  <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-    <h4 className="mb-3">Ready to get started with Malong AI?</h4>
-    <p className="mb-4">
-      Join thousands of professionals already boosting their productivity!
-    </p>
-    <div>
-      <button className="btn btn-light me-3">Try Now for Free</button>
-      <button className="btn btn-outline-light">Schedule a Demo</button>
-    </div>
-    <small className="d-block mt-3">
-      No credit card required. 14-day free trial available.
-    </small>
-  </div>
 </div>
 
       </div>

@@ -133,14 +133,14 @@ const EvernoteAI = () => {
             <div className="col-md-6">
               <img
                 src={evernote12}
-                alt="screenshot"
+                alt="Evernote AI"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={evernote22}
-                alt="screenshot22"
+                alt="Evernote AI"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

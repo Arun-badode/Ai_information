@@ -627,7 +627,7 @@ const Andi = () => {
           href="/Aitools"
           className="d-inline-block text-white text-decoration-none  mt-3 ml-3 py-1 px-2 ms-5 border rounded-sm"
         >
-          <i className="bi bi-arrow-left me-2"></i>Back  {" "}
+          <i className="bi bi-arrow-left me-2"></i>Back{" "}
         </a>
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
@@ -635,10 +635,11 @@ const Andi = () => {
           <div className=" row d-flex align-items-center justify-content-between mb-1">
             {/* Left side (Text Section) */}
             <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
+            
+              className="col-lg-6"
             >
-              <p className="text-primary">
+              <div className="col-md-12">
+                <p className="text-primary">
                 Create stunning visuals effortlessly
               </p>
               <h1>Andi Search</h1>
@@ -660,17 +661,18 @@ const Andi = () => {
                 effective way to search the web and find exactly what you need,
                 with minimal effort.
               </p>
+              </div>
 
-            <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
-        <a
-          href="https://andisearch.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn btn-primary btn-lg px-4"
-        >
-          Explore Tool
-        </a>
-      </div>
+              <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0 col-md-12">
+                <a
+                  href="https://andisearch.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary btn-lg px-4"
+                >
+                  Explore Tool
+                </a>
+              </div>
             </div>
 
             {/* Right side (Image Section) */}

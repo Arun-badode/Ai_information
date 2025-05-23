@@ -310,14 +310,14 @@ const StyleAI = () => {
             <div className="col-md-6">
               <img
                 src={style1}
-                alt="style screenshot"
+                alt="style "
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={style2}
-                alt="style screenshot"
+                alt="style "
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

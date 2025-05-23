@@ -315,13 +315,14 @@ const AlgoliaAI = () => {
             <div className="col-md-6">
               <img
                 src={algoliass1}
-                alt=""
+                alt="algolia"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={algoliass2}
+                alt="algolia"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

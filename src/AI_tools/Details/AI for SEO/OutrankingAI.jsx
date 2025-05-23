@@ -314,13 +314,14 @@ const OutrankingAI = () => {
             <div className="col-md-6">
               <img
                 src={scan1}
-                alt=""
+                alt="outranking"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={scan2}
+                alt="outranking"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -843,6 +844,7 @@ const OutrankingAI = () => {
             >
               <img
                 src={outrankingAI}
+                alt="outranking"
                 style={{ MaxWidth: "100%", height: "300px" }}
               />
             </div>
