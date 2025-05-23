@@ -4,6 +4,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 // import magisto from "../../../Images/MagistoAI.png";
 import enveil from "../../../../public/assets/Img/AI for Privacy/10.jpg"
+import enveilSS1 from '../../../../public/assets/Img/AI for Privacy/enveilSS1.png';
+import enveilSS2 from '../../../../public/assets/Img/AI for Privacy/enveilSS2.png';
+
 
 const reviews = [
   {
@@ -132,14 +135,15 @@ const Enveil = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
-                alt=""
+                src={enveilSS1}
+                alt="enviel"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
+                src={enveilSS2}
+                alt="enveil"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -609,60 +613,58 @@ const Enveil = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Grow better, faster</p>
-              <h1>Enveil AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Enveil AI is an advanced privacy-preserving machine learning
-                platform that focuses on secure data processing and AI-driven
-                data security. It offers a suite of data privacy tools designed
-                to help businesses securely process, analyze, and share
-                sensitive data while complying with global privacy regulations
-                like GDPR and CCPA. Enveil AI leverages end-to-end encryption
-                and privacy-preserving AI techniques to ensure data
-                confidentiality, even during the processing and analysis stages.
-              </p>
-              <p>
-                With Enveil AI features, businesses can use machine learning and
-                AI models on encrypted data, enabling them to leverage AI
-                without exposing sensitive information. The platform provides
-                solutions for secure data sharing, data governance, and
-                regulatory compliance, making it suitable for industries such as
-                healthcare, finance, government, and more.
-              </p>
-                 <div className="mb-3">
-                <a
-                  href="https://adam.ai/"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary me-2"
-                >
-                  Explore Tool
-                </a>
-              </div>
-            </div>
+          <div className="row align-items-center mb-4">
+  {/* Image Section - first on mobile, second on desktop */}
+  <div
+    className="col-12 col-md-6 order-1 order-md-2 text-center mb-4 mb-md-0"
+    style={{ height: "auto" }}
+  >
+    <img
+      src={enveil}
+      alt="Enveil AI"
+      style={{ maxWidth: "100%", height: "300px", objectFit: "contain" }}
+      className="img-fluid"
+    />
+  </div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-               <img
-                src={enveil }
-                style={{ MaxWidth: "100%", height: "300px" }}
-              /> 
-            </div>
-          </div>
+  {/* Text Section - second on mobile, first on desktop */}
+  <div
+    className="col-12 col-md-6 order-2 order-md-1"
+    style={{ paddingRight: "30px" }}
+  >
+    <p className="text-primary">Grow better, faster</p>
+    <h1>Enveil AI</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      Enveil AI is an advanced privacy-preserving machine learning
+      platform that focuses on secure data processing and AI-driven
+      data security. It offers a suite of data privacy tools designed
+      to help businesses securely process, analyze, and share
+      sensitive data while complying with global privacy regulations
+      like GDPR and CCPA. Enveil AI leverages end-to-end encryption
+      and privacy-preserving AI techniques to ensure data
+      confidentiality, even during the processing and analysis stages.
+    </p>
+    <p>
+      With Enveil AI features, businesses can use machine learning and
+      AI models on encrypted data, enabling them to leverage AI
+      without exposing sensitive information. The platform provides
+      solutions for secure data sharing, data governance, and
+      regulatory compliance, making it suitable for industries such as
+      healthcare, finance, government, and more.
+    </p>
+    <div className="mb-3">
+      <a
+        href="https://www.enveil.com"
+        rel="noopener noreferrer"
+        className="btn btn-primary me-2"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
+</div>
+
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>

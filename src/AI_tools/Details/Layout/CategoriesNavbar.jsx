@@ -734,7 +734,7 @@ const CategoriesNavbar = () => {
           {/* AI for mapping */}
           <li
             className="nav-item dropdown "
-            onClick={() => toggleDropdown("mapping")}
+            onClick={(e) => toggleDropdown("mapping",e)}
           >
             <span className="dropdown-toggle text-white">
               {" "}
@@ -745,7 +745,7 @@ const CategoriesNavbar = () => {
                 className="dropdown-card show"
                 style={{
                   maxWidth: "355px",
-                  left: "-50rem",
+                  left: "-5rem",
                   marginTop: "0.8rem",
                   position: "absolute",
                   zIndex: 1000,
