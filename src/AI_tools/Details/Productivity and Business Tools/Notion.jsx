@@ -524,12 +524,7 @@ const Notion = () => {
      <div className="d-flex align-items-center justify-content-between mb-5">
   {/* Left side (Text Section) */}
   <div style={{ flex: 1, paddingRight: "30px" }}>
-    <img
-      src={Logo}
-      alt="Notion Logo"
-      className="me-3"
-      style={{ width: "60px" }}
-    />
+   
     <h2>Notion AI</h2>
     <div className="text-warning mb-1">⭐⭐⭐⭐⭐ 95% Satisfaction</div>
     <p className="mb-3">
@@ -585,21 +580,6 @@ const Notion = () => {
 
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
-
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with Nation AI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
         </div>
       </div>
     </>

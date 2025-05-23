@@ -139,14 +139,14 @@ const PoeAI = () => {
             <div className="col-md-6">
               <img
                 src={poe1}
-                alt="Screenshot 1"
+                alt="screenshots 1"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={poe1}
-                alt="Screenshot 2"
+                alt="screenshots 2"
                 className="img-fluid rounded-3"
               />
             </div>

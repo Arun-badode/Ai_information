@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
 import otter from "../../../../public/assets/Img/AI for Business/5.png";
+import  otter1 from "../../../../public/assets/Img/AI for Business/otter1.png";
+import  otter2 from "../../../../public/assets/Img/AI for Business/otter2.png";
 
 // review section data
 const reviews = [
@@ -131,14 +133,14 @@ const OtterAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src={deatilimage}
+                src={otter1}
                 alt="Screenshot 1"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={deatilimage}
+                src={ otter2}
                 alt="Screenshot 2"
                 className="img-fluid rounded-3"
               />
@@ -579,12 +581,7 @@ const OtterAI = () => {
         <div className="d-flex align-items-center justify-content-between mb-5">
   {/* Left side (Text Section) */}
   <div style={{ flex: 1, paddingRight: "30px" }}>
-    <img
-      src={Logo}
-      alt="Otter.ai Logo"
-      className="me-3"
-      style={{ width: "60px" }}
-    />
+ 
     <h2>Otter.ai</h2>
     <div className="text-warning mb-1">
       ⭐⭐⭐⭐⭐ 95% Satisfaction
@@ -647,21 +644,6 @@ const OtterAI = () => {
 
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
-
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with Otter.ai?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
         </div>
       </div>
     </>
