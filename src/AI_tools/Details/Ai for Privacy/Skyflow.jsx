@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import "./PrivateAI.css"; // <-- custom CSS file import
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
-
+import skyflow from "../../../../public/assets/Img/AI for Privacy/6.jpg"
 // review section data
 const reviews = [
   {
@@ -698,11 +698,16 @@ const Skyflow = () => {
                 and security across the board.
               </p>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
+               <div className="mb-3">
+                              <a
+                                href=" https://www.private-ai.com."
+                                rel="noopener noreferrer"
+                                className="btn btn-primary me-2"
+                              >
+                                Explore Tool
+                              </a>
+                            </div>
+              
             </div>
 
             {/* Right side (Image Section) */}
@@ -715,7 +720,7 @@ const Skyflow = () => {
               }}
               className="col-6 col-md-12 mb-5  "
             >
-              <img src="" style={{ MaxWidth: "100%", height: "300px" }} />
+              <img src={skyflow} style={{ MaxWidth: "100%", height: "300px" }} />
             </div>
           </div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
@@ -870,20 +875,7 @@ const Skyflow = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with SkyFlow AI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
+          
         </div>
       </div>
     </>

@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import "./ImageMindAI.css";
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 // import magisto from "../../../Images/MagistoAI.png";
+import enveil from "../../../../public/assets/Img/AI for Privacy/10.jpg"
 
 const reviews = [
   {
@@ -635,6 +636,15 @@ const Enveil = () => {
                 regulatory compliance, making it suitable for industries such as
                 healthcare, finance, government, and more.
               </p>
+                 <div className="mb-3">
+                <a
+                  href="https://adam.ai/"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary me-2"
+                >
+                  Explore Tool
+                </a>
+              </div>
             </div>
 
             {/* Right side (Image Section) */}
@@ -647,10 +657,10 @@ const Enveil = () => {
               }}
               className="col-6 col-md-12 mb-5  "
             >
-              {/* <img
-                src={magisto}
+               <img
+                src={enveil }
                 style={{ MaxWidth: "100%", height: "300px" }}
-              /> */}
+              /> 
             </div>
           </div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
@@ -813,20 +823,7 @@ const Enveil = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with EnveilAi?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. free trial available.
-            </small>
-          </div>
+        
         </div>
       </div>
     </>

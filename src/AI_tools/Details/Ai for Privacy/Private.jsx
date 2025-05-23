@@ -4,7 +4,7 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 // review section data
 
-import a from "../../../../public/assets/Img/_AI for Privacy and Data Protection/1.png"
+import a from "../../../../public/assets/Img/AI for Privacy/1.jpg"
 
 
 

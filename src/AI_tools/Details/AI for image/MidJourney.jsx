@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import midjourneySS1 from '../../../../public/assets/Img/AI from Image/midjourneySS1.png';
+import midjourneySS2 from '../../../../public/assets/Img/AI from Image/midjourneySS2.png';
+
 
 // review section data
 const reviews = [
@@ -359,14 +362,14 @@ const MidJourney = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
+                src={midjourneySS1}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
+                src={midjourneySS2}
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -741,13 +744,22 @@ const MidJourney = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-      <div className="row align-items-center justify-content-between mb-4">
-  {/* Left side (Text Section) */}
-  <div className="col-lg-6 col-md-12 mb-4 mb-lg-0 pe-lg-4">
+   <div className="row align-items-center justify-content-between mb-4">
+  {/* Right side (Image Section) - Show first on mobile */}
+  <div className="col-lg-6 col-md-12 order-1 order-lg-2 mb-4 text-center">
+    <img
+      src="https://i.postimg.cc/VkYdWXzC/1-tj5-Fgl-HTik-HW-u-TJm-E2qg.jpg"
+      alt="MidJourney Example"
+      className="img-fluid"
+      style={{ maxHeight: "300px", objectFit: "contain", width: "100%" }}
+    />
+  </div>
+
+  {/* Left side (Text Section) - Show second on mobile */}
+  <div className="col-lg-6 col-md-12 order-2 order-lg-1 mb-4 pe-lg-4">
     <p className="text-primary">Write better, faster</p>
     <h1>MidJourney</h1>
     <div className="text-warning mb-2">⭐⭐⭐⭐⭐</div>
-
     <p>
       MidJourney is a revolutionary AI-powered art generation tool that converts text
       descriptions into visually captivating images using deep learning algorithms.
@@ -755,7 +767,6 @@ const MidJourney = () => {
       generative models to interpret a user's text prompt and deliver a unique visual
       composition that reflects the described scene, style, or mood.
     </p>
-
     <div className="mb-3">
       <a
         href="https://www.midjourney.com/home"
@@ -767,17 +778,8 @@ const MidJourney = () => {
       </a>
     </div>
   </div>
-
-  {/* Right side (Image Section) */}
-  <div className="col-lg-6 col-md-12 text-center">
-    <img
-      src="https://i.postimg.cc/VkYdWXzC/1-tj5-Fgl-HTik-HW-u-TJm-E2qg.jpg"
-      alt="MidJourney Example"
-      className="img-fluid"
-      style={{ maxHeight: "300px", objectFit: "contain" }}
-    />
-  </div>
 </div>
+
 
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
