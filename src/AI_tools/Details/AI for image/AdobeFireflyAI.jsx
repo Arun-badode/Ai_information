@@ -367,8 +367,7 @@ const AdobeFireflyAI = () => {
             </div>
             <div className="col-md-6">
               <img
-                src={adobefireflySS2}
-                alt="adobefirefly"
+                src={Rephrase}
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

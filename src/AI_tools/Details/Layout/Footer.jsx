@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import Logo from "../../Images/Logo[2].png";
+import logo from "../../../../public/assets/Img/Wenbear-Logo.jpeg"
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           {/* Logo & About */}
           <div className="mb-4 text-left">
-            <img src="" alt="Ai Tool Design Logo" className="mb-3 w-24" />
+            <img src={logo} alt="Ai Tool Design Logo" className="mb-3 w-15" />
             <p>
               Creating exceptional design experiences since 2020. Innovate,
               inspire, and impress with Ai Tool Design.
