@@ -855,7 +855,7 @@ const CategoriesNavbar = () => {
 
                     <Link to="/TableauAI">Tableau AI</Link>
                     <Link to="/DomoAI">Domo AI</Link>
-                    <Link to="/ZohoAnalytics">Zoho Analytics</Link>
+                    <Link to="/ZohoAnalyticsAI">Zoho Analytics</Link>
                     <Link to="/GoogleAnalyticsAI">Google Analytics AI</Link>
 
                     <Link to="/HeapAnalytics">Heap Analytics</Link>

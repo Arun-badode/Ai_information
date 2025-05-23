@@ -572,7 +572,7 @@ const ZapierAI = () => {
       {/* Right side (Image Section) */}
       <div className="col-lg-6 col-md-12 order-lg-2 order-1 text-center mb-4 mb-lg-0">
         <img
-          src={zapierImage}
+          src=""
           className="img-fluid rounded-3"
           style={{ maxWidth: "100%", height: "auto" }}
           alt="Zapier AI Interface"
