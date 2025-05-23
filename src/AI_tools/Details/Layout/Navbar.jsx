@@ -48,11 +48,11 @@ const Navbar = () => {
                 AI News
               </Link>
             </li>
-            {/* <li className="nav-item">
-              <a href="#" className="nav-link">
-                Blog
-              </a>
-            </li> */}
+            <li className="nav-item">
+              <Link to= "/AiBlog" className="nav-link">
+                AI Blog
+              </Link>
+            </li>
           </ul>
         </div>
 

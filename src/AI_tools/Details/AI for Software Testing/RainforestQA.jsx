@@ -5,7 +5,7 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
-import Rainforest from "../../../Images/Rainforest.png"
+import Rainforest from "../../../../public/assets/Img/AI for software testing/rainforest.png"
 
 
 // review section data
@@ -837,9 +837,20 @@ const RainforestQA = () => {
               </p>
 
               <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
+              
+
+
+
+                <a
+ 
+   href="https://www.rainforestqa.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="btn btn-primary me-2"
+>
+  Explore Tool
+</a>
+
               </div>
             </div>
 
@@ -854,8 +865,8 @@ const RainforestQA = () => {
               className="col-6 col-md-12 mb-5  "
             >
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
-                style={{ MaxWidth: "100%", height: "300px" }}
+     src={Rainforest}
+style={{ MaxWidth: "100%", height: "300px" }}
               />
             </div>
           </div>

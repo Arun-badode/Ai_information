@@ -3,6 +3,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import magisto from "../../../Images/MagistoAI.png";
+import writesonicSS1 from '../../../../public/assets/Img/AI for Writing/writesonicSS1.png';
+import writesonicSS2 from '../../../../public/assets/Img/AI for Writing/writesonicSS2.png';
+import writersonicImg from '../../../../public/assets/Img/AI for Writing/3.png'
+
+
 
 // review section data
 const reviews = [
@@ -151,14 +156,15 @@ const Writtersonic = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
-                alt=""
+                src={writesonicSS1}
+                alt="writesonic"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
+                src={writesonicSS2}
+                alt="writesonic"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -686,50 +692,52 @@ const Writtersonic = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
+          <div className=" row align-item-center mb-4">
             {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">
-                Create stunning visuals effortlessly
-              </p>
-              <h1>Writesonic AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+           <div
+  className="col-12 col-md-6 order-2 order-md-1 "
+  style={{ paddingRight: "30px",}}
+>
+  <p className="text-primary text-center text-md-start">
+    Create stunning visuals effortlessly
+  </p>
+  <h1 className="text-center text-md-start">Writesonic AI</h1>
+  <div className="text-warning mb-2 text-center text-md-start">⭐⭐⭐⭐⭐</div>
 
-              <p>
-                Writesonic is an AI-powered writing assistant designed to help
-                users generate high-quality content in seconds. It uses advanced
-                machine learning models to create various types of content,
-                including blog posts, ad copy, product descriptions, email
-                marketing, SEO-friendly articles, and landing pages. The tool
-                aims to save time and enhance productivity for creators,
-                marketers, and businesses by automating content creation.
-              </p>
+  <p className="text-center text-md-start">
+    Writesonic is an AI-powered writing assistant designed to help users
+    generate high-quality content in seconds. It uses advanced machine
+    learning models to create various types of content, including blog
+    posts, ad copy, product descriptions, email marketing, SEO-friendly
+    articles, and landing pages. The tool aims to save time and enhance
+    productivity for creators, marketers, and businesses by automating
+    content creation.
+  </p>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2">Writing</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
-            </div>
+  <div className="text-center text-md-start">
+    <a
+      href="https://writesonic.com/seo-ai-agent?utm_campaignid=22272558894&utm_agid=179152461047&utm_source=google&utm_campaign=writesonic_Brand_Search_IN&utm_term=writesonic.com&utm_medium=search&d=c&placement=&network=g&gad_source=1&gad_campaignid=22272558894&gbraid=0AAAAABM1pbmo2t40kafrRwYsKo1DrS5bn&gclid=Cj0KCQjwlrvBBhDnARIsAHEQgORYyXStKzLEOoFOkAooAQ4hJiiz8_IngEC6Rb9SxOp_jOU2RlF7x34aAiCyEALw_wcB"
+      rel="noopener noreferrer"
+      className="btn btn-primary"
+    >
+      Explore Tool
+    </a>
+  </div>
+</div>
+
 
             {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src={magisto}
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
+           <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-3 mb-md-0">
+  <img
+    src={writersonicImg}
+    style={{
+      maxWidth: "100%",
+      height: "auto",
+    }}
+    alt="Responsive"
+  />
+</div>
+
           </div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
@@ -884,20 +892,7 @@ const Writtersonic = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with Writesonic AI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. free trial available.
-            </small>
-          </div>
+          
         </div>
       </div>
     </>

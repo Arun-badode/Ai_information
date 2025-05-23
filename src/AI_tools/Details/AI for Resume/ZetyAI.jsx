@@ -797,58 +797,60 @@ const ZetyAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className="row align-items-center mb-5">
-            {/* Right side (Image Section) */}
-            <div className="col-md-6 col-12 text-center">
-              <img
-                src={zety}
-                alt="Zety"
-                style={{
-                  maxWidth: "100%",
-                  height: "300px",
-                  objectFit: "contain",
-                }}
-              />
-            </div>
-            {/* Left side (Text Section) */}
-            <div
-              className="col-md-6 col-12 mb-4 mb-md-0"
-              style={{ paddingRight: "30px" }}
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>Zety AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Zety AI is an AI-powered resume builder that helps job seekers
-                create ATS-friendly and professional resumes quickly and
-                efficiently. By leveraging machine learning and deep learning
-                algorithms, Zety AI automates key aspects of the resume-building
-                process, including resume optimization, keyword integration, and
-                ATS formatting. It provides real-time feedback, ensuring that
-                resumes are optimized to increase the chances of landing
-                interviews.
-              </p>
-              <p>
-                Zety AI is a leading AI resume-building platform designed to
-                help job seekers build professional resumes that align with
-                job-specific requirements. The platform offers customizable
-                resume templates, real-time feedback, and ensures that resumes
-                are ATS-compatible. With a focus on machine learning and deep
-                learning models, Zety AI helps users generate optimized resumes
-                in a fraction of the time it would take manually.
-              </p>
-              <div className="mb-3">
-                <a
-                  href="https://zety.com/resume-builder"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary me-2"
-                >
-                  Explore Tool
-                </a>
-              </div>
-            </div>
-          </div>
+         <div className="row align-items-center mb-5">
+  {/* Left side (Text Section on desktop) */}
+  <div
+    className="col-md-6 col-12 order-2 order-md-1 mb-4 mb-md-0"
+    style={{ paddingRight: "30px" }}
+  >
+    <p className="text-primary">Write better, faster</p>
+    <h1>Zety AI</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      Zety AI is an AI-powered resume builder that helps job seekers
+      create ATS-friendly and professional resumes quickly and
+      efficiently. By leveraging machine learning and deep learning
+      algorithms, Zety AI automates key aspects of the resume-building
+      process, including resume optimization, keyword integration, and
+      ATS formatting. It provides real-time feedback, ensuring that
+      resumes are optimized to increase the chances of landing
+      interviews.
+    </p>
+    <p>
+      Zety AI is a leading AI resume-building platform designed to
+      help job seekers build professional resumes that align with
+      job-specific requirements. The platform offers customizable
+      resume templates, real-time feedback, and ensures that resumes
+      are ATS-compatible. With a focus on machine learning and deep
+      learning models, Zety AI helps users generate optimized resumes
+      in a fraction of the time it would take manually.
+    </p>
+    <div className="mb-3">
+      <a
+        href="https://zety.com/resume-builder"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary me-2"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
+
+  {/* Right side (Image Section on desktop) */}
+  <div className="col-md-6 col-12 text-center order-1 order-md-2">
+    <img
+      src={zety}
+      alt="Zety"
+      style={{
+        maxWidth: "100%",
+        height: "300px",
+        objectFit: "contain",
+      }}
+    />
+  </div>
+</div>
+
         </div>
 
         <section style={{ backgroundColor: "#0b1e3d", padding: "3rem 0" }}>

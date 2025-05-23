@@ -6,6 +6,10 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import magisto from "../../../../public/assets/Img/AI for Animation/14.png";
 import scn9 from "../../../../public/assets/Img/AI for Animation/scn9.jpg";
 import scn10 from "../../../../public/assets/Img/AI for Animation/scn10.jpg";
+import rytrSS1 from '../../../../public/assets/Img/AI for Writing/rytrSS1.png';
+import rytrSS2 from '../../../../public/assets/Img/AI for Writing/rytrSS2.png';
+import rytraiImg from '../../../../public/assets/Img/AI for Writing/4.png'
+
 
 // review section data
 const reviews = [
@@ -133,14 +137,15 @@ const Ryter = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src={scn9}
-                alt=""
+                src={rytrSS1}
+                alt="rytr"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={scn10}
+                src={rytrSS2}
+                alt="rytr"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -626,7 +631,7 @@ const Ryter = () => {
               className="col-md-6 col-12 order-md-2 order-1 text-center mb-3 mb-md-0  "
             >
               <img
-                src={magisto}
+                src={rytraiImg}
                 style={{
                   Width: "100%",
                   height: "auto",

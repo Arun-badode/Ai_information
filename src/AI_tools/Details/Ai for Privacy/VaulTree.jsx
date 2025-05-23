@@ -3,8 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import "./PrivateAI.css"; // <-- custom CSS file import
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
-import c from "../../../../public/assets/Img/_AI for Privacy and Data Protection/3.png"
-
+import scn1 from "../../../../public/assets/Img/AI for Privacy/veltris-S1.png"
+import scn2 from "../../../../public/assets/Img/AI for Privacy/veltris-S2.png"
+import Vaultree from "../../../../public/assets/Img/AI for Privacy/4.jpg"
 // review section data
 const reviews = [
   {
@@ -131,14 +132,14 @@ const VaultreeAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
+                src={scn1}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
+                src={scn2}
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -694,9 +695,13 @@ const VaultreeAI = () => {
               </p>
 
               <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
+                <a
+                                 href=" https://www.vaultree.com/."
+                                 rel="noopener noreferrer"
+                                 className="btn btn-primary me-2"
+                               >
+                                 Explore Tool
+                               </a>
               </div>
             </div>
 
@@ -706,7 +711,7 @@ const VaultreeAI = () => {
                                    className="order-1 order-md-2 mb-4 mb-md-0"
                                  >
                                    <img
-                                     src={c}
+                                     src={Vaultree}
                                      className="img-fluid rounded-3"
                                      style={{ maxWidth: "80%", height: "auto" }}
                                      alt="Quizlet AI platform illustration"
