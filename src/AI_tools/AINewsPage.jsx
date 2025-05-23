@@ -206,7 +206,7 @@ import axios from "axios";
 const AINewsPage = () => {
   const [latestNews, setLatestNews] = useState([]);
   const [visibleNewsCount, setVisibleNewsCount] = useState(10); // Number of items to show initially
-   const [trending, setTrending] = useState([]);
+  const [trendingApiArticles, setTrendingApiArticles] = useState([]);
 
   const featuredNews = {
     title: "OpenAI's GPT-5 Breakthrough!",
@@ -254,7 +254,7 @@ const AINewsPage = () => {
   };
 
 
-   const GetTrending = async () => {
+  const GetTrending = async () => {
     try {
       const response = await axios.get("https://newsapi.org/v2/everything", {
         headers: {
@@ -270,7 +270,7 @@ const AINewsPage = () => {
       });
 
       // response.data.articles contains the articles array
-      setTrending(response.data.articles);
+      setTrendingApiArticles(response.data.articles);
     } catch (error) {
       console.error("Error fetching latest news:", error);
     }
@@ -279,7 +279,7 @@ const AINewsPage = () => {
   useEffect(() => {
     GetTrending();
   }, []);
-  const trendingTopics = [
+  const staticTrendingTopics = [
     {
       title: "Image Generation",
       image: "https://i.postimg.cc/NjCWb69H/1694164747539.jpg",
@@ -343,7 +343,7 @@ const AINewsPage = () => {
             ))}
           </div>
 
-         <div className="col-lg-4">
+          {/* <div className="col-lg-4">
       <h3 className="text-white mb-4">🔥 Trending Topics</h3>
       <div className="card bg-dark text-white p-3 shadow-sm" style={{ maxHeight: "600px", overflowY: "auto" }}>
         {trendingTopics.length === 0 && <p>Loading...</p>}
@@ -364,19 +364,30 @@ const AINewsPage = () => {
           </div>
         ))}
       </div>
-    </div>
+    </div> */}
+
+          {visibleNewsCount < latestNews.length && (
+            <div className="text-center mt-4">
+              <button
+                className="btn btn-primary"
+                onClick={loadMoreNews}
+              >
+                Load More
+              </button>
+            </div>
+          )}
         </div>
 
         <div className="col-lg-4">
-          <h2 className="section-title mb-4">🔥 Trending Topics</h2>
+          <h2 className="section-title mb-4">🔥Trending Topics</h2>
           <div className="card p-3 ainp-trending shadow-sm">
-            {trendingTopics.map((topic, index) => (
+            {trendingApiArticles.length > 0 ? trendingApiArticles.map((topic, index) => (
               <div
                 key={index}
                 className="d-flex align-items-center mb-3 trending-item"
               >
                 <img
-                  src={topic.image}
+                  src={topic.urlToImage}
                   alt={topic.title}
                   className="rounded"
                   style={{
@@ -388,6 +399,25 @@ const AINewsPage = () => {
                 />
                 <h6 className="mb-0">{topic.title}</h6>
               </div>
+            ))
+            : trendingApiArticles.map((article, index) => (
+            <div
+              key={index}
+              className="d-flex align-items-center mb-3 trending-item"
+            >
+              <img
+                src={article.urlToImage}
+                alt={article.title}
+                className="rounded"
+                style={{
+                  width: "50px",
+                  height: "50px",
+                  objectFit: "cover",
+                  marginRight: "12px",
+                }}
+              />
+              <h6 className="mb-0">{article.title}</h6>
+            </div>
             ))}
           </div>
         </div>
