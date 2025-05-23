@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
+import nightcafeSS1 from '../../../../public/assets/Img/AI from Image/nightcafeSS1.png';
+import nightcafeSS2 from '../../../../public/assets/Img/AI from Image/nightcafeSS2.png';
+
 
 // review section data
 const reviews = [
@@ -133,14 +136,15 @@ const NightCafeAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
-                alt=""
+                src={nightcafeSS1}
+                alt="nightcafe"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
+                src={nightcafeSS2}
+                alt="nightcafe"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -647,7 +651,7 @@ const NightCafeAI = () => {
   {/* Left side (Text Section) */}
   <div className="col-lg-6 col-md-12 mb-4 mb-lg-0 pe-lg-4">
     <p className="text-primary">Write better, faster</p>
-    <h1>NightCafe Creator: The Ultimate AI Art Generator</h1>
+    <h1>NightCafe Creator AI</h1>
     <div className="text-warning mb-2">⭐⭐⭐⭐⭐</div>
 
     <p>

@@ -635,7 +635,7 @@ const RunwayMLAI = () => {
   {/* Left side (Text Section) */}
   <div className="col-12 col-md-6 mb-4 mb-md-0" style={{ paddingRight: "30px" }}>
     <p className="text-primary">Write better, faster</p>
-    <h1>Runway ML: The Ultimate AI Video & Image Tool Guide</h1>
+    <h1>Runway ML</h1>
     <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
     <p>
       Runway ML is a powerful AI platform designed for creatives,

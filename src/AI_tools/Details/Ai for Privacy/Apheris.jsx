@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 // import "./ImageMindAI.css";
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
-// import magisto from "../../../Images/MagistoAI.png";
+import apheris from "../../../../public/assets/Img/AI for Privacy/9.jpg"
 
 // review section data
 const reviews = [
@@ -637,6 +637,15 @@ const ApherisAI = () => {
                 ensuring that data processing and AI model development adhere to
                 the strictest privacy standards.
               </p>
+                 <div className="mb-3">
+                <a
+                  href="https://adam.ai/"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary me-2"
+                >
+                  Explore Tool
+                </a>
+              </div>
             </div>
 
             {/* Right side (Image Section) */}
@@ -649,7 +658,7 @@ const ApherisAI = () => {
               }}
               className="col-6 col-md-12 mb-5  "
             >
-              <img src="" style={{ MaxWidth: "100%", height: "300px" }} />
+              <img src={apheris} style={{ MaxWidth: "100%", height: "300px" }} />
             </div>
           </div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>

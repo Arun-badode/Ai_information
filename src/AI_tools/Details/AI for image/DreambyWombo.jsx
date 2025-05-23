@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
+import dreambywomboSS1 from '../../../../public/assets/Img/AI from Image/dreambywomboSS1.png';
+import dreambywomboSS2 from '../../../../public/assets/Img/AI from Image/dreambywomboSS2.png';
+
 
 // review section data
 const reviews = [
@@ -153,14 +156,15 @@ const DreambyWombo = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
-                alt=""
+                src={dreambywomboSS1}
+                alt="dreambywombo"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
+                src={dreambywomboSS2}
+                alt="dreambywombo"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -685,7 +689,7 @@ const DreambyWombo = () => {
             >
               <p className="text-primary">Write better, faster</p>
               <h1>
-                Dream by Wombo: The Ultimate AI Art App for Surreal Creations{" "}
+                Dream by Wombo{" "}
               </h1>
               <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
               <p>
@@ -700,7 +704,7 @@ const DreambyWombo = () => {
 
              <div className="mb-3">
                 <a
-                  href="https://www.descript.com/"
+                  href="https://dream.ai/metamask"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary me-2"

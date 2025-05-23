@@ -1,11 +1,9 @@
 import React, { useState } from 'react'
 import replika1 from '../../../../public/assets/Img/AI For Chatbots/replika1.png';
 import replika2 from '../../../../public/assets/Img/AI For Chatbots/replika2.png';
-
+import replika from '../../../../public/assets/Img/AI For Chatbots/replika.png';
 
 const ReplikaAI = () => {
-
-  
   const [activeTab, setActiveTab] = useState("features"); // Set the default active tab as 'features'
   const [showAllFaqs, setShowAllFaqs] = useState(false);
 
@@ -620,7 +618,7 @@ const ReplikaAI = () => {
             {/* Right side (Image Section) */}
             <div style={{ flex: 1, textAlign: "center" }}>
               <img
-                src="https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2024/05/a-robot-coming-out-of-a-laptop-screen-with-the-perplexity-ai-logo-in-its-hand.jpg"
+                src={replika}
                 className="img-fluid rounded-3"
                 style={{ maxWidth: "80%", height: "auto" }}
               />
