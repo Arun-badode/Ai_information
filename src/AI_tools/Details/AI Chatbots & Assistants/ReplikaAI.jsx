@@ -1,78 +1,7 @@
-import React, { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "../../ImageMindAI.css"; // <-- custom CSS file import
-import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import replika1 from "../../../../public/assets/Img/AI For Chatbots/Replika1.png";
-import replika2 from "../../../../public/assets/Img/AI For Chatbots/Replika2.png";
-
-// review section data
-const reviews = [
-  {
-    name: "Alex Johnson",
-    date: "April 15, 2025",
-    review:
-      "This tool has completely transformed my workflow. The AI capabilities are far beyond what I expected and the interface is intuitive.",
-    rating: 5,
-  },
-  {
-    name: "Sarah Miller",
-    date: "April 10, 2025",
-    review:
-      "Very powerful tool with great features. The only reason I’m not giving 5 stars is because of the learning curve for some advanced features.",
-    rating: 4,
-  },
-  {
-    name: "David Chen",
-    date: "April 3, 2025",
-    review:
-      "Worth every penny! The customer support is exceptional and the tool itself has saved me countless hours of work.",
-    rating: 5,
-  },
-  {
-    name: "Emma Wilson",
-    date: "March 28, 2025",
-    review:
-      "Good tool overall, but I’ve experienced some performance issues with larger projects. Hope they improve this in future updates.",
-    rating: 3,
-  },
-];
-
-const ratingBreakdown = {
-  "5 stars": 70,
-  "4 stars": 20,
-  "3 stars": 7,
-  "2 stars": 2,
-  "1 star": 1,
-};
-
-// Technical details styles
-const styles = {
-  section: {
-    backgroundColor: "#0d1117",
-    color: "#c9d1d9",
-    minHeight: "100vh",
-    padding: "60px 0",
-  },
-  card: {
-    backgroundColor: "#161b22",
-    borderRadius: "16px",
-    boxShadow: "0 4px 8px rgba(0,0,0,0.3)",
-    padding: "30px",
-    height: "100%",
-  },
-  smallText: {
-    fontSize: "0.95rem",
-  },
-  button: {
-    backgroundColor: "#238636",
-    borderColor: "#238636",
-  },
-  buttonHover: {
-    backgroundColor: "#2ea043",
-    borderColor: "#2ea043",
-  },
-};
+import React, { useState } from 'react'
+import replika1 from '../../../../public/assets/Img/AI For Chatbots/replika1.png';
+import replika2 from '../../../../public/assets/Img/AI For Chatbots/replika2.png';
+import replika from '../../../../public/assets/Img/AI For Chatbots/replika.png';
 
 const ReplikaAI = () => {
   const [activeTab, setActiveTab] = useState("features"); // Set the default active tab as 'features'
@@ -125,12 +54,12 @@ const ReplikaAI = () => {
         return (
           <div className="row g-4">
             <div className="col-md-6">
-              <img src="" alt="Screenshot 1" className="img-fluid rounded-3" />
+              <img src={replika1} alt="screenshots 1" className="img-fluid rounded-3" />
             </div>
             <div className="col-md-6">
               <img
                 src={replika2} 
-                alt="Screenshot 2"
+                alt="screenshots 2"
                 className="img-fluid rounded-3"
               />
             </div>
@@ -660,12 +589,7 @@ const ReplikaAI = () => {
           <div className="d-flex align-items-center justify-content-between mb-5 lovaaiflex">
             {/* Left side (Text Section) */}
             <div style={{ flex: 1, paddingRight: "30px" }}>
-              <img
-                src=""
-                alt="Logo"
-                className="me-3"
-                style={{ width: "60px" }}
-              />
+              
               <h2>ReplikAI</h2>
               <div className="text-warning mb-1">
                 ⭐⭐⭐⭐⭐ 95% Satisfaction
@@ -694,7 +618,7 @@ const ReplikaAI = () => {
             {/* Right side (Image Section) */}
             <div style={{ flex: 1, textAlign: "center" }}>
               <img
-                src="https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2024/05/a-robot-coming-out-of-a-laptop-screen-with-the-perplexity-ai-logo-in-its-hand.jpg"
+                src={replika}
                 className="img-fluid rounded-3"
                 style={{ maxWidth: "80%", height: "auto" }}
               />

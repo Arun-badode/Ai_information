@@ -12,6 +12,7 @@ import AIComparisonPage from "./AI_tools/AIComparisonPage";
 import AboutPage from "./AI_tools/AboutUs";
 import AiBlog from "./AI_tools/AiBlog";
 
+
 import AIContact from "./AI_tools/AIContact";
 import TermsOfService from "./AI_tools/TermsOfService";
 import PrivacyPolicy from "./AI_tools/PrivacyPolicy";
@@ -110,7 +111,7 @@ import KickResume from "./AI_tools/Details/AI for Resume/KickResume";
 import ZetyAI from "./AI_tools/Details/AI for Resume/ZetyAI";
 import VisualAI from "./AI_tools/Details/AI for Resume/VisualAI";
 import ResunateAI from "./AI_tools/Details/AI for Resume/ResunateAI";
-// import TealHQAI from "./AI_tools/Details/AI for Resume/TealHQAI";
+
 import HirationAI from "./AI_tools/Details/AI for Resume/HirationAI";
 
 // AI for SEO//
@@ -293,6 +294,8 @@ import Schedular from "./AI_tools/Details/Ai for meeting/Scheduler";
 import Adam from "./AI_tools/Details/Ai for meeting/Adam";
 import Trevor from "./AI_tools/Details/Ai for meeting/Trevor";
 import Sidekick from "./AI_tools/Details/Ai for meeting/Sidekick";
+import AIBlog from "./AI_tools/AiBlog";
+import TealHQAI from "./AI_tools/Details/AI for Resume/TealHQAI";
 
 const App = () => {
   return (
@@ -309,7 +312,7 @@ const App = () => {
         <Route path="/aicomparisonpage" element={<AIComparisonPage />} />
         <Route path="/aboutus" element={<AboutPage />} />
         <Route path="/ainewspage" element={<AINewsPage />} />
-        <Route path="/aiblog" element={<AiBlog />} />
+        <Route path="/aiblog" element={<AIBlog />} />
         {/* <Route path="/news/:id" element={<AINewsDetail />} /> */}
         <Route path="/aicontact" element={<AIContact />} />
         <Route path="/termsofservice" element={<TermsOfService />} />
@@ -441,7 +444,7 @@ const App = () => {
         <Route path="/ZetyAI" element={<ZetyAI />}></Route>
         <Route path="/VisualAI" element={<VisualAI />}></Route>
         <Route path="/ResunateAI" element={<ResunateAI />}></Route>
-        {/* <Route path="/TealHQAI" element={<TealHQAI />}></Route> */}
+         <Route path="/" element={<TealHQAI/>}></Route>
         <Route path="/HirationAI" element={<HirationAI />}></Route>
         {/* AI for resume   end */}
         {/* Ai for SEO  */}
@@ -513,7 +516,7 @@ const App = () => {
         <Route path="/Govison" element={<Govison />}></Route>
         <Route path="/Grabango" element={<Grabango />}></Route>
         <Route path="/Malong" element={<Malong />}></Route>
-        <Route path="/ensaSystem" element={<PensaSystem />}></Route>
+        <Route path="/PensaSystem" element={<PensaSystem />}></Route>
         <Route path="/Sensei" element={<Sensei />}></Route>
         <Route
           path="/StandardCognition"

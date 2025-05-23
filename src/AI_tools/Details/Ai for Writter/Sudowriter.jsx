@@ -6,6 +6,9 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import magisto from "../../../../public/assets/Img/AI for Animation/14.png";
 import scn9 from "../../../../public/assets/Img/AI for Animation/scn9.jpg";
 import scn10 from "../../../../public/assets/Img/AI for Animation/scn10.jpg";
+import sudowriteSS1 from '../../../../public/assets/Img/AI for Writing/sudowriteSS1.png';
+import sudowriteSS2 from '../../../../public/assets/Img/AI for Writing/sudowriteSS2.png';
+import sudowriteImg from '../../../../public/assets/Img/AI for Writing/5.png'
 
 // review section data
 const reviews = [
@@ -135,14 +138,15 @@ const Sudowriter = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src={scn9}
-                alt=""
+                src={sudowriteSS1}
+                alt="sudowrite"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={scn10}
+                src={sudowriteSS2}
+                alt="sudowriteSS2"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -621,7 +625,7 @@ const Sudowriter = () => {
               className="col-md-6 col-12 order-md-2 order-1 text-center mb-3 mb-md-0  "
             >
               <img
-                src={magisto}
+                src={sudowriteImg}
                 style={{
                   Width: "100%",
                   height: "auto",

@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
+import adobefireflySS1 from '../../../../public/assets/Img/AI from Image/adobefireflySS1.png';
+import adobefireflySS2 from '../../../../public/assets/Img/AI from Image/adobefireflySS2.png';
+
 
 // review section data
 const reviews = [
@@ -357,8 +360,8 @@ const AdobeFireflyAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.gizmochina.com/wp-content/uploads/2023/06/Screenshot-2023-06-23-165608.png"
-                alt=""
+                src={adobefireflySS1}
+                alt="adobefirefly"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -626,7 +629,7 @@ const AdobeFireflyAI = () => {
   {/* Left side (Text Section) */}
   <div className="col-lg-6 col-12 order-lg-1 order-2 pe-lg-4">
     <p className="text-primary mb-2">Write better, faster</p>
-    <h1 className="mb-3">Adobe Firefly: The Complete AI Art Guide for Creatives</h1>
+    <h1 className="mb-3">Adobe Firefly</h1>
     <div className="text-warning mb-3">⭐⭐⭐⭐⭐</div>
     <p className="mb-3">
       Adobe Firefly is an AI-driven creative tool designed to enhance

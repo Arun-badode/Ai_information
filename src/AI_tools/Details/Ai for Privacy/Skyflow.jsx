@@ -3,6 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import "./PrivateAI.css"; // <-- custom CSS file import
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
+import skyflow from "../../../../public/assets/Img/AI for Privacy/6.jpg"
+import skyflowSS1 from '../../../../public/assets/Img/AI for Privacy/skyflowSS1.png';
+import skyflowSS2 from '../../../../public/assets/Img/AI for Privacy/skyflowSS2.png';
 
 // review section data
 const reviews = [
@@ -130,14 +133,15 @@ const Skyflow = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
-                alt=""
+                src={skyflowSS1}
+                alt="skyflow"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
+                src={skyflowSS2}
+                alt="skyflow"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -673,51 +677,57 @@ const Skyflow = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>SkyFlow AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Skyflow AI is an advanced platform that specializes in providing
-                AI-powered data privacy and security solutions. Skyflow focuses
-                on helping businesses manage sensitive data with enhanced
-                security, privacy, and compliance features. This cutting-edge
-                technology is specifically designed to ensure that organizations
-                adhere to critical privacy regulations like GDPR and CCPA,
-                making it a top choice for companies seeking AI data security
-                tools and cloud-based data privacy tools. Skyflow leverages AI
-                to provide solutions for businesses across industries, ensuring
-                they can handle personal and sensitive data securely. Whether
-                you're a startup or an enterprise, Skyflow is built to help
-                protect your personal data protection needs, ensuring compliance
-                and security across the board.
-              </p>
+          <div className="row align-items-center mb-4">
+  {/* Image Section - First on mobile, second on desktop */}
+  <div
+    className="col-12 col-md-6 order-1 order-md-2 text-center mb-4 mb-md-0"
+    style={{ height: "auto" }}
+  >
+    <img
+      src={skyflow}
+      alt="Skyflow AI"
+      className="img-fluid"
+      style={{ maxWidth: "100%", height: "300px", objectFit: "contain" }}
+    />
+  </div>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
-            </div>
+  {/* Text Section - Second on mobile, first on desktop */}
+  <div
+    className="col-12 col-md-6 order-2 order-md-1"
+    style={{ paddingRight: "30px" }}
+  >
+    <p className="text-primary">Write better, faster</p>
+    <h1>SkyFlow AI</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      Skyflow AI is an advanced platform that specializes in providing
+      AI-powered data privacy and security solutions. Skyflow focuses on
+      helping businesses manage sensitive data with enhanced security,
+      privacy, and compliance features. This cutting-edge technology is
+      specifically designed to ensure that organizations adhere to critical
+      privacy regulations like GDPR and CCPA, making it a top choice for
+      companies seeking AI data security tools and cloud-based data privacy
+      tools.
+    </p>
+    <p>
+      Skyflow leverages AI to provide solutions for businesses across
+      industries, ensuring they can handle personal and sensitive data
+      securely. Whether you're a startup or an enterprise, Skyflow is built to
+      help protect your personal data protection needs, ensuring compliance and
+      security across the board.
+    </p>
+    <div className="mb-3">
+      <a
+        href="https://www.skyflow.com"
+        rel="noopener noreferrer"
+        className="btn btn-primary me-2"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
+</div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img src="" style={{ MaxWidth: "100%", height: "300px" }} />
-            </div>
-          </div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>
@@ -870,20 +880,7 @@ const Skyflow = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with SkyFlow AI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
+          
         </div>
       </div>
     </>

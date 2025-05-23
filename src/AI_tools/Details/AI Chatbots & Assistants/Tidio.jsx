@@ -3,6 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import tidio1 from "../../../../public/assets/Img/AI Chatbots & Assistants/tidio1.png";
+import tidio2 from "../../../../public/assets/Img/AI For Chatbots/Tidio2.png";
+import tidio3 from "../../../../public/assets/Img/AI For Chatbots/Tidio3.png";
 
 
 // review section data
@@ -133,14 +136,14 @@ const Tidio = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src=""
+                src={tidio2}
                 alt="Screenshot 1"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
-                src=""
+                src={tidio3}
                 alt="Screenshot 2"
                 className="img-fluid rounded-3"
               />
@@ -640,12 +643,23 @@ const Tidio = () => {
                 communications across various channels, including websites,
                 social media platforms, and email, all in one place.
               </p>
+              <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
+        <a
+          href="https://www.tidio.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-primary btn-lg px-4"
+        >
+          Explore Tool
+        </a>
+      </div>
             </div>
+            
 
             {/* Right side (Image Section) */}
             <div style={{ flex: 1, textAlign: "center" }}>
               <img
-                src="https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2024/05/a-robot-coming-out-of-a-laptop-screen-with-the-perplexity-ai-logo-in-its-hand.jpg"
+                src={tidio1}
                 className="img-fluid rounded-3"
                 style={{ maxWidth: "80%", height: "auto" }}
               />
@@ -678,20 +692,6 @@ const Tidio = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with Tidio?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
         </div>
       </div>
     </>

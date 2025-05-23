@@ -4,6 +4,7 @@ import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import poe1 from "../../../../public/assets/Img/AI For Chatbots/poe1.png";
+import poeai from '../../../../public/assets/Img/AI Chatbots & Assistants/28.png'
 
 // review section data
 const reviews = [
@@ -138,14 +139,14 @@ const PoeAI = () => {
             <div className="col-md-6">
               <img
                 src={poe1}
-                alt="Screenshot 1"
+                alt="screenshots 1"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={poe1}
-                alt="Screenshot 2"
+                alt="screenshots 2"
                 className="img-fluid rounded-3"
               />
             </div>
@@ -685,7 +686,7 @@ const PoeAI = () => {
             {/* Right side (Image Section) */}
             <div style={{ flex: 1, textAlign: "center" }}>
               <img
-                src="https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2024/05/a-robot-coming-out-of-a-laptop-screen-with-the-perplexity-ai-logo-in-its-hand.jpg"
+                src={poeai}
                 className="img-fluid rounded-3"
                 style={{ maxWidth: "80%", height: "auto" }}
               />

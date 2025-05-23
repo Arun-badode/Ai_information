@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
+import runwaySS1 from '../../../../public/assets/Img/AI from Image/runwaySS1.png';
+import runwaySS2 from '../../../../public/assets/Img/AI from Image/runwaySS2.png';
+
 
 // review section data
 const reviews = [
@@ -355,14 +358,15 @@ const RunwayMLAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.gizmochina.com/wp-content/uploads/2023/06/Screenshot-2023-06-23-165608.png"
-                alt=""
+                src={runwaySS1}
+                alt="runway"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={Rephrase}
+                src={runwaySS2}
+                alt="runway"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -635,7 +639,7 @@ const RunwayMLAI = () => {
   {/* Left side (Text Section) */}
   <div className="col-12 col-md-6 mb-4 mb-md-0" style={{ paddingRight: "30px" }}>
     <p className="text-primary">Write better, faster</p>
-    <h1>Runway ML: The Ultimate AI Video & Image Tool Guide</h1>
+    <h1>Runway ML</h1>
     <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
     <p>
       Runway ML is a powerful AI platform designed for creatives,

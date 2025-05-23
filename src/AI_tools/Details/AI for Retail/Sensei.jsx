@@ -6,6 +6,11 @@ import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
 import sensei from "../../../../public/assets/Img/Ai  for Retail/6.png";
+import se1 from "../../../../public/assets/Img/Ai  for Retail/se-s2.png";
+import se2 from "../../../../public/assets/Img/Ai  for Retail/se-s1.png";
+
+
+
 // review section data
 const reviews = [
   {
@@ -110,7 +115,7 @@ const Sensei = () => {
                   desc: "Generate visualizations instantly, even from large datasets, ensuring that insights are delivered without any wait time.",
                 },
                 {
-                  icon: "🛡️",
+                  icon: "🛡",
                   title: "Top-Tier Security",
                   desc: "Sensei AI implements advanced encryption protocols, guaranteeing that your data is secure and protected throughout the process.",
                 },
@@ -338,14 +343,14 @@ const Sensei = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
+                src={se1}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
+                src={se2}
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -713,7 +718,7 @@ const Sensei = () => {
                 }}
               >
                 <h5 className="text-danger text-start mb-4">
-                  ⚠️ Sensei AI - Cons
+                  ⚠ Sensei AI - Cons
                 </h5>
                 <ul className="ps-3" style={{ listStyleType: "disc" }}>
                   <li className="mb-2">
@@ -868,220 +873,46 @@ const Sensei = () => {
         </a>
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
-        <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>Sensei AI:</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Adobe Sensei AI is Adobe’s artificial intelligence and machine
-                learning platform that powers intelligent features across Adobe
-                Creative Cloud, Experience Cloud, and Document Cloud. It enables
-                real-time personalization, automated creative workflows,
-                predictive analytics, and smart content recommendations, helping
-                businesses optimize their digital experiences.
-              </p>
+       <div className="container">
+  <div className="row d-flex align-items-center justify-content-between mb-1 flex-column-reverse flex-md-row">
+    {/* Left side (Text Section) */}
+    <div className="col-md-6 col-12 mt-4 mt-md-0">
+      <p className="text-primary">Write better, faster</p>
+      <h1>Sensei AI:</h1>
+      <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+      <p>
+        Adobe Sensei AI is Adobe’s artificial intelligence and machine
+        learning platform that powers intelligent features across Adobe
+        Creative Cloud, Experience Cloud, and Document Cloud. It enables
+        real-time personalization, automated creative workflows,
+        predictive analytics, and smart content recommendations, helping
+        businesses optimize their digital experiences.
+      </p>
+      <div className="mb-3">
+        <a
+          href="https://www.senseicopilot.com/"
+          rel="noopener noreferrer"
+          className="btn btn-primary me-2"
+        >
+          Explore Tool
+        </a>
+      </div>
+    </div>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
-            </div>
+    {/* Right side (Image Section) */}
+    <div className="col-md-6 col-12 text-center">
+      <img
+        src={sensei}
+        alt="Sensei AI"
+        style={{ maxWidth: "100%", height: "auto", maxHeight: "300px" }}
+        className="img-fluid mb-4 mb-md-0"
+      />
+    </div>
+  </div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img src={sensei} style={{ MaxWidth: "100%", height: "300px" }} />
-            </div>
-          </div>
+  {/* Keep rest of your sections here unchanged */}
+</div>
 
-          <section style={{ backgroundColor: "#2c3e50", padding: "3rem 0" }}>
-            <div className="container text-center">
-              <p className="text-primary">
-                Elevate Your Workflow—Achieve Excellence with Sensei AI
-              </p>
-              <h2
-                className="text-white"
-                style={{ fontWeight: "600", marginBottom: "1rem" }}
-              >
-                Experience How Sensei AI Optimizes Complex Processes for
-                Seamless Outcomes
-              </h2>
-              <p
-                style={{
-                  color: "#ccc",
-                  marginBottom: "2rem",
-                  fontStyle: "italic",
-                }}
-              >
-                Sensei AI simplifies intricate workflows into straightforward,
-                actionable steps, providing intelligent solutions that enhance
-                team efficiency and decision-making.
-              </p>
-
-              <div className="row g-4">
-                {/* Step 1 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#1abc9c",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
-            .sensei-step1 {
-              position: absolute;
-              bottom: 10px;
-              right: 15px;
-              font-size: 4rem;
-              font-weight: bold;
-              color: #ecf0f1;
-              opacity: 0.7;
-            }
-          `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Intelligent Data Analysis
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Sensei AI efficiently breaks down data into easy-to-digest
-                      insights, making it simple to extract valuable knowledge
-                      and make data-driven decisions.
-                    </p>
-                    <div className="sensei-step1">1</div>
-                  </div>
-                </div>
-
-                {/* Step 2 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#1abc9c",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
-            .sensei-step2 {
-              position: absolute;
-              bottom: 10px;
-              right: 15px;
-              font-size: 4rem;
-              font-weight: bold;
-              color: #ecf0f1;
-              opacity: 0.7;
-            }
-          `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Personalized Communication Tactics
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Sensei AI adapts content tone and style to suit the needs
-                      of any audience, from formal business communication to
-                      casual conversations.
-                    </p>
-                    <div className="sensei-step2">2</div>
-                  </div>
-                </div>
-
-                {/* Step 3 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#1abc9c",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
-            .sensei-step3 {
-              position: absolute;
-              bottom: 10px;
-              right: 15px;
-              font-size: 4rem;
-              font-weight: bold;
-              color: #ecf0f1;
-              opacity: 0.7;
-            }
-          `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Uncompromising Accuracy and Quality
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Sensei AI ensures that every result is unique and
-                      accurate, maintaining the highest quality standards and
-                      consistency across all outputs.
-                    </p>
-                    <div className="sensei-step3">3</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Tab Navigation */}
-          <ul className="nav nav-tabs custom-tabs mb-4">
-            {[
-              "Features",
-              "Screenshots",
-              "Reviews",
-              "FAQs",
-              "Technical",
-              "Why-We-Use",
-              "Pros & Cons",
-              "Alternative",
-            ].map((tab) => (
-              <li className="nav-item mb-2" key={tab}>
-                <button
-                  className={`nav-link ${activeTab === tab ? "active" : ""}`}
-                  onClick={() => setActiveTab(tab)}
-                >
-                  {tab.charAt(0).toUpperCase() + tab.slice(1)}
-                </button>
-              </li>
-            ))}
-          </ul>
-
-          {/* Tab Content */}
-          <div className="tab-content-area">{renderTabContent()}</div>
-
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with Sensei AI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
-        </div>
       </div>
     </>
   );

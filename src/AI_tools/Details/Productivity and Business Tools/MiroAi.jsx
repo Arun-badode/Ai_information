@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import deatilimage from "../../../Images/DetailImage.png";
 import miro from "../../../../public/assets/Img/AI for Business/7.png";
+import miro1 from "../../../../public/assets/Img/AI for Business/miro1.png";
+import miro2 from "../../../../public/assets/Img/AI for Business/miro2.png";
 
 // review section data
 const reviews = [
@@ -130,14 +130,14 @@ const MiroAi = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src={deatilimage}
+                src={miro1}
                 alt="Screenshot 1"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={deatilimage}
+                src={miro2}
                 alt="Screenshot 2"
                 className="img-fluid rounded-3"
               />

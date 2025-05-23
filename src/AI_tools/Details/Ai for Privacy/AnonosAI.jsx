@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
+import anonosaiSS1 from '../../../../public/assets/Img/AI for Privacy/anonosaiSS1.png';
+import anonosaiSS2 from '../../../../public/assets/Img/AI for Privacy/anonosaiSS2.png';
 
-import b from "../../../../public/assets/Img/_AI for Privacy and Data Protection/2.png"
+
+import b from "../../../../public/assets/Img/AI for Privacy/2.jpg"
 // review section data
 const reviews = [
   {
@@ -130,14 +133,15 @@ const AnonosAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
-                alt=""
+                src={anonosaiSS1}
+                alt="anonosai"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
+                src={anonosaiSS2}
+                alt="anonosai"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -618,9 +622,13 @@ const AnonosAI = () => {
               </p>
 
               <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
+                <a
+                  href="https://www.anonos.com"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary me-2"
+                >
+                  Explore Tool
+                </a>
               </div>
             </div>
 
@@ -633,7 +641,7 @@ const AnonosAI = () => {
                                    src={b}
                                    className="img-fluid rounded-3"
                                    style={{ maxWidth: "80%", height: "auto" }}
-                                   alt="Quizlet AI platform illustration"
+                                   alt="Anonos Ai"
                                  />
                                </div>
           </div>

@@ -3,8 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import google from '../../../../public/assets/Img/AI for Business/google.png'
-import googly1 from '../../../../public/assets/Img/AI for Business/googly1.png'
-import google12 from '../../../../public/assets/Img/AI for Business/google12.png'
+import googly1 from '../../../../public/assets/Img/AI for Business/google1.png'
+import google2 from '../../../../public/assets/Img/AI for Business/google2.png'
 
 // review section data
 const reviews = [
@@ -143,7 +143,7 @@ const GoogleAnalyticsAI = () => {
             </div>
             <div className="col-md-6">
               <img
-                src={google12}
+                src={google2}
                 alt="screenshot2"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />

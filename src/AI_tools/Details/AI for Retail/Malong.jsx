@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
 import malong from "../../../../public/assets/Img/Ai  for Retail/9.png";
+import m1 from "../../../../public/assets/Img/Ai  for Retail/m-s1.png";
+import m2 from "../../../../public/assets/Img/Ai  for Retail/m-s2.png";
 // review section data
 const reviews = [
   {
@@ -338,14 +340,14 @@ const Malong = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
+                src={m1}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
+                src={m2}
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -868,221 +870,148 @@ const Malong = () => {
         </a>
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
-        <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>Malong AI:</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Malong AI is an advanced visual recognition platform powered by
-                AI and machine learning. It enables retailers and ecommerce
-                platforms to optimize inventory management, improve product
-                categorization, and enhance operational efficiency. Malong AI
-                uses deep learning and computer vision technology to automate
-                the identification, classification, and tracking of products in
-                real-time.
-              </p>
+<div className="container">
+  <div className="row align-items-center justify-content-between mb-5">
+  {/* Image Section – comes first on mobile, second on desktop */}
+  <div className="col-12 col-lg-6 order-1 order-lg-2 text-center mb-4 mb-lg-0">
+    <img
+      src={malong}
+      alt="Malong AI"
+      className="img-fluid"
+      style={{ maxHeight: "300px", objectFit: "contain" }}
+    />
+  </div>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
-            </div>
+  {/* Text Section – comes second on mobile, first on desktop */}
+  <div className="col-12 col-lg-6 order-2 order-lg-1">
+    <p className="text-primary">Write better, faster</p>
+    <h1>Malong AI:</h1>
+    <div className="text-warning mb-2">⭐⭐⭐⭐⭐</div>
+    <p>
+      Malong AI is an advanced visual recognition platform powered by AI and
+      machine learning. It enables retailers and ecommerce platforms to optimize
+      inventory management, improve product categorization, and enhance
+      operational efficiency.
+    </p>
+    <p>
+      Malong AI uses deep learning and computer vision technology to automate
+      the identification, classification, and tracking of products in real-time.
+    </p>
+    <a
+      href="https://malongtech.com/en/home.html"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="btn btn-primary mt-3"
+    >
+      Explore Tool
+    </a>
+  </div>
+</div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img src={malong} style={{ MaxWidth: "100%", height: "300px" }} />
-            </div>
-          </div>
+  {/* Feature Section */}
+  <section style={{ backgroundColor: "#34495e", padding: "3rem 0" }}>
+    <div className="container text-center text-white">
+      <p className="text-primary">
+        Transform Your Business with the Power of Malong AI
+      </p>
+      <h2 className="fw-bold mb-3">
+        Unleash the Potential of Smart Automation and Data Intelligence with Malong AI
+      </h2>
+      <p className="text-muted fst-italic mb-5">
+        Malong AI streamlines complex processes, delivering precision-driven analytics
+        and automation that boosts productivity and enhances decision-making at every level.
+      </p>
 
-          <section style={{ backgroundColor: "#34495e", padding: "3rem 0" }}>
-            <div className="container text-center">
-              <p className="text-primary">
-                Transform Your Business with the Power of Malong AI
-              </p>
-              <h2
-                className="text-white"
-                style={{ fontWeight: "600", marginBottom: "1rem" }}
-              >
-                Unleash the Potential of Smart Automation and Data Intelligence
-                with Malong AI
-              </h2>
-              <p
+      <div className="row g-4">
+        {/* Step 1 */}
+        {[1, 2, 3].map((num) => {
+          const titles = [
+            "Data-Driven Insights",
+            "Adaptive Workflow Automation",
+            "Consistent Precision & Reliability",
+          ];
+          const descriptions = [
+            "Malong AI extracts meaningful insights from your data, helping you make informed decisions that drive business growth.",
+            "Optimize your workflows with Malong AI’s automation features, adjusting processes and tasks dynamically to improve efficiency.",
+            "Malong AI guarantees reliable, accurate outputs, allowing your business to scale without sacrificing quality or performance.",
+          ];
+          return (
+            <div className="col-md-4" key={num}>
+              <div
+                className="position-relative"
                 style={{
-                  color: "#ccc",
-                  marginBottom: "2rem",
-                  fontStyle: "italic",
+                  backgroundColor: "#1abc9c",
+                  borderRadius: "12px",
+                  boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+                  padding: "2rem",
+                  height: "100%",
                 }}
               >
-                Malong AI streamlines complex processes, delivering
-                precision-driven analytics and automation that boosts
-                productivity and enhances decision-making at every level.
-              </p>
-
-              <div className="row g-4">
-                {/* Step 1 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#1abc9c",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
-            .malong-step1 {
-              position: absolute;
-              bottom: 10px;
-              right: 15px;
-              font-size: 4rem;
-              font-weight: bold;
-              color: #ecf0f1;
-              opacity: 0.7;
-            }
-          `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Data-Driven Insights
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Malong AI extracts meaningful insights from your data,
-                      helping you make informed decisions that drive business
-                      growth.
-                    </p>
-                    <div className="malong-step1">1</div>
-                  </div>
-                </div>
-
-                {/* Step 2 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#1abc9c",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
-            .malong-step2 {
-              position: absolute;
-              bottom: 10px;
-              right: 15px;
-              font-size: 4rem;
-              font-weight: bold;
-              color: #ecf0f1;
-              opacity: 0.7;
-            }
-          `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Adaptive Workflow Automation
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Optimize your workflows with Malong AI’s automation
-                      features, adjusting processes and tasks dynamically to
-                      improve efficiency.
-                    </p>
-                    <div className="malong-step2">2</div>
-                  </div>
-                </div>
-
-                {/* Step 3 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#1abc9c",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
-            .malong-step3 {
-              position: absolute;
-              bottom: 10px;
-              right: 15px;
-              font-size: 4rem;
-              font-weight: bold;
-              color: #ecf0f1;
-              opacity: 0.7;
-            }
-          `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Consistent Precision & Reliability
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Malong AI guarantees reliable, accurate outputs, allowing
-                      your business to scale without sacrificing quality or
-                      performance.
-                    </p>
-                    <div className="malong-step3">3</div>
-                  </div>
+                <h5 className="fw-bold text-white">{titles[num - 1]}</h5>
+                <p className="text-white m-0">{descriptions[num - 1]}</p>
+                <div
+                  className="position-absolute"
+                  style={{
+                    bottom: "10px",
+                    right: "15px",
+                    fontSize: "4rem",
+                    fontWeight: "bold",
+                    color: "#ecf0f1",
+                    opacity: 0.7,
+                  }}
+                >
+                  {num}
                 </div>
               </div>
             </div>
-          </section>
+          );
+        })}
+      </div>
+    </div>
+  </section>
 
-          {/* Tab Navigation */}
-          <ul className="nav nav-tabs custom-tabs mb-4">
-            {[
-              "Features",
-              "Screenshots",
-              "Reviews",
-              "FAQs",
-              "Technical",
-              "Why-We-Use",
-              "Pros & Cons",
-              "Alternative",
-            ].map((tab) => (
-              <li className="nav-item mb-2" key={tab}>
-                <button
-                  className={`nav-link ${activeTab === tab ? "active" : ""}`}
-                  onClick={() => setActiveTab(tab)}
-                >
-                  {tab.charAt(0).toUpperCase() + tab.slice(1)}
-                </button>
-              </li>
-            ))}
-          </ul>
+  {/* Tab Navigation */}
+  <ul className="nav nav-tabs custom-tabs my-4 flex-wrap">
+    {[
+      "Features",
+      "Screenshots",
+      "Reviews",
+      "FAQs",
+      "Technical",
+      "Why-We-Use",
+      "Pros & Cons",
+      "Alternative",
+    ].map((tab) => (
+      <li className="nav-item mb-2" key={tab}>
+        <button
+          className={`nav-link ${activeTab === tab ? "active" : ""}`}
+          onClick={() => setActiveTab(tab)}
+        >
+          {tab}
+        </button>
+      </li>
+    ))}
+  </ul>
 
-          {/* Tab Content */}
-          <div className="tab-content-area">{renderTabContent()}</div>
+  {/* Tab Content */}
+  <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with Malong AI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
-        </div>
+  {/* CTA Section */}
+  <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
+    <h4 className="mb-3">Ready to get started with Malong AI?</h4>
+    <p className="mb-4">
+      Join thousands of professionals already boosting their productivity!
+    </p>
+    <div>
+      <button className="btn btn-light me-3">Try Now for Free</button>
+      <button className="btn btn-outline-light">Schedule a Demo</button>
+    </div>
+    <small className="d-block mt-3">
+      No credit card required. 14-day free trial available.
+    </small>
+  </div>
+</div>
+
       </div>
     </>
   );

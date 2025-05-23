@@ -1167,7 +1167,7 @@ const PerplexityAI = () => {
             {/* Left side (Text Section) */}
             <div style={{ flex: 1, paddingRight: "30px" }}>
             
-              <h2>The Ultimate Guide to Perplexity AI</h2>
+              <h2>Perplexity AI</h2>
               <div className="text-warning mb-1">
                 ⭐⭐⭐⭐⭐ 95% Satisfaction
               </div>
