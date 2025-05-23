@@ -3,13 +3,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 
-import magisto from "../../../../public/assets/Img/AI for Animation/14.png";
-import scn9 from "../../../../public/assets/Img/AI for Animation/scn9.jpg";
-import scn10 from "../../../../public/assets/Img/AI for Animation/scn10.jpg";
+
 import scn1 from "../../../../public/assets/Img/AI for Meeting/sidekickS2.jpeg";
 import scn2 from "../../../../public/assets/Img/AI for Meeting/sidekickS2.jpeg";
 
-
+import sidekick from "../../../../public/assets/Img/AI for Meeting/8.png";
 // review section data
 const reviews = [
   {
@@ -613,7 +611,7 @@ const Sidekick = () => {
               className="col-md-6 col-12 order-md-2 order-1 text-center mb-3 mb-md-0  "
             >
               <img
-                src={magisto}
+                src={sidekick}
                 style={{
                   Width: "100%",
                   height: "auto",

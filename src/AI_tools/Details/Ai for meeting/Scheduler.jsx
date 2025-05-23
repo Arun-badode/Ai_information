@@ -4,7 +4,7 @@ import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-
+import sheduler from "../../../../public/assets/Img/AI for Meeting/7.png";
 import scn1 from "../../../../public/assets/Img/AI for Meeting/shedulerS2.png";
 import scn2 from "../../../../public/assets/Img/AI for Meeting/shedulerS1.png";
 
@@ -596,7 +596,7 @@ const Schedular = () => {
     style={{ height: "250px" }}
   >
     <img
-      src=""
+      src={sheduler}
       style={{ maxWidth: "100%", height: "300px", objectFit: "contain" }}
       alt="Scheduler AI"
     />

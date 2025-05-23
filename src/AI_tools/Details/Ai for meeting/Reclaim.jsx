@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
-import magisto from "../../../Images/MagistoAI.png";
+import reclaim from "../../../../public/assets/Img/AI for Meeting/2.png";
 import scn1 from "../../../../public/assets/Img/AI for Meeting/reclaimS2.png";
 import scn2 from "../../../../public/assets/Img/AI for Meeting/reclaimS1.png";
 
@@ -607,7 +607,7 @@ const Reclaim = () => {
     style={{ height: "250px" }}
   >
     <img
-      src={magisto}
+      src={reclaim}
       style={{ maxWidth: "100%", height: "300px", objectFit: "contain" }}
       alt="Reclaim AI"
     />

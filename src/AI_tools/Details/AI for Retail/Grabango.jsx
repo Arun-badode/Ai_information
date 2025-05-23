@@ -4,8 +4,11 @@ import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
-import deatilimage from "../../../Images/DetailImage.png";
 import grabango from "../../../../public/assets/Img/Ai  for Retail/8.png";
+
+import sc1 from "../../../../public/assets/Img/Ai  for Retail/gobago-sc2.png";
+import sc2 from "../../../../public/assets/Img/Ai  for Retail/gobango-sc1.png";
+
 // review section data
 const reviews = [
   {
@@ -338,14 +341,17 @@ const Grabango = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
+
+      
+                src={sc1}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
+                src={sc2}
+                alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -862,223 +868,42 @@ const Grabango = () => {
         </a>
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
-        <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>Grabango AI:</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Everseen AI is a cutting-edge visual AI platform that leverages
-                machine learning and deep learning to prevent shrinkage and
-                improve operational efficiency in retail environments. It helps
-                stores monitor transactions in real-time, detect anomalies, and
-                reduce retail theft by using computer vision integrated into
-                smart checkout systems.
-              </p>
+      <div className="row align-items-center justify-content-between mb-4">
+  {/* Image Section - appears first on mobile */}
+  <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-4 mb-md-0">
+    <img
+      src={grabango}
+      alt="Grabango AI"
+      style={{ maxWidth: "100%", height: "300px", objectFit: "contain" }}
+    />
+  </div>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
-            </div>
+  {/* Text Section - appears second on mobile */}
+  <div className="col-12 col-md-6 order-2 order-md-1 px-md-4">
+    <p className="text-primary">Write better, faster</p>
+    <h1>Grabango AI:</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      Everseen AI is a cutting-edge visual AI platform that leverages
+      machine learning and deep learning to prevent shrinkage and
+      improve operational efficiency in retail environments. It helps
+      stores monitor transactions in real-time, detect anomalies, and
+      reduce retail theft by using computer vision integrated into
+      smart checkout systems.
+    </p>
+    <div className="mb-3">
+      <a
+        href="https://www.grabango.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary me-2"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
+</div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src={grabango}
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
-          </div>
-
-          <section style={{ backgroundColor: "#2c3e50", padding: "3rem 0" }}>
-            <div className="container text-center">
-              <p className="text-primary">
-                Streamline Your Operations—Achieve Excellence with Grabango AI
-              </p>
-              <h2
-                className="text-white"
-                style={{ fontWeight: "600", marginBottom: "1rem" }}
-              >
-                Revolutionize Your Workflow with Grabango AI's Seamless
-                Automation and Optimization
-              </h2>
-              <p
-                style={{
-                  color: "#ccc",
-                  marginBottom: "2rem",
-                  fontStyle: "italic",
-                }}
-              >
-                Grabango AI simplifies complex processes, providing precise
-                analytics and automated workflows that enhance productivity and
-                support smarter decision-making.
-              </p>
-
-              <div className="row g-4">
-                {/* Step 1 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#2980b9",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
-            .grabango-step1 {
-              position: absolute;
-              bottom: 10px;
-              right: 15px;
-              font-size: 4rem;
-              font-weight: bold;
-              color: #ecf0f1;
-              opacity: 0.7;
-            }
-          `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Insightful Data Analysis
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Grabango AI analyzes your data effortlessly, providing
-                      clear and actionable insights that support faster,
-                      data-driven decisions.
-                    </p>
-                    <div className="grabango-step1">1</div>
-                  </div>
-                </div>
-
-                {/* Step 2 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#2980b9",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
-            .grabango-step2 {
-              position: absolute;
-              bottom: 10px;
-              right: 15px;
-              font-size: 4rem;
-              font-weight: bold;
-              color: #ecf0f1;
-              opacity: 0.7;
-            }
-          `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Dynamic Communication Personalization
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Customize your communication strategies with Grabango AI’s
-                      dynamic capabilities, adjusting tone and format to suit
-                      any audience or situation.
-                    </p>
-                    <div className="grabango-step2">2</div>
-                  </div>
-                </div>
-
-                {/* Step 3 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#2980b9",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
-            .grabango-step3 {
-              position: absolute;
-              bottom: 10px;
-              right: 15px;
-              font-size: 4rem;
-              font-weight: bold;
-              color: #ecf0f1;
-              opacity: 0.7;
-            }
-          `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Accuracy and Dependability
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Grabango AI ensures precise, reliable results
-                      consistently, empowering businesses to scale operations
-                      without compromising quality.
-                    </p>
-                    <div className="grabango-step3">3</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Tab Navigation */}
-          <ul className="nav nav-tabs custom-tabs mb-4">
-            {[
-              "Features",
-              "Screenshots",
-              "Reviews",
-              "FAQs",
-              "Technical",
-              "Why-We-Use",
-              "Pros & Cons",
-              "Alternative",
-            ].map((tab) => (
-              <li className="nav-item mb-2" key={tab}>
-                <button
-                  className={`nav-link ${activeTab === tab ? "active" : ""}`}
-                  onClick={() => setActiveTab(tab)}
-                >
-                  {tab.charAt(0).toUpperCase() + tab.slice(1)}
-                </button>
-              </li>
-            ))}
-          </ul>
-
-          {/* Tab Content */}
-          <div className="tab-content-area">{renderTabContent()}</div>
-
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with Grabango AI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
-        </div>
       </div>
     </>
   );

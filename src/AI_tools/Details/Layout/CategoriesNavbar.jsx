@@ -855,7 +855,7 @@ const CategoriesNavbar = () => {
 
                     <Link to="/TableauAI">Tableau AI</Link>
                     <Link to="/DomoAI">Domo AI</Link>
-                    <Link to="/ZohoAnalytics">Zoho Analytics</Link>
+                    <Link to="/ZohoAnalyticsAI">Zoho Analytics</Link>
                     <Link to="/GoogleAnalyticsAI">Google Analytics AI</Link>
 
                     <Link to="/HeapAnalytics">Heap Analytics</Link>
@@ -973,7 +973,7 @@ const CategoriesNavbar = () => {
                     <Link to="/Everseen">Everseen AI</Link>
                     <Link to="/Govison"> Govison AI</Link>
                     <Link to="/Grabango">Grabango AI</Link>
-                    <Link to="/Manlong">Manlong</Link>
+                    <Link to="/Malong">Manlong</Link>
                   </div>
                   {/* Content Generation Column */}
                   <div

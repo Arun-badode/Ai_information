@@ -6,7 +6,7 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import magisto from "../../../../public/assets/Img/AI for Animation/14.png";
 import scn1 from "../../../../public/assets/Img/AI for Meeting/adamS1.png";
 import scn2 from "../../../../public/assets/Img/AI for Meeting/adamS2.png";
-
+import adam  from "../../../../public/assets/Img/AI for Meeting/10.png";
 // review section data
 const reviews = [
   {
@@ -667,7 +667,7 @@ const Adam = () => {
               className="col-md-6 col-12 order-md-2 order-1 text-center mb-3 mb-md-0  "
             >
               <img
-                src={magisto}
+                src={adam }
                 style={{
                   Width: "100%",
                   height: "auto",
