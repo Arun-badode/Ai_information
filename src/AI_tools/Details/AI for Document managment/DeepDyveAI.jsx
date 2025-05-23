@@ -5,6 +5,9 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
+import deepdyveSS1 from '../../../../public/assets/Img/AI for Document/deepdyveSS1.png';
+import deepdyveSS2 from '../../../../public/assets/Img/AI for Document/deepdyveSS2.png';
+
 
 // review section data
 const reviews = [
@@ -295,14 +298,15 @@ const DeepDyveAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
-                alt=""
+                src={deepdyveSS1}
+                alt="deepdyve"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
+                src={deepdyveSS2}
+                alt="deepdyve"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -841,11 +845,13 @@ const DeepDyveAI = () => {
                 insights from extensive databases.
               </p>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
+           <a
+                                 href="https://www.deepdyve.com."
+                                 rel="noopener noreferrer"
+                                 className="btn btn-primary me-2"
+                               >
+                                 Explore Tool
+                               </a>
             </div>
 
             {/* Right side (Image Section) */}

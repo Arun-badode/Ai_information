@@ -807,48 +807,50 @@ const VisualAI = () => {
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
           <div className="row align-items-center mb-5">
-            {/* Right side (Image Section) */}
-            <div className="col-md-6 col-12 text-center">
-              <img
-                src={visual}
-                alt="Zety"
-                style={{
-                  maxWidth: "100%",
-                  height: "300px",
-                  objectFit: "contain",
-                }}
-              />
-            </div>
-            {/* Left side (Text Section) */}
-            <div
-              className="col-md-6 col-12 mb-4 mb-md-0"
-              style={{ paddingRight: "30px" }}
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>VisualCV AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                VisualCV AI is a powerful tool designed to help job seekers
-                build professional, optimized resumes and portfolios using
-                artificial intelligence. With its AI-powered features, it allows
-                users to create customized, ATS-friendly resumes and CVs,
-                optimize job applications, track job progress, and much more.
-                VisualCV offers tools for job search, professional portfolio
-                creation, and career development, making it an all-in-one
-                solution for job seekers.
-              </p>
-              <div className="mb-3">
-                <a
-                  href="https://www.visualcv.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary me-2"
-                >
-                  Explore Tool
-                </a>
-              </div>
-            </div>
-          </div>
+  {/* Image Section: Right on desktop, Top on mobile */}
+  <div className="col-md-6 col-12 text-center order-1 order-md-2">
+    <img
+      src={visual}
+      alt="Zety"
+      style={{
+        maxWidth: "100%",
+        height: "300px",
+        objectFit: "contain",
+      }}
+    />
+  </div>
+
+  {/* Text Section: Left on desktop, Bottom on mobile */}
+  <div
+    className="col-md-6 col-12 mb-4 mb-md-0 order-2 order-md-1"
+    style={{ paddingRight: "30px" }}
+  >
+    <p className="text-primary">Write better, faster</p>
+    <h1>VisualCV AI</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      VisualCV AI is a powerful tool designed to help job seekers
+      build professional, optimized resumes and portfolios using
+      artificial intelligence. With its AI-powered features, it allows
+      users to create customized, ATS-friendly resumes and CVs,
+      optimize job applications, track job progress, and much more.
+      VisualCV offers tools for job search, professional portfolio
+      creation, and career development, making it an all-in-one
+      solution for job seekers.
+    </p>
+    <div className="mb-3">
+      <a
+        href="https://www.visualcv.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary me-2"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
+</div>
+
         </div>
 
         <section style={{ backgroundColor: "#0b1e3d", padding: "5rem 0" }}>

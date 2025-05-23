@@ -6,6 +6,9 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import scn1 from "../../../../public/assets/Img/AI for Privacy/veltris-S1.png"
 import scn2 from "../../../../public/assets/Img/AI for Privacy/veltris-S2.png"
 import Vaultree from "../../../../public/assets/Img/AI for Privacy/4.jpg"
+import vaultreeSS1 from '../../../../public/assets/Img/AI for Privacy/vaultreeSS1.png';
+import vaultreeSS2 from '../../../../public/assets/Img/AI for Privacy/vaultreeSS2.png';
+
 // review section data
 const reviews = [
   {
@@ -132,14 +135,15 @@ const VaultreeAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src={scn1}
-                alt=""
+                src={vaultreeSS1}
+                alt="vaultree"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={scn2}
+                src={vaultreeSS2}
+                alt="vaultree"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

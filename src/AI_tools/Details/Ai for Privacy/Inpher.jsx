@@ -4,6 +4,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import inpher from "../../../../public/assets/Img/AI for Privacy/7.jpg"
+import inpherSS1 from '../../../../public/assets/Img/AI for Privacy/inpherSS1.png';
+import inpherSS2 from '../../../../public/assets/Img/AI for Privacy/inpherSS2.png';
+
 // review section data
 const reviews = [
   {
@@ -131,14 +134,15 @@ const InpherAI= () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
-                alt=""
+                src={inpherSS1}
+                alt="inpher"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
+                src={inpherSS2}
+                alt="inpher"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -646,48 +650,46 @@ const InpherAI= () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>Inpher AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-              Inpher AI is an advanced privacy-preserving AI platform designed to provide secure machine learning, data protection, and compliance solutions. With an emphasis on privacy-focused AI and data security, Inpher AI allows businesses to harness the power of artificial intelligence while ensuring their data remains encrypted, compliant, and secure.
-            Inpher AI specializes in privacy-preserving machine learning, a groundbreaking approach that allows AI models to process sensitive data without ever exposing it. Whether it’s healthcare data, financial data, or customer information, Inpher AI ensures that all data remains private and secure.
+         <div className="row align-items-center mb-4">
+  {/* Image Section: appears first on mobile, second on desktop */}
+  <div
+    className="col-12 col-md-6 order-1 order-md-2 text-center mb-4 mb-md-0"
+    style={{ height: "auto" }}
+  >
+    <img
+      src={inpher}
+      alt="Inpher AI"
+      style={{ maxWidth: "100%", height: "300px", objectFit: "contain" }}
+      className="img-fluid"
+    />
+  </div>
 
-                </p>
+  {/* Text Section: appears second on mobile, first on desktop */}
+  <div
+    className="col-12 col-md-6 order-2 order-md-1"
+    style={{ paddingRight: "30px" }}
+  >
+    <p className="text-primary">Write better, faster</p>
+    <h1>Inpher AI</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      Inpher AI is an advanced privacy-preserving AI platform designed to provide secure machine learning, data protection, and compliance solutions. With an emphasis on privacy-focused AI and data security, Inpher AI allows businesses to harness the power of artificial intelligence while ensuring their data remains encrypted, compliant, and secure.
+    </p>
+    <p>
+      Inpher AI specializes in privacy-preserving machine learning, a groundbreaking approach that allows AI models to process sensitive data without ever exposing it. Whether it’s healthcare data, financial data, or customer information, Inpher AI ensures that all data remains private and secure.
+    </p>
+    <div className="mb-3">
+      <a
+        href="https://go.inpher.io/securai"
+        rel="noopener noreferrer"
+        className="btn btn-primary me-2"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
+</div>
 
-                 <div className="mb-3">
-                <a
-                  href="https://adam.ai/"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary me-2"
-                >
-                  Explore Tool
-                </a>
-              </div>
-            </div>
-
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src={inpher}
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
-          </div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>

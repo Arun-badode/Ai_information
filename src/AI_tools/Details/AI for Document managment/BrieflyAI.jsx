@@ -5,6 +5,9 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
+import brieflySS1 from '../../../../public/assets/Img/AI for Document/brieflySS1.png';
+import brieflySS2 from '../../../../public/assets/Img/AI for Document/brieflySS2.png';
+
 
 // review section data
 const reviews = [
@@ -315,14 +318,15 @@ const BrieflyAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
-                alt=""
+                src={brieflySS1}
+                alt="briefly"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
+                src={brieflySS2}
+                alt="briefly"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -853,7 +857,7 @@ const BrieflyAI = () => {
 
               <div className="mb-3">
                 <a
-                                 href=" https://www.senseicopilot.com/"
+                                 href="https://www.brieflyai.com"
                                  rel="noopener noreferrer"
                                  className="btn btn-primary me-2"
                                >
@@ -1037,20 +1041,7 @@ const BrieflyAI = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with BrieflyAI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
+          
         </div>
       </div>
     </>

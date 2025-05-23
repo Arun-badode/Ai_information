@@ -4,10 +4,7 @@ import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
-import deatilimage from "../../../Images/DetailImage.png";
 import otter from "../../../../public/assets/Img/AI for Business/5.png";
-import  otter1 from "../../../../public/assets/Img/AI for Business/otter1.png";
-import  otter2 from "../../../../public/assets/Img/AI for Business/otter2.png";
 
 // review section data
 const reviews = [
@@ -140,7 +137,7 @@ const OtterAI = () => {
             </div>
             <div className="col-md-6">
               <img
-                src={ otter2}
+                src={deatilimage}
                 alt="Screenshot 2"
                 className="img-fluid rounded-3"
               />
