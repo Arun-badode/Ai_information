@@ -412,7 +412,7 @@ const App = () => {
         <Route path="/FotorAI" element={<FotorAI />}></Route>
         <Route path="/ReminiAI" element={<ReminiAI />}></Route>
         <Route path="/RemoveBg" element={<RemoveBg />}></Route>
-        <Route path="/uminarAI" element={<LuminarAI />}></Route>
+        <Route path="/LuminarAI" element={<LuminarAI />}></Route>
         {/* AI for Software Testing */}
         <Route path="/RainforestQA" element={<RainforestQA />}></Route>
         <Route path="/LambdaTestAI" element={<LambdaTestAI />}></Route>

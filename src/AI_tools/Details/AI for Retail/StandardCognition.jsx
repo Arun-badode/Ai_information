@@ -337,13 +337,14 @@ const StandardCongnition = () => {
             <div className="col-md-6">
               <img
                 src={st1}
-                alt=""
+                alt="standardCongnition"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={st2}
+                alt="standardCognition"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

@@ -5,8 +5,8 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
-import xor1 from "../../../../public/assets/Img/AI for Recruitment/xor1.png";
-import xor2 from "../../../../public/assets/Img/AI for Recruitment/xor2.png";
+import xor1 from "../../../../public/assets/Img/AI for Recruitment/xr-s1.png";
+import xor2 from "../../../../public/assets/Img/AI for Recruitment/xr-s2.png";
 
 // review section data
 const reviews = [
@@ -332,7 +332,7 @@ const Xor = () => {
             <div className="col-md-6">
               <img
                 src={xor1}
-                alt=""
+                alt="xor"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
