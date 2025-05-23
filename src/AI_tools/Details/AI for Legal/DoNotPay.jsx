@@ -133,14 +133,14 @@ const DoNotPay = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
+                src="public\assets\Img\AI for legal\Donotpay-s2.jpg"
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
+                src="public\assets\Img\AI for legal\Donotpay-s3.jpg"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -622,9 +622,13 @@ const DoNotPay = () => {
               </p>
 
               <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
+                <a
+                  href="https://donotpay.com/"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary me-2"
+                >
+                  Explore Tool
+                </a>
               </div>
             </div>
 
@@ -638,7 +642,7 @@ const DoNotPay = () => {
               }}
               className="col-6 col-md-12 mb-5  "
             >
-              <img src="" style={{ MaxWidth: "100%", height: "300px" }} />
+              <img src="\assets\Img\AI for legal\Donotpay-s1.jpg" style={{ MaxWidth: "100%", height: "300px" }} />
             </div>
           </div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
