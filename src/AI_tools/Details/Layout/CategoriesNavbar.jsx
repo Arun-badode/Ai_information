@@ -973,7 +973,7 @@ const CategoriesNavbar = () => {
                     <Link to="/Everseen">Everseen AI</Link>
                     <Link to="/Govison"> Govison AI</Link>
                     <Link to="/Grabango">Grabango AI</Link>
-                    <Link to="/Manlong">Manlong</Link>
+                    <Link to="/Malong">Manlong</Link>
                   </div>
                   {/* Content Generation Column */}
                   <div

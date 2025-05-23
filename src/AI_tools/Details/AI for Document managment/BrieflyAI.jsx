@@ -852,9 +852,13 @@ const BrieflyAI = () => {
               </p>
 
               <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
+                <a
+                                 href=" https://www.senseicopilot.com/"
+                                 rel="noopener noreferrer"
+                                 className="btn btn-primary me-2"
+                               >
+                                 Explore Tool
+                               </a>
               </div>
             </div>
 

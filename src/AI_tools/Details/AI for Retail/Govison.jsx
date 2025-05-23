@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
 import govision from "../../../../public/assets/Img/Ai  for Retail/2.png";
+import g1 from "../../../../public/assets/Img/Ai  for Retail/g-s1.png";
+import g2 from "../../../../public/assets/Img/Ai  for Retail/g-s2.png";
+
 // review section data
 const reviews = [
   {
@@ -336,14 +339,14 @@ const Govison = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
+                src={g1}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
+                src={g2}
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -845,46 +848,41 @@ const Govison = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>GoVision AI:</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Focal Systems AI is a retail automation platform that uses
-                computer vision and AI-powered shelf cameras to monitor
-                inventory, track stock levels, and optimize in-store operations.
-                It replaces manual shelf audits with real-time insights,
-                ensuring product availability and planogram compliance.
-              </p>
+         <div className="row d-flex flex-column-reverse flex-md-row align-items-center justify-content-between mb-1">
+  {/* Left side (Text Section) */}
+  <div className="col-md-6 mb-3 mb-md-0" style={{ paddingRight: "30px" }}>
+    <p className="text-primary">Write better, faster</p>
+    <h1>GoVision AI:</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      Focal Systems AI is a retail automation platform that uses computer vision
+      and AI-powered shelf cameras to monitor inventory, track stock levels, and
+      optimize in-store operations. It replaces manual shelf audits with real-time
+      insights, ensuring product availability and planogram compliance.
+    </p>
+    <div className="mb-3">
+      <a
+        href="https://govisionxp.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary me-2"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
-            </div>
+  {/* Right side (Image Section) */}
+  <div className="col-md-6 text-center mb-4 mb-md-0">
+    <img
+      src={govision}
+      alt="GoVision AI"
+      className="img-fluid"
+      style={{ height: "300px", objectFit: "contain" }}
+    />
+  </div>
+</div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src={govision}
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
-          </div>
 
           <section style={{ backgroundColor: "#283e55", padding: "3rem 0" }}>
             <div className="container text-center">
