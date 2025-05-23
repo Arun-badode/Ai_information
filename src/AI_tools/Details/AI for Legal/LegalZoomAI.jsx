@@ -366,9 +366,8 @@ const LegalZoomAI = () => {
                   <div className="accordion-item mb-3" key={item.id}>
                     <h2 className="accordion-header" id={`heading ${item.id}`}>
                       <button
-                        className={`accordion-button ${
-                          i !== 0 ? "collapsed" : ""
-                        }`}
+                        className={`accordion-button ${i !== 0 ? "collapsed" : ""
+                          }`}
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target={`#collapse${item.id}`}
@@ -385,9 +384,8 @@ const LegalZoomAI = () => {
                     </h2>
                     <div
                       id={`collapse${item.id}`}
-                      className={`accordion-collapse collapse ${
-                        i === 0 ? "show" : ""
-                      }`}
+                      className={`accordion-collapse collapse ${i === 0 ? "show" : ""
+                        }`}
                       aria-labelledby={`heading${item.id}`}
                       data-bs-parent="#faqAccordion"
                     >
@@ -650,34 +648,27 @@ const LegalZoomAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
+          <div className="row align-items-center justify-content-between mb-1">
+            {/* Text Section */}
+            <div className="col-12 col-md-6 mb-4 mb-md-0 pe-md-4">
               <p className="text-primary">Write better, faster</p>
               <h1>
-                LegalZoom AI: Revolutionizing Legal Services with Artificial
-                Intelligence{" "}
+                LegalZoom AI: Revolutionizing Legal Services with Artificial Intelligence
               </h1>
               <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
               <p>
-                LegalZoom AI is transforming the way individuals and businesses
-                handle their legal needs. This platform leverages artificial
-                intelligence to offer affordable and accessible online legal
-                tools, legal document automation, and more. Whether you are
-                starting a business, drafting contracts, creating a will, or
-                dealing with intellectual property, LegalZoom’s AI-powered legal
-                services make the process simpler and faster. The platform
-                provides everything from business incorporation to legal
-                research, ensuring that users can get the legal support they
-                need without hiring an expensive attorney. With its
-                user-friendly interface and AI-powered document creation,
-                LegalZoom AI is designed to handle a variety of tasks while
-                ensuring compliance and accuracy.
+                LegalZoom AI is transforming the way individuals and businesses handle
+                their legal needs. This platform leverages artificial intelligence to
+                offer affordable and accessible online legal tools, legal document
+                automation, and more. Whether you are starting a business, drafting
+                contracts, creating a will, or dealing with intellectual property,
+                LegalZoom’s AI-powered legal services make the process simpler and
+                faster. The platform provides everything from business incorporation to
+                legal research, ensuring that users can get the legal support they need
+                without hiring an expensive attorney. With its user-friendly interface
+                and AI-powered document creation, LegalZoom AI is designed to handle a
+                variety of tasks while ensuring compliance and accuracy.
               </p>
-
               <div className="mb-3">
                 <a
                   href="https://www.legalzoom.com/country/in"
@@ -689,19 +680,17 @@ const LegalZoomAI = () => {
               </div>
             </div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img src="public\assets\Img\AI for legal\LegalZoom-s1.jpg" style={{ MaxWidth: "100%", height: "300px" }} />
+            {/* Image Section */}
+            <div className="col-12 col-md-6 text-center">
+              <img
+                src="/assets/Img/AI for legal/LegalZoom-s1.jpg"
+                alt="LegalZoom AI"
+                className="img-fluid"
+                style={{ height: "300px", objectFit: "contain" }}
+              />
             </div>
           </div>
+
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>

@@ -6,7 +6,8 @@ import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
 import hirevue1 from "../../../../public/assets/Img/AI for Recruitment/hirevue1.png";
-import hirevue2 from "../../../../public/assets/Img/AI for Recruitment/hirevue2.png";
+import hr1 from "../../../../public/assets/Img/AI for Recruitment/hr-s1.png";
+import hr2 from "../../../../public/assets/Img/AI for Recruitment/hr-s2.png";
 
 // review section data
 const reviews = [
@@ -311,14 +312,14 @@ const HireVue = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src={hirevue1}
+                src={hr1}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={hirevue2}
+                src={hr2}
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

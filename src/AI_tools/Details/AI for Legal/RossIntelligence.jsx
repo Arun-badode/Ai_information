@@ -361,9 +361,8 @@ const Rossntelligence = () => {
                   <div className="accordion-item mb-3" key={item.id}>
                     <h2 className="accordion-header" id={`heading${item.id}`}>
                       <button
-                        className={`accordion-button ${
-                          i !== 0 ? "collapsed" : ""
-                        }`}
+                        className={`accordion-button ${i !== 0 ? "collapsed" : ""
+                          }`}
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target={`#collapse${item.id}`}
@@ -380,9 +379,8 @@ const Rossntelligence = () => {
                     </h2>
                     <div
                       id={`collapse${item.id}`}
-                      className={`accordion-collapse collapse ${
-                        i === 0 ? "show" : ""
-                      }`}
+                      className={`accordion-collapse collapse ${i === 0 ? "show" : ""
+                        }`}
                       aria-labelledby={`heading${item.id}`}
                       data-bs-parent="#faqAccordion"
                     >
@@ -644,27 +642,14 @@ const Rossntelligence = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
+          <div className="row align-items-center justify-content-between mb-1">
             {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
+            <div className="col-12 col-md-6 pe-md-4">
               <p className="text-primary">Write better, faster</p>
               <h1>ROSS Intelligence Overview</h1>
               <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
               <p>
-                ROSS Intelligence is a cutting-edge AI-powered legal research
-                tool that streamlines and accelerates the process of finding and
-                analyzing legal information. Designed for law firms, corporate
-                legal departments, and legal professionals, ROSS uses natural
-                language processing (NLP) and machine learning to provide
-                accurate and relevant legal research results. It helps users
-                quickly search through massive volumes of legal data, ensuring a
-                more efficient, faster, and accurate way to conduct legal
-                research. ROSS’s ability to understand and respond to
-                question-based legal searches provides an intuitive experience
-                that removes the complexity from traditional legal research.
+                ROSS Intelligence is a cutting-edge AI-powered legal research tool that streamlines and accelerates the process of finding and analyzing legal information. Designed for law firms, corporate legal departments, and legal professionals, ROSS uses natural language processing (NLP) and machine learning to provide accurate and relevant legal research results. It helps users quickly search through massive volumes of legal data, ensuring a more efficient, faster, and accurate way to conduct legal research. ROSS’s ability to understand and respond to question-based legal searches provides an intuitive experience that removes the complexity from traditional legal research.
               </p>
 
               <div className="mb-3">
@@ -679,18 +664,16 @@ const Rossntelligence = () => {
             </div>
 
             {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250%",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img src="public\assets\Img\AI for legal\Rossintelligence - s1.jpg" style={{ MaxWidth: "100%", height: "300px" }} />
+            <div className="col-12 col-md-6 text-center mb-5 mb-md-0">
+              <img
+                src="/assets/Img/AI for legal/Rossintelligence - s1.jpg"
+                alt="ROSS Intelligence"
+                className="img-fluid"
+                style={{ height: "300px", objectFit: "contain" }}
+              />
             </div>
           </div>
+
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>
