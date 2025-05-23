@@ -3,6 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import checkpoint from "../../../../public/assets/Img/AI for Cybersecurity/4.png";
+import check1 from "../../../../public/assets/Img/AI for Cybersecurity/Check1.png";
+import check2 from "../../../../public/assets/Img/AI for Cybersecurity/Check2.png";
 
 // review section data
 const reviews = [
@@ -144,14 +146,14 @@ const CheckPointAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
+                src={check1}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
+                src={check2}
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -416,58 +418,41 @@ const CheckPointAI = () => {
 
       case "why-we-use":
         return (
-          <div className="container">
-            <div className="row g-4">
-              <div className="col-12">
-                <div className="custom-card text-light p-5 text-center">
-                  <h3 className="fw-bold mb-4 text-start text-primary">
-                    Why Use Check Point AI?
-                  </h3>
+          <div className="container py-5">
+      <div className="row justify-content-center">
+        <div className="col-12 col-md-10 col-lg-8">
+          <div className="card bg-dark text-light p-4 p-md-5 shadow rounded-4">
+            <h3 className="fw-bold mb-4 text-start text-primary">
+              Why Use Check Point AI?
+            </h3>
 
-                  <ul
-                    className="text-start"
-                    style={{
-                      listStyleType: "disc",
-                      paddingLeft: "1.5rem",
-                      fontSize: "1rem",
-                      lineHeight: "1.5",
-                    }}
-                  >
-                    <li className="mb-3">
-                      Check Point AI combines artificial intelligence with
-                      global threat intelligence to prevent cyber attacks in
-                      real time.
-                    </li>
-                    <li className="mb-3">
-                      Offers a unified security architecture across networks,
-                      endpoints, cloud, and mobile, enabling holistic
-                      protection.
-                    </li>
-                    <li className="mb-3">
-                      Uses advanced behavioral analysis and AI to detect and
-                      block zero-day attacks, ransomware, and other
-                      sophisticated threats.
-                    </li>
-                    <li className="mb-3">
-                      Scalable and enterprise-ready, suitable for organizations
-                      of all sizes across various industries.
-                    </li>
-                    <li className="mb-3">
-                      Centralized management console simplifies administration,
-                      policy enforcement, and threat visibility across
-                      environments.
-                    </li>
-                  </ul>
+            <ul className="text-start list-unstyled ps-3 fs-6 lh-lg">
+              <li className="mb-3">
+                <i className="bi bi-dot"></i> Check Point AI combines artificial intelligence with global threat intelligence to prevent cyber attacks in real time.
+              </li>
+              <li className="mb-3">
+                <i className="bi bi-dot"></i> Offers a unified security architecture across networks, endpoints, cloud, and mobile, enabling holistic protection.
+              </li>
+              <li className="mb-3">
+                <i className="bi bi-dot"></i> Uses advanced behavioral analysis and AI to detect and block zero-day attacks, ransomware, and other sophisticated threats.
+              </li>
+              <li className="mb-3">
+                <i className="bi bi-dot"></i> Scalable and enterprise-ready, suitable for organizations of all sizes across various industries.
+              </li>
+              <li className="mb-3">
+                <i className="bi bi-dot"></i> Centralized management console simplifies administration, policy enforcement, and threat visibility across environments.
+              </li>
+            </ul>
 
-                  <div className="text-center mt-4">
-                    <Button variant="primary" size="sm">
-                      Explore Check Point AI
-                    </Button>
-                  </div>
-                </div>
-              </div>
+            <div className="text-center mt-4">
+              <Button variant="primary" size="sm">
+                Explore Check Point AI
+              </Button>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
         );
 
       case "pros & cons":
@@ -604,34 +589,22 @@ const CheckPointAI = () => {
 
   return (
     <>
-      <div className="bg-dark d-flex  justify-content-between align-items-center ">
-        {/* <a
-          href="/Aitools"
-          className="d-inline-block text-white text-decoration-none ml-3 py-1"
-        >
-          <i className="bi bi-arrow-left me-2"></i>Back to Directory{" "}
-        </a> */}
+      <div className="bg-dark d-flex justify-content-between align-items-center flex-wrap">
         <a
           href="/Aitools"
-          className="d-inline-block text-white text-decoration-none  mt-3 ml-3 py-1 px-2 ms-5 border rounded-sm"
+          className="d-inline-block text-white text-decoration-none mt-3 ml-3 py-1 px-2 ms-5 border rounded-sm"
         >
-          <i className="bi bi-arrow-left me-2"></i>Back  {" "}
+          <i className="bi bi-arrow-left me-2"></i>Back{" "}
         </a>
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
+          <div className="row align-items-center justify-content-between mb-4 flex-wrap">
             {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">
-                Create stunning visuals effortlessly
-              </p>
+            <div className="col-12 col-lg-6 mb-4 mb-lg-0" style={{ paddingRight: "30px" }}>
+              <p className="text-primary">Create stunning visuals effortlessly</p>
               <h1>Check Point AI</h1>
               <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-
               <p>
                 Check Point AI is an advanced cybersecurity solution powered by
                 artificial intelligence (AI) and machine learning (ML). It is
@@ -644,7 +617,6 @@ const CheckPointAI = () => {
                 automated incident response, enabling organizations to maintain
                 a robust security posture across their IT infrastructure.
               </p>
-
               <p>
                 Check Point combines its core cybersecurity features, including
                 next-gen firewall, intrusion prevention system (IPS), and
@@ -654,46 +626,42 @@ const CheckPointAI = () => {
                 security models, helping businesses safeguard their digital
                 assets in an ever-evolving cyber threat landscape.
               </p>
-
-              <div className="mb-3">
-                <span className="badge bg-primary me-2"> Security</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
+              <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
+                <a
+                  href="https://www.checkpoint.com/ai/copilot/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary btn-lg px-4"
+                >
+                  Explore Tool
+                </a>
               </div>
             </div>
-
             {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
+            <div className="col-12 col-lg-6 mb-4 mb-lg-0 text-center">
               <img
                 src={checkpoint}
-                style={{ MaxWidth: "100%", height: "300px" }}
+                className="img-fluid rounded-3"
+                style={{ maxWidth: "100%", height: "auto" }}
+                alt="Check Point AI"
               />
             </div>
           </div>
-          <section style={{ backgroundColor: "", padding: "3rem 0" }}>
+          <section style={{ padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>
               <h2
                 style={{
-                  fontWeight: "semibold",
+                  fontWeight: "600",
                   color: "#fff",
                   marginBottom: "1rem",
                 }}
               >
                 How to Use Check Point AI?
               </h2>
-
               <div className="row g-4">
                 {/* Step 1 */}
-                <div className="col-md-4">
+                <div className="col-12 col-md-4">
                   <div
                     style={{
                       position: "relative",
@@ -704,19 +672,6 @@ const CheckPointAI = () => {
                       height: "100%",
                     }}
                   >
-                    <style>
-                      {`
-          .step1 {
-            position: absolute;
-            bottom: 10px;
-            right: 15px;
-            font-size: 4rem;
-            font-weight: bold;
-            color: #7b61ff;
-            opacity: 0.6;
-          }
-        `}
-                    </style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
                       Deploy Check Point Endpoints
                     </h5>
@@ -725,12 +680,23 @@ const CheckPointAI = () => {
                       AI-powered protection against malware, phishing, and
                       ransomware.
                     </p>
-                    <div className="step1">1</div>
+                    <div
+                      style={{
+                        position: "absolute",
+                        bottom: 10,
+                        right: 15,
+                        fontSize: "4rem",
+                        fontWeight: "bold",
+                        color: "#7b61ff",
+                        opacity: 0.6,
+                      }}
+                    >
+                      1
+                    </div>
                   </div>
                 </div>
-
                 {/* Step 2 */}
-                <div className="col-md-4">
+                <div className="col-12 col-md-4">
                   <div
                     style={{
                       position: "relative",
@@ -741,19 +707,6 @@ const CheckPointAI = () => {
                       height: "100%",
                     }}
                   >
-                    <style>
-                      {`
-          .step2 {
-            position: absolute;
-            bottom: 10px;
-            right: 15px;
-            font-size: 4rem;
-            font-weight: bold;
-            color: #7b61ff;
-            opacity: 0.6;
-          }
-        `}
-                    </style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
                       Utilize AI for Proactive Threat Prevention
                     </h5>
@@ -762,12 +715,23 @@ const CheckPointAI = () => {
                       block zero-day attacks and advanced persistent threats
                       before damage occurs.
                     </p>
-                    <div className="step2">2</div>
+                    <div
+                      style={{
+                        position: "absolute",
+                        bottom: 10,
+                        right: 15,
+                        fontSize: "4rem",
+                        fontWeight: "bold",
+                        color: "#7b61ff",
+                        opacity: 0.6,
+                      }}
+                    >
+                      2
+                    </div>
                   </div>
                 </div>
-
                 {/* Step 3 */}
-                <div className="col-md-4">
+                <div className="col-12 col-md-4">
                   <div
                     style={{
                       position: "relative",
@@ -778,19 +742,6 @@ const CheckPointAI = () => {
                       height: "100%",
                     }}
                   >
-                    <style>
-                      {`
-          .step3 {
-            position: absolute;
-            bottom: 10px;
-            right: 15px;
-            font-size: 4rem;
-            font-weight: bold;
-            color: #7b61ff;
-            opacity: 0.6;
-          }
-        `}
-                    </style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
                       Manage Security with Check Point Infinity Console
                     </h5>
@@ -799,21 +750,31 @@ const CheckPointAI = () => {
                       security policies, and get insights across your network
                       and cloud environments.
                     </p>
-                    <div className="step3">3</div>
+                    <div
+                      style={{
+                        position: "absolute",
+                        bottom: 10,
+                        right: 15,
+                        fontSize: "4rem",
+                        fontWeight: "bold",
+                        color: "#7b61ff",
+                        opacity: 0.6,
+                      }}
+                    >
+                      3
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </section>
-
           {/* Tab Navigation */}
-          <ul className="nav nav-tabs custom-tabs mb-4">
+          <ul className="nav nav-tabs custom-tabs mb-4 flex-wrap">
             {[
               "features",
               "screenshots",
               "reviews",
               "FAQs",
-
               "why-we-use",
               "pros & cons",
               "alternative",
@@ -828,24 +789,8 @@ const CheckPointAI = () => {
               </li>
             ))}
           </ul>
-
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
-
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with Check Point AI ?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. free trial available.
-            </small>
-          </div>
         </div>
       </div>
     </>
