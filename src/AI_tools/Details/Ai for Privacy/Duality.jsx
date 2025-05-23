@@ -3,6 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import d from "../../../../public/assets/Img/_AI for Privacy and Data Protection/4.png"
+import DualityImg from "../../../../public/assets/Img/AI for Privacy/3.jpg"
+import DualitySS from '../../../../public/assets/Img/AI for Privacy/DualitySS1.png';
+import DualitySS2 from '../../../../public/assets/Img/AI for Privacy/DualitySS2.png'
 
 // review section data
 const reviews = [
@@ -130,14 +133,14 @@ const DualityAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
-                alt=""
+                src={DualitySS}
+                alt="Duality"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
+                src={DualitySS2}
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -684,9 +687,13 @@ const DualityAI = () => {
               </p>
 
               <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
+                <a
+                                 href=" https://www.duality.ai/"
+                                 rel="noopener noreferrer"
+                                 className="btn btn-primary me-2"
+                               >
+                                 Explore Tool
+                               </a>
               </div>
             </div>
 
@@ -696,7 +703,7 @@ const DualityAI = () => {
               className="order-1 order-md-2 mb-4 mb-md-0"
             >
               <img
-                src={d}
+                src={DualityImg}
                 className="img-fluid rounded-3"
                 style={{ maxWidth: "80%", height: "auto" }}
                 alt="Quizlet AI platform illustration"

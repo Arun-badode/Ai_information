@@ -8,33 +8,39 @@ const AIContact = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {/* Left column: Info */}
             <div className="md:col-span-1">
-              <h2 className="font-bold mb-3">Get in Touch</h2>
+              <h2 className="font-bold mb-3">Contact Us</h2>
               <p className="mb-4">
-                Have questions or feedback? We'd love to hear from you. Fill out
-                the form below or reach out through our social channels.
+               If you'd like to know more about our services, or if you're interested in working with us, feel free to reach out. We’d love to discuss how we can help you achieve your business goals.
               </p>
 
               <p className="mb-2">
                 <i className="text-primary bi bi-envelope-fill me-2"></i>
                 <a
-                  href="mailto:contact@example.com"
+                  href="mailto:info@kiaantechnology.com"
                   className="text-light no-underline"
                 >
-                  aitools@gmail.com
+                 info@kiaantechnology.com
+
                 </a>
               </p>
-              <p className="mb-2">
+              {/* <p className="mb-2">
                 <i className="text-primary bi bi-telephone-fill me-2"></i>
                 <a href="tel:+15551234567" className="text-light no-underline">
                   +1 (555) 123-4567
                 </a>
+              </p> */}
+              <p className="mb-2">
+                
+                <a href="http://www.kiaantechnology.com" className="text-light no-underline">
+                 kiaantechnology.com
+                </a>
               </p>
-              <p className="mb-3">
+              {/* <p className="mb-3">
                 <i className="text-primary bi bi-geo-alt-fill me-2"></i>
                 123 AI Street, Tech City, TC 12345
-              </p>
+              </p> */}
 
-              <div className="mt-4">
+              {/* <div className="mt-4">
                 <h4>Follow us</h4>
                 <a href="#" className="text-primary text-2xl me-3">
                   <i className="bi bi-twitter"></i>
@@ -48,7 +54,7 @@ const AIContact = () => {
                 <a href="#" className="text-primary text-2xl">
                   <i className="bi bi-instagram"></i>
                 </a>
-              </div>
+              </div> */}
             </div>
 
             {/* Right column: Form */}

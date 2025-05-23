@@ -3,6 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import Tidioimg from '../../../../public/assets/Img/AI Chatbots & Assistants/34.png'
+import tidioSS1 from '../../../../public/assets/Img/AI Chatbots & Assistants/tidioSS1.png'
+import tidioSS2 from '../../../../public/assets/Img/AI Chatbots & Assistants/tidioSS2.png'
 
 
 // review section data
@@ -133,15 +136,15 @@ const Tidio = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src=""
-                alt="Screenshot 1"
+                src={tidioSS1}
+                alt="tideo"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
-                src=""
-                alt="Screenshot 2"
+                src={tidioSS2}
+                alt="tideo"
                 className="img-fluid rounded-3"
               />
             </div>
@@ -640,12 +643,23 @@ const Tidio = () => {
                 communications across various channels, including websites,
                 social media platforms, and email, all in one place.
               </p>
+
+                <div className="mb-3">
+                <a
+                                 href="https://www.tidio.com/?a_bucket=sem&a_source=google&a_g_campaignid=16725204475&a_g_keyword=tido%20ai&a_g_creative=725984140694&a_type=brand&utm_source=google&utm_medium=cpc&utm_campaign=16725204475&utm_term=tido%20ai&hsa_acc=1286770856&hsa_cam=16725204475&hsa_grp=172546562819&hsa_ad=725984140694&hsa_src=g&hsa_tgt=kwd-2259643278673&hsa_kw=tido%20ai&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=16725204475&gbraid=0AAAAADRcL5619gObhmEEg27VeqRit1iTX&gclid=Cj0KCQjwlrvBBhDnARIsAHEQgOSUe4BgXY6qAcgrL_r6prA11sucAnvPFvWXKuUFsMD-cMd6YQwrlGwaAkU1EALw_wcB"
+                                 rel="noopener noreferrer"
+                                 className="btn btn-primary me-2"
+                               >
+                                 Explore Tool
+                               </a>
+              </div>
             </div>
+            
 
             {/* Right side (Image Section) */}
             <div style={{ flex: 1, textAlign: "center" }}>
               <img
-                src="https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2024/05/a-robot-coming-out-of-a-laptop-screen-with-the-perplexity-ai-logo-in-its-hand.jpg"
+                src={Tidioimg}
                 className="img-fluid rounded-3"
                 style={{ maxWidth: "80%", height: "auto" }}
               />

@@ -1194,10 +1194,10 @@ const CategoriesNavbar = () => {
                     <h6>
                       Content Generation <FaPencilAlt size={20} />
                     </h6>
-                    <Link to="/"></Link>
-                    <Link to="/"></Link>
-                    <Link to="/"></Link>
-                    <Link to="/"></Link>
+                    <Link to="/Clara">Clara AI</Link>
+                    <Link to="/Clockwise ">Clockwise AI</Link>
+                    <Link to="/Kronologic">Kromologic AI</Link>
+                    <Link to="/Motion">Motion AI</Link>
                     <Link to="/"></Link>
                     <Link to="/"></Link>
                   </div>
@@ -1209,11 +1209,11 @@ const CategoriesNavbar = () => {
                     <h6>
                       Content Generation <FaPencilAlt size={20} />
                     </h6>
-                    <Link to="/"></Link>
-                    <Link to="/"></Link>
-                    <Link to="/"></Link>
-                    <Link to="/"></Link>
-                    <Link to="/"></Link>
+                    <Link to="/Reclaim">Reclaim Ai</Link>
+                    <Link to="/Schedular"> Scheduler AI</Link>
+                    <Link to="/Sidekick">Sidekick AI</Link>
+                    <Link to="/Trevor">Trevor AI</Link>
+                    <Link to="/Adam">Adam AI</Link>
                     <Link to="/"></Link>
                   </div>
                 </div>
