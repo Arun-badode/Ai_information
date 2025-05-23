@@ -825,6 +825,7 @@ const CategoriesNavbar = () => {
                     
 
                     <Link to="/ClickupAI">ClickupAI</Link>
+                    <Link to="/QlikSenseAI">Qlik Sense AI</Link>
                   </div>
 
                   {/* Content Generation Column */}
@@ -841,7 +842,7 @@ const CategoriesNavbar = () => {
                     <Link to="/CodaAI">Coda AI</Link>
                     <Link to="/MiroAI">Miro AI</Link>
                     <Link to="/OtterAI">Otter AI</Link>
-                    <Link to="/QlikSenseAI">Qlik Sense AI</Link>
+                    
                   </div>
 
                   {/* Content Generation Column */}
