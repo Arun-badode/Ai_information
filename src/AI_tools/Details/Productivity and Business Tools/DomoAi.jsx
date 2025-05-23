@@ -135,14 +135,14 @@ const DomoAI = () => {
             <div className="col-md-6">
               <img
                 src={doma1}
-                alt="screenshot"
+                alt="Domo AI"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={doma2}
-                alt="screenshot"
+                alt="Domo AI"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

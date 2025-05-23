@@ -137,13 +137,14 @@ const HeapAnalytics = () => {
             <div className="col-md-6">
               <img
                 src={heap1}
-                alt=""
+                alt="Heap Analytics AI"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={heap2}
+                alt="Heap Analytics AI"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

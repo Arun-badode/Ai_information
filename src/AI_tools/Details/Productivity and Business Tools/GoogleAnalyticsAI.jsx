@@ -137,14 +137,14 @@ const GoogleAnalyticsAI = () => {
             <div className="col-md-6">
               <img
                 src={googly1}
-                alt="screenshot1"
+                alt="Google Analytics AI"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={google2}
-                alt="screenshot2"
+                alt="Google Analytics AI"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

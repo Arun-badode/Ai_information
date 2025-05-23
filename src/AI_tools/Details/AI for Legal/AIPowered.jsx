@@ -134,13 +134,14 @@ const AIPowered = () => {
             <div className="col-md-6">
               <img
                 src="https://www.litera.com/sites/default/files/styles/medium_hq/public/image/2024-01/transact_screenshot_1.png.webp?itok=rFbQB5ui"
-                alt=""
+                alt="Power AI"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src="https://www.litera.com/sites/default/files/styles/medium_hq/public/image/2023-12/litera-desktop-ribbon.png.webp?itok=6qPtqaO2"
+                alt="Power AI"
                 className="img-fluid rounded-3  w-100 h-50 object-fit-cover"
               />
             </div>

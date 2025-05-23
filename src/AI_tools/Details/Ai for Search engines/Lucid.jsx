@@ -685,10 +685,11 @@ const Lucid = () => {
           <div className=" row d-flex align-items-center justify-content-between mb-1">
             {/* Left side (Text Section) */}
             <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
+             
+              className="col-lg-6 "
             >
-              <p className="text-primary">
+              <div className="col-md-12 ">
+                <p className="text-primary">
                 Create stunning visuals effortlessly
               </p>
               <h1>Lucid Search AI</h1>
@@ -705,6 +706,7 @@ const Lucid = () => {
                 AI is a powerful tool for SEO, content discovery, and web
                 scraping.
               </p>
+              </div>
 
              <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
         <a
@@ -855,7 +857,7 @@ const Lucid = () => {
                   </div>
                 </div>
               </div>
-              );
+           
             </div>
           </section>
 

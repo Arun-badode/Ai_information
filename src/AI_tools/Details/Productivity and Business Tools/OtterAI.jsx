@@ -5,6 +5,8 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import otter from "../../../../public/assets/Img/AI for Business/5.png";
+import otter1 from "../../../../public/assets/Img/AI for Business/otter1.png";
+import otter2 from "../../../../public/assets/Img/AI for Business/otter2.png";
 
 // review section data
 const reviews = [
@@ -131,14 +133,14 @@ const OtterAI = () => {
             <div className="col-md-6">
               <img
                 src={otter1}
-                alt="Screenshot 1"
+                alt="Otter"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={deatilimage}
-                alt="Screenshot 2"
+                src={otter2}
+                alt="Otter"
                 className="img-fluid rounded-3"
               />
             </div>
