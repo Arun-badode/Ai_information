@@ -515,7 +515,7 @@ const App = () => {
         <Route path="/Govison" element={<Govison />}></Route>
         <Route path="/Grabango" element={<Grabango />}></Route>
         <Route path="/Malong" element={<Malong />}></Route>
-        <Route path="/ensaSystem" element={<PensaSystem />}></Route>
+        <Route path="/PensaSystem" element={<PensaSystem />}></Route>
         <Route path="/Sensei" element={<Sensei />}></Route>
         <Route
           path="/StandardCognition"

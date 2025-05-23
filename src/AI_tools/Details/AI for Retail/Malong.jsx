@@ -872,41 +872,41 @@ const Malong = () => {
       <div className="bg-dark text-light min-vh-100 py-5">
 <div className="container">
   <div className="row align-items-center justify-content-between mb-5">
-    {/* Left side (Text Section) */}
-    <div className="col-lg-6 col-12 mb-4 mb-lg-0">
-      <p className="text-primary">Write better, faster</p>
-      <h1>Malong AI:</h1>
-      <div className="text-warning mb-2">⭐⭐⭐⭐⭐</div>
-      <p>
-        Malong AI is an advanced visual recognition platform powered by AI and
-        machine learning. It enables retailers and ecommerce platforms to optimize
-        inventory management, improve product categorization, and enhance
-        operational efficiency.
-      </p>
-      <p>
-        Malong AI uses deep learning and computer vision technology to automate
-        the identification, classification, and tracking of products in real-time.
-      </p>
-      <a
-        href="https://malongtech.com/en/home.html"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="btn btn-primary mt-3"
-      >
-        Explore Tool
-      </a>
-    </div>
-
-    {/* Right side (Image Section) */}
-    <div className="col-lg-6 col-12 text-center">
-      <img
-        src={malong}
-        alt="Malong AI"
-        className="img-fluid"
-        style={{ maxHeight: "300px", objectFit: "contain" }}
-      />
-    </div>
+  {/* Image Section – comes first on mobile, second on desktop */}
+  <div className="col-12 col-lg-6 order-1 order-lg-2 text-center mb-4 mb-lg-0">
+    <img
+      src={malong}
+      alt="Malong AI"
+      className="img-fluid"
+      style={{ maxHeight: "300px", objectFit: "contain" }}
+    />
   </div>
+
+  {/* Text Section – comes second on mobile, first on desktop */}
+  <div className="col-12 col-lg-6 order-2 order-lg-1">
+    <p className="text-primary">Write better, faster</p>
+    <h1>Malong AI:</h1>
+    <div className="text-warning mb-2">⭐⭐⭐⭐⭐</div>
+    <p>
+      Malong AI is an advanced visual recognition platform powered by AI and
+      machine learning. It enables retailers and ecommerce platforms to optimize
+      inventory management, improve product categorization, and enhance
+      operational efficiency.
+    </p>
+    <p>
+      Malong AI uses deep learning and computer vision technology to automate
+      the identification, classification, and tracking of products in real-time.
+    </p>
+    <a
+      href="https://malongtech.com/en/home.html"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="btn btn-primary mt-3"
+    >
+      Explore Tool
+    </a>
+  </div>
+</div>
 
   {/* Feature Section */}
   <section style={{ backgroundColor: "#34495e", padding: "3rem 0" }}>
