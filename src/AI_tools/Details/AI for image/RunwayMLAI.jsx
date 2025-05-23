@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
+import runwaySS1 from '../../../../public/assets/Img/AI from Image/runwaySS1.png';
+import runwaySS2 from '../../../../public/assets/Img/AI from Image/runwaySS2.png';
+
 
 // review section data
 const reviews = [
@@ -355,14 +358,15 @@ const RunwayMLAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.gizmochina.com/wp-content/uploads/2023/06/Screenshot-2023-06-23-165608.png"
-                alt=""
+                src={runwaySS1}
+                alt="runway"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={Rephrase}
+                src={runwaySS2}
+                alt="runway"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

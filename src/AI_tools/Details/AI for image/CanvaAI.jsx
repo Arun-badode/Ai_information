@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
+import canvaSS1 from '../../../../public/assets/Img/AI from Image/canvaSS1.png';
+import canvaSS2 from '../../../../public/assets/Img/AI from Image/canvaSS2.png';
+
 
 // review section data
 const reviews = [
@@ -371,14 +374,15 @@ const CanvaAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.gizmochina.com/wp-content/uploads/2023/06/Screenshot-2023-06-23-165608.png"
-                alt=""
+                src={canvaSS1}
+                alt="canva"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={Rephrase}
+                src={canvaSS2}
+                alt="canva"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
