@@ -5,6 +5,8 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
+import hr1 from "../../../../public/assets/Img/AI for Recruitment/hr-s1.png";
+import hr2 from "../../../../public/assets/Img/AI for Recruitment/hr-s2.png";
 
 // review section data
 const reviews = [
@@ -317,14 +319,15 @@ const Hiretual = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
-                alt=""
+                src={hr1}
+                alt="hirevue"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
+                src={hr2}
+                alt="hirevue"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -754,56 +757,50 @@ const Hiretual = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>Hiretual AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Hiretual AI is a next-generation AI-powered recruitment platform
-                that helps organizations optimize their talent acquisition and
-                candidate sourcing processes. By utilizing artificial
-                intelligence, machine learning, and data-driven algorithms,
-                Hiretual streamlines recruitment, allowing businesses to find
-                the best talent faster and more efficiently.
-              </p>
+      <div className="row align-items-center mb-1 flex-column-reverse flex-md-row">
+  {/* Text Section (Now below image on all screens) */}
+  <div className="col-md-6 mt-3 mt-md-0">
+    <p className="text-primary">Write better, faster</p>
+    <h1>Hiretual AI</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      Hiretual AI is a next-generation AI-powered recruitment platform
+      that helps organizations optimize their talent acquisition and
+      candidate sourcing processes. By utilizing artificial intelligence,
+      machine learning, and data-driven algorithms, Hiretual streamlines
+      recruitment, allowing businesses to find the best talent faster and
+      more efficiently.
+    </p>
+    <p>
+      Unlike traditional recruiting platforms, Hiretual AI offers
+      automated sourcing, predictive analytics, and AI-based candidate
+      matching, ensuring a data-driven and bias-free recruitment process.
+      The platform integrates seamlessly with existing HR tools,
+      including Applicant Tracking Systems (ATS), CRM, and HR software,
+      making it an essential tool for modern recruiters.
+    </p>
+    <div className="mb-3">
+      <a
+        href="https://hireez.com"
+        rel="noopener noreferrer"
+        className="btn btn-primary me-2"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
 
-              <p>
-                Unlike traditional recruiting platforms, Hiretual AI offers
-                automated sourcing, predictive analytics, and AI-based candidate
-                matching, ensuring a data-driven and bias-free recruitment
-                process. The platform integrates seamlessly with existing HR
-                tools, including Applicant Tracking Systems (ATS), CRM, and HR
-                software, making it an essential tool for modern recruiters.
-              </p>
+  {/* Image Section (Now above text on all screens) */}
+  <div className="col-md-6 text-center">
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
+      alt="Hiretual AI"
+      className="img-fluid"
+      style={{ height: "300px", objectFit: "cover" }}
+    />
+  </div>
+</div>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
-            </div>
-
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
-          </div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Create Videos in 3 Simple Steps</p>
@@ -954,20 +951,7 @@ const Hiretual = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with Hiretual AI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
+        
         </div>
       </div>
     </>

@@ -10,6 +10,7 @@ import ImageMindAI from "./AI_tools/ImageMindAI";
 import AiLearningHub from "./AI_tools/AiLearningHub";
 import AIComparisonPage from "./AI_tools/AIComparisonPage";
 import AboutPage from "./AI_tools/AboutUs";
+import AiBlog from "./AI_tools/AiBlog";
 
 
 import AIContact from "./AI_tools/AIContact";

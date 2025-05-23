@@ -5,6 +5,9 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
+import ver1 from "../../../../public/assets/Img/AI for Recruitment/ver-s1.png";
+import ver2 from "../../../../public/assets/Img/AI for Recruitment/ver-s2.png";
+
 
 // review section data
 const reviews = [
@@ -309,14 +312,15 @@ const VerVoe = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
-                alt=""
+                src={ver1}
+                alt="vervoe"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
+                src={ver2}
+                alt="vervoe"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -756,56 +760,52 @@ const VerVoe = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>Vervoe AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Vervoe AI is an AI-powered recruitment platform designed to help
-                organizations streamline their talent acquisition and hiring
-                processes. It leverages machine learning algorithms, deep
-                learning, and predictive analytics to automate the recruitment
-                process from candidate sourcing to job matching, ensuring a
-                smarter, faster, and more efficient hiring experience.
-              </p>
+   <div className="container mb-4">
+  <div className="row flex-column-reverse flex-md-row align-items-center">
+    {/* Text Column - Left on Desktop, Bottom on Mobile */}
+    <div className="col-md-6 mt-3 mt-md-0">
+      <p className="text-primary">Write better, faster</p>
+      <h1>Vervoe AI</h1>
+      <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+      <p>
+        Vervoe AI is an AI-powered recruitment platform designed to help
+        organizations streamline their talent acquisition and hiring
+        processes. It leverages machine learning algorithms, deep learning,
+        and predictive analytics to automate the recruitment process from
+        candidate sourcing to job matching, ensuring a smarter, faster, and
+        more efficient hiring experience.
+      </p>
+      <p>
+        The platform enables businesses to source, engage, and assess
+        candidates without bias, based on their skills and competency,
+        rather than traditional resumes and qualifications. By focusing on
+        skills-based hiring, Vervoe ensures that organizations can make
+        better hiring decisions while improving candidate experience.
+      </p>
+      <div className="mb-3">
+        <a
+          href="https://vervoe.com/"
+          rel="noopener noreferrer"
+          className="btn btn-primary me-2"
+        >
+          Explore Tool
+        </a>
+      </div>
+    </div>
 
-              <p>
-                The platform enables businesses to source, engage, and assess
-                candidates without bias, based on their skills and competency,
-                rather than traditional resumes and qualifications. By focusing
-                on skills-based hiring, Vervoe ensures that organizations can
-                make better hiring decisions while improving candidate
-                experience.
-              </p>
+    {/* Image Column - Right on Desktop, Top on Mobile */}
+    <div className="col-md-6 text-center mb-3 mb-md-0">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
+        alt="Vervoe AI"
+        className="img-fluid"
+        style={{ height: "300px", objectFit: "cover" }}
+      />
+    </div>
+  </div>
+</div>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
-            </div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
-          </div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Create Videos in 3 Simple Steps</p>
@@ -959,20 +959,7 @@ const VerVoe = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with VerVoe?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
+        
         </div>
       </div>
     </>
