@@ -838,50 +838,46 @@ const BrieflyAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>Briefly AI:</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Briefly AI is an advanced AI-powered content summarization tool
-                designed to help users quickly summarize long-form content into
-                concise briefs. It is ideal for writers, students, researchers,
-                content creators, journalists, marketers, and anyone needing to
-                distill large volumes of information into digestible formats.
-              </p>
+         <div className="row align-items-center justify-content-between mb-1">
+  {/* Image Section - comes first on mobile */}
+  <div
+    className="col-12 col-md-6 order-1 order-md-2 text-center mb-4 mb-md-0"
+    style={{ height: "250px" }}
+  >
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
+      alt="Briefly AI"
+      style={{ maxWidth: "100%", height: "300px" }}
+    />
+  </div>
 
-              <div className="mb-3">
-                <a
-                                 href="https://www.brieflyai.com"
-                                 rel="noopener noreferrer"
-                                 className="btn btn-primary me-2"
-                               >
-                                 Explore Tool
-                               </a>
-              </div>
-            </div>
+  {/* Text Section - comes second on mobile, first on desktop */}
+  <div
+    className="col-12 col-md-6 order-2 order-md-1"
+    style={{ paddingRight: "30px" }}
+  >
+    <p className="text-primary">Write better, faster</p>
+    <h1>Briefly AI:</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      Briefly AI is an advanced AI-powered content summarization tool
+      designed to help users quickly summarize long-form content into
+      concise briefs. It is ideal for writers, students, researchers,
+      content creators, journalists, marketers, and anyone needing to
+      distill large volumes of information into digestible formats.
+    </p>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
-          </div>
+    <div className="mb-3">
+      <a
+        href="https://www.brieflyai.com"
+        rel="noopener noreferrer"
+        className="btn btn-primary me-2"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
+</div>
 
           <section style={{ backgroundColor: "#1b1f2b", padding: "3rem 0" }}>
             <div className="container text-center">

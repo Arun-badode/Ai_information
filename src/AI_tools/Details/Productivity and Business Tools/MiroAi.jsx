@@ -579,7 +579,7 @@ const MiroAi = () => {
   {/* Left side (Text Section) */}
   <div style={{ flex: 1, paddingRight: "30px" }}>
     <img
-      src=""// replace with your imported logo variable
+      src={miroLogo} // replace with your imported logo variable
       alt="Miro Logo"
       className="me-3"
       style={{ width: "60px" }}

@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import jasper from '../../../../public/assets/Img/AI For Chatbots/jasper.png';
+import jasper1 from '../../../../public/assets/Img/AI For Chatbots/jasper1.png';
+import jasper2 from '../../../../public/assets/Img/AI For Chatbots/jasper2.png';
 
 import { Accordion } from "react-bootstrap";
 
-import "../../ImageMindAI.css";
+
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 
 // review section data
@@ -135,14 +138,15 @@ const JasperAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src=" https://octet-gatsby.in2.cdn-alpha.com/wp-content/uploads/2024/11/Image-2024-11-04T162018.492.jpg"
-                alt=""
+                src={jasper1}
+                alt="jasper1"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://academyofanimatedart.com/wp-content/uploads/2023/01/Jasper-ai-website-1024x536.jpg"
+                src={jasper2}
+                alt="jasper2"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -626,7 +630,7 @@ const JasperAI = () => {
 
               <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
         <a
-          href="https://clickup.com/blog/jasper-ai-vs-writesonic/?utm_source=google&utm_medium=cpc&utm_campaign=gs_cpc_arlv_nnc_nb_trial_all-devices_troas_lp_x_all-departments_x_taskmanagement&utm_content=all-countries_kw-target_text_all-industries_all-features_all-use-cases_ai_phrase&utm_term=b_&utm_creative=689516930805_Challenger-SMB-15052023_rsa&utm_custom1=&utm_custom2=&utm_lptheme=&utm_lpmod=&gad_source=1&gad_campaignid=20991268246&gbraid=0AAAAACR5vIKIHssgjqxKdwWIbEC6WC4zw&gclid=Cj0KCQjw0LDBBhCnARIsAMpYlApE3524hTNsJZLJTRxyqh7hIRnc74-y22EzdaINyH0GIl1DVM3AR9kaAhpHEALw_wcB"
+          href="https://www.jasper.ai/"
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-primary btn-lg px-4"
@@ -647,8 +651,8 @@ const JasperAI = () => {
               className="col-6 col-md-12 mb-5  "
             >
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6-i71Gg0MXCtMNEP6dn_xXIWE28jSgDuDJw&s"
-                style={{ MaxWidth: "100%", height: "300px" }}
+                src={jasper}
+              
               />
             </div>
           </div>
