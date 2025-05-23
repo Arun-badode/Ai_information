@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
+import artbreederSS1 from '../../../../public/assets/Img/AI from Image/artbreederSS1.png';
+import artbreederSS2 from '../../../../public/assets/Img/AI from Image/artbreederSS2.png';
+
 
 // review section data
 const reviews = [
@@ -133,14 +136,15 @@ const ArtbreederAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
-                alt=""
+                src={artbreederSS1}
+                alt="artbreeder"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
+                src={artbreederSS2}
+                alt="artbreeder"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -653,7 +657,7 @@ const ArtbreederAI = () => {
   {/* Left side (Text Section) */}
   <div className="col-lg-6 col-12 order-lg-1 order-2 pe-lg-4">
     <p className="text-primary mb-2">Write better, faster</p>
-    <h1 className="mb-3">Artbreeder: The Complete AI Art Breeding Guide</h1>
+    <h1 className="mb-3">Artbreeder</h1>
     <div className="text-warning mb-3">⭐⭐⭐⭐⭐</div>
     <p className="mb-3">
       Artbreeder is an innovative platform that uses AI and machine
