@@ -247,7 +247,7 @@ const CategoriesNavbar = () => {
                       Design Tools <SiAntdesign size={20} />
                     </h6>
                     <Link to="/ResunateAI">ResunateAI</Link>
-                    <Link to="/TealHQAI">TealHQAI</Link>
+             
                     <Link to="/HirationAI">HirationAI</Link>
                     <Link to="/RessumeAI">RessumeAI</Link>
                     <Link to="/JobScanAI">JobScanAI</Link>
@@ -2011,15 +2011,7 @@ const CategoriesNavbar = () => {
                         >
                           ResunateAI
                         </Link>
-                        <Link
-                          to="/TealHQAI"
-                          onClick={() => {
-                            setShowMobileMenu(false);
-                            setActiveDropdown(null);
-                          }}
-                        >
-                          TealHQAI
-                        </Link>
+                    
                         <Link
                           to="/HirationAI"
                           onClick={() => {
@@ -2263,42 +2255,50 @@ const CategoriesNavbar = () => {
                         >
                           Copy AI
                         </Link>
-                        <a
-                          href="#"
+
+                             <Link
+                          to="/Writtersonic"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
                           }}
                         >
-                          AI Writer 2
-                        </a>
-                        <a
-                          href="#"
+                          Writtersonic AI
+                        </Link>
+
+
+                           <Link
+                          to="/Ryter"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
                           }}
                         >
-                          AI Writer 3
-                        </a>
-                        <a
-                          href="#"
+                          Ryter AI
+                        </Link>
+
+                               <Link
+                          to="/Hyperwriter"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
                           }}
                         >
-                          AI Writer 4
-                        </a>
-                        <a
-                          href="#"
+                          Hyperwriter AI
+                        </Link>
+
+                     <Link
+                          to="/Sudowriter"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
                           }}
                         >
-                          AI Writer 5
-                        </a>
+                          Sudowriter AI
+                        </Link>
+  
+
+                       
                       </div>
 
                       {/* Design Tools Column */}
@@ -2309,51 +2309,54 @@ const CategoriesNavbar = () => {
                         <h6>
                           Design Tools <SiAntdesign size={20} />
                         </h6>
-                        <a
-                          href="#"
+                               
+                     <Link
+                          to="/Wordtune"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
                           }}
                         >
-                          Logo 1
-                        </a>
-                        <a
-                          href="#"
+                          Wordtune AI
+                        </Link>
+        
+
+
+
+                     <Link
+                          to="/Spingboat"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
                           }}
                         >
-                          Logo 2
-                        </a>
-                        <a
-                          href="#"
+                        Spingboat AI
+                        </Link>
+  
+
+
+                     <Link
+                          to="/Contentbot"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
                           }}
                         >
-                          Logo 3
-                        </a>
-                        <a
-                          href="#"
+                         Contentbot AI
+                        </Link>
+  
+
+                     <Link
+                          to="/Longshot"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
                           }}
                         >
-                          Logo 4
-                        </a>
-                        <a
-                          href="#"
-                          onClick={() => {
-                            setShowMobileMenu(false);
-                            setActiveDropdown(null);
-                          }}
-                        >
-                          Logo 5
-                        </a>
+                          Longshot AI
+                        </Link>
+  
+
                       </div>
                     </div>
                   </div>
@@ -3992,49 +3995,49 @@ const CategoriesNavbar = () => {
                           Content Generation <FaPencilAlt size={20} />
                         </h6>
                         <Link
-                          to="/MeetingTool1"
+                          to="/Clara"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
                           }}
                         >
-                          Meeting Tool 1
+                          Clara
                         </Link>
                         <Link
-                          to="/MeetingTool2"
+                          to="/Clockwise"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
                           }}
                         >
-                          Meeting Tool 2
+                          Clockwise AI
                         </Link>
                         <Link
-                          to="/MeetingTool3"
+                          to="/Kronologic"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
                           }}
                         >
-                          Meeting Tool 3
+                          Kronologic AI
                         </Link>
                         <Link
-                          to="/MeetingTool4"
+                          to="/Motion"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
                           }}
                         >
-                          Meeting Tool 4
+                          Motion Ai
                         </Link>
                         <Link
-                          to="/MeetingTool5"
+                          to="/Reclaim"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
                           }}
                         >
-                          Meeting Tool 5
+                          Reclaim AI
                         </Link>
                       </div>
 
@@ -4047,32 +4050,44 @@ const CategoriesNavbar = () => {
                           Design Tools <SiAntdesign size={20} />
                         </h6>
                         <Link
-                          to="/MeetingDesign1"
+                          to="/Schedular"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
                           }}
                         >
-                          Meeting Design 1
+                          Schedular AI
                         </Link>
                         <Link
-                          to="/MeetingDesign2"
+                          to="/Adam"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
                           }}
                         >
-                          Meeting Design 2
+                          Adam AI
                         </Link>
                         <Link
-                          to="/MeetingDesign3"
+                          to="/Trevor"
                           onClick={() => {
                             setShowMobileMenu(false);
                             setActiveDropdown(null);
                           }}
                         >
-                          Meeting Design 3
+                          Trevor
                         </Link>
+
+                          <Link
+                          to="/Sidekick"
+                          onClick={() => {
+                            setShowMobileMenu(false);
+                            setActiveDropdown(null);
+                          }}
+                        >
+                          Sidekick AI
+                        </Link>
+
+
                       </div>
                     </div>
                   </div>
