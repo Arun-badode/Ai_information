@@ -11,6 +11,7 @@ import AiLearningHub from "./AI_tools/AiLearningHub";
 import AIComparisonPage from "./AI_tools/AIComparisonPage";
 import AboutPage from "./AI_tools/AboutUs";
 
+
 import AIContact from "./AI_tools/AIContact";
 import TermsOfService from "./AI_tools/TermsOfService";
 import PrivacyPolicy from "./AI_tools/PrivacyPolicy";
@@ -292,6 +293,7 @@ import Schedular from "./AI_tools/Details/Ai for meeting/Scheduler";
 import Adam from "./AI_tools/Details/Ai for meeting/Adam";
 import Trevor from "./AI_tools/Details/Ai for meeting/Trevor";
 import Sidekick from "./AI_tools/Details/Ai for meeting/Sidekick";
+import AIBlog from "./AI_tools/AiBlog";
 
 const App = () => {
   return (
@@ -308,7 +310,7 @@ const App = () => {
         <Route path="/aicomparisonpage" element={<AIComparisonPage />} />
         <Route path="/aboutus" element={<AboutPage />} />
         <Route path="/ainewspage" element={<AINewsPage />} />
-        <Route path="/aiblog" element={<AiBlog />} />
+        <Route path="/aiblog" element={<AIBlog/>} />
         {/* <Route path="/news/:id" element={<AINewsDetail />} /> */}
         <Route path="/aicontact" element={<AIContact />} />
         <Route path="/termsofservice" element={<TermsOfService />} />
