@@ -344,13 +344,14 @@ const Sensei = () => {
             <div className="col-md-6">
               <img
                 src={se1}
-                alt=""
+                alt="sensai"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={se2}
+                alt="sensai"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

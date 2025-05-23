@@ -341,13 +341,14 @@ const Zippin = () => {
             <div className="col-md-6">
               <img
                 src={zi1}
-                alt=""
+                alt="trogo"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={zi2}
+                alt="trigo"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

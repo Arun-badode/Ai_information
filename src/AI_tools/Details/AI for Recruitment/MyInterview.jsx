@@ -5,6 +5,8 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
+import myin1 from "../../../../public/assets/Img/AI for Recruitment/myin-s1.png";
+import myin2 from "../../../../public/assets/Img/AI for Recruitment/myin-s2.png";
 
 // review section data
 const reviews = [
@@ -309,14 +311,15 @@ const MyInterView = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
-                alt=""
+                src={myin1}
+                alt="my interview"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
+                src={myin2}
+                alt="my interview"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -751,55 +754,40 @@ const MyInterView = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>MyInterview AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                "Revolutionize your hiring process with MyInterview
-                AI—empowering businesses to hire faster, smarter, and without
-                bias!"
-              </p>
+   
+   <div className="row d-flex align-items-center justify-content-between flex-column-reverse flex-md-row mb-1">
+  {/* Left side (Text Section) */}
+  <div className="col-md-6 col-12" style={{ paddingRight: "30px" }}>
+    <p className="text-primary">Write better, faster</p>
+    <h1>MyInterview AI</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      "Revolutionize your hiring process with MyInterview AI—empowering businesses to hire faster, smarter, and without bias!"
+    </p>
+    <p>
+      MyInterview AI is an AI-powered video interview platform designed to simplify and optimize the recruitment process. It enables companies to automate their entire interview process, from candidate sourcing to screening and evaluation. By utilizing artificial intelligence, machine learning, and predictive analytics, MyInterview AI allows businesses to quickly assess candidates' skills and fit for the role, without the need for manual intervention.
+    </p>
+    <div className="mb-3">
+      <a
+        href="https://www.myinterview.com"
+        rel="noopener noreferrer"
+        className="btn btn-primary me-2"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
 
-              <p>
-                MyInterview AI is an AI-powered video interview platform
-                designed to simplify and optimize the recruitment process. It
-                enables companies to automate their entire interview process,
-                from candidate sourcing to screening and evaluation. By
-                utilizing artificial intelligence, machine learning, and
-                predictive analytics, MyInterview AI allows businesses to
-                quickly assess candidates' skills and fit for the role, without
-                the need for manual intervention.
-              </p>
+  {/* Right side (Image Section) */}
+  <div className="col-md-6 col-12 mb-4 text-center">
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
+      alt="MyInterview AI"
+      style={{ maxWidth: "100%", height: "300px", objectFit: "contain" }}
+    />
+  </div>
+</div>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
-            </div>
-
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
-          </div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Create Videos in 3 Simple Steps</p>
@@ -951,20 +939,6 @@ const MyInterView = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with MyInterView AI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
         </div>
       </div>
     </>
