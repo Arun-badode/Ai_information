@@ -339,13 +339,15 @@ const AiFi = () => {
             <div className="col-md-6">
               <img
                 src={s1}
-                alt=""
+                alt="Aifi"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={s2}
+                
+                alt ="Aifi"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

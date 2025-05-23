@@ -134,13 +134,14 @@ const QlikSenseAI = () => {
             <div className="col-md-6">
               <img
                 src={qlik1}
-                alt=""
+                alt="Qlik Sense AI"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={qlik2}
+                alt="Qlik Sense AI"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -640,7 +641,7 @@ const QlikSenseAI = () => {
   >
     <img
       src={magisto}
-      alt="Qlik Sense AI dashboard"
+      alt="Qlik Sense AI"
       style={{ maxWidth: "100%", height: "250px", objectFit: "contain" }}
     />
   </div>

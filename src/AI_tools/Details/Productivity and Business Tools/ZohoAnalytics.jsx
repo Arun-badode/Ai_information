@@ -136,13 +136,14 @@ const ZohoAnalyticsAI = () => {
             <div className="col-md-6">
               <img
                 src={zoho1}
-                alt=""
+                alt="Zoho Analytics AI"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={zoho2}
+                alt="Zoho Analytics AI"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

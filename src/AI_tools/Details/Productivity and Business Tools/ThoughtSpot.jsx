@@ -137,13 +137,14 @@ const ThoughtSpot = () => {
             <div className="col-md-6">
               <img
                 src={thought1}
-                alt=""
+                alt="ThoughtSpot"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={thought2}
+                alt="ThoughtSpot"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

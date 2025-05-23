@@ -134,14 +134,14 @@ const Notion = () => {
             <div className="col-md-6">
               <img
                 src={notion1}
-                alt="Screenshot 1"
+                alt="Notion"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={notion2}
-                alt="Screenshot 2"
+                src={notion2 }
+                alt="Notion AI"
                 className="img-fluid rounded-3"
               />
             </div>
@@ -548,7 +548,7 @@ const Notion = () => {
   <div style={{ flex: 1, textAlign: "center" }}>
     <img
       src=""
-      alt="Notion AI Screenshot"
+      alt="Notion AI"
       className="img-fluid rounded-3"
       style={{ maxWidth: "80%", height: "auto" }}
     />

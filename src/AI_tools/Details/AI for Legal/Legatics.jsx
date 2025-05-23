@@ -144,14 +144,14 @@ const Legatics = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
+                src="public\assets\Img\AI for legal\Legatics -s2.jpg"
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
+                src="public\assets\Img\AI for legal\Legatics -s3.jpg"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -377,9 +377,8 @@ const Legatics = () => {
                   <div className="accordion-item mb-3" key={item.id}>
                     <h2 className="accordion-header" id={`heading${item.id}`}>
                       <button
-                        className={`accordion-button ${
-                          i !== 0 ? "collapsed" : ""
-                        }`}
+                        className={`accordion-button ${i !== 0 ? "collapsed" : ""
+                          }`}
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target={`#collapse${item.id}`}
@@ -396,9 +395,8 @@ const Legatics = () => {
                     </h2>
                     <div
                       id={`collapse${item.id}`}
-                      className={`accordion-collapse collapse ${
-                        i === 0 ? "show" : ""
-                      }`}
+                      className={`accordion-collapse collapse ${i === 0 ? "show" : ""
+                        }`}
                       aria-labelledby={`heading${item.id}`}
                       data-bs-parent="#faqAccordion"
                     >
@@ -650,48 +648,43 @@ const Legatics = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
+          <div className="row align-items-center justify-content-between mb-1">
+            {/* Text Section */}
+            <div className="col-12 col-md-6 mb-4 mb-md-0 pe-md-4">
               <p className="text-primary">Write better, faster</p>
-              <h1>
-                Legatics: AI-Powered Legal Transaction Management Platform
-              </h1>
+              <h1>Legatics: AI-Powered Legal Transaction Management Platform</h1>
               <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
               <p>
-                Legatics is a cutting-edge AI-powered legal transaction
-                management tool designed to streamline the complexity of legal
-                processes. The Legatics platform utilizes machine learning and
-                natural language processing (NLP) to automate contract review,
-                document management, and collaboration across various legal
-                domains. It is particularly useful for corporate law firms,
-                in-house counsel, and legal teams dealing with M&A transactions,
+                Legatics is a cutting-edge AI-powered legal transaction management tool
+                designed to streamline the complexity of legal processes. The Legatics
+                platform utilizes machine learning and natural language processing (NLP)
+                to automate contract review, document management, and collaboration
+                across various legal domains. It is particularly useful for corporate law
+                firms, in-house counsel, and legal teams dealing with M&A transactions,
                 real estate deals, and banking & finance matters.
               </p>
-
               <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
+                <a
+                  href="https://www.legatics.com/"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary me-2"
+                >
+                  Explore Tool
+                </a>
               </div>
             </div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img src="" style={{ MaxWidth: "100%", height: "300px" }} />
+            {/* Image Section */}
+            <div className="col-12 col-md-6 text-center">
+              <img
+                src="/assets/Img/AI for legal/Legatics -s1.jpg"
+                alt="Legatics Platform"
+                className="img-fluid"
+                style={{ height: "300px", objectFit: "contain" }}
+              />
             </div>
           </div>
+
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>

@@ -13,6 +13,8 @@ import sc2 from "../../../../public/assets/Img/Ai  for Retail/gobango-sc1.png";
 const reviews = [
   {
     name: "Alex Johnson",
+
+
     date: "April 15, 2025",
     review:
       "This tool has completely transformed my workflow. The AI capabilities are far beyond what I expected and the interface is intuitive.",
@@ -344,14 +346,14 @@ const Grabango = () => {
 
       
                 src={sc1}
-                alt=""
+                alt="gobango"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={sc2}
-                alt=""
+                alt="gobango"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

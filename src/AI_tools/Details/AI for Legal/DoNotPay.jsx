@@ -133,14 +133,14 @@ const DoNotPay = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
+                src="public\assets\Img\AI for legal\Donotpay-s2.jpg"
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
+                src="public\assets\Img\AI for legal\Donotpay-s3.jpg"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -366,9 +366,8 @@ const DoNotPay = () => {
                   <div className="accordion-item mb-3" key={item.id}>
                     <h2 className="accordion-header" id={`heading${item.id}`}>
                       <button
-                        className={`accordion-button ${
-                          i !== 0 ? "collapsed" : ""
-                        }`}
+                        className={`accordion-button ${i !== 0 ? "collapsed" : ""
+                          }`}
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target={`#collapse${item.id}`}
@@ -385,9 +384,8 @@ const DoNotPay = () => {
                     </h2>
                     <div
                       id={`collapse${item.id}`}
-                      className={`accordion-collapse collapse ${
-                        i === 0 ? "show" : ""
-                      }`}
+                      className={`accordion-collapse collapse ${i === 0 ? "show" : ""
+                        }`}
                       aria-labelledby={`heading${item.id}`}
                       data-bs-parent="#faqAccordion"
                     >
@@ -600,47 +598,44 @@ const DoNotPay = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
+          <div className="row align-items-center justify-content-between mb-1">
             {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
+            <div className="col-12 col-md-6 mb-4 mb-md-0 pe-md-4">
               <p className="text-primary">Write better, faster</p>
               <h1>Information About DoNotPay</h1>
               <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
               <p>
-                DoNotPay is a revolutionary AI-powered "Robot Lawyer" app
-                designed to help users tackle everyday legal and consumer issues
-                quickly, easily, and affordably. Whether it's canceling
-                subscriptions, fighting parking tickets, claiming flight
-                compensation, handling small claims court, or even filing
-                lawsuits, DoNotPay offers automated assistance across a wide
-                range of services. Founded by Joshua Browder, DoNotPay is today
-                one of the world's most popular legal automation platforms,
-                aiming to make legal services accessible to everyone.
+                DoNotPay is a revolutionary AI-powered "Robot Lawyer" app designed to help
+                users tackle everyday legal and consumer issues quickly, easily, and
+                affordably. Whether it's canceling subscriptions, fighting parking
+                tickets, claiming flight compensation, handling small claims court, or even
+                filing lawsuits, DoNotPay offers automated assistance across a wide range
+                of services. Founded by Joshua Browder, DoNotPay is today one of the
+                world's most popular legal automation platforms, aiming to make legal
+                services accessible to everyone.
               </p>
-
               <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
+                <a
+                  href="https://donotpay.com/"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary me-2"
+                >
+                  Explore Tool
+                </a>
               </div>
             </div>
 
             {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img src="" style={{ MaxWidth: "100%", height: "300px" }} />
+            <div className="col-12 col-md-6 text-center">
+              <img
+                src="/assets/Img/AI for legal/Donotpay-s1.jpg"
+                alt="DoNotPay Tool"
+                className="img-fluid"
+                style={{ height: "300px", objectFit: "contain" }}
+              />
             </div>
           </div>
+
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>

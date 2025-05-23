@@ -131,14 +131,14 @@ const MiroAi = () => {
             <div className="col-md-6">
               <img
                 src={miro1}
-                alt="Screenshot 1"
+                alt="SMiro AI"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={miro2}
-                alt="Screenshot 2"
+                alt="Miro AI"
                 className="img-fluid rounded-3"
               />
             </div>
@@ -579,8 +579,8 @@ const MiroAi = () => {
   {/* Left side (Text Section) */}
   <div style={{ flex: 1, paddingRight: "30px" }}>
     <img
-      src={miroLogo} // replace with your imported logo variable
-      alt="Miro Logo"
+      src="" // replace with your imported logo variable
+      alt="Miro AI"
       className="me-3"
       style={{ width: "60px" }}
     />
@@ -613,7 +613,7 @@ const MiroAi = () => {
       src={miro}
       className="img-fluid rounded-3"
       style={{ maxWidth: "80%", height: "auto" }}
-      alt="Miro AI Screenshot"
+      alt="Miro AI"
     />
   </div>
 </div>

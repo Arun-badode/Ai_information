@@ -134,14 +134,14 @@ const CodaAI = () => {
             <div className="col-md-6">
               <img
                 src={coda1}
-                alt="Screenshot 1"
+                alt="Coda AI"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={coda2}
-                alt="Screenshot 2"
+                alt="Coda AI"
                 className="img-fluid rounded-3"
               />
             </div>

@@ -341,13 +341,14 @@ const Malong = () => {
             <div className="col-md-6">
               <img
                 src={m1}
-                alt=""
+                alt="malong"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={m2}
+                alt="malong"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

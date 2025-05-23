@@ -133,15 +133,16 @@ const AIPowered = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
-                alt=""
+                src="https://www.litera.com/sites/default/files/styles/medium_hq/public/image/2024-01/transact_screenshot_1.png.webp?itok=rFbQB5ui"
+                alt="Power AI"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
-                className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
+                src="https://www.litera.com/sites/default/files/styles/medium_hq/public/image/2023-12/litera-desktop-ribbon.png.webp?itok=6qPtqaO2"
+                alt="Power AI"
+                className="img-fluid rounded-3  w-100 h-50 object-fit-cover"
               />
             </div>
           </div>
@@ -366,9 +367,8 @@ const AIPowered = () => {
                   <div className="accordion-item mb-3" key={item.id}>
                     <h2 className="accordion-header" id={`heading${item.id}`}>
                       <button
-                        className={`accordion-button ${
-                          i !== 0 ? "collapsed" : ""
-                        }`}
+                        className={`accordion-button ${i !== 0 ? "collapsed" : ""
+                          }`}
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target={`#collapse${item.id}`}
@@ -385,9 +385,8 @@ const AIPowered = () => {
                     </h2>
                     <div
                       id={`collapse${item.id}`}
-                      className={`accordion-collapse collapse ${
-                        i === 0 ? "show" : ""
-                      }`}
+                      className={`accordion-collapse collapse ${i === 0 ? "show" : ""
+                        }`}
                       aria-labelledby={`heading${item.id}`}
                       data-bs-parent="#faqAccordion"
                     >
@@ -611,50 +610,47 @@ const AIPowered = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
+          <div className="row d-flex align-items-center justify-content-between mb-1">
             {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
+            <div className="col-12 col-md-6 order-1 order-md-1 mb-4 mb-md-0 pe-md-5">
               <p className="text-primary">Write better, faster</p>
               <h1>Kira Systems: AI-Powered Legal Document Review Tool</h1>
               <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
               <p>
-                Kira Systems is an AI-powered contract analysis platform that
-                helps law firms, legal teams, and enterprises extract and
-                analyze critical information from legal documents. Designed
-                specifically for the legal industry, Kira Systems AI uses
-                advanced machine learning and natural language processing (NLP)
-                to speed up document review processes, ensure accuracy, and
-                reduce manual workload. Founded in 2011, Kira Systems has become
-                one of the most trusted legal AI tools, adopted by thousands of
-                professionals globally. It enhances legal workflows by
-                automating the tedious task of document review, making it faster
-                and more efficient to identify key information in contracts,
-                NDAs, leases, and other legal documents
+                Kira Systems is an AI-powered contract analysis platform that helps law
+                firms, legal teams, and enterprises extract and analyze critical
+                information from legal documents. Designed specifically for the legal
+                industry, Kira Systems AI uses advanced machine learning and natural
+                language processing (NLP) to speed up document review processes, ensure
+                accuracy, and reduce manual workload. Founded in 2011, Kira Systems has
+                become one of the most trusted legal AI tools, adopted by thousands of
+                professionals globally. It enhances legal workflows by automating the
+                tedious task of document review, making it faster and more efficient to
+                identify key information in contracts, NDAs, leases, and other legal
+                documents.
               </p>
-
               <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
+                <a
+                  href="https://www.litera.com/"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary me-2"
+                >
+                  Explore Tool
+                </a>
               </div>
             </div>
 
             {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img src="" style={{ MaxWidth: "100%", height: "300px" }} />
+            <div className="col-12 col-md-6 order-2 order-md-2 text-center mb-4 mb-md-0">
+              <img
+                src="https://www.artificiallawyer.com/wp-content/uploads/2021/08/Screenshot-2021-08-10-at-15.58.03.png"
+                alt="Kira Systems"
+                className="img-fluid"
+                style={{ height: "300px", objectFit: "contain" }}
+              />
             </div>
           </div>
+
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>

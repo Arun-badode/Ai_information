@@ -3,7 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import magisto from "../../../Images/MagistoAI.png";
-
+import power1 from "../../../../public/assets/Img/AI for Business/power1.png";
+import power2 from "../../../../public/assets/Img/AI for Business/power2.png";
 // review section data
 const reviews = [
   {
@@ -130,14 +131,15 @@ const PowerBI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
-                alt=""
+                src={power1}
+                alt="powerBI"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
+                src={power2}
+                alt="Power AI"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

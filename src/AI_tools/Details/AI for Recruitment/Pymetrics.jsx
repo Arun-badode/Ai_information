@@ -5,8 +5,8 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
-import paymetric1 from "../../../../public/assets/Img/AI for Recruitment/paymetric1.png";
-import paymetric2 from "../../../../public/assets/Img/AI for Recruitment/paymetric2.png";
+import py1 from "../../../../public/assets/Img/AI for Recruitment/py-s1.png";
+import py2 from "../../../../public/assets/Img/AI for Recruitment/py-s2.png";
 
 // review section data
 const reviews = [
@@ -323,14 +323,16 @@ const Pymetrics = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src={paymetric1}
-                alt=""
+                src={py1}
+                alt="pyetrics"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={paymetric2}
+                src={py2}
+                alt="pymetrix"
+                
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -796,7 +798,7 @@ const Pymetrics = () => {
     </p>
     <div className="d-flex flex-wrap gap-3">
       <a
-        href="https://harver.com/?utm_source=pymetrics"
+        href="https://www.hrlineup.com/pymetrics/"
         target="_blank"
         rel="noopener noreferrer"
         className="btn btn-primary btn-lg px-4 py-2 fs-6"

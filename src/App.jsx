@@ -10,6 +10,7 @@ import ImageMindAI from "./AI_tools/ImageMindAI";
 import AiLearningHub from "./AI_tools/AiLearningHub";
 import AIComparisonPage from "./AI_tools/AIComparisonPage";
 import AboutPage from "./AI_tools/AboutUs";
+import AiBlog from "./AI_tools/AiBlog";
 
 
 import AIContact from "./AI_tools/AIContact";
@@ -17,9 +18,9 @@ import TermsOfService from "./AI_tools/TermsOfService";
 import PrivacyPolicy from "./AI_tools/PrivacyPolicy";
 import ScrollToTopButton from "./AI_tools/ScrollToTopButton";
 
-// import AINewsDetail from "./AI_tools/AINewsDetai";
+
 import AINewsPage from "./AI_tools/AINewsPage";
-// import AICategories from "./AI_tools/AICategories";
+
 
 /* AI Chatbots & Assistants */
 
@@ -294,7 +295,7 @@ import Adam from "./AI_tools/Details/Ai for meeting/Adam";
 import Trevor from "./AI_tools/Details/Ai for meeting/Trevor";
 import Sidekick from "./AI_tools/Details/Ai for meeting/Sidekick";
 import AIBlog from "./AI_tools/AiBlog";
-import TealHQAI from "./AI_tools/Details/AI for Resume/TealHQAI";
+
 
 const App = () => {
   return (
@@ -312,13 +313,11 @@ const App = () => {
         <Route path="/aboutus" element={<AboutPage />} />
         <Route path="/ainewspage" element={<AINewsPage />} />
         <Route path="/aiblog" element={<AIBlog />} />
-        {/* <Route path="/news/:id" element={<AINewsDetail />} /> */}
+   
         <Route path="/aicontact" element={<AIContact />} />
         <Route path="/termsofservice" element={<TermsOfService />} />
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
-        {/* <Route path="/ainewsdetail" element={<AINewsDetail />} /> */}
-        {/* <Route path="/aicategories" element={<AICategories />} /> */}
-        {/* <Route path="/ainewsdetail" element={<AINewsDetail />} /> */}
+   
         <Route path="/allaboutaitools" element={<AllAboutAITools />}></Route>
         {/* AI Chatbots & Assistants */}
         <Route path="/gemini" element={<Gemini />}></Route>
@@ -413,7 +412,7 @@ const App = () => {
         <Route path="/FotorAI" element={<FotorAI />}></Route>
         <Route path="/ReminiAI" element={<ReminiAI />}></Route>
         <Route path="/RemoveBg" element={<RemoveBg />}></Route>
-        <Route path="/uminarAI" element={<LuminarAI />}></Route>
+        <Route path="/LuminarAI" element={<LuminarAI />}></Route>
         {/* AI for Software Testing */}
         <Route path="/RainforestQA" element={<RainforestQA />}></Route>
         <Route path="/LambdaTestAI" element={<LambdaTestAI />}></Route>
@@ -443,7 +442,7 @@ const App = () => {
         <Route path="/ZetyAI" element={<ZetyAI />}></Route>
         <Route path="/VisualAI" element={<VisualAI />}></Route>
         <Route path="/ResunateAI" element={<ResunateAI />}></Route>
-         <Route path="/" element={<TealHQAI/>}></Route>
+        
         <Route path="/HirationAI" element={<HirationAI />}></Route>
         {/* AI for resume   end */}
         {/* Ai for SEO  */}
@@ -545,6 +544,7 @@ const App = () => {
         <Route path="/Vervoe" element={<Vervoe />}></Route>
         <Route path="/Xor" element={<Xor />}></Route>
         <Route path="/Zoho" element={<Zoho />}></Route>
+
         {/*  Ai for Recruitment  end */}
         {/*  Ai for  cyber security */}
         <Route path="/CheckPoint" element={<CheckPoint />}></Route>
