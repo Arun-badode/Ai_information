@@ -133,15 +133,15 @@ const AIPowered = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
+                src="https://www.litera.com/sites/default/files/styles/medium_hq/public/image/2024-01/transact_screenshot_1.png.webp?itok=rFbQB5ui"
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
-                className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
+                src="https://www.litera.com/sites/default/files/styles/medium_hq/public/image/2023-12/litera-desktop-ribbon.png.webp?itok=6qPtqaO2"
+                className="img-fluid rounded-3  w-100 h-50 object-fit-cover"
               />
             </div>
           </div>
@@ -611,7 +611,7 @@ const AIPowered = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
+          <div className=" row d-flex align-items-center justify-content-between mb-1 ">
             {/* Left side (Text Section) */}
             <div
               style={{ flex: 1, paddingRight: "30px" }}
@@ -634,12 +634,16 @@ const AIPowered = () => {
                 and more efficient to identify key information in contracts,
                 NDAs, leases, and other legal documents
               </p>
-
               <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
+                <a
+                  href="https://www.litera.com/"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary me-2"
+                >
+                  Explore Tool
+                </a>
               </div>
+              
             </div>
 
             {/* Right side (Image Section) */}
@@ -649,10 +653,11 @@ const AIPowered = () => {
                 textAlign: "center",
                 Width: "100%",
                 height: "250px",
+                
               }}
-              className="col-6 col-md-12 mb-5  "
+              className="col-6 col-md-12 mb-5 ms-5 "
             >
-              <img src="" style={{ MaxWidth: "100%", height: "300px" }} />
+              <img src="https://www.artificiallawyer.com/wp-content/uploads/2021/08/Screenshot-2021-08-10-at-15.58.03.png" style={{ MaxWidth: "100%", height: "300px" }} />
             </div>
           </div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
