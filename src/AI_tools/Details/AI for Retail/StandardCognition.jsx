@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
 import standard from "../../../../public/assets/Img/Ai  for Retail/1.png";
+import st1 from "../../../../public/assets/Img/Ai  for Retail/st-s1.png";
+import st2 from "../../../../public/assets/Img/Ai  for Retail/st-s2.png"
 // review section data
 const reviews = [
   {
@@ -334,14 +336,14 @@ const StandardCongnition = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
+                src={st1}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
+                src={st2}
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -848,227 +850,49 @@ const StandardCongnition = () => {
         </a>
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
-        <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1> Standard Cognition AI:</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Standard Cognition is a leading AI-powered retail technology
-                company that offers a checkout-free shopping experience through
-                advanced computer vision and deep learning. With Standard
-                Cognition, customers can walk into a store, pick up items, and
-                leave—without scanning or waiting in line. The system uses
-                AI-powered cameras to track each customer’s actions and
-                automatically charges them upon exit.
-              </p>
+       
+       <div className="container">
+  <div className="row d-flex align-items-center justify-content-between mb-1">
+    {/* Right side (Image Section) first on mobile */}
+    <div
+      className="col-12 col-md-6 order-1 order-md-2 mb-4 text-center"
+      style={{ height: "auto" }}
+    >
+      <img
+        src={standard}
+        alt="Standard Cognition"
+        className="img-fluid"
+        style={{ maxWidth: "100%", height: "auto" }}
+      />
+    </div>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
-            </div>
+    {/* Left side (Text Section) second on mobile */}
+    <div className="col-12 col-md-6 order-2 order-md-1">
+      <p className="text-primary">Write better, faster</p>
+      <h1>Standard Cognition AI:</h1>
+      <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+      <p>
+        Standard Cognition is a leading AI-powered retail technology
+        company that offers a checkout-free shopping experience through
+        advanced computer vision and deep learning. With Standard
+        Cognition, customers can walk into a store, pick up items, and
+        leave—without scanning or waiting in line. The system uses
+        AI-powered cameras to track each customer’s actions and
+        automatically charges them upon exit.
+      </p>
+      <div className="mb-3">
+        <a
+          href="https://standard.ai/"
+          rel="noopener noreferrer"
+          className="btn btn-primary me-2"
+        >
+          Explore Tool
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src={standard}
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
-          </div>
-
-          <section style={{ backgroundColor: "#283e55", padding: "3rem 0" }}>
-            <div className="container text-center">
-              <p className="text-primary">
-                Embrace Intelligent Simplicity—Streamline Complex Thoughts with
-                Standard Cognition AI
-              </p>
-              <h2
-                className="text-white"
-                style={{ fontWeight: "600", marginBottom: "1rem" }}
-              >
-                See How Standard Cognition AI Converts Complexity into Clear,
-                Actionable Understanding
-              </h2>
-              <p
-                style={{
-                  color: "#ccc",
-                  marginBottom: "2rem",
-                  fontStyle: "italic",
-                }}
-              >
-                Standard Cognition AI transforms detailed and intricate
-                information into well-organized, easy-to-understand
-                narratives—delivering both clarity and originality.
-              </p>
-
-              <div className="row g-4">
-                {/* Step 1 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#2f9fd4",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
-            .standard-step1 {
-              position: absolute;
-              bottom: 10px;
-              right: 15px;
-              font-size: 4rem;
-              font-weight: bold;
-              color: #c9e7f7;
-              opacity: 0.7;
-            }
-          `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Intelligent Content Breakdown
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Standard Cognition AI dissects your material to extract
-                      meaning, distill ideas, and organize them into clear,
-                      structured insights.
-                    </p>
-                    <div className="standard-step1">1</div>
-                  </div>
-                </div>
-
-                {/* Step 2 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#2f9fd4",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
-            .standard-step2 {
-              position: absolute;
-              bottom: 10px;
-              right: 15px;
-              font-size: 4rem;
-              font-weight: bold;
-              color: #c9e7f7;
-              opacity: 0.7;
-            }
-          `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Adaptive Tone and Flow
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Modify your message to align with your
-                      audience—professional, casual, or creative—with dynamic
-                      style refinement powered by AI.
-                    </p>
-                    <div className="standard-step2">2</div>
-                  </div>
-                </div>
-
-                {/* Step 3 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#2f9fd4",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
-            .standard-step3 {
-              position: absolute;
-              bottom: 10px;
-              right: 15px;
-              font-size: 4rem;
-              font-weight: bold;
-              color: #c9e7f7;
-              opacity: 0.7;
-            }
-          `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Clean, Authentically Yours
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Every piece generated by Standard Cognition AI is free of
-                      plagiarism and crafted to maintain the integrity of your
-                      original voice.
-                    </p>
-                    <div className="standard-step3">3</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Tab Navigation */}
-          <ul className="nav nav-tabs custom-tabs mb-4">
-            {[
-              "Features",
-              "Screenshots",
-              "Reviews",
-              "FAQs",
-              "Technical",
-              "Why-We-Use",
-              "Pros & Cons",
-              "Alternative",
-            ].map((tab) => (
-              <li className="nav-item mb-2" key={tab}>
-                <button
-                  className={`nav-link ${activeTab === tab ? "active" : ""}`}
-                  onClick={() => setActiveTab(tab)}
-                >
-                  {tab.charAt(0).toUpperCase() + tab.slice(1)}
-                </button>
-              </li>
-            ))}
-          </ul>
-
-          {/* Tab Content */}
-          <div className="tab-content-area">{renderTabContent()}</div>
-
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">
-              Ready to get started with Standard Cognition AI?
-            </h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
-        </div>
       </div>
     </>
   );

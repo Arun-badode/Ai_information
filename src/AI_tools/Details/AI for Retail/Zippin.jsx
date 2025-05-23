@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
 import zippin from "../../../../public/assets/Img/Ai  for Retail/3.png";
+import zi1 from "../../../../public/assets/Img/Ai  for Retail/zi-s1.png";
+import zi2 from "../../../../public/assets/Img/Ai  for Retail/zi-s2.png";
 // review section data
 const reviews = [
   {
@@ -338,14 +340,14 @@ const Zippin = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
+                src={zi1}
                 alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
+                src={zi2}
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -852,44 +854,45 @@ const Zippin = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>Zippin AI:</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Zippin AI is a revolutionary retail technology platform that
-                powers checkout-free stores using AI, computer vision, sensor
-                fusion, and deep learning. It eliminates the need for
-                traditional checkouts, allowing customers to enter, pick their
-                items, and leave — while the system automatically tracks and
-                charges them.
-              </p>
+        <div className="container">
+  <div className="row align-items-center mb-4">
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
-            </div>
+    {/* Image Section - appears first on mobile, second on desktop */}
+    <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-3 mb-md-0">
+      <img
+        src={zippin}
+        alt="Zippin AI"
+        className="img-fluid"
+        style={{ maxHeight: "300px", objectFit: "contain" }}
+      />
+    </div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img src={zippin} style={{ MaxWidth: "100%", height: "300px" }} />
-            </div>
-          </div>
+    {/* Text Section - appears second on mobile, first on desktop */}
+    <div className="col-12 col-md-6 order-2 order-md-1">
+      <p className="text-primary">Write better, faster</p>
+      <h1>Zippin AI:</h1>
+      <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+      <p>
+        Zippin AI is a revolutionary retail technology platform that powers
+        checkout-free stores using AI, computer vision, sensor fusion, and deep
+        learning. It eliminates the need for traditional checkouts, allowing
+        customers to enter, pick their items, and leave — while the system
+        automatically tracks and charges them.
+      </p>
+      <div className="mb-3">
+        <a
+          href="https://www.getzippin.com/"
+          rel="noopener noreferrer"
+          className="btn btn-primary me-2"
+        >
+          Explore Tool
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 
           <section style={{ backgroundColor: "#283e55", padding: "3rem 0" }}>
             <div className="container text-center">
