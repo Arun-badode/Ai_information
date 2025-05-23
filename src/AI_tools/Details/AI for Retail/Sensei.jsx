@@ -115,7 +115,7 @@ const Sensei = () => {
                   desc: "Generate visualizations instantly, even from large datasets, ensuring that insights are delivered without any wait time.",
                 },
                 {
-                  icon: "🛡️",
+                  icon: "🛡",
                   title: "Top-Tier Security",
                   desc: "Sensei AI implements advanced encryption protocols, guaranteeing that your data is secure and protected throughout the process.",
                 },
@@ -718,7 +718,7 @@ const Sensei = () => {
                 }}
               >
                 <h5 className="text-danger text-start mb-4">
-                  ⚠️ Sensei AI - Cons
+                  ⚠ Sensei AI - Cons
                 </h5>
                 <ul className="ps-3" style={{ listStyleType: "disc" }}>
                   <li className="mb-2">

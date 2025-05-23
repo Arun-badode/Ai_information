@@ -1,16 +1,6 @@
 import React from 'react'
 
 const ReplikaAI = () => {
-<<<<<<< HEAD
-  return (
-    <div>
-      
-    </div>
-  )
-}
-
-export default ReplikaAI
-=======
   const [activeTab, setActiveTab] = useState("features"); // Set the default active tab as 'features'
   const [showAllFaqs, setShowAllFaqs] = useState(false);
 
@@ -671,4 +661,3 @@ export default ReplikaAI
 };
 
 export default ReplikaAI;
->>>>>>> 6049a1302a7df8b45293e8a876a4b1d1f119f123
