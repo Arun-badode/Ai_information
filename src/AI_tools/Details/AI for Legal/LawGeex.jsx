@@ -682,7 +682,7 @@ const LawGeex = () => {
             {/* Right side (Image Section) */}
             <div className="col-12 col-md-6 text-center">
               <img
-                src="/assets/Img/AI for legal/Lawgeex - s3.jpg"
+                src="public\assets\Img\AI for legal\AiForLegal\Lawgeex.png"
                 alt="LawGeex Tool"
                 className="img-fluid"
                 style={{ height: "300px", objectFit: "contain" }}

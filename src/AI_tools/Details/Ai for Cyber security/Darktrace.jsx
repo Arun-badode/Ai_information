@@ -134,19 +134,14 @@ const Darktrace = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-
                 src={dark1}
-                alt="darktrace"
-
+                alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-
                 src={dark2}
-                alt="darktrace"
-
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

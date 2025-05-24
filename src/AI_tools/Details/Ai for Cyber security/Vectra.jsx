@@ -132,20 +132,14 @@ const Vectra = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-
-            
-
                 src={victra1}
-                alt="vectra"
-
+                alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-
-       src={victra2}
-       alt="vectra"
+                src={victra2}
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

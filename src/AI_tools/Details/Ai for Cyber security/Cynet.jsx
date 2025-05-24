@@ -146,19 +146,14 @@ const CynetAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-
-
                 src={cynet1}
-                alt="cynet"
-
+                alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-
                 src={cynet2}
-               alt="cynet"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

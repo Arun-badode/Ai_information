@@ -342,7 +342,6 @@ const SimpleMind = () => {
             <div className="col-md-6">
               <img
                 src={simplemindSS1}
-
                 alt="simplemind"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />

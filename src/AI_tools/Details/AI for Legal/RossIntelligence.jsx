@@ -667,7 +667,7 @@ const Rossntelligence = () => {
             {/* Right side (Image Section) */}
             <div className="col-12 col-md-6 text-center mb-5 mb-md-0">
               <img
-                src="/assets/Img/AI for legal/Rossintelligence - s1.jpg"
+                src="public\assets\Img\AI for legal\AiForLegal\Ross.png"
                 alt="ROSS Intelligence"
                 className="img-fluid"
                 style={{ height: "300px", objectFit: "contain" }}

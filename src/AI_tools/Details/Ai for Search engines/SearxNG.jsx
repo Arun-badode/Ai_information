@@ -136,20 +136,15 @@ const SearxNG = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-
-               src={searx1}
+                src={searx1}
                 alt="SearXNG"
- 
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-               
-
                 src={searx2}
                 alt="SearXNG"
-
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

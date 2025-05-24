@@ -912,9 +912,9 @@ const PensaSystem = () => {
             </div>
           </div>
 
-          <section style={{ backgroundColor: "#2c3e50", padding: "3rem 0" }}>
+          <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
-              <p className="text-primary">
+              <p className="">
                 Revolutionize Your Operations with the Power of System AI
               </p>
               <h2
@@ -942,7 +942,7 @@ const PensaSystem = () => {
                   <div
                     style={{
                       position: "relative",
-                      backgroundColor: "#16a085",
+                      backgroundColor: "#1034A6",
                       borderRadius: "12px",
                       boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
                       padding: "2rem",
@@ -976,7 +976,7 @@ const PensaSystem = () => {
                   <div
                     style={{
                       position: "relative",
-                      backgroundColor: "#16a085",
+                      backgroundColor: "#1034A6",
                       borderRadius: "12px",
                       boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
                       padding: "2rem",
@@ -1011,7 +1011,7 @@ const PensaSystem = () => {
                   <div
                     style={{
                       position: "relative",
-                      backgroundColor: "#16a085",
+                      backgroundColor: "#1034A6",
                       borderRadius: "12px",
                       boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
                       padding: "2rem",

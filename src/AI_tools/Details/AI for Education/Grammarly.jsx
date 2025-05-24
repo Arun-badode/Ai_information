@@ -373,9 +373,7 @@ const Grammarly = () => {
             <div className="col-md-6">
               <img
                 src={grammi1}
-
                 alt="Grammarly for Education"
-
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

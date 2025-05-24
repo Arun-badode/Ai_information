@@ -132,19 +132,14 @@ const CrowdStrike = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-
                 src={crowd1}
-                alt="crowdStrike"
-
+                alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-
-
                 src={crowd2}
-                alt="crowdStrike"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

@@ -133,22 +133,14 @@ const ShieldAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-
-                
-
                 src={shield1}
-                alt="shield"
-
+                alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-
-               
-
                 src={shield2}
-                alt="shield"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
