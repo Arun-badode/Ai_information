@@ -131,14 +131,14 @@ const QuizletAI = () => {
             <div className="col-md-6">
               <img
                 src="https://i.ibb.co/j9zpZBhP/image.png"
-                alt="Screenshot 1"
+                alt="quizlet"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
                 src="https://i.ibb.co/ynzzQJmC/image.png"
-                alt="Screenshot 2"
+                alt="quizlet"
                 className="img-fluid rounded-3"
               />
             </div>
@@ -673,7 +673,7 @@ const QuizletAI = () => {
                 src={a}
                 className="img-fluid rounded-3"
                 style={{ maxWidth: "80%", height: "auto" }}
-                alt="Quizlet AI platform illustration"
+                alt="Quizlet "
               />
             </div>
           </div>

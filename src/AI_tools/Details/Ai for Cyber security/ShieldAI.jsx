@@ -132,13 +132,14 @@ const ShieldAI = () => {
             <div className="col-md-6">
               <img
                 src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
-                alt=""
+                alt="shield"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
+                alt="shield"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

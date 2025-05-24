@@ -141,14 +141,14 @@ const PictoryAI = () => {
             <div className="col-md-6">
               <img
                 src={scn11}
-                alt=""
+                alt="ai"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={scn12}
-                alt="Screenshot 2"
+                alt="pictoryai"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

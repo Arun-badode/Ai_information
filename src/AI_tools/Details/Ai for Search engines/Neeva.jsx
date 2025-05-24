@@ -135,13 +135,14 @@ const Neeva = () => {
             <div className="col-md-6">
               <img
                 src={neeva1}
-                alt=""
+                alt="neeva"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={neeva2}
+                alt="neeva"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -699,6 +700,7 @@ const Neeva = () => {
             >
               <img
                 src={magisto}
+                alt="neeva"
                 style={{ MaxWidth: "100%", height: "300px" }}
               />
             </div>

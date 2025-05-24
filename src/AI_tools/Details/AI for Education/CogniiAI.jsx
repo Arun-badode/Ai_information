@@ -134,14 +134,15 @@ const CogniiAI = () => {
             <div className="col-md-6">
               <img
                 src={img5}
-                alt="Screenshot 1"
+                alt="cognii"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={img6}
-                alt="Screenshot 2"
+                alt="cognii
+                "
                 className="img-fluid rounded-3"
               />
             </div>

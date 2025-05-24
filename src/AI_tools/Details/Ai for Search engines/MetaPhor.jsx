@@ -137,13 +137,14 @@ const MetaPhor = () => {
             <div className="col-md-6">
               <img
                 src={metaphore1}
-                alt=""
+                alt="metaphor"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={metaphore2}
+                alt="metaphor"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -631,6 +632,7 @@ const MetaPhor = () => {
             >
               <img
                 src={magisto}
+                alt="metaphor"
                 style={{ MaxWidth: "100%", height: "300px" }}
               />
             </div>

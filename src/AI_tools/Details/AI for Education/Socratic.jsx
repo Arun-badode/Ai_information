@@ -133,14 +133,15 @@ const Socratic = () => {
             <div className="col-md-6">
               <img
                 src={img2}
-                alt="Screenshot 1"
+                alt="socratic"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={img}
-                alt="Screenshot 2"
+                alt="socrstic
+                "
                 className="img-fluid rounded-3"
               />
             </div>

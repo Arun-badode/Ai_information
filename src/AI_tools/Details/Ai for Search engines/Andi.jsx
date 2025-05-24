@@ -135,13 +135,14 @@ const Andi = () => {
             <div className="col-md-6">
               <img
                 src={andi1}
-                alt=""
+                alt="andi"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={andi2}
+                alt="andi"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

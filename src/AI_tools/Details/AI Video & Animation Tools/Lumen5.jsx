@@ -141,14 +141,14 @@ const Lumen5 = () => {
             <div className="col-md-6">
               <img
                 src={scn7}
-                alt=""
+                alt="lumen"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={scn8}
-                alt="Screenshot 2"
+                alt="lumen5"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

@@ -366,13 +366,15 @@ const MoocLab= () => {
             <div className="col-md-6">
               <img
                 src="https://www.gizmochina.com/wp-content/uploads/2023/06/Screenshot-2023-06-23-165608.png"
-                alt=""
+                alt="mooclab"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={Rephrase}
+                alt="mooclab
+                "
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -670,7 +672,7 @@ const MoocLab= () => {
                 src={k}
                 className="img-fluid rounded-3"
                 style={{ maxWidth: "80%", height: "auto" }}
-                alt="Quizlet AI platform illustration"
+                alt="mooclab"
               />
             </div>
           </div>

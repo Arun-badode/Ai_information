@@ -376,13 +376,14 @@ const TeachFX= () => {
             <div className="col-md-6">
               <img
                 src="https://www.gizmochina.com/wp-content/uploads/2023/06/Screenshot-2023-06-23-165608.png"
-                alt=""
+                alt="teachfx"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={Rephrase}
+                alt="teachfx"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

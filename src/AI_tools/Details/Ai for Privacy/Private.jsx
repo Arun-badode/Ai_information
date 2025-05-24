@@ -707,7 +707,7 @@ const PrivateAI = () => {
                            src={a}
                            className="img-fluid rounded-3"
                            style={{ maxWidth: "80%", height: "auto" }}
-                           alt="Quizlet AI platform illustration"
+                           alt="private"
                          />
                        </div>
           </div>

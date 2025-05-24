@@ -334,13 +334,14 @@ const RephraseAI = () => {
             <div className="col-md-6">
               <img
                 src={scn13}
-                alt=""
+                alt="rephrseai"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={scn14}
+                alt="rephraseai"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
