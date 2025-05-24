@@ -8,6 +8,7 @@ import deatilimage from "../../../Images/DetailImage.png";
 import contentHarmanyAI from "../../../../public/assets/Img/Ai for SEO/11.png";
 
 
+
 import scan3 from "../../../../public/assets/Img/AI for SEO/scan3.png";
 import scan4 from "../../../../public/assets/Img/AI for SEO/scan4.png";
 

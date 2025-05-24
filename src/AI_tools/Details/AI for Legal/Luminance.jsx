@@ -136,13 +136,14 @@ const Luminance = () => {
             <div className="col-md-6">
               <img
                 src="public\assets\Img\AI for legal\LuminanceAI -s2.jpg"
-                alt=""
+                alt="Luminance"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src="public\assets\Img\AI for legal\LuminanceAI -s3.jpg"
+                alt="Luminance"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -670,7 +671,7 @@ const Luminance = () => {
             {/* Right side (Image Section) */}
             <div className="col-12 col-md-6 text-center">
               <img
-                src="/assets/Img/AI for legal/LuminanceAI -s1.jpg"
+                src="public\assets\Img\AI for legal\AiForLegal\Lumninance.png"
                 alt="Luminance AI"
                 className="img-fluid"
                 style={{ height: "300px", objectFit: "contain" }}

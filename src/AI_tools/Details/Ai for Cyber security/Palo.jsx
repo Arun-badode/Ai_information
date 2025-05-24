@@ -135,22 +135,14 @@ const Palo = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                
-               
                 src={palo1}
-                 alt="pa"
-                
+                alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-
-                
-               
                 src={palo2}
-                 alt="palo"
-
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

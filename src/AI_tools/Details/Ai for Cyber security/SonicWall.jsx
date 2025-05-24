@@ -134,22 +134,14 @@ const SonicWall = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-
-               
-  
                 src={sonic1}
-                alt="soniycwall"
-               className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
+                alt=""
+                className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-
-             
-             
-
                 src={sonic2}
-   alt="sonicwall"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

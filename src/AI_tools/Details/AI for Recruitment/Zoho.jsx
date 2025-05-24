@@ -327,7 +327,7 @@ const Zoho = () => {
             <div className="col-md-6">
               <img
                 src={zoho2}
-                alt="z0ho"
+                alt="zoho"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

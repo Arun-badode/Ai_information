@@ -137,13 +137,14 @@ const Sidekick = () => {
             <div className="col-md-6">
               <img
                 src={scn1}
-                alt=""
+                alt="sidekick"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={scn2}
+                alt="sidekick"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -612,6 +613,7 @@ const Sidekick = () => {
             >
               <img
                 src={sidekick}
+                alt="sidekick"
                 style={{
                   Width: "100%",
                   height: "auto",

@@ -134,13 +134,14 @@ const LegalZoomAI = () => {
             <div className="col-md-6">
               <img
                 src="public\assets\Img\AI for legal\LegalZoom-s2.jpg"
-                alt=""
+                alt="Legal Zoom"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src="public\assets\Img\AI for legal\LegalZoom-s3.jpg"
+                alt="Legal Zoom"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -683,7 +684,7 @@ const LegalZoomAI = () => {
             {/* Image Section */}
             <div className="col-12 col-md-6 text-center">
               <img
-                src="/assets/Img/AI for legal/LegalZoom-s1.jpg"
+                src="public\assets\Img\AI for legal\AiForLegal\legalzoom.png"
                 alt="LegalZoom AI"
                 className="img-fluid"
                 style={{ height: "300px", objectFit: "contain" }}

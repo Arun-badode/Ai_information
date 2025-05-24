@@ -133,14 +133,14 @@ const AppvanceIQ = () => {
             <div className="col-md-6">
               <img
                 src={appvance11}
-                alt="Screenshot 1"
+                alt="appvance"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={appvance12}
-                alt="Screenshot 2"
+                alt="appvance"
                 className="img-fluid rounded-3"
               />
             </div>

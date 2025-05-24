@@ -144,13 +144,14 @@ const LegalRobot = () => {
             <div className="col-md-6">
               <img
                 src="public\assets\Img\AI for legal\legalRobot-s2.jpg"
-                alt=""
+                alt="LegalRobot"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src="public\assets\Img\AI for legal\legalRobot-s3.jpg"
+                alt="LegalRobot"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -625,7 +626,7 @@ const LegalRobot = () => {
             {/* Right side (Image Section) */}
             <div className="col-12 col-md-6 text-center">
               <img
-                src="/assets/Img/AI for legal/legalRobot-s1.jpg"
+                src="public\assets\Img\AI for legal\AiForLegal\LegalRobot.png"
                 alt="Legal Robot"
                 className="img-fluid"
                 style={{ height: "300px", objectFit: "contain" }}

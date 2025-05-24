@@ -7,7 +7,7 @@ import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
 import xmindSS1 from '../../../../public/assets/Img/Ai for Mind Mapping/xmindSS1.png';
 import xmindSS2 from '../../../../public/assets/Img/Ai for Mind Mapping/xmindSS2.png';
-
+import xmindImg from '../../../../public/assets/Img/Ai for Mind Mapping/4.png';
 
 // review section data
 const reviews = [
@@ -861,7 +861,7 @@ const XMind = () => {
   {/* Image First in Mobile, Right Side in Desktop */}
   <div className="col-12 col-md-6 order-1 order-md-2 mb-3 mb-md-0 text-center">
     <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
+      src={xmindImg}
       alt="XMind AI"
       style={{ width: "100%", height: "300px", objectFit: "cover" }}
     />

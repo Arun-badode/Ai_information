@@ -691,7 +691,7 @@ const Qubole = () => {
   >
     <img
       src={magisto}
-      alt="Qubole platform screenshot"
+      alt="Qubole platform "
       style={{ maxWidth: "100%", height: "250px", objectFit: "contain" }}
     />
   </div>

@@ -895,9 +895,9 @@ const Zippin = () => {
 </div>
 
 
-          <section style={{ backgroundColor: "#283e55", padding: "3rem 0" }}>
+          <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
-              <p className="text-primary">
+              <p className="">
                 Simplify Complex Workflows—Achieve Precision with Zippin AI
               </p>
               <h2
@@ -925,7 +925,7 @@ const Zippin = () => {
                   <div
                     style={{
                       position: "relative",
-                      backgroundColor: "#f7b731",
+                      backgroundColor: "#1034A6",
                       borderRadius: "12px",
                       boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
                       padding: "2rem",
@@ -960,7 +960,7 @@ const Zippin = () => {
                   <div
                     style={{
                       position: "relative",
-                      backgroundColor: "#f7b731",
+                      backgroundColor: "#1034A6",
                       borderRadius: "12px",
                       boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
                       padding: "2rem",
@@ -995,7 +995,7 @@ const Zippin = () => {
                   <div
                     style={{
                       position: "relative",
-                      backgroundColor: "#f7b731",
+                      backgroundColor: "#1034A6",
                       borderRadius: "12px",
                       boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
                       padding: "2rem",

@@ -33,11 +33,11 @@ const Navbar = () => {
                 Home
               </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a href="#" className="nav-link">
                 Categories
               </a>
-            </li>
+            </li> */}
             {/* <li className="nav-item">
               <Link to="/imagemindai" className="nav-link">
                 AI Tools

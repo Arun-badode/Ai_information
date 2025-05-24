@@ -130,29 +130,22 @@ const Fortinet = () => {
 
       case "screenshots":
         return (
-             <div className="row g-4">
-                     <div className="col-md-6">
-                       <img
-                         
-                        
-                         src={palo1}
-                          alt="pa"
-                         
-                         className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
-                       />
-                     </div>
-                     <div className="col-md-6">
-                       <img
-         
-                         
-                        
-                         src={palo2}
-                          alt="palo"
-         
-                         className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
-                       />
-                     </div>
-                   </div>
+          <div className="row g-4">
+            <div className="col-12 col-md-6">
+              <img
+                src={fortinet1}
+                alt="Fortinet "
+                className="img-fluid rounded-3 w-100 h-100 object-fit-cover"
+              />
+            </div>
+            <div className="col-12 col-md-6">
+              <img
+                src={fortinet2}
+                alt="Fortinet "
+                className="img-fluid rounded-3 w-100 h-100 object-fit-cover"
+              />
+            </div>
+          </div>
         );
 
       case "reviews":

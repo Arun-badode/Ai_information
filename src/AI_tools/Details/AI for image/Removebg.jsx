@@ -667,8 +667,8 @@ const RemoveBg = () => {
   {/* Right side (Image Section) */}
   <div className="col-lg-6 col-md-12 text-center">
     <img
-      src={removebg} // Replace with actual Remove.bg image URL
-      alt="Remove.bg AI Example"
+      src={magisto} // Replace with actual Remove.bg image URL
+      alt="Removebg AI Example"
       className="img-fluid"
       style={{ maxHeight: "300px", objectFit: "contain" }}
     />

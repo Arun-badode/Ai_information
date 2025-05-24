@@ -7,7 +7,7 @@ import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
 import lucidchartSS1 from '../../../../public/assets/Img/Ai for Mind Mapping/lucidchartSS1.png';
 import lucidchartSS2 from '../../../../public/assets/Img/Ai for Mind Mapping/lucidchartSS2.png';
-
+import lucidchartImg from '../../../../public/assets/Img/Ai for Mind Mapping/10.png';
 
 // review section data
 const reviews = [
@@ -341,15 +341,19 @@ const Lucidchart = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
+
                 src={lucidchartSS1}
+
                 alt="lucidchart"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
+
                 src={lucidchartSS2}
                 alt="lucidchart"
+
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -878,7 +882,7 @@ const Lucidchart = () => {
   {/* Image First on Mobile, Right on Desktop */}
   <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-3 mb-md-0">
     <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
+      src={lucidchartImg}
       alt="Lucidchart AI"
       style={{ width: "100%", height: "300px", objectFit: "cover" }}
     />

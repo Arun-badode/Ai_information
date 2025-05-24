@@ -708,19 +708,31 @@ const DreambyWombo = () => {
       offers an easy and fun way to create digital artwork.
     </p>
 
-    <div className="mb-3">
-      <a
-        href="https://dream.ai/metamask"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="btn btn-primary me-2"
-      >
-        Explore Tool
-      </a>
-    </div>
-  </div>
-</div>
+             <div className="mb-3">
+                <a
+                  href="https://dream.ai/metamask"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary me-2"
+                >
+                  Explore Tool
+                </a>
+              </div>
+            </div>
 
+            {/* Right side (Image Section) */}
+            <div
+              style={{
+                flex: 1,
+                textAlign: "center",
+                Width: "100%",
+                height: "250px",
+              }}
+              className="col-6 col-md-12 mb-5  "
+            >
+              <img src="" alt="Dream By Wombo"  style={{ MaxWidth: "100%", height: "300px" }} />
+            </div>
+          </div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>

@@ -334,14 +334,14 @@ const Testimio = () => {
             <div className="col-md-6">
               <img
                 src={testim1}
-                alt="screenshot1"
+                alt="testimio"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={testim2}
-                alt="screenshot2"
+                alt="testimio"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -759,7 +759,7 @@ const Testimio = () => {
   <div className="col-lg-6 col-12 order-lg-2 order-1 text-center">
     <img
       src={testimio}
-      alt="Testim.io AI Testing Platform"
+      alt="Testimio AI"
       className="img-fluid rounded"
       style={{
         maxHeight: "350px",

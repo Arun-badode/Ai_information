@@ -129,13 +129,14 @@ const Rossntelligence = () => {
             <div className="col-md-6">
               <img
                 src="public\assets\Img\AI for legal\Rossintelligence - s2.jpg"
-                alt=""
+                alt="RossIntelligence"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src="public\assets\Img\AI for legal\Rossintelligence - s3.jpg"
+                alt="RossIntelligence"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -666,7 +667,7 @@ const Rossntelligence = () => {
             {/* Right side (Image Section) */}
             <div className="col-12 col-md-6 text-center mb-5 mb-md-0">
               <img
-                src="/assets/Img/AI for legal/Rossintelligence - s1.jpg"
+                src="public\assets\Img\AI for legal\AiForLegal\Ross.png"
                 alt="ROSS Intelligence"
                 className="img-fluid"
                 style={{ height: "300px", objectFit: "contain" }}

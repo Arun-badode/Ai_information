@@ -7,7 +7,7 @@ import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
 import ayoaSS1 from '../../../../public/assets/Img/Ai for Mind Mapping/ayoaSS1.png';
 import ayoaSS2 from '../../../../public/assets/Img/Ai for Mind Mapping/ayoaSS2.png';
-
+import ayoaImg from '../../../../public/assets/Img/Ai for Mind Mapping/1.png';
 
 // review section data
 const reviews = [
@@ -324,7 +324,9 @@ const Ayoa = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
+
                 src={ayoaSS1}
+
                 alt="ayoa"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
@@ -853,7 +855,7 @@ const Ayoa = () => {
   {/* Image Section - Pehle dikhayega mobile me */}
   <div className="col-12 col-md-6 order-1 order-md-2 mb-3 mb-md-0 text-center">
     <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
+      src={ayoaImg}
       alt="Ayoa AI"
       style={{ width: "100%", height: "300px", objectFit: "cover" }}
     />

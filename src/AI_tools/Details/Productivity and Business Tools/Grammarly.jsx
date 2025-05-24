@@ -132,14 +132,14 @@ const Grammarly = () => {
             <div className="col-md-6">
               <img
                 src={deatilimage}
-                alt="Screenshot 1"
+                alt="grammarly"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={deatilimage}
-                alt="Screenshot 2"
+                alt="grammarly"
                 className="img-fluid rounded-3"
               />
             </div>

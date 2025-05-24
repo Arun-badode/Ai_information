@@ -147,16 +147,13 @@ const CheckPointAI = () => {
             <div className="col-md-6">
               <img
                 src={check1}
-                alt="checkpoint"
-                
+                alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-
                 src={check2}
-
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

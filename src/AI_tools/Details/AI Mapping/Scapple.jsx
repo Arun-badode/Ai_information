@@ -7,7 +7,7 @@ import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
 import scappleSS1 from '../../../../public/assets/Img/Ai for Mind Mapping/scappleSS1.png';
 import scappleSS2 from '../../../../public/assets/Img/Ai for Mind Mapping/scappleSS2.png';
-
+import scappleImg from '../../../../public/assets/Img/Ai for Mind Mapping/6.png';
 
 // review section data
 const reviews = [
@@ -348,7 +348,9 @@ const Scapple = () => {
             </div>
             <div className="col-md-6">
               <img
+
                 src={scappleSS2}
+
                 alt="scapple"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
@@ -871,7 +873,7 @@ const Scapple = () => {
   {/* Image First on Mobile, Right on Desktop */}
   <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-3 mb-md-0">
     <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
+      src={scappleImg}
       alt="Scapple AI"
       style={{ width: "100%", height: "300px", objectFit: "cover" }}
     />

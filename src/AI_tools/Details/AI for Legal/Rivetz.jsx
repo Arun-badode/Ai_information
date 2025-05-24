@@ -144,13 +144,14 @@ const Rivetz = () => {
             <div className="col-md-6">
               <img
                 src="public\assets\Img\AI for legal\rivetai-s2.jpg"
-                alt=""
+                alt="Rivetz"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src="public\assets\Img\AI for legal\rivetai-s3.jpg"
+                alt="Rivetz"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -696,7 +697,7 @@ const Rivetz = () => {
             {/* Right side (Image Section) */}
             <div className="col-12 col-md-6 text-center mb-5 mb-md-0">
               <img
-                src="/assets/Img/AI for legal/rivetai-s1.jpg"
+                src="public\assets\Img\AI for legal\AiForLegal\Rivetz.png"
                 alt="Rivetz AI"
                 className="img-fluid"
                 style={{ height: "300px", objectFit: "contain" }}

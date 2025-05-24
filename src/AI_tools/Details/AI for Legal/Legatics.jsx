@@ -145,13 +145,14 @@ const Legatics = () => {
             <div className="col-md-6">
               <img
                 src="public\assets\Img\AI for legal\Legatics -s2.jpg"
-                alt=""
+                alt="Leagatics"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src="public\assets\Img\AI for legal\Legatics -s3.jpg"
+                alt="Leagatics"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -677,7 +678,7 @@ const Legatics = () => {
             {/* Image Section */}
             <div className="col-12 col-md-6 text-center">
               <img
-                src="/assets/Img/AI for legal/Legatics -s1.jpg"
+                src="public\assets\Img\AI for legal\AiForLegal\Legatics.png"
                 alt="Legatics Platform"
                 className="img-fluid"
                 style={{ height: "300px", objectFit: "contain" }}

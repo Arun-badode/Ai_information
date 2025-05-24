@@ -137,17 +137,17 @@ const Schedular = () => {
 
               <img
                 src={scn1}
-                alt="Screenshot 1"
+                alt="scheduler"
                 className="img-fluid rounded-3"
               />
 
-              <img src="" alt="Screenshot 1" className="img-fluid rounded-3" />
+              
 
             </div>
             <div className="col-md-6">
               <img
                 src={scn2} 
-                alt="Screenshot 2"
+                alt="scheduler"
                 className="img-fluid rounded-3"
               />
             </div>
