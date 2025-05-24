@@ -133,28 +133,16 @@ const Fortinet = () => {
           <div className="row g-4">
             <div className="col-12 col-md-6">
               <img
-<<<<<<< HEAD
-                src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
-                alt="fortinet"
-                className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
-=======
                 src={fortinet1}
                 alt="Fortinet Screenshot 1"
                 className="img-fluid rounded-3 w-100 h-100 object-fit-cover"
->>>>>>> a3aba11b982f646cee8c4e1fc893c4b3c7d4e356
               />
             </div>
             <div className="col-12 col-md-6">
               <img
-<<<<<<< HEAD
-                src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
-                alt="fortinet"
-                className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
-=======
                 src={fortinet2}
                 alt="Fortinet Screenshot 2"
                 className="img-fluid rounded-3 w-100 h-100 object-fit-cover"
->>>>>>> a3aba11b982f646cee8c4e1fc893c4b3c7d4e356
               />
             </div>
           </div>
