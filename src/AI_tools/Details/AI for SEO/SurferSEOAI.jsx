@@ -8,6 +8,7 @@ import deatilimage from "../../../Images/DetailImage.png";
 import surferSEOAI from "../../../../public/assets/Img/Ai for SEO/10.png";
 import scan1 from "../../../../public/assets/Img/AI for SEO/scan21.png";
 import scan2 from "../../../../public/assets/Img/AI for SEO/scan22.png";
+import surferImg from '../../../../public/assets/Img/Ai for SEO/1.png';
 // review section data
 const reviews = [
   {
@@ -808,7 +809,7 @@ const SurferSEOAI = () => {
             {/* Right side (Image Section) */}
             <div className="col-md-6 col-12 text-center">
               <img
-                src={surferSEOAI}
+                src={surferImg}
                 alt="SurferSEO AI"
                 style={{
                   maxWidth: "100%",

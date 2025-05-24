@@ -132,24 +132,19 @@ const CrowdStrike = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-<<<<<<< HEAD
-                src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
-                alt="crowdstrke"
-=======
+
                 src={crowd1}
-                alt=""
->>>>>>> a3aba11b982f646cee8c4e1fc893c4b3c7d4e356
+                alt="crowdStrike"
+
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-<<<<<<< HEAD
-                src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
-                alt="crowdstrike"
-=======
+
+
                 src={crowd2}
->>>>>>> a3aba11b982f646cee8c4e1fc893c4b3c7d4e356
+                alt="crowdStrike"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

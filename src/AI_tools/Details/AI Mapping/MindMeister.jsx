@@ -7,7 +7,7 @@ import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
 import mindmeisterSS1 from '../../../../public/assets/Img/Ai for Mind Mapping/mindmeisterSS1.png';
 import mindmeisterSS2 from '../../../../public/assets/Img/Ai for Mind Mapping/mindmeisterSS2.png';
-
+import mindmeisterImg from '../../../../public/assets/Img/Ai for Mind Mapping/2.png';
 
 // review section data
 const reviews = [
@@ -301,23 +301,18 @@ const MindMeister = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-<<<<<<< HEAD
-                src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
-                alt="mindmeister"
-=======
+
                 src={mindmeisterSS1}                alt="mindmeister"
                 
->>>>>>> a3aba11b982f646cee8c4e1fc893c4b3c7d4e356
+
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-<<<<<<< HEAD
-                src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
-=======
+
                 src={mindmeisterSS2}
->>>>>>> a3aba11b982f646cee8c4e1fc893c4b3c7d4e356
+
                 alt="mindmeister"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
@@ -822,7 +817,7 @@ const MindMeister = () => {
   {/* Image Section - Mobile me pehle dikhayega */}
   <div className="col-12 col-md-6 order-1 order-md-2 mb-3 mb-md-0 text-center">
     <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
+      src={mindmeisterImg}
       alt="MindMeister AI"
       style={{ width: "100%", height: "300px", objectFit: "cover" }}
     />
@@ -853,7 +848,7 @@ const MindMeister = () => {
 </div>
 
 
-          <section style={{ backgroundColor: "#1b1f2b", padding: "3rem 0" }}>
+          <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">
                 Intelligent Rewording with Context-Aware Precision by
@@ -884,7 +879,7 @@ const MindMeister = () => {
                   <div
                     style={{
                       position: "relative",
-                      backgroundColor: "#0a58ca",
+                      backgroundColor: "#1034A6",
                       borderRadius: "12px",
                       boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
                       padding: "2rem",
@@ -919,7 +914,7 @@ const MindMeister = () => {
                   <div
                     style={{
                       position: "relative",
-                      backgroundColor: "#0a58ca",
+                      backgroundColor: "#1034A6",
                       borderRadius: "12px",
                       boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
                       padding: "2rem",
@@ -954,7 +949,7 @@ const MindMeister = () => {
                   <div
                     style={{
                       position: "relative",
-                      backgroundColor: "#0a58ca",
+                      backgroundColor: "#1034A6",
                       borderRadius: "12px",
                       boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
                       padding: "2rem",

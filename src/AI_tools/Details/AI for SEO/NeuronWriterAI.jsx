@@ -752,54 +752,42 @@ const NeuronWriterAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row  align-items-center  mb-4">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ paddingRight: "30px" }}
-              className="col-12 col-md-6 order-2 order-md-1"
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1> NeuronWriter AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                NeuronWriter is an AI-driven content optimization tool designed
-                to help writers, bloggers, and marketers create SEO-friendly
-                content. It leverages Natural Language Processing (NLP) and
-                machine learning to provide real-time suggestions, enhancing
-                content quality and search engine visibility.​
-              </p>
+         <div className="row align-items-center mb-4">
+  {/* Left side (Text Section) */}
+  <div className="col-12 col-md-6 order-2 order-md-1" style={{ paddingRight: "30px" }}>
+    <p className="text-primary">Write better, faster</p>
+    <h1>NeuronWriter AI</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      NeuronWriter is an AI-driven content optimization tool designed
+      to help writers, bloggers, and marketers create SEO-friendly
+      content. It leverages Natural Language Processing (NLP) and
+      machine learning to provide real-time suggestions, enhancing
+      content quality and search engine visibility.​
+    </p>
 
-              <div className="mb-3">
-                <a
-                  href="https://neuronwriter.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary me-2"
-                >
-                  Explore Tool
-                </a>
-              </div>
+    <div className="mb-3">
+      <a
+        href="https://neuronwriter.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary me-2"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
 
-           
-            </div>
+  {/* Right side (Image Section) */}
+  <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-5">
+    <img
+      src={neuronWriterAI}
+      alt="NeuronWriter"
+      style={{ maxWidth: "100%", height: "300px", objectFit: "contain" }}
+    />
+  </div>
+</div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src={neuronWriterAI}
-                alt="NeuronWritter"
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
-          </div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Create Videos in 3 Simple Steps</p>

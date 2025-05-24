@@ -795,60 +795,51 @@ const OutrankingAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className="row align-item-center mb-4">
-            {/* Left side (Text Section) */}
-            <div
-              style={{  paddingRight: "30px" }}
-              className="col-12 col-md-6 order-2 order-md-1 "
-            
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>Outranking.io AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Outranking.io is a powerful AI-driven SEO tool that assists
-                writers, marketers, and agencies in crafting high-ranking
-                content. It combines AI writing capabilities with real-time SERP
-                analysis and NLP optimization to help users research, plan,
-                write, and optimize content more effectively.
-              </p>
+          <div className="row align-items-center mb-4">
+  {/* Left side (Text Section) */}
+  <div className="col-12 col-md-6 order-2 order-md-1" style={{ paddingRight: "30px" }}>
+    <p className="text-primary">Write better, faster</p>
+    <h1>Outranking.io AI</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      Outranking.io is a powerful AI-driven SEO tool that assists
+      writers, marketers, and agencies in crafting high-ranking
+      content. It combines AI writing capabilities with real-time SERP
+      analysis and NLP optimization to help users research, plan,
+      write, and optimize content more effectively.
+    </p>
+    <p>
+      Outranking offers features such as automated content briefs,
+      keyword clustering, meta tag generation, content scoring, and
+      internal linking suggestions, all within a collaborative content
+      workflow.
+    </p>
+    <div className="mb-3">
+      <a
+        href="https://www.clearscope.io/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary me-2"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
 
-              <p>
-                Outranking offers features such as automated content briefs,
-                keyword clustering, meta tag generation, content scoring, and
-                internal linking suggestions, all within a collaborative content
-                workflow.
-              </p>
+  {/* Right side (Image Section) */}
+  <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-4">
+    <img
+      src={outrankingAI}
+      alt="Outranking"
+      style={{
+        maxWidth: "100%",
+        height: "300px",
+        objectFit: "contain"
+      }}
+    />
+  </div>
+</div>
 
-              <div className="mb-3">
-                <a
-                  href="https://www.clearscope.io/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary me-2"
-                >
-                  Explore Tool
-                </a>
-              </div>
-            </div>
-
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src={outrankingAI}
-                alt="outranking"
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
-          </div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Create Videos in 3 Simple Steps</p>
