@@ -625,7 +625,7 @@ const LegalRobot = () => {
             {/* Right side (Image Section) */}
             <div className="col-12 col-md-6 text-center">
               <img
-                src="/assets/Img/AI for legal/legalRobot-s1.jpg"
+                src="public\assets\Img\AI for legal\AiForLegal\LegalRobot.png"
                 alt="Legal Robot"
                 className="img-fluid"
                 style={{ height: "300px", objectFit: "contain" }}

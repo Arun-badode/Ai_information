@@ -628,7 +628,7 @@ const DoNotPay = () => {
             {/* Right side (Image Section) */}
             <div className="col-12 col-md-6 text-center">
               <img
-                src="/assets/Img/AI for legal/Donotpay-s1.jpg"
+                src="public\assets\Img\AI for legal\AiForLegal\Donotpay.png"
                 alt="DoNotPay Tool"
                 className="img-fluid"
                 style={{ height: "300px", objectFit: "contain" }}

@@ -133,16 +133,16 @@ const AIPowered = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.litera.com/sites/default/files/styles/medium_hq/public/image/2024-01/transact_screenshot_1.png.webp?itok=rFbQB5ui"
+                src="public\assets\Img\AI for legal\Aipowered -s1.jpg"
                 alt="Power AI"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.litera.com/sites/default/files/styles/medium_hq/public/image/2023-12/litera-desktop-ribbon.png.webp?itok=6qPtqaO2"
+                src="public\assets\Img\AI for legal\Aipowered -s2.jpg"
                 alt="Power AI"
-                className="img-fluid rounded-3  w-100 h-50 object-fit-cover"
+                className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
           </div>
@@ -643,7 +643,7 @@ const AIPowered = () => {
             {/* Right side (Image Section) */}
             <div className="col-12 col-md-6 order-2 order-md-2 text-center mb-4 mb-md-0">
               <img
-                src="https://www.artificiallawyer.com/wp-content/uploads/2021/08/Screenshot-2021-08-10-at-15.58.03.png"
+                src="public\assets\Img\AI for legal\AiForLegal\Kira.png"
                 alt="Kira Systems"
                 className="img-fluid"
                 style={{ height: "300px", objectFit: "contain" }}

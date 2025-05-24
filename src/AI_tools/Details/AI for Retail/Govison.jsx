@@ -885,7 +885,7 @@ const Govison = () => {
 </div>
 
 
-          <section style={{ backgroundColor: "#283e55", padding: "3rem 0" }}>
+          <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">
                 Simplify Deep Thinking—Unlock Clarity with GoVision AI
@@ -915,7 +915,7 @@ const Govison = () => {
                   <div
                     style={{
                       position: "relative",
-                      backgroundColor: "#2f9fd4",
+                      backgroundColor: "#1034A6",
                       borderRadius: "12px",
                       boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
                       padding: "2rem",
@@ -950,7 +950,7 @@ const Govison = () => {
                   <div
                     style={{
                       position: "relative",
-                      backgroundColor: "#2f9fd4",
+                      backgroundColor: "#1034A6",
                       borderRadius: "12px",
                       boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
                       padding: "2rem",
@@ -985,7 +985,7 @@ const Govison = () => {
                   <div
                     style={{
                       position: "relative",
-                      backgroundColor: "#2f9fd4",
+                      backgroundColor: "#1034A6",
                       borderRadius: "12px",
                       boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
                       padding: "2rem",

@@ -915,7 +915,7 @@ const Everseen = () => {
 </div>
 
 
-          <section style={{ backgroundColor: "#34495e", padding: "3rem 0" }}>
+          <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">
                 Elevate Your Operations—Achieve Excellence with Everseen AI
@@ -945,7 +945,7 @@ const Everseen = () => {
                   <div
                     style={{
                       position: "relative",
-                      backgroundColor: "#16a085",
+                      backgroundColor: "#1034A6",
                       borderRadius: "12px",
                       boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
                       padding: "2rem",
@@ -980,7 +980,7 @@ const Everseen = () => {
                   <div
                     style={{
                       position: "relative",
-                      backgroundColor: "#16a085",
+                      backgroundColor: "#1034A6",
                       borderRadius: "12px",
                       boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
                       padding: "2rem",
@@ -1015,7 +1015,7 @@ const Everseen = () => {
                   <div
                     style={{
                       position: "relative",
-                      backgroundColor: "#16a085",
+                      backgroundColor: "#1034A6",
                       borderRadius: "12px",
                       boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
                       padding: "2rem",

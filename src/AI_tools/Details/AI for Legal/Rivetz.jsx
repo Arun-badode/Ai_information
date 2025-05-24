@@ -696,7 +696,7 @@ const Rivetz = () => {
             {/* Right side (Image Section) */}
             <div className="col-12 col-md-6 text-center mb-5 mb-md-0">
               <img
-                src="/assets/Img/AI for legal/rivetai-s1.jpg"
+                src="public\assets\Img\AI for legal\AiForLegal\Rivetz.png"
                 alt="Rivetz AI"
                 className="img-fluid"
                 style={{ height: "300px", objectFit: "contain" }}

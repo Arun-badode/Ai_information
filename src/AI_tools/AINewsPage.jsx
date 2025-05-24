@@ -193,10 +193,6 @@
 
 // export default AINewsPage;
 
-
-
-
-
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
@@ -207,6 +203,7 @@ const AINewsPage = () => {
   const [latestNews, setLatestNews] = useState([]);
   const [visibleNewsCount, setVisibleNewsCount] = useState(10); // Number of items to show initially
   const [trendingApiArticles, setTrendingApiArticles] = useState([]);
+  // console.log(process.env.REACT_APP_NEWS_API_KEY)
 
   const featuredNews = {
     title: "OpenAI's GPT-5 Breakthrough!",
@@ -220,9 +217,12 @@ const AINewsPage = () => {
 
   const GetLatestNews = async () => {
     try {
+      //  console.log(import.meta.env.REACT_APP_NEWS_API_KEY)
+       const apiKey = import.meta.env.VITE_NEWS_API_KEY
       const response = await axios.get("https://newsapi.org/v2/everything", {
+       
         headers: {
-          Authorization: `Bearer d9c1cfb73dbd4e38b1f317d430df037b`,
+          Authorization: apiKey ,
         },
         params: {
           q: "artificial+intelligence",
@@ -256,9 +256,10 @@ const AINewsPage = () => {
 
   const GetTrending = async () => {
     try {
+      const apiKey = import.meta.env.VITE_NEWS_API_KEY
       const response = await axios.get("https://newsapi.org/v2/everything", {
         headers: {
-          Authorization: `Bearer d9c1cfb73dbd4e38b1f317d430df037b`,
+          Authorization:  apiKey,
         },
         params: {
           q: "technology AND AI", // fixed query
@@ -379,7 +380,7 @@ const AINewsPage = () => {
         </div>
 
         <div className="col-lg-4">
-          <h2 className="section-title mb-4">🔥Trending Topics</h2>
+          <h2 className="section-title text-white mb-4">🔥Trending Topics</h2>
           <div className="card p-3 ainp-trending shadow-sm">
             {trendingApiArticles.length > 0 ? trendingApiArticles.map((topic, index) => (
               <div
