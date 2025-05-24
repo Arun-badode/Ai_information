@@ -317,7 +317,7 @@ const RainforestQA = () => {
             <div className="col-md-6">
               <img
                 src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
-                alt=""
+                alt="rainforest"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -325,6 +325,7 @@ const RainforestQA = () => {
               <img
                 src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
+                alt="rainforest"
               />
             </div>
           </div>
@@ -866,6 +867,7 @@ const RainforestQA = () => {
             >
               <img
      src={Rainforest}
+     alt="rainforest"
 style={{ MaxWidth: "100%", height: "300px" }}
               />
             </div>

@@ -134,13 +134,14 @@ const LegalZoomAI = () => {
             <div className="col-md-6">
               <img
                 src="public\assets\Img\AI for legal\LegalZoom-s2.jpg"
-                alt=""
+                alt="Legal Zoom"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src="public\assets\Img\AI for legal\LegalZoom-s3.jpg"
+                alt="Legal Zoom"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

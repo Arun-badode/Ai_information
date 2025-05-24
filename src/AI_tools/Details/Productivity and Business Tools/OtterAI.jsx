@@ -609,7 +609,7 @@ const OtterAI = () => {
   <div style={{ flex: 1, textAlign: "center" }}>
     <img
       src={otter}
-      alt="Otter.ai interface"
+      alt="Otter Ai Interface"
       className="img-fluid rounded-3"
       style={{ maxWidth: "80%", height: "auto" }}
       loading="lazy"

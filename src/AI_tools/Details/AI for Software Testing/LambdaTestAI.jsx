@@ -335,14 +335,14 @@ const LambdaTestAI = () => {
             <div className="col-md-6">
               <img
                 src={lambdatest1}
-                alt="lambdatestst1"
+                alt="lambdatestst"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={lambdatest2}
-                alt="lambdatestst2"
+                alt="lambdatestst"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

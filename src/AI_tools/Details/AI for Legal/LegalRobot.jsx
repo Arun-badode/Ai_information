@@ -144,13 +144,14 @@ const LegalRobot = () => {
             <div className="col-md-6">
               <img
                 src="public\assets\Img\AI for legal\legalRobot-s2.jpg"
-                alt=""
+                alt="LegalRobot"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src="public\assets\Img\AI for legal\legalRobot-s3.jpg"
+                alt="LegalRobot"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

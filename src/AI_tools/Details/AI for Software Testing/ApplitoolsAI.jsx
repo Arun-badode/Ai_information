@@ -317,14 +317,14 @@ const ApplitoolsAI = () => {
             <div className="col-md-6">
               <img
                 src={applitool1}
-                alt="applitool screenshot"
+                alt="applitool "
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={applitool2}
-                alt="applitool screenshot"
+                alt="applitool"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

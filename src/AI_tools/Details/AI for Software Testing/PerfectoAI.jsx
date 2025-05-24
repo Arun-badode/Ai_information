@@ -314,14 +314,14 @@ const PerfectoAI = () => {
             <div className="col-md-6">
               <img
                 src={perfectio1}
-                alt="screenshot1"
+                alt="perfecto"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={perfectio2}
-                alt="screenshot2"
+                alt="perfecto"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

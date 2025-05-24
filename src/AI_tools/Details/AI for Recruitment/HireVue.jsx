@@ -313,13 +313,14 @@ const HireVue = () => {
             <div className="col-md-6">
               <img
                 src={hr1}
-                alt=""
+                alt="hirevue"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={hr2}
+                alt="hirevue"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -820,6 +821,7 @@ const HireVue = () => {
     <div className="image-container" style={{ maxHeight: "300px", overflow: "hidden" }}>
       <img
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
+        
         className="img-fluid rounded-3"
         style={{ 
           width: "100%",

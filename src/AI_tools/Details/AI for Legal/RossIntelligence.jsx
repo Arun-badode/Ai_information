@@ -129,13 +129,14 @@ const Rossntelligence = () => {
             <div className="col-md-6">
               <img
                 src="public\assets\Img\AI for legal\Rossintelligence - s2.jpg"
-                alt=""
+                alt="RossIntelligence"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src="public\assets\Img\AI for legal\Rossintelligence - s3.jpg"
+                alt="RossIntelligence"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

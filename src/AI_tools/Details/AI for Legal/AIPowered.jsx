@@ -134,14 +134,14 @@ const AIPowered = () => {
             <div className="col-md-6">
               <img
                 src="https://www.litera.com/sites/default/files/styles/medium_hq/public/image/2024-01/transact_screenshot_1.png.webp?itok=rFbQB5ui"
-                alt="Power AI"
+                alt="aipowered"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src="https://www.litera.com/sites/default/files/styles/medium_hq/public/image/2023-12/litera-desktop-ribbon.png.webp?itok=6qPtqaO2"
-                alt="Power AI"
+                alt="aipowered"
                 className="img-fluid rounded-3  w-100 h-50 object-fit-cover"
               />
             </div>
@@ -644,7 +644,7 @@ const AIPowered = () => {
             <div className="col-12 col-md-6 order-2 order-md-2 text-center mb-4 mb-md-0">
               <img
                 src="https://www.artificiallawyer.com/wp-content/uploads/2021/08/Screenshot-2021-08-10-at-15.58.03.png"
-                alt="Kira Systems"
+                alt="aipowered"
                 className="img-fluid"
                 style={{ height: "300px", objectFit: "contain" }}
               />
