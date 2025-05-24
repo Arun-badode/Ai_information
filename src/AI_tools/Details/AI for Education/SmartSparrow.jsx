@@ -8,6 +8,9 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import img7 from "../../../../public/assets/Img/AI for Education/img-7.png"
 import img8 from "../../../../public/assets/Img/AI for Education/img-8.png"
 import d from "../../../../public/assets/Img/AI for Education/AI For Education/5.png"
+import smartsparrowS1 from '../../../../public/assets/Img/AI for Education/smartsparrowS1.png';
+import smartsparrowS2 from '../../../../public/assets/Img/AI for Education/smartsparrowS2.png';
+
 
 // review section data
 const reviews = [
@@ -376,14 +379,14 @@ const SmartSparrow = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src={img7}
+                src={smartsparrowS1}
                 alt="smartsparrow"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={img8}
+                src={smartsparrowS2}
                 alt="smartsparrow"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
@@ -646,8 +649,8 @@ const SmartSparrow = () => {
               <p className="text-primary">Write better, faster</p>
               <h1>
                 {" "}
-                Smart Sparrow – Adaptive Learning Technology for Personalized
-                Education
+                Smart Sparrow 
+                
               </h1>
               <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
               <p>
@@ -670,11 +673,14 @@ const SmartSparrow = () => {
                 universities to corporate training.
               </p>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
+               <a
+                              href="https://www.smartsparrow.com"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="btn btn-primary me-2"
+                            >
+                              Explore Tool
+                            </a>
               
             </div>
 

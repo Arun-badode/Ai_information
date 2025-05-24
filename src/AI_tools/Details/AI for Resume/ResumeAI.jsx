@@ -3,8 +3,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import resumeaiImg from '../../../../public/assets/Img/Ai for Resume/40.png'
 
 import resume from "../../../../public/assets/Img/Ai for Resume/44.png";
+import resumeioSS1 from '../../../../public/assets/Img/Ai for Resume/resumeioSS1.png';
+import resumeioSS2 from '../../../../public/assets/Img/Ai for Resume/resumeioSS2.png';
+
 // review section data
 const reviews = [
   {
@@ -317,14 +321,14 @@ const RessumeAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
+                src={resumeioSS1}
                 alt="resumeai"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
+                src={resumeioSS2}
                 alt="reumeai"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
@@ -812,7 +816,7 @@ const RessumeAI = () => {
 
               <div className="mb-3">
                 <a
-                  href="https://www.resumeai.com"
+                  href="https://resume.io/ai-resume-builder"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary me-2"
@@ -832,7 +836,7 @@ const RessumeAI = () => {
               className="col-md-6 col-12 order-md-2 order-1 text-center mb-3 mb-md-0  "
             >
               <img
-                src={resume}
+                src={resumeaiImg}
                 alt="Enhancv AI"
                 style={{
                   Width: "100%",

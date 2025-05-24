@@ -5,6 +5,9 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 // import img11 from "../../../../public/assets/Img/AI for Education/img-11.jpg"
 // import img12 from "../../../../public/assets/Img/AI for Education/img_12.jpeg"
 import e from "../../../../public/assets/Img/AI for Education/AI For Education/7.png"
+import duolingoSS1 from '../../../../public/assets/Img/AI for Education/duolingoSS1.png';
+import duolingoSS2 from '../../../../public/assets/Img/AI for Education/duolingoSS2.png';
+
 // review section data
 const reviews = [
   {
@@ -363,14 +366,14 @@ const DuolingoAI= () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src={img11}
+                src={duolingoSS1}
                 alt="duolingo"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={img12}
+                src={duolingoSS2}
                 alt="duolingo"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
@@ -648,11 +651,13 @@ const DuolingoAI= () => {
                 enhance your learning experience.
               </p>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
+            <a
+                                 href=" https://www.duolingo.com"
+                                 rel="noopener noreferrer"
+                                 className="btn btn-primary me-2"
+                               >
+                                 Explore Tool
+                               </a>
             </div>
 
             {/* Right side (Image Section) */}
