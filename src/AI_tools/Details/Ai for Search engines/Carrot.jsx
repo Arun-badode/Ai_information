@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
+import carrot from "../../../../public/assets/Img/Ai for Search engines/carrot.png";
 import magisto from "../../../Images/MagistoAI.png";
 import carrot2 from "../../../../public/assets/Img/Ai for Search engines/Carrot2.png";
 
@@ -727,7 +728,7 @@ const Carrot = () => {
               className="col-6 col-md-12 mb-5  "
             >
               <img
-                src={magisto}
+                src={carrot}
                 style={{ MaxWidth: "100%", height: "300px" }}
               />
             </div>

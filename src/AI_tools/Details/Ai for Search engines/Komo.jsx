@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
+import komo from "../../../../public/assets/Img/Ai for Search engines/komo.png";
 import magisto from "../../../Images/MagistoAI.png";
 import komo1 from "../../../../public/assets/Img/Ai for Search engines/komo1.png";
 
@@ -674,7 +675,7 @@ const Komo = () => {
               className="col-12 col-md-6 order-1 order-md-2 mb-5 mb-md-0"
             >
               <img
-                src={magisto}
+                src={komo}
                 style={{ maxWidth: "100%", height: "300px" }}
               />
             </div>
