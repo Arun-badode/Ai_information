@@ -145,13 +145,14 @@ const Legatics = () => {
             <div className="col-md-6">
               <img
                 src="public\assets\Img\AI for legal\Legatics -s2.jpg"
-                alt=""
+                alt="Leagatics"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src="public\assets\Img\AI for legal\Legatics -s3.jpg"
+                alt="Leagatics"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

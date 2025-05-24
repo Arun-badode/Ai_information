@@ -144,13 +144,14 @@ const Reclaim = () => {
             <div className="col-md-6">
               <img
                 src={scn1}
-                alt=""
+                alt="reclaim"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={scn2}
+                alt="reclaim"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

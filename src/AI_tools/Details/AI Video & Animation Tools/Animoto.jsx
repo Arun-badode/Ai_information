@@ -134,13 +134,14 @@ const Animoto = () => {
             <div className="col-md-6">
               <img
                 src={scn3}
-                alt=""
+                alt="animoto"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={scn4}
+                alt="animoto"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

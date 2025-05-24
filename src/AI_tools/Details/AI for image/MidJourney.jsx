@@ -363,13 +363,14 @@ const MidJourney = () => {
             <div className="col-md-6">
               <img
                 src={midjourneySS1}
-                alt=""
+                alt="midjourney"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={midjourneySS2}
+                alt="midjourney"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

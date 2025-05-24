@@ -146,13 +146,14 @@ const Adam = () => {
             <div className="col-md-6">
               <img
                 src={scn1}
-                alt=""
+                alt="adam"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={scn2}
+                alt="adam"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -668,6 +669,7 @@ const Adam = () => {
             >
               <img
                 src={adam }
+                alt="adam"
                 style={{
                   Width: "100%",
                   height: "auto",

@@ -134,13 +134,14 @@ const LawGeex = () => {
             <div className="col-md-6">
               <img
                 src="public\assets\Img\AI for legal\Lawgeex - s1.jpg"
-                alt=""
+                alt="Law Geex"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src="public\assets\Img\AI for legal\Lawgeex - s2.jpg"
+                alt="Law Geex"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

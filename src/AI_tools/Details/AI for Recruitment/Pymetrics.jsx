@@ -331,7 +331,7 @@ const Pymetrics = () => {
             <div className="col-md-6">
               <img
                 src={py2}
-                alt="pymetrix"
+                alt="pymetrics"
                 
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />

@@ -320,14 +320,14 @@ const Hiretual = () => {
             <div className="col-md-6">
               <img
                 src={hr1}
-                alt="hirevue"
+                alt="hiretual"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={hr2}
-                alt="hirevue"
+                alt="hiretual"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

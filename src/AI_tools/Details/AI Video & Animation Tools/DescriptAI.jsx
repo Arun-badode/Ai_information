@@ -133,13 +133,15 @@ const DescriptAI = () => {
             <div className="col-md-6">
               <img
                 src="https://voicebot.ai/wp-content/uploads/2019/09/descript-image-2.jpg"
-                alt=""
+                alt="descriptai
+                "
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src="https://10web.io/wp-content/uploads/2024/07/Descript_screenshot.png"
+                alt="discriptai"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

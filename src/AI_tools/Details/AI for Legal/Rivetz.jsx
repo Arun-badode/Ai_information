@@ -144,13 +144,14 @@ const Rivetz = () => {
             <div className="col-md-6">
               <img
                 src="public\assets\Img\AI for legal\rivetai-s2.jpg"
-                alt=""
+                alt="Rivetz"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src="public\assets\Img\AI for legal\rivetai-s3.jpg"
+                alt="Rivetz"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

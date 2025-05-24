@@ -373,14 +373,22 @@ const Grammarly = () => {
             <div className="col-md-6">
               <img
                 src={grammi1}
+<<<<<<< HEAD
+                alt="grammarty"
+=======
                 alt="Grammarly for Education"
+>>>>>>> a3aba11b982f646cee8c4e1fc893c4b3c7d4e356
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={grammi2}
+<<<<<<< HEAD
+                alt="grammarty"
+=======
                 alt="Grammarly for Education"
+>>>>>>> a3aba11b982f646cee8c4e1fc893c4b3c7d4e356
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -677,7 +685,7 @@ const Grammarly = () => {
   <div className="col-lg-6 col-12 order-lg-2 order-1 text-center">
     <img
       src={g}
-      alt="Grammarly for Education Interface"
+      alt="Grammarly"
       className="img-fluid rounded-3 shadow-sm"
       style={{ 
         maxWidth: "100%", 

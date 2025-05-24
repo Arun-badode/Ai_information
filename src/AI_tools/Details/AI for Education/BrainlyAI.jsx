@@ -371,13 +371,14 @@ const BrainlyAI = () => {
             <div className="col-md-6">
               <img
                 src={img9}
-                alt=""
+                alt="brainly"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={img10}
+                alt="brainly"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -672,7 +673,7 @@ const BrainlyAI = () => {
                 src={f}
                 className="img-fluid rounded-3"
                 style={{ maxWidth: "80%", height: "auto" }}
-                alt="Quizlet AI platform illustration"
+                alt="brainly"
               />
             </div>
           </div>

@@ -136,13 +136,14 @@ const Kronologic= () => {
             <div className="col-md-6">
               <img
                 src={scn1}
-                alt=""
+                alt="kronologic"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={scn2}
+                alt="kronologic"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -598,6 +599,7 @@ const Kronologic= () => {
             >
               <img
                 src={kronologic}
+                alt="kronologic"
                 style={{
                   Width: "100%",
                   height: "auto",

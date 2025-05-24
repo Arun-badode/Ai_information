@@ -137,13 +137,14 @@ const BraveSearch = () => {
             <div className="col-md-6">
               <img
                 src={brave1}
-                alt=""
+                alt="bravsearch"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={brave2}
+                alt="bravsearch"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

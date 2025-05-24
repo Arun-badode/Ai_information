@@ -133,14 +133,16 @@ const Knewton  = () => {
             <div className="col-md-6">
               <img
                 src={img3}
-                alt="Screenshot 1"
+                alt="knewton"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={img4}
-                alt="Screenshot 2"
+                alt="knewton
+                
+                "
                 className="img-fluid rounded-3"
               />
             </div>
@@ -686,7 +688,7 @@ const Knewton  = () => {
                 src={c}
                 className="img-fluid rounded-3"
                 style={{ maxWidth: "80%", height: "auto" }}
-                alt="Quizlet AI platform illustration"
+                alt="knewton"
               />
             </div>
           </div>

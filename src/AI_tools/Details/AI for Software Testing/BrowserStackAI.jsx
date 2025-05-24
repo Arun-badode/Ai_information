@@ -335,14 +335,14 @@ const BrowserStackAI = () => {
             <div className="col-md-6">
               <img
                 src={browserstack1}
-                alt="screenshot1"
+                alt="browserstack"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={browserstack2}
-                alt="screenshot2"
+                alt="browserstack"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

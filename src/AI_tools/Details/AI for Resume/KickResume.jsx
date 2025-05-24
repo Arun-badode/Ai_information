@@ -323,13 +323,14 @@ const KickResume = () => {
             <div className="col-md-6">
               <img
                 src={kick1}
-                alt=""
+                alt="kickresume"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6 ">
               <img
                 src={kick2}
+                alt="kickresume"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover "
               />
             </div>

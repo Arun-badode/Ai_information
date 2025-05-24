@@ -377,13 +377,14 @@ const SmartSparrow = () => {
             <div className="col-md-6">
               <img
                 src={img7}
-                alt=""
+                alt="smartsparrow"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={img8}
+                alt="smartsparrow"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -686,7 +687,7 @@ const SmartSparrow = () => {
                 src={d}
                 className="img-fluid rounded-3"
                 style={{ maxWidth: "80%", height: "auto" }}
-                alt="Quizlet AI platform illustration"
+                alt="smartSparrow"
               />
             </div>          </div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>

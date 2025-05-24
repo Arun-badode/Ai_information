@@ -141,7 +141,7 @@ const Notion = () => {
             <div className="col-md-6">
               <img
                 src={notion2 }
-                alt="Notion AI"
+                alt="Notion"
                 className="img-fluid rounded-3"
               />
             </div>

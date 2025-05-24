@@ -131,7 +131,7 @@ const MiroAi = () => {
             <div className="col-md-6">
               <img
                 src={miro1}
-                alt="SMiro AI"
+                alt="Miro AI"
                 className="img-fluid rounded-3"
               />
             </div>

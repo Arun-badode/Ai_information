@@ -136,13 +136,14 @@ const Luminance = () => {
             <div className="col-md-6">
               <img
                 src="public\assets\Img\AI for legal\LuminanceAI -s2.jpg"
-                alt=""
+                alt="Luminance"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src="public\assets\Img\AI for legal\LuminanceAI -s3.jpg"
+                alt="Luminance"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

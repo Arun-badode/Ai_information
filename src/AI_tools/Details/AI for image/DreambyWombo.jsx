@@ -724,7 +724,7 @@ const DreambyWombo = () => {
               }}
               className="col-6 col-md-12 mb-5  "
             >
-              <img src="" style={{ MaxWidth: "100%", height: "300px" }} />
+              <img src="" alt="Dream By Wombo"  style={{ MaxWidth: "100%", height: "300px" }} />
             </div>
           </div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
