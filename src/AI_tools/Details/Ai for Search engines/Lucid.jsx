@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
-import magisto from "../../../Images/MagistoAI.png";
+import lucid from "../../../../public/assets/Img/Ai for Search engines/lucid.png";
 import lucid1 from "../../../../public/assets/Img/Ai for Search engines/lucid1.png";
 import lucid2 from "../../../../public/assets/Img/Ai for Search engines/lucid2.png";
 
@@ -731,7 +731,7 @@ const Lucid = () => {
               className="col-6 col-md-12 mb-5  "
             >
               <img
-                src={magisto}
+                src={lucid}
                 alt="lucid"
                 style={{ MaxWidth: "100%", height: "300px" }}
               />

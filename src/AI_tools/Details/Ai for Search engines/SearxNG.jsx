@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
-import magisto from "../../../Images/MagistoAI.png";
+import search from "../../../../public/assets/Img/Ai for Search engines/search.png";
+import searx1 from "../../../../public/assets/Img/AI for Business/searx1.png";
+import searx2 from "../../../../public/assets/Img/AI for Business/searx2.png";
 
 // review section data
 const reviews = [
@@ -664,7 +666,8 @@ const SearxNG = () => {
               className="col-6 col-md-12 mb-5  "
             >
               <img
-                src={magisto}
+                src={search}
+                alt="searxng"
                 style={{ MaxWidth: "100%", height: "300px" }}
               />
             </div>

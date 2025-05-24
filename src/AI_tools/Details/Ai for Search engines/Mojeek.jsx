@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
-import magisto from "../../../Images/MagistoAI.png";
+import mojeek from "../../../../public/assets/Img/Ai for Search engines/mojeek.png";
 import mojeek1 from "../../../../public/assets/Img/Ai for Search engines/Mojeek1.png"
 import mojeek2 from "../../../../public/assets/Img/Ai for Search engines/Mojeek2.png"
 
@@ -728,7 +728,7 @@ const Mojeek = () => {
               className="col-6 col-md-12 mb-5  "
             >
               <img
-                src={magisto}
+                src={mojeek}
                 alt="mojeek"
                 style={{ MaxWidth: "100%", height: "300px" }}
               />

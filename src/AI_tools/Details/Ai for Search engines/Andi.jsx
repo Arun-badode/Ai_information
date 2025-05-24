@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import magisto from "../../../Images/MagistoAI.png";
+import andi from "../../../../public/assets/Img/Ai for Search engines/andi.png";
 import andi1 from "../../../../public/assets/Img/Ai for Search engines/Andi1.png";
 import andi2 from "../../../../public/assets/Img/Ai for Search engines/Andi2.png";
 
@@ -687,7 +688,7 @@ const Andi = () => {
               className="col-6 col-md-12 mb-5  "
             >
               <img
-                src={magisto}
+                src={andi}
                 style={{ MaxWidth: "100%", height: "300px" }}
               />
             </div>
