@@ -732,6 +732,7 @@ const Lucid = () => {
             >
               <img
                 src={magisto}
+                alt="lucid"
                 style={{ MaxWidth: "100%", height: "300px" }}
               />
             </div>

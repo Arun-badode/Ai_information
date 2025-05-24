@@ -142,14 +142,14 @@ const SynthesiaAI = () => {
             <div className="col-md-6">
               <img
                 src={scn15}
-                alt=""
+                alt="synthesiaai"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={scn16}
-                alt="Screenshot 2"
+                alt="synthesiai"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

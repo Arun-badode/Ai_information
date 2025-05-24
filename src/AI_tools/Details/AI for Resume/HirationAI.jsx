@@ -323,14 +323,14 @@ const HirationAI = () => {
             <div className="col-md-6">
               <img
                 src={hiration1}
-                alt=""
+                alt="hirtionai"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover bg-cover "
               />
             </div>
             <div className="col-md-6">
               <img
                 src={hiration2}
-                alt=""
+                alt="hirationai"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

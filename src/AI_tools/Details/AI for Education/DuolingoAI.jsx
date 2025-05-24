@@ -364,13 +364,14 @@ const DuolingoAI= () => {
             <div className="col-md-6">
               <img
                 src={img11}
-                alt=""
+                alt="duolingo"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={img12}
+                alt="duolingo"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -663,7 +664,7 @@ const DuolingoAI= () => {
                 src={e}
                 className="img-fluid rounded-3"
                 style={{ maxWidth: "80%", height: "auto" }}
-                alt="Quizlet AI platform illustration"
+                alt="duolingo"
               />
             </div>
           </div>

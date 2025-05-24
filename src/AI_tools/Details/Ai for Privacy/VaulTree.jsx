@@ -719,7 +719,7 @@ const VaultreeAI = () => {
                                      src={Vaultree}
                                      className="img-fluid rounded-3"
                                      style={{ maxWidth: "80%", height: "auto" }}
-                                     alt="Quizlet AI platform illustration"
+                                     alt="vaultree"
                                    />
                                  </div>
           </div>

@@ -134,13 +134,14 @@ const Magisto = () => {
             <div className="col-md-6">
               <img
                 src={scn9}
-                alt=""
+                alt="magisto"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={scn10}
+                alt="magisto"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

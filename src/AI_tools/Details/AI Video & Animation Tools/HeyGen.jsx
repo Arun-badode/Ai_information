@@ -137,13 +137,14 @@ const HeyGen = () => {
             <div className="col-md-6">
               <img
                 src={scn5}
-                alt=""
+                alt="heygen"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={scn6}
+                alt="heygen"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

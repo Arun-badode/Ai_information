@@ -729,6 +729,7 @@ const Mojeek = () => {
             >
               <img
                 src={magisto}
+                alt="mojeek"
                 style={{ MaxWidth: "100%", height: "300px" }}
               />
             </div>
