@@ -3,6 +3,7 @@ import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import artbreederSS1 from '../../../../public/assets/Img/AI from Image/artbreederSS1.png';
 import artbreederSS2 from '../../../../public/assets/Img/AI from Image/artbreederSS2.png';
+import artbreeder from '../../../../public/assets/Img/AI from Image/4.png';
 
 
 // review section data
@@ -693,7 +694,7 @@ const ArtbreederAI = () => {
   {/* Right side (Image Section) */}
   <div className="col-lg-6 col-12 order-lg-2 order-1 text-center">
     <img
-      src="https://www.artbreeder.com/static/images/artbreeder-collage.jpg"
+      src={artbreeder}
       alt="Artbreeder AI Art Examples"
       className="img-fluid rounded shadow-lg"
       style={{

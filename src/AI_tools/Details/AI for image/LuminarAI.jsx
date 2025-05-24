@@ -5,6 +5,7 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import magisto from "../../../Images/MagistoAI.png";
 import luminarSS1 from '../../../../public/assets/Img/AI from Image/luminarSS1.png';
 import luminarSS2 from '../../../../public/assets/Img/AI from Image/luminarSS2.png';
+import luminar from '../../../../public/assets/Img/AI from Image/10.png';
 
 
 // review section data
@@ -649,7 +650,7 @@ const LuminarAI = () => {
   {/* Image Section (First on mobile, second on desktop) */}
   <div className="col-lg-6 col-md-12 text-center order-1 order-lg-2 mb-4 mb-lg-0">
     <img
-      src={magisto}
+      src={luminar}
       alt="Luminar AI Preview"
       className="img-fluid"
       style={{ maxHeight: "300px", width: "100%", objectFit: "contain" }}

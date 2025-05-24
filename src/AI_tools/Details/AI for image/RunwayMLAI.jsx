@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import runwaySS1 from '../../../../public/assets/Img/AI from Image/runwaySS1.png';
 import runwaySS2 from '../../../../public/assets/Img/AI from Image/runwaySS2.png';
+import runway2 from '../../../../public/assets/Img/AI from Image/2.png';
 
 
 // review section data
@@ -635,9 +636,18 @@ const RunwayMLAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-       <div className="row align-items-center justify-content-between mb-1">
-  {/* Left side (Text Section) */}
-  <div className="col-12 col-md-6 mb-4 mb-md-0" style={{ paddingRight: "30px" }}>
+      <div className="row align-items-center mb-1 flex-column flex-md-row-reverse">
+  {/* Right side (Image Section - shown on top in mobile) */}
+  <div className="col-12 col-md-6 text-center mb-4 mb-md-0">
+    <img
+      src={runway2}
+      alt="Runway ML Tool"
+      style={{ width: "100%", maxHeight: "250px", objectFit: "cover" }}
+    />
+  </div>
+
+  {/* Left side (Text Section - shown below in mobile) */}
+  <div className="col-12 col-md-6" style={{ paddingRight: "30px" }}>
     <p className="text-primary">Write better, faster</p>
     <h1>Runway ML</h1>
     <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
@@ -661,16 +671,8 @@ const RunwayMLAI = () => {
       </a>
     </div>
   </div>
-
-  {/* Right side (Image Section) */}
-  <div className="col-12 col-md-6 text-center">
-    <img
-      src="your-base64-image-or-link-here"
-      alt="Runway ML Tool"
-      style={{ width: "100%", maxHeight: "250px", objectFit: "cover" }}
-    />
-  </div>
 </div>
+
 
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">

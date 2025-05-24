@@ -5,7 +5,7 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import magisto from "../../../Images/MagistoAI.png";
 import fotorSS1 from '../../../../public/assets/Img/AI from Image/fotorSS1.png';
 import fotorSS2 from '../../../../public/assets/Img/AI from Image/fotorSS2.png';
-
+import fotor from '../../../../public/assets/Img/AI from Image/12.png';
 
 // review section data
 const reviews = [
@@ -681,7 +681,7 @@ const FotorAI = () => {
   {/* Right side (Image Section) */}
   <div className="col-lg-6 col-md-12 text-center">
     <img
-      src={magisto}
+      src={fotor}
       alt="Fotor AI Preview"
       className="img-fluid"
       style={{ maxHeight: "300px", width: "100%", objectFit: "contain" }}

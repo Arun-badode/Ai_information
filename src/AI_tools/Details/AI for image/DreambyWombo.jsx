@@ -3,6 +3,8 @@ import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import dreambywomboSS1 from '../../../../public/assets/Img/AI from Image/dreambywomboSS1.png';
 import dreambywomboSS2 from '../../../../public/assets/Img/AI from Image/dreambywomboSS2.png';
+import dreambywombo from '../../../../public/assets/Img/AI from Image/8.png';
+
 
 
 // review section data
@@ -681,52 +683,44 @@ const DreambyWombo = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>
-                Dream by Wombo{" "}
-              </h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Dream by Wombo is an AI-powered art generator that allows users
-                to create stunning artworks simply by providing a text prompt.
-                This revolutionary tool uses advanced deep learning algorithms
-                to turn text descriptions into visually striking images. Whether
-                you are an artist, content creator, or just someone looking to
-                explore the potential of AI in the world of art, Dream by Wombo
-                offers an easy and fun way to create digital artwork.
-              </p>
+        <div className="row align-items-center mb-4 flex-column flex-lg-row-reverse">
+  {/* Image Section (Top in mobile, Right in desktop) */}
+  <div className="col-lg-6 col-md-12 text-center mb-4 mb-lg-0">
+    <img
+      src={dreambywombo}
+      alt="Dream by Wombo"
+      style={{ width: "100%", maxHeight: "300px", objectFit: "contain" }}
+    />
+  </div>
 
-             <div className="mb-3">
-                <a
-                  href="https://dream.ai/metamask"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary me-2"
-                >
-                  Explore Tool
-                </a>
-              </div>
-            </div>
+  {/* Text Section (Bottom in mobile, Left in desktop) */}
+  <div className="col-lg-6 col-md-12 pe-lg-4">
+    <p className="text-primary">Write better, faster</p>
+    <h1>Dream by Wombo</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      Dream by Wombo is an AI-powered art generator that allows users
+      to create stunning artworks simply by providing a text prompt.
+      This revolutionary tool uses advanced deep learning algorithms
+      to turn text descriptions into visually striking images. Whether
+      you are an artist, content creator, or just someone looking to
+      explore the potential of AI in the world of art, Dream by Wombo
+      offers an easy and fun way to create digital artwork.
+    </p>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img src="" style={{ MaxWidth: "100%", height: "300px" }} />
-            </div>
-          </div>
+    <div className="mb-3">
+      <a
+        href="https://dream.ai/metamask"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary me-2"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
+</div>
+
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>

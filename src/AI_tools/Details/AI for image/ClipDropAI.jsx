@@ -5,6 +5,8 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import magisto from "../../../Images/MagistoAI.png";
 import clipdropSS1 from '../../../../public/assets/Img/AI from Image/clipdropSS1.png';
 import clipdropSS2 from '../../../../public/assets/Img/AI from Image/clipdropSS2.png';
+import clipdrop from '../../../../public/assets/Img/AI from Image/11.png';
+
 
 
 // review section data
@@ -641,9 +643,9 @@ const ClipDropAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-      <div className="row align-items-center justify-content-between mb-4">
-  {/* Left side (Text Section) */}
-  <div className="col-lg-6 col-md-12 mb-4 mb-lg-0">
+  <div className="row align-items-center mb-4">
+  {/* Text Section - Left on desktop, Bottom on mobile */}
+  <div className="col-lg-6 col-md-12 order-2 order-lg-1">
     <p className="text-primary">Create stunning visuals effortlessly</p>
     <h1>ClipDrop AI</h1>
     <div className="text-warning mb-2">⭐⭐⭐⭐⭐</div>
@@ -671,16 +673,18 @@ const ClipDropAI = () => {
     </div>
   </div>
 
-  {/* Right side (Image Section) */}
-  <div className="col-lg-6 col-md-12 text-center">
+  {/* Image Section - Right on desktop, Top on mobile */}
+  <div className="col-lg-6 col-md-12 text-center order-1 order-lg-2 mb-4 mb-lg-0">
     <img
-      src={magisto}
+      src={clipdrop} // Ensure the path is correct
       alt="ClipDrop Preview"
       className="img-fluid"
       style={{ maxHeight: "300px", width: "100%", objectFit: "contain" }}
     />
   </div>
 </div>
+
+
 
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">

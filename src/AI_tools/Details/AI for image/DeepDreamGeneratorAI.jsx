@@ -3,6 +3,8 @@ import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import deepdreamSS1 from '../../../../public/assets/Img/AI from Image/deepdreamSS1.png';
 import deepdreamSS2 from '../../../../public/assets/Img/AI from Image/deepdreamSS2.png';
+import deepdream from '../../../../public/assets/Img/AI from Image/9.png';
+
 
 
 // review section data
@@ -599,9 +601,19 @@ const DeepDreamGeneratorAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-       <div className="row align-items-center justify-content-between mb-4">
-  {/* Left side (Text Section) */}
-  <div className="col-lg-6 col-md-12 mb-4 mb-lg-0 pe-lg-4">
+   <div className="row align-items-center mb-4 flex-column flex-lg-row-reverse">
+  {/* Image Section (Right on desktop, Top on mobile) */}
+  <div className="col-lg-6 col-md-12 text-center mb-4 mb-lg-0">
+    <img
+      src={deepdream} // Add your image URL here
+      alt="Deep Dream Generator Preview"
+      className="img-fluid"
+      style={{ maxHeight: "300px", width: "100%", objectFit: "contain" }}
+    />
+  </div>
+
+  {/* Text Section (Left on desktop, Bottom on mobile) */}
+  <div className="col-lg-6 col-md-12 pe-lg-4">
     <p className="text-primary">Write better, faster</p>
     <h1>Deep Dream Generator AI</h1>
     <div className="text-warning mb-2">⭐⭐⭐⭐⭐</div>
@@ -628,17 +640,8 @@ const DeepDreamGeneratorAI = () => {
       </a>
     </div>
   </div>
-
-  {/* Right side (Image Section) */}
-  <div className="col-lg-6 col-md-12 text-center">
-    <img
-      src="" // Add your image URL here
-      alt="Deep Dream Generator Preview"
-      className="img-fluid"
-      style={{ maxHeight: "300px", width: "100%", objectFit: "contain" }}
-    />
-  </div>
 </div>
+
 
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">

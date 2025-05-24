@@ -341,22 +341,17 @@ const SimpleMind = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-<<<<<<< HEAD
-                src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
-=======
+
                 src={simplemindSS1}
->>>>>>> a3aba11b982f646cee8c4e1fc893c4b3c7d4e356
+
                 alt="simplemind"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-<<<<<<< HEAD
-                src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
-=======
                 src={simplemindSS2}
->>>>>>> a3aba11b982f646cee8c4e1fc893c4b3c7d4e356
+
                 alt="simplemind"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />

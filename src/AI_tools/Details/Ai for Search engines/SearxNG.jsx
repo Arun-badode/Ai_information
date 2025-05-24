@@ -3,8 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import magisto from "../../../Images/MagistoAI.png";
-import searx1 from "../../../../public/assets/Img/AI for Business/searx1.png";
-import searx2 from "../../../../public/assets/Img/AI for Business/searx2.png";
 
 // review section data
 const reviews = [
@@ -136,25 +134,14 @@ const SearxNG = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-<<<<<<< HEAD
                 src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
-                alt="searxng"
-=======
-                src={searx1}
-                alt="SearXNG"
->>>>>>> a3aba11b982f646cee8c4e1fc893c4b3c7d4e356
+                alt=""
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-<<<<<<< HEAD
                 src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
-                alt="searxng"
-=======
-                src={searx2}
-                alt="SearXNG"
->>>>>>> a3aba11b982f646cee8c4e1fc893c4b3c7d4e356
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -633,8 +620,8 @@ const SearxNG = () => {
           <div className=" row d-flex align-items-center justify-content-between mb-1">
             {/* Left side (Text Section) */}
             <div
-              
-              className=" col-lg-6 "
+              style={{ flex: 1, paddingRight: "30px" }}
+              className="col-6 col-md-12 "
             >
               <p className="text-primary">
                 Create stunning visuals effortlessly
@@ -655,7 +642,7 @@ const SearxNG = () => {
 
             <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
         <a
-          href="https://searx.bndkt.io/"
+          href="https://www.browserstack.com/live?utm_source=bing&utm_medium=cpc&utm_platform=paidads&utm_content=&utm_campaign=Bing-Search-Brand-India&utm_campaigncode=Automate+149846&utm_term=p+browserstack%20automate%20desktop"
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-primary btn-lg px-4"
@@ -677,7 +664,6 @@ const SearxNG = () => {
             >
               <img
                 src={magisto}
-                alt="searxng"
                 style={{ MaxWidth: "100%", height: "300px" }}
               />
             </div>

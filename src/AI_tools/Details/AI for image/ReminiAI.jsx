@@ -5,6 +5,7 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import magisto from "../../../Images/MagistoAI.png";
 import reminiSS1 from '../../../../public/assets/Img/AI from Image/reminiSS1.png';
 import reminiSS2 from '../../../../public/assets/Img/AI from Image/reminiSS2.png';
+import remini from '../../../../public/assets/Img/AI from Image/5.png';
 
 
 // review section data
@@ -642,9 +643,19 @@ const ReminiAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-         <div className="row align-items-center justify-content-between mb-4">
-  {/* Left side (Text Section) */}
-  <div className="col-lg-6 col-md-12 mb-4 mb-lg-0 pe-lg-4">
+      <div className="row align-items-center mb-4 flex-column flex-lg-row-reverse">
+  {/* Image Section (Right on desktop, Top on mobile) */}
+  <div className="col-lg-6 col-md-12 text-center mb-4 mb-lg-0">
+    <img
+      src={remini} // Replace with actual Remini image URL if needed
+      alt="Remini AI Example"
+      className="img-fluid"
+      style={{ maxHeight: "300px", objectFit: "contain" }}
+    />
+  </div>
+
+  {/* Text Section (Left on desktop, Bottom on mobile) */}
+  <div className="col-lg-6 col-md-12 pe-lg-4">
     <p className="text-primary">Create stunning visuals effortlessly</p>
     <h1>Remini AI</h1>
     <div className="text-warning mb-2">⭐⭐⭐⭐⭐</div>
@@ -668,17 +679,8 @@ const ReminiAI = () => {
       </a>
     </div>
   </div>
-
-  {/* Right side (Image Section) */}
-  <div className="col-lg-6 col-md-12 text-center">
-    <img
-      src={magisto} // Replace with actual Remini image URL if needed
-      alt="Remini AI Example"
-      className="img-fluid"
-      style={{ maxHeight: "300px", objectFit: "contain" }}
-    />
-  </div>
 </div>
+
 
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">

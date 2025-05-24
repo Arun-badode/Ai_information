@@ -5,6 +5,7 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import magisto from "../../../Images/MagistoAI.png";
 import removebgSS1 from '../../../../public/assets/Img/AI from Image/removebgSS1.png';
 import removebgSS2 from '../../../../public/assets/Img/AI from Image/removebgSS2.png';
+import removebg from '../../../../public/assets/Img/AI from Image/6.png';
 
 
 // review section data
@@ -666,7 +667,7 @@ const RemoveBg = () => {
   {/* Right side (Image Section) */}
   <div className="col-lg-6 col-md-12 text-center">
     <img
-      src={magisto} // Replace with actual Remove.bg image URL
+      src={removebg} // Replace with actual Remove.bg image URL
       alt="Remove.bg AI Example"
       className="img-fluid"
       style={{ maxHeight: "300px", objectFit: "contain" }}
