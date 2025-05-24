@@ -5,6 +5,8 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 
 import { Shield } from "lucide-react";
 import fortinet from "../../../../public/assets/Img/AI for Cybersecurity/7.png";
+import fortinet1 from "../../../../public/assets/Img/AI for Cybersecurity/fortinet1.png";
+import fortinet2 from "../../../../public/assets/Img/AI for Cybersecurity/fortinet2.png"; 
 // review section data
 const reviews = [
   {
@@ -129,18 +131,30 @@ const Fortinet = () => {
       case "screenshots":
         return (
           <div className="row g-4">
-            <div className="col-md-6">
+            <div className="col-12 col-md-6">
               <img
+<<<<<<< HEAD
                 src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
                 alt="fortinet"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
+=======
+                src={fortinet1}
+                alt="Fortinet Screenshot 1"
+                className="img-fluid rounded-3 w-100 h-100 object-fit-cover"
+>>>>>>> a3aba11b982f646cee8c4e1fc893c4b3c7d4e356
               />
             </div>
-            <div className="col-md-6">
+            <div className="col-12 col-md-6">
               <img
+<<<<<<< HEAD
                 src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
                 alt="fortinet"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
+=======
+                src={fortinet2}
+                alt="Fortinet Screenshot 2"
+                className="img-fluid rounded-3 w-100 h-100 object-fit-cover"
+>>>>>>> a3aba11b982f646cee8c4e1fc893c4b3c7d4e356
               />
             </div>
           </div>
@@ -651,34 +665,24 @@ const Fortinet = () => {
 
   return (
     <>
-      <div className="bg-dark d-flex  justify-content-between align-items-center ">
-        {/* <a
-          href="/Aitools"
-          className="d-inline-block text-white text-decoration-none ml-3 py-1"
-        >
-          <i className="bi bi-arrow-left me-2"></i>Back to Directory{" "}
-        </a> */}
+      <div className="bg-dark d-flex justify-content-between align-items-center flex-wrap">
         <a
           href="/Aitools"
-          className="d-inline-block text-white text-decoration-none  mt-3 ml-3 py-1 px-2 ms-5 border rounded-sm"
+          className="d-inline-block text-white text-decoration-none mt-3 ml-3 py-1 px-2 ms-5 border rounded-sm"
         >
-          <i className="bi bi-arrow-left me-2"></i>Back  {" "}
+          <i className="bi bi-arrow-left me-2"></i>Back{" "}
         </a>
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
+          <div className="row align-items-center justify-content-between mb-4 flex-wrap">
             {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
+            <div className="col-12 col-lg-6 mb-4 mb-lg-0" style={{ paddingRight: "30px" }}>
               <p className="text-primary">
                 Create stunning visuals effortlessly
               </p>
-              <h1>Fortinet AI </h1>
+              <h1>Fortinet AI</h1>
               <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-
               <p>
                 Fortinet is a leader in cybersecurity and integrates AI and
                 machine learning into its security systems to protect businesses
@@ -687,27 +691,24 @@ const Fortinet = () => {
                 data protection, while also offering real-time threat detection
                 and predictive intelligence.
               </p>
-
-              <div className="mb-3">
-                <span className="badge bg-primary me-2"> Security</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
+              <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
+                <a
+                  href="https://www.fortinet.com/solutions/enterprise-midsize-business/fortiai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary btn-lg px-4"
+                >
+                  Explore Tool
+                </a>
               </div>
             </div>
-
             {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
+            <div className="col-12 col-lg-6 mb-4 mb-lg-0 text-center">
               <img
                 src={fortinet}
-                style={{ MaxWidth: "100%", height: "300px" }}
+                className="img-fluid rounded-3"
+                style={{ maxWidth: "100%", height: "auto" }}
+                alt="Fortinet AI"
               />
             </div>
           </div>
@@ -864,21 +865,6 @@ const Fortinet = () => {
 
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
-
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with Fortinet AI ?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. free trial available.
-            </small>
-          </div>
         </div>
       </div>
     </>

@@ -5,6 +5,9 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
+import freemindSS1 from '../../../../public/assets/Img/Ai for Mind Mapping/freemindSS1.png';
+import freemindSS2 from '../../../../public/assets/Img/Ai for Mind Mapping/freemindSS2.png';
+
 
 // review section data
 const reviews = [
@@ -338,14 +341,22 @@ const FreeMind = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
+<<<<<<< HEAD
                 src="https://www.testingcatalog.com/content/images/size/w2000/2024/06/screenshot-app.runwayml.com-2024.06.24-00_36_32--1-.png"
+=======
+                src={freemindSS1}
+>>>>>>> a3aba11b982f646cee8c4e1fc893c4b3c7d4e356
                 alt="freemind"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
+<<<<<<< HEAD
                 src="https://www.techspot.com/articles-info/2720/images/2023-08-17-image.jpg"
+=======
+                src={freemindSS2}
+>>>>>>> a3aba11b982f646cee8c4e1fc893c4b3c7d4e356
                 alt="freemind"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
@@ -869,53 +880,45 @@ const FreeMind = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>FreeMind AI:</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                FreeMind AI is an advanced mind mapping and productivity tool
-                designed to help users visually organize ideas, manage tasks,
-                and plan projects. By integrating artificial intelligence,
-                FreeMind AI streamlines task prioritization, enhances team
-                collaboration, and boosts personal productivity. It provides an
-                intuitive platform that caters to creative professionals,
-                business strategists, and project managers, enabling them to
-                create mind maps, brainstorm ideas, plan strategically, and
-                track tasks seamlessly. Whether you're looking to visualize
-                complex concepts, streamline workflows, or collaborate with your
-                team, FreeMind AI is a versatile solution to enhance both
-                individual and team productivity.
-              </p>
+       <div className="row d-flex align-items-center justify-content-between mb-1 flex-column flex-md-row">
+  {/* Image First on Mobile, Right Side on Desktop */}
+  <div className="col-12 col-md-6 order-1 order-md-2 mb-3 mb-md-0 text-center">
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
+      alt="FreeMind AI"
+      style={{ width: "100%", height: "300px", objectFit: "cover" }}
+    />
+  </div>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
-            </div>
+  {/* Text Second on Mobile, Left Side on Desktop */}
+  <div className="col-12 col-md-6 order-2 order-md-1" style={{ paddingRight: "30px" }}>
+    <p className="text-primary">Write better, faster</p>
+    <h1>FreeMind AI:</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      FreeMind AI is an advanced mind mapping and productivity tool
+      designed to help users visually organize ideas, manage tasks,
+      and plan projects. By integrating artificial intelligence,
+      FreeMind AI streamlines task prioritization, enhances team
+      collaboration, and boosts personal productivity. It provides an
+      intuitive platform that caters to creative professionals,
+      business strategists, and project managers, enabling them to
+      create mind maps, brainstorm ideas, plan strategically, and
+      track tasks seamlessly. Whether you're looking to visualize
+      complex concepts, streamline workflows, or collaborate with your
+      team, FreeMind AI is a versatile solution to enhance both
+      individual and team productivity.
+    </p>
+    <a
+      href="https://freemindgroup.com/"
+      rel="noopener noreferrer"
+      className="btn btn-primary me-2"
+    >
+      Explore Tool
+    </a>
+  </div>
+</div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
-          </div>
 
           <section style={{ backgroundColor: "#2e3b4e", padding: "3rem 0" }}>
             <div className="container text-center">
@@ -1077,20 +1080,7 @@ const FreeMind = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with FreeMind AI?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. 14-day free trial available.
-            </small>
-          </div>
+         
         </div>
       </div>
     </>

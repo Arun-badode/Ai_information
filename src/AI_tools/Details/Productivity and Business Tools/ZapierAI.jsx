@@ -132,14 +132,14 @@ const ZapierAI = () => {
             <div className="col-md-6">
               <img
                 src={zaper1}
-                alt="Screenshot 1"
+                alt="Zapier AI"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={zaper2}
-                alt="Screenshot 2"
+                alt="Zapier AI"
                 className="img-fluid rounded-3"
               />
             </div>
@@ -575,7 +575,7 @@ const ZapierAI = () => {
           src=""
           className="img-fluid rounded-3"
           style={{ maxWidth: "100%", height: "auto" }}
-          alt="Zapier AI Interface"
+          alt="Zapier AI"
         />
       </div>
     </div>

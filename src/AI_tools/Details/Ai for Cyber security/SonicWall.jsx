@@ -4,6 +4,8 @@ import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 
 import sonic from "../../../../public/assets/Img/AI for Cybersecurity/10.png";
+import sonic1 from "../../../../public/assets/Img/AI for Cybersecurity/SonicWall1.png";
+import sonic2 from "../../../../public/assets/Img/AI for Cybersecurity/SonicWall2.png";
 // review section data
 const reviews = [
   {
@@ -132,15 +134,24 @@ const SonicWall = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
+<<<<<<< HEAD
                 src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
                 alt="sonicwall"
+=======
+                src={sonic1}
+                alt=""
+>>>>>>> a3aba11b982f646cee8c4e1fc893c4b3c7d4e356
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
+<<<<<<< HEAD
                 src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
                 alt="sonicwall"
+=======
+                src={sonic2}
+>>>>>>> a3aba11b982f646cee8c4e1fc893c4b3c7d4e356
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -651,18 +662,14 @@ const SonicWall = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
+          <div className="row align-items-center justify-content-between mb-4 flex-wrap">
             {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
+            <div className="col-12 col-lg-6 mb-4 mb-lg-0" style={{ paddingRight: "30px" }}>
               <p className="text-primary">
                 Create stunning visuals effortlessly
               </p>
               <h1>SonicWall AI</h1>
               <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-
               <p>
                 SonicWall AI is a suite of advanced cybersecurity solutions that
                 leverages artificial intelligence (AI) and machine learning to
@@ -676,7 +683,6 @@ const SonicWall = () => {
                 attacks, including ransomware, zero-day exploits, and advanced
                 persistent threats (APTs).
               </p>
-
               <p>
                 SonicWall's AI-powered tools, such as firewalls, intrusion
                 prevention systems, and malware detection, help businesses
@@ -685,43 +691,42 @@ const SonicWall = () => {
                 enhanced protection with minimal reliance on traditional
                 signature-based methods.
               </p>
-
-              <div className="mb-3">
-                <span className="badge bg-primary me-2"> Security</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
+              <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
+                <a
+                  href="https://www.sonicwall.com/award/sonicwall-named-winner-in-best-ai-and-machine-learning-based-security-solution-of-the-year-award"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary btn-lg px-4"
+                >
+                  Explore Tool
+                </a>
               </div>
             </div>
-
             {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img src={sonic} style={{ MaxWidth: "100%", height: "300px" }} />
+            <div className="col-12 col-lg-6 mb-4 mb-lg-0 text-center">
+              <img
+                src={sonic}
+                className="img-fluid rounded-3"
+                style={{ maxWidth: "100%", height: "auto" }}
+                alt="SonicWall AI"
+              />
             </div>
           </div>
-          <section style={{ backgroundColor: "", padding: "3rem 0" }}>
+          <section style={{ padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>
               <h2
                 style={{
-                  fontWeight: "semibold",
+                  fontWeight: "600",
                   color: "#fff",
                   marginBottom: "1rem",
                 }}
               >
                 How to Use SonicWall AI?
               </h2>
-
               <div className="row g-4">
                 {/* Step 1 */}
-                <div className="col-md-4">
+                <div className="col-12 col-md-4">
                   <div
                     style={{
                       position: "relative",
@@ -732,19 +737,6 @@ const SonicWall = () => {
                       height: "100%",
                     }}
                   >
-                    <style>
-                      {`
-          .step1 {
-            position: absolute;
-            bottom: 10px;
-            right: 15px;
-            font-size: 4rem;
-            font-weight: bold;
-            color: #7b61ff;
-            opacity: 0.6;
-          }
-        `}
-                    </style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
                       Deploy SonicWall Sensors
                     </h5>
@@ -753,12 +745,23 @@ const SonicWall = () => {
                       perimeter and endpoints to monitor traffic and detect
                       threats in real-time.
                     </p>
-                    <div className="step1">1</div>
+                    <div
+                      style={{
+                        position: "absolute",
+                        bottom: 10,
+                        right: 15,
+                        fontSize: "4rem",
+                        fontWeight: "bold",
+                        color: "#7b61ff",
+                        opacity: 0.6,
+                      }}
+                    >
+                      1
+                    </div>
                   </div>
                 </div>
-
                 {/* Step 2 */}
-                <div className="col-md-4">
+                <div className="col-12 col-md-4">
                   <div
                     style={{
                       position: "relative",
@@ -769,19 +772,6 @@ const SonicWall = () => {
                       height: "100%",
                     }}
                   >
-                    <style>
-                      {`
-          .step2 {
-            position: absolute;
-            bottom: 10px;
-            right: 15px;
-            font-size: 4rem;
-            font-weight: bold;
-            color: #7b61ff;
-            opacity: 0.6;
-          }
-        `}
-                    </style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
                       Analyze Traffic with SonicWall AI
                     </h5>
@@ -790,12 +780,23 @@ const SonicWall = () => {
                       using machine learning to identify anomalies, threats, and
                       vulnerabilities.
                     </p>
-                    <div className="step2">2</div>
+                    <div
+                      style={{
+                        position: "absolute",
+                        bottom: 10,
+                        right: 15,
+                        fontSize: "4rem",
+                        fontWeight: "bold",
+                        color: "#7b61ff",
+                        opacity: 0.6,
+                      }}
+                    >
+                      2
+                    </div>
                   </div>
                 </div>
-
                 {/* Step 3 */}
-                <div className="col-md-4">
+                <div className="col-12 col-md-4">
                   <div
                     style={{
                       position: "relative",
@@ -806,19 +807,6 @@ const SonicWall = () => {
                       height: "100%",
                     }}
                   >
-                    <style>
-                      {`
-          .step3 {
-            position: absolute;
-            bottom: 10px;
-            right: 15px;
-            font-size: 4rem;
-            font-weight: bold;
-            color: #7b61ff;
-            opacity: 0.6;
-          }
-        `}
-                    </style>
                     <h5 style={{ fontWeight: "bold", color: "#fff" }}>
                       Respond and Prevent Threats
                     </h5>
@@ -827,21 +815,31 @@ const SonicWall = () => {
                       immediate action to block or quarantine threats
                       automatically, securing your network.
                     </p>
-                    <div className="step3">3</div>
+                    <div
+                      style={{
+                        position: "absolute",
+                        bottom: 10,
+                        right: 15,
+                        fontSize: "4rem",
+                        fontWeight: "bold",
+                        color: "#7b61ff",
+                        opacity: 0.6,
+                      }}
+                    >
+                        3
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </section>
-
           {/* Tab Navigation */}
-          <ul className="nav nav-tabs custom-tabs mb-4">
+          <ul className="nav nav-tabs custom-tabs mb-4 flex-wrap">
             {[
               "features",
               "screenshots",
               "reviews",
               "FAQs",
-
               "why-we-use",
               "pros & cons",
               "alternative",
@@ -856,24 +854,8 @@ const SonicWall = () => {
               </li>
             ))}
           </ul>
-
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
-
-          <div className="bg-primary text-center text-light rounded-4 p-5 mt-5">
-            <h4 className="mb-3">Ready to get started with SonicWall AI ?</h4>
-            <p className="mb-4">
-              Join thousands of professionals already boosting their
-              productivity!
-            </p>
-            <div>
-              <button className="btn btn-light me-3">Try Now for Free</button>
-              <button className="btn btn-outline-light">Schedule a Demo</button>
-            </div>
-            <small className="d-block mt-2">
-              No credit card required. free trial available.
-            </small>
-          </div>
         </div>
       </div>
     </>

@@ -135,14 +135,14 @@ const ClickupAI = () => {
             <div className="col-md-6">
               <img
                 src={clickup1}
-                alt="Screenshot 1"
+                alt="ClickupAI"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={clickup2}
-                alt="Screenshot 2"
+                alt="ClickUp AI"
                 className="img-fluid rounded-3"
               />
             </div>

@@ -368,9 +368,8 @@ const Luminance = () => {
                   <div className="accordion-item mb-3" key={item.id}>
                     <h2 className="accordion-header" id={`heading${item.id}`}>
                       <button
-                        className={`accordion-button ${
-                          i !== 0 ? "collapsed" : ""
-                        }`}
+                        className={`accordion-button ${i !== 0 ? "collapsed" : ""
+                          }`}
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target={`#collapse${item.id}`}
@@ -387,9 +386,8 @@ const Luminance = () => {
                     </h2>
                     <div
                       id={`collapse${item.id}`}
-                      className={`accordion-collapse collapse ${
-                        i === 0 ? "show" : ""
-                      }`}
+                      className={`accordion-collapse collapse ${i === 0 ? "show" : ""
+                        }`}
                       aria-labelledby={`heading${item.id}`}
                       data-bs-parent="#faqAccordion"
                     >
@@ -648,28 +646,14 @@ const Luminance = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
+          <div className="row align-items-center justify-content-between mb-1">
             {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
+            <div className="col-12 col-md-6 mb-4 mb-md-0 pe-md-4">
               <p className="text-primary">Write better, faster</p>
-              <h1> Luminance AI</h1>
+              <h1>Luminance AI</h1>
               <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
               <p>
-                Luminance AI is an advanced legal technology platform that
-                leverages artificial intelligence and machine learning
-                algorithms to transform how legal professionals conduct document
-                review, contract analysis, due diligence, eDiscovery, and
-                compliance tasks. It offers AI-powered document analysis,
-                helping law firms, in-house counsels, and corporate legal teams
-                automate and accelerate the review of complex legal materials,
-                ensuring greater speed, accuracy, and efficiency. Using natural
-                language processing (NLP) and dynamic pattern recognition,
-                Luminance can analyze legal documents across multiple languages,
-                detect anomalies, cluster related documents, and assist with
-                risk management.
+                Luminance AI is an advanced legal technology platform that leverages artificial intelligence and machine learning algorithms to transform how legal professionals conduct document review, contract analysis, due diligence, eDiscovery, and compliance tasks. It offers AI-powered document analysis, helping law firms, in-house counsels, and corporate legal teams automate and accelerate the review of complex legal materials, ensuring greater speed, accuracy, and efficiency. Using natural language processing (NLP) and dynamic pattern recognition, Luminance can analyze legal documents across multiple languages, detect anomalies, cluster related documents, and assist with risk management.
               </p>
 
               <div className="mb-3">
@@ -684,18 +668,16 @@ const Luminance = () => {
             </div>
 
             {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img src="public\assets\Img\AI for legal\LuminanceAI -s1.jpg" style={{ MaxWidth: "100%", height: "300px" }} />
+            <div className="col-12 col-md-6 text-center">
+              <img
+                src="/assets/Img/AI for legal/LuminanceAI -s1.jpg"
+                alt="Luminance AI"
+                className="img-fluid"
+                style={{ height: "300px", objectFit: "contain" }}
+              />
             </div>
           </div>
+
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>

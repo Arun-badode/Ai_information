@@ -648,44 +648,43 @@ const Neeva = () => {
           href="/Aitools"
           className="d-inline-block text-white text-decoration-none  mt-3 ml-3 py-1 px-2 ms-5 border rounded-sm"
         >
-          <i className="bi bi-arrow-left me-2"></i>Back  {" "}
+          <i className="bi bi-arrow-left me-2"></i>Back{" "}
         </a>
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
           <div className=" row d-flex align-items-center justify-content-between mb-1">
             {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">
-                Create stunning visuals effortlessly
-              </p>
-              <h1>Neeva AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+            <div className="col-lg-6 ">
+              <div className="col-md-12">
+                <p className="text-primary">
+                  Create stunning visuals effortlessly
+                </p>
+                <h1>Neeva AI</h1>
+                <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
 
-              <p>
-                Neeva AI is an advanced AI-powered tool designed to help users
-                create SEO-optimized content, conduct keyword research, and
-                improve content strategy. Whether you’re a content creator, SEO
-                professional, or digital marketer, Neeva AI offers tools for
-                content generation, on-page optimization, keyword analysis, and
-                content performance tracking. Its goal is to streamline the
-                content creation process while ensuring high-quality,
-                search-engine-friendly output.
-              </p>
+                <p>
+                  Neeva AI is an advanced AI-powered tool designed to help users
+                  create SEO-optimized content, conduct keyword research, and
+                  improve content strategy. Whether you’re a content creator,
+                  SEO professional, or digital marketer, Neeva AI offers tools
+                  for content generation, on-page optimization, keyword
+                  analysis, and content performance tracking. Its goal is to
+                  streamline the content creation process while ensuring
+                  high-quality, search-engine-friendly output.
+                </p>
+              </div>
 
               <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
-        <a
-          href="https://ww7.neeva.com/?usid=25&utid=10953275578"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn btn-primary btn-lg px-4"
-        >
-          Explore Tool
-        </a>
-      </div>
+                <a
+                  href="https://ww7.neeva.com/?usid=25&utid=10953275578"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary btn-lg px-4"
+                >
+                  Explore Tool
+                </a>
+              </div>
             </div>
 
             {/* Right side (Image Section) */}
@@ -856,8 +855,6 @@ const Neeva = () => {
 
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
-
-         
         </div>
       </div>
     </>

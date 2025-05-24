@@ -314,13 +314,14 @@ const MarketMuseAI = () => {
             <div className="col-md-6">
               <img
                 src={scn11}
-                alt=""
+                alt="marketmuse"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={scn12}
+                alt="marketmuse"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -822,6 +823,7 @@ const MarketMuseAI = () => {
             >
               <img
                 src={marketMuseAI}
+                alt="marketmuse"
                 style={{ width:"100%", height:"auto", maxHeight:"300px", objectFit:"contain",}}
 
               />

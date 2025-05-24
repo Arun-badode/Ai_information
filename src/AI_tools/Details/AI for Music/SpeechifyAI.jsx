@@ -411,13 +411,13 @@ const SpeechifyAI = () => {
             <div className="col-md-6">
               <img
                 src={screen1}
-                alt=""
+                alt="speechify"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src=""
+                src="speechify"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>

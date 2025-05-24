@@ -618,8 +618,8 @@ const BraveSearch = () => {
           <div className=" row d-flex align-items-center justify-content-between mb-1">
             {/* Left side (Text Section) */}
             <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
+
+              className="col-lg-6"
             >
               <p className="text-primary">
                 Create stunning visuals effortlessly
