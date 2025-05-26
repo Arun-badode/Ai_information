@@ -828,7 +828,7 @@ const Zoho = () => {
   {/* Right side (Image Section) */}
   <div className="col-md-6 col-12 mb-4 text-center">
     <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
+      src="public\assets\Img\AI for Recruitment\Ai for recruiment\Zoho.png"
       alt="Zoho Recruit AI"
       style={{ maxWidth: "100%", height: "300px", objectFit: "contain" }}
     />

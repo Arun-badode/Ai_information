@@ -831,7 +831,7 @@ const Xor = () => {
   <div className="col-lg-6 col-12 order-lg-2 order-1">
     <div className="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm">
       <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
+        src="public\assets\Img\AI for Recruitment\Ai for recruiment\XOR.png"
         className="img-fluid object-fit-cover"
         alt="XOR AI Recruitment Platform Interface"
         loading="lazy"
