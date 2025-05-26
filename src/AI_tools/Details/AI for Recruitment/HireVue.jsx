@@ -5,7 +5,7 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
-import hirevue1 from "../../../../public/assets/Img/AI for Recruitment/hirevue1.png";
+import hirevue1 from "../../../../public/assets/Img/AI for Recruitment/1.png";
 import hr1 from "../../../../public/assets/Img/AI for Recruitment/hr-s1.png";
 import hr2 from "../../../../public/assets/Img/AI for Recruitment/hr-s2.png";
 
@@ -820,7 +820,7 @@ const HireVue = () => {
   <div className="col-lg-6 col-md-12 order-lg-2 order-1 text-center mb-4 mb-lg-0">
     <div className="image-container" style={{ maxHeight: "300px", overflow: "hidden" }}>
       <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
+        src={hirevue1}
         
         className="img-fluid rounded-3"
         style={{ 

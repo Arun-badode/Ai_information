@@ -7,6 +7,7 @@ import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
 import hr1 from "../../../../public/assets/Img/AI for Recruitment/hr-s1.png";
 import hr2 from "../../../../public/assets/Img/AI for Recruitment/hr-s2.png";
+// import hiretual from "../../../../public/assets/Img/AI for Recruitment/.png";
 
 // review section data
 const reviews = [
