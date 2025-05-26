@@ -658,12 +658,13 @@ const Tidio = () => {
 
             {/* Right side (Image Section) */}
             <div style={{ flex: 1, textAlign: "center" }}>
-              <img
-                src={tidio1}
-                className="img-fluid rounded-3"
-                style={{ maxWidth: "80%", height: "auto" }}
-              />
-            </div>
+                                      <img
+                                        src={tidio1}
+                                        alt="tidio"
+                                        className="img-fluid rounded-3"
+                                        style={{ maxWidth: "100%", height: "auto" }}
+                                      />
+                                    </div>
           </div>
 
           {/* Tab Navigation */}

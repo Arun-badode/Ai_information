@@ -604,25 +604,14 @@ const AivoAI = () => {
             </div>
 
             {/* Right side (Image Section) */}
-            <div
-              style={{
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-md-6 col-12 order-md-2 order-1 text-center mb-3 mb-md-0  "
-            >
-              <img
-                src={aivo}
-                alt="aivo"
-                style={{
-                  Width: "100%",
-                  height: "auto",
-                  maxHeight: "300px",
-                  objectFit: "contain",
-                }}
-              />
-            </div>
+            <div style={{ flex: 1, textAlign: "center" }}>
+                                                  <img
+                                                    src={aivo}
+                                                    alt="Dashboard Preview"
+                                                    className="img-fluid rounded-3"
+                                                    style={{ maxWidth: "100%", height: "auto" }}
+                                                  />
+                                                </div>
           </div>
         </div>
 

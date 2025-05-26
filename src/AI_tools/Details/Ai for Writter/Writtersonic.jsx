@@ -692,53 +692,49 @@ const Writtersonic = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row align-item-center mb-4">
-            {/* Left side (Text Section) */}
-           <div
-  className="col-12 col-md-6 order-2 order-md-1 "
-  style={{ paddingRight: "30px",}}
->
-  <p className="text-primary text-center text-md-start">
-    Create stunning visuals effortlessly
-  </p>
-  <h1 className="text-center text-md-start">Writesonic AI</h1>
-  <div className="text-warning mb-2 text-center text-md-start">⭐⭐⭐⭐⭐</div>
+         <div className="row align-items-center mb-4">
+  {/* Image Section - Top on mobile, right on desktop */}
+  <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-3 mb-md-0">
+    <img
+      src={writersonicImg}
+      alt="Writesonic AI"
+      className="img-fluid"
+      style={{
+        maxWidth: "100%",
+        height: "auto",
+      }}
+    />
+  </div>
 
-  <p className="text-center text-md-start">
-    Writesonic is an AI-powered writing assistant designed to help users
-    generate high-quality content in seconds. It uses advanced machine
-    learning models to create various types of content, including blog
-    posts, ad copy, product descriptions, email marketing, SEO-friendly
-    articles, and landing pages. The tool aims to save time and enhance
-    productivity for creators, marketers, and businesses by automating
-    content creation.
-  </p>
+  {/* Text Section - Left aligned always */}
+  <div className="col-12 col-md-6 order-2 order-md-1 px-3 px-md-4 text-start">
+    <p className="text-primary">Create stunning visuals effortlessly</p>
+    <h1>Writesonic AI</h1>
+    <div className="text-warning mb-2">⭐⭐⭐⭐⭐</div>
 
-  <div className="text-center text-md-start">
-    <a
-      href="https://writesonic.com/seo-ai-agent?utm_campaignid=22272558894&utm_agid=179152461047&utm_source=google&utm_campaign=writesonic_Brand_Search_IN&utm_term=writesonic.com&utm_medium=search&d=c&placement=&network=g&gad_source=1&gad_campaignid=22272558894&gbraid=0AAAAABM1pbmo2t40kafrRwYsKo1DrS5bn&gclid=Cj0KCQjwlrvBBhDnARIsAHEQgORYyXStKzLEOoFOkAooAQ4hJiiz8_IngEC6Rb9SxOp_jOU2RlF7x34aAiCyEALw_wcB"
-      rel="noopener noreferrer"
-      className="btn btn-primary"
-    >
-      Explore Tool
-    </a>
+    <p>
+      Writesonic is an AI-powered writing assistant designed to help users
+      generate high-quality content in seconds. It uses advanced machine
+      learning models to create various types of content, including blog
+      posts, ad copy, product descriptions, email marketing, SEO-friendly
+      articles, and landing pages. The tool aims to save time and enhance
+      productivity for creators, marketers, and businesses by automating
+      content creation.
+    </p>
+
+    <div>
+      <a
+        href="https://writesonic.com/seo-ai-agent?utm_campaignid=22272558894&utm_agid=179152461047&utm_source=google&utm_campaign=writesonic_Brand_Search_IN&utm_term=writesonic.com&utm_medium=search&d=c&placement=&network=g&gad_source=1&gad_campaignid=22272558894&gbraid=0AAAAABM1pbmo2t40kafrRwYsKo1DrS5bn&gclid=Cj0KCQjwlrvBBhDnARIsAHEQgORYyXStKzLEOoFOkAooAQ4hJiiz8_IngEC6Rb9SxOp_jOU2RlF7x34aAiCyEALw_wcB"
+        rel="noopener noreferrer"
+        className="btn btn-primary"
+        target="_blank"
+      >
+        Explore Tool
+      </a>
+    </div>
   </div>
 </div>
 
-
-            {/* Right side (Image Section) */}
-           <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-3 mb-md-0">
-  <img
-    src={writersonicImg}
-    style={{
-      maxWidth: "100%",
-      height: "auto",
-    }}
-    alt="Responsive"
-  />
-</div>
-
-          </div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>

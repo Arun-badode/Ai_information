@@ -565,46 +565,45 @@ const CopyAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1 lovaaiflex">
-            {/* Left side (Text Section) */}
-            <div className="col-12 col-md-6 mb-4 px-3 px-md-4">
-  <p className="text-primary">Write better, faster</p>
-  <h1>Copy.ai</h1>
-  <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-  <p>
-    Copy.ai is an AI-powered content generation platform designed to help users
-    create high-quality copy quickly and efficiently. Whether you’re writing blog
-    posts, social media content, product descriptions, or ad copy, Copy.ai automates
-    writing tasks using advanced language models. It is tailored for marketers,
-    content creators, eCommerce businesses, and anyone who needs compelling
-    written content fast.
-  </p>
-  <a
-    href="https://www.copy.ai"
-    rel="noopener noreferrer"
-    className="btn btn-primary"
-  >
-    Explore Tool
-  </a>
+       <div className="row align-items-center mb-4">
+  {/* Image Section - Top on mobile, right on desktop */}
+  <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-4 mb-md-0">
+    <img
+      src={copyaiImg}
+      alt="Copy.ai"
+      className="img-fluid"
+      style={{
+        maxWidth: "100%",
+        height: "300px",
+        objectFit: "contain",
+      }}
+    />
+  </div>
+
+  {/* Text Section - Bottom on mobile, left on desktop */}
+  <div className="col-12 col-md-6 order-2 order-md-1 px-3 px-md-4">
+    <p className="text-primary">Write better, faster</p>
+    <h1>Copy.ai</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      Copy.ai is an AI-powered content generation platform designed to help users
+      create high-quality copy quickly and efficiently. Whether you’re writing blog
+      posts, social media content, product descriptions, or ad copy, Copy.ai automates
+      writing tasks using advanced language models. It is tailored for marketers,
+      content creators, eCommerce businesses, and anyone who needs compelling
+      written content fast.
+    </p>
+    <a
+      href="https://www.copy.ai"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="btn btn-primary mt-2"
+    >
+      Explore Tool
+    </a>
+  </div>
 </div>
 
-
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src={copyaiImg}
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
-          </div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>

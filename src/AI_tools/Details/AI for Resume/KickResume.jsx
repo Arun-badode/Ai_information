@@ -803,6 +803,7 @@ const KickResume = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
+<<<<<<< HEAD
         <div className="row d-flex align-items-center justify-content-between mb-1">
   {/* Right side (Image Section) on mobile, left on desktop */}
   <div
@@ -845,6 +846,48 @@ const KickResume = () => {
   </div>
 </div>
 
+=======
+         <div className="row d-flex align-items-center justify-content-between mb-1">
+  {/* Left side (Text Section) */}
+  <div
+    style={{ paddingRight: "30px" }}
+    className="col-12 col-md-6 order-2 order-md-1"
+  >
+    <p className="text-primary">Write better, faster</p>
+    <h1>Kickresume AI</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      Kickresume AI is an AI-powered resume and career tool designed to help job seekers build, optimize, and tailor their resumes for the best job opportunities. It provides advanced features like automated resume generation, job matching, career coaching, and interview preparation. Kickresume also offers templates for resumes, CVs, and cover letters, making it a comprehensive platform for those seeking to improve their job search experience.
+    </p>
+    <p>
+      Kickresume AI is a versatile career platform that provides various tools to streamline the job application process. With its AI-powered features, users can generate professional resumes, optimize them for ATS (Applicant Tracking Systems), and receive personalized job recommendations. The platform is user-friendly and provides a structured approach to job applications, ensuring higher chances of success in a competitive job market.
+    </p>
+    <div className="mb-3">
+      <a
+        href="https://www.kickresume.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary me-2"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
+
+  {/* Right side (Image Section) */}
+  <div
+    className="col-12 col-md-6 order-1 order-md-2 text-center mb-3"
+  >
+    <img
+      src={kick}
+      alt="Kickresume"
+      className="img-fluid rounded"
+      style={{ maxWidth: "100%", height: "auto", maxHeight: "300px" }}
+    />
+  </div>
+</div>
+
+>>>>>>> 9732e077a94f9a43e3fcff86cd1122391726245d
           <section style={{ backgroundColor: "#0b1e3d", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">

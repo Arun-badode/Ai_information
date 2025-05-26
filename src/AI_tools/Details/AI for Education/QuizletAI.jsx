@@ -665,17 +665,15 @@ const QuizletAI = () => {
             </div>
 
             {/* Right side (Image Section) */}
-            <div
-              style={{ flex: 1, textAlign: "center" }}
-              className="order-1 order-md-2 mb-4 mb-md-0"
-            >
-              <img
-                src={a}
-                className="img-fluid rounded-3"
-                style={{ maxWidth: "80%", height: "auto" }}
-                alt="Quizlet "
-              />
-            </div>
+           <div className="col-lg-6 col-12 order-lg-2 order-1">
+                <div className="ratio ratio-16x9">
+                  <img
+                    src={a}
+                    alt="Quizlet"
+                    className="img-fluid rounded-3 shadow-sm object-fit-cover"
+                  />
+                </div>
+              </div>
           </div>
 
 

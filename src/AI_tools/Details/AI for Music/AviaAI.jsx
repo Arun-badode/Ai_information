@@ -6,8 +6,9 @@ import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
 import avia from "../../../../public/assets/Img/Ai for Music/1.png";
-import screen1 from "../../../../public/assets/Img/Ai for Music/avia-screenshot1.jpg";
-import screen2 from "../../../../public/assets/Img/Ai for Music/avia-screenshot2.jpg";
+import aivaSS1 from '../../../../public/assets/Img/Ai for Music/aivaSS1.png';
+import aivaSS2 from '../../../../public/assets/Img/Ai for Music/aivaSS2.png';
+
 
 // review section data
 const reviews = [
@@ -314,14 +315,14 @@ const AviaAI = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src={screen1}
+                src={aivaSS1}
                 alt="aviaai"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={screen2}
+                src={aivaSS2}
                 alt="aviaai"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />

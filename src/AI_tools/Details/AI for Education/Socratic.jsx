@@ -624,45 +624,46 @@ const Socratic = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className="d-flex flex-column flex-md-row align-items-center justify-content-between mb-5">
-            {/* Left side (Text Section) */}
-            <div style={{ flex: 1, paddingRight: "30px" }} className="order-2 order-md-1">
-              <h2>Socratic by Google: The Ultimate AI-powered Learning Tool</h2>
-              <div className="text-warning mb-1">
-                ⭐⭐⭐⭐⭐ 95% Satisfaction
-              </div>
-              <p>
-                Introduction to Socratic by Google: Socratic by Google is an
-                AI-powered learning app designed to provide students with
-                homework help, subject mastery, and personalized educational
-                experiences. This smart learning app uses advanced artificial
-                intelligence to break down complex problems, solve math
-                equations, assist with science questions, and even support
-                language learning. With the help of Google’s robust AI
-                capabilities, Socratic aims to enhance learning, making it more
-                accessible and interactive for students of all ages.
-              </p>
-                 <div className="mb-3">
-                <a
-                  href="https://socrat.ai/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary me-2"
-                >
-                  Explore Tool
-                </a>
-              </div>
-            </div>
+         <div className="row align-items-center mb-5">
+  {/* Image Section - Top and centered on mobile, right on desktop */}
+ <div className="col-lg-6 col-12 order-lg-2 order-1">
+                 <div className="ratio ratio-16x9">
+                   <img
+                     src={b}
+                     alt="Socratic"
+                     className="img-fluid rounded-3 shadow-sm object-fit-cover"
+                   />
+                 </div>
+               </div>
 
-            {/* Right side (Image Section) */}
-            <div style={{ flex: 1, textAlign: "center" }}>
-              <img
-                src={b}
-                className="img-fluid rounded-3"
-                style={{ maxWidth: "80%", height: "auto" }}
-              />
-            </div>
-          </div>
+  {/* Text Section - Below image on mobile, left on desktop */}
+  <div className="col-12 col-md-6 order-2 order-md-1 px-4 text-start">
+    <h2>Socratic by Google: The Ultimate AI-powered Learning Tool</h2>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐ 95% Satisfaction</div>
+    <p>
+      Introduction to Socratic by Google: Socratic by Google is an
+      AI-powered learning app designed to provide students with
+      homework help, subject mastery, and personalized educational
+      experiences. This smart learning app uses advanced artificial
+      intelligence to break down complex problems, solve math
+      equations, assist with science questions, and even support
+      language learning. With the help of Google’s robust AI
+      capabilities, Socratic aims to enhance learning, making it more
+      accessible and interactive for students of all ages.
+    </p>
+    <div className="mb-3">
+      <a
+        href="https://coderbyte.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary me-2"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
+</div>
+
 
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
   <div className="container text-center">

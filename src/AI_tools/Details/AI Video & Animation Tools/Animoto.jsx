@@ -75,7 +75,7 @@ const styles = {
   },
 };
 const Animoto = () => {
-  const [activeTab, setActiveTab] = useState("features"); // Set the default active tab as 'features'
+  const [activeTab, setActiveTab] = useState("Features"); // Set the default active tab as 'features'
   const [showAllFaqs, setShowAllFaqs] = useState(false);
 
   const renderTabContent = () => {

@@ -606,56 +606,51 @@ const JasperAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1 lovaaiflex">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1> Jasper AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Jasper AI is an AI-powered content generation platform that
-                helps individuals and businesses create high-quality written
-                content in seconds. Using advanced natural language processing
-                (NLP) and machine learning, Jasper can generate human-like text
-                based on prompts you provide. Formerly known as Jarvis, the
-                platform is designed to save time and enhance creativity for
-                content creators, marketers, bloggers, agencies, and more.
-                Jasper learns from vast amounts of data to understand tone,
-                context, and structure, making it one of the most advanced AI
-                writing assistants on the market.
-              </p>
+         <div className="row mb-4 align-items-center">
+  {/* Image Section - Appears on top on mobile, right on desktop */}
+  <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-4 mb-md-0">
+    <img
+      src={jasper}
+      alt="Jasper AI"
+      className="img-fluid"
+      style={{
+        maxHeight: "300px",
+        objectFit: "contain",
+      }}
+    />
+  </div>
 
-              <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
-        <a
-          href="https://www.jasper.ai/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn btn-primary btn-lg px-4"
-        >
-          Explore Tool
-        </a>
-      </div>
-            </div>
+  {/* Text Section - Appears below image on mobile, left on desktop */}
+  <div className="col-12 col-md-6 order-2 order-md-1 px-3">
+    <p className="text-primary">Write better, faster</p>
+    <h1>Jasper AI</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      Jasper AI is an AI-powered content generation platform that helps
+      individuals and businesses create high-quality written content in
+      seconds. Using advanced natural language processing (NLP) and machine
+      learning, Jasper can generate human-like text based on prompts you
+      provide. Formerly known as Jarvis, the platform is designed to save
+      time and enhance creativity for content creators, marketers, bloggers,
+      agencies, and more.
+    </p>
+    <p>
+      Jasper learns from vast amounts of data to understand tone, context,
+      and structure, making it one of the most advanced AI writing assistants
+      on the market.
+    </p>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src={jasper}
-              
-              />
-            </div>
-          </div>
+    <a
+      href="https://www.jasper.ai/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="btn btn-primary btn-lg mt-2"
+    >
+      Explore Tool
+    </a>
+  </div>
+</div>
+
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>

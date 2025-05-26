@@ -4,8 +4,9 @@ import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 
 import heyGen from "../../../../public/assets/Img/AI for Animation/10.png";
-import scn5 from "../../../../public/assets/Img/AI for Animation/scn5.jpg";
-import scn6 from "../../../../public/assets/Img/AI for Animation/scn6.jpg";
+import heygenSS1 from '../../../../public/assets/Img/AI Video & Animation Tools/heygenSS1.png';
+import heygenSS2 from '../../../../public/assets/Img/AI Video & Animation Tools/heygenSS2.png';
+
 
 // review section data
 const reviews = [
@@ -136,14 +137,14 @@ const HeyGen = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src={scn5}
+                src={heygenSS1}
                 alt="heygen"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={scn6}
+                src={heygenSS2}
                 alt="heygen"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />

@@ -755,6 +755,7 @@ const ClarifaiAI = () => {
         provide businesses with the tools needed to optimize their
         online stores.
       </p>
+<<<<<<< HEAD
             <div className="mb-3">
       <a
         href="https://www.clarifai.com/"
@@ -765,6 +766,17 @@ const ClarifaiAI = () => {
         Explore Tool
       </a>
     </div>
+=======
+
+      <a
+                                 href=" https://www.clarifai.com/"
+                                 rel="noopener noreferrer"
+                                 className="btn btn-primary me-2"
+                               >
+                                 Explore Tool
+                               </a>
+
+>>>>>>> 9732e077a94f9a43e3fcff86cd1122391726245d
      
     </div>
 

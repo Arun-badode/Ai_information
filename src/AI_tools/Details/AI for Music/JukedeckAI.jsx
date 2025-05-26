@@ -846,10 +846,10 @@ const JukedeckAI = () => {
 
             {/* Text - mobile pe baad mein, desktop pe left side */}
             <div
-              className="col-12 col-md-6 order-2 order-md-1"
+              className="col-md-6 col-12 order-2 order-md-1"
               style={{ paddingRight: "30px" }}
             >
-              <p className="text-primary">Write better, faster</p>
+              <p className="text-primary ">Write better, faster</p>
               <h1>Jukedeck AI</h1>
               <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
               <p>
