@@ -620,58 +620,47 @@ const SearxNG = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">
-                Create stunning visuals effortlessly
-              </p>
-              <h1> SearxNG AI </h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+        <div className="row d-flex align-items-center justify-content-between flex-column-reverse flex-md-row mb-1">
+  {/* Text Section */}
+  <div
+    className="col-12 col-md-6"
+    style={{ paddingRight: "30px" }}
+  >
+    <p className="text-primary">
+      Create stunning visuals effortlessly
+    </p>
+    <h1>SearxNG AI</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
 
-              <p>
-                SearxNG AI is an advanced, privacy-focused, open-source search
-                engine that integrates Artificial Intelligence (AI) to provide
-                secure, accurate, and customizable search results. It allows
-                users to search the web without sacrificing privacy, as it
-                doesn't track users or personalize results based on browsing
-                history. SearxNG AI works by aggregating results from various
-                search engines and presenting them in an anonymized format,
-                offering users a comprehensive search experience.
-              </p>
+    <p>
+      SearxNG AI is an advanced, privacy-focused, open-source search engine that integrates Artificial Intelligence (AI) to provide secure, accurate, and customizable search results. It allows users to search the web without sacrificing privacy, as it doesn't track users or personalize results based on browsing history. SearxNG AI works by aggregating results from various search engines and presenting them in an anonymized format, offering users a comprehensive search experience.
+    </p>
 
-            <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
-        <a
-          href="https://www.browserstack.com/live?utm_source=bing&utm_medium=cpc&utm_platform=paidads&utm_content=&utm_campaign=Bing-Search-Brand-India&utm_campaigncode=Automate+149846&utm_term=p+browserstack%20automate%20desktop"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn btn-primary btn-lg px-4"
-        >
-          Explore Tool
-        </a>
-      </div>
-            </div>
+    <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
+      <a
+        href="https://www.browserstack.com/live?utm_source=bing&utm_medium=cpc&utm_platform=paidads&utm_content=&utm_campaign=Bing-Search-Brand-India&utm_campaigncode=Automate+149846&utm_term=p+browserstack%20automate%20desktop"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary btn-lg px-4"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src={search}
-                alt="searxng"
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
-          </div>
+  {/* Image Section */}
+  <div className="col-12 col-md-6 text-center mb-4 mb-md-0">
+    <img
+      src={search}
+      alt="searxng"
+      style={{
+        maxWidth: "100%",
+        height: "auto",
+      }}
+    />
+  </div>
+</div>
+
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>

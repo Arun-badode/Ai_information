@@ -676,63 +676,51 @@ const Carrot = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              
-              className=" col-lg-6 "
-            >
-              <p className="text-primary">
-                Create stunning visuals effortlessly
-              </p>
-              <h1> Carrot2 AI </h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+         <div className="row d-flex align-items-center justify-content-between flex-column-reverse flex-md-row mb-1">
+  {/* Text Section */}
+  <div className="col-md-6 col-12">
+    <p className="text-primary">
+      Create stunning visuals effortlessly
+    </p>
+    <h1>Carrot2 AI</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
 
-              <p>
-                Carrot2 AI is an advanced, open-source software designed to help
-                users organize and analyze large sets of unstructured data. It
-                specializes in search clustering, allowing users to group search
-                results into topics or clusters for easier exploration and
-                analysis. By leveraging semantic search and machine learning
-                techniques, Carrot2 AI helps businesses, researchers, and
-                content creators find patterns and insights within vast
-                collections of data.
-              </p>
-              <p>
-                Carrot2 AI is a powerful tool that helps users automate data
-                clustering, making it easier to work with large datasets. It
-                analyzes content and groups it into clusters based on semantic
-                similarity, improving search and content discovery.
-              </p>
+    <p>
+      Carrot2 AI is an advanced, open-source software designed to help users organize and analyze large sets of unstructured data. It specializes in search clustering, allowing users to group search results into topics or clusters for easier exploration and analysis. By leveraging semantic search and machine learning techniques, Carrot2 AI helps businesses, researchers, and content creators find patterns and insights within vast collections of data.
+    </p>
+    <p>
+      Carrot2 AI is a powerful tool that helps users automate data clustering, making it easier to work with large datasets. It analyzes content and groups it into clusters based on semantic similarity, improving search and content discovery.
+    </p>
 
-            <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
-        <a
-          href="https://search.carrot2.org/#/search/web"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn btn-primary btn-lg px-4"
-        >
-          Explore Tool
-        </a>
-      </div>
-            </div>
+    <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
+      <a
+        href="https://search.carrot2.org/#/search/web"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary btn-lg px-4"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src={carrot}
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
-          </div>
+  {/* Image Section */}
+  <div
+    className="col-md-6 col-12 text-center mb-4"
+    style={{
+      flex: 1,
+      textAlign: "center",
+      width: "100%",
+    }}
+  >
+    <img
+      src={carrot}
+      alt="Carrot2 AI"
+      style={{ maxWidth: "100%", height: "auto" }}
+    />
+  </div>
+</div>
+
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>

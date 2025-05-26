@@ -634,65 +634,44 @@ const Andi = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-            
-              className="col-lg-6"
-            >
-              <div className="col-md-12">
-                <p className="text-primary">
-                Create stunning visuals effortlessly
-              </p>
-              <h1>Andi Search</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+         <div className="row d-flex align-items-center justify-content-between flex-column-reverse flex-md-row mb-1">
+  {/* Text Section */}
+  <div className="col-md-6 col-12">
+    <div>
+      <p className="text-primary">Create stunning visuals effortlessly</p>
+      <h1>Andi Search</h1>
+      <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
 
-              <p>
-                Andi Search AI is an advanced AI-powered search engine designed
-                to provide users with more relevant, context-driven search
-                results. It leverages artificial intelligence and natural
-                language processing to understand user intent and deliver
-                accurate search answers across websites and platforms.
-                <br />
-                <br />
-                With features like personalized search, real-time suggestions,
-                and contextual query understanding, Andi Search AI empowers
-                users to get smarter, more relevant search results. Whether
-                you’re looking for detailed answers, performing research, or
-                just browsing, Andi Search AI offers an intuitive, fast, and
-                effective way to search the web and find exactly what you need,
-                with minimal effort.
-              </p>
-              </div>
+      <p>
+        Andi Search AI is an advanced AI-powered search engine designed to provide users with more relevant, context-driven search results. It leverages artificial intelligence and natural language processing to understand user intent and deliver accurate search answers across websites and platforms.
+        <br />
+        <br />
+        With features like personalized search, real-time suggestions, and contextual query understanding, Andi Search AI empowers users to get smarter, more relevant search results. Whether you’re looking for detailed answers, performing research, or just browsing, Andi Search AI offers an intuitive, fast, and effective way to search the web and find exactly what you need, with minimal effort.
+      </p>
 
-              <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0 col-md-12">
-                <a
-                  href="https://andisearch.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary btn-lg px-4"
-                >
-                  Explore Tool
-                </a>
-              </div>
-            </div>
+      <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
+        <a
+          href="https://andisearch.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-primary btn-lg px-4"
+        >
+          Explore Tool
+        </a>
+      </div>
+    </div>
+  </div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src={andi}
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
-          </div>
+  {/* Image Section */}
+  <div className="col-md-6 col-12 text-center mb-4">
+    <img
+      src={andi}
+      alt="Andi Search"
+      style={{ maxWidth: "100%", height: "auto" }}
+    />
+  </div>
+</div>
+
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>
