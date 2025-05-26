@@ -655,13 +655,15 @@ const Socratic = () => {
             </div>
 
             {/* Right side (Image Section) */}
-            <div style={{ flex: 1, textAlign: "center" }}>
-              <img
-                src={b}
-                className="img-fluid rounded-3"
-                style={{ maxWidth: "80%", height: "auto" }}
-              />
-            </div>
+            <div className="col-12 col-md-6 d-flex justify-content-center align-items-center mb-4" style={{ textAlign: "center" }}>
+  <img
+    src={b}
+    alt="Responsive Image"
+    className="img-fluid rounded-3"
+    style={{ maxWidth: "80%", height: "auto" }}
+  />
+</div>
+
           </div>
 
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>

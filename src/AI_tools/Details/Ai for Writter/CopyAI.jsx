@@ -591,19 +591,19 @@ const CopyAI = () => {
 
             {/* Right side (Image Section) */}
             <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src={copyaiImg}
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
+  className="col-12 col-md-6 mb-5 d-flex justify-content-center align-items-center"
+  style={{
+    height: "250px",
+  }}
+>
+  <img
+    src={copyaiImg}
+    className="img-fluid"
+    alt="Copy.ai"
+    style={{ maxHeight: "100%", objectFit: "contain" }}
+  />
+</div>
+
           </div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">

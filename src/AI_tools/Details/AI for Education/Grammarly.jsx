@@ -663,7 +663,7 @@ const Grammarly = () => {
 
     <div className="mb-3">
       <a
-        href="https://www.grammarly.com/"
+        href="https://www.grammarly.com/edu"
         target="_blank"
         rel="noopener noreferrer"
         className="btn btn-primary btn-lg px-4"
