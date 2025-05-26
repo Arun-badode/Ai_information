@@ -875,6 +875,8 @@ const HumataAI = () => {
       href="https://www.humata.ai"
       rel="noopener noreferrer"
       className="btn btn-primary me-2"
+       
+        target="_blank"
     >
       Explore Tool
     </a>
@@ -882,136 +884,130 @@ const HumataAI = () => {
 </div>
 
 
-          <section style={{ backgroundColor: "#1b1f2b", padding: "3rem 0" }}>
-            <div className="container text-center">
-              <p className="text-primary">
-                Your Smart Paraphrasing Tool for Research and Content Creation
-              </p>
-              <h2
-                className="text-white"
-                style={{ fontWeight: "600", marginBottom: "1rem" }}
-              >
-                See How Humata AI Transforms Your Content, Instantly and Without
-                Restrictions
-              </h2>
-              <p
-                style={{
-                  color: "#ccc",
-                  marginBottom: "2rem",
-                  fontStyle: "italic",
-                }}
-              >
-                Humata AI helps you rephrase complex text, articles, and
-                documentation into unique, original content—designed to fit your
-                style and free from copyright issues.
-              </p>
+        <section style={{ backgroundColor: "#0b1e3d", padding: "3rem 0" }}>
+  <div className="container text-center">
+    <p className="text-primary">
+      Unlock Document Insights—Humata AI in Action
+    </p>
+    <h2
+      className="text-white"
+      style={{ fontWeight: "600", marginBottom: "1rem" }}
+    >
+      Discover How Humata AI Transforms Documents into Knowledge
+    </h2>
+    <p
+      style={{
+        color: "#ccc",
+        marginBottom: "2rem",
+        fontStyle: "italic",
+      }}
+    >
+      Humata AI uses natural language processing to analyze documents,
+      answer questions, and generate summaries, making complex information accessible.
+    </p>
 
-              <div className="row g-4">
-                {/* Step 1 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#0b6d63",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
+    <div className="row g-4">
+      {/* Step 1 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
             .humata-step1 {
               position: absolute;
               bottom: 10px;
               right: 15px;
               font-size: 4rem;
               font-weight: bold;
-              color: #4ce1b6;
+              color: #7b61ff;
               opacity: 0.6;
             }
           `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Rephrase in Seconds
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Humata AI instantly rephrases your text, maintaining its
-                      meaning while ensuring unique content.
-                    </p>
-                    <div className="humata-step1">1</div>
-                  </div>
-                </div>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Intelligent Document Analysis
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Upload any document and Humata AI quickly understands and extracts key insights and data.
+          </p>
+          <div className="humata-step1">1</div>
+        </div>
+      </div>
 
-                {/* Step 2 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#0b6d63",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
+      {/* Step 2 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
             .humata-step2 {
               position: absolute;
               bottom: 10px;
               right: 15px;
               font-size: 4rem;
               font-weight: bold;
-              color: #4ce1b6;
+              color: #7b61ff;
               opacity: 0.6;
             }
           `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Tailor Your Rephrasing Style
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Customize the tone, structure, and complexity of your
-                      paraphrased text to suit your needs, whether for formal,
-                      casual, or technical purposes.
-                    </p>
-                    <div className="humata-step2">2</div>
-                  </div>
-                </div>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Q&A with Your Documents
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Ask specific questions and get precise answers drawn directly from your documents.
+          </p>
+          <div className="humata-step2">2</div>
+        </div>
+      </div>
 
-                {/* Step 3 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#0b6d63",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
+      {/* Step 3 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
             .humata-step3 {
               position: absolute;
               bottom: 10px;
               right: 15px;
               font-size: 4rem;
               font-weight: bold;
-              color: #4ce1b6;
+              color: #7b61ff;
               opacity: 0.6;
             }
           `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      No Copyright Issues
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Humata AI creates paraphrased text that is original,
-                      copyright-free, and ready to be used in any format.
-                    </p>
-                    <div className="humata-step3">3</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Summarization & Reports
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Generate concise summaries and detailed reports to save time and boost understanding.
+          </p>
+          <div className="humata-step3">3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
           {/* Tab Navigation */}
           <ul className="nav nav-tabs custom-tabs mb-4">

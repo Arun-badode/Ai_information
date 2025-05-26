@@ -871,144 +871,138 @@ const UpsumAI = () => {
       href="https://www.upsum.io"
       rel="noopener noreferrer"
       className="btn btn-primary me-2"
+      
+        target="_blank"
     >
       Explore Tool
     </a>
   </div>
 </div>
 
+                 <section style={{ backgroundColor: "#0b1e3d", padding: "3rem 0" }}>
+  <div className="container text-center">
+    <p className="text-primary">
+      Simplify Content Summarization—UpSum.ai in Action
+    </p>
+    <h2
+      className="text-white"
+      style={{ fontWeight: "600", marginBottom: "1rem" }}
+    >
+      Discover How UpSum.ai Turns Lengthy Text into Concise Summaries
+    </h2>
+    <p
+      style={{
+        color: "#ccc",
+        marginBottom: "2rem",
+        fontStyle: "italic",
+      }}
+    >
+      UpSum.ai uses AI-powered summarization to help users quickly grasp key information from articles, reports, and documents.
+    </p>
 
-          <section style={{ backgroundColor: "#1b1f2b", padding: "3rem 0" }}>
-            <div className="container text-center">
-              <p className="text-primary">
-                Your Smart Summarizer for Research and Technical Content
-              </p>
-              <h2
-                className="text-white"
-                style={{ fontWeight: "600", marginBottom: "1rem" }}
-              >
-                See How UpSum.ai Delivers Tailored Summaries, Instantly and
-                Without Restrictions
-              </h2>
-              <p
-                style={{
-                  color: "#ccc",
-                  marginBottom: "2rem",
-                  fontStyle: "italic",
-                }}
-              >
-                UpSum.ai turns complex research, articles, and documentation
-                into personalized, easy-to-digest summaries—designed for your
-                needs and copyright-free.
-              </p>
-
-              <div className="row g-4">
-                {/* Step 1 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#0b6d63",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
+    <div className="row g-4">
+      {/* Step 1 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
             .upsum-step1 {
               position: absolute;
               bottom: 10px;
               right: 15px;
               font-size: 4rem;
               font-weight: bold;
-              color: #4ce1b6;
+              color: #7b61ff;
               opacity: 0.6;
             }
           `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Capture Critical Points in Seconds
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      UpSum.ai quickly scans your text and pinpoints essential
-                      ideas, methods, and results—saving you hours of reading.
-                    </p>
-                    <div className="upsum-step1">1</div>
-                  </div>
-                </div>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Intelligent Text Analysis
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            UpSum.ai scans and understands lengthy content, identifying key points and essential details.
+          </p>
+          <div className="upsum-step1">1</div>
+        </div>
+      </div>
 
-                {/* Step 2 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#0b6d63",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
+      {/* Step 2 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
             .upsum-step2 {
               position: absolute;
               bottom: 10px;
               right: 15px;
               font-size: 4rem;
               font-weight: bold;
-              color: #4ce1b6;
+              color: #7b61ff;
               opacity: 0.6;
             }
           `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Control What and How It Summarizes
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Choose to emphasize conclusions, figures, or citations.
-                      UpSum.ai adapts the structure to match your academic,
-                      business, or personal goals.
-                    </p>
-                    <div className="upsum-step2">2</div>
-                  </div>
-                </div>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Generates Concise Summaries
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Produces clear, concise summaries that capture the main ideas without losing context.
+          </p>
+          <div className="upsum-step2">2</div>
+        </div>
+      </div>
 
-                {/* Step 3 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#0b6d63",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
+      {/* Step 3 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
             .upsum-step3 {
               position: absolute;
               bottom: 10px;
               right: 15px;
               font-size: 4rem;
               font-weight: bold;
-              color: #4ce1b6;
+              color: #7b61ff;
               opacity: 0.6;
             }
           `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Use Freely—No Copyright Limitations
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      UpSum.ai creates summaries that are safe to reuse in
-                      reports, blogs, study guides, and more—with full copyright
-                      peace of mind.
-                    </p>
-                    <div className="upsum-step3">3</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Saves Time and Effort
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Helps users quickly review large volumes of text, improving productivity and decision-making.
+          </p>
+          <div className="upsum-step3">3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
           {/* Tab Navigation */}
           <ul className="nav nav-tabs custom-tabs mb-4">

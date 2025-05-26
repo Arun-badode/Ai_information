@@ -816,15 +816,9 @@ const ResunateAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-<<<<<<< HEAD
-        <div className="row align-items-center mb-5">
-  {/* Image Section — shows first on mobile, second on desktop */}
-  <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-4 mb-md-0">
-=======
          <div className="row align-items-center mb-5">
   {/* Right side (Image Section) */}
   <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-3 mb-md-0">
->>>>>>> 9732e077a94f9a43e3fcff86cd1122391726245d
     <img
       src={resunate}
       alt="Resumate"
@@ -836,11 +830,7 @@ const ResunateAI = () => {
     />
   </div>
 
-<<<<<<< HEAD
-  {/* Text Section — shows after image on mobile, before on desktop */}
-=======
   {/* Left side (Text Section) */}
->>>>>>> 9732e077a94f9a43e3fcff86cd1122391726245d
   <div
     className="col-12 col-md-6 order-2 order-md-1"
     style={{ paddingRight: "30px" }}

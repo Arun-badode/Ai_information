@@ -916,144 +916,144 @@ const Explainpaper = () => {
       href="https://www.explainpaper.com"
       rel="noopener noreferrer"
       className="btn btn-primary me-2"
+    
+        target="_blank"
     >
       Explore Tool
     </a>
   </div>
 </div>
+<section style={{ backgroundColor: "#0b1e3d", padding: "3rem 0" }}>
+  <div className="container text-center">
+    <p className="text-primary">
+      Understand Research Instantly—Explainpaper AI in Action
+    </p>
+    <h2
+      className="text-white"
+      style={{ fontWeight: "600", marginBottom: "1rem" }}
+    >
+      See How Explainpaper AI Simplifies Complex Academic Papers
+    </h2>
+    <p
+      style={{
+        color: "#ccc",
+        marginBottom: "2rem",
+        fontStyle: "italic",
+      }}
+    >
+      Explainpaper AI helps readers grasp difficult concepts by breaking down
+      academic language and technical jargon into plain, easy-to-understand
+      summaries.
+    </p>
 
-
-          <section style={{ backgroundColor: "#1b1f2b", padding: "3rem 0" }}>
-            <div className="container text-center">
-              <p className="text-primary">
-                Your Smart Assistant for Research Simplification and Content
-                Rewriting
-              </p>
-              <h2
-                className="text-white"
-                style={{ fontWeight: "600", marginBottom: "1rem" }}
-              >
-                See How Explainpaper AI Refines Content Instantly — Uniquely and
-                Legally Yours
-              </h2>
-              <p
-                style={{
-                  color: "#ccc",
-                  marginBottom: "2rem",
-                  fontStyle: "italic",
-                }}
-              >
-                Explainpaper AI rephrases academic text, papers, and reports
-                into personalized, copyright-free versions—tailored to your
-                writing style without losing clarity.
-              </p>
-
-              <div className="row g-4">
-                {/* Step 1 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#0b6d63",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
-            .explainpaper-step1 {
+    <div className="row g-4">
+      {/* Step 1 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .explain-step1 {
               position: absolute;
               bottom: 10px;
               right: 15px;
               font-size: 4rem;
               font-weight: bold;
-              color: #4ce1b6;
+              color: #7b61ff;
               opacity: 0.6;
             }
           `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Instant Text Simplification
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Explainpaper AI quickly rewrites your content while
-                      preserving meaning—ideal for faster comprehension or
-                      re-use.
-                    </p>
-                    <div className="explainpaper-step1">1</div>
-                  </div>
-                </div>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Highlight & Simplify
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Simply highlight confusing parts of a research paper, and
+            Explainpaper AI will rewrite them in plain English for better clarity.
+          </p>
+          <div className="explain-step1">1</div>
+        </div>
+      </div>
 
-                {/* Step 2 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#0b6d63",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
-            .explainpaper-step2 {
+      {/* Step 2 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .explain-step2 {
               position: absolute;
               bottom: 10px;
               right: 15px;
               font-size: 4rem;
               font-weight: bold;
-              color: #4ce1b6;
+              color: #7b61ff;
               opacity: 0.6;
             }
           `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Customize Rewriting Style
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Modify tone, length, or formality to suit your use
-                      case—from academic summaries to creative rewrites.
-                    </p>
-                    <div className="explainpaper-step2">2</div>
-                  </div>
-                </div>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Works on Real Research Papers
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Upload full research PDFs and use Explainpaper AI directly on actual
+            published content from arXiv, journals, and more.
+          </p>
+          <div className="explain-step2">2</div>
+        </div>
+      </div>
 
-                {/* Step 3 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#0b6d63",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
-            .explainpaper-step3 {
+      {/* Step 3 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .explain-step3 {
               position: absolute;
               bottom: 10px;
               right: 15px;
               font-size: 4rem;
               font-weight: bold;
-              color: #4ce1b6;
+              color: #7b61ff;
               opacity: 0.6;
             }
           `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      100% Copyright-Free Output
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Everything rewritten by Explainpaper AI is original and
-                      rights-cleared—perfect for sharing or publishing.
-                    </p>
-                    <div className="explainpaper-step3">3</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            AI That Learns From Your Feedback
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            The AI improves explanations over time based on user input,
+            tailoring its simplifications to be more helpful for different
+            levels of readers.
+          </p>
+          <div className="explain-step3">3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
           {/* Tab Navigation */}
           <ul className="nav nav-tabs custom-tabs mb-4">

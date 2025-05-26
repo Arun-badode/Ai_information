@@ -596,6 +596,129 @@ const MicrosoftCopilot = () => {
     </div>
   </div>
 </div>
+<section style={{ backgroundColor: "#0b1e3d", padding: "3rem 0" }}>
+  <div className="container text-center">
+    <p className="text-primary">
+      Enhance Productivity—Microsoft Copilot AI in Action
+    </p>
+    <h2
+      className="text-white"
+      style={{ fontWeight: "600", marginBottom: "1rem" }}
+    >
+      Discover How Microsoft Copilot AI Boosts Your Work Efficiency
+    </h2>
+    <p
+      style={{
+        color: "#ccc",
+        marginBottom: "2rem",
+        fontStyle: "italic",
+      }}
+    >
+      Microsoft Copilot integrates AI into your everyday apps, helping you write, analyze, and create content faster with intelligent assistance.
+    </p>
+
+    <div className="row g-4">
+      {/* Step 1 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .copilot-step1 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #7b61ff;
+              opacity: 0.6;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            AI-Powered Content Generation
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Copilot helps draft documents, emails, and presentations with contextual AI suggestions.
+          </p>
+          <div className="copilot-step1">1</div>
+        </div>
+      </div>
+
+      {/* Step 2 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .copilot-step2 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #7b61ff;
+              opacity: 0.6;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Data Analysis Assistance
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Automatically generates insights and summaries from your data in Excel and Power BI.
+          </p>
+          <div className="copilot-step2">2</div>
+        </div>
+      </div>
+
+      {/* Step 3 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .copilot-step3 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #7b61ff;
+              opacity: 0.6;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Seamless Integration Across Apps
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Works smoothly with Microsoft 365 tools to streamline workflows and enhance collaboration.
+          </p>
+          <div className="copilot-step3">3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
           {/* Tab Navigation */}

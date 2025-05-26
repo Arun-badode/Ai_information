@@ -1000,142 +1000,138 @@ const SciteAI = () => {
       href="https://scite.ai"
       rel="noopener noreferrer"
       className="btn btn-primary me-2"
+       
+       
+        target="_blank"
     >
       Explore Tool
     </a>
   </div>
 </div>
 
-          <section style={{ backgroundColor: "#1b1f2b", padding: "3rem 0" }}>
-            <div className="container text-center">
-              <p className="text-primary">
-                Smarter Writing with Context-Aware, Custom Rewording by Scite AI
-              </p>
-              <h2
-                className="text-white"
-                style={{ fontWeight: "600", marginBottom: "1rem" }}
-              >
-                See How Scite AI Adapts Complex Content — Ethically and Uniquely
-                Yours
-              </h2>
-              <p
-                style={{
-                  color: "#ccc",
-                  marginBottom: "2rem",
-                  fontStyle: "italic",
-                }}
-              >
-                Scite AI rephrases academic and technical content to match your
-                voice and intent— all while ensuring originality and legal
-                clarity for any use.
-              </p>
+    <section style={{ backgroundColor: "#0b1e3d", padding: "3rem 0" }}>
+  <div className="container text-center">
+    <p className="text-primary">
+      Enhance Research Integrity—Scite AI in Action
+    </p>
+    <h2
+      className="text-white"
+      style={{ fontWeight: "600", marginBottom: "1rem" }}
+    >
+      Discover How Scite AI Validates Scientific Claims
+    </h2>
+    <p
+      style={{
+        color: "#ccc",
+        marginBottom: "2rem",
+        fontStyle: "italic",
+      }}
+    >
+      Scite AI provides smart citation analysis to help researchers understand the context and reliability of scientific papers.
+    </p>
 
-              <div className="row g-4">
-                {/* Step 1 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#0b6d63",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
+    <div className="row g-4">
+      {/* Step 1 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
             .scite-step1 {
               position: absolute;
               bottom: 10px;
               right: 15px;
               font-size: 4rem;
               font-weight: bold;
-              color: #4ce1b6;
+              color: #7b61ff;
               opacity: 0.6;
             }
           `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Smart Content Understanding
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Scite AI analyzes the context of your content and rewrites
-                      it intelligently for clarity and relevance—perfect for
-                      quick comprehension or editing.
-                    </p>
-                    <div className="scite-step1">1</div>
-                  </div>
-                </div>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Contextual Citation Analysis
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Scite AI analyzes how papers are cited, distinguishing supportive, contrasting, or mentioning contexts.
+          </p>
+          <div className="scite-step1">1</div>
+        </div>
+      </div>
 
-                {/* Step 2 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#0b6d63",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
+      {/* Step 2 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
             .scite-step2 {
               position: absolute;
               bottom: 10px;
               right: 15px;
               font-size: 4rem;
               font-weight: bold;
-              color: #4ce1b6;
+              color: #7b61ff;
               opacity: 0.6;
             }
           `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Personalized Rewrite Options
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Tailor output by adjusting tone, structure, or technical
-                      depth—whether for publication, study, or communication.
-                    </p>
-                    <div className="scite-step2">2</div>
-                  </div>
-                </div>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Research Paper Evaluation
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Helps researchers assess the reliability and impact of scientific studies through citation context.
+          </p>
+          <div className="scite-step2">2</div>
+        </div>
+      </div>
 
-                {/* Step 3 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#0b6d63",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
+      {/* Step 3 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
             .scite-step3 {
               position: absolute;
               bottom: 10px;
               right: 15px;
               font-size: 4rem;
               font-weight: bold;
-              color: #4ce1b6;
+              color: #7b61ff;
               opacity: 0.6;
             }
           `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Guaranteed Copyright-Free Results
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Every rewrite from Scite AI is unique, rights-cleared, and
-                      suitable for academic or commercial use.
-                    </p>
-                    <div className="scite-step3">3</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Citation-Based Insights
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Gain insights from citation patterns to support evidence-based research decisions.
+          </p>
+          <div className="scite-step3">3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
           {/* Tab Navigation */}
           <ul className="nav nav-tabs custom-tabs mb-4">

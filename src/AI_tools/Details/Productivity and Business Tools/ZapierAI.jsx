@@ -579,10 +579,131 @@ const ZapierAI = () => {
         />
       </div>
     </div>
-  );
 
 
-export default ZapierSection;
+<section style={{ backgroundColor: "#0b1e3d", padding: "3rem 0" }}>
+  <div className="container text-center">
+    <p className="text-primary">
+      Automate Workflows—Zapier AI in Action
+    </p>
+    <h2
+      className="text-white"
+      style={{ fontWeight: "600", marginBottom: "1rem" }}
+    >
+      Discover How Zapier AI Streamlines Your Automation
+    </h2>
+    <p
+      style={{
+        color: "#ccc",
+        marginBottom: "2rem",
+        fontStyle: "italic",
+      }}
+    >
+      Zapier AI connects your favorite apps, automating repetitive tasks and boosting productivity with smart AI-powered workflows.
+    </p>
+
+    <div className="row g-4">
+      {/* Step 1 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .zapier-step1 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #7b61ff;
+              opacity: 0.6;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Connect Apps Seamlessly
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Zapier AI links your favorite tools to automate data flow without manual effort.
+          </p>
+          <div className="zapier-step1">1</div>
+        </div>
+      </div>
+
+      {/* Step 2 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .zapier-step2 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #7b61ff;
+              opacity: 0.6;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Automate Repetitive Tasks
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Create workflows that handle routine jobs, freeing up your time for bigger projects.
+          </p>
+          <div className="zapier-step2">2</div>
+        </div>
+      </div>
+
+      {/* Step 3 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .zapier-step3 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #7b61ff;
+              opacity: 0.6;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Boost Productivity Effortlessly
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Zapier AI makes complex automations simple, helping teams work smarter and faster.
+          </p>
+          <div className="zapier-step3">3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
           {/* Tab Navigation */}

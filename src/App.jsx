@@ -6,7 +6,7 @@ import BreadcrumbScroll from "./AI_tools/Details/Layout/BreadcrumbScroll";
 import Footer from "./AI_tools/Details/Layout/Footer";
 import HomePage from "./AI_tools/HomePage";
 import Aitools from "./AI_tools/AiTools";
-import ImageMindAI from "./AI_tools/ImageMindAI";
+
 import AiLearningHub from "./AI_tools/AiLearningHub";
 import AIComparisonPage from "./AI_tools/AIComparisonPage";
 import AboutPage from "./AI_tools/AboutUs";
@@ -317,7 +317,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/aitools" element={<Aitools />} />
-        <Route path="/imagemindai" element={<ImageMindAI />} />
+      
         <Route path="/ailearninghub" element={<AiLearningHub />} />
         <Route path="/aicomparisonpage" element={<AIComparisonPage />} />
         <Route path="/aboutus" element={<AboutPage />} />

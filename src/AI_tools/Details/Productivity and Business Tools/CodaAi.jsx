@@ -78,7 +78,7 @@ const styles = {
 };
 
 const CodaAI = () => {
-  const [activeTab, setActiveTab] = useState("features"); // Set the default active tab as 'features'
+  const [activeTab, setActiveTab] = useState("Features"); // Set the default active tab as 'features'
   const [openIndex, setOpenIndex] = useState(null);
   const [expandedIndex, setExpandedIndex] = useState(null);
   const [showAllFaqs, setShowAllFaqs] = useState(false);
@@ -618,6 +618,138 @@ const CodaAI = () => {
     />
   </div>
 </div>
+
+
+
+
+
+<section style={{ backgroundColor: "#0b1e3d", padding: "3rem 0" }}>
+  <div className="container text-center">
+    <p className="text-primary">
+      Supercharge Docs & Teams—Coda AI in Action
+    </p>
+    <h2
+      className="text-white"
+      style={{ fontWeight: "600", marginBottom: "1rem" }}
+    >
+      Discover How Coda AI Enhances Collaboration and Documentation
+    </h2>
+    <p
+      style={{
+        color: "#ccc",
+        marginBottom: "2rem",
+        fontStyle: "italic",
+      }}
+    >
+      Coda AI brings intelligence to your docs—automating updates, summarizing info,
+      and enabling real-time collaboration across teams.
+    </p>
+
+    <div className="row g-4">
+      {/* Step 1 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .coda-step1 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #7b61ff;
+              opacity: 0.6;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Smart Summarization
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Coda AI summarizes long documents into key points, helping you save time and stay informed.
+          </p>
+          <div className="coda-step1">1</div>
+        </div>
+      </div>
+
+      {/* Step 2 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .coda-step2 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #7b61ff;
+              opacity: 0.6;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Automates Meeting Notes
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Automatically captures and organizes meeting notes, turning conversations into action items.
+          </p>
+          <div className="coda-step2">2</div>
+        </div>
+      </div>
+
+      {/* Step 3 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .coda-step3 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #7b61ff;
+              opacity: 0.6;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            AI-Enhanced Collaboration
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Empower teams to co-create documents smarter with real-time AI suggestions and integrations.
+          </p>
+          <div className="coda-step3">3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+v
 
           {/* Tab Navigation */}
           <ul className="nav nav-tabs custom-tabs mb-4">

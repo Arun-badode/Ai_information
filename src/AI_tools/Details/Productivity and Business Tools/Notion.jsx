@@ -553,6 +553,129 @@ const Notion = () => {
   </div>
 </div>
 
+<section style={{ backgroundColor: "#0b1e3d", padding: "3rem 0" }}>
+  <div className="container text-center">
+    <p className="text-primary">
+      Enhance Productivity—Notion AI in Action
+    </p>
+    <h2
+      className="text-white"
+      style={{ fontWeight: "600", marginBottom: "1rem" }}
+    >
+      Discover How Notion AI Boosts Your Workflow
+    </h2>
+    <p
+      style={{
+        color: "#ccc",
+        marginBottom: "2rem",
+        fontStyle: "italic",
+      }}
+    >
+      Notion AI helps you organize ideas, generate content, and automate tasks—all inside your favorite workspace.
+    </p>
+
+    <div className="row g-4">
+      {/* Step 1 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .notion-step1 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #7b61ff;
+              opacity: 0.6;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Organize Ideas Efficiently
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Use Notion AI to structure notes, tasks, and projects seamlessly in one place.
+          </p>
+          <div className="notion-step1">1</div>
+        </div>
+      </div>
+
+      {/* Step 2 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .notion-step2 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #7b61ff;
+              opacity: 0.6;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Generate Content Quickly
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Create drafts, summaries, and ideas with AI-powered content generation.
+          </p>
+          <div className="notion-step2">2</div>
+        </div>
+      </div>
+
+      {/* Step 3 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .notion-step3 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #7b61ff;
+              opacity: 0.6;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Automate Routine Tasks
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Save time by letting Notion AI handle repetitive workflows and reminders.
+          </p>
+          <div className="notion-step3">3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
           {/* Tab Navigation */}

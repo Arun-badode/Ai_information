@@ -894,6 +894,7 @@ const Sensei = () => {
           href="https://www.senseicopilot.com/"
           rel="noopener noreferrer"
           className="btn btn-primary me-2"
+          target="blank"
         >
           Explore Tool
         </a>

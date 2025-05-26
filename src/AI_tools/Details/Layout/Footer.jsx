@@ -53,14 +53,7 @@ const Footer = () => {
                   Ai Learning Hub
                 </Link>
               </li>
-              <li>
-                <a
-                  href="/imagemindai"
-                  className="text-white hover:text-yellow-500 no-underline"
-                >
-                  Ai Tools Details
-                </a>
-              </li>
+         
             </ul>
           </div>
 

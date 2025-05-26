@@ -78,7 +78,7 @@ const styles = {
 };
 
 const ClickupAI = () => {
-  const [activeTab, setActiveTab] = useState("features"); // Set the default active tab as 'features'
+  const [activeTab, setActiveTab] = useState("Features"); // Set the default active tab as 'features'
   const [openIndex, setOpenIndex] = useState(null);
   const [expandedIndex, setExpandedIndex] = useState(null);
   const [showAllFaqs, setShowAllFaqs] = useState(false);
@@ -90,7 +90,7 @@ const ClickupAI = () => {
     switch (activeTab) {
       case "Features":
         return (
-          <div className="row g-4">
+          <div className="row g-4 ">
             {[
               {
                 title: "Task Automation:",
@@ -108,18 +108,11 @@ const ClickupAI = () => {
                 title: "Intelligent Assistant:",
                 desc: "Provides recommendations and automation options to simplify project management.",
               },
-              {
-                title: "",
-                desc: "",
-              },
-              {
-                title: "",
-                desc: "​",
-              },
+         
               
             ].map((feature, index) => (
               <div className="col-md-4" key={index}>
-                <div className="custom-card text-light p-4 h-100">
+                <div className="custom-card text-light p-4 h-100 ">
                   <div className="icon mb-3">{feature.icon}</div>
                   <h5 className="fw-bold">{feature.title}</h5>
                   <p>{feature.desc}</p>
@@ -589,6 +582,136 @@ const ClickupAI = () => {
     />
   </div>
 </div>
+
+
+
+
+
+
+
+<section style={{ backgroundColor: "#0b1e3d", padding: "3rem 0" }}>
+  <div className="container text-center">
+    <p className="text-primary">
+      Maximize Productivity—ClickUp AI in Action
+    </p>
+    <h2
+      className="text-white"
+      style={{ fontWeight: "600", marginBottom: "1rem" }}
+    >
+      Discover How ClickUp AI Transforms Task Management
+    </h2>
+    <p
+      style={{
+        color: "#ccc",
+        marginBottom: "2rem",
+        fontStyle: "italic",
+      }}
+    >
+      ClickUp AI helps teams automate workflows, organize tasks, and prioritize work efficiently.
+    </p>
+
+    <div className="row g-4">
+      {/* Step 1 */}
+      <div className="col-md-4 border-primary rounded">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .clickup-step1 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #7b61ff;
+              opacity: 0.6;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Automate Workflow Processes
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Streamline repetitive tasks with AI-powered automation rules.
+          </p>
+          <div className="clickup-step1">1</div>
+        </div>
+      </div>
+
+      {/* Step 2 */}
+      <div className="col-md-4 border-primary rounded">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .clickup-step2 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #7b61ff;
+              opacity: 0.6;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Smart Task Prioritization
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            AI suggests priorities to keep your team focused on what matters most.
+          </p>
+          <div className="clickup-step2">2</div>
+        </div>
+      </div>
+
+      {/* Step 3 */}
+      <div className="col-md-4 border-primary rounded">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .clickup-step3 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #7b61ff;
+              opacity: 0.6;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Enhanced Team Collaboration
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Facilitate better communication and task updates with AI-driven insights.
+          </p>
+          <div className="clickup-step3">3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
           {/* Tab Navigation */}
           <ul className="nav nav-tabs custom-tabs mb-4">
