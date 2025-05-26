@@ -815,13 +815,20 @@ const MindMeister = () => {
         <div className="container">
           <div className="row d-flex align-items-center justify-content-between mb-1 flex-column flex-md-row">
   {/* Image Section - Mobile me pehle dikhayega */}
-  <div className="col-12 col-md-6 order-1 order-md-2 mb-3 mb-md-0 text-center">
-    <img
-      src={mindmeisterImg}
-      alt="MindMeister AI"
-      style={{ width: "100%", height: "300px", objectFit: "cover" }}
-    />
-  </div>
+<div className="col-12 col-md-6 order-1 order-md-2 mb-3 mb-md-0 text-center">
+  <img
+    src={mindmeisterImg}
+    alt="MindMeister AI"
+    style={{
+      width: "100%",
+      height: "auto",          
+      maxHeight: "300px",      
+      objectFit: "cover",
+    }}
+    className="img-fluid"      
+  />
+</div>
+
 
   {/* Text Section - Mobile me baad me dikhayega */}
   <div className="col-12 col-md-6 order-2 order-md-1" style={{ paddingRight: "30px" }}>

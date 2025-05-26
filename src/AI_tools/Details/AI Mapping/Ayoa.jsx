@@ -853,13 +853,20 @@ const Ayoa = () => {
         <div className="container">
          <div className="row d-flex align-items-center justify-content-between mb-1 flex-column flex-md-row">
   {/* Image Section - Pehle dikhayega mobile me */}
-  <div className="col-12 col-md-6 order-1 order-md-2 mb-3 mb-md-0 text-center">
-    <img
-      src={ayoaImg}
-      alt="Ayoa AI"
-      style={{ width: "100%", height: "300px", objectFit: "cover" }}
-    />
-  </div>
+ <div className="col-12 col-md-6 order-1 order-md-2 mb-3 mb-md-0 text-center">
+  <img
+    src={ayoaImg}
+    alt="Ayoa AI"
+    style={{
+      width: "100%",
+      height: "auto",         
+      maxHeight: "300px",    
+      objectFit: "cover",
+    }}
+    className="img-fluid"
+  />
+</div>
+
 
   {/* Text Section - Baad me dikhayega mobile me */}
   <div className="col-12 col-md-6 order-2 order-md-1" style={{ paddingRight: "30px" }}>
