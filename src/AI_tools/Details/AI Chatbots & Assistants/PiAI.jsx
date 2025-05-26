@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import piaiImg from '../../../../public/assets/Img/AI Chatbots & Assistants/33.png'
+import piaiImg from '../../../../public/assets/Img/AI For Chatbots/pi.png'
 import piaiSS from '../../../../public/assets/Img/AI Chatbots & Assistants/piaiSS.png'
 import piaiSS1 from '../../../../public/assets/Img/AI Chatbots & Assistants/piaiSS1.png'
 
@@ -309,14 +309,14 @@ const PiAI = () => {
             <div className="col-md-6">
               <img
                 src={piaiSS}
-                alt="Screenshot 1"
+                alt="piai"
                 className="img-fluid rounded-3"
               />
             </div>
             <div className="col-md-6">
               <img
                 src={piaiSS1}
-                alt="Screenshot 2"
+                alt="piai"
                 className="img-fluid rounded-3"
               />
             </div>

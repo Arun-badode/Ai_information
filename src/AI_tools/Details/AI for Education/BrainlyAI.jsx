@@ -638,8 +638,7 @@ const BrainlyAI = () => {
               <p className="text-primary">Write better, faster</p>
               <h1>
                 {" "}
-                Brainly AI: Revolutionizing Education with Artificial
-                Intelligence
+                Brainly AI
               </h1>
               <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
               <p>
@@ -657,11 +656,13 @@ const BrainlyAI = () => {
                 arts, and more.
               </p>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
+             <a
+                                 href=" https://brainly.com"
+                                 rel="noopener noreferrer"
+                                 className="btn btn-primary me-2"
+                               >
+                                 Explore Tool
+                               </a>
             </div>
 
             {/* Right side (Image Section) */}

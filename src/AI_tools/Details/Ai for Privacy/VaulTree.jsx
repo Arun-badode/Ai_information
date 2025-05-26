@@ -681,7 +681,7 @@ const VaultreeAI = () => {
         <div className="container">
                            <div className="d-flex flex-column flex-md-row align-items-center justify-content-between mb-5">
             {/* Left side (Text Section) */}
-           <div style={{ flex: 1, paddingRight: "30px" }} className="order-2 order-md-1">sName="col-6 col-md-12 "
+           <div style={{ flex: 1, paddingRight: "30px" }} className="order-2 order-md-1">
             
               <p className="text-primary">Write better, faster</p>
               <h1>Vaultree AI</h1>

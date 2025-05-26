@@ -3,6 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import k from "../../../../public/assets/Img/AI for Education/AI For Education/11.png"
+import mooclabSS1 from '../../../../public/assets/Img/AI for Education/mooclabSS1.png';
+import mooclabSS2 from '../../../../public/assets/Img/AI for Education/mooclabSS2.png';
+
 // review section data
 const reviews = [
   {
@@ -365,16 +368,15 @@ const MoocLab= () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://www.gizmochina.com/wp-content/uploads/2023/06/Screenshot-2023-06-23-165608.png"
+                src={mooclabSS1}
                 alt="mooclab"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src={Rephrase}
-                alt="mooclab
-                "
+                src={mooclabSS2}
+                alt="mooclab"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
@@ -656,11 +658,13 @@ const MoocLab= () => {
                 your study techniques, MoocLab has something to offer.
               </p>
 
-              <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
-              </div>
+             <a
+                                 href=" https://www.mooclab.club/home."
+                                 rel="noopener noreferrer"
+                                 className="btn btn-primary me-2"
+                               >
+                                 Explore Tool
+                               </a> 
             </div>
 
             {/* Right side (Image Section) */}
