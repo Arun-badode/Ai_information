@@ -4,7 +4,7 @@ import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
-import deatilimage from "../../../Images/DetailImage.png";
+import upsum from "../../../../public/assets/Img/AI for Document/upsum.png";
 import upsumSS1 from '../../../../public/assets/Img/AI for Document/upsumSS1.png';
 import upsumSS2 from '../../../../public/assets/Img/AI for Document/upsumSS2.png';
 
@@ -844,7 +844,7 @@ const UpsumAI = () => {
     style={{ height: "250px" }}
   >
     <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
+      src={upsum}
       alt="UpSum.ai"
       style={{ maxWidth: "100%", height: "300px" }}
     />

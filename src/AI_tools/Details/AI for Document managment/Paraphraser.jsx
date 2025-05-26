@@ -4,7 +4,7 @@ import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
-import deatilimage from "../../../Images/DetailImage.png";
+import paraphrase from "../../../../public/assets/Img/AI for Document/paraphrase.png";
 import paraphraserSS1 from '../../../../public/assets/Img/AI for Document/paraphraserSS1.png';
 import paraphraserSS2 from '../../../../public/assets/Img/AI for Document/paraphraserSS2.png';
 
@@ -852,7 +852,7 @@ const paraphraser = () => {
   {/* Image First on Mobile, Second on Desktop */}
   <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-3 mb-md-0">
     <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
+      src={paraphrase}
       alt="Paraphraser.io"
       style={{ maxWidth: "100%", height: "300px" }}
     />

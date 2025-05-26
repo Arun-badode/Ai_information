@@ -4,7 +4,7 @@ import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
-
+import notion from "../../../../public/assets/Img/AI for Business/notion.jpeg";
 import notion1 from "../../../../public/assets/Img/AI for Business/Notion1.png";
 import notion2 from "../../../../public/assets/Img/AI for Business/Notion2.png";
 
@@ -547,7 +547,7 @@ const Notion = () => {
   {/* Right side (Image Section) */}
   <div style={{ flex: 1, textAlign: "center" }}>
     <img
-      src=""
+      src={notion}
       alt="Notion AI"
       className="img-fluid rounded-3"
       style={{ maxWidth: "80%", height: "auto" }}

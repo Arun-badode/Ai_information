@@ -892,6 +892,187 @@ const StandardCongnition = () => {
       </div>
     </div>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section style={{ backgroundColor: "", padding: "3rem 0" }}>
+  <div className="container text-center">
+    <p className="text-primary">
+      Empower Autonomous Retail—Standard Cognition AI in Action
+    </p>
+    <h2
+      className="text-white"
+      style={{ fontWeight: "600", marginBottom: "1rem" }}
+    >
+      Explore How Standard Cognition AI Enables Checkout-Free Convenience
+    </h2>
+    <p
+      style={{
+        color: "#ccc",
+        marginBottom: "2rem",
+        fontStyle: "italic",
+      }}
+    >
+      Standard Cognition AI delivers a seamless, cashierless experience through advanced
+      computer vision—giving shoppers speed and retailers flexibility.
+    </p>
+
+    <div className="row g-4">
+      {/* Step 1 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .aifi-step1 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #c9e7f7;
+              opacity: 0.7;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            AI-Powered Shopper Tracking
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Standard Cognition AI identifies and tracks shoppers and the items they pick
+            without facial recognition—ensuring privacy and precision.
+          </p>
+          <div className="aifi-step1">1</div>
+        </div>
+      </div>
+
+      {/* Step 2 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .aifi-step2 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #c9e7f7;
+              opacity: 0.7;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Flexible Store Compatibility
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            The system works with your current store layout—no need for shelf sensors or
+            drastic redesigns—making deployment easier than ever.
+          </p>
+          <div className="aifi-step2">2</div>
+        </div>
+      </div>
+
+      {/* Step 3 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .aifi-step3 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #c9e7f7;
+              opacity: 0.7;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Fast, Contactless Checkout
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Once shopping is done, customers simply walk out—Standard Cognition processes
+            the purchase instantly, sending digital receipts with no checkout delay.
+          </p>
+          <div className="aifi-step3">3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+  
+          
+
+          {/* Tab Navigation */}
+          <ul className="nav nav-tabs custom-tabs mb-4">
+            {[
+              "Features",
+              "Screenshots",
+              "Reviews",
+              "FAQs",
+              "Technical",
+              "Why-We-Use",
+              "Pros & Cons",
+              "Alternative",
+            ].map((tab) => (
+              <li className="nav-item mb-2" key={tab}>
+                <button
+                  className={`nav-link ${activeTab === tab ? "active" : ""}`}
+                  onClick={() => setActiveTab(tab)}
+                >
+                  {tab.charAt(0).toUpperCase() + tab.slice(1)}
+                </button>
+              </li>
+            ))}
+          </ul>
+
+          {/* Tab Content */}
+          <div className="tab-content-area">{renderTabContent()}</div>
+
 </div>
 
       </div>

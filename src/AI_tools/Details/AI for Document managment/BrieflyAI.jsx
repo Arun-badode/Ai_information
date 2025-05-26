@@ -4,7 +4,7 @@ import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
-import deatilimage from "../../../Images/DetailImage.png";
+import brifly from "../../../../public/assets/Img/AI for Document/brifly.png";
 import brieflySS1 from '../../../../public/assets/Img/AI for Document/brieflySS1.png';
 import brieflySS2 from '../../../../public/assets/Img/AI for Document/brieflySS2.png';
 
@@ -845,9 +845,9 @@ const BrieflyAI = () => {
     style={{ height: "250px" }}
   >
     <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
+      src={brifly}
       alt="Briefly AI"
-      style={{ maxWidth: "100%", height: "300px" }}
+      style={{ maxWidth: "100%", height: "250px" }}
     />
   </div>
 

@@ -3,8 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Logo from "../../../Images/logo[2].png";
-import deatilimage from "../../../Images/DetailImage.png";
+import microsoft from "../../../../public/assets/Img/AI for Business/microsoft.jpeg";
 import microsoft1 from "../../../../public/assets/Img/AI for Business/microsoft1.png";
 
 // review section data
@@ -591,7 +590,7 @@ const MicrosoftCopilot = () => {
   {/* Right side (Image Section) */}
   <div className="col-lg-6 col-md-12 text-center">
     <img
-      src="/src/Images/WhatsApp Image 2025-05-07 at 14.40.33.jpeg"
+      src={microsoft}
       className="img-fluid rounded-3"
       style={{ maxWidth: "100%", height: "auto" }}
       alt="Microsoft Copilot – AI"

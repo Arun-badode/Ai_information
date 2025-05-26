@@ -644,7 +644,7 @@ const Veedio = () => {
 
               <div className="mb-3">
                 <a
-                  href="https://runwayml.com/"
+                  href="https://www.veed.io/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary me-2"

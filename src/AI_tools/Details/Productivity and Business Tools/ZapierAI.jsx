@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
+import zapier from "../../../../public/assets/Img/AI for Business/zapier.jpeg"
 import zaper1 from "../../../../public/assets/Img/AI for Business/zapier1.png";
 import zaper2 from "../../../../public/assets/Img/AI for Business/zapier2.png";
 
@@ -572,7 +572,7 @@ const ZapierAI = () => {
       {/* Right side (Image Section) */}
       <div className="col-lg-6 col-md-12 order-lg-2 order-1 text-center mb-4 mb-lg-0">
         <img
-          src=""
+          src={zapier}
           className="img-fluid rounded-3"
           style={{ maxWidth: "100%", height: "auto" }}
           alt="Zapier AI"

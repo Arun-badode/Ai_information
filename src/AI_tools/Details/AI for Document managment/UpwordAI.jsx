@@ -4,7 +4,7 @@ import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
-import deatilimage from "../../../Images/DetailImage.png";
+import upworld from "../../../../public/assets/Img/AI for Document/upworld.png";
 import upwordSS1 from '../../../../public/assets/Img/AI for Document/upwordSS1.png';
 import upwordSS2 from '../../../../public/assets/Img/AI for Document/upwordSS2.png';
 
@@ -846,9 +846,9 @@ const UpwordAI = () => {
     style={{ height: "250px" }}
   >
     <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
+      src={upworld}
       alt="Upword AI"
-      style={{ maxWidth: "100%", height: "300px" }}
+      style={{ maxWidth: "100%", height: "280px" }}
     />
   </div>
 
