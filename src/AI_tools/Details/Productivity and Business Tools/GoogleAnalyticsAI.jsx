@@ -638,9 +638,19 @@ const GoogleAnalyticsAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-        <div className="row d-flex align-items-center justify-content-between mb-3">
-  {/* Left side (Text Section) */}
-  <div className="col-md-6 mb-4 mb-md-0" style={{ paddingRight: "30px" }}>
+    <div className="row align-items-center justify-content-between mb-3">
+  {/* Image Section - on top for mobile */}
+  <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-4 mb-md-0">
+    <img
+      src={google}
+      alt="Google Analytics AI"
+      className="img-fluid"
+      style={{ maxWidth: "100%", height: "300px", objectFit: "contain" }}
+    />
+  </div>
+
+  {/* Text Section - below image on mobile, left on desktop */}
+  <div className="col-12 col-md-6 order-2 order-md-1" style={{ paddingRight: "30px" }}>
     <p className="text-primary">Grow better, faster</p>
     <h1>Google Analytics AI</h1>
     <div className="text-warning mb-2">⭐⭐⭐⭐⭐</div>
@@ -655,15 +665,6 @@ const GoogleAnalyticsAI = () => {
     >
       Explore Tool
     </a>
-  </div>
-
-  {/* Right side (Image Section) */}
-  <div className="col-md-6 text-center">
-    <img
-      src={google}
-      alt="Google Analytics AI"
-      style={{ maxWidth: "100%", height: "300px", objectFit: "contain" }}
-    />
   </div>
 </div>
 

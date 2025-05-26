@@ -682,61 +682,40 @@ const Lucid = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-             
-              className="col-lg-6 "
-            >
-              <div className="col-md-12 ">
-                <p className="text-primary">
-                Create stunning visuals effortlessly
-              </p>
-              <h1>Lucid Search AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+         <div className="row d-flex align-items-center justify-content-between mb-1">
+  {/* Image Section - order 1 on mobile (top), order 2 on desktop (right) */}
+  <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-4 mb-md-0">
+    <img
+      src={lucid}
+      alt="lucid"
+      style={{ maxWidth: "100%", height: "auto" }}
+    />
+  </div>
 
-              <p>
-                Lucid Search AI is an advanced, privacy-focused search engine
-                that uses artificial intelligence to provide relevant search
-                results while safeguarding user data. Unlike mainstream search
-                engines, Lucid Search AI prioritizes user privacy and offers
-                features for businesses, content creators, and marketers to
-                discover information efficiently. By incorporating semantic
-                search, data protection, and content optimization, Lucid Search
-                AI is a powerful tool for SEO, content discovery, and web
-                scraping.
-              </p>
-              </div>
+  {/* Text Section - order 2 on mobile (below image), order 1 on desktop (left) */}
+  <div className="col-12 col-md-6 order-2 order-md-1">
+    <p className="text-primary">
+      Create stunning visuals effortlessly
+    </p>
+    <h1>Lucid Search AI</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      Lucid Search AI is an advanced, privacy-focused search engine that uses artificial intelligence to provide relevant search results while safeguarding user data. Unlike mainstream search engines, Lucid Search AI prioritizes user privacy and offers features for businesses, content creators, and marketers to discover information efficiently. By incorporating semantic search, data protection, and content optimization, Lucid Search AI is a powerful tool for SEO, content discovery, and web scraping.
+    </p>
 
-             <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
-        <a
-          href="https://lucidworks.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn btn-primary btn-lg px-4"
-        >
-          Explore Tool
-        </a>
-      </div>
-            </div>
+    <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
+      <a
+        href="https://lucidworks.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary btn-lg px-4"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
+</div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src={lucid}
-                alt="lucid"
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
-          </div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>

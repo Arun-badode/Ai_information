@@ -578,7 +578,11 @@ const MiroAi = () => {
    <div className="d-flex align-items-center justify-content-between mb-5">
   {/* Left side (Text Section) */}
   <div style={{ flex: 1, paddingRight: "30px" }}>
+<<<<<<< HEAD
     
+=======
+ 
+>>>>>>> 970314a94a8d0db1f53dac8715d8b65c61a53b67
     <h2>Miro AI</h2>
     <div className="text-warning mb-1">⭐⭐⭐⭐⭐ 95% Satisfaction</div>
     <p className="mb-3">
@@ -603,14 +607,14 @@ const MiroAi = () => {
   </div>
 
   {/* Right side (Image Section) */}
-  <div style={{ flex: 1, textAlign: "center" }}>
-    <img
-      src={miro}
-      className="img-fluid rounded-3"
-      style={{ maxWidth: "80%", height: "auto" }}
-      alt="Miro AI"
-    />
-  </div>
+  <div className="col-12 col-lg-6 order-1 order-lg-2 text-center mb-4 mb-lg-0">
+     <img
+       src={miro}
+       className="img-fluid rounded-3"
+       style={{ maxWidth: "100%", height: "auto" }}
+       alt="Notion AI"
+     />
+   </div>
 </div>
 
 

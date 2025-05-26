@@ -661,11 +661,23 @@ const TrelloAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-    <div className="row d-flex align-items-center justify-content-between mb-1">
-  {/* Left side (Text Section) */}
+<div className="row d-flex align-items-center justify-content-between mb-1">
+  {/* Image Section: on top on mobile, right on desktop */}
   <div
-    style={{ flex: 1, paddingRight: "30px" }}
-    className="col-6 col-md-12"
+    className="col-12 col-md-6 order-1 order-md-2 mb-4 mb-md-0 text-center"
+    style={{ height: "300px" }}
+  >
+    <img
+      src={trello}
+      alt="Trello AI interface"
+      style={{ maxWidth: "100%", height: "100%", objectFit: "contain" }}
+    />
+  </div>
+
+  {/* Text Section: below image on mobile, left on desktop */}
+  <div
+    className="col-12 col-md-6 order-2 order-md-1"
+    style={{ paddingRight: "30px" }}
   >
     <p className="text-primary">Grow, better, faster</p>
     <h1>Trello AI</h1>
@@ -694,24 +706,8 @@ const TrelloAI = () => {
       </a>
     </div>
   </div>
-
-  {/* Right side (Image Section) */}
-  <div
-    style={{
-      flex: 1,
-      textAlign: "center",
-      width: "100%",
-      height: "250px",
-    }}
-    className="col-6 col-md-12 mb-5"
-  >
-    <img
-      src={trello}
-      alt="Trello AI interface"
-      style={{ maxWidth: "100%", height: "300px" }}
-    />
-  </div>
 </div>
+
 
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">

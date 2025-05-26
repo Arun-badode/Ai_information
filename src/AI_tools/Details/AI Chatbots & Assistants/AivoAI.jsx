@@ -607,7 +607,7 @@ const AivoAI = () => {
             <div style={{ flex: 1, textAlign: "center" }}>
                                                   <img
                                                     src={aivo}
-                                                    alt="Dashboard Preview"
+                                                    alt="aivo"
                                                     className="img-fluid rounded-3"
                                                     style={{ maxWidth: "100%", height: "auto" }}
                                                   />

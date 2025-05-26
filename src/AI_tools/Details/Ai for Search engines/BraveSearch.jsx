@@ -616,57 +616,41 @@ const BraveSearch = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
+        <div className="row d-flex align-items-center justify-content-between flex-column-reverse flex-md-row mb-1">
+  {/* Text Section */}
+  <div className="col-md-6 col-12">
+    <p className="text-primary">
+      Create stunning visuals effortlessly
+    </p>
+    <h1>Brave Search AI</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
 
-              className="col-lg-6"
-            >
-              <p className="text-primary">
-                Create stunning visuals effortlessly
-              </p>
-              <h1>Brave Search AI </h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      Brave Search AI is an advanced AI-powered search engine designed to provide privacy-focused, personalized search results. Unlike traditional search engines, Brave Search AI integrates machine learning and AI tools to help users find more relevant content while maintaining high standards of privacy and security. Brave Search AI provides more accurate results for users by learning from their search patterns, offering an optimized search experience that is tailored to individual needs.
+    </p>
 
-              <p>
-                Brave Search AI is an advanced AI-powered search engine designed
-                to provide privacy-focused, personalized search results. Unlike
-                traditional search engines, Brave Search AI integrates machine
-                learning and AI tools to help users find more relevant content
-                while maintaining high standards of privacy and security. Brave
-                Search AI provides more accurate results for users by learning
-                from their search patterns, offering an optimized search
-                experience that is tailored to individual needs.
-              </p>
+    <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
+      <a
+        href="https://brave.com/ai/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary btn-lg px-4"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
 
-            <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
-        <a
-          href="https://brave.com/ai/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn btn-primary btn-lg px-4"
-        >
-          Explore Tool
-        </a>
-      </div>
-            </div>
+  {/* Image Section */}
+  <div className="col-md-6 col-12 text-center mb-4">
+    <img
+      src={brave}
+      alt="Brave Search AI"
+      style={{ maxWidth: "100%", height: "auto" }}
+    />
+  </div>
+</div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src={brave}
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
-          </div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>

@@ -641,16 +641,22 @@ const OracleAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-         <div className="row d-flex align-items-center justify-content-between mb-1">
-  {/* Left side (Text Section) */}
-  <div
-    style={{ flex: 1, paddingRight: "30px" }}
-    className="col-6 col-md-12"
-  >
+    <div className="row align-items-center justify-content-between mb-5">
+  {/* Image Section - Shows first on mobile */}
+  <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-4 mb-md-0">
+    <img
+      src={magisto}
+      style={{ maxWidth: "100%", height: "300px", objectFit: "contain" }}
+      alt="Oracle AI Illustration"
+      className="img-fluid"
+    />
+  </div>
+
+  {/* Text Section - Shows after image on mobile */}
+  <div className="col-12 col-md-6 order-2 order-md-1" style={{ paddingRight: "30px" }}>
     <p className="text-primary">Grow better, faster</p>
     <h1>Oracle AI</h1>
     <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-
     <p>
       Oracle Analytics is a comprehensive platform designed to help
       businesses gain actionable insights from their data through
@@ -668,7 +674,6 @@ const OracleAI = () => {
       from various sources, including cloud-based platforms,
       on-premise databases, and third-party applications.
     </p>
-
     <div className="mb-3">
       <a
         href="https://www.oracle.com/artificial-intelligence/"
@@ -680,24 +685,8 @@ const OracleAI = () => {
       </a>
     </div>
   </div>
-
-  {/* Right side (Image Section) */}
-  <div
-    style={{
-      flex: 1,
-      textAlign: "center",
-      width: "100%",
-      height: "250px",
-    }}
-    className="col-6 col-md-12 mb-5"
-  >
-    <img
-      src={magisto}
-      style={{ maxWidth: "100%", height: "300px" }}
-      alt="Oracle AI Illustration"
-    />
-  </div>
 </div>
+
 
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">

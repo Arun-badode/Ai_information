@@ -648,45 +648,50 @@ const ShieldAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className="row align-items-center justify-content-between mb-4 flex-wrap">
-            {/* Left side (Text Section) */}
-            <div className="col-12 col-lg-6 mb-4 mb-lg-0" style={{ paddingRight: "30px" }}>
-              <p className="text-primary">
-                Create stunning visuals effortlessly
-              </p>
-              <h1>AI Shield</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                AI Shield is a state-of-the-art cybersecurity platform that
-                leverages artificial intelligence to protect against a wide
-                range of online threats. By using AI and machine learning, AI
-                Shield provides real-time detection, analysis, and response
-                systems to safeguard businesses, enterprises, and individuals
-                from evolving cyberattacks. The platform uses predictive
-                analytics and automated responses to combat threats such as
-                malware, phishing, and data breaches effectively.
-              </p>
-              <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
-                <a
-                  href="https://www.boschaishield.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary btn-lg px-4"
-                >
-                  Explore Tool
-                </a>
-              </div>
-            </div>
-            {/* Right side (Image Section) */}
-            <div className="col-12 col-lg-6 mb-4 mb-lg-0 text-center">
-              <img
-                src={shield}
-                className="img-fluid rounded-3"
-                style={{ maxWidth: "100%", height: "auto" }}
-                alt="AI Shield"
-              />
-            </div>
-          </div>
+        <div className="row align-items-center justify-content-between mb-4 flex-wrap">
+  {/* Image Section first on mobile, second on large screens */}
+  <div className="col-12 col-lg-6 mb-4 mb-lg-0 text-center order-1 order-lg-2">
+    <img
+      src={shield}
+      className="img-fluid rounded-3"
+      style={{ maxWidth: "100%", height: "auto" }}
+      alt="AI Shield"
+    />
+  </div>
+
+  {/* Text Section second on mobile, first on large screens */}
+  <div
+    className="col-12 col-lg-6 mb-4 mb-lg-0 order-2 order-lg-1"
+    style={{ paddingRight: "30px" }}
+  >
+    <p className="text-primary">
+      Create stunning visuals effortlessly
+    </p>
+    <h1>AI Shield</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      AI Shield is a state-of-the-art cybersecurity platform that
+      leverages artificial intelligence to protect against a wide
+      range of online threats. By using AI and machine learning, AI
+      Shield provides real-time detection, analysis, and response
+      systems to safeguard businesses, enterprises, and individuals
+      from evolving cyberattacks. The platform uses predictive
+      analytics and automated responses to combat threats such as
+      malware, phishing, and data breaches effectively.
+    </p>
+    <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
+      <a
+        href="https://www.boschaishield.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary btn-lg px-4"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
+</div>
+
           <section style={{ padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>

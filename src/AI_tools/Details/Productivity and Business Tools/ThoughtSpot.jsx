@@ -637,54 +637,44 @@ const ThoughtSpot = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-         <div className="row d-flex align-items-center justify-content-between mb-1">
-  {/* Left side (Text Section) */}
-  <div
-    style={{ flex: 1, paddingRight: "30px" }}
-    className="col-6 col-md-12"
-  >
+  <div className="row align-items-center justify-content-between mb-5">
+  {/* Image Section - appears first on mobile */}
+  <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-4 mb-md-0">
+    <img
+      src={magisto}
+      alt="ThoughtSpot platform"
+      style={{ maxWidth: "100%", height: "300px", objectFit: "contain" }}
+      className="img-fluid"
+    />
+  </div>
+
+  {/* Text Section - appears after image on mobile */}
+  <div className="col-12 col-md-6 order-2 order-md-1" style={{ paddingRight: "30px" }}>
     <p className="text-primary">Grow better, faster</p>
     <h1>ThoughtSpot</h1>
     <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
     <p>
-      ThoughtSpot is an advanced business intelligence (BI) and
-      analytics platform that leverages AI-powered search and machine
-      learning to help users discover insights from their data
-      effortlessly. With a simple search-based interface, ThoughtSpot
-      enables data exploration, analysis, and reporting for teams
-      across various industries, such as finance, marketing, sales,
-      and HR.
+      ThoughtSpot is an advanced business intelligence (BI) and analytics platform
+      that leverages AI-powered search and machine learning to help users discover insights 
+      from their data effortlessly. With a simple search-based interface, ThoughtSpot enables 
+      data exploration, analysis, and reporting for teams across various industries, 
+      such as finance, marketing, sales, and HR.
     </p>
-
     <div className="mb-3">
       <a
         href="https://www.thoughtspot.com/"
         target="_blank"
         rel="noopener noreferrer"
         className="btn btn-primary me-2"
+
+        
       >
         Explore Tool
       </a>
     </div>
   </div>
-
-  {/* Right side (Image Section) */}
-  <div
-    style={{
-      flex: 1,
-      textAlign: "center",
-      width: "100%",
-      height: "250px",
-    }}
-    className="col-6 col-md-12 mb-5"
-  >
-    <img
-      src={magisto}
-      alt="ThoughtSpot platform"
-      style={{ maxWidth: "100%", height: "300px" }}
-    />
-  </div>
 </div>
+
 
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">

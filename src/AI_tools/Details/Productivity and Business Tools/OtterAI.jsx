@@ -577,14 +577,21 @@ const OtterAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-        <div className="d-flex align-items-center justify-content-between mb-5">
-  {/* Left side (Text Section) */}
-  <div style={{ flex: 1, paddingRight: "30px" }}>
- 
+ <div className="row align-items-center justify-content-between mb-5">
+  {/* Image Section */}
+  <div className="col-12 col-lg-6 order-1 order-lg-2 text-center mb-4 mb-lg-0">
+    <img
+      src={otter}
+      className="img-fluid rounded-3"
+      alt="Otter AI"
+      style={{ maxWidth: "100%", height: "auto" }}
+    />
+  </div>
+
+  {/* Text Section */}
+  <div className="col-12 col-lg-6 order-2 order-lg-1" style={{ paddingRight: "30px" }}>
     <h2>Otter.ai</h2>
-    <div className="text-warning mb-1">
-      ⭐⭐⭐⭐⭐ 95% Satisfaction
-    </div>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐ 95% Satisfaction</div>
     <p>
       Otter.ai provides a fully automated transcription service
       powered by AI. It supports various audio and video formats and
@@ -603,17 +610,6 @@ const OtterAI = () => {
         Explore Tool
       </a>
     </div>
-  </div>
-
-  {/* Right side (Image Section) */}
-  <div style={{ flex: 1, textAlign: "center" }}>
-    <img
-      src={otter}
-      alt="Otter Ai Interface"
-      className="img-fluid rounded-3"
-      style={{ maxWidth: "80%", height: "auto" }}
-      loading="lazy"
-    />
   </div>
 </div>
 

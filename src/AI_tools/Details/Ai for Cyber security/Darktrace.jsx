@@ -646,56 +646,58 @@ const Darktrace = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className="row align-items-center justify-content-between mb-4 flex-wrap">
-            {/* Left side (Text Section) */}
-            <div className="col-12 col-lg-6 mb-4 mb-lg-0" style={{ paddingRight: "30px" }}>
-              <p className="text-primary">
-                Create stunning visuals effortlessly
-              </p>
-              <h1>Darktrace AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Darktrace AI is a cybersecurity platform that uses artificial
-                intelligence (AI) and machine learning (ML) to offer proactive
-                protection and detection of cyber threats. Unlike traditional
-                security systems, Darktrace uses self-learning algorithms to
-                monitor network traffic, user activity, and endpoint behavior in
-                real time. This allows it to detect even the most advanced cyber
-                threats, such as advanced persistent threats (APTs), ransomware,
-                and insider threats, before they can cause significant damage.
-                The platform offers autonomous response capabilities that can
-                neutralize threats without human intervention, improving
-                response times and minimizing the risk of attacks.
-              </p>
-              <p>
-                Darktrace leverages AI-driven cybersecurity and behavioral
-                analytics to identify anomalies in the network, providing
-                security teams with the intelligence they need to take action
-                swiftly. The platform is cloud-native, ensuring scalable and
-                seamless protection across distributed networks, cloud
-                environments, and on-premises infrastructures.
-              </p>
-              <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
-                <a
-                  href="https://www.darktrace.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary btn-lg px-4"
-                >
-                  Explore Tool
-                </a>
-              </div>
-            </div>
-            {/* Right side (Image Section) */}
-            <div className="col-12 col-lg-6 mb-4 mb-lg-0 text-center">
-              <img
-                src={dark}
-                className="img-fluid rounded-3"
-                style={{ maxWidth: "100%", height: "auto" }}
-                alt="Darktrace AI"
-              />
-            </div>
-          </div>
+       <div className="row align-items-center justify-content-between mb-4 flex-wrap">
+  {/* Image Section: order 1 on mobile, order 2 on large screens */}
+  <div className="col-12 col-lg-6 mb-4 mb-lg-0 text-center order-1 order-lg-2">
+    <img
+      src={dark}
+      className="img-fluid rounded-3"
+      style={{ maxWidth: "100%", height: "auto" }}
+      alt="Darktrace AI"
+    />
+  </div>
+
+  {/* Text Section: order 2 on mobile, order 1 on large screens */}
+  <div className="col-12 col-lg-6 mb-4 mb-lg-0 order-2 order-lg-1" style={{ paddingRight: "30px" }}>
+    <p className="text-primary">
+      Create stunning visuals effortlessly
+    </p>
+    <h1>Darktrace AI</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      Darktrace AI is a cybersecurity platform that uses artificial
+      intelligence (AI) and machine learning (ML) to offer proactive
+      protection and detection of cyber threats. Unlike traditional
+      security systems, Darktrace uses self-learning algorithms to
+      monitor network traffic, user activity, and endpoint behavior in
+      real time. This allows it to detect even the most advanced cyber
+      threats, such as advanced persistent threats (APTs), ransomware,
+      and insider threats, before they can cause significant damage.
+      The platform offers autonomous response capabilities that can
+      neutralize threats without human intervention, improving
+      response times and minimizing the risk of attacks.
+    </p>
+    <p>
+      Darktrace leverages AI-driven cybersecurity and behavioral
+      analytics to identify anomalies in the network, providing
+      security teams with the intelligence they need to take action
+      swiftly. The platform is cloud-native, ensuring scalable and
+      seamless protection across distributed networks, cloud
+      environments, and on-premises infrastructures.
+    </p>
+    <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
+      <a
+        href="https://www.darktrace.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary btn-lg px-4"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
+</div>
+
           <section style={{ padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>
