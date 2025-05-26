@@ -841,7 +841,7 @@ const Mojeek = () => {
                   </div>
                 </div>
               </div>
-              );
+              
             </div>
           </section>
 
