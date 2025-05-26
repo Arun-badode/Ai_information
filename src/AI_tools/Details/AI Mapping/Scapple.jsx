@@ -5,8 +5,8 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
-import scappleSS1 from '../../../../public/assets/Img/Ai for Mind Mapping/scappleSS1.png';
-import scappleSS2 from '../../../../public/assets/Img/Ai for Mind Mapping/scappleSS2.png';
+// import scappleSS1 from '../../../../public/assets/Img/Ai for Mind Mapping/scappleSS1.png';
+// import scappleSS2 from '../../../../public/assets/Img/Ai for Mind Mapping/scappleSS2.png';
 import scappleImg from '../../../../public/assets/Img/Ai for Mind Mapping/6.png';
 
 // review section data

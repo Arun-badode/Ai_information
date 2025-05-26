@@ -5,8 +5,8 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
-import ayoaSS1 from '../../../../public/assets/Img/Ai for Mind Mapping/ayoaSS1.png';
-import ayoaSS2 from '../../../../public/assets/Img/Ai for Mind Mapping/ayoaSS2.png';
+// import ayoaSS1 from '../../../../public/assets/Img/Ai for Mind Mapping/ayoaSS1.png';
+// import ayoaSS2 from '../../../../public/assets/Img/Ai for Mind Mapping/ayoaSS2.png';
 import ayoaImg from '../../../../public/assets/Img/Ai for Mind Mapping/1.png';
 
 // review section data

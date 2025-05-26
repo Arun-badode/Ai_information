@@ -832,7 +832,7 @@ const ApplitoolsAI = () => {
 
              <div className="mb-3">
         <a
-          href="https://applitools.com/"
+          href="applitools.com"
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-primary me-2"
