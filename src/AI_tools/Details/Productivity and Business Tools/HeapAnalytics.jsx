@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
-import google from "../../../../public/assets/Img/AI for Business/google.png";
+
 import heap1 from "../../../../public/assets/Img/AI for Business/heap1.png";
 import heap2 from "../../../../public/assets/Img/AI for Business/heap2.png";
-
+import heap from "../../../../public/assets/Img/AI for Business/heap.png";
 // review section data
 const reviews = [
   {
@@ -641,7 +641,7 @@ const HeapAnalytics = () => {
     className="col-12 col-md-6 mb-5"
   >
     <img
-      src={google} // replace with your heap image variable
+      src={heap} // replace with your heap image variable
       alt="Heap Analytics AI"
       style={{ maxWidth: "100%", height: "300px" }}
       className="img-fluid"

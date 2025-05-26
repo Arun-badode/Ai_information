@@ -691,6 +691,7 @@ const DualityAI = () => {
                                  href=" https://www.duality.ai/"
                                  rel="noopener noreferrer"
                                  className="btn btn-primary me-2"
+                                   target="_blank"
                                >
                                  Explore Tool
                                </a>
@@ -705,7 +706,7 @@ const DualityAI = () => {
               <img
                 src={DualityImg}
                 className="img-fluid rounded-3"
-                style={{ maxWidth: "80%", height: "auto" }}
+                style={{ maxWidth: "100%", height: "auto" }}
                 alt="duality"
               />
             </div>

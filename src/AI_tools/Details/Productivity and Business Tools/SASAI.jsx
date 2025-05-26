@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
-import magisto from "../../../Images/MagistoAI.png";
+
 import sas1 from "../../../../public/assets/Img/AI for Business/sas1.png";
 import sas2 from "../../../../public/assets/Img/AI for Business/sas2.png";
+import sas from "../../../../public/assets/Img/AI for Business/sas.png";
 // review section data
 const reviews = [
   {
@@ -690,7 +691,7 @@ const SASAI = () => {
     className="col-6 col-md-12 mb-5"
   >
     <img
-      src={magisto}
+      src={sas}
       alt="SAS AI representation"
       style={{ maxWidth: "100%", height: "300px", objectFit: "contain" }}
     />

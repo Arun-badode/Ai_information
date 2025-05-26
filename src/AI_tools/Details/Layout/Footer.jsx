@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../../../public/assets/Img/Wenbear-Logo.jpeg"
+import logo from "../../../../public/assets/Img/Wenbear.jpeg"
 
 const Footer = () => {
   return (

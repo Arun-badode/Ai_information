@@ -816,50 +816,50 @@ const ResunateAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className="row align-items-center mb-5">
-            {/* Right side (Image Section) */}
-            <div className="col-md-6 col-12 text-center">
-              <img
-                src={resunate}
-                alt="Resumate"
-                style={{
-                  maxWidth: "100%",
-                  height: "300px",
-                  objectFit: "contain",
-                }}
-              />
-            </div>
-            {/* Left side (Text Section) */}
-            <div
-              className="col-md-6 col-12 mb-4 mb-md-0"
-              style={{ paddingRight: "30px" }}
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>Resumate AI</h1>
+        <div className="row align-items-center mb-5">
+  {/* Image Section — shows first on mobile, second on desktop */}
+  <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-4 mb-md-0">
+    <img
+      src={resunate}
+      alt="Resumate"
+      style={{
+        maxWidth: "100%",
+        height: "300px",
+        objectFit: "contain",
+      }}
+    />
+  </div>
 
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Resumate AI is an innovative AI-powered platform designed to
-                help job seekers optimize their resumes and CVs, making them
-                more attractive to recruiters and Applicant Tracking Systems
-                (ATS). Resumate AI offers a suite of tools, including resume
-                building, ATS optimization, job search tools, job
-                recommendations, and career coaching. By utilizing AI, Resumate
-                streamlines the resume creation process and ensures it aligns
-                with industry standards and job descriptions.
-              </p>
-              <div className="mb-3">
-                <a
-                  href="https://www.resumateai.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary me-2"
-                >
-                  Explore Tool
-                </a>
-              </div>
-            </div>
-          </div>
+  {/* Text Section — shows after image on mobile, before on desktop */}
+  <div
+    className="col-12 col-md-6 order-2 order-md-1"
+    style={{ paddingRight: "30px" }}
+  >
+    <p className="text-primary">Write better, faster</p>
+    <h1>Resumate AI</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      Resumate AI is an innovative AI-powered platform designed to help job
+      seekers optimize their resumes and CVs, making them more attractive to
+      recruiters and Applicant Tracking Systems (ATS). Resumate AI offers a
+      suite of tools, including resume building, ATS optimization, job search
+      tools, job recommendations, and career coaching. By utilizing AI,
+      Resumate streamlines the resume creation process and ensures it aligns
+      with industry standards and job descriptions.
+    </p>
+    <div className="mb-3">
+      <a
+        href="https://www.resumateai.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary me-2"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
+</div>
+
         </div>
 
         <section style={{ backgroundColor: "#0b1e3d", padding: "3rem 0" }}>

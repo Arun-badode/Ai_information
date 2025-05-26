@@ -692,6 +692,7 @@ const PrivateAI = () => {
                   href=" https://www.private-ai.com."
                   rel="noopener noreferrer"
                   className="btn btn-primary me-2"
+                    target="_blank"
                 >
                   Explore Tool
                 </a>
@@ -706,7 +707,7 @@ const PrivateAI = () => {
                          <img
                            src={a}
                            className="img-fluid rounded-3"
-                           style={{ maxWidth: "80%", height: "auto" }}
+                           style={{ maxWidth: "100%", height: "auto" }}
                            alt="private"
                          />
                        </div>

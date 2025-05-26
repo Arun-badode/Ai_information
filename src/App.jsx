@@ -470,7 +470,7 @@ const App = () => {
         ></Route>
         <Route path="/ScalenutAI" element={<ScalenutAI />}></Route>
         <Route path="/SurferSEOAI" element={<SurferSEOAI />}></Route>
-        <Route path="/WriterZenAI " element={<WriterZenAI />}></Route>
+        <Route path="/WriterZenAI" element={<WriterZenAI />}></Route>
         {/* Ai for SEO   ENd  */}
         {/* Ai for Music */}
         <Route path="/AmperMusicAI" element={<AmperMusicAI />}></Route>

@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
-import magisto from "../../../Images/MagistoAI.png";
+
 import zoho1 from "../../../../public/assets/Img/AI for Business/zoho1.png";
 import zoho2 from "../../../../public/assets/Img/AI for Business/zoho2.png";
+import zoho from "../../../../public/assets/Img/AI for Business/zoho.png";
 // review section data
 const reviews = [
   {
@@ -671,7 +672,7 @@ const ZohoAnalyticsAI = () => {
     className="col-6 col-md-12 mb-5"
   >
     <img
-      src={magisto}
+      src={zoho}
       style={{ maxWidth: "100%", height: "300px" }}
       alt="Zoho Analytics AI"
     />

@@ -856,12 +856,7 @@ const Grabango = () => {
   return (
     <>
       <div className="bg-dark d-flex  justify-content-between align-items-center ">
-        {/* <a
-          href="/Aitools"
-          className="d-inline-block text-white text-decoration-none ml-3 py-1"
-        >
-          <i className="bi bi-arrow-left me-2"></i>Back to Directory{" "}
-        </a> */}
+        
        <a
           href="/Aitools"
           className="d-inline-block text-white text-decoration-none  mt-3 ml-3 py-1 px-2 ms-5 border rounded-sm"
@@ -869,14 +864,14 @@ const Grabango = () => {
           <i className="bi bi-arrow-left me-2"></i>Back  {" "}
         </a>
       </div>
-      <div className="bg-dark text-light min-vh-100 py-5">
+      <div className="bg-dark text-light min-vh-100 py-5 px-5">
       <div className="row align-items-center justify-content-between mb-4">
   {/* Image Section - appears first on mobile */}
   <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-4 mb-md-0">
     <img
       src={grabango}
       alt="Grabango AI"
-      style={{ maxWidth: "100%", height: "300px", objectFit: "contain" }}
+      style={{ maxWidth: "100%", height: "300px", objectFit: "cover" }}
     />
   </div>
 
