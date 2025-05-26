@@ -780,7 +780,7 @@ const Seekout = () => {
   {/* Image Section (Right on desktop, top on mobile) */}
   <div className="col-md-6 text-center mb-3 mb-md-0">
     <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
+      src="public\assets\Img\AI for Recruitment\Ai for recruiment\Seekout.png"
       alt="SeekOut AI"
       className="img-fluid"
       style={{ height: "300px", objectFit: "cover" }}

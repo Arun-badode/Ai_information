@@ -29,7 +29,7 @@ const Navbar = () => {
         <div className={`navbar-menu ${isMenuOpen ? "show" : ""}`}>
           <ul className="navbar-nav nav-left px-4">
             <li className="nav-item">
-              <Link to="/" className="nav-link">
+              <Link to="/" className="nav-link" onClick={() => setIsMenuOpen(false)}>
                 Home
               </Link>
             </li>
@@ -44,27 +44,20 @@ const Navbar = () => {
               </Link>
             </li> */}
             <li className="nav-item">
-              <Link to="/AINewsPage" className="nav-link">
+              <Link to="/AINewsPage" className="nav-link" onClick={() => setIsMenuOpen(false)}>  
                 AI News
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/AiBlog" className="nav-link">
+              <Link to="/AiBlog" className="nav-link" onClick={() => setIsMenuOpen(false)}>
                 AI Blog
               </Link>
             </li>
           </ul>
         </div>
 
-
-
-
-
-
-
-
         {/* Desktop-only Contact Button */}
-        <div className="navbar-contact">
+        <div className="navbar-contact-desktop">
           <Link
             to="/aicontact"
             className="contact-btn relative overflow-hidden text-white px-4 py-2 rounded-md"
