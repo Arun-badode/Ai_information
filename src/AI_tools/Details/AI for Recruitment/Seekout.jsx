@@ -780,7 +780,6 @@ const Seekout = () => {
   </div>
 
   {/* Image Section (Right on desktop, top on mobile) */}
-<<<<<<< HEAD
  <div className="col-12 col-md-6 d-flex justify-content-center align-items-center text-center mb-3 mb-md-0">
   <img
     src="/assets/Img/AI for Recruitment/Ai for recruiment/Seekout.png"
@@ -790,8 +789,7 @@ const Seekout = () => {
   />
 </div>
 
-=======
-   <div className="col-lg-6 col-md-12 order-lg-2 order-1">
+   {/* <div className="col-lg-6 col-md-12 order-lg-2 order-1">
     <div className="ratio ratio-16x9">
       <img
         src={seekoutImg}
@@ -800,8 +798,7 @@ const Seekout = () => {
         loading="lazy"
       />
     </div>
-  </div>
->>>>>>> 9732e077a94f9a43e3fcff86cd1122391726245d
+  </div> */}
 </div>
 
 

@@ -634,6 +634,7 @@ const AIPowered = () => {
                   href="https://www.litera.com/"
                   rel="noopener noreferrer"
                   className="btn btn-primary me-2"
+                  target="_blank"
                 >
                   Explore Tool
                 </a>

@@ -599,6 +599,7 @@ const JasperAI = () => {
         </a> */}
         <a
           href="/Aitools"
+          style={{target: "_blank",}}
           className="d-inline-block text-white text-decoration-none  mt-3 ml-3 py-1 px-2 ms-5 border rounded-sm"
         >
           <i className="bi bi-arrow-left me-2"></i>Back  {" "}

@@ -4,7 +4,7 @@ import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
-import deatilimage from "../../../Images/DetailImage.png";
+import XOR from "../../../../public/assets/Img/AI for Recruitment/Ai for recruiment/XOR.png";
 import xor1 from "../../../../public/assets/Img/AI for Recruitment/xr-s1.png";
 import xor2 from "../../../../public/assets/Img/AI for Recruitment/xr-s2.png";
 
@@ -831,7 +831,7 @@ const Xor = () => {
   <div className="col-lg-6 col-12 order-lg-2 order-1">
     <div className="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm">
       <img
-        src="public\assets\Img\AI for Recruitment\Ai for recruiment\XOR.png"
+        src={XOR}
         className="img-fluid object-fit-cover"
         alt="XOR AI Recruitment Platform Interface"
         loading="lazy"

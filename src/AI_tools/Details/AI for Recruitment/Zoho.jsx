@@ -7,7 +7,7 @@ import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
 import zoho1 from "../../../../public/assets/Img/AI for Recruitment/zoho-s1.png";
 import zoho2 from "../../../../public/assets/Img/AI for Recruitment/zoho-s2.png";
-
+import Zohoe from "../../../../public/assets/Img/AI for Recruitment/Ai for recruiment/zoho.png";
 // review section data
 const reviews = [
   {
@@ -819,6 +819,7 @@ const Zoho = () => {
         href="https://www.zoho.com/recruit/ai-recruitment.html?utm_source=chatgpt.com"
         rel="noopener noreferrer"
         className="btn btn-primary me-2"
+        target="_blank"
       >
         Explore Tool
       </a>
@@ -828,7 +829,7 @@ const Zoho = () => {
   {/* Right side (Image Section) */}
   <div className="col-md-6 col-12 mb-4 text-center">
     <img
-      src="public\assets\Img\AI for Recruitment\Ai for recruiment\Zoho.png"
+      src={Zohoe}
       alt="Zoho Recruit AI"
       style={{ maxWidth: "100%", height: "300px", objectFit: "contain" }}
     />

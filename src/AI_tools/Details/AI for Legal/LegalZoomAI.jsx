@@ -675,6 +675,7 @@ const LegalZoomAI = () => {
                   href="https://www.legalzoom.com/country/in"
                   rel="noopener noreferrer"
                   className="btn btn-primary me-2"
+                  target="_blank"
                 >
                   Explore Tool
                 </a>

@@ -604,26 +604,6 @@ const CopyAI = () => {
   </div>
 </div>
 
-<<<<<<< HEAD
-
-            {/* Right side (Image Section) */}
-            <div
-  className="col-12 col-md-6 mb-5 d-flex justify-content-center align-items-center"
-  style={{
-    height: "250px",
-  }}
->
-  <img
-    src={copyaiImg}
-    className="img-fluid"
-    alt="Copy.ai"
-    style={{ maxHeight: "100%", objectFit: "contain" }}
-  />
-</div>
-
-          </div>
-=======
->>>>>>> 9732e077a94f9a43e3fcff86cd1122391726245d
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>

@@ -733,7 +733,7 @@ const DreambyWombo = () => {
               <img src="" alt="Dream By Wombo"  style={{ MaxWidth: "100%", height: "300px" }} />
             </div>
           </div>
-          <section style={{ backgroundColor: "", padding: "3rem 0" }}>
+          <section style={{ backgroundColor: "", padding: "3rem" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>
               <h2
