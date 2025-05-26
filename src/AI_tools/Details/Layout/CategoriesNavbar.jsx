@@ -49,7 +49,7 @@ const CategoriesNavbar = () => {
         className="categories-navbar"
         style={{
           background: "linear-gradient(135deg, #3a7bd5, #7f53ac)",
-          borderRadius: "10px",
+          
           marginTop: "0.1rem",
           position: "sticky",
           top: 100,
@@ -61,7 +61,7 @@ const CategoriesNavbar = () => {
         <ul className="nav-list flex">
           {/* AI Video & Animation Tools*/}
           <li
-            className="nav-item dropdown"
+            className="nav-item dropdown ps-3"
             onClick={(e) => toggleDropdown("ai-video", e)}
           >
             <span className="dropdown-toggle text-white">AI for Animation</span>
@@ -674,7 +674,7 @@ const CategoriesNavbar = () => {
           {/* Ai for   Image Generation */}
 
           <li
-            className="nav-item dropdown "
+            className="nav-item dropdown ps-3"
             onClick={() => toggleDropdown("image")}
           >
             <span className="dropdown-toggle text-white">AI For Image</span>

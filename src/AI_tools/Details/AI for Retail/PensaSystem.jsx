@@ -283,9 +283,8 @@ const PensaSystem = () => {
                   <div className="accordion-item mb-3" key={item.id}>
                     <h2 className="accordion-header" id={`heading${item.id}`}>
                       <button
-                        className={`accordion-button ${
-                          i !== 0 ? "collapsed" : ""
-                        }`}
+                        className={`accordion-button ${i !== 0 ? "collapsed" : ""
+                          }`}
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target={`#collapse${item.id}`}
@@ -302,9 +301,8 @@ const PensaSystem = () => {
                     </h2>
                     <div
                       id={`collapse${item.id}`}
-                      className={`accordion-collapse collapse ${
-                        i === 0 ? "show" : ""
-                      }`}
+                      className={`accordion-collapse collapse ${i === 0 ? "show" : ""
+                        }`}
                       aria-labelledby={`heading${item.id}`}
                       data-bs-parent="#faqAccordion"
                     >
@@ -864,7 +862,7 @@ const PensaSystem = () => {
         >
           <i className="bi bi-arrow-left me-2"></i>Back to Directory{" "}
         </a> */}
-       <a
+        <a
           href="/Aitools"
           className="d-inline-block text-white text-decoration-none  mt-3 ml-3 py-1 px-2 ms-5 border rounded-sm"
         >
@@ -880,7 +878,7 @@ const PensaSystem = () => {
               className="col-6 col-md-12 "
             >
               <p className="text-primary">Write better, faster</p>
-              <h1> Systems AI:</h1>
+              <h1> Pensa Systems AI</h1>
               <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
               <p>
                 Pensa Systems AI is an advanced AI-powered platform specializing
@@ -890,12 +888,17 @@ const PensaSystem = () => {
                 recognition, and fraud detection through real-time tracking and
                 visual recognition technologies.
               </p>
-
               <div className="mb-3">
-                <span className="badge bg-primary me-2">Image Generation</span>
-                <span className="badge bg-success me-2">Creative</span>
-                <span className="badge bg-warning text-dark">Paid</span>
+                <a
+                  href="https://pensasystems.com"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary me-2"
+                >
+                  Explore Tool
+                </a>
               </div>
+
+
             </div>
 
             {/* Right side (Image Section) */}
@@ -935,6 +938,7 @@ const PensaSystem = () => {
                 data intelligence, transforming the way businesses operate
                 through precision, automation, and real-time insights.
               </p>
+
 
               <div className="row g-4">
                 {/* Step 1 */}
@@ -1070,7 +1074,7 @@ const PensaSystem = () => {
           {/* Tab Content */}
           <div className="tab-content-area">{renderTabContent()}</div>
 
-          
+
         </div>
       </div>
     </>
