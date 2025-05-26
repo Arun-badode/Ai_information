@@ -4,7 +4,7 @@ import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
-import deatilimage from "../../../Images/DetailImage.png";
+import explane from "../../../../public/assets/Img/AI for Document/explane.png";
 import explainpaperSS1 from '../../../../public/assets/Img/AI for Document/explainpaperSS1.png';
 import explainpaperSS2 from '../../../../public/assets/Img/AI for Document/explainpaperSS2.png';
 
@@ -892,7 +892,7 @@ const Explainpaper = () => {
   {/* Image Section - first on mobile, second on desktop */}
   <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-3 mb-md-0">
     <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
+      src={explane}
       alt="Explainpaper AI"
       style={{ maxWidth: "100%", height: "300px" }}
     />
