@@ -684,26 +684,6 @@ const SASAI = () => {
       </a>
     </div>
   </div>
-<<<<<<< HEAD
-
-  {/* Right side (Image Section) */}
-  <div
-    style={{
-      flex: 1,
-      textAlign: "center",
-      width: "100%",
-      height: "250px",
-    }}
-    className="col-6 col-md-12 mb-5"
-  >
-    <img
-      src={sas}
-      alt="SAS AI representation"
-      style={{ maxWidth: "100%", height: "300px", objectFit: "contain" }}
-    />
-  </div>
-=======
->>>>>>> 177b3b42f28ca72dd191ec23f3918e6c42358f5b
 </div>
 
 

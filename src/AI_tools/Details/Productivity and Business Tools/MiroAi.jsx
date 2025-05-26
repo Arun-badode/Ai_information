@@ -578,11 +578,7 @@ const MiroAi = () => {
    <div className="d-flex align-items-center justify-content-between mb-5">
   {/* Left side (Text Section) */}
   <div style={{ flex: 1, paddingRight: "30px" }}>
-<<<<<<< HEAD
-  
-=======
  
->>>>>>> 177b3b42f28ca72dd191ec23f3918e6c42358f5b
     <h2>Miro AI</h2>
     <div className="text-warning mb-1">⭐⭐⭐⭐⭐ 95% Satisfaction</div>
     <p className="mb-3">

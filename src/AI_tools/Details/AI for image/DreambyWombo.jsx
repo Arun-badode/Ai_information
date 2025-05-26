@@ -742,41 +742,6 @@ const DreambyWombo = () => {
       letting anyone become a digital artist with just their imagination.
     </p>
 
-<<<<<<< HEAD
-    <div className="row g-4">
-      {/* Step 1 */}
-      <div className="col-md-4">
-        <div
-          style={{
-            position: "relative",
-            backgroundColor: "#1034A6",
-            borderRadius: "12px",
-            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-            padding: "2rem",
-            height: "100%",
-          }}
-        >
-          <style>{`
-            .wombo-step1 {
-              position: absolute;
-              bottom: 10px;
-              right: 15px;
-              font-size: 4rem;
-              font-weight: bold;
-              color: #7b61ff;
-              opacity: 0.6;
-            }
-          `}</style>
-          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-            Text-to-Art Generation
-          </h5>
-          <p style={{ color: "#fff", margin: 0 }}>
-            Enter a simple prompt, and Dream by Wombo instantly converts your ideas into stunning AI-generated artwork.
-          </p>
-          <div className="wombo-step1">1</div>
-        </div>
-      </div>
-=======
             {/* Right side (Image Section) */}
             <div
               style={{
@@ -802,7 +767,6 @@ const DreambyWombo = () => {
               >
                 How to Use Dream by Wombo?
               </h2>
->>>>>>> 177b3b42f28ca72dd191ec23f3918e6c42358f5b
 
       {/* Step 2 */}
       <div className="col-md-4">
@@ -870,8 +834,10 @@ const DreambyWombo = () => {
         </div>
       </div>
     </div>
-  </div>
+    
+  </section>
 </section>
+
 
           {/* Tab Navigation */}
           <ul className="nav nav-tabs custom-tabs mb-4">

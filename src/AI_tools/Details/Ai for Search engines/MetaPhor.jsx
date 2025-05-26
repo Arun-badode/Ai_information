@@ -584,19 +584,34 @@ const MetaPhor = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-        <div className="row d-flex align-items-center justify-content-between flex-column-reverse flex-md-row mb-1">
-  {/* Text Section */}
+ <div className="row align-items-center justify-content-between flex-column flex-md-row-reverse mb-4">
+  {/* Image Section (Right on desktop, Top on mobile) */}
+  <div className="col-md-6 col-12 text-center mb-4 mb-md-0">
+    <img
+      src={meta}
+      alt="metaphor"
+      style={{
+        maxWidth: "100%",
+        height: "auto",
+      }}
+    />
+  </div>
+
+  {/* Text Section (Left on desktop, Bottom on mobile) */}
   <div className="col-md-6 col-12">
-    <p className="text-primary">
-      Create stunning visuals effortlessly
-    </p>
+    <p className="text-primary">Create stunning visuals effortlessly</p>
     <h1>Metaphor AI</h1>
     <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-
     <p>
-      Metaphor AI is an advanced AI-powered content generation tool designed to automate and enhance content creation. It leverages artificial intelligence to create high-quality, SEO-optimized text, blog posts, social media content, marketing copy, product descriptions, and much more. By using cutting-edge NLP (Natural Language Processing) and machine learning algorithms, Metaphor AI streamlines the content development process for businesses, marketers, writers, and enterprises, enabling them to produce content at scale with ease and efficiency.
+      Metaphor AI is an advanced AI-powered content generation tool designed to
+      automate and enhance content creation. It leverages artificial
+      intelligence to create high-quality, SEO-optimized text, blog posts,
+      social media content, marketing copy, product descriptions, and much more.
+      By using cutting-edge NLP (Natural Language Processing) and machine
+      learning algorithms, Metaphor AI streamlines the content development
+      process for businesses, marketers, writers, and enterprises, enabling them
+      to produce content at scale with ease and efficiency.
     </p>
-
     <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
       <a
         href="https://www.draftwithai.com/metaphor-generator"
@@ -608,24 +623,8 @@ const MetaPhor = () => {
       </a>
     </div>
   </div>
-
-  {/* Image Section */}
-  <div
-    className="col-md-6 col-12 text-center mb-4"
-    style={{
-      width: "100%",
-    }}
-  >
-    <img
-      src={meta}
-      alt="metaphor"
-      style={{
-        maxWidth: "100%",
-        height: "auto", // allows full responsive display
-      }}
-    />
-  </div>
 </div>
+
 
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
