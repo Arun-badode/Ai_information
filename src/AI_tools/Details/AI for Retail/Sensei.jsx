@@ -914,6 +914,165 @@ const Sensei = () => {
   {/* Keep rest of your sections here unchanged */}
 </div>
 
+                    <section style={{ backgroundColor: "", padding: "3rem 0" }}>
+  <div className="container text-center">
+    <p className="text-primary">
+      Empower Business Decisions—Sensai AI at Work
+    </p>
+    <h2
+      className="text-white"
+      style={{ fontWeight: "600", marginBottom: "1rem" }}
+    >
+      See How Sensai AI Elevates Analytics into Intelligent Insights
+    </h2>
+    <p
+      style={{
+        color: "#ccc",
+        marginBottom: "2rem",
+        fontStyle: "italic",
+      }}
+    >
+      Sensai AI transforms raw data into actionable business intelligence—
+      enabling smarter, faster decisions with predictive precision.
+    </p>
+
+    <div className="row g-4">
+      {/* Step 1 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .aifi-step1 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #c9e7f7;
+              opacity: 0.7;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Predictive Data Modeling
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Sensai AI uses advanced algorithms to forecast trends and patterns,
+            helping businesses stay ahead with accurate predictions.
+          </p>
+          <div className="aifi-step1">1</div>
+        </div>
+      </div>
+
+      {/* Step 2 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .aifi-step2 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #c9e7f7;
+              opacity: 0.7;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Visualized Business Intelligence
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Sensai AI converts complex datasets into easy-to-understand visual dashboards, making analysis accessible and actionable.
+          </p>
+          <div className="aifi-step2">2</div>
+        </div>
+      </div>
+
+      {/* Step 3 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .aifi-step3 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #c9e7f7;
+              opacity: 0.7;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Automated Decision Support
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Sensai AI recommends next-best actions based on real-time data,
+            reducing human guesswork and improving operational efficiency.
+          </p>
+          <div className="aifi-step3">3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+          {/* Tab Navigation */}
+          <ul className="nav nav-tabs custom-tabs mb-4">
+            {[
+              "Features",
+              "Screenshots",
+              "Reviews",
+              "FAQs",
+              "Technical",
+              "Why-We-Use",
+              "Pros & Cons",
+              "Alternative",
+            ].map((tab) => (
+              <li className="nav-item mb-2" key={tab}>
+                <button
+                  className={`nav-link ${activeTab === tab ? "active" : ""}`}
+                  onClick={() => setActiveTab(tab)}
+                >
+                  {tab.charAt(0).toUpperCase() + tab.slice(1)}
+                </button>
+              </li>
+            ))}
+          </ul>
+
+          {/* Tab Content */}
+          <div className="tab-content-area">{renderTabContent()}</div>
+
+
+
+
       </div>
     </>
   );

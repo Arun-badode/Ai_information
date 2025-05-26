@@ -82,6 +82,16 @@ import Testimio from "./AI_tools/Details/AI for Software Testing/Testimio";
 import BrowserStackAI from "./AI_tools/Details/AI for Software Testing/BrowserStackAI";
 import AppvanceIQ from "./AI_tools/Details/AI for Software Testing/AppvanceIQ";
 import TricentisToscaAI from "./AI_tools/Details/AI for Software Testing/TricentisToscaAI";
+import ApplitoolsAI from "./AI_tools/Details/AI for Software Testing/ApplitoolsAI";
+
+
+
+
+
+
+
+
+
 import SmartSparrow from "./AI_tools/Details/AI for Education/SmartSparrow";
 import BrainlyAI from "./AI_tools/Details/AI for Education/BrainlyAI";
 
@@ -271,7 +281,7 @@ import BraveSearch from "./AI_tools/Details/Ai for Search engines/BraveSearch";
 import Komo from "./AI_tools/Details/Ai for Search engines/Komo";
 import MetaPhor from "./AI_tools/Details/Ai for Search engines/MetaPhor";
 import Mojeek from "./AI_tools/Details/Ai for Search engines/Mojeek";
-import Applitool from "./AI_tools/Details/AI for Education/Applitoo";
+
 import Apheris from "./AI_tools/Details/Ai for Privacy/Apheris";
 import Evervault from "./AI_tools/Details/Ai for Privacy/Evervault";
 import Inpher from "./AI_tools/Details/Ai for Privacy/Inpher";
@@ -422,7 +432,7 @@ const App = () => {
         <Route path="/BrowserStackAI" element={<BrowserStackAI />}></Route>
         <Route path="/AppvanceIQ" element={<AppvanceIQ />}></Route>
         <Route path="/TricentisToscaAI" element={<TricentisToscaAI />}></Route>
-        <Route path="/ApplitoolsAI" element={<Applitool />}></Route>
+        <Route path="/ApplitoolsAI" element={<ApplitoolsAI/>}></Route>
         {/* AI in E-commerce */}
         <Route path="/AlgoliaAI" element={<AlgoliaAI />}></Route>
         <Route path="/BoldMetricsAI" element={<BoldMetricsAI />}></Route>
