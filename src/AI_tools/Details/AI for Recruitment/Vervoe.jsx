@@ -7,7 +7,7 @@ import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
 import ver1 from "../../../../public/assets/Img/AI for Recruitment/ver-s1.png";
 import ver2 from "../../../../public/assets/Img/AI for Recruitment/ver-s2.png";
-
+import vervoeImg from '../../../../public/assets/Img/AI for Recruitment/Ai for recruiment/VerVoe.png'
 
 // review section data
 const reviews = [
@@ -794,14 +794,16 @@ const VerVoe = () => {
     </div>
 
     {/* Image Column - Right on Desktop, Top on Mobile */}
-    <div className="col-md-6 text-center mb-3 mb-md-0">
-      <img
-        src="public\assets\Img\AI for Recruitment\Ai for recruiment\Vervoe.png"
-        alt="Vervoe AI"
-        className="img-fluid"
-        style={{ height: "300px", objectFit: "cover" }}
-      />
-    </div>
+     <div className="col-lg-6 col-md-12 order-lg-2 order-1">
+        <div className="ratio ratio-16x9">
+          <img
+            src={vervoeImg}
+            className="img-fluid rounded-3 object-fit-cover"
+            alt="vervoe"
+            loading="lazy"
+          />
+        </div>
+      </div>
   </div>
 </div>
 

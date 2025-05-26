@@ -8,6 +8,7 @@ import deatilimage from "../../../Images/DetailImage.png";
 import hr1 from "../../../../public/assets/Img/AI for Recruitment/hr-s1.png";
 import hr2 from "../../../../public/assets/Img/AI for Recruitment/hr-s2.png";
 // import hiretual from "../../../../public/assets/Img/AI for Recruitment/.png";
+import hiretualImg from '../../../../public/assets/Img/AI for Recruitment/Ai for recruiment/Hiretual.png';
 
 // review section data
 const reviews = [
@@ -792,14 +793,16 @@ const Hiretual = () => {
   </div>
 
   {/* Image Section (Now above text on all screens) */}
-  <div className="col-md-6 text-center">
-    <img
-      src="public\assets\Img\AI for Recruitment\Ai for recruiment\Hiretual.png"
-      alt="Hiretual AI"
-      className="img-fluid"
-      style={{ height: "300px", objectFit: "cover" }}
-    />
-  </div>
+   <div className="col-lg-6 col-md-12 order-lg-2 order-1">
+      <div className="ratio ratio-16x9">
+        <img
+          src={hiretualImg}
+          className="img-fluid rounded-3 object-fit-cover"
+          alt="hiretual"
+          loading="lazy"
+        />
+      </div>
+    </div>
 </div>
 
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>

@@ -850,13 +850,13 @@ const BoomyAI = () => {
 
                 {/* Text Section - mobile pe baad me, desktop pe pehle */}
                 <div
-                  className="col-12 col-md-6 order-2 order-md-1"
-                  style={{ paddingRight: "30px" }}
+                  className="col-md-6 col-12 order-2 order-md-1"
+                 
                 >
-                  <p className="text-primary">Write better, faster</p>
+                  <p className="text-primary mb-1">Write better, faster</p>
                   <h1>Boomy AI</h1>
-                  <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-                  <p>
+                  <div className="text-warning mb-2">⭐⭐⭐⭐⭐</div>
+                  <p className="mb-3">
                     Boomy is an AI music generator that allows users to create
                     unique, royalty-free music in just a few clicks. The
                     platform harnesses advanced artificial intelligence to
