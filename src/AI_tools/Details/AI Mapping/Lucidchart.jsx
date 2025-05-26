@@ -5,8 +5,8 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
-import lucidchartSS1 from '../../../../public/assets/Img/Ai for Mind Mapping/lucidchartSS1.png';
-import lucidchartSS2 from '../../../../public/assets/Img/Ai for Mind Mapping/lucidchartSS2.png';
+// import lucidchartSS1 from '../../../../public/assets/Img/Ai for Mind Mapping/lucidchartSS1.png';
+// import lucidchartSS2 from '../../../../public/assets/Img/Ai for Mind Mapping/lucidchartSS2.png';
 import lucidchartImg from '../../../../public/assets/Img/Ai for Mind Mapping/10.png';
 
 // review section data

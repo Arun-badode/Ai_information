@@ -77,7 +77,7 @@ const styles = {
 };
 
 const Knewton  = () => {
-  const [activeTab, setActiveTab] = useState("features"); // Set the default active tab as 'features'
+  const [activeTab, setActiveTab] = useState("Features"); // Set the default active tab as 'features'
   const [openIndex, setOpenIndex] = useState(null);
   const [expandedIndex, setExpandedIndex] = useState(null);
   const [showAllFaqs, setShowAllFaqs] = useState(false);
@@ -669,7 +669,7 @@ const Knewton  = () => {
               </p>
                    <div className="mb-3">
                 <a
-                  href="https://quizlet.com/in"
+                  href=" https://www.knewton.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary me-2"
@@ -692,6 +692,136 @@ const Knewton  = () => {
               />
             </div>
           </div>
+
+
+          <section style={{ backgroundColor: "", padding: "3rem 0" }}>
+  <div className="container text-center">
+    <p className="text-primary">Explore in 3 Simple Steps</p>
+    <h2
+      style={{
+        fontWeight: "semibold",
+        color: "#fff",
+        marginBottom: "1rem",
+      }}
+    >
+      How to Use Knewton AI?
+    </h2>
+
+    <div className="row g-4">
+      {/* Step 1 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>
+            {`
+              .step1 {
+                position: absolute;
+                bottom: 10px;
+                right: 15px;
+                font-size: 4rem;
+                font-weight: bold;
+                color: #7b61ff;
+                opacity: 0.6;
+              }
+            `}
+          </style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Personalized Learning Path
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Knewton AI evaluates your current knowledge and learning style to
+            create a custom study path that targets exactly what you need to
+            learn next.
+          </p>
+          <div className="step1">1</div>
+        </div>
+      </div>
+
+      {/* Step 2 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>
+            {`
+              .step2 {
+                position: absolute;
+                bottom: 10px;
+                right: 15px;
+                font-size: 4rem;
+                font-weight: bold;
+                color: #7b61ff;
+                opacity: 0.6;
+              }
+            `}
+          </style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Adaptive Practice & Feedback
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Practice questions adjust in real time based on your performance,
+            offering instant feedback and explanations to reinforce your
+            understanding.
+          </p>
+          <div className="step2">2</div>
+        </div>
+      </div>
+
+      {/* Step 3 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>
+            {`
+              .step3 {
+                position: absolute;
+                bottom: 10px;
+                right: 15px;
+                font-size: 4rem;
+                font-weight: bold;
+                color: #7b61ff;
+                opacity: 0.6;
+              }
+            `}
+          </style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Measure Progress & Stay on Track
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Track your learning progress through analytics and performance
+            reports, so you know where you stand and how close you are to your
+            learning goals.
+          </p>
+          <div className="step3">3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
           {/* Tab Navigation */}
           <ul className="nav nav-tabs custom-tabs mb-4">

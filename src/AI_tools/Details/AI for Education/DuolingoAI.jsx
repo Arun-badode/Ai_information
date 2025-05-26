@@ -654,6 +654,7 @@ const DuolingoAI= () => {
             <a
                                  href=" https://www.duolingo.com"
                                  rel="noopener noreferrer"
+                                 target="_blank"
                                  className="btn btn-primary me-2"
                                >
                                  Explore Tool

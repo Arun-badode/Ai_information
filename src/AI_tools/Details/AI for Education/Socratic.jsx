@@ -77,7 +77,7 @@ const styles = {
 };
 
 const Socratic = () => {
-  const [activeTab, setActiveTab] = useState("features"); // Set the default active tab as 'features'
+  const [activeTab, setActiveTab] = useState("Features"); // Set the default active tab as 'features'
   const [openIndex, setOpenIndex] = useState(null);
   const [expandedIndex, setExpandedIndex] = useState(null);
   const [showAllFaqs, setShowAllFaqs] = useState(false);
@@ -314,7 +314,7 @@ const Socratic = () => {
           </div>
         );
 
-      case "Pro&Const":
+      case "Pro&Cons":
         return (
           <div className="container my-5">
             <h4 className="text-center text-light mb-4">Pros & Cons</h4>
@@ -665,6 +665,138 @@ const Socratic = () => {
 </div>
 
 
+          <section style={{ backgroundColor: "", padding: "3rem 0" }}>
+  <div className="container text-center">
+    <p className="text-primary">Explore in 3 Simple Steps</p>
+    <h2
+      style={{
+        fontWeight: "semibold",
+        color: "#fff",
+        marginBottom: "1rem",
+      }}
+    >
+      How to Use Socratic AI?
+    </h2>
+
+    <div className="row g-4">
+      {/* Step 1 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>
+            {`
+              .step1 {
+                position: absolute;
+                bottom: 10px;
+                right: 15px;
+                font-size: 4rem;
+                font-weight: bold;
+                color: #7b61ff;
+                opacity: 0.6;
+              }
+            `}
+          </style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Snap a Question Instantly
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Simply take a photo of your homework or type a question, and
+            Socratic AI will instantly recognize the problem and begin working
+            on an explanation tailored to your level.
+          </p>
+          <div className="step1">1</div>
+        </div>
+      </div>
+
+      {/* Step 2 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>
+            {`
+              .step2 {
+                position: absolute;
+                bottom: 10px;
+                right: 15px;
+                font-size: 4rem;
+                font-weight: bold;
+                color: #7b61ff;
+                opacity: 0.6;
+              }
+            `}
+          </style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Get Step-by-Step Explanations
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Socratic uses AI and educational resources to break down your
+            question with clear, easy-to-follow explanations so you can truly
+            understand the concepts.
+          </p>
+          <div className="step2">2</div>
+        </div>
+      </div>
+
+      {/* Step 3 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>
+            {`
+              .step3 {
+                position: absolute;
+                bottom: 10px;
+                right: 15px;
+                font-size: 4rem;
+                font-weight: bold;
+                color: #7b61ff;
+                opacity: 0.6;
+              }
+            `}
+          </style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Learn with Trusted Sources
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Access explanations from expert-reviewed sources like Khan Academy,
+            Crash Course, and more—so you're not just getting answers, you're
+            building real understanding.
+          </p>
+          <div className="step3">3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
           {/* Tab Navigation */}
           <ul className="nav nav-tabs custom-tabs mb-4">
             {[
@@ -674,7 +806,7 @@ const Socratic = () => {
               "FAQs",
               // "technical",
               "Why-we-use",
-              "Pro&Const",
+              "Pro&Cons",
               "Alternative",
             ].map((tab) => (
               <li className="nav-item mb-2" key={tab}>

@@ -4,7 +4,7 @@ import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
-import deatilimage from "../../../Images/DetailImage.png";
+import deep from "../../../../public/assets/Img/AI for Document/deep.png";
 import deepdyveSS1 from '../../../../public/assets/Img/AI for Document/deepdyveSS1.png';
 import deepdyveSS2 from '../../../../public/assets/Img/AI for Document/deepdyveSS2.png';
 
@@ -828,7 +828,7 @@ const DeepDyveAI = () => {
   {/* Image Section - first on mobile, second on desktop */}
   <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-3 mb-md-0">
     <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
+      src={deep}
       alt="DeepDyve AI"
       style={{ maxWidth: "100%", height: "300px" }}
     />

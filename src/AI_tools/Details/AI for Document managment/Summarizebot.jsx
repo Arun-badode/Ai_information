@@ -4,7 +4,7 @@ import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
-import deatilimage from "../../../Images/DetailImage.png";
+import summarize from "../../../../public/assets/Img/AI for Document/summarize.png";
 import summarizedbotSS1 from '../../../../public/assets/Img/AI for Document/summarizebotSS1.png';
 import summarizedbotSS2 from '../../../../public/assets/Img/AI for Document/summarizebotSS2.png';
 
@@ -833,7 +833,7 @@ const Summarizebot = () => {
     style={{ height: "250px" }}
   >
     <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
+      src={summarize}
       alt="SummarizeBot AI"
       style={{ maxWidth: "100%", height: "300px" }}
     />
