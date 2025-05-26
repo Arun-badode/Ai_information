@@ -637,9 +637,19 @@ const EvernoteAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-       <div className="row d-flex align-items-center justify-content-between mb-3">
-  {/* Left side (Text Section) */}
-  <div className="col-md-6 mb-4 mb-md-0">
+ <div className="row align-items-center justify-content-between mb-3">
+  {/* Image Section - Shown first on mobile */}
+  <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-4 mb-md-0">
+    <img
+      src={evernote}
+      alt="Evernote AI"
+      style={{ maxWidth: "100%", height: "300px", objectFit: "contain" }}
+      className="img-fluid"
+    />
+  </div>
+
+  {/* Text Section - Shown after image on mobile */}
+  <div className="col-12 col-md-6 order-2 order-md-1">
     <p className="text-primary">Write better, faster</p>
     <h1>Evernote AI</h1>
     <div className="text-warning mb-2">⭐⭐⭐⭐⭐</div>
@@ -658,16 +668,8 @@ const EvernoteAI = () => {
       Explore Tool
     </a>
   </div>
-
-  {/* Right side (Image Section) */}
-  <div className="col-md-6 text-center">
-    <img
-      src={evernote}
-      alt="Evernote AI"
-      style={{ maxWidth: "100%", height: "300px", objectFit: "contain" }}
-    />
-  </div>
 </div>
+
 
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">

@@ -663,43 +663,46 @@ const Fortinet = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className="row align-items-center justify-content-between mb-4 flex-wrap">
-            {/* Left side (Text Section) */}
-            <div className="col-12 col-lg-6 mb-4 mb-lg-0" style={{ paddingRight: "30px" }}>
-              <p className="text-primary">
-                Create stunning visuals effortlessly
-              </p>
-              <h1>Fortinet AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Fortinet is a leader in cybersecurity and integrates AI and
-                machine learning into its security systems to protect businesses
-                against emerging cyber threats. Their AI-powered security
-                solutions help businesses ensure network, endpoint, cloud, and
-                data protection, while also offering real-time threat detection
-                and predictive intelligence.
-              </p>
-              <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
-                <a
-                  href="https://www.fortinet.com/solutions/enterprise-midsize-business/fortiai"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary btn-lg px-4"
-                >
-                  Explore Tool
-                </a>
-              </div>
-            </div>
-            {/* Right side (Image Section) */}
-            <div className="col-12 col-lg-6 mb-4 mb-lg-0 text-center">
-              <img
-                src={fortinet}
-                className="img-fluid rounded-3"
-                style={{ maxWidth: "100%", height: "auto" }}
-                alt="Fortinet AI"
-              />
-            </div>
-          </div>
+        <div className="row align-items-center justify-content-between mb-4 flex-wrap">
+  {/* Image Section: first on mobile, second on large screens */}
+  <div className="col-12 col-lg-6 mb-4 mb-lg-0 text-center order-1 order-lg-2">
+    <img
+      src={fortinet}
+      className="img-fluid rounded-3"
+      style={{ maxWidth: "100%", height: "auto" }}
+      alt="Fortinet AI"
+    />
+  </div>
+
+  {/* Text Section: second on mobile, first on large screens */}
+  <div
+    className="col-12 col-lg-6 mb-4 mb-lg-0 order-2 order-lg-1"
+    style={{ paddingRight: "30px" }}
+  >
+    <p className="text-primary">Create stunning visuals effortlessly</p>
+    <h1>Fortinet AI</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      Fortinet is a leader in cybersecurity and integrates AI and
+      machine learning into its security systems to protect businesses
+      against emerging cyber threats. Their AI-powered security
+      solutions help businesses ensure network, endpoint, cloud, and
+      data protection, while also offering real-time threat detection
+      and predictive intelligence.
+    </p>
+    <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
+      <a
+        href="https://www.fortinet.com/solutions/enterprise-midsize-business/fortiai"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary btn-lg px-4"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
+</div>
+
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>

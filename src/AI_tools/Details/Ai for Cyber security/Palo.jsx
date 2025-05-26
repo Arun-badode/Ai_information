@@ -665,38 +665,43 @@ const Palo = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className="row align-items-center justify-content-between mb-4 flex-wrap">
-            {/* Left side (Text Section) */}
-            <div className="col-12 col-lg-6 mb-4 mb-lg-0" style={{ paddingRight: "30px" }}>
-              <p className="text-primary">
-                Create powerful and adaptive cybersecurity solutions
-              </p>
-              <h1>Palo Alto Networks AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Palo Alto Networks AI integrates advanced artificial intelligence and machine learning into its cybersecurity systems to provide businesses with real-time threat detection and prevention. By leveraging AI, Palo Alto Networks ensures comprehensive protection across network, endpoints, cloud, and data, while continuously adapting to emerging cyber threats and minimizing risks.
-              </p>
-              <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
-                <a
-                  href="https://www.paloaltonetworks.com/precision-ai-security?utm_source=google-jg-japac-portfolio-brnd-port&utm_medium=paid_search&utm_campaign=google-portfolio-portfolio-japac-in-awareness-en-brand_ai-restructure&utm_content=7014u000001eJWRAA2&utm_term=palo%20alto%20networks%20ai&cq_plac=&cq_net=g&gad_source=1&gad_campaignid=22494267079&gbraid=0AAAAADHVeKlFcyyemkIj87fDjI39tBRcS&gclid=Cj0KCQjwucDBBhDxARIsANqFdr170C2qi6wrLEDsH-s7qMkAY_h-cL137OHmOcP_uoSSzhMoJNhVcrUaAiS5EALw_wcB"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary btn-lg px-4"
-                >
-                  Explore Tool
-                </a>
-              </div>
-            </div>
-            {/* Right side (Image Section) */}
-            <div className="col-12 col-lg-6 mb-4 mb-lg-0 text-center">
-              <img
-                src={palo}
-                className="img-fluid rounded-3"
-                style={{ maxWidth: "100%", height: "auto" }}
-                alt="Palo Alto Networks AI"
-              />
-            </div>
-          </div>
+       <div className="row align-items-center justify-content-between mb-4 flex-wrap">
+  {/* Image Section: order 1 on mobile, order 2 on large screens */}
+  <div className="col-12 col-lg-6 mb-4 mb-lg-0 text-center order-1 order-lg-2">
+    <img
+      src={palo}
+      className="img-fluid rounded-3"
+      style={{ maxWidth: "100%", height: "auto" }}
+      alt="Palo Alto Networks AI"
+    />
+  </div>
+
+  {/* Text Section: order 2 on mobile, order 1 on large screens */}
+  <div
+    className="col-12 col-lg-6 mb-4 mb-lg-0 order-2 order-lg-1"
+    style={{ paddingRight: "30px" }}
+  >
+    <p className="text-primary">
+      Create powerful and adaptive cybersecurity solutions
+    </p>
+    <h1>Palo Alto Networks AI</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      Palo Alto Networks AI integrates advanced artificial intelligence and machine learning into its cybersecurity systems to provide businesses with real-time threat detection and prevention. By leveraging AI, Palo Alto Networks ensures comprehensive protection across network, endpoints, cloud, and data, while continuously adapting to emerging cyber threats and minimizing risks.
+    </p>
+    <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
+      <a
+        href="https://www.paloaltonetworks.com/precision-ai-security?utm_source=google-jg-japac-portfolio-brnd-port&utm_medium=paid_search&utm_campaign=google-portfolio-portfolio-japac-in-awareness-en-brand_ai-restructure&utm_content=7014u000001eJWRAA2&utm_term=palo%20alto%20networks%20ai&cq_plac=&cq_net=g&gad_source=1&gad_campaignid=22494267079&gbraid=0AAAAADHVeKlFcyyemkIj87fDjI39tBRcS&gclid=Cj0KCQjwucDBBhDxARIsANqFdr170C2qi6wrLEDsH-s7qMkAY_h-cL137OHmOcP_uoSSzhMoJNhVcrUaAiS5EALw_wcB"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary btn-lg px-4"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
+</div>
+
           <section style={{ padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>

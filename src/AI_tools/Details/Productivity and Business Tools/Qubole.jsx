@@ -639,12 +639,19 @@ const Qubole = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-    <div className="row d-flex align-items-center justify-content-between mb-1">
-  {/* Left side (Text Section) */}
-  <div
-    style={{ flex: 1, paddingRight: "30px" }}
-    className="col-6 col-md-12"
-  >
+ <div className="row align-items-center justify-content-between mb-5">
+  {/* Image Section - shows first on mobile */}
+  <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-4 mb-md-0">
+    <img
+      src={magisto}
+      alt="Qubole platform"
+      style={{ maxWidth: "100%", height: "250px", objectFit: "contain" }}
+      className="img-fluid"
+    />
+  </div>
+
+  {/* Text Section - shows after image on mobile */}
+  <div className="col-12 col-md-6 order-2 order-md-1" style={{ paddingRight: "30px" }}>
     <p className="text-primary">Grow better, faster</p>
     <h1>Qubole</h1>
     <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
@@ -666,7 +673,6 @@ const Qubole = () => {
       optimize their data management strategies, reduce infrastructure
       overhead, and gain insights from large datasets efficiently.
     </p>
-
     <div className="mb-3">
       <a
         href="https://www.qubole.com/"
@@ -678,24 +684,8 @@ const Qubole = () => {
       </a>
     </div>
   </div>
-
-  {/* Right side (Image Section) */}
-  <div
-    style={{
-      flex: 1,
-      textAlign: "center",
-      width: "100%",
-      height: "250px",
-    }}
-    className="col-6 col-md-12 mb-5"
-  >
-    <img
-      src={magisto}
-      alt="Qubole platform "
-      style={{ maxWidth: "100%", height: "250px", objectFit: "contain" }}
-    />
-  </div>
 </div>
+
 
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">

@@ -599,54 +599,59 @@ const CheckPointAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className="row align-items-center justify-content-between mb-4 flex-wrap">
-            {/* Left side (Text Section) */}
-            <div className="col-12 col-lg-6 mb-4 mb-lg-0" style={{ paddingRight: "30px" }}>
-              <p className="text-primary">Create stunning visuals effortlessly</p>
-              <h1>Check Point AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Check Point AI is an advanced cybersecurity solution powered by
-                artificial intelligence (AI) and machine learning (ML). It is
-                designed to protect enterprise networks, endpoints, mobile
-                devices, and cloud environments from a wide range of cyber
-                threats. Check Point uses AI-driven security to detect and
-                prevent advanced persistent threats (APTs), ransomware, malware,
-                and other cyberattacks. The platform integrates various
-                technologies such as threat prevention, threat intelligence, and
-                automated incident response, enabling organizations to maintain
-                a robust security posture across their IT infrastructure.
-              </p>
-              <p>
-                Check Point combines its core cybersecurity features, including
-                next-gen firewall, intrusion prevention system (IPS), and
-                behavioral analytics, with machine learning to provide adaptive,
-                proactive, and automated protection. The platform also supports
-                cloud-native security, multi-cloud environments, and zero-trust
-                security models, helping businesses safeguard their digital
-                assets in an ever-evolving cyber threat landscape.
-              </p>
-              <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
-                <a
-                  href="https://www.checkpoint.com/ai/copilot/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary btn-lg px-4"
-                >
-                  Explore Tool
-                </a>
-              </div>
-            </div>
-            {/* Right side (Image Section) */}
-            <div className="col-12 col-lg-6 mb-4 mb-lg-0 text-center">
-              <img
-                src={checkpoint}
-                className="img-fluid rounded-3"
-                style={{ maxWidth: "100%", height: "auto" }}
-                alt="Check Point AI"
-              />
-            </div>
-          </div>
+        <div className="row align-items-center justify-content-between mb-4 flex-wrap">
+  {/* Image Section - order 1 on mobile, order 2 on large screens */}
+  <div className="col-12 col-lg-6 mb-4 mb-lg-0 text-center order-1 order-lg-2">
+    <img
+      src={checkpoint}
+      className="img-fluid rounded-3"
+      style={{ maxWidth: "100%", height: "auto" }}
+      alt="Check Point AI"
+    />
+  </div>
+
+  {/* Text Section - order 2 on mobile, order 1 on large screens */}
+  <div
+    className="col-12 col-lg-6 mb-4 mb-lg-0 order-2 order-lg-1"
+    style={{ paddingRight: "30px" }}
+  >
+    <p className="text-primary">Create stunning visuals effortlessly</p>
+    <h1>Check Point AI</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      Check Point AI is an advanced cybersecurity solution powered by
+      artificial intelligence (AI) and machine learning (ML). It is
+      designed to protect enterprise networks, endpoints, mobile
+      devices, and cloud environments from a wide range of cyber
+      threats. Check Point uses AI-driven security to detect and
+      prevent advanced persistent threats (APTs), ransomware, malware,
+      and other cyberattacks. The platform integrates various
+      technologies such as threat prevention, threat intelligence, and
+      automated incident response, enabling organizations to maintain
+      a robust security posture across their IT infrastructure.
+    </p>
+    <p>
+      Check Point combines its core cybersecurity features, including
+      next-gen firewall, intrusion prevention system (IPS), and
+      behavioral analytics, with machine learning to provide adaptive,
+      proactive, and automated protection. The platform also supports
+      cloud-native security, multi-cloud environments, and zero-trust
+      security models, helping businesses safeguard their digital
+      assets in an ever-evolving cyber threat landscape.
+    </p>
+    <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
+      <a
+        href="https://www.checkpoint.com/ai/copilot/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary btn-lg px-4"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
+</div>
+
           <section style={{ padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>
