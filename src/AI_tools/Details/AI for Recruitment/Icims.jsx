@@ -7,6 +7,7 @@ import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
 import icmi1 from "../../../../public/assets/Img/AI for Recruitment/ic-s1.png";
 import icmi2 from "../../../../public/assets/Img/AI for Recruitment/ic-s2.png";
+import icimsImg from '../../../../public/assets/Img/AI for Recruitment/9.png';
 
 // review section data
 const reviews = [
@@ -770,7 +771,7 @@ const Icims = () => {
         <div className="container">
        <div className="row d-flex align-items-center justify-content-between flex-column-reverse flex-md-row mb-1">
   {/* Left Side (Text Section) */}
-  <div className="col-md-6 text-md-start text-center mt-3 mt-md-0 px-4">
+  <div className="col-md-6 mt-3 mt-md-0">
     <p className="text-primary">Write better, faster</p>
     <h1>iCIMS AI</h1>
     <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
@@ -802,13 +803,16 @@ const Icims = () => {
   </div>
 
   {/* Right Side (Image Section) */}
-  <div className="col-md-6 text-center mb-3 mb-md-0">
-    <img
-      src=""
-      alt="iCIMS AI"
-      style={{ width: "100%", maxWidth: "400px", height: "auto" }}
-    />
-  </div>
+  <div className="col-lg-6 col-md-12 order-lg-2 order-1">
+     <div className="ratio ratio-16x9">
+       <img
+         src={icimsImg}
+         className="img-fluid rounded-3 object-fit-cover"
+         alt="icims"
+         loading="lazy"
+       />
+     </div>
+   </div>
 </div>
 
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>

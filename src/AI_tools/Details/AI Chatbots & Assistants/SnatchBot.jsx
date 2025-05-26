@@ -642,14 +642,14 @@ const SnatchBot = () => {
             </div>
 
             {/* Right side (Image Section) */}
-            <div style={{ flex: 1, textAlign: "center" }}>
-              <img 
-                src={SnatchBotImg}
-                alt="Dashboard Preview"
-                className="img-fluid rounded-3"
-                style={{ maxWidth: "80%", height: "auto" }}
-              />
-            </div>
+              <div style={{ flex: 1, textAlign: "center" }}>
+                          <img
+                            src={SnatchBotImg}
+                            alt="SnatchBot"
+                            className="img-fluid rounded-3"
+                            style={{ maxWidth: "100%", height: "auto" }}
+                          />
+                        </div>
           </div>
 
           {/* Tab Navigation */}

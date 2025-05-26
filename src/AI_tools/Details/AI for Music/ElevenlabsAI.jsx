@@ -830,7 +830,7 @@ const ElevenlabsAI = () => {
             <div className="col-12 col-md-6 order-2 order-md-1 pe-md-4">
               <p className="text-primary">Write better, faster</p>
               <h1>ElevenLabs AI:</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+              <div className="text-warning mb-2">⭐⭐⭐⭐⭐</div>
               <p>
                 ElevenLabs AI is not just another chatbot solution – it's a
                 revolutionary platform designed to transform the way businesses

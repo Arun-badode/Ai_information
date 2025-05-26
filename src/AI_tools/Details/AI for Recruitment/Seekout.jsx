@@ -7,6 +7,7 @@ import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
 import seek1 from "../../../../public/assets/Img/AI for Recruitment/seek-s1.png";
 import seek2 from "../../../../public/assets/Img/AI for Recruitment/seek-s2.png";
+import seekoutImg from '../../../../public/assets/Img/AI for Recruitment/5.png'
 
 // review section data
 const reviews = [
@@ -779,6 +780,7 @@ const Seekout = () => {
   </div>
 
   {/* Image Section (Right on desktop, top on mobile) */}
+<<<<<<< HEAD
  <div className="col-12 col-md-6 d-flex justify-content-center align-items-center text-center mb-3 mb-md-0">
   <img
     src="/assets/Img/AI for Recruitment/Ai for recruiment/Seekout.png"
@@ -788,6 +790,18 @@ const Seekout = () => {
   />
 </div>
 
+=======
+   <div className="col-lg-6 col-md-12 order-lg-2 order-1">
+    <div className="ratio ratio-16x9">
+      <img
+        src={seekoutImg}
+        className="img-fluid rounded-3 object-fit-cover"
+        alt="seekout"
+        loading="lazy"
+      />
+    </div>
+  </div>
+>>>>>>> 9732e077a94f9a43e3fcff86cd1122391726245d
 </div>
 
 

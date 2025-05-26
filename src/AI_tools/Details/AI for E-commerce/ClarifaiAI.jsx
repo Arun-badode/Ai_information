@@ -756,6 +756,14 @@ const ClarifaiAI = () => {
         online stores.
       </p>
 
+      <a
+                                 href=" https://www.clarifai.com/"
+                                 rel="noopener noreferrer"
+                                 className="btn btn-primary me-2"
+                               >
+                                 Explore Tool
+                               </a>
+
      
     </div>
 

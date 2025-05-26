@@ -18,7 +18,7 @@ const Footer = () => {
 
           {/* Services - Centered and starting from the same position */}
           <div className="text-left md:text-center">
-            <h5 className="text-white mb-3 pb-2">Featurs</h5>
+            <h5 className="text-white mb-3 pb-2">Features</h5>
             <ul className="list-none space-y-2">
               <li>
                 <Link

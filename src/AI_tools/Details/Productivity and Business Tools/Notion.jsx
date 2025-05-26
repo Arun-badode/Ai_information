@@ -522,16 +522,24 @@ const Notion = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-     <div className="d-flex align-items-center justify-content-between mb-5">
-  {/* Left side (Text Section) */}
-  <div style={{ flex: 1, paddingRight: "30px" }}>
-   
+<div className="row align-items-center justify-content-between mb-5">
+  {/* Image Section: on top on mobile, right on desktop */}
+  <div className="col-12 col-lg-6 order-1 order-lg-2 text-center mb-4 mb-lg-0">
+    <img
+      src={notion}
+      className="img-fluid rounded-3"
+      style={{ maxWidth: "100%", height: "auto" }}
+      alt="Notion AI"
+    />
+  </div>
+
+  {/* Text Section: below image on mobile, left on desktop */}
+  <div className="col-12 col-lg-6 order-2 order-lg-1" style={{ paddingRight: "30px" }}>
     <h2>Notion AI</h2>
     <div className="text-warning mb-1">⭐⭐⭐⭐⭐ 95% Satisfaction</div>
     <p className="mb-3">
       Notion AI is an integrated artificial intelligence assistant within the Notion workspace. It enhances productivity by assisting users in writing, summarizing, brainstorming, and automating various tasks directly within their notes and documents.
     </p>
-
     <div className="mb-3">
       <a
         href="https://www.notion.com/help/guides/category/ai"
@@ -543,17 +551,8 @@ const Notion = () => {
       </a>
     </div>
   </div>
-
-  {/* Right side (Image Section) */}
-  <div style={{ flex: 1, textAlign: "center" }}>
-    <img
-      src={notion}
-      alt="Notion AI"
-      className="img-fluid rounded-3"
-      style={{ maxWidth: "80%", height: "auto" }}
-    />
-  </div>
 </div>
+
 
 
           {/* Tab Navigation */}
