@@ -821,9 +821,7 @@ const HireVue = () => {
     <div className="image-container" style={{ maxHeight: "300px", overflow: "hidden" }}>
       <img
         src={hirevue1}
-=======
-        src="public\assets\Img\AI for Recruitment\Ai for recruiment\HireVue.png"
->>>>>>> ac6c5256ea0c57ddf756dcb6a0bfef53d751d956
+
         
         className="img-fluid rounded-3"
         style={{ 
