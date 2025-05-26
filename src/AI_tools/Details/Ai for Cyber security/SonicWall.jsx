@@ -652,56 +652,61 @@ const SonicWall = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className="row align-items-center justify-content-between mb-4 flex-wrap">
-            {/* Left side (Text Section) */}
-            <div className="col-12 col-lg-6 mb-4 mb-lg-0" style={{ paddingRight: "30px" }}>
-              <p className="text-primary">
-                Create stunning visuals effortlessly
-              </p>
-              <h1>SonicWall AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                SonicWall AI is a suite of advanced cybersecurity solutions that
-                leverages artificial intelligence (AI) and machine learning to
-                protect businesses against evolving threats. These solutions
-                focus on proactive threat prevention, real-time detection, and
-                automated responses, offering a comprehensive approach to
-                securing networks, endpoints, and cloud environments. With a
-                focus on AI-driven technologies, SonicWall AI delivers
-                predictive and real-time security measures that are adaptive,
-                scalable, and highly effective at blocking sophisticated
-                attacks, including ransomware, zero-day exploits, and advanced
-                persistent threats (APTs).
-              </p>
-              <p>
-                SonicWall's AI-powered tools, such as firewalls, intrusion
-                prevention systems, and malware detection, help businesses
-                safeguard their IT infrastructure by continuously learning from
-                new data and adapting to emerging threats. This provides
-                enhanced protection with minimal reliance on traditional
-                signature-based methods.
-              </p>
-              <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
-                <a
-                  href="https://www.sonicwall.com/award/sonicwall-named-winner-in-best-ai-and-machine-learning-based-security-solution-of-the-year-award"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary btn-lg px-4"
-                >
-                  Explore Tool
-                </a>
-              </div>
-            </div>
-            {/* Right side (Image Section) */}
-            <div className="col-12 col-lg-6 mb-4 mb-lg-0 text-center">
-              <img
-                src={sonic}
-                className="img-fluid rounded-3"
-                style={{ maxWidth: "100%", height: "auto" }}
-                alt="SonicWall AI"
-              />
-            </div>
-          </div>
+       <div className="row align-items-center justify-content-between mb-4 flex-wrap">
+  {/* Image Section: show first on mobile, second on large screens */}
+  <div className="col-12 col-lg-6 mb-4 mb-lg-0 text-center order-1 order-lg-2">
+    <img
+      src={sonic}
+      className="img-fluid rounded-3"
+      style={{ maxWidth: "100%", height: "auto" }}
+      alt="SonicWall AI"
+    />
+  </div>
+
+  {/* Text Section: show second on mobile, first on large screens */}
+  <div
+    className="col-12 col-lg-6 mb-4 mb-lg-0 order-2 order-lg-1"
+    style={{ paddingRight: "30px" }}
+  >
+    <p className="text-primary">
+      Create stunning visuals effortlessly
+    </p>
+    <h1>SonicWall AI</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      SonicWall AI is a suite of advanced cybersecurity solutions that
+      leverages artificial intelligence (AI) and machine learning to
+      protect businesses against evolving threats. These solutions
+      focus on proactive threat prevention, real-time detection, and
+      automated responses, offering a comprehensive approach to
+      securing networks, endpoints, and cloud environments. With a
+      focus on AI-driven technologies, SonicWall AI delivers
+      predictive and real-time security measures that are adaptive,
+      scalable, and highly effective at blocking sophisticated
+      attacks, including ransomware, zero-day exploits, and advanced
+      persistent threats (APTs).
+    </p>
+    <p>
+      SonicWall's AI-powered tools, such as firewalls, intrusion
+      prevention systems, and malware detection, help businesses
+      safeguard their IT infrastructure by continuously learning from
+      new data and adapting to emerging threats. This provides
+      enhanced protection with minimal reliance on traditional
+      signature-based methods.
+    </p>
+    <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
+      <a
+        href="https://www.sonicwall.com/award/sonicwall-named-winner-in-best-ai-and-machine-learning-based-security-solution-of-the-year-award"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary btn-lg px-4"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
+</div>
+
           <section style={{ padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>

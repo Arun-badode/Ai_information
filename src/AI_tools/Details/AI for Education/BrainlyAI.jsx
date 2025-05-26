@@ -667,16 +667,17 @@ const BrainlyAI = () => {
 
             {/* Right side (Image Section) */}
            <div
-              style={{ flex: 1, textAlign: "center" }}
-              className="order-1 order-md-2 mb-4 mb-md-0"
-            >
-              <img
-                src={f}
-                className="img-fluid rounded-3"
-                style={{ maxWidth: "80%", height: "auto" }}
-                alt="brainly"
-              />
-            </div>
+  className="col-12 col-md-6 d-flex justify-content-center align-items-center order-1 order-md-2 mb-4 mb-md-0"
+  style={{ textAlign: "center" }}
+>
+  <img
+    src={f}
+    alt="brainly"
+    className="img-fluid rounded-3"
+    style={{ maxWidth: "80%", height: "auto" }}
+  />
+</div>
+
           </div>
 
             <section style={{ backgroundColor: "#0b1e3d", padding: "3rem 0" }}>

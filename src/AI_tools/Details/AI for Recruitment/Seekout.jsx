@@ -772,6 +772,7 @@ const Seekout = () => {
         href="https://www.seekout.com/"
         rel="noopener noreferrer"
         className="btn btn-primary me-2"
+        target="_blank"
       >
         Explore Tool
       </a>
@@ -779,7 +780,16 @@ const Seekout = () => {
   </div>
 
   {/* Image Section (Right on desktop, top on mobile) */}
-   <div className="col-lg-6 col-md-12 order-lg-2 order-1">
+ <div className="col-12 col-md-6 d-flex justify-content-center align-items-center text-center mb-3 mb-md-0">
+  <img
+    src="/assets/Img/AI for Recruitment/Ai for recruiment/Seekout.png"
+    alt="SeekOut AI"
+    className="img-fluid rounded-3"
+    style={{ maxHeight: "300px", objectFit: "cover" }}
+  />
+</div>
+
+   {/* <div className="col-lg-6 col-md-12 order-lg-2 order-1">
     <div className="ratio ratio-16x9">
       <img
         src={seekoutImg}
@@ -788,7 +798,7 @@ const Seekout = () => {
         loading="lazy"
       />
     </div>
-  </div>
+  </div> */}
 </div>
 
 

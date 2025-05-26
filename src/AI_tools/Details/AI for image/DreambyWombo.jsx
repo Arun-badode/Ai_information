@@ -742,6 +742,7 @@ const DreambyWombo = () => {
       letting anyone become a digital artist with just their imagination.
     </p>
 
+<<<<<<< HEAD
     <div className="row g-4">
       {/* Step 1 */}
       <div className="col-md-4">
@@ -775,6 +776,33 @@ const DreambyWombo = () => {
           <div className="wombo-step1">1</div>
         </div>
       </div>
+=======
+            {/* Right side (Image Section) */}
+            <div
+              style={{
+                flex: 1,
+                textAlign: "center",
+                Width: "100%",
+                height: "250px",
+              }}
+              className="col-6 col-md-12 mb-5  "
+            >
+              <img src="" alt="Dream By Wombo"  style={{ MaxWidth: "100%", height: "300px" }} />
+            </div>
+          </div>
+          <section style={{ backgroundColor: "", padding: "3rem" }}>
+            <div className="container text-center">
+              <p className="text-primary">Explore in 3 Simple Steps</p>
+              <h2
+                style={{
+                  fontWeight: "semibold",
+                  color: "#fff",
+                  marginBottom: "1rem",
+                }}
+              >
+                How to Use Dream by Wombo?
+              </h2>
+>>>>>>> 177b3b42f28ca72dd191ec23f3918e6c42358f5b
 
       {/* Step 2 */}
       <div className="col-md-4">

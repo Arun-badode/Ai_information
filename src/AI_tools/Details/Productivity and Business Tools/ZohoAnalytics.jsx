@@ -629,24 +629,28 @@ const ZohoAnalyticsAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-    <div className="row d-flex align-items-center justify-content-between mb-1">
-  {/* Left side (Text Section) */}
-  <div
-    style={{ flex: 1, paddingRight: "30px" }}
-    className="col-6 col-md-12"
-  >
+<div className="row align-items-center justify-content-between mb-5">
+  {/* Image Section - shown on top on mobile */}
+  <div className="col-12 col-lg-6 order-1 order-lg-2 text-center mb-4 mb-lg-0">
+    <img
+      src={magisto}
+      style={{ maxWidth: "100%", height: "300px", objectFit: "cover" }}
+      alt="Zoho Analytics AI"
+      className="img-fluid rounded"
+    />
+  </div>
+
+  {/* Text Section */}
+  <div className="col-12 col-lg-6 order-2 order-lg-1" style={{ paddingRight: "30px" }}>
     <p className="text-primary">Grow better, faster</p>
     <h1>Zoho Analytics AI</h1>
     <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
     <p>
-      Zoho Analytics is a powerful cloud-based business intelligence
-      (BI) and data analytics platform designed for creating
-      visualizations, dashboards, and detailed reports. It empowers
-      businesses to transform raw data into actionable insights using
-      automation, AI, and extensive integrations with over 500+ 
-      business apps. It's ideal for startups, small businesses, large
-      enterprises, and SaaS companies seeking an easy-to-use, yet
-      highly customizable, self-service BI tool.
+      Zoho Analytics is a powerful cloud-based business intelligence (BI) and data analytics platform
+      designed for creating visualizations, dashboards, and detailed reports. It empowers businesses
+      to transform raw data into actionable insights using automation, AI, and extensive integrations
+      with over 500+ business apps. It's ideal for startups, small businesses, large enterprises, and
+      SaaS companies seeking an easy-to-use, yet highly customizable, self-service BI tool.
     </p>
 
     <div className="mb-3">
@@ -660,6 +664,7 @@ const ZohoAnalyticsAI = () => {
       </a>
     </div>
   </div>
+<<<<<<< HEAD
 
   {/* Right side (Image Section) */}
   <div
@@ -677,7 +682,10 @@ const ZohoAnalyticsAI = () => {
       alt="Zoho Analytics AI"
     />
   </div>
+=======
+>>>>>>> 177b3b42f28ca72dd191ec23f3918e6c42358f5b
 </div>
+          
 
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">

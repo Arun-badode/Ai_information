@@ -646,6 +646,7 @@ const Cylance = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
+<<<<<<< HEAD
           <div className="row align-items-center justify-content-between mb-4 flex-wrap">
             {/* Left side (Text Section) */}
             <div className="col-12 col-lg-6 mb-4 mb-lg-0" style={{ paddingRight: "30px" }}>
@@ -695,6 +696,59 @@ const Cylance = () => {
               />
             </div>
           </div>
+=======
+        <div className="row align-items-center justify-content-between mb-4 flex-wrap">
+  {/* Image Section: order 1 on mobile, order 2 on large screens */}
+  <div className="col-12 col-lg-6 mb-4 mb-lg-0 text-center order-1 order-lg-2">
+    <img
+      src={cylance}
+      className="img-fluid rounded-3"
+      style={{ maxWidth: "100%", height: "auto" }}
+      alt="Cylance AI"
+    />
+  </div>
+
+  {/* Text Section: order 2 on mobile, order 1 on large screens */}
+  <div
+    className="col-12 col-lg-6 mb-4 mb-lg-0 order-2 order-lg-1"
+    style={{ paddingRight: "30px" }}
+  >
+    <p className="text-primary">Create stunning visuals effortlessly</p>
+    <h1>Cylance AI</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      Cylance AI refers to a set of cybersecurity solutions powered by
+      artificial intelligence and machine learning, designed to
+      prevent, detect, and mitigate cyber threats in real-time. Unlike
+      traditional signature-based methods, Cylance AI leverages
+      advanced machine learning algorithms to predict and prevent
+      malicious activities before they even occur. This proactive
+      approach offers superior protection against threats such as
+      malware, ransomware, and advanced persistent threats (APTs),
+      providing organizations with enhanced security and reduced
+      reliance on manual interventions.
+    </p>
+    <p>
+      Cylance's AI-driven security tools integrate seamlessly with
+      both cloud and on-premises environments, offering solutions that
+      are adaptive and scalable. By using predictive models based on
+      behavioral patterns, Cylance’s AI can identify new, unknown
+      threats and respond to them faster than traditional systems.
+    </p>
+    <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
+      <a
+        href="https://www.browserstack.com/live?utm_source=bing&utm_medium=cpc&utm_platform=paidads&utm_content=&utm_campaign=Bing-Search-Brand-India&utm_campaigncode=Automate+149846&utm_term=p+browserstack%20automate%20desktop"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary btn-lg px-4"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
+</div>
+
+>>>>>>> 177b3b42f28ca72dd191ec23f3918e6c42358f5b
           <section style={{ padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>

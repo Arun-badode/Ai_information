@@ -828,7 +828,7 @@ const BoomyAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <section style={{ backgroundColor: "#1b1f2b", padding: "3rem 0" }}>
+          <section style={{  padding: "3rem 0" }}>
             <div className="container text-start">
               <div className="row d-flex align-items-center justify-content-between mb-4">
                 {/* Image Section - mobile pe pehle dikhana, desktop pe baad me */}
@@ -882,7 +882,8 @@ const BoomyAI = () => {
                 </div>
               </div>
 
-              <p className="text-primary">
+           <div style={{backgroundColor: "#1b1f2b",}}>
+               <p className="text-primary">
                 Elevate Your Music Creation with Boomy AI
               </p>
               <h2
@@ -897,6 +898,8 @@ const BoomyAI = () => {
                   color: "#ccc",
                   marginBottom: "2rem",
                   fontStyle: "italic",
+                  
+                  
                 }}
               >
                 Boomy AI empowers creators to instantly generate unique,
@@ -915,6 +918,7 @@ const BoomyAI = () => {
                       boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
                       padding: "2rem",
                       height: "100%",
+                      
                     }}
                   >
                     <style>{`
@@ -1012,6 +1016,7 @@ const BoomyAI = () => {
                   </div>
                 </div>
               </div>
+           </div>
             </div>
           </section>
 

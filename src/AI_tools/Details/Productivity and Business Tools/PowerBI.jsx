@@ -633,12 +633,19 @@ const PowerBI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-         <div className="row d-flex align-items-center justify-content-between mb-1">
-  {/* Left side (Text Section) */}
-  <div
-    style={{ flex: 1, paddingRight: "30px" }}
-    className="col-6 col-md-12"
-  >
+<div className="row align-items-center justify-content-between mb-5">
+  {/* Image Section - Shows first on mobile */}
+  <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-4 mb-md-0">
+    <img
+      src={magisto}
+      alt="Power BI AI Interface"
+      style={{ maxWidth: "100%", height: "250px", objectFit: "contain" }}
+      className="img-fluid"
+    />
+  </div>
+
+  {/* Text Section - Shows after image on mobile */}
+  <div className="col-12 col-md-6 order-2 order-md-1" style={{ paddingRight: "30px" }}>
     <p className="text-primary">Write better, faster</p>
     <h1>Power BI AI</h1>
     <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
@@ -662,7 +669,6 @@ const PowerBI = () => {
       natural language processing, data automation, and machine
       learning models.
     </p>
-
     <div className="mb-3">
       <a
         href="https://app.powerbi.com/singleSignOn?ru=https%3A%2F%2Fapp.powerbi.com%2F%3FnoSignUpCheck%3D1"
@@ -674,6 +680,7 @@ const PowerBI = () => {
       </a>
     </div>
   </div>
+<<<<<<< HEAD
 
   {/* Right side (Image Section) */}
   <div
@@ -691,7 +698,10 @@ const PowerBI = () => {
       style={{ maxWidth: "100%", height: "250px", objectFit: "contain" }}
     />
   </div>
+=======
+>>>>>>> 177b3b42f28ca72dd191ec23f3918e6c42358f5b
 </div>
+
 
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">

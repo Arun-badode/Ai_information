@@ -636,6 +636,7 @@ const PiAI = () => {
                                  href="https://pi.ai"
                                  rel="noopener noreferrer"
                                  className="btn btn-primary me-2"
+                                 target="_blank"
                                >
                                  Explore Tool
                                </a>

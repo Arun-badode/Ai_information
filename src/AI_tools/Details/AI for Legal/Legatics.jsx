@@ -669,6 +669,7 @@ const Legatics = () => {
                   href="https://www.legatics.com/"
                   rel="noopener noreferrer"
                   className="btn btn-primary me-2"
+                  target="_blank"
                 >
                   Explore Tool
                 </a>

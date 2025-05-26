@@ -38,7 +38,6 @@ import Chatgpt from "./AI_tools/Details/AI Chatbots & Assistants/Chatgpt";
 import Tidio from "./AI_tools/Details/AI Chatbots & Assistants/Tidio";
 import CharacterAI from "./AI_tools/Details/AI Chatbots & Assistants/CharacterAI";
 import PiAI from "./AI_tools/Details/AI Chatbots & Assistants/PiAI";
-import DriftAI from "./AI_tools/Details/AI Chatbots & Assistants/DriftAI";
 import FlowXO from "./AI_tools/Details/AI Chatbots & Assistants/FlowXO";
 import Botsify from "./AI_tools/Details/AI Chatbots & Assistants/Botsify";
 import AivoAI from "./AI_tools/Details/AI Chatbots & Assistants/AivoAI";
@@ -342,7 +341,6 @@ const App = () => {
         <Route path="/tidio" element={<Tidio />}></Route>
         <Route path="/characterai" element={<CharacterAI />}></Route>
         <Route path="/piai" element={<PiAI />}></Route>
-        <Route path="/driftai" element={<DriftAI />}></Route>
         <Route path="/flowxo" element={<FlowXO />}></Route>
         <Route path="/Botsify" element={<Botsify />}></Route>
         <Route path="/aivoai" element={<AivoAI />}></Route>

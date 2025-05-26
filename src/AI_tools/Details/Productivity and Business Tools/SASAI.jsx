@@ -645,16 +645,22 @@ const SASAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-       <div className="row d-flex align-items-center justify-content-between mb-1">
-  {/* Left side (Text Section) */}
-  <div
-    style={{ flex: 1, paddingRight: "30px" }}
-    className="col-6 col-md-12"
-  >
+<div className="row align-items-center justify-content-between mb-5">
+  {/* Image Section - First on mobile */}
+  <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-4 mb-md-0">
+    <img
+      src={magisto}
+      alt="SAS AI representation"
+      style={{ maxWidth: "100%", height: "300px", objectFit: "contain" }}
+      className="img-fluid"
+    />
+  </div>
+
+  {/* Text Section - Second on mobile */}
+  <div className="col-12 col-md-6 order-2 order-md-1" style={{ paddingRight: "30px" }}>
     <p className="text-primary">Grow better, faster</p>
     <h1>SAS AI</h1>
     <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-
     <p>
       SAS AI (SAS Artificial Intelligence) refers to the suite of AI
       tools, machine learning frameworks, and advanced analytics
@@ -667,7 +673,6 @@ const SASAI = () => {
       It combines SAS data science tools, analytics AI, and AI-driven
       solutions that are suitable for businesses of all sizes.
     </p>
-
     <div className="mb-3">
       <a
         href="https://www.sasai.global/chat/"
@@ -679,6 +684,7 @@ const SASAI = () => {
       </a>
     </div>
   </div>
+<<<<<<< HEAD
 
   {/* Right side (Image Section) */}
   <div
@@ -696,7 +702,10 @@ const SASAI = () => {
       style={{ maxWidth: "100%", height: "300px", objectFit: "contain" }}
     />
   </div>
+=======
+>>>>>>> 177b3b42f28ca72dd191ec23f3918e6c42358f5b
 </div>
+
 
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">

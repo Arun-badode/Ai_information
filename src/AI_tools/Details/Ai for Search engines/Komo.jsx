@@ -666,19 +666,23 @@ const Komo = () => {
 
             {/* Right side (Image Section) */}
             <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                width: "100%",
-                height: "250px",
-              }}
-              className="col-12 col-md-6 order-1 order-md-2 mb-5 mb-md-0"
-            >
-              <img
-                src={komo}
-                style={{ maxWidth: "100%", height: "300px" }}
-              />
-            </div>
+  className="col-12 col-md-6 order-1 order-md-2 mb-5 mb-md-0"
+  style={{
+    flex: 1,
+    textAlign: "center",
+    width: "100%",
+  }}
+>
+  <img
+    src={komo}
+    alt="Komo AI"
+    style={{
+      maxWidth: "100%",
+      height: "auto", // ensures full visibility and responsiveness
+    }}
+  />
+</div>
+
           </div>
 
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>

@@ -682,58 +682,44 @@ const Mojeek = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-             
-              className=" col-lg-6 "
-            >
-              <p className="text-primary">
-                Create stunning visuals effortlessly
-              </p>
-              <h1> Mojeek AI </h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+        <div className="row d-flex align-items-center justify-content-between flex-column-reverse flex-md-row mb-1">
+  {/* Text Section */}
+  <div className="col-md-6 col-12">
+    <p className="text-primary">
+      Create stunning visuals effortlessly
+    </p>
+    <h1>Mojeek AI</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
 
-              <p>
-                Mojeek AI is an advanced, privacy-focused search engine that
-                uses artificial intelligence to provide relevant search results
-                while safeguarding user data. Unlike mainstream search engines,
-                Mojeek AI prioritizes user privacy and offers features for
-                businesses, content creators, and marketers to discover
-                information efficiently. By incorporating semantic search, data
-                protection, and content optimization, Mojeek AI is a powerful
-                tool for SEO, content discovery, and web scraping.
-              </p>
+    <p>
+      Mojeek AI is an advanced, privacy-focused search engine that uses artificial intelligence to provide relevant search results while safeguarding user data. Unlike mainstream search engines, Mojeek AI prioritizes user privacy and offers features for businesses, content creators, and marketers to discover information efficiently. By incorporating semantic search, data protection, and content optimization, Mojeek AI is a powerful tool for SEO, content discovery, and web scraping.
+    </p>
 
-            <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
-        <a
-          href="https://www.mojeek.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn btn-primary btn-lg px-4"
-        >
-          Explore Tool
-        </a>
-      </div>
-            </div>
+    <div className="d-flex flex-wrap gap-3 mb-4 mb-lg-0">
+      <a
+        href="https://www.mojeek.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary btn-lg px-4"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src={mojeek}
-                alt="mojeek"
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
-          </div>
+  {/* Image Section */}
+  <div className="col-md-6 col-12 text-center mb-4">
+    <img
+      src={mojeek}
+      alt="mojeek"
+      style={{
+        maxWidth: "100%",
+        height: "auto",
+      }}
+    />
+  </div>
+</div>
+
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>
@@ -855,7 +841,7 @@ const Mojeek = () => {
                   </div>
                 </div>
               </div>
-              );
+              
             </div>
           </section>
 

@@ -76,7 +76,7 @@ const styles = {
   },
 };
 const SynthesiaAI = () => {
-  const [activeTab, setActiveTab] = useState("features"); // Set the default active tab as 'features'
+  const [activeTab, setActiveTab] = useState("Features"); // Set the default active tab as 'features'
   const [showAllFaqs, setShowAllFaqs] = useState(false);
 
   const renderTabContent = () => {
@@ -799,7 +799,7 @@ const SynthesiaAI = () => {
 
               <div className="mb-3">
                 <a
-                  href="https://www.veed.io/"
+                  href="https://www.synthesia.io/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary me-2"
