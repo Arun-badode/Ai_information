@@ -77,7 +77,7 @@ const styles = {
 };
 
 const AppvanceIQ = () => {
-  const [activeTab, setActiveTab] = useState("features"); // Set the default active tab as 'features'
+  const [activeTab, setActiveTab] = useState("Features"); // Set the default active tab as 'features'
   const [openIndex, setOpenIndex] = useState(null);
   const [expandedIndex, setExpandedIndex] = useState(null);
   const [showAllFaqs, setShowAllFaqs] = useState(false);
@@ -687,10 +687,10 @@ const AppvanceIQ = () => {
           <i className="bi bi-arrow-left me-2"></i>Back  {" "}
         </a>
       </div>
-      <div className="bg-dark text-light min-vh-100 py-5">
+      <div className="bg-dark text-light min-vh-100 py-3">
         <div className="container">
          <div className="container-fluid p-0">
-  <div className="row g-0 align-items-center justify-content-between mb-5">
+  <div className="row g-0 align-items-center justify-content-between mb-1">
     {/* Left side (Text Section) - Order changes on mobile */}
     <div className="col-lg-6 col-md-12 p-3 p-lg-5 order-2 order-lg-1">
       <h2 className="display-5 mb-3">Appvance IQ</h2>
@@ -739,6 +739,130 @@ const AppvanceIQ = () => {
     </div>
   </div>
 </div>
+<section style={{ backgroundColor: "", padding: "3rem 0" }}>
+  <div className="container text-center">
+    <p className="text-primary">Create Tests in 3 Simple Steps</p>
+    <h2
+      style={{
+        fontWeight: "semibold",
+        color: "#fff",
+        marginBottom: "1rem",
+      }}
+    >
+      How Appvance AI Works?
+    </h2>
+
+    <div className="row g-4">
+      {/* Step 1 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>
+            {`
+              .step1 {
+                position: absolute;
+                bottom: 10px;
+                right: 15px;
+                font-size: 4rem;
+                font-weight: bold;
+                color: #7b61ff;
+                opacity: 0.6;
+              }
+            `}
+          </style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            AI-Driven Test Generation:
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Appvance AI automatically generates and executes test scripts by
+            understanding application flow—eliminating manual scripting effort.
+          </p>
+          <div className="step1">1</div>
+        </div>
+      </div>
+
+      {/* Step 2 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>
+            {`
+              .step2 {
+                position: absolute;
+                bottom: 10px;
+                right: 15px;
+                font-size: 4rem;
+                font-weight: bold;
+                color: #7b61ff;
+                opacity: 0.6;
+              }
+            `}
+          </style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Continuous Testing:
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            It supports CI/CD pipelines, ensuring rapid feedback and continuous
+            quality checks throughout the software development lifecycle.
+          </p>
+          <div className="step2">2</div>
+        </div>
+      </div>
+
+      {/* Step 3 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>
+            {`
+              .step3 {
+                position: absolute;
+                bottom: 10px;
+                right: 15px;
+                font-size: 4rem;
+                font-weight: bold;
+                color: #7b61ff;
+                opacity: 0.6;
+              }
+            `}
+          </style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Real-User Simulation:
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Appvance AI mimics real-user behavior by exploring applications
+            intelligently, finding hidden bugs missed by manual and scripted tests.
+          </p>
+          <div className="step3">3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
           {/* Tab Navigation */}
           <ul className="nav nav-tabs custom-tabs mb-4">

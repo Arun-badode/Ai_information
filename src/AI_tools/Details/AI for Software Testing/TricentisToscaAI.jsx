@@ -7,7 +7,7 @@ import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
 import tricentisSS1 from '../../../../public/assets/Img/AI for software testing/tricentisSS1.png';
 import tricentisSS2 from '../../../../public/assets/Img/AI for software testing/tricentisSS2.png';
-
+ import tricentis  from '../../../../public/assets/Img/AI for software testing/Tricentis.jpeg';
 
 // review section data
 const reviews = [
@@ -815,7 +815,7 @@ const TricentisToscaAI = () => {
               className="col-6 col-md-12 mb-5  "
             >
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl5IyEpRsYY8JsmOlBNKKmWf5jlOBFs3Ustg&s"
+                src={tricentis}
                 alt="TricentisToscal"
                 style={{ MaxWidth: "100%", height: "300px" }}
               />

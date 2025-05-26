@@ -859,13 +859,15 @@ const XMind = () => {
         <div className="container">
          <div className="row d-flex align-items-center justify-content-between mb-1 flex-column flex-md-row">
   {/* Image First in Mobile, Right Side in Desktop */}
-  <div className="col-12 col-md-6 order-1 order-md-2 mb-3 mb-md-0 text-center">
-    <img
-      src={xmindImg}
-      alt="XMind AI"
-      style={{ width: "100%", height: "300px", objectFit: "cover" }}
-    />
-  </div>
+<div className="col-12 col-md-6 order-1 order-md-2 mb-3 mb-md-0 text-center">
+  <img
+    src={xmindImg}
+    alt="XMind AI"
+    className="img-fluid"
+    style={{ objectFit: "contain", maxHeight: "300px", width: "100%" }}
+  />
+</div>
+
 
   {/* Text After in Mobile, Left Side in Desktop */}
   <div className="col-12 col-md-6 order-2 order-md-1" style={{ paddingRight: "30px" }}>

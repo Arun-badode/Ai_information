@@ -829,7 +829,7 @@ const BoomyAI = () => {
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
           <section style={{ backgroundColor: "#1b1f2b", padding: "3rem 0" }}>
-            <div className="container text-center">
+            <div className="container text-start">
               <div className="row d-flex align-items-center justify-content-between mb-4">
                 {/* Image Section - mobile pe pehle dikhana, desktop pe baad me */}
                 <div

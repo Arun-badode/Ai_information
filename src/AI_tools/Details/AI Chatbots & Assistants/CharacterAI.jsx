@@ -662,13 +662,14 @@ const CharacterAI = () => {
             </div>
 
             {/* Right side (Image Section) */}
-            <div style={{ flex: 1, textAlign: "center" }}>
-              <img
-                src={character}
-                alt="character"
-                style={{ maxWidth: "80%", height: "auto" }}
-              />
-            </div>
+           <div style={{ flex: 1, textAlign: "center" }}>
+                                     <img
+                                       src={character}
+                                       alt="character"
+                                       className="img-fluid rounded-3"
+                                       style={{ maxWidth: "100%", height: "auto" }}
+                                     />
+                                   </div>
           </div>
 
           {/* Tab Navigation */}

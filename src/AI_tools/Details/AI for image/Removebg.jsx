@@ -634,9 +634,19 @@ const RemoveBg = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-       <div className="row align-items-center justify-content-between mb-4">
-  {/* Left side (Text Section) */}
-  <div className="col-lg-6 col-md-12 mb-4 mb-lg-0 pe-lg-4">
+ <div className="row align-items-center justify-content-between mb-4">
+  {/* Image Section - Top on mobile, right on desktop */}
+  <div className="col-12 col-lg-6 order-1 order-lg-2 text-center mb-4 mb-lg-0">
+    <img
+      src={removebg} // Replace with actual image source
+      alt="Removebg AI Example"
+      className="img-fluid"
+      style={{ maxHeight: "300px", objectFit: "contain" }}
+    />
+  </div>
+
+  {/* Text Section - Bottom on mobile, left on desktop */}
+  <div className="col-12 col-lg-6 order-2 order-lg-1 px-4 text-start">
     <p className="text-primary">Create stunning visuals effortlessly</p>
     <h1>Remove.bg AI</h1>
     <div className="text-warning mb-2">⭐⭐⭐⭐⭐</div>
@@ -663,17 +673,8 @@ const RemoveBg = () => {
       </a>
     </div>
   </div>
-
-  {/* Right side (Image Section) */}
-  <div className="col-lg-6 col-md-12 text-center">
-    <img
-      src={magisto} // Replace with actual Remove.bg image URL
-      alt="Removebg AI Example"
-      className="img-fluid"
-      style={{ maxHeight: "300px", objectFit: "contain" }}
-    />
-  </div>
 </div>
+
 
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">

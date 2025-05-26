@@ -880,13 +880,19 @@ const Lucidchart = () => {
         <div className="container">
          <div className="row d-flex align-items-center justify-content-between mb-1 flex-column flex-md-row">
   {/* Image First on Mobile, Right on Desktop */}
-  <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-3 mb-md-0">
-    <img
-      src={lucidchartImg}
-      alt="Lucidchart AI"
-      style={{ width: "100%", height: "300px", objectFit: "cover" }}
-    />
-  </div>
+<div className="col-12 col-md-6 order-1 order-md-2 text-center mb-3 mb-md-0">
+  <img
+    src={lucidchartImg}
+    alt="Lucidchart AI"
+    className="img-fluid"
+    style={{
+      width: "100%",    
+      height: "auto",   
+      objectFit: "contain"  
+    }}
+  />
+</div>
+
 
   {/* Text Second on Mobile, Left on Desktop */}
   <div className="col-12 col-md-6 order-2 order-md-1" style={{ paddingRight: "30px" }}>

@@ -878,12 +878,18 @@ const FreeMind = () => {
        <div className="row d-flex align-items-center justify-content-between mb-1 flex-column flex-md-row">
   {/* Image First on Mobile, Right Side on Desktop */}
   <div className="col-12 col-md-6 order-1 order-md-2 mb-3 mb-md-0 text-center">
-    <img
-      src={freemindImg}
-      alt="FreeMind AI"
-      style={{ width: "100%", height: "300px", objectFit: "cover" }}
-    />
-  </div>
+  <img
+    src={freemindImg}
+    alt="FreeMind AI"
+    className="img-fluid"
+    style={{
+      width: "100%",
+      height: "auto",       
+     objectFit: "contain"  
+    }}
+  />
+</div>
+
 
   {/* Text Second on Mobile, Left Side on Desktop */}
   <div className="col-12 col-md-6 order-2 order-md-1" style={{ paddingRight: "30px" }}>

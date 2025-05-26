@@ -639,7 +639,7 @@ const PowerBI = () => {
     className="col-6 col-md-12"
   >
     <p className="text-primary">Write better, faster</p>
-    <h1>Power AI</h1>
+    <h1>Power BI AI</h1>
     <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
     <p>
       Power BI is a powerful business analytics tool from Microsoft
