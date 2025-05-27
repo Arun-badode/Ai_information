@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
-import magisto from "../../../Images/MagistoAI.png";
+
 import power1 from "../../../../public/assets/Img/AI for Business/power1.png";
 import power2 from "../../../../public/assets/Img/AI for Business/power2.png";
+import powerBI from "../../../../public/assets/Img/AI for Business/powerBi.png";
 // review section data
 const reviews = [
   {

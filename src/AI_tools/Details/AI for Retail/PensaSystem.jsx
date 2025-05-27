@@ -871,49 +871,53 @@ const PensaSystem = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1> Pensa Systems AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Pensa Systems AI is an advanced AI-powered platform specializing
-                in computer vision, machine learning, and deep learning to
-                optimize retail operations. Pensa AI helps retailers automate
-                critical tasks such as inventory management, product
-                recognition, and fraud detection through real-time tracking and
-                visual recognition technologies.
-              </p>
-              <div className="mb-3">
-                <a
-                  href="https://pensasystems.com"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary me-2"
-                >
-                  Explore Tool
-                </a>
-              </div>
+      <div className="row d-flex align-items-center justify-content-between mb-1">
+  {/* Image Section - first on mobile, right on desktop */}
+  <div
+    className="col-12 col-md-6 order-1 order-md-2 mb-4 mb-md-0 text-center"
+    style={{
+      textAlign: "center",
+    }}
+  >
+    <img
+      src={pensa}
+      alt="Pensa Systems"
+      style={{
+        maxWidth: "100%",
+        height: "300px",
+        objectFit: "contain",
+      }}
+    />
+  </div>
 
+  {/* Text Section - below image on mobile, left on desktop */}
+  <div
+    className="col-12 col-md-6 order-2 order-md-1"
+    style={{ paddingRight: "30px" }}
+  >
+    <p className="text-primary">Write better, faster</p>
+    <h1>Pensa Systems AI</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      Pensa Systems AI is an advanced AI-powered platform specializing in
+      computer vision, machine learning, and deep learning to optimize retail
+      operations. Pensa AI helps retailers automate critical tasks such as
+      inventory management, product recognition, and fraud detection through
+      real-time tracking and visual recognition technologies.
+    </p>
+    <div className="mb-3">
+      <a
+        href="https://pensasystems.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary me-2"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
+</div>
 
-            </div>
-
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img src={pensa} style={{ MaxWidth: "100%", height: "300px" }} />
-            </div>
-          </div>
 
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">

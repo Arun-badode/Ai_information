@@ -667,150 +667,147 @@ const BrainlyAI = () => {
 
             {/* Right side (Image Section) */}
            <div
-              style={{ flex: 1, textAlign: "center" }}
-              className="order-1 order-md-2 mb-4 mb-md-0"
-            >
-              <img
-                src={f}
-                className="img-fluid rounded-3"
-                style={{ maxWidth: "80%", height: "auto" }}
-                alt="brainly"
-              />
-            </div>
+  className="col-12 col-md-6 d-flex justify-content-center align-items-center order-1 order-md-2 mb-4 mb-md-0"
+  style={{ textAlign: "center" }}
+>
+  <img
+    src={f}
+    alt="brainly"
+    className="img-fluid rounded-3"
+    style={{ maxWidth: "80%", height: "auto" }}
+  />
+</div>
+
           </div>
-          <section style={{ backgroundColor: "", padding: "3rem 0" }}>
-            <div className="container text-center">
-              <p className="text-primary">Explore in 3 Simple Steps</p>
-              <h2
-                style={{
-                  fontWeight: "semibold",
-                  color: "#fff",
-                  marginBottom: "1rem",
-                }}
-              >
-                How Brainly AI Works
-              </h2>
 
-              <div className="row g-4">
-                {/* Step 1 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#1034A6",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>
-                      {`
-              .step1 {
-                position: absolute;
-                bottom: 10px;
-                right: 15px;
-                font-size: 4rem;
-                font-weight: bold;
-                color: #7b61ff;
-                opacity: 0.6;
-              }
-            `}
-                    </style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      AI-Powered Answers
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Brainly AI uses advanced machine learning algorithms to
-                      understand a student’s question and offer precise,
-                      step-by-step answers. It not only solves problems but also
-                      explains the reasoning behind the answers. This ensures
-                      that students learn
-                    </p>
-                    <div className="step1">1</div>
-                  </div>
-                </div>
+            <section style={{ backgroundColor: "#0b1e3d", padding: "3rem 0" }}>
+  <div className="container text-center">
+    <p className="text-primary">
+      Smarter Study Support—Brainly AI in Action
+    </p>
+    <h2
+      className="text-white"
+      style={{ fontWeight: "600", marginBottom: "1rem" }}
+    >
+      Discover How Brainly AI Enhances Student Learning
+    </h2>
+    <p
+      style={{
+        color: "#ccc",
+        marginBottom: "2rem",
+        fontStyle: "italic",
+      }}
+    >
+      Brainly AI provides instant, step-by-step homework help—making learning
+      easier, faster, and more personalized for students worldwide.
+    </p>
 
-                {/* Step 2 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#1034A6",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>
-                      {`
-              .step2 {
-                position: absolute;
-                bottom: 10px;
-                right: 15px;
-                font-size: 4rem;
-                font-weight: bold;
-                color: #7b61ff;
-                opacity: 0.6;
-              }
-            `}
-                    </style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Personalized Feedback
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Brainly AI assesses a student's previous interactions,
-                      learning style, and progress to deliver personalized AI
-                      learning. Whether it's solving math problems,
-                      understanding scientific concepts, or practicing writing,
-                      Brainly's AI tailors its feedback for every student’s
-                      unique needs.
-                    </p>
-                    <div className="step2">2</div>
-                  </div>
-                </div>
+    <div className="row g-4">
+      {/* Step 1 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .brainly-step1 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #7b61ff;
+              opacity: 0.6;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Instant Homework Assistance
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Brainly AI instantly solves academic questions with clear explanations,
+            helping students understand each step in real time.
+          </p>
+          <div className="brainly-step1">1</div>
+        </div>
+      </div>
 
-                {/* Step 3 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#1034A6",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>
-                      {`
-              .step3 {
-                position: absolute;
-                bottom: 10px;
-                right: 15px;
-                font-size: 4rem;
-                font-weight: bold;
-                color: #7b61ff;
-                opacity: 0.6;
-              }
-            `}
-                    </style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Real-Time Assistance
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Unlike traditional tutoring, Brainly AI offers AI-powered
-                      tutoring services that provide answers instantly. This
-                      reduces the time spent waiting for help, enabling students
-                      to stay on track with their homework or study routine.
-                    </p>
-                    <div className="step3">3</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+      {/* Step 2 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .brainly-step2 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #7b61ff;
+              opacity: 0.6;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Personalized Learning Support
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            With adaptive AI, Brainly tailors answers based on student learning
+            levels, ensuring concepts are explained in an easy-to-grasp way.
+          </p>
+          <div className="brainly-step2">2</div>
+        </div>
+      </div>
+
+      {/* Step 3 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .brainly-step3 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #7b61ff;
+              opacity: 0.6;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Builds Confidence Through Practice
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            By guiding students through similar problems, Brainly AI strengthens
+            subject mastery and boosts independent problem-solving skills.
+          </p>
+          <div className="brainly-step3">3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
           {/* Tab Navigation */}
           <ul className="nav nav-tabs custom-tabs mb-4">

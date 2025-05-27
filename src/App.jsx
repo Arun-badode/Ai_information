@@ -6,7 +6,7 @@ import BreadcrumbScroll from "./AI_tools/Details/Layout/BreadcrumbScroll";
 import Footer from "./AI_tools/Details/Layout/Footer";
 import HomePage from "./AI_tools/HomePage";
 import Aitools from "./AI_tools/AiTools";
-import ImageMindAI from "./AI_tools/ImageMindAI";
+
 import AiLearningHub from "./AI_tools/AiLearningHub";
 import AIComparisonPage from "./AI_tools/AIComparisonPage";
 import AboutPage from "./AI_tools/AboutUs";
@@ -38,7 +38,6 @@ import Chatgpt from "./AI_tools/Details/AI Chatbots & Assistants/Chatgpt";
 import Tidio from "./AI_tools/Details/AI Chatbots & Assistants/Tidio";
 import CharacterAI from "./AI_tools/Details/AI Chatbots & Assistants/CharacterAI";
 import PiAI from "./AI_tools/Details/AI Chatbots & Assistants/PiAI";
-import DriftAI from "./AI_tools/Details/AI Chatbots & Assistants/DriftAI";
 import FlowXO from "./AI_tools/Details/AI Chatbots & Assistants/FlowXO";
 import Botsify from "./AI_tools/Details/AI Chatbots & Assistants/Botsify";
 import AivoAI from "./AI_tools/Details/AI Chatbots & Assistants/AivoAI";
@@ -317,7 +316,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/aitools" element={<Aitools />} />
-        <Route path="/imagemindai" element={<ImageMindAI />} />
+      
         <Route path="/ailearninghub" element={<AiLearningHub />} />
         <Route path="/aicomparisonpage" element={<AIComparisonPage />} />
         <Route path="/aboutus" element={<AboutPage />} />
@@ -342,7 +341,6 @@ const App = () => {
         <Route path="/tidio" element={<Tidio />}></Route>
         <Route path="/characterai" element={<CharacterAI />}></Route>
         <Route path="/piai" element={<PiAI />}></Route>
-        <Route path="/driftai" element={<DriftAI />}></Route>
         <Route path="/flowxo" element={<FlowXO />}></Route>
         <Route path="/Botsify" element={<Botsify />}></Route>
         <Route path="/aivoai" element={<AivoAI />}></Route>
@@ -470,7 +468,7 @@ const App = () => {
         ></Route>
         <Route path="/ScalenutAI" element={<ScalenutAI />}></Route>
         <Route path="/SurferSEOAI" element={<SurferSEOAI />}></Route>
-        <Route path="/WriterZenAI " element={<WriterZenAI />}></Route>
+        <Route path="/WriterZenAI" element={<WriterZenAI />}></Route>
         {/* Ai for SEO   ENd  */}
         {/* Ai for Music */}
         <Route path="/AmperMusicAI" element={<AmperMusicAI />}></Route>

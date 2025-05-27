@@ -810,71 +810,64 @@ const RainforestQA = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>Rainforest QA</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Rainforest QA is an AI-powered, cloud-based testing platform
-                that enables teams to automate manual testing processes for web
-                and mobile applications. With a focus on delivering
-                high-quality, efficient, and scalable testing solutions,
-                Rainforest QA integrates into CI/CD pipelines and enhances the
-                test automation process for cross-platform, web, and mobile
-                applications.
-              </p>
+         <div className="row d-flex align-items-center justify-content-between mb-1">
+  {/* Image Section - first on mobile, right on desktop */}
+  <div
+    className="col-12 col-md-6 order-1 order-md-2 mb-4 mb-md-0 text-center"
+    style={{
+      textAlign: "center",
+    }}
+  >
+    <img
+      src={Rainforest}
+      alt="Rainforest QA"
+      style={{
+        maxWidth: "100%",
+        height: "300px",
+        objectFit: "contain",
+      }}
+    />
+  </div>
 
-              <p>
-                Rainforest’s AI-powered testing capabilities optimize the
-                testing workflow by providing automated regression tests, UI
-                testing, functional testing, and more, helping teams detect
-                issues faster, minimize manual effort, and maintain application
-                quality in real-time. Rainforest QA supports end-to-end testing,
-                API testing, and performance testing, offering flexible
-                solutions for developers, QA engineers, and product managers to
-                automate various aspects of their testing.
-              </p>
+  {/* Text Section - below image on mobile, left on desktop */}
+  <div
+    className="col-12 col-md-6 order-2 order-md-1"
+    style={{ paddingRight: "30px" }}
+  >
+    <p className="text-primary">Write better, faster</p>
+    <h1>Rainforest QA</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      Rainforest QA is an AI-powered, cloud-based testing platform that enables
+      teams to automate manual testing processes for web and mobile
+      applications. With a focus on delivering high-quality, efficient, and
+      scalable testing solutions, Rainforest QA integrates into CI/CD pipelines
+      and enhances the test automation process for cross-platform, web, and
+      mobile applications.
+    </p>
+    <p>
+      Rainforest’s AI-powered testing capabilities optimize the testing workflow
+      by providing automated regression tests, UI testing, functional testing,
+      and more, helping teams detect issues faster, minimize manual effort, and
+      maintain application quality in real-time. Rainforest QA supports
+      end-to-end testing, API testing, and performance testing, offering
+      flexible solutions for developers, QA engineers, and product managers to
+      automate various aspects of their testing.
+    </p>
 
-              <div className="mb-3">
-              
+    <div className="mb-3">
+      <a
+        href="https://rainforest.zone/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary me-2"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
+</div>
 
-
-
-                <a
- 
-   href=" https://applitools.com/"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="btn btn-primary me-2"
->
-  Explore Tool
-</a>
-
-              </div>
-            </div>
-
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-     src={Rainforest}
-     alt="rainforest"
-style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
-          </div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Create Videos in 3 Simple Steps</p>

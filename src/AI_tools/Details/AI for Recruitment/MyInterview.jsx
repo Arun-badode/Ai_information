@@ -5,6 +5,7 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
+import MyInterview from "../../../../public/assets/Img/AI for Recruitment/Ai for recruiment/MyInterview.png";
 import myin1 from "../../../../public/assets/Img/AI for Recruitment/myin-s1.png";
 import myin2 from "../../../../public/assets/Img/AI for Recruitment/myin-s2.png";
 
@@ -772,6 +773,7 @@ const MyInterView = () => {
         href="https://www.myinterview.com"
         rel="noopener noreferrer"
         className="btn btn-primary me-2"
+        target="_blank"
       >
         Explore Tool
       </a>
@@ -781,7 +783,7 @@ const MyInterView = () => {
   {/* Right side (Image Section) */}
   <div className="col-md-6 col-12 mb-4 text-center">
     <img
-      src="public\assets\Img\AI for Recruitment\Ai for recruiment\MyInterview.png"
+      src={MyInterview}
       alt="MyInterview AI"
       style={{ maxWidth: "100%", height: "300px", objectFit: "contain" }}
     />

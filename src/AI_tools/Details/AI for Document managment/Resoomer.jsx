@@ -856,6 +856,9 @@ const Resoomer = () => {
       href="https://resoomer.ai/en/"
       rel="noopener noreferrer"
       className="btn btn-primary me-2"
+      
+       
+        target="_blank"
     >
       Explore Tool
     </a>

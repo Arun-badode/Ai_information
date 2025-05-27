@@ -885,6 +885,7 @@ const Zippin = () => {
           href="https://www.getzippin.com/"
           rel="noopener noreferrer"
           className="btn btn-primary me-2"
+          target="blank"
         >
           Explore Tool
         </a>

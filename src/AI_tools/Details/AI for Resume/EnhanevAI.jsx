@@ -264,9 +264,8 @@ const EnhanevAI = () => {
                   <div className="accordion-item mb-3" key={item.id}>
                     <h2 className="accordion-header" id={`heading${item.id}`}>
                       <button
-                        className={`accordion-button ${
-                          i !== 0 ? "collapsed" : ""
-                        }`}
+                        className={`accordion-button ${i !== 0 ? "collapsed" : ""
+                          }`}
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target={`#collapse${item.id}`}
@@ -283,9 +282,8 @@ const EnhanevAI = () => {
                     </h2>
                     <div
                       id={`collapse${item.id}`}
-                      className={`accordion-collapse collapse ${
-                        i === 0 ? "show" : ""
-                      }`}
+                      className={`accordion-collapse collapse ${i === 0 ? "show" : ""
+                        }`}
                       aria-labelledby={`heading${item.id}`}
                       data-bs-parent="#faqAccordion"
                     >
@@ -845,6 +843,10 @@ const EnhanevAI = () => {
               </div>
             </div>
 
+
+
+
+
             {/* Right side (Image Section) */}
             <div
               style={{
@@ -855,13 +857,16 @@ const EnhanevAI = () => {
               className="col-md-6 col-12 order-md-2 order-1 text-center mb-3 mb-md-0  "
             >
               <img
+
+
                 src={enhanev}
                 alt="Enhancv AI"
                 style={{
                   Width: "100%",
                   height: "auto",
-                  maxHeight: "300px",
+                  maxHeight: "400px",
                   objectFit: "contain",
+                  marginTop:"20px"
                 }}
               />
             </div>

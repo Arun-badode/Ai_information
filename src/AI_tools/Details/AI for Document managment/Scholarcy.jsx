@@ -857,6 +857,9 @@ const Scholarcy = () => {
       href="https://www.scholarcy.com"
       rel="noopener noreferrer"
       className="btn btn-primary me-2"
+       
+       
+        target="_blank"
     >
       Explore Tool
     </a>
@@ -864,138 +867,130 @@ const Scholarcy = () => {
 </div>
 
 
-          <section style={{ backgroundColor: "#1b1f2b", padding: "3rem 0" }}>
-            <div className="container text-center">
-              <p className="text-primary">
-                Your AI Assistant for Academic and Technical Summaries
-              </p>
-              <h2
-                className="text-white"
-                style={{ fontWeight: "600", marginBottom: "1rem" }}
-              >
-                Discover How Scholarcy Adapts to Your Needs, Instantly and
-                Safely
-              </h2>
-              <p
-                style={{
-                  color: "#ccc",
-                  marginBottom: "2rem",
-                  fontStyle: "italic",
-                }}
-              >
-                Scholarcy transforms research papers, articles, and lengthy
-                documents into bite-sized, customizable summaries—ready to use
-                without worrying about copyright issues.
-              </p>
+      <section style={{ backgroundColor: "#0b1e3d", padding: "3rem 0" }}>
+  <div className="container text-center">
+    <p className="text-primary">
+      Accelerate Research—Scholarcy AI in Action
+    </p>
+    <h2
+      className="text-white"
+      style={{ fontWeight: "600", marginBottom: "1rem" }}
+    >
+      Discover How Scholarcy AI Streamlines Academic Reading
+    </h2>
+    <p
+      style={{
+        color: "#ccc",
+        marginBottom: "2rem",
+        fontStyle: "italic",
+      }}
+    >
+      Scholarcy AI automatically summarizes research papers, highlights key points, and extracts essential data to help researchers save time.
+    </p>
 
-              <div className="row g-4">
-                {/* Step 1 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#0b6d63",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
-          .scholarcy-step1 {
-            position: absolute;
-            bottom: 10px;
-            right: 15px;
-            font-size: 4rem;
-            font-weight: bold;
-            color: #4ce1b6;
-            opacity: 0.6;
-          }
-        `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Extract Key Findings from Research
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Scholarcy scans your documents and highlights key
-                      insights, methods, and outcomes, giving you a quick grasp
-                      of academic content.
-                    </p>
-                    <div className="scholarcy-step1">1</div>
-                  </div>
-                </div>
+    <div className="row g-4">
+      {/* Step 1 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .scholarcy-step1 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #7b61ff;
+              opacity: 0.6;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Automatic Paper Summarization
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Scholarcy AI reads research papers and generates concise summaries, helping you grasp core ideas quickly.
+          </p>
+          <div className="scholarcy-step1">1</div>
+        </div>
+      </div>
 
-                {/* Step 2 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#0b6d63",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
-          .scholarcy-step2 {
-            position: absolute;
-            bottom: 10px;
-            right: 15px;
-            font-size: 4rem;
-            font-weight: bold;
-            color: #4ce1b6;
-            opacity: 0.6;
-          }
-        `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Customize Summary Format and Scope
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Adjust the summary output to focus on conclusions,
-                      references, or data—perfect for tailored reviews and
-                      annotated bibliographies.
-                    </p>
-                    <div className="scholarcy-step2">2</div>
-                  </div>
-                </div>
+      {/* Step 2 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .scholarcy-step2 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #7b61ff;
+              opacity: 0.6;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Key Point Highlighting
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Extracts important facts, figures, and references to guide your research focus.
+          </p>
+          <div className="scholarcy-step2">2</div>
+        </div>
+      </div>
 
-                {/* Step 3 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#0b6d63",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
-          .scholarcy-step3 {
-            position: absolute;
-            bottom: 10px;
-            right: 15px;
-            font-size: 4rem;
-            font-weight: bold;
-            color: #4ce1b6;
-            opacity: 0.6;
-          }
-        `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Reuse Freely with No Copyright Worries
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      All summaries are editable and safe to reuse in
-                      presentations, learning notes, and content briefs—without
-                      violating any copyright.
-                    </p>
-                    <div className="scholarcy-step3">3</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+      {/* Step 3 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .scholarcy-step3 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #7b61ff;
+              opacity: 0.6;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Research Data Extraction
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Quickly pull out key tables, figures, and references to accelerate literature reviews.
+          </p>
+          <div className="scholarcy-step3">3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
           {/* Tab Navigation */}
           <ul className="nav nav-tabs custom-tabs mb-4">

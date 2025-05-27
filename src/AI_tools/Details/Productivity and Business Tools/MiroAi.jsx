@@ -75,7 +75,7 @@ const styles = {
 };
 
 const MiroAi = () => {
-  const [activeTab, setActiveTab] = useState("features");
+  const [activeTab, setActiveTab] = useState("Features");
   const [openIndex, setOpenIndex] = useState(null);
   const [expandedIndex, setExpandedIndex] = useState(null);
   const [showAllFaqs, setShowAllFaqs] = useState(false);
@@ -612,6 +612,129 @@ const MiroAi = () => {
      />
    </div>
 </div>
+<section style={{ backgroundColor: "#0b1e3d", padding: "3rem 0" }}>
+  <div className="container text-center">
+    <p className="text-primary">
+      Collaborate Smarter—Miro AI in Action
+    </p>
+    <h2
+      className="text-white"
+      style={{ fontWeight: "600", marginBottom: "1rem" }}
+    >
+      Discover How Miro AI Boosts Visual Collaboration & Ideation
+    </h2>
+    <p
+      style={{
+        color: "#ccc",
+        marginBottom: "2rem",
+        fontStyle: "italic",
+      }}
+    >
+      Miro AI helps teams brainstorm, summarize, and organize ideas faster—turning whiteboards into intelligent hubs of creativity and action.
+    </p>
+
+    <div className="row g-4">
+      {/* Step 1 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .miro-step1 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #7b61ff;
+              opacity: 0.6;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            AI-Powered Brainstorming
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Generate ideas and mind maps instantly—Miro AI suggests topics and expands concepts to fuel innovation.
+          </p>
+          <div className="miro-step1">1</div>
+        </div>
+      </div>
+
+      {/* Step 2 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .miro-step2 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #7b61ff;
+              opacity: 0.6;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Automatic Summarization
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Miro AI summarizes sticky notes, clusters ideas, and reduces clutter—making collaboration clearer and faster.
+          </p>
+          <div className="miro-step2">2</div>
+        </div>
+      </div>
+
+      {/* Step 3 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .miro-step3 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #7b61ff;
+              opacity: 0.6;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Visual Collaboration Boost
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Accelerate team workflows by turning notes into tasks, diagrams, or action items—all within Miro’s whiteboard.
+          </p>
+          <div className="miro-step3">3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
           {/* Tab Navigation */}

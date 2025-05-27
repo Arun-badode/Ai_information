@@ -626,6 +626,7 @@ const AnonosAI = () => {
                   href="https://www.anonos.com"
                   rel="noopener noreferrer"
                   className="btn btn-primary me-2"
+                    target="_blank"
                 >
                   Explore Tool
                 </a>
@@ -640,7 +641,7 @@ const AnonosAI = () => {
                                  <img
                                    src={b}
                                    className="img-fluid rounded-3"
-                                   style={{ maxWidth: "80%", height: "auto" }}
+                                   style={{ maxWidth: "100%", height: "auto" }}
                                    alt="Anonos Ai"
                                  />
                                </div>

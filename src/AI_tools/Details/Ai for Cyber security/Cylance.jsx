@@ -4,6 +4,8 @@ import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import magisto from "../../../Images/MagistoAI.png";
 import cylance from "../../../../public/assets/Img/AI for Cybersecurity/9.png";
+import s1 from "../../../../public/assets/Img/AI for Cybersecurity/cylance-s1.png";
+import s2 from "../../../../public/assets/Img/AI for Cybersecurity/cylance-s2.png";
 // review section data
 const reviews = [
   {
@@ -130,14 +132,14 @@ const Cylance = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <img
-                src="https://images.wondershare.com/filmora/article-images/photos-into-video-app-8.jpg"
+                src={s2}
                 alt="cylance"
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />
             </div>
             <div className="col-md-6">
               <img
-                src="https://www.tipard.com/images/editor/free-online-video-editor/magisto.jpg"
+                src={s1}
                 cylance
                 className="img-fluid rounded-3  w-100 h-100 object-fit-cover"
               />

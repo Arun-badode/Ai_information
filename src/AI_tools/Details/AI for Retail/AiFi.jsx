@@ -924,7 +924,7 @@ const AiFi = () => {
 
               <div className="row g-4">
                 {/* Step 1 */}
-                <div className="col-md-4">
+                <div className="col-md-4 border-primary rounded">
                   <div
                     style={{
                       position: "relative",
@@ -958,7 +958,7 @@ const AiFi = () => {
                 </div>
 
                 {/* Step 2 */}
-                <div className="col-md-4">
+                <div className="col-md-4   ">
                   <div
                     style={{
                       position: "relative",

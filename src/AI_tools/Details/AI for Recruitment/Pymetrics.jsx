@@ -5,6 +5,7 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
+import Pymetricse from "../../../../public/assets/Img/AI for Recruitment/Ai for recruiment/Pymetrics.png"
 import py1 from "../../../../public/assets/Img/AI for Recruitment/py-s1.png";
 import py2 from "../../../../public/assets/Img/AI for Recruitment/py-s2.png";
 
@@ -812,7 +813,7 @@ const Pymetrics = () => {
   <div className="col-lg-6 col-md-12 order-lg-2 order-1">
     <div className="ratio ratio-16x9">
       <img
-        src="public\assets\Img\AI for Recruitment\Ai for recruiment\Pymetrics.png"
+        src={Pymetricse}
         className="img-fluid rounded-3 object-fit-cover"
         alt="Pymetrics AI Assessment Platform"
         loading="lazy"

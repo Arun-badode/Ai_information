@@ -801,64 +801,65 @@ const ApplitoolsAI = () => {
       </div>
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
-          <div className=" row d-flex align-items-center justify-content-between mb-1">
-            {/* Left side (Text Section) */}
-            <div
-              style={{ flex: 1, paddingRight: "30px" }}
-              className="col-6 col-md-12 "
-            >
-              <p className="text-primary">Write better, faster</p>
-              <h1>Applitools AI</h1>
-              <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
-              <p>
-                Applitools AI is a cutting-edge visual testing and AI-powered
-                automated testing tool designed for developers and QA engineers.
-                It uses visual AI to provide highly accurate and efficient
-                visual testing solutions for web and mobile applications,
-                enabling businesses to automate UI and regression testing
-                processes. Applitools integrates seamlessly into CI/CD pipelines
-                and works on cloud-based testing platforms, offering an
-                automated way to ensure high-quality user interfaces across
-                different devices, platforms, and browsers
-              </p>
+         <div className="row d-flex align-items-center justify-content-between mb-1">
+  {/* Image Section - first on mobile, right on desktop */}
+  <div
+    className="col-12 col-md-6 order-1 order-md-2 mb-4 mb-md-0 text-center"
+    style={{
+      textAlign: "center",
+    }}
+  >
+    <img
+      src={applitool}
+      alt="Applitools"
+      style={{
+        maxWidth: "100%",
+        height: "300px",
+        objectFit: "contain",
+      }}
+    />
+  </div>
 
-              <p>
-                The Applitools Visual AI is unique in that it doesn’t just check
-                for pixel-perfect comparisons but can also detect visual bugs
-                that could impact user experience. Applitools helps speed up
-                visual regression testing and functional testing with advanced
-                image comparison, screenshot comparisons, and real-time feedback
-              </p>
+  {/* Text Section - below image on mobile, left on desktop */}
+  <div
+    className="col-12 col-md-6 order-2 order-md-1"
+    style={{ paddingRight: "30px" }}
+  >
+    <p className="text-primary">Write better, faster</p>
+    <h1>Applitools AI</h1>
+    <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
+    <p>
+      Applitools AI is a cutting-edge visual testing and AI-powered automated
+      testing tool designed for developers and QA engineers. It uses visual AI
+      to provide highly accurate and efficient visual testing solutions for web
+      and mobile applications, enabling businesses to automate UI and regression
+      testing processes. Applitools integrates seamlessly into CI/CD pipelines
+      and works on cloud-based testing platforms, offering an automated way to
+      ensure high-quality user interfaces across different devices, platforms,
+      and browsers.
+    </p>
 
-             <div className="mb-3">
-        <a
-          href="applitools.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn btn-primary me-2"
-        >
-          Explore Tool
-        </a>
-      </div>
-            </div>
+    <p>
+      The Applitools Visual AI is unique in that it doesn’t just check for
+      pixel-perfect comparisons but can also detect visual bugs that could
+      impact user experience. Applitools helps speed up visual regression
+      testing and functional testing with advanced image comparison, screenshot
+      comparisons, and real-time feedback.
+    </p>
 
-            {/* Right side (Image Section) */}
-            <div
-              style={{
-                flex: 1,
-                textAlign: "center",
-                Width: "100%",
-                height: "250px",
-              }}
-              className="col-6 col-md-12 mb-5  "
-            >
-              <img
-                src={applitool}
-                alt="applitool"
-                style={{ MaxWidth: "100%", height: "300px" }}
-              />
-            </div>
-          </div>
+    <div className="mb-3">
+      <a
+        href="https://applitools.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary me-2"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
+</div>
+
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Create Videos in 3 Simple Steps</p>

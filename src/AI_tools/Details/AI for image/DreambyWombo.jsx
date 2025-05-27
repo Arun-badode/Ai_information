@@ -684,16 +684,16 @@ const DreambyWombo = () => {
       <div className="bg-dark text-light min-vh-100 py-5">
         <div className="container">
         <div className="row align-items-center mb-4 flex-column flex-lg-row-reverse">
-  {/* Image Section (Top in mobile, Right in desktop) */}
+  {/* Image Section (Right on desktop, Top on mobile) */}
   <div className="col-lg-6 col-md-12 text-center mb-4 mb-lg-0">
     <img
       src={dreambywombo}
       alt="Dream by Wombo"
-      style={{ width: "100%", maxHeight: "300px", objectFit: "contain" }}
+      style={{ maxWidth: "100%", height: "auto", borderRadius: "8px" }}
     />
   </div>
 
-  {/* Text Section (Bottom in mobile, Left in desktop) */}
+  {/* Text Section (Left on desktop, Bottom on mobile) */}
   <div className="col-lg-6 col-md-12 pe-lg-4">
     <p className="text-primary">Write better, faster</p>
     <h1>Dream by Wombo</h1>
@@ -707,18 +707,40 @@ const DreambyWombo = () => {
       explore the potential of AI in the world of art, Dream by Wombo
       offers an easy and fun way to create digital artwork.
     </p>
+    <div className="mb-3">
+      <a
+        href="https://dream.ai/metamask"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary me-2"
+      >
+        Explore Tool
+      </a>
+    </div>
+  </div>
+</div>
 
-             <div className="mb-3">
-                <a
-                  href="https://dream.ai/metamask"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary me-2"
-                >
-                  Explore Tool
-                </a>
-              </div>
-            </div>
+ <section style={{ backgroundColor: "#0b1e3d", padding: "3rem 0" }}>
+  <div className="container text-center">
+    <p className="text-primary">
+      Turn Imagination into Art—Dream by Wombo AI
+    </p>
+    <h2
+      className="text-white"
+      style={{ fontWeight: "600", marginBottom: "1rem" }}
+    >
+      Discover How Dream by Wombo AI Creates Stunning AI Art Instantly
+    </h2>
+    <p
+      style={{
+        color: "#ccc",
+        marginBottom: "2rem",
+        fontStyle: "italic",
+      }}
+    >
+      Dream by Wombo AI transforms simple text prompts into breathtaking visuals—
+      letting anyone become a digital artist with just their imagination.
+    </p>
 
             {/* Right side (Image Section) */}
             <div
@@ -733,7 +755,7 @@ const DreambyWombo = () => {
               <img src="" alt="Dream By Wombo"  style={{ MaxWidth: "100%", height: "300px" }} />
             </div>
           </div>
-          <section style={{ backgroundColor: "", padding: "3rem 0" }}>
+          <section style={{ backgroundColor: "", padding: "3rem" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>
               <h2
@@ -746,115 +768,76 @@ const DreambyWombo = () => {
                 How to Use Dream by Wombo?
               </h2>
 
-              <div className="row g-4">
-                {/* Step 1 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#1034A6",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>
-                      {`
-              .step1 {
-                position: absolute;
-                bottom: 10px;
-                right: 15px;
-                font-size: 4rem;
-                font-weight: bold;
-                color: #7b61ff;
-                opacity: 0.6;
-              }
-            `}
-                    </style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      {" "}
-                      Enter a text prompt
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      into the input box.
-                    </p>
-                    <div className="step1">1</div>
-                  </div>
-                </div>
+      {/* Step 2 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .wombo-step2 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #7b61ff;
+              opacity: 0.6;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Wide Range of Styles
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Choose from various artistic styles—whether surreal, fantasy, or anime—to match your creative vision.
+          </p>
+          <div className="wombo-step2">2</div>
+        </div>
+      </div>
 
-                {/* Step 2 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#1034A6",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>
-                      {`
-              .step2 {
-                position: absolute;
-                bottom: 10px;
-                right: 15px;
-                font-size: 4rem;
-                font-weight: bold;
-                color: #7b61ff;
-                opacity: 0.6;
-              }
-            `}
-                    </style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Hit generate
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      generate and let the AI create your artwork.
-                    </p>
-                    <div className="step2">2</div>
-                  </div>
-                </div>
+      {/* Step 3 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .wombo-step3 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #7b61ff;
+              opacity: 0.6;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Instant Download & Share
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Download your artwork or share it instantly—perfect for prints, NFTs, or simply showcasing your imagination.
+          </p>
+          <div className="wombo-step3">3</div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+</section>
 
-                {/* Step 3 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#1034A6",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>
-                      {`
-              .step3 {
-                position: absolute;
-                bottom: 10px;
-                right: 15px;
-                font-size: 4rem;
-                font-weight: bold;
-                color: #7b61ff;
-                opacity: 0.6;
-              }
-            `}
-                    </style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Download or share
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      your image once it’s ready.
-                    </p>
-                    <div className="step3">3</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
 
           {/* Tab Navigation */}
           <ul className="nav nav-tabs custom-tabs mb-4">

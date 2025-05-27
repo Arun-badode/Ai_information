@@ -652,6 +652,7 @@ const Adam = () => {
                   href="https://adam.ai/"
                   rel="noopener noreferrer"
                   className="btn btn-primary me-2"
+                  target="_blank"
                 >
                   Explore Tool
                 </a>
@@ -664,6 +665,7 @@ const Adam = () => {
                 textAlign: "center",
                 Width: "100%",
                 height: "250px",
+
               }}
               className="col-md-6 col-12 order-md-2 order-1 text-center mb-3 mb-md-0  "
             >

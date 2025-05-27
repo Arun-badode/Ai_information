@@ -872,6 +872,7 @@ const BrieflyAI = () => {
         href="https://www.brieflyai.com"
         rel="noopener noreferrer"
         className="btn btn-primary me-2"
+        target="_blank"
       >
         Explore Tool
       </a>
@@ -879,137 +880,135 @@ const BrieflyAI = () => {
   </div>
 </div>
 
-          <section style={{ backgroundColor: "#1b1f2b", padding: "3rem 0" }}>
-            <div className="container text-center">
-              <p className="text-primary">
-                Your Smart Summarizer for Research and Technical Content
-              </p>
-              <h2
-                className="text-white"
-                style={{ fontWeight: "600", marginBottom: "1rem" }}
-              >
-                See How UpSum.ai Delivers Tailored Summaries, Instantly and
-                Without Restrictions
-              </h2>
-              <p
-                style={{
-                  color: "#ccc",
-                  marginBottom: "2rem",
-                  fontStyle: "italic",
-                }}
-              >
-                UpSum.ai turns complex research, articles, and documentation
-                into personalized, easy-to-digest summaries—designed for your
-                needs and copyright-free.
-              </p>
+         
+                    <section style={{ backgroundColor: "#0b1e3d", padding: "3rem 0" }}>
+  <div className="container text-center">
+    <p className="text-primary">
+      Boost Creative Efficiency—Briefly AI in Action
+    </p>
+    <h2
+      className="text-white"
+      style={{ fontWeight: "600", marginBottom: "1rem" }}
+    >
+      Discover How Briefly AI Simplifies Strategic Briefing
+    </h2>
+    <p
+      style={{
+        color: "#ccc",
+        marginBottom: "2rem",
+        fontStyle: "italic",
+      }}
+    >
+      Briefly AI turns raw ideas into structured, goal-oriented briefs—helping
+      marketing teams collaborate and deliver faster with creative precision.
+    </p>
 
-              <div className="row g-4">
-                {/* Step 1 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#0b6d63",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
-            .upsum-step1 {
+    <div className="row g-4">
+      {/* Step 1 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .briefly-step1 {
               position: absolute;
               bottom: 10px;
               right: 15px;
               font-size: 4rem;
               font-weight: bold;
-              color: #4ce1b6;
+              color: #7b61ff;
               opacity: 0.6;
             }
           `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Capture Critical Points in Seconds
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      UpSum.ai quickly scans your text and pinpoints essential
-                      ideas, methods, and results—saving you hours of reading.
-                    </p>
-                    <div className="upsum-step1">1</div>
-                  </div>
-                </div>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Auto-Generates Creative Briefs
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Briefly AI quickly converts minimal input into detailed briefs—saving
+            hours while aligning teams on project goals.
+          </p>
+          <div className="briefly-step1">1</div>
+        </div>
+      </div>
 
-                {/* Step 2 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#0b6d63",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
-            .upsum-step2 {
+      {/* Step 2 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .briefly-step2 {
               position: absolute;
               bottom: 10px;
               right: 15px;
               font-size: 4rem;
               font-weight: bold;
-              color: #4ce1b6;
+              color: #7b61ff;
               opacity: 0.6;
             }
           `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Control What and How It Summarizes
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Choose to emphasize conclusions, figures, or citations.
-                      UpSum.ai adapts the structure to match your academic,
-                      business, or personal goals.
-                    </p>
-                    <div className="upsum-step2">2</div>
-                  </div>
-                </div>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Centralized Team Collaboration
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Teams and stakeholders co-edit briefs in real-time, adding clarity and
+            cutting delays from feedback loops.
+          </p>
+          <div className="briefly-step2">2</div>
+        </div>
+      </div>
 
-                {/* Step 3 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#0b6d63",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
-            .upsum-step3 {
+      {/* Step 3 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .briefly-step3 {
               position: absolute;
               bottom: 10px;
               right: 15px;
               font-size: 4rem;
               font-weight: bold;
-              color: #4ce1b6;
+              color: #7b61ff;
               opacity: 0.6;
             }
           `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Use Freely—No Copyright Limitations
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      UpSum.ai generates summaries that are free from copyright
-                      concerns, allowing you to reuse them in reports, blogs,
-                      and study guides with peace of mind.
-                    </p>
-                    <div className="upsum-step3">3</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Ensures Strategic Alignment
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Briefly AI keeps every campaign aligned with brand messaging,
+            audience insights, and marketing KPIs.
+          </p>
+          <div className="briefly-step3">3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
           {/* Tab Navigation */}
           <ul className="nav nav-tabs custom-tabs mb-4">

@@ -658,6 +658,7 @@ const Rossntelligence = () => {
                   href="https://blog.rossintelligence.com/"
                   rel="noopener noreferrer"
                   className="btn btn-primary me-2"
+                  target="_blank"
                 >
                   Explore Tool
                 </a>

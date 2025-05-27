@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
-import google from "../../../../public/assets/Img/AI for Business/google.png";
+
 import heap1 from "../../../../public/assets/Img/AI for Business/heap1.png";
 import heap2 from "../../../../public/assets/Img/AI for Business/heap2.png";
-
+import heap from "../../../../public/assets/Img/AI for Business/heap.png";
 // review section data
 const reviews = [
   {

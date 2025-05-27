@@ -685,17 +685,18 @@ const SmartSparrow = () => {
             </div>
 
             {/* Right side (Image Section) */}
-      <div
-              style={{ flex: 1, textAlign: "center" }}
-              className="order-1 order-md-2 mb-4 mb-md-0"
-            >
-              <img
-                src={d}
-                className="img-fluid rounded-3"
-                style={{ maxWidth: "80%", height: "auto" }}
-                alt="smartSparrow"
-              />
-            </div>          </div>
+     <div
+  className="col-12 col-md-6 d-flex justify-content-center align-items-center order-1 order-md-2 mb-4 mb-md-0"
+  style={{ textAlign: "center" }}
+>
+  <img
+    src={d}
+    alt="smartSparrow"
+    className="img-fluid rounded-3"
+    style={{ maxWidth: "80%", height: "auto" }}
+  />
+</div>
+         </div>
           <section style={{ backgroundColor: "", padding: "3rem 0" }}>
             <div className="container text-center">
               <p className="text-primary">Explore in 3 Simple Steps</p>

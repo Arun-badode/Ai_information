@@ -850,9 +850,11 @@ const DeepDyveAI = () => {
       databases.
     </p>
     <a
+    
       href="https://www.deepdyve.com"
       rel="noopener noreferrer"
       className="btn btn-primary me-2"
+       target="_blank"
     >
       Explore Tool
     </a>
@@ -860,137 +862,133 @@ const DeepDyveAI = () => {
 </div>
 
 
-          <section style={{ backgroundColor: "#1b1f2b", padding: "3rem 0" }}>
-            <div className="container text-center">
-              <p className="text-primary">
-                Smarter Writing with Context-Aware, Custom Rewording by DeepDyve
-                AI
-              </p>
-              <h2
-                className="text-white"
-                style={{ fontWeight: "600", marginBottom: "1rem" }}
-              >
-                See How DeepDyve AI Adapts Complex Content — Ethically and
-                Uniquely Yours
-              </h2>
-              <p
-                style={{
-                  color: "#ccc",
-                  marginBottom: "2rem",
-                  fontStyle: "italic",
-                }}
-              >
-                DeepDyve AI rephrases academic and technical content to match
-                your voice and intent— all while ensuring originality and legal
-                clarity for any use.
-              </p>
+      <section style={{ backgroundColor: "#0b1e3d", padding: "3rem 0" }}>
+  <div className="container text-center">
+    <p className="text-primary">
+      Smarter Research Made Simple—DeepDyve AI in Action
+    </p>
+    <h2
+      className="text-white"
+      style={{ fontWeight: "600", marginBottom: "1rem" }}
+    >
+      Discover How DeepDyve AI Transforms Academic Literature Access
+    </h2>
+    <p
+      style={{
+        color: "#ccc",
+        marginBottom: "2rem",
+        fontStyle: "italic",
+      }}
+    >
+      DeepDyve AI streamlines academic research by surfacing relevant papers,
+      summarizing key findings, and making full-text discovery fast and easy.
+    </p>
 
-              <div className="row g-4">
-                {/* Step 1 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#0b6d63",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
+    <div className="row g-4">
+      {/* Step 1 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
             .deepdyve-step1 {
               position: absolute;
               bottom: 10px;
               right: 15px;
               font-size: 4rem;
               font-weight: bold;
-              color: #4ce1b6;
+              color: #7b61ff;
               opacity: 0.6;
             }
           `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Smart Content Understanding
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      DeepDyve AI analyzes the context of your content and
-                      rewrites it intelligently for clarity and
-                      relevance—perfect for quick comprehension or editing.
-                    </p>
-                    <div className="deepdyve-step1">1</div>
-                  </div>
-                </div>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Intelligent Article Discovery
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            DeepDyve AI finds the most relevant journal articles by analyzing
+            your research queries and preferences across fields.
+          </p>
+          <div className="deepdyve-step1">1</div>
+        </div>
+      </div>
 
-                {/* Step 2 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#0b6d63",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
+      {/* Step 2 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
             .deepdyve-step2 {
               position: absolute;
               bottom: 10px;
               right: 15px;
               font-size: 4rem;
               font-weight: bold;
-              color: #4ce1b6;
+              color: #7b61ff;
               opacity: 0.6;
             }
           `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Personalized Rewrite Options
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Tailor output by adjusting tone, structure, or technical
-                      depth—whether for publication, study, or communication.
-                    </p>
-                    <div className="deepdyve-step2">2</div>
-                  </div>
-                </div>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            AI-Powered Summaries
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            It summarizes complex papers into key points, saving time and helping
+            researchers grasp essential findings without reading the full text.
+          </p>
+          <div className="deepdyve-step2">2</div>
+        </div>
+      </div>
 
-                {/* Step 3 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#0b6d63",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
+      {/* Step 3 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
             .deepdyve-step3 {
               position: absolute;
               bottom: 10px;
               right: 15px;
               font-size: 4rem;
               font-weight: bold;
-              color: #4ce1b6;
+              color: #7b61ff;
               opacity: 0.6;
             }
           `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Guaranteed Copyright-Free Results
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Every rewrite from DeepDyve AI is unique, rights-cleared,
-                      and suitable for academic or commercial use.
-                    </p>
-                    <div className="deepdyve-step3">3</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Full-Text Access & Collaboration
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            DeepDyve AI provides seamless access to full-text PDFs and supports
+            collaboration tools for organizing and sharing academic insights.
+          </p>
+          <div className="deepdyve-step3">3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
           {/* Tab Navigation */}
           <ul className="nav nav-tabs custom-tabs mb-4">

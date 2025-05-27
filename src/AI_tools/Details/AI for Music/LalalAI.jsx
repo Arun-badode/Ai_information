@@ -844,7 +844,7 @@ const LalalAI = () => {
               <img
                 src={lala}
                 alt="LALAL.AI"
-                style={{ maxWidth: "100%", height: "300px" }}
+                style={{ maxWidth: "100%", height: "280px",}}
               />
             </div>
 
@@ -853,7 +853,7 @@ const LalalAI = () => {
               className="col-12 col-md-6 order-2 order-md-1"
               style={{ paddingRight: "30px" }}
             >
-              <p className="text-primary">Write better, faster</p>
+              <p className="text-primary mt-3">Write better, faster</p>
               <h1>LALAL.AI:</h1>
               <div className="text-warning mb-1">⭐⭐⭐⭐⭐</div>
               <p>

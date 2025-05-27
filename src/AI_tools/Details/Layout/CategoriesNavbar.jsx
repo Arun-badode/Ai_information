@@ -324,7 +324,6 @@ const CategoriesNavbar = () => {
                     </h6>
 
                     <Link to="/PiAI">PIAI</Link>
-                    <Link to="/driftai">Drift AI</Link>
                     <Link to="/FlowXO">FLowXO</Link>
                     <Link to="/Botsify">Botsify</Link>
                     <Link to="/AivoAI">Aivo AI</Link>

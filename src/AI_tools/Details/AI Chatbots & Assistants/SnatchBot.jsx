@@ -634,6 +634,7 @@ const SnatchBot = () => {
                                  href="https://www.herohunt.ai/recruitment-solutions/snatchbot"
                                  rel="noopener noreferrer"
                                  className="btn btn-primary me-2"
+                                  target="_blank"
                                >
                                  Explore Tool
                                </a>

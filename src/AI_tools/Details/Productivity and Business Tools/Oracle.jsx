@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
-import magisto from "../../../Images/MagistoAI.png";
+
 import oracle1 from "../../../../public/assets/Img/AI for Business/oracle1.png";
 import oracle2 from "../../../../public/assets/Img/AI for Business/oracle2.png";
-
+import oracle from "../../../../public/assets/Img/AI for Business/oracle.png";
 // review section data
 const reviews = [
   {

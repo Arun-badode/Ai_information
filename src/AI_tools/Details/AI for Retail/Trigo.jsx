@@ -891,6 +891,7 @@ const Trigo = () => {
           href="https://www.trigoretail.com/"
           rel="noopener noreferrer"
           className="btn btn-primary me-2"
+          target="blank"
         >
           Explore Tool
         </a>

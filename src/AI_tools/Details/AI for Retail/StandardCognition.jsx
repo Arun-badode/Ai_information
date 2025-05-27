@@ -886,6 +886,7 @@ const StandardCongnition = () => {
           href="https://standard.ai/"
           rel="noopener noreferrer"
           className="btn btn-primary me-2"
+          target="blank"
         >
           Explore Tool
         </a>

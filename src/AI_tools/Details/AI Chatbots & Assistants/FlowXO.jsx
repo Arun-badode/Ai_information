@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import flowxo from "../../../../public/assets/Img/AI For Chatbots/flowxo.jpeg";
 import flowxoSS1 from '../../../../public/assets/Img/AI Chatbots & Assistants/flowxoSS1.png'
 import flowxoSS2 from '../../../../public/assets/Img/AI Chatbots & Assistants/flowxoSS2.png'
 
@@ -603,6 +604,7 @@ const FlowXO = () => {
               <a
                                  href=" https://flowxo.com"
                                  rel="noopener noreferrer"
+                                  target="_blank"
                                  className="btn btn-primary me-2"
                                >
                                  Explore Tool
@@ -612,9 +614,9 @@ const FlowXO = () => {
             {/* Right side (Image Section) */}
             <div style={{ flex: 1, textAlign: "center" }}>
               <img
-                src="https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2024/05/a-robot-coming-out-of-a-laptop-screen-with-the-perplexity-ai-logo-in-its-hand.jpg"
+                src={flowxo}
                 className="img-fluid rounded-3"
-                style={{ maxWidth: "80%", height: "auto" }}
+                style={{ maxWidth: "100%", height: "auto" }}
               />
             </div>
           </div>

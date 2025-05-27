@@ -874,6 +874,8 @@ const paraphraser = () => {
       href="https://www.paraphraser.io"
       rel="noopener noreferrer"
       className="btn btn-primary me-2"
+       
+        target="_blank"
     >
       Explore Tool
     </a>
@@ -881,136 +883,134 @@ const paraphraser = () => {
 </div>
 
 
-          <section style={{ backgroundColor: "#1b1f2b", padding: "3rem 0" }}>
-            <div className="container text-center">
-              <p className="text-primary">
-                Your Smart Paraphrasing Tool for Research and Content Creation
-              </p>
-              <h2
-                className="text-white"
-                style={{ fontWeight: "600", marginBottom: "1rem" }}
-              >
-                See How Paraphraser.io Transforms Your Content, Instantly and
-                Without Restrictions
-              </h2>
-              <p
-                style={{
-                  color: "#ccc",
-                  marginBottom: "2rem",
-                  fontStyle: "italic",
-                }}
-              >
-                Paraphraser.io helps you rephrase complex text, articles, and
-                documentation into unique, original content—designed to fit your
-                style and free from copyright issues.
-              </p>
+<section style={{ backgroundColor: "#0b1e3d", padding: "3rem 0" }}>
+  <div className="container text-center">
+    <p className="text-primary">
+      Enhance Writing Effortlessly—Paraphraser.io in Action
+    </p>
+    <h2
+      className="text-white"
+      style={{ fontWeight: "600", marginBottom: "1rem" }}
+    >
+      Discover How Paraphraser.io Rewrites Text with Clarity and Style
+    </h2>
+    <p
+      style={{
+        color: "#ccc",
+        marginBottom: "2rem",
+        fontStyle: "italic",
+      }}
+    >
+      Paraphraser.io uses AI to help users rewrite and rephrase sentences,
+      improving originality and readability while preserving meaning.
+    </p>
 
-              <div className="row g-4">
-                {/* Step 1 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#0b6d63",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
-            .paraphrase-step1 {
+    <div className="row g-4">
+      {/* Step 1 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .para-step1 {
               position: absolute;
               bottom: 10px;
               right: 15px;
               font-size: 4rem;
               font-weight: bold;
-              color: #4ce1b6;
+              color: #7b61ff;
               opacity: 0.6;
             }
           `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Rephrase in Seconds
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Paraphraser.io instantly rephrases your text, maintaining
-                      its meaning while ensuring unique content.
-                    </p>
-                    <div className="paraphrase-step1">1</div>
-                  </div>
-                </div>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Smart Text Rewriting
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Paraphraser.io intelligently rephrases your sentences to create
+            fresh, plagiarism-free content without changing the original meaning.
+          </p>
+          <div className="para-step1">1</div>
+        </div>
+      </div>
 
-                {/* Step 2 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#0b6d63",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
-            .paraphrase-step2 {
+      {/* Step 2 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .para-step2 {
               position: absolute;
               bottom: 10px;
               right: 15px;
               font-size: 4rem;
               font-weight: bold;
-              color: #4ce1b6;
+              color: #7b61ff;
               opacity: 0.6;
             }
           `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Tailor Your Rephrasing Style
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Customize the tone, structure, and complexity of your
-                      paraphrased text to suit your needs, whether for formal,
-                      casual, or technical purposes.
-                    </p>
-                    <div className="paraphrase-step2">2</div>
-                  </div>
-                </div>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Multiple Modes & Tones
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Choose from various paraphrasing styles, from formal to creative,
+            to suit your writing needs perfectly.
+          </p>
+          <div className="para-step2">2</div>
+        </div>
+      </div>
 
-                {/* Step 3 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#0b6d63",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
-            .paraphrase-step3 {
+      {/* Step 3 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .para-step3 {
               position: absolute;
               bottom: 10px;
               right: 15px;
               font-size: 4rem;
               font-weight: bold;
-              color: #4ce1b6;
+              color: #7b61ff;
               opacity: 0.6;
             }
           `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      No Copyright Issues
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      Paraphraser.io creates paraphrased text that is original,
-                      copyright-free, and ready to be used in any format.
-                    </p>
-                    <div className="paraphrase-step3">3</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Easy & Fast Usage
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Simply paste your text and get instant paraphrased output to improve
+            your writing quality with minimal effort.
+          </p>
+          <div className="para-step3">3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
           {/* Tab Navigation */}
           <ul className="nav nav-tabs custom-tabs mb-4">

@@ -77,7 +77,7 @@ const styles = {
 };
 
 const OtterAI = () => {
-  const [activeTab, setActiveTab] = useState("features"); // Set the default active tab as 'features'
+  const [activeTab, setActiveTab] = useState("Features"); // Set the default active tab as 'features'
   const [openIndex, setOpenIndex] = useState(null);
   const [expandedIndex, setExpandedIndex] = useState(null);
   const [showAllFaqs, setShowAllFaqs] = useState(false);
@@ -612,6 +612,130 @@ const OtterAI = () => {
     </div>
   </div>
 </div>
+<section style={{ backgroundColor: "#0b1e3d", padding: "3rem 0" }}>
+  <div className="container text-center">
+    <p className="text-primary">
+      Capture Every Word—Otter.ai in Action
+    </p>
+    <h2
+      className="text-white"
+      style={{ fontWeight: "600", marginBottom: "1rem" }}
+    >
+      Discover How Otter.ai Transcribes & Summarizes Meetings in Real Time
+    </h2>
+    <p
+      style={{
+        color: "#ccc",
+        marginBottom: "2rem",
+        fontStyle: "italic",
+      }}
+    >
+      Otter.ai uses advanced speech recognition to provide real-time transcriptions,
+      summaries, and speaker insights—perfect for teams, students, and professionals.
+    </p>
+
+    <div className="row g-4">
+      {/* Step 1 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .otter-step1 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #7b61ff;
+              opacity: 0.6;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Real-Time Transcription
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Instantly transcribe meetings, lectures, and interviews with Otter’s AI-powered live speech-to-text engine.
+          </p>
+          <div className="otter-step1">1</div>
+        </div>
+      </div>
+
+      {/* Step 2 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .otter-step2 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #7b61ff;
+              opacity: 0.6;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Smart Summaries
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Otter automatically generates meeting summaries, highlights key points, and helps teams stay aligned.
+          </p>
+          <div className="otter-step2">2</div>
+        </div>
+      </div>
+
+      {/* Step 3 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
+            .otter-step3 {
+              position: absolute;
+              bottom: 10px;
+              right: 15px;
+              font-size: 4rem;
+              font-weight: bold;
+              color: #7b61ff;
+              opacity: 0.6;
+            }
+          `}</style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Speaker Identification
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Identify and label different speakers automatically—making transcripts easier to follow and reference.
+          </p>
+          <div className="otter-step3">3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
           {/* Tab Navigation */}

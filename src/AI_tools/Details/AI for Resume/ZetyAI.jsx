@@ -976,7 +976,7 @@ const ZetyAI = () => {
         </section>
 
         {/* Tab Navigation */}
-        <ul className="nav nav-tabs custom-tabs mb-4">
+        <ul className="nav nav-tabs custom-tabs mb-4  ">
           {[
             "Features",
             "Screenshots",
