@@ -724,6 +724,127 @@ const ClaudeAI = () => {
                                       />
                                     </div>
           </div>
+                        <section style={{ backgroundColor: "", padding: "3rem 0" }}>
+  <div className="container text-center">
+    <p className="text-primary">Automate Conversations in 3 Easy Steps</p>
+    <h2
+      style={{
+        fontWeight: "semibold",
+        color: "#fff",
+        marginBottom: "1rem",
+      }}
+    >
+      How does Claude AI work?
+    </h2>
+
+    <div className="row g-4">
+      {/* Step 1 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>
+            {`
+              .step1 {
+                position: absolute;
+                bottom: 10px;
+                right: 15px;
+                font-size: 4rem;
+                font-weight: bold;
+                color: #7b61ff;
+                opacity: 0.6;
+              }
+            `}
+          </style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Craft Intelligent Prompts
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Design effective prompts to guide Claude’s conversational AI for various use cases.
+          </p>
+          <div className="step1">1</div>
+        </div>
+      </div>
+
+      {/* Step 2 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>
+            {`
+              .step2 {
+                position: absolute;
+                bottom: 10px;
+                right: 15px;
+                font-size: 4rem;
+                font-weight: bold;
+                color: #7b61ff;
+                opacity: 0.6;
+              }
+            `}
+          </style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Integrate into Your Workflow
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Connect Claude AI with tools like Slack, Notion, or custom platforms via API.
+          </p>
+          <div className="step2">2</div>
+        </div>
+      </div>
+
+      {/* Step 3 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>
+            {`
+              .step3 {
+                position: absolute;
+                bottom: 10px;
+                right: 15px;
+                font-size: 4rem;
+                font-weight: bold;
+                color: #7b61ff;
+                opacity: 0.6;
+              }
+            `}
+          </style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Refine with Feedback
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Improve Claude’s responses using feedback loops and continuous learning.
+          </p>
+          <div className="step3">3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
           {/* Tab Navigation */}
           <ul className="nav nav-tabs custom-tabs mb-4">
