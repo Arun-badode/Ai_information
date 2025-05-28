@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
-import magisto from "../../../Images/MagistoAI.png";
+
 import qubole1 from "../../../../public/assets/Img/AI for Business/qubole1.png";
 import qubole2 from "../../../../public/assets/Img/AI for Business/qubole2.png";
-
+import qubole from "../../../../public/assets/Img/AI for Business/qubole.png";
 // review section data
 const reviews = [
   {
@@ -643,7 +643,7 @@ const Qubole = () => {
   {/* Image Section - shows first on mobile */}
   <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-4 mb-md-0">
     <img
-      src={magisto}
+      src={qubole}
       alt="Qubole platform"
       style={{ maxWidth: "100%", height: "250px", objectFit: "contain" }}
       className="img-fluid"

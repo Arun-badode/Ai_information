@@ -4,6 +4,9 @@ import { FiTrendingUp } from "react-icons/fi";
 import { FaStar } from "react-icons/fa";
 import "./ToolTabs.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import runway from '../../public/assets/Img/AI for Animation/7.png'
+import notion from '../../public/assets/Img/AI for Animation/19.jpeg'
+
 
 const ToolTabs = () => {
   const [activeTab, setActiveTab] = useState("popular");
@@ -35,14 +38,14 @@ const ToolTabs = () => {
     recent: [
       {
         name: "Runway ML",
-        icon: "/runwayml-icon.png",
+        icon: runway,
         desc: "Create videos from text with cutting-edge generative AI models.",
         tags: ["#video generators", "#ai editing", "#creators"],
         votes: 120,
       },
       {
         name: "Notion AI",
-        icon: "/notionai-icon.png",
+        icon: notion,
         desc: "AI-powered writing assistant inside Notion for productivity and clarity.",
         tags: ["#ai writing", "#productivity", "#notetaking"],
         votes: 412,
