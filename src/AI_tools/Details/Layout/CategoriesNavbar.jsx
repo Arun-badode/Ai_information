@@ -291,7 +291,8 @@ const CategoriesNavbar = () => {
                     </h6>
 
                     <Link to="/Chatgpt">ChatGPTAI</Link>
-                    <Link to="/PerplexityAI">PerplexityAI</Link>
+                
+                
                     <Link to="/Gemini">Gemini</Link>
                     <Link to="/SnatchBot">SnatchBot</Link>
                     <Link to="/PerplexityAI">PerplexityAI</Link>
