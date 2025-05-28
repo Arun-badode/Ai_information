@@ -672,6 +672,127 @@ const CharacterAI = () => {
                                      />
                                    </div>
           </div>
+             <section style={{ backgroundColor: "", padding: "3rem 0" }}>
+  <div className="container text-center">
+    <p className="text-primary">Automate Conversations in 3 Easy Steps</p>
+    <h2
+      style={{
+        fontWeight: "semibold",
+        color: "#fff",
+        marginBottom: "1rem",
+      }}
+    >
+      How does Character.AI work?
+    </h2>
+
+    <div className="row g-4">
+      {/* Step 1 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>
+            {`
+              .step1 {
+                position: absolute;
+                bottom: 10px;
+                right: 15px;
+                font-size: 4rem;
+                font-weight: bold;
+                color: #7b61ff;
+                opacity: 0.6;
+              }
+            `}
+          </style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Create a Character
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Build unique personalities by defining backstory, tone, and behavior for your AI.
+          </p>
+          <div className="step1">1</div>
+        </div>
+      </div>
+
+      {/* Step 2 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>
+            {`
+              .step2 {
+                position: absolute;
+                bottom: 10px;
+                right: 15px;
+                font-size: 4rem;
+                font-weight: bold;
+                color: #7b61ff;
+                opacity: 0.6;
+              }
+            `}
+          </style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Start the Conversation
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Interact in real time with your AI character through chat, voice, or roleplay.
+          </p>
+          <div className="step2">2</div>
+        </div>
+      </div>
+
+      {/* Step 3 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>
+            {`
+              .step3 {
+                position: absolute;
+                bottom: 10px;
+                right: 15px;
+                font-size: 4rem;
+                font-weight: bold;
+                color: #7b61ff;
+                opacity: 0.6;
+              }
+            `}
+          </style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Evolve Their Personality
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Train and refine your AI’s responses over time based on interactions and feedback.
+          </p>
+          <div className="step3">3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
           {/* Tab Navigation */}
           <ul className="nav nav-tabs custom-tabs mb-4">

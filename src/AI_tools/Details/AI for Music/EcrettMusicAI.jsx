@@ -839,16 +839,19 @@ const EcrettMusicAI = () => {
           <div className="container">
             <div className="row d-flex align-items-center justify-content-between mb-1">
               {/* Image Section */}
-              <div
-                className="col-12 col-md-6 order-1 order-md-2 mb-3 mb-md-0"
-                style={{ textAlign: "center" }}
-              >
-                <img
-                  src={ecrett}
-                  alt="Ecrett Music"
-                  style={{ maxWidth: "100%", height: "300px" }}
-                />
-              </div>
+ <div
+  className="col-12 col-md-6 order-1 order-md-2 mb-3 mb-md-0 d-flex justify-content-center align-items-center"
+  style={{ textAlign: "center" }}
+>
+  <img
+    src={ecrett}
+    alt="Ecrett Music"
+    className="img-fluid"
+    style={{ maxWidth: "100%", height: "auto" }}
+  />
+</div>
+
+
 
               {/* Text Section */}
               <div

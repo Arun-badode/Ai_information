@@ -1210,6 +1210,131 @@ const PerplexityAI = () => {
             </div>
           </div>
 
+
+
+          <section style={{ backgroundColor: "", padding: "3rem 0" }}>
+  <div className="container text-center">
+    <p className="text-primary">Get Instant Answers in 3 Easy Steps</p>
+    <h2
+      style={{
+        fontWeight: "semibold",
+        color: "#fff",
+        marginBottom: "1rem",
+      }}
+    >
+      How does Perplexity AI work?
+    </h2>
+
+    <div className="row g-4">
+      {/* Step 1 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>
+            {`
+              .step1 {
+                position: absolute;
+                bottom: 10px;
+                right: 15px;
+                font-size: 4rem;
+                font-weight: bold;
+                color: #7b61ff;
+                opacity: 0.6;
+              }
+            `}
+          </style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Ask a Question
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Type your question or topic. Perplexity uses real-time search to fetch relevant data.
+          </p>
+          <div className="step1">1</div>
+        </div>
+      </div>
+
+      {/* Step 2 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>
+            {`
+              .step2 {
+                position: absolute;
+                bottom: 10px;
+                right: 15px;
+                font-size: 4rem;
+                font-weight: bold;
+                color: #7b61ff;
+                opacity: 0.6;
+              }
+            `}
+          </style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Get Verified Sources
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Perplexity scours the web and delivers concise answers with citations you can trust.
+          </p>
+          <div className="step2">2</div>
+        </div>
+      </div>
+
+      {/* Step 3 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#1034A6",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>
+            {`
+              .step3 {
+                position: absolute;
+                bottom: 10px;
+                right: 15px;
+                font-size: 4rem;
+                font-weight: bold;
+                color: #7b61ff;
+                opacity: 0.6;
+              }
+            `}
+          </style>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Dive Deeper or Refine
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Follow up with new questions or explore linked sources for a deeper understanding.
+          </p>
+          <div className="step3">3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
           {/* Tab Navigation */}
           <ul className="nav nav-tabs custom-tabs mb-4">
             {[
