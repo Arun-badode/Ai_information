@@ -633,7 +633,7 @@ const ZohoAnalyticsAI = () => {
   {/* Image Section - shown on top on mobile */}
   <div className="col-12 col-lg-6 order-1 order-lg-2 text-center mb-4 mb-lg-0">
     <img
-      src={magisto}
+      src={ zoho}
       style={{ maxWidth: "100%", height: "300px", objectFit: "cover" }}
       alt="Zoho Analytics AI"
       className="img-fluid rounded"

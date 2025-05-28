@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
@@ -874,7 +874,7 @@ const ResunateAI = () => {
                 marginBottom: "1rem",
               }}
             >
-              How Hiration AI Helps You Craft a Professional Resume
+              How Resumate AI Helps You Craft a Professional Resume
             </h2>
 
             <div className="row g-4">
@@ -905,7 +905,7 @@ const ResunateAI = () => {
                     Analyzes Your Professional Profile
                   </h5>
                   <p style={{ color: "#fff", margin: 0 }}>
-                    Hiration AI evaluates your professional experience and
+                    Resumate AI evaluates your professional experience and
                     career goals, ensuring that your resume reflects your unique
                     skills and aspirations.
                   </p>
@@ -940,7 +940,7 @@ const ResunateAI = () => {
                     Customizes Your Resume for Targeted Roles
                   </h5>
                   <p style={{ color: "#fff", margin: 0 }}>
-                    Hiration AI personalizes your resume by adjusting every
+                   Resumate AI personalizes your resume by adjusting every
                     section, from experience to skills, tailored specifically
                     for the job roles and industries you're targeting.
                   </p>
@@ -975,7 +975,7 @@ const ResunateAI = () => {
                     Generates a Professionally Designed Resume
                   </h5>
                   <p style={{ color: "#fff", margin: 0 }}>
-                    Hiration AI creates a polished, visually stunning resume
+                   Resumate AI creates a polished, visually stunning resume
                     that effectively highlights your key achievements and
                     professional experience, making you stand out.
                   </p>

@@ -313,7 +313,7 @@ const Chatgpt = () => {
             </Row>
           </Container>
         );
-
+          
       case "FAQs":
         return (
           <div className="faq-section container py-5">
