@@ -834,15 +834,17 @@ const JukedeckAI = () => {
           <div className="row d-flex align-items-center justify-content-between mb-1">
             {/* Image - mobile pe pehle, desktop pe right side */}
             <div
-              className="col-12 col-md-6 order-1 order-md-2 mb-3 mb-md-0"
-              style={{ textAlign: "center", height: "250px" }}
-            >
-              <img
-                src={jukedeck}
-                alt="Jukedeck AI"
-                style={{ maxWidth: "100%", height: "300px" }}
-              />
-            </div>
+  className="col-12 col-md-6 order-1 order-md-2 mb-3 mb-md-0"
+  style={{ textAlign: "center" }}
+>
+  <img
+    src={jukedeck}
+    alt="Jukedeck AI"
+    style={{ maxWidth: "100%", height: "auto" }}
+    className="img-fluid"
+  />
+</div>
+
 
             {/* Text - mobile pe baad mein, desktop pe left side */}
             <div

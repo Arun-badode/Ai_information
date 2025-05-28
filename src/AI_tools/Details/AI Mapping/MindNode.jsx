@@ -5,8 +5,8 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
-// import mindnodeSS1 from '../../../../public/assets/Img/Ai for Mind Mapping/mindnodeSS1.png';
-// import mindnodeSS2 from '../../../../public/assets/Img/Ai for Mind Mapping/mindnodeSS2.png';
+import mindnodeSS1 from '../../../../public/assets/Img/Ai for Mind Mapping/mindnodeSS1.png';
+import mindnodeSS2 from '../../../../public/assets/Img/Ai for Mind Mapping/mindnodeSS2.png';
 import mindnodeImg from '../../../../public/assets/Img/Ai for Mind Mapping/5.png'
 
 // review section data

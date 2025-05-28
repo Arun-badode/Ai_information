@@ -5,8 +5,8 @@ import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../../Images/logo[2].png";
 import deatilimage from "../../../Images/DetailImage.png";
-// import whimsicalSS1 from '../../../../public/assets/Img/Ai for Mind Mapping/whimsicalSS1.png';
-// import whimsicalSS2 from '../../../../public/assets/Img/Ai for Mind Mapping/whimsicalSS2.png';
+import whimsicalSS1 from '../../../../public/assets/Img/Ai for Mind Mapping/whimsicalSS1.png';
+import whimsicalSS2 from '../../../../public/assets/Img/Ai for Mind Mapping/whimsicalSS2.png';
 import whimsicalImg from '../../../../public/assets/Img/Ai for Mind Mapping/3.png';
 
 // review section data

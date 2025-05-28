@@ -645,16 +645,18 @@ const DescriptOverdub = () => {
         <div className="container">
           <div className="row align-items-center mb-1">
             {/* Image Section - Mobile me row 1, Desktop me column 2 */}
-            <div
-              className="col-12 col-md-6 order-1 order-md-2 text-center mb-3 mb-md-0"
-              style={{ height: "250px" }}
-            >
-              <img
-                src={descriptoverdub}
-                alt="Descript Overdub"
-                style={{ maxWidth: "100%", height: "300px" }}
-              />
-            </div>
+         <div
+  className="col-12 col-md-6 order-1 order-md-2 text-center mb-3 mb-md-0"
+  style={{ height: "auto" }}
+>
+  <img
+    src={descriptoverdub}
+    alt="Descript Overdub"
+    className="img-fluid"
+    style={{ maxWidth: "100%", height: "auto" }}
+  />
+</div>
+
 
             {/* Text Section - Mobile me row 2, Desktop me column 1 */}
             <div
