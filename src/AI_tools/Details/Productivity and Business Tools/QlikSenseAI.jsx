@@ -600,7 +600,7 @@ const QlikSenseAI = () => {
     style={{ height: "250px" }}
   >
     <img
-      src={magisto}
+      src={qlik}
       alt="Qlik Sense AI"
       style={{ maxWidth: "100%", height: "250px", objectFit: "contain" }}
     />

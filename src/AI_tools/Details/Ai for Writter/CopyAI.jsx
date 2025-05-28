@@ -322,6 +322,11 @@ const CopyAI = () => {
                     data-bs-target="#collapseOne"
                     aria-expanded="true"
                     aria-controls="collapseOne"
+                     style={{
+                          backgroundColor: "#161b22",
+                          color: "#c9d1d9",
+                          fontWeight: "bold",
+                        }}
                   >
                     What is Copy.ai?
                   </button>
@@ -331,7 +336,13 @@ const CopyAI = () => {
                   className="accordion-collapse collapse show"
                   aria-labelledby="headingOne"
                 >
-                  <div className="accordion-body">
+                  <div className="accordion-body" style={{
+                          backgroundColor: "#0d1117",
+                          color: "#c9d1d9",
+                          border: "1px solid #238636",
+                          borderRadius: "8px",
+                          padding: "15px",
+                        }}>
                     Copy.ai is an AI-powered writing tool designed to help users
                     create marketing copy, blog posts, product descriptions,
                     emails, and more—instantly and effortlessly.
@@ -349,6 +360,11 @@ const CopyAI = () => {
                     data-bs-target="#collapseTwo"
                     aria-expanded="false"
                     aria-controls="collapseTwo"
+                     style={{
+                          backgroundColor: "#161b22",
+                          color: "#c9d1d9",
+                          fontWeight: "bold",
+                        }}
                   >
                     How does Copy.ai work?
                   </button>
@@ -359,7 +375,13 @@ const CopyAI = () => {
                   aria-labelledby="headingTwo"
                   data-bs-parent="#faqAccordion"
                 >
-                  <div className="accordion-body">
+                  <div className="accordion-body" style={{
+                          backgroundColor: "#0d1117",
+                          color: "#c9d1d9",
+                          border: "1px solid #238636",
+                          borderRadius: "8px",
+                          padding: "15px",
+                        }}>
                     Copy.ai uses advanced language models to turn simple prompts
                     or keywords into high-quality written content within
                     seconds, helping marketers and creators save time and boost
@@ -378,6 +400,11 @@ const CopyAI = () => {
                     data-bs-target="#collapseThree"
                     aria-expanded="false"
                     aria-controls="collapseThree"
+                     style={{
+                          backgroundColor: "#161b22",
+                          color: "#c9d1d9",
+                          fontWeight: "bold",
+                        }}
                   >
                     Is Copy.ai good for long-form content?
                   </button>
@@ -388,7 +415,14 @@ const CopyAI = () => {
                   aria-labelledby="headingThree"
                   data-bs-parent="#faqAccordion"
                 >
-                  <div className="accordion-body">
+                  <div className="accordion-body"
+                  style={{
+                          backgroundColor: "#0d1117",
+                          color: "#c9d1d9",
+                          border: "1px solid #238636",
+                          borderRadius: "8px",
+                          padding: "15px",
+                        }}>
                     While Copy.ai is primarily optimized for short-form content
                     like product descriptions and social media copy, it also
                     offers tools to assist with longer content like blog intros
@@ -407,6 +441,11 @@ const CopyAI = () => {
                     data-bs-target="#collapseFour"
                     aria-expanded="false"
                     aria-controls="collapseFour"
+                     style={{
+                          backgroundColor: "#161b22",
+                          color: "#c9d1d9",
+                          fontWeight: "bold",
+                        }}
                   >
                     What kind of content can I create with Copy.ai?
                   </button>
@@ -417,7 +456,13 @@ const CopyAI = () => {
                   aria-labelledby="headingFour"
                   data-bs-parent="#faqAccordion"
                 >
-                  <div className="accordion-body">
+                  <div className="accordion-body" style={{
+                          backgroundColor: "#0d1117",
+                          color: "#c9d1d9",
+                          border: "1px solid #238636",
+                          borderRadius: "8px",
+                          padding: "15px",
+                        }}>
                     With Copy.ai, you can create content such as product
                     descriptions, digital ad copy, social media captions,
                     startup pitches, email subject lines, and more—all with
