@@ -17,6 +17,7 @@ import Logojoy from "../../public/assets/Img/Trending AI tools/14.png";
 import Mailchimp from "../../public/assets/Img/Trending AI tools/15.png";
 import  Grammarly from "../../public/assets/Img/Trending AI tools/16.png";
 import RunWayGen1 from "../../public/assets/Img/AI for Animation/7.png";
+import Synthesia from '../../public/assets/Img/AI for Animation/15.png'
 const TrendingTools = () => {
   const categories = [
     "Marketing",
@@ -121,7 +122,7 @@ const TrendingTools = () => {
       {
         name: "Synthesia",
         description: "AI tool for generating synthetic video content.",
-        image: "",
+        image: Synthesia,
         rating: 4.4,
       },
     ],
