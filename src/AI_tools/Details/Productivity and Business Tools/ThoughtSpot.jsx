@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../ImageMindAI.css"; // <-- custom CSS file import
 import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
-import magisto from "../../../Images/MagistoAI.png";
+
 import thought1 from "../../../../public/assets/Img/AI for Business/thought1.png";
 import thought2 from "../../../../public/assets/Img/AI for Business/thought2.png";
-
+import thought from "../../../../public/assets/Img/AI for Business/thoughtspot.png";
 // review section data
 const reviews = [
   {
@@ -641,7 +641,7 @@ const ThoughtSpot = () => {
   {/* Image Section - appears first on mobile */}
   <div className="col-12 col-md-6 order-1 order-md-2 text-center mb-4 mb-md-0">
     <img
-      src={magisto}
+      src={thought}
       alt="ThoughtSpot platform"
       style={{ maxWidth: "100%", height: "300px", objectFit: "contain" }}
       className="img-fluid"
