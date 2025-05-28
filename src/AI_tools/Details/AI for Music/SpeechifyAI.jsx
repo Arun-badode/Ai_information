@@ -358,9 +358,9 @@ const SpeechifyAI = () => {
                         }`}
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target={```#collapse${item.id}}
+                        data-bs-target={`#collapse${item.id}`}
                         aria-expanded={i === 0 ? "true" : "false"}
-                        aria-controls={collapse${item.id}`}
+                        aria-controls={`collapse${item.id}`}
                         style={{
                           backgroundColor: "#161b22",
                           color: "#c9d1d9",

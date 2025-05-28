@@ -389,276 +389,111 @@ const ClaudeAI = () => {
 
       case "faq":
         return (
-          <div className="faq-section container py-4">
-            <h3 className="text-center mb-4">Frequently Asked Questions</h3>
+    <div className="faq-section container py-4">
+      <h3 className="text-center text-white mb-4 text-primary ">Frequently Asked Questions</h3>
 
-            <div className="accordion" id="faqAccordion">
-              {/* FAQ Item 1 */}
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="headingOne">
-                  <button
-                    className="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                    aria-expanded="true"
-                    aria-controls="collapseOne"
-                  >
-                    What is Claude AI?
-                  </button>
-                </h2>
-                <div
-                  id="collapseOne"
-                  className=""
-                  aria-labelledby="headingOne"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div className="accordion-body">
-                  Claude AI is an advanced conversational AI developed by Anthropic AI, powered by GPT-4. It is designed for a range of applications including customer service, content creation, and business automation.
-                  </div>
-                </div>
+      <div className="accordion" id="faqAccordion">
+        {[
+          {
+            id: "One",
+            question: "What is Claude AI?",
+            answer:
+              "Claude AI is an advanced conversational AI developed by Anthropic AI, powered by GPT-4. It is designed for a range of applications including customer service, content creation, and business automation.",
+          },
+          {
+            id: "Two",
+            question: "How accurate is Claude AI?",
+            answer:
+              "Claude AI is highly accurate due to its use of GPT-4, which offers better context understanding and generation of human-like responses.",
+          },
+          {
+            id: "Three",
+            question: "How do I integrate Claude AI into my business?",
+            answer:
+              "Claude AI can be integrated into your business through its API, which allows seamless connection with your website, CRM, or other platforms.",
+          },
+          {
+            id: "Four",
+            question: "Can Claude AI be used for content generation?",
+            answer:
+              "Yes, Claude AI excels at content creation, generating blog posts, marketing copy, and SEO content.",
+          },
+          {
+            id: "Five",
+            question: "What industries benefit the most from Claude AI?",
+            answer:
+              "Claude AI is beneficial for e-commerce, customer service, education, marketing, finance, and healthcare industries, among others.",
+          },
+          {
+            id: "Six",
+            question: "Does Claude AI support multiple languages?",
+            answer:
+              "Yes, Claude AI supports multiple languages, enabling businesses to reach global customers.",
+          },
+          {
+            id: "Seven",
+            question: "Does Claude AI support multiple languages?",
+            answer:
+              "Yes, Claude AI supports multiple languages, enabling businesses to reach global customers.",
+          },
+          {
+            id: "Eight",
+            question: "Is Claude AI suitable for enterprise solutions?",
+            answer:
+              "Yes, Claude AI can be used for enterprise solutions, integrating seamlessly into large-scale business operations.",
+          },
+          {
+            id: "Nine",
+            question: "Can Claude AI handle complex customer queries?",
+            answer:
+              "Claude AI can handle complex queries but may sometimes struggle with highly specialized topics that require domain-specific knowledge.",
+          },
+          {
+            id: "Ten",
+            question: "How does Claude AI handle sensitive customer data?",
+            answer:
+              "Claude AI adheres to industry standards for data privacy and security, but businesses must ensure they comply with GDPR and other privacy regulations when using AI.",
+          },
+        ].map((faq) => (
+          <div className="accordion-item" key={faq.id}>
+            <h2 className="accordion-header" id={`heading${faq.id}`}>
+              <button
+                className="accordion-button collapsed custom-btn"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target={`#collapse${faq.id}`}
+                aria-expanded="false"
+                aria-controls={`collapse${faq.id}`}
+                   style={{
+                          backgroundColor: "#161b22",
+                          color: "#c9d1d9",
+                          fontWeight: "bold",
+                        }}
+              >
+                {faq.question}
+              </button>
+            </h2>
+            <div
+              id={`collapse${faq.id}`}
+              className="accordion-collapse collapse"
+              aria-labelledby={`heading${faq.id}`}
+              data-bs-parent="#faqAccordion"
+            >
+              <div className="accordion-body"
+               style={{
+                          backgroundColor: "#0d1117",
+                          color: "#c9d1d9",
+                          border: "1px solid #238636",
+                          borderRadius: "8px",
+                          padding: "15px",
+                        }}>{faq.answer}
+                
               </div>
-
-              {/* FAQ Item 2 */}
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="headingTwo">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                  >
-                   How accurate is Claude AI?
-                  </button>
-                </h2>
-                <div
-                  id="collapseTwo"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingTwo"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div className="accordion-body">
-                  Claude AI is highly accurate due to its use of GPT-4, which offers better context understanding and generation of human-like responses.
-                  </div>
-                </div>
-              </div>
-
-              {/* FAQ Item 3 */}
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="headingThree">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree"
-                    aria-expanded="false"
-                    aria-controls="collapseThree"
-                  >
-                   How do I integrate Claude AI into my business?
-                  </button>
-                </h2>
-                <div
-                  id="collapseThree"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingThree"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div className="accordion-body">
-                  Claude AI can be integrated into your business through its API, which allows seamless connection with your website, CRM, or other platforms.
-                  </div>
-                </div>
-              </div>
-
-              {/* FAQ Item 4 */}
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="headingFour">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFour"
-                    aria-expanded="false"
-                    aria-controls="collapseFour"
-                  >
-                    Can Claude AI be used for content generation?
-                  </button>
-                </h2>
-                <div
-                  id="collapseFour"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingFour"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div className="accordion-body">
-                  Yes, Claude AI excels at content creation, generating blog posts, marketing copy, and SEO content.
-                  </div>
-                </div>
-              </div>
-
-               {/* FAQ Item 5 */}
-               <div className="accordion-item">
-                <h2 className="accordion-header" id="headingFive">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFive"
-                    aria-expanded="false"
-                    aria-controls="collapseFive"
-                  >
-                   What industries benefit the most from Claude AI?
-                  </button>
-                </h2>
-                <div
-                  id="collapseFive"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingFive"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div className="accordion-body">
-                  Claude AI is beneficial for e-commerce, customer service, education, marketing, finance, and healthcare industries, among others.
-                  </div>
-                </div>
-              </div>
-
-              {/* FAQ Item 6 */}
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="headingsix">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapsesix"
-                    aria-expanded="false"
-                    aria-controls="collapsesix"
-                  >
-                  Does Claude AI support multiple languages?
-                  </button>
-                </h2>
-                <div
-                  id="collapsesix"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingsix"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div className="accordion-body">
-                  Yes, Claude AI supports multiple languages, enabling businesses to reach global customers.
-                  </div>
-                </div>
-              </div>
-
-              
-            {/* FAQ Item 7 */}
-            <div className="accordion-item">
-                <h2 className="accordion-header" id="headingseven">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseseven"
-                    aria-expanded="false"
-                    aria-controls="collapseseven"
-                  >
-                  Does Claude AI support multiple languages?
-                  </button>
-                </h2>
-                <div
-                  id="collapseseven"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingseven"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div className="accordion-body">
-                  Yes, Claude AI supports multiple languages, enabling businesses to reach global customers.
-                  </div>
-                </div>
-              </div>
-
-              {/* FAQ Item 8 */}
-            <div className="accordion-item">
-                <h2 className="accordion-header" id="headingeight">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseeight"
-                    aria-expanded="false"
-                    aria-controls="collapseeight"
-                  >
-                  Is Claude AI suitable for enterprise solutions?
-                  </button>
-                </h2>
-                <div
-                  id="collapseeight"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingeight"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div className="accordion-body">
-                  Yes, Claude AI can be used for enterprise solutions, integrating seamlessly into large-scale business operations.
-                  </div>
-                </div>
-              </div>
-
-                {/* FAQ Item 9 */}
-            <div className="accordion-item">
-                <h2 className="accordion-header" id="headingnine">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapsenine"
-                    aria-expanded="false"
-                    aria-controls="collapsenine"
-                  >
-              Can Claude AI handle complex customer queries?
-
-                  </button>
-                </h2>
-                <div
-                  id="collapsenine"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingnine"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div className="accordion-body">
-                  Claude AI can handle complex queries but may sometimes struggle with highly specialized topics that require domain-specific knowledge.
-
-                  </div>
-                </div>
-              </div>
-
-               {/* FAQ Item 10 */}
-            <div className="accordion-item">
-                <h2 className="accordion-header" id="headingten">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseten"
-                    aria-expanded="false"
-                    aria-controls="collapseten"
-                  >
-              How does Claude AI handle sensitive customer data?
-                  </button>
-                </h2>
-                <div
-                  id="collapseten"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingten"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div className="accordion-body">
-                  Claude AI adheres to industry standards for data privacy and security, but businesses must ensure they comply with GDPR and other privacy regulations when using AI.
-                  </div>
-                </div>
-              </div>
-
-
             </div>
           </div>
+        ))}
+      </div>
+    </div>
         );
 
       default:
