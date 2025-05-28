@@ -876,41 +876,40 @@ const AmperMusicAI = () => {
           </div>
 
           <section style={{ backgroundColor: "#1b1f2b", padding: "3rem 0" }}>
-            <div className="container text-center">
-              <p className="text-primary">Enhance Your Workflow with AIVA AI</p>
-              <h2
-                className="text-white"
-                style={{ fontWeight: "600", marginBottom: "1rem" }}
-              >
-                Discover How AIVA AI Revolutionizes Your Workflow and
-                Productivity
-              </h2>
-              <p
-                style={{
-                  color: "#ccc",
-                  marginBottom: "2rem",
-                  fontStyle: "italic",
-                }}
-              >
-                AIVA AI empowers users to automate tasks, enhance
-                decision-making, and streamline operations, offering an
-                intelligent assistant that adapts to your needs in real time.
-              </p>
+  <div className="container text-center">
+    <p className="text-primary">Create Music Effortlessly with Amper Music AI</p>
+    <h4
+      className="text-white"
+      style={{ fontWeight: "600", marginBottom: "1rem" }}
+    >
+      Discover How Amper Music AI Transforms Music Creation for Everyone
+    </h4>
+    <p
+      style={{
+        color: "#ccc",
+        marginBottom: "2rem",
+        fontStyle: "italic",
+      }}
+    >
+      Amper Music AI enables users to compose, produce, and customize music
+      with no prior experience, offering intuitive tools and AI-generated
+      compositions tailored to your needs.
+    </p>
 
-              <div className="row g-4">
-                {/* Step 1 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#2d3b62",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
+    <div className="row g-4">
+      {/* Step 1 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#2d3b62",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
             .step1 {
               position: absolute;
               bottom: 10px;
@@ -921,31 +920,30 @@ const AmperMusicAI = () => {
               opacity: 0.6;
             }
           `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Automate Routine Tasks with Ease
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      AIVA AI helps automate everyday tasks like scheduling,
-                      data entry, and email responses, allowing you to focus on
-                      high-priority work.
-                    </p>
-                    <div className="step1">1</div>
-                  </div>
-                </div>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Compose Original Music in Minutes
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Amper Music AI helps you generate unique music tracks quickly,
+            ideal for videos, podcasts, or personal projects—no music theory needed.
+          </p>
+          <div className="step1">1</div>
+        </div>
+      </div>
 
-                {/* Step 2 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#2d3b62",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
+      {/* Step 2 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#2d3b62",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
             .step2 {
               position: absolute;
               bottom: 10px;
@@ -956,31 +954,30 @@ const AmperMusicAI = () => {
               opacity: 0.6;
             }
           `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Improve Decision-Making with Real-Time Insights
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      AIVA AI processes data to generate actionable insights
-                      that empower faster, smarter decision-making for your
-                      business or team.
-                    </p>
-                    <div className="step2">2</div>
-                  </div>
-                </div>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Customize Tracks to Fit Your Style
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Easily edit tempo, instrumentation, and mood to match your creative
+            vision and brand requirements with Amper’s intuitive controls.
+          </p>
+          <div className="step2">2</div>
+        </div>
+      </div>
 
-                {/* Step 3 */}
-                <div className="col-md-4">
-                  <div
-                    style={{
-                      position: "relative",
-                      backgroundColor: "#2d3b62",
-                      borderRadius: "12px",
-                      boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
-                      padding: "2rem",
-                      height: "100%",
-                    }}
-                  >
-                    <style>{`
+      {/* Step 3 */}
+      <div className="col-md-4">
+        <div
+          style={{
+            position: "relative",
+            backgroundColor: "#2d3b62",
+            borderRadius: "12px",
+            boxShadow: "0 2px 4px rgba(255,255,255,0.1)",
+            padding: "2rem",
+            height: "100%",
+          }}
+        >
+          <style>{`
             .step3 {
               position: absolute;
               bottom: 10px;
@@ -991,20 +988,19 @@ const AmperMusicAI = () => {
               opacity: 0.6;
             }
           `}</style>
-                    <h5 style={{ fontWeight: "bold", color: "#fff" }}>
-                      Integrate and Optimize Across Tools
-                    </h5>
-                    <p style={{ color: "#fff", margin: 0 }}>
-                      AIVA AI integrates effortlessly with your existing
-                      productivity tools, enhancing collaboration,
-                      communication, and task management across platforms.
-                    </p>
-                    <div className="step3">3</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <h5 style={{ fontWeight: "bold", color: "#fff" }}>
+            Export and Share with Full Rights
+          </h5>
+          <p style={{ color: "#fff", margin: 0 }}>
+            Download your music with royalty-free rights and integrate seamlessly
+            into your content, giving you full control over distribution.
+          </p>
+          <div className="step3">3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
           {/* Tab Navigation */}
           <ul className="nav nav-tabs custom-tabs mb-4">
