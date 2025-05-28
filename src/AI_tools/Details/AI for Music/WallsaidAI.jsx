@@ -646,28 +646,27 @@ const WallsaidAI = () => {
         <div className="container">
           <div className="row d-flex align-items-center justify-content-between mb-1">
             {/* Right side (Image Section) - mobile pe pehle dikhayega */}
-            <div
-              className="col-12 col-md-6 mb-4 mb-md-0 text-center order-1 order-md-2"
-              style={{ height: "300px" }}
-            >
-              <div
-                style={{
-                  width: "100%",
-                  height: "100%",
+          <div
+  className="col-12 col-md-6 mb-4 mb-md-0 text-center order-1 order-md-2"
+>
+  <div
+    style={{
+      width: "100%",
+      height: "auto",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+    }}
+  >
+    <img
+      src={wellsaid}
+      alt="Speechify AI Illustration"
+      className="img-fluid"
+      style={{ maxWidth: "100%", height: "auto" }}
+    />
+  </div>
+</div>
 
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  color: "#999",
-                }}
-              >
-                <img
-                  src={wellsaid}
-                  alt="Speechify AI Illustration"
-                  style={{ maxWidth: "100%", height: "300px" }}
-                />
-              </div>
-            </div>
 
             {/* Left side (Text Section) - mobile pe second */}
             <div

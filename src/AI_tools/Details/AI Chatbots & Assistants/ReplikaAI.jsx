@@ -590,7 +590,7 @@ const ReplikaAI = () => {
             {/* Left side (Text Section) */}
             <div style={{ flex: 1, paddingRight: "30px" }}>
               
-              <h2>ReplikAI</h2>
+              <h2>Replika AI</h2>
               <div className="text-warning mb-1">
                 ⭐⭐⭐⭐⭐ 95% Satisfaction
               </div>
